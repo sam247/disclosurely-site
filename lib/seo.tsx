@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import { generateHreflangAlternates } from "./hreflang";
 import { fetchSEOPageData, fetchGlobalSEOData, type SEOData, type GlobalSEOData } from "./contentful-seo";
