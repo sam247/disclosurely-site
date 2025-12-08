@@ -23,9 +23,10 @@ async function readDoc(slug: string[]) {
 
 export async function GET(
   request: Request,
-  { params }: { params: { slug: string[] } }
+  { params }: { params: Promise<{ slug: string[] }> }
 ) {
-  const html = await readDoc(params.slug || []);
+  const { slug } = await params;
+  const html = await readDoc(slug || []);
 
   if (!html) {
     return NextResponse.json({ error: 'Not found' }, { status: 404 });
