@@ -31,10 +31,18 @@ const STATIC_ROUTES = [
   { path: '/blog', priority: '0.7', changefreq: 'weekly' },
   { path: '/terms', priority: '0.3', changefreq: 'yearly' },
   { path: '/privacy', priority: '0.3', changefreq: 'yearly' },
+  { path: '/cookies', priority: '0.3', changefreq: 'yearly' },
   { path: '/vs-speakup', priority: '0.5', changefreq: 'monthly' },
   { path: '/vs-whistleblower-software', priority: '0.5', changefreq: 'monthly' },
+  { path: '/vs-navex', priority: '0.5', changefreq: 'monthly' },
+  { path: '/vs-resolver', priority: '0.5', changefreq: 'monthly' },
   { path: '/compliance-software', priority: '0.5', changefreq: 'monthly' },
   { path: '/whistleblowing-directive', priority: '0.5', changefreq: 'monthly' },
+  { path: '/anonymous-hotline', priority: '0.5', changefreq: 'monthly' },
+  { path: '/industries', priority: '0.5', changefreq: 'monthly' },
+  { path: '/industries/finance', priority: '0.5', changefreq: 'monthly' },
+  { path: '/industries/healthcare', priority: '0.5', changefreq: 'monthly' },
+  { path: '/security', priority: '0.5', changefreq: 'monthly' },
 ];
 
 const BASE_URL = 'https://disclosurely.com';

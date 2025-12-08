@@ -3,8 +3,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLangPrefix } from '@/hooks/useLangPrefix';
+import PublicLanguageSelector from '@/components/PublicLanguageSelector';
 
 const navLinks = [
+  { href: '/docs', label: 'Docs' },
   { href: '/features', label: 'Features' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/about', label: 'About' },
@@ -28,7 +30,8 @@ export function Header() {
             className="h-5 w-auto sm:h-6 md:h-8"
           />
         </Link>
-        <div className="hidden items-center space-x-5 md:flex">
+
+        <div className="hidden items-center gap-5 md:flex">
           {navLinks.map((item) => (
             <Link
               key={item.href}
@@ -38,23 +41,35 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <a
-            href="https://app.disclosurely.com/auth/signup"
-            className="rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700"
-          >
-            Get Started
-          </a>
         </div>
-        <div className="flex items-center gap-2 md:hidden">
+
+        <div className="hidden items-center gap-3 md:flex">
+          <PublicLanguageSelector />
           <a
             href="https://app.disclosurely.com/auth/login"
-            className="rounded-lg bg-blue-600 px-3 py-1.5 text-xs text-white transition-colors hover:bg-blue-700"
+            className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
           >
             Sign in
           </a>
           <a
             href="https://app.disclosurely.com/auth/signup"
+            className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
+          >
+            Get Started
+          </a>
+        </div>
+
+        <div className="flex items-center gap-1.5 md:hidden">
+          <PublicLanguageSelector />
+          <a
+            href="https://app.disclosurely.com/auth/login"
             className="rounded-lg border border-gray-200 px-3 py-1.5 text-xs text-gray-700 transition-colors hover:border-gray-300 hover:text-gray-900"
+          >
+            Sign in
+          </a>
+          <a
+            href="https://app.disclosurely.com/auth/signup"
+            className="rounded-lg bg-blue-600 px-3 py-1.5 text-xs text-white transition-colors hover:bg-blue-700"
           >
             Get started
           </a>
