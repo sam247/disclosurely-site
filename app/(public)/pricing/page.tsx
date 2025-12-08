@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useMemo, useState } from "react";
+import Head from "next/head";
 import Link from "next/link";
 import { CheckCircle, X } from "lucide-react";
 
@@ -94,6 +95,13 @@ function PricingContent() {
 
   return (
     <div className="bg-white">
+      <Head>
+        <title>Pricing | Disclosurely</title>
+        <meta
+          name="description"
+          content="Simple, transparent pricing for secure whistleblowing and compliance automation. Choose monthly or annual plans."
+        />
+      </Head>
       <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">

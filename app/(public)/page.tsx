@@ -14,6 +14,7 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
 import TypingAnimation from "@/components/TypingAnimation";
 import I18nProvider from "@/components/I18nProvider";
+import BlogSection from "@/components/BlogSection";
 import { supportedLanguages } from "@/i18n/client";
 
 type Lang = (typeof supportedLanguages)[number];
@@ -310,12 +311,12 @@ function LandingInner() {
       <section className="bg-gray-50 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="lg:order-2">
+            <div className="order-2 lg:order-1">
               <div className="flex h-80 w-full items-center justify-center rounded-lg">
                 <Image src="/custom_branding.jpeg" alt="Custom Branding" width={900} height={400} className="h-full w-full object-contain" />
               </div>
             </div>
-            <div className="lg:order-1">
+            <div className="order-1 lg:order-2">
               <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">Custom Branding</h2>
               <p className="mb-6 text-lg text-gray-600">
                 With our custom domain support, logo integration and branded portals, your reporting submission system looks and feels like a native part of your infrastructure.
@@ -560,6 +561,9 @@ function LandingInner() {
           </div>
         </div>
       </section>
+
+      {/* Blog Section */}
+      <BlogSection />
 
       {/* FAQ */}
       <section className="bg-white py-16 sm:py-20">

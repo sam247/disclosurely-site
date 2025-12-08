@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Head from "next/head";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 
@@ -30,6 +31,13 @@ function ComplianceContent() {
 
   return (
     <div className="bg-white">
+      <Head>
+        <title>Compliance Software | Disclosurely</title>
+        <meta
+          name="description"
+          content="Streamline whistleblowing and compliance with encrypted intake, audit trails, and AI-powered workflows aligned to EU Directive and GDPR."
+        />
+      </Head>
       <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
           <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">

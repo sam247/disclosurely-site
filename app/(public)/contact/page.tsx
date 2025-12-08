@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Head from "next/head";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -31,6 +32,13 @@ function ContactContent() {
 
   return (
     <div className="bg-white">
+      <Head>
+        <title>Contact Disclosurely</title>
+        <meta
+          name="description"
+          content="Contact Disclosurely for demos, pricing, and support. Secure whistleblowing and compliance solutions for your organisation."
+        />
+      </Head>
       <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">

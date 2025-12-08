@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Head from "next/head";
 import I18nProvider from "@/components/I18nProvider";
 import { useTranslation } from "react-i18next";
 import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
@@ -22,6 +23,13 @@ function CookiesContent() {
 
   return (
     <div className="bg-white">
+      <Head>
+        <title>Cookie Policy | Disclosurely</title>
+        <meta
+          name="description"
+          content="Understand how Disclosurely uses cookies and similar technologies across the platform."
+        />
+      </Head>
       <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">

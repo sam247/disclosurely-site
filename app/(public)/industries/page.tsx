@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Head from "next/head";
 import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import I18nProvider from "@/components/I18nProvider";
@@ -24,6 +25,13 @@ function IndustriesContent() {
 
   return (
     <div className="bg-white">
+      <Head>
+        <title>Industries | Disclosurely</title>
+        <meta
+          name="description"
+          content="Whistleblowing and compliance solutions for finance, healthcare, public sector, technology, and more."
+        />
+      </Head>
       <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
           <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">

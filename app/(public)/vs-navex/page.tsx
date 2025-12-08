@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Head from "next/head";
 import { CheckCircle2 } from "lucide-react";
 import I18nProvider from "@/components/I18nProvider";
 import { useTranslation } from "react-i18next";
@@ -30,6 +31,13 @@ function CompareContent() {
 
   return (
     <div className="bg-white">
+      <Head>
+        <title>Disclosurely vs NAVEX</title>
+        <meta
+          name="description"
+          content="See how Disclosurely compares to NAVEX with modern UX, encrypted whistleblowing, and AI automation."
+        />
+      </Head>
       <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">

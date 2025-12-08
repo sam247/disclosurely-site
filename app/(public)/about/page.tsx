@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Shield, Eye, CheckCircle, Headphones, BarChart3, Users, Lock, Zap, TrendingUp, Star } from "lucide-react";
@@ -28,6 +29,13 @@ function AboutContent() {
 
   return (
     <div className="bg-white">
+      <Head>
+        <title>About Disclosurely | Secure Whistleblowing Platform</title>
+        <meta
+          name="description"
+          content="Learn how Disclosurely helps organisations build safer, more transparent workplaces with secure whistleblowing and compliance automation."
+        />
+      </Head>
       {/* Hero Section */}
       <section className="px-4 pb-16 pt-32 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">

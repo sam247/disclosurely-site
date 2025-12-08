@@ -47,21 +47,28 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
   const response = await contentfulClient.getEntries<BlogPostSkeleton>({
     content_type: "9oYANGj5uBRT6UHsl5LxO",
     limit: 100,
+    include: 2, // Include linked assets and entries (for featuredImage)
   });
 
-  const posts = response.items.map((item) => ({
-    id: item.sys.id,
-    title: item.fields.title,
-    slug: item.fields.slug,
-    excerpt: item.fields.excerpt,
-    content: item.fields.content,
-    featuredImage: item.fields.featuredImage,
-    publishDate: item.fields.publishDate,
-    seoTitle: item.fields.seoTitle,
-    seoDescription: item.fields.seoDescription,
-    tags: item.fields.tags || [],
-    readingTime: item.fields.readingTime,
-  }));
+  const posts = response.items
+    .filter((item) => {
+      // Only include published posts
+      const status = item.fields.status;
+      return status === 'published' || !status; // Include if published or status not set
+    })
+    .map((item) => ({
+      id: item.sys.id,
+      title: item.fields.title,
+      slug: item.fields.slug,
+      excerpt: item.fields.excerpt,
+      content: item.fields.content,
+      featuredImage: item.fields.featuredImage,
+      publishDate: item.fields.publishDate,
+      seoTitle: item.fields.seoTitle,
+      seoDescription: item.fields.seoDescription,
+      tags: item.fields.tags || [],
+      readingTime: item.fields.readingTime,
+    }));
 
   // Sort by publishDate descending (fallback to sys.updatedAt)
   return posts.sort((a, b) => {

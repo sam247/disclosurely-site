@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useMemo } from "react";
+import Head from "next/head";
 import Image from "next/image";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -75,6 +76,13 @@ function FeaturesContent() {
 
   return (
     <div className="bg-white">
+      <Head>
+        <title>Features | Disclosurely</title>
+        <meta
+          name="description"
+          content="Explore Disclosurely features: anonymous reporting, secure messaging, AI-powered case management, and compliance workflows."
+        />
+      </Head>
       <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
