@@ -105,7 +105,6 @@ async function fetchBlogEntries(now: string): Promise<UrlEntry[]> {
     const entries: UrlEntry[] = [];
     const response = await client.getEntries<BlogEntrySkeleton>({
       content_type: '9oYANGj5uBRT6UHsl5LxO',
-      'fields.status': 'published',
       limit: 1000,
     });
 
