@@ -1,18 +1,37 @@
 import type { Metadata } from "next";
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, generatePageStructuredData, StructuredData } from "@/lib/seo";
 import SecurityContent from "./SecurityContent";
 
 export async function generateMetadata(): Promise<Metadata> {
+  const structuredData = generatePageStructuredData("webpage", {
+    title: "Security & Trust Center | Disclosurely",
+    description:
+      "AES-256 encryption, zero-knowledge architecture, and GDPR compliance. Learn how we protect whistleblower anonymity with bank-grade security.",
+    url: "https://disclosurely.com/security",
+  });
+
   return generatePageMetadata({
     pagePath: "/security",
-    fallbackTitle: "Security | Disclosurely",
+    fallbackTitle: "Security & Trust Center | Disclosurely",
     fallbackDescription:
-      "Encryption, access controls, monitoring, and auditability built into Disclosurely to protect every disclosure.",
-    keywords: ["security", "encryption", "data protection", "ISO 27001", "GDPR security"],
+      "AES-256 encryption, zero-knowledge architecture, and GDPR compliance. Learn how we protect whistleblower anonymity with bank-grade security.",
+    keywords: ["security", "encryption", "GDPR", "compliance", "data protection", "whistleblowing security"],
+    structuredData: structuredData,
   });
 }
 
 export default function SecurityPage() {
-  return <SecurityContent />;
-}
+  const webpageSchema = generatePageStructuredData("webpage", {
+    title: "Security & Trust Center | Disclosurely",
+    description:
+      "AES-256 encryption, zero-knowledge architecture, and GDPR compliance. Learn how we protect whistleblower anonymity with bank-grade security.",
+    url: "https://disclosurely.com/security",
+  });
 
+  return (
+    <>
+      <StructuredData data={webpageSchema} />
+      <SecurityContent />
+    </>
+  );
+}
