@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { createClient } from 'contentful';
+import { createClient, type EntrySkeletonType, type EntryFields } from 'contentful';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -11,15 +11,14 @@ type UrlEntry = {
   alternates?: { hreflang: string; href: string }[];
 };
 
-type BlogEntry = {
+interface BlogEntrySkeleton extends EntrySkeletonType {
+  contentTypeId: 'blogPost';
   fields: {
-    slug?: string;
-    publishDate?: string;
+    slug: EntryFields.Symbol;
+    publishDate?: EntryFields.Date;
+    status?: EntryFields.Symbol;
   };
-  sys: {
-    updatedAt?: string;
-  };
-};
+}
 
 const LANGUAGES = ['en', 'es', 'fr', 'de', 'pl', 'sv', 'no', 'pt', 'it', 'nl', 'da', 'el'];
 const STATIC_ROUTES = [
@@ -104,14 +103,14 @@ async function fetchBlogEntries(now: string): Promise<UrlEntry[]> {
 
   try {
     const entries: UrlEntry[] = [];
-    const response = await client.getEntries<BlogEntry>({
+    const response = await client.getEntries<BlogEntrySkeleton>({
       content_type: '9oYANGj5uBRT6UHsl5LxO',
       'fields.status': 'published',
       order: ['-fields.publishDate'] as const,
       limit: 1000,
     });
 
-    (response.items as BlogEntry[]).forEach((item) => {
+    response.items.forEach((item) => {
       const slug = item.fields?.slug;
       const publishDate = item.fields?.publishDate
         ? new Date(item.fields.publishDate).toISOString().split('T')[0]
