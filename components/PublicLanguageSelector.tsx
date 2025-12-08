@@ -38,7 +38,7 @@ export default function PublicLanguageSelector() {
       className="rounded-md border border-gray-300 px-2 py-1 text-sm"
       value={current}
       disabled={pending}
-      onChange={(e) => handleChange(e.target.value)}
+      onChange={(e) => handleChange(e.target.value as Lang)}
     >
       {supportedLanguages.map((lang) => (
         <option key={lang} value={lang}>
