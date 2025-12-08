@@ -45,7 +45,7 @@ function ComplianceContent() {
           <span className="mb-6 inline-block rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white">
             Trusted by hundreds of UK organisations
           </span>
-          <h1 className="mb-6 text-4xl font-bold text-gray-900 sm:text-5xl lg:text-6xl">
+          <h1 className="mb-6 text-4xl font-bold text-gray-900 sm:text-5xl">
             Compliance Software That Makes Whistleblowing Simple and Secure
           </h1>
           <p className="mx-auto mb-8 max-w-4xl text-xl text-gray-600">

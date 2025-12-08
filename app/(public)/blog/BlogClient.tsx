@@ -144,9 +144,11 @@ export default function BlogClient({ posts, categories, selectedCategory }: Blog
                               </>
                             )}
                           </div>
-                          <CardTitle className="text-xl font-semibold line-clamp-2 group-hover:text-blue-600 transition-colors">
-                            {post.title}
-                          </CardTitle>
+                          <Link href={`${prefix}/blog/${post.slug}`}>
+                            <CardTitle className="text-xl font-semibold line-clamp-2 group-hover:text-blue-600 transition-colors cursor-pointer">
+                              {post.title}
+                            </CardTitle>
+                          </Link>
                           {post.authorName && (
                             <div className="flex items-center gap-2 text-sm text-gray-600">
                               <span>By {post.authorName}</span>
@@ -168,7 +170,7 @@ export default function BlogClient({ posts, categories, selectedCategory }: Blog
                           </CardDescription>
                           <Link
                             href={`${prefix}/blog/${post.slug}`}
-                            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium group-hover:gap-3 transition-all"
+                            className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-white font-semibold transition-colors hover:bg-blue-700"
                           >
                             Read More
                             <ArrowRight className="h-4 w-4" />

@@ -104,7 +104,7 @@ function CompareContent() {
               <Check className="h-5 w-5 text-green-600" />
               <span className="text-sm font-semibold text-green-900">Save €276 per year</span>
             </div>
-            <h1 className="mb-6 text-4xl font-bold text-gray-900 sm:text-5xl md:text-6xl">
+            <h1 className="mb-6 text-4xl font-bold text-gray-900 sm:text-5xl">
               Disclosurely vs
               <span className="block mt-2 text-blue-600">WhistleblowerSoftware.com</span>
             </h1>
