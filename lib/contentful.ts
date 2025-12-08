@@ -129,14 +129,14 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
   });
 }
 
-export async function fetchBlogPost(slug: string): Promise<BlogPost | null> {
+export async function fetchBlogPost(slug: string): Promise<BlogPost & { links?: any } | null> {
   if (!contentfulClient || !contentfulToken) return null;
 
   const response = await contentfulClient.getEntries<BlogPostSkeleton>({
     content_type: "9oYANGj5uBRT6UHsl5LxO",
     "fields.slug": slug,
     limit: 1,
-    include: 2, // Include linked assets and entries
+    include: 10, // Include linked assets and entries (increased to ensure all embedded assets are included)
   } as any); // eslint-disable-line @typescript-eslint/no-explicit-any
 
   const post = response.items[0];
@@ -174,6 +174,7 @@ export async function fetchBlogPost(slug: string): Promise<BlogPost | null> {
     authorName,
     authorEmail,
     categories,
+    links: response.includes, // Include the links for resolving embedded assets
   };
 }
 

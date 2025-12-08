@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import type { Document } from "@contentful/rich-text-types";
+import type { Document, BLOCKS, INLINES, MARKS } from "@contentful/rich-text-types";
 import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 import { format } from "date-fns";
@@ -44,6 +44,14 @@ export default async function BlogPostPage({ params }: { params: Params }) {
   const imageUrl = post.featuredImage?.fields?.file?.url
     ? `https:${post.featuredImage.fields.file.url}`
     : null;
+
+  // Create a map of asset IDs to assets for resolving embedded assets
+  const assetMap = new Map();
+  if (post.links?.Asset) {
+    post.links.Asset.forEach((asset: any) => {
+      assetMap.set(asset.sys.id, asset);
+    });
+  }
 
   // Generate Article structured data
   const articleSchema = generatePageStructuredData("article", {
@@ -102,7 +110,115 @@ export default async function BlogPostPage({ params }: { params: Params }) {
             )}
 
             <article className="prose prose-lg prose-gray max-w-none">
-              {content ? documentToReactComponents(content) : <p>{post.excerpt || "No content available."}</p>}
+              {content
+                ? documentToReactComponents(content, {
+                    renderNode: {
+                      [BLOCKS.PARAGRAPH]: (node, children) => (
+                        <p className="mb-4 leading-7 text-gray-700">{children}</p>
+                      ),
+                      [BLOCKS.HEADING_1]: (node, children) => (
+                        <h1 className="mb-6 mt-8 text-3xl font-bold text-gray-900">{children}</h1>
+                      ),
+                      [BLOCKS.HEADING_2]: (node, children) => (
+                        <h2 className="mb-4 mt-8 text-2xl font-bold text-gray-900">{children}</h2>
+                      ),
+                      [BLOCKS.HEADING_3]: (node, children) => (
+                        <h3 className="mb-3 mt-6 text-xl font-bold text-gray-900">{children}</h3>
+                      ),
+                      [BLOCKS.HEADING_4]: (node, children) => (
+                        <h4 className="mb-2 mt-4 text-lg font-bold text-gray-900">{children}</h4>
+                      ),
+                      [BLOCKS.HEADING_5]: (node, children) => (
+                        <h5 className="mb-2 mt-4 text-base font-bold text-gray-900">{children}</h5>
+                      ),
+                      [BLOCKS.HEADING_6]: (node, children) => (
+                        <h6 className="mb-2 mt-4 text-sm font-bold text-gray-900">{children}</h6>
+                      ),
+                      [BLOCKS.UL_LIST]: (node, children) => (
+                        <ul className="mb-4 ml-6 list-disc space-y-2 text-gray-700">{children}</ul>
+                      ),
+                      [BLOCKS.OL_LIST]: (node, children) => (
+                        <ol className="mb-4 ml-6 list-decimal space-y-2 text-gray-700">{children}</ol>
+                      ),
+                      [BLOCKS.LIST_ITEM]: (node, children) => <li className="mb-1">{children}</li>,
+                      [BLOCKS.QUOTE]: (node, children) => (
+                        <blockquote className="my-4 border-l-4 border-gray-300 pl-4 italic text-gray-600">
+                          {children}
+                        </blockquote>
+                      ),
+                      [BLOCKS.HR]: () => <hr className="my-8 border-gray-300" />,
+                      [BLOCKS.EMBEDDED_ASSET]: (node) => {
+                        // Try to get asset from node.data.target first (if already resolved)
+                        let asset = node.data.target;
+                        
+                        // If not resolved, try to get from assetMap using sys.id
+                        if (!asset && node.data.target?.sys?.id) {
+                          asset = assetMap.get(node.data.target.sys.id);
+                        }
+                        
+                        // If still not found, try to get from node.data.target.sys.id directly
+                        if (!asset && typeof node.data.target === 'object' && node.data.target?.sys?.id) {
+                          asset = assetMap.get(node.data.target.sys.id);
+                        }
+
+                        if (!asset) {
+                          console.warn('Embedded asset not found:', node.data.target);
+                          return null;
+                        }
+
+                        const file = asset.fields?.file;
+                        if (!file) return null;
+
+                        const imageUrl = file.url?.startsWith("//") ? `https:${file.url}` : file.url;
+                        if (!imageUrl) return null;
+
+                        const alt = asset.fields?.title || asset.fields?.description || "Blog post image";
+                        const width = file.details?.image?.width || 1200;
+                        const height = file.details?.image?.height || 600;
+
+                        return (
+                          <div className="my-8">
+                            <Image
+                              src={imageUrl}
+                              alt={alt}
+                              width={width}
+                              height={height}
+                              className="h-auto w-full rounded-lg object-cover"
+                            />
+                            {asset.fields?.description && (
+                              <p className="mt-2 text-center text-sm text-gray-500">{asset.fields.description}</p>
+                            )}
+                          </div>
+                        );
+                      },
+                      [INLINES.HYPERLINK]: (node, children) => {
+                        const uri = node.data.uri;
+                        return (
+                          <a
+                            href={uri}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 underline-offset-2 hover:underline"
+                          >
+                            {children}
+                          </a>
+                        );
+                      },
+                      [INLINES.ENTRY_HYPERLINK]: (node, children) => {
+                        // Handle entry hyperlinks if needed
+                        return <span className="text-blue-600">{children}</span>;
+                      },
+                    },
+                    renderMark: {
+                      [MARKS.BOLD]: (text) => <strong className="font-bold">{text}</strong>,
+                      [MARKS.ITALIC]: (text) => <em className="italic">{text}</em>,
+                      [MARKS.UNDERLINE]: (text) => <u className="underline">{text}</u>,
+                      [MARKS.CODE]: (text) => (
+                        <code className="rounded bg-gray-100 px-1.5 py-0.5 font-mono text-sm text-gray-800">{text}</code>
+                      ),
+                    },
+                  })
+                : post.excerpt || "No content available."}
             </article>
           </div>
         </section>
