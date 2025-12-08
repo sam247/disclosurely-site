@@ -103,10 +103,12 @@ async function fetchBlogEntries(now: string): Promise<UrlEntry[]> {
 
   try {
     const entries: UrlEntry[] = [];
+    const order: (`fields.${string}` | `-fields.${string}`)[] = ['-fields.publishDate'];
+
     const response = await client.getEntries<BlogEntrySkeleton>({
       content_type: '9oYANGj5uBRT6UHsl5LxO',
       'fields.status': 'published',
-      order: ['-fields.publishDate'] as const,
+      order,
       limit: 1000,
     });
 
