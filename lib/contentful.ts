@@ -11,7 +11,7 @@ export const contentfulClient = contentfulToken
     })
   : null;
 
-type AssetWithFile = { fields?: { file?: { url?: string } } };
+export type AssetWithFile = { fields?: { file?: { url?: string } } };
 
 export type BlogPostSkeleton = EntrySkeletonType<{
   title: EntryFields.Text;
@@ -27,7 +27,21 @@ export type BlogPostSkeleton = EntrySkeletonType<{
   status?: EntryFields.Text;
 }>;
 
-export async function fetchBlogPosts() {
+export type BlogPost = {
+  id: string;
+  title: string;
+  slug: string;
+  excerpt?: string;
+  content?: Document;
+  featuredImage?: AssetWithFile;
+  publishDate?: string;
+  seoTitle?: string;
+  seoDescription?: string;
+  tags?: string[];
+  readingTime?: number;
+};
+
+export async function fetchBlogPosts(): Promise<BlogPost[]> {
   if (!contentfulClient || !contentfulToken) return [];
 
   const response = await contentfulClient.getEntries<BlogPostSkeleton>({
@@ -51,7 +65,7 @@ export async function fetchBlogPosts() {
   }));
 }
 
-export async function fetchBlogPost(slug: string) {
+export async function fetchBlogPost(slug: string): Promise<BlogPost | null> {
   if (!contentfulClient || !contentfulToken) return null;
 
   const response = await contentfulClient.getEntries<BlogPostSkeleton>({
