@@ -79,31 +79,15 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
     include: 2, // Include linked assets and entries (for featuredImage)
   });
 
-  // Create a map of asset IDs to assets for resolving featured images
+  // Create a map of asset IDs to assets for resolving featured images if needed
+  // Contentful SDK with include: 2 should automatically resolve linked assets,
+  // but we keep this as a fallback for link references
   const assetMap = new Map();
-  // Contentful SDK includes structure: response.includes contains { Asset: [...], Entry: [...] }
-  // Access includes from the response object
   const responseAny = response as any;
-  if (responseAny.includes) {
-    const includes = responseAny.includes;
-    // The includes object has Asset and Entry arrays
-    if (includes.Asset && Array.isArray(includes.Asset)) {
-      includes.Asset.forEach((asset: any) => {
-        if (asset?.sys?.id) {
-          assetMap.set(asset.sys.id, asset);
-        }
-      });
-    }
-  }
-  
-  // Also check if assets are in a different location (some SDK versions)
-  // Sometimes assets might be directly accessible
-  if (assetMap.size === 0 && responseAny.items) {
-    // Try to extract assets from items if includes didn't work
-    responseAny.items.forEach((item: any) => {
-      const featuredImage = item.fields?.featuredImage;
-      if (featuredImage?.fields?.file && featuredImage.sys?.id) {
-        assetMap.set(featuredImage.sys.id, featuredImage);
+  if (responseAny.includes?.Asset && Array.isArray(responseAny.includes.Asset)) {
+    responseAny.includes.Asset.forEach((asset: any) => {
+      if (asset?.sys?.id) {
+        assetMap.set(asset.sys.id, asset);
       }
     });
   }
@@ -132,47 +116,18 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
             }))
         : [];
 
-      // Resolve featured image from includes if it's a link
-      let featuredImage = item.fields.featuredImage as any;
-      if (featuredImage) {
-        // Handle different Contentful SDK response structures
-        // Case 1: Already resolved by SDK (has fields.file)
-        if (featuredImage.fields && featuredImage.fields.file) {
-          featuredImage = featuredImage;
-        }
-        // Case 2: Link reference that needs resolution (has sys.id but no fields)
-        else if (featuredImage.sys?.id && !featuredImage.fields) {
-          const assetId = featuredImage.sys.id;
-          const resolvedAsset = assetMap.get(assetId);
-          if (resolvedAsset && resolvedAsset.fields && resolvedAsset.fields.file) {
-            featuredImage = resolvedAsset;
-          } else {
-            // Asset not found in map - might be resolved differently by SDK
-            // Try accessing it directly from the item if SDK auto-resolved it
-            featuredImage = undefined;
-          }
-        }
-        // Case 3: Nested structure (e.g., locale-specific like en-US)
-        else if (featuredImage['en-US'] || featuredImage['en'] || typeof featuredImage === 'object') {
-          // Try to extract the actual link/asset from nested structure
-          const nestedImage = featuredImage['en-US'] || featuredImage['en'] || Object.values(featuredImage)[0];
-          if (nestedImage?.fields?.file) {
-            featuredImage = nestedImage;
-          } else if (nestedImage?.sys?.id) {
-            const assetId = nestedImage.sys.id;
-            const resolvedAsset = assetMap.get(assetId);
-            if (resolvedAsset && resolvedAsset.fields && resolvedAsset.fields.file) {
-              featuredImage = resolvedAsset;
-            } else {
-              featuredImage = undefined;
-            }
-          } else {
-            featuredImage = undefined;
-          }
-        }
-        // Case 4: Invalid structure
-        else {
-          featuredImage = undefined;
+      // Extract featured image - Contentful SDK with include: 2 automatically resolves linked assets
+      // Access directly like the backup implementation: (item.fields.featuredImage as any)?.fields?.file
+      const featuredImage = item.fields.featuredImage as any;
+      // If it's a link reference (has sys.id but no fields), resolve from asset map
+      let resolvedFeaturedImage = featuredImage;
+      if (featuredImage?.sys?.id && !featuredImage?.fields) {
+        const assetId = featuredImage.sys.id;
+        const resolvedAsset = assetMap.get(assetId);
+        if (resolvedAsset) {
+          resolvedFeaturedImage = resolvedAsset;
+        } else {
+          resolvedFeaturedImage = undefined;
         }
       }
 
@@ -182,7 +137,7 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
         slug: item.fields.slug,
         excerpt: item.fields.excerpt,
         content: item.fields.content,
-        featuredImage,
+        featuredImage: resolvedFeaturedImage,
         publishDate: item.fields.publishDate,
         seoTitle: item.fields.seoTitle,
         seoDescription: item.fields.seoDescription,
