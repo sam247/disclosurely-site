@@ -48,9 +48,13 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
   // Create a map of asset IDs to assets for resolving embedded assets
   const assetMap = new Map();
-  if (post.links?.Asset) {
-    post.links.Asset.forEach((asset: any) => {
-      assetMap.set(asset.sys.id, asset);
+  if (post.links) {
+    // Contentful includes structure: { Asset: [...], Entry: [...] }
+    const assets = post.links.Asset || [];
+    assets.forEach((asset: any) => {
+      if (asset?.sys?.id) {
+        assetMap.set(asset.sys.id, asset);
+      }
     });
   }
 
@@ -149,29 +153,31 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                       ),
                       [BLOCKS.HR]: () => <hr className="my-8 border-gray-300" />,
                       [BLOCKS.EMBEDDED_ASSET]: (node) => {
-                        // Try to get asset from node.data.target first (if already resolved)
-                        let asset = node.data.target;
-                        
-                        // If not resolved, try to get from assetMap using sys.id
-                        if (!asset && node.data.target?.sys?.id) {
-                          asset = assetMap.get(node.data.target.sys.id);
-                        }
-                        
-                        // If still not found, try to get from node.data.target.sys.id directly
-                        if (!asset && typeof node.data.target === 'object' && node.data.target?.sys?.id) {
-                          asset = assetMap.get(node.data.target.sys.id);
+                        // Get asset ID from node
+                        const assetId = node.data.target?.sys?.id;
+                        if (!assetId) {
+                          console.warn('Embedded asset node missing sys.id:', node);
+                          return null;
                         }
 
+                        // Try to get asset from assetMap
+                        const asset = assetMap.get(assetId);
                         if (!asset) {
-                          console.warn('Embedded asset not found:', node.data.target);
+                          console.warn('Embedded asset not found in assetMap:', assetId, 'Available assets:', Array.from(assetMap.keys()));
                           return null;
                         }
 
                         const file = asset.fields?.file;
-                        if (!file) return null;
+                        if (!file) {
+                          console.warn('Asset missing file field:', asset);
+                          return null;
+                        }
 
                         const imageUrl = file.url?.startsWith("//") ? `https:${file.url}` : file.url;
-                        if (!imageUrl) return null;
+                        if (!imageUrl) {
+                          console.warn('Asset file missing URL:', file);
+                          return null;
+                        }
 
                         const alt = asset.fields?.title || asset.fields?.description || "Blog post image";
                         const width = file.details?.image?.width || 1200;

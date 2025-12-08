@@ -48,15 +48,23 @@ export const AnnouncementBar: React.FC<AnnouncementBarProps> = ({
     return null;
   }
 
+  // Check if we have content to show (message or link)
+  const hasMessage = announcement.message && announcement.message.trim().length > 0;
+  const hasLink = announcement.linkUrl && announcement.linkText;
+
+  if (!hasMessage && !hasLink) {
+    return null;
+  }
+
   return (
     <div className="bg-blue-600 text-white py-2.5 px-3 sm:py-3 sm:px-4 relative z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
         <div className="flex-1 min-w-0">
           <div className="text-xs sm:text-sm font-medium text-center break-words">
-            {announcement.message && (
+            {hasMessage && (
               <>
-                {announcement.message}
-                {announcement.linkUrl && announcement.linkText && (
+                {announcement.message.trim()}
+                {hasLink && (
                   <span className="ml-1 sm:ml-2 whitespace-nowrap">
                     <a 
                       href={announcement.linkUrl}
@@ -68,12 +76,12 @@ export const AnnouncementBar: React.FC<AnnouncementBarProps> = ({
                 )}
               </>
             )}
-            {!announcement.message && announcement.linkUrl && (
+            {!hasMessage && hasLink && (
               <a 
                 href={announcement.linkUrl}
                 className="underline hover:no-underline"
               >
-                {announcement.linkText || announcement.linkUrl}
+                {announcement.linkText}
               </a>
             )}
           </div>
