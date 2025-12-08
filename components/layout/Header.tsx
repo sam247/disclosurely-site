@@ -5,13 +5,16 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { useLanguageFromUrl } from '@/hooks/useLanguageFromUrl';
 import PublicLanguageSelector from '@/components/PublicLanguageSelector';
+import { AnnouncementBar } from '@/components/AnnouncementBar';
 
 export function Header() {
   const { t } = useTranslation();
   const { langPrefix } = useLanguageFromUrl();
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-sm">
+    <>
+      <AnnouncementBar />
+      <nav className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-3">
           <div className="flex items-center">
@@ -50,6 +53,7 @@ export function Header() {
         </div>
       </div>
     </nav>
+    </>
   );
 }
 

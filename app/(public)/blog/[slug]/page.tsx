@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import type { Document, BLOCKS, INLINES, MARKS } from "@contentful/rich-text-types";
+import type { Document } from "@contentful/rich-text-types";
+import { BLOCKS, INLINES, MARKS } from "@contentful/rich-text-types";
 import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 import { format } from "date-fns";
