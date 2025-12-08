@@ -100,17 +100,17 @@ function PricingContent() {
     <I18nProvider>
       <div className="bg-white">
         <section className="bg-white px-4 pb-12 pt-24 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-center">
-            <span className="mb-4 inline-block rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white">
+          <div className="mx-auto max-w-7xl text-center">
+            <span className="mb-6 inline-block rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white">
               {t("pricing.hero.tagline")}
             </span>
             <h1 className="mb-6 text-4xl font-bold text-gray-900 sm:text-5xl lg:text-6xl">
-              {t("pricing.hero.title")}
+              Start Free. Get Secure Whistleblowing.
             </h1>
-            <p className="mb-4 text-xl text-gray-600">
+            <p className="mb-4 text-xl text-gray-600 max-w-3xl mx-auto">
               {t("pricing.hero.subtitle1")}
             </p>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               {t("pricing.hero.subtitle2")}
             </p>
             <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
