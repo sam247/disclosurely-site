@@ -14,6 +14,18 @@ export const contentfulClient = contentfulToken
 
 export type AssetWithFile = { fields?: { file?: { url?: string } } };
 
+export type Category = {
+  id: string;
+  name: string;
+  slug: string;
+};
+
+export type Author = {
+  id: string;
+  name: string;
+  email?: string;
+};
+
 export type BlogPostSkeleton = EntrySkeletonType<{
   title: EntryFields.Text;
   slug: EntryFields.Text;
@@ -26,6 +38,8 @@ export type BlogPostSkeleton = EntrySkeletonType<{
   tags?: EntryFields.Symbol[];
   readingTime?: EntryFields.Number;
   status?: EntryFields.Text;
+  author?: EntryFields.EntryLink<Author>;
+  categories?: EntryFields.Array<EntryFields.EntryLink<Category>>;
 }>;
 
 export type BlogPost = {
@@ -40,6 +54,9 @@ export type BlogPost = {
   seoDescription?: string;
   tags?: string[];
   readingTime?: number;
+  authorName?: string;
+  authorEmail?: string;
+  categories?: Category[];
 };
 
 export async function fetchBlogPosts(): Promise<BlogPost[]> {
@@ -57,19 +74,41 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
       const status = item.fields.status;
       return status === 'published' || !status; // Include if published or status not set
     })
-    .map((item) => ({
-      id: item.sys.id,
-      title: item.fields.title,
-      slug: item.fields.slug,
-      excerpt: item.fields.excerpt,
-      content: item.fields.content,
-      featuredImage: item.fields.featuredImage,
-      publishDate: item.fields.publishDate,
-      seoTitle: item.fields.seoTitle,
-      seoDescription: item.fields.seoDescription,
-      tags: item.fields.tags || [],
-      readingTime: item.fields.readingTime,
-    }));
+    .map((item) => {
+      // Extract author
+      const authorEntry = item.fields.author as any;
+      const authorName = authorEntry?.fields?.name;
+      const authorEmail = authorEntry?.fields?.email;
+
+      // Extract categories
+      const categoryEntries = (item.fields.categories as any) || [];
+      const categories: Category[] = Array.isArray(categoryEntries)
+        ? categoryEntries
+            .filter((cat: any) => cat?.fields)
+            .map((cat: any) => ({
+              id: cat.sys?.id || '',
+              name: cat.fields?.name || '',
+              slug: cat.fields?.slug || '',
+            }))
+        : [];
+
+      return {
+        id: item.sys.id,
+        title: item.fields.title,
+        slug: item.fields.slug,
+        excerpt: item.fields.excerpt,
+        content: item.fields.content,
+        featuredImage: item.fields.featuredImage,
+        publishDate: item.fields.publishDate,
+        seoTitle: item.fields.seoTitle,
+        seoDescription: item.fields.seoDescription,
+        tags: item.fields.tags || [],
+        readingTime: item.fields.readingTime,
+        authorName,
+        authorEmail,
+        categories,
+      };
+    });
 
   // Sort by publishDate descending (fallback to sys.updatedAt)
   return posts.sort((a, b) => {
@@ -86,10 +125,28 @@ export async function fetchBlogPost(slug: string): Promise<BlogPost | null> {
     content_type: "9oYANGj5uBRT6UHsl5LxO",
     "fields.slug": slug,
     limit: 1,
+    include: 2, // Include linked assets and entries
   } as any); // eslint-disable-line @typescript-eslint/no-explicit-any
 
   const post = response.items[0];
   if (!post) return null;
+
+  // Extract author
+  const authorEntry = post.fields.author as any;
+  const authorName = authorEntry?.fields?.name;
+  const authorEmail = authorEntry?.fields?.email;
+
+  // Extract categories
+  const categoryEntries = (post.fields.categories as any) || [];
+  const categories: Category[] = Array.isArray(categoryEntries)
+    ? categoryEntries
+        .filter((cat: any) => cat?.fields)
+        .map((cat: any) => ({
+          id: cat.sys?.id || '',
+          name: cat.fields?.name || '',
+          slug: cat.fields?.slug || '',
+        }))
+    : [];
 
   return {
     id: post.sys.id,
@@ -103,6 +160,31 @@ export async function fetchBlogPost(slug: string): Promise<BlogPost | null> {
     seoDescription: post.fields.seoDescription,
     tags: post.fields.tags || [],
     readingTime: post.fields.readingTime,
+    authorName,
+    authorEmail,
+    categories,
   };
+}
+
+export async function fetchCategories(): Promise<Category[]> {
+  if (!contentfulClient || !contentfulToken) return [];
+
+  try {
+    const response = await contentfulClient.getEntries({
+      content_type: "1Dn01YZmIbymrxi194Q2xV", // Category content type ID
+      limit: 100,
+    } as any); // eslint-disable-line @typescript-eslint/no-explicit-any
+
+    return response.items
+      .filter((item: any) => item.fields?.isActive !== false)
+      .map((item: any) => ({
+        id: item.sys.id,
+        name: item.fields.name || '',
+        slug: item.fields.slug || '',
+      }));
+  } catch (error) {
+    console.error('Error fetching categories:', error);
+    return [];
+  }
 }
 
