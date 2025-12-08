@@ -81,12 +81,19 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
 
   // Create a map of asset IDs to assets for resolving featured images
   const assetMap = new Map();
-  if (response.includes?.Asset) {
-    response.includes.Asset.forEach((asset: any) => {
-      if (asset?.sys?.id) {
-        assetMap.set(asset.sys.id, asset);
-      }
-    });
+  // Contentful SDK includes structure: { Asset: [...], Entry: [...] }
+  // The includes might be on response.includes or response.items[].fields might already be resolved
+  const includes = (response as any).includes;
+  if (includes) {
+    // Handle both possible structures: includes.Asset array or includes as an object with Asset property
+    const assets = includes.Asset || (Array.isArray(includes) ? includes.filter((item: any) => item.sys?.type === 'Asset') : []);
+    if (Array.isArray(assets)) {
+      assets.forEach((asset: any) => {
+        if (asset?.sys?.id) {
+          assetMap.set(asset.sys.id, asset);
+        }
+      });
+    }
   }
 
   const posts = response.items
@@ -115,11 +122,17 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
 
       // Resolve featured image from includes if it's a link
       let featuredImage = item.fields.featuredImage as any;
-      if (featuredImage?.sys?.id && !featuredImage.fields) {
-        // If it's just a link reference, resolve it from the asset map
-        const resolvedAsset = assetMap.get(featuredImage.sys.id);
-        if (resolvedAsset) {
-          featuredImage = resolvedAsset;
+      if (featuredImage) {
+        // Check if it's already resolved (has fields) or if we need to resolve it
+        if (featuredImage.sys?.id && !featuredImage.fields) {
+          // If it's just a link reference, resolve it from the asset map
+          const resolvedAsset = assetMap.get(featuredImage.sys.id);
+          if (resolvedAsset) {
+            featuredImage = resolvedAsset;
+          } else {
+            // If not found in asset map, set to undefined to avoid errors
+            featuredImage = undefined;
+          }
         }
       }
 
