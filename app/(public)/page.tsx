@@ -13,7 +13,6 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
-import PublicLanguageSelector from "@/components/PublicLanguageSelector";
 import TypingAnimation from "@/components/TypingAnimation";
 import I18nProvider from "@/components/I18nProvider";
 import { supportedLanguages } from "@/i18n/client";
@@ -183,26 +182,6 @@ function LandingInner() {
   return (
     <div className="bg-white">
       <AnnouncementBar />
-
-      <header className="sticky top-0 z-40 bg-white shadow-sm">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-3 sm:px-6 lg:px-8">
-          <Link href="/" className="flex items-center">
-            <Image src="/lovable-uploads/c46ace0e-df58-4119-b5e3-8dcfa075ea2f.png" alt="Disclosurely" width={140} height={28} priority />
-          </Link>
-          <div className="flex items-center gap-3">
-            <PublicLanguageSelector />
-            <Link href={`${langPrefix}/pricing`} className="text-sm font-semibold text-gray-700 hover:text-gray-900">
-              {t("nav.pricing")}
-            </Link>
-            <a
-              href="https://app.disclosurely.com/auth/signup"
-              className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
-            >
-              {t("nav.getStarted")}
-            </a>
-          </div>
-        </div>
-      </header>
 
       {/* Hero */}
       <section className="px-4 pb-20 pt-[100px] sm:px-6 lg:px-8">
