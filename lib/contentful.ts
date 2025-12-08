@@ -81,14 +81,14 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
 
   // Create a map of asset IDs to assets for resolving featured images
   const assetMap = new Map();
-  // Contentful SDK includes structure: { Asset: [...], Entry: [...] }
-  // The includes might be on response.includes or response.items[].fields might already be resolved
-  const includes = (response as any).includes;
-  if (includes) {
-    // Handle both possible structures: includes.Asset array or includes as an object with Asset property
-    const assets = includes.Asset || (Array.isArray(includes) ? includes.filter((item: any) => item.sys?.type === 'Asset') : []);
-    if (Array.isArray(assets)) {
-      assets.forEach((asset: any) => {
+  // Contentful SDK includes structure: response.includes contains { Asset: [...], Entry: [...] }
+  // Access includes from the response object
+  const responseAny = response as any;
+  if (responseAny.includes) {
+    const includes = responseAny.includes;
+    // The includes object has Asset and Entry arrays
+    if (includes.Asset && Array.isArray(includes.Asset)) {
+      includes.Asset.forEach((asset: any) => {
         if (asset?.sys?.id) {
           assetMap.set(asset.sys.id, asset);
         }
