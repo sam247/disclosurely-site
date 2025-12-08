@@ -46,11 +46,10 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
 
   const response = await contentfulClient.getEntries<BlogPostSkeleton>({
     content_type: "9oYANGj5uBRT6UHsl5LxO",
-    order: ["-fields.publishDate"],
     limit: 100,
   });
 
-  return response.items.map((item) => ({
+  const posts = response.items.map((item) => ({
     id: item.sys.id,
     title: item.fields.title,
     slug: item.fields.slug,
@@ -63,6 +62,13 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
     tags: item.fields.tags || [],
     readingTime: item.fields.readingTime,
   }));
+
+  // Sort by publishDate descending (fallback to sys.updatedAt)
+  return posts.sort((a, b) => {
+    const aDate = a.publishDate ? new Date(a.publishDate).getTime() : 0;
+    const bDate = b.publishDate ? new Date(b.publishDate).getTime() : 0;
+    return bDate - aDate;
+  });
 }
 
 export async function fetchBlogPost(slug: string): Promise<BlogPost | null> {
