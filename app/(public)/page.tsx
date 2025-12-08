@@ -257,6 +257,236 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Pricing */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">Simple, Transparent Pricing</h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-700">
+              Flexible plans for teams of every size. All plans include secure hosting, encryption, and compliance
+              tooling.
+            </p>
+          </div>
+          <div className="grid gap-8 lg:grid-cols-3">
+            <Card className="flex flex-col">
+              <CardHeader>
+                <CardTitle>Starter</CardTitle>
+                <CardDescription>£19.99 /mo</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2 text-sm text-gray-700">
+                <ul className="space-y-2">
+                  <li>Secure portal</li>
+                  <li>Anonymous reporting</li>
+                  <li>Email notifications</li>
+                  <li>Basic audit trail</li>
+                </ul>
+                <Link
+                  href="https://app.disclosurely.com/auth/signup"
+                  className="mt-4 inline-flex w-full justify-center rounded-md bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
+                >
+                  Get Started
+                </Link>
+              </CardContent>
+            </Card>
+            <Card className="flex flex-col border-blue-600 shadow-lg shadow-blue-100">
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  Pro <span className="rounded-full bg-blue-50 px-3 py-1 text-xs text-blue-700">Most popular</span>
+                </CardTitle>
+                <CardDescription>£39.99 /mo</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2 text-sm text-gray-700">
+                <ul className="space-y-2">
+                  <li>Everything in Starter</li>
+                  <li>Secure two-way messaging</li>
+                  <li>AI-powered case analysis</li>
+                  <li>Advanced reporting</li>
+                </ul>
+                <Link
+                  href="https://app.disclosurely.com/auth/signup"
+                  className="mt-4 inline-flex w-full justify-center rounded-md bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
+                >
+                  Start Free Trial
+                </Link>
+              </CardContent>
+            </Card>
+            <Card className="flex flex-col">
+              <CardHeader>
+                <CardTitle>Enterprise</CardTitle>
+                <CardDescription>Custom</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2 text-sm text-gray-700">
+                <ul className="space-y-2">
+                  <li>Dedicated success manager</li>
+                  <li>Enterprise SSO &amp; SCIM</li>
+                  <li>Custom data retention</li>
+                  <li>Security review &amp; DPIA</li>
+                </ul>
+                <Link
+                  href="/contact"
+                  className="mt-4 inline-flex w-full justify-center rounded-md border border-gray-300 px-4 py-2 text-gray-800 transition hover:border-gray-400"
+                >
+                  Talk to Sales
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="bg-gray-50 py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 text-center">
+            <h3 className="mb-3 text-2xl font-bold text-gray-900 sm:text-3xl">Trusted by Organizations Worldwide</h3>
+            <p className="text-gray-700">Compliance, HR, and legal teams rely on Disclosurely every day.</p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              {
+                quote:
+                  'The anonymous workflows have transformed how we handle sensitive reports. Response times are down and trust is up.',
+                name: 'Chief Compliance Officer',
+                company: 'Global Manufacturing',
+              },
+              {
+                quote:
+                  'Two-way secure messaging let us resolve cases faster while protecting identities. The audit trail is excellent.',
+                name: 'Head of HR',
+                company: 'Fintech Scaleup',
+              },
+              {
+                quote:
+                  'Easy to deploy, secure by default, and the AI insights help us prioritize the most critical issues.',
+                name: 'VP Risk',
+                company: 'Enterprise SaaS',
+              },
+            ].map((item) => (
+              <Card key={item.name}>
+                <CardContent className="space-y-3 p-6 text-gray-700">
+                  <p className="text-base leading-relaxed">“{item.quote}”</p>
+                  <div className="text-sm font-semibold text-gray-900">
+                    {item.name} • {item.company}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+          <h3 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl">Security &amp; Compliance Certifications</h3>
+          <p className="mb-10 text-gray-700">
+            Built for regulated teams that need verifiable controls and encryption.
+          </p>
+          <div className="grid gap-6 sm:grid-cols-3">
+            {[
+              { title: 'SOC 2 Controls', desc: 'Security, availability, and confidentiality controls.' },
+              { title: 'Encryption', desc: 'AES-256 encryption for data in transit and at rest.' },
+              { title: 'GDPR Ready', desc: 'Data processing and retention aligned to GDPR.' },
+            ].map((item) => (
+              <Card key={item.title}>
+                <CardContent className="p-6">
+                  <div className="text-lg font-semibold text-gray-900">{item.title}</div>
+                  <p className="mt-2 text-sm text-gray-700">{item.desc}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest insights */}
+      <section className="bg-gray-50 py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 text-center">
+            <h3 className="mb-3 text-2xl font-bold text-gray-900 sm:text-3xl">Latest Insights</h3>
+            <p className="text-gray-700">News, tutorials, and resources to strengthen your program.</p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: 'Building a Culture of Integrity',
+                summary: 'Practical steps to encourage speaking up and protect reporters.',
+                href: '/blog',
+              },
+              {
+                title: 'EU Whistleblowing Directive Guide',
+                summary: 'What compliance teams need to know to stay aligned with EU rules.',
+                href: '/blog',
+              },
+              {
+                title: 'Secure Messaging Best Practices',
+                summary: 'How to maintain confidentiality with two-way encrypted comms.',
+                href: '/blog',
+              },
+            ].map((post) => (
+              <Card key={post.title}>
+                <CardContent className="space-y-3 p-6">
+                  <div className="text-lg font-semibold text-gray-900">{post.title}</div>
+                  <p className="text-sm text-gray-700">{post.summary}</p>
+                  <Link href={post.href} className="text-sm font-semibold text-blue-600 hover:text-blue-700">
+                    Read more
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 text-center">
+            <h3 className="mb-3 text-2xl font-bold text-gray-900 sm:text-3xl">Frequently Asked Questions</h3>
+            <p className="text-gray-700">Quick answers for compliance, HR, and legal teams.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { q: 'Is anonymous reporting really anonymous?', a: 'Yes. No IP logging, and identities are never required.' },
+              { q: 'Do you support multi-language portals?', a: 'Yes. Localized portals and notifications are supported.' },
+              { q: 'Can we export audit trails?', a: 'Yes. Full audit trails and case exports are included.' },
+              { q: 'How do you handle data residency?', a: 'Regional hosting options are available on request.' },
+            ].map((item) => (
+              <Card key={item.q}>
+                <CardContent className="p-4">
+                  <div className="text-base font-semibold text-gray-900">{item.q}</div>
+                  <p className="mt-2 text-sm text-gray-700">{item.a}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-blue-700 py-16 text-white sm:py-20">
+        <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+          <h3 className="mb-3 text-2xl font-bold sm:text-3xl">Ready to Strengthen Your Compliance Program?</h3>
+          <p className="mb-6 text-blue-100">
+            Start your free trial or talk to our team to see how Disclosurely can help you move faster.
+          </p>
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:justify-center">
+            <Link
+              href="https://app.disclosurely.com/auth/signup"
+              className="rounded-md bg-white px-6 py-3 text-sm font-semibold text-blue-700 shadow-md transition hover:bg-blue-50"
+            >
+              Start Free Trial
+            </Link>
+            <Link
+              href="/contact"
+              className="rounded-md border border-white/60 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+            >
+              Talk to Sales
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
