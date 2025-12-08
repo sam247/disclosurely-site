@@ -78,7 +78,7 @@ export async function fetchBlogPost(slug: string): Promise<BlogPost | null> {
     content_type: "9oYANGj5uBRT6UHsl5LxO",
     "fields.slug": slug,
     limit: 1,
-  });
+  } as any); // eslint-disable-line @typescript-eslint/no-explicit-any
 
   const post = response.items[0];
   if (!post) return null;
