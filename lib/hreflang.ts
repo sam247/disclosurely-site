@@ -1,6 +1,8 @@
-import { supportedLanguages } from "@/i18n/client";
-
 const BASE_URL = "https://disclosurely.com";
+
+// Define supported languages here to avoid importing from client-only module
+// This must match the languages in i18n/client.ts
+export const supportedLanguages = ["en", "es", "fr", "de", "pl", "sv", "no", "pt", "it", "nl", "da", "el"] as const;
 
 export type Lang = (typeof supportedLanguages)[number];
 
