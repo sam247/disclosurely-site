@@ -58,9 +58,10 @@ export default function BlogClient({ posts, categories, selectedCategory }: Blog
                 <h2 className="text-xl font-semibold mb-2 text-gray-900">Categories</h2>
                 <p className="text-sm text-gray-600 mb-8">Filter posts by topic</p>
 
-                <nav className="space-y-1">
+                <nav className="space-y-1" aria-label="Blog categories">
                   <button
                     onClick={() => handleCategoryChange(null)}
+                    aria-label={!selectedCategory ? "Latest posts (selected)" : "Show latest posts"}
                     className={`w-full text-left block px-3 py-2 text-sm rounded-md transition-colors ${
                       !selectedCategory
                         ? "bg-gray-100 font-medium text-gray-900"
@@ -73,6 +74,7 @@ export default function BlogClient({ posts, categories, selectedCategory }: Blog
                     <button
                       key={category.id}
                       onClick={() => handleCategoryChange(category.slug)}
+                      aria-label={selectedCategory === category.slug ? `${category.name} (selected)` : `Filter by ${category.name}`}
                       className={`w-full text-left block px-3 py-2 text-sm rounded-md transition-colors ${
                         selectedCategory === category.slug
                           ? "bg-gray-100 font-medium text-gray-900"
@@ -126,7 +128,7 @@ export default function BlogClient({ posts, categories, selectedCategory }: Blog
                         )}
                         <CardHeader>
                           <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
-                            <Calendar className="h-4 w-4" />
+                            <Calendar className="h-4 w-4" aria-hidden="true" />
                             <span>
                               {post.publishDate
                                 ? new Date(post.publishDate).toLocaleDateString("en-US", {
@@ -138,8 +140,8 @@ export default function BlogClient({ posts, categories, selectedCategory }: Blog
                             </span>
                             {post.readingTime && (
                               <>
-                                <span>•</span>
-                                <Clock className="h-4 w-4" />
+                                <span aria-hidden="true">•</span>
+                                <Clock className="h-4 w-4" aria-hidden="true" />
                                 <span>{post.readingTime} min read</span>
                               </>
                             )}
@@ -171,9 +173,10 @@ export default function BlogClient({ posts, categories, selectedCategory }: Blog
                           <Link
                             href={`${prefix}/blog/${post.slug}`}
                             className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-white font-semibold transition-colors hover:bg-blue-700"
+                            aria-label={`Read more about ${post.title}`}
                           >
                             Read More
-                            <ArrowRight className="h-4 w-4" />
+                            <ArrowRight className="h-4 w-4" aria-hidden="true" />
                           </Link>
                         </CardContent>
                       </Card>

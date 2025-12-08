@@ -95,6 +95,11 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
       });
     }
   }
+  
+  // Debug: Log asset map size
+  if (assetMap.size > 0) {
+    console.log(`[fetchBlogPosts] Found ${assetMap.size} assets in includes`);
+  }
 
   const posts = response.items
     .filter((item) => {
@@ -123,16 +128,25 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
       // Resolve featured image from includes if it's a link
       let featuredImage = item.fields.featuredImage as any;
       if (featuredImage) {
-        // Check if it's already resolved (has fields) or if we need to resolve it
-        if (featuredImage.sys?.id && !featuredImage.fields) {
+        // Check if it's already resolved (has fields) - if so, use it as-is
+        if (featuredImage.fields && featuredImage.fields.file) {
+          // Already resolved by Contentful SDK, use it directly
+          featuredImage = featuredImage;
+        } else if (featuredImage.sys?.id) {
           // If it's just a link reference, resolve it from the asset map
-          const resolvedAsset = assetMap.get(featuredImage.sys.id);
-          if (resolvedAsset) {
+          const assetId = featuredImage.sys.id;
+          const resolvedAsset = assetMap.get(assetId);
+          if (resolvedAsset && resolvedAsset.fields && resolvedAsset.fields.file) {
             featuredImage = resolvedAsset;
           } else {
-            // If not found in asset map, set to undefined to avoid errors
+            // If not found in asset map, log for debugging
+            console.warn(`[fetchBlogPosts] Featured image asset ${assetId} not found in asset map for post ${item.sys.id}. Available asset IDs:`, Array.from(assetMap.keys()));
             featuredImage = undefined;
           }
+        } else {
+          // Invalid structure, set to undefined
+          console.warn(`[fetchBlogPosts] Invalid featuredImage structure for post ${item.sys.id}:`, featuredImage);
+          featuredImage = undefined;
         }
       }
 
