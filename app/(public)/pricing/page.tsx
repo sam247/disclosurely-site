@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useMemo, useState } from "react";
-import Head from "next/head";
 import Link from "next/link";
 import { CheckCircle, X } from "lucide-react";
 
@@ -95,58 +94,80 @@ function PricingContent() {
 
   return (
     <div className="bg-white">
-      <Head>
-        <title>Pricing | Disclosurely</title>
-        <meta
-          name="description"
-          content="Simple, transparent pricing for secure whistleblowing and compliance automation. Choose monthly or annual plans."
-        />
-      </Head>
-      <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
-            {t("landing.pricing.title")}
-          </span>
-          <h1 className="mb-4 text-4xl font-bold text-gray-900 sm:text-5xl">
-            {t("landing.pricing.subtitle")}
-          </h1>
-          <p className="text-lg text-gray-600">
-            Transparent plans built for secure whistleblowing and compliance automation.
-          </p>
-          <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              href="https://app.disclosurely.com/auth/signup"
-              className="rounded-lg bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700"
-            >
-              {t("landing.hero.startFreeTrial")}
-            </Link>
-            <Link
-              href={`${langPrefix}/contact`}
-              className="rounded-lg border border-gray-200 px-6 py-3 text-gray-700 transition-colors hover:border-gray-300"
-            >
-              {t("landing.cta.button")}
-            </Link>
+      {/* Hero Section */}
+      <section className="bg-white px-4 pb-16 pt-32 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 text-center">
+            <span className="mb-6 inline-block rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white">
+              Transparent Pricing Built For Business.
+            </span>
+            <h1 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl">
+              Start Free. Get Secure Whistleblowing.
+            </h1>
+            <p className="mx-auto mb-4 max-w-3xl text-xl text-gray-600">
+              7-day free trial • Unlimited reports included
+            </p>
+            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+              All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow.
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-6xl">
+      {/* Trust Indicators */}
+      <section className="border-b border-gray-200 bg-gray-50 px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:gap-12">
+            <div className="flex flex-shrink-0 items-center gap-3 text-center md:text-left">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 sm:h-12 sm:w-12">
+                <CheckCircle className="h-5 w-5 text-white sm:h-7 sm:w-7" />
+              </div>
+              <div>
+                <div className="text-base font-bold text-gray-900 sm:text-lg">7-Day Money-Back Guarantee</div>
+                <div className="text-xs text-gray-600 sm:text-sm">Try risk-free, cancel anytime</div>
+              </div>
+            </div>
+            <div className="flex flex-shrink-0 items-center gap-3 text-center md:text-left">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 sm:h-12 sm:w-12">
+                <CheckCircle className="h-5 w-5 text-white sm:h-7 sm:w-7" />
+              </div>
+              <div>
+                <div className="text-base font-bold text-gray-900 sm:text-lg">Trusted by UK Businesses</div>
+                <div className="text-xs text-gray-600 sm:text-sm">ISO 27001, GDPR, SOX compliant</div>
+              </div>
+            </div>
+            <div className="flex flex-shrink-0 items-center gap-3 text-center md:text-left">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 sm:h-12 sm:w-12">
+                <CheckCircle className="h-5 w-5 text-white sm:h-7 sm:w-7" />
+              </div>
+              <div>
+                <div className="text-base font-bold text-gray-900 sm:text-lg">Enterprise-Grade Security</div>
+                <div className="text-xs text-gray-600 sm:text-sm">ISO 27001, SOC 2 Type II, GDPR compliant</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          {/* Billing Interval Tabs */}
           <div className="mb-8 flex justify-center">
-            <Tabs value={billingInterval} onValueChange={(v) => setBillingInterval(v as "monthly" | "annual")}>
+            <Tabs value={billingInterval} onValueChange={(v) => setBillingInterval(v as "monthly" | "annual")} className="w-auto">
               <TabsList className="grid w-full grid-cols-2">
                 <TabsTrigger value="monthly" className="text-sm sm:text-base">
                   {t("pricing.billingInterval.monthly")}
                 </TabsTrigger>
                 <TabsTrigger value="annual" className="text-sm sm:text-base">
                   {t("pricing.billingInterval.annual")}
-                  <Badge className="ml-2 bg-green-600 text-[10px] text-white">{t("pricing.billingInterval.save")}</Badge>
+                  <Badge className="ml-2 bg-green-600 px-1.5 py-0 text-[10px] text-white">{t("pricing.billingInterval.save")}</Badge>
                 </TabsTrigger>
               </TabsList>
             </Tabs>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
             {plans.map((plan) => (
               <Card
                 key={plan.name}

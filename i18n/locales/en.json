@@ -339,6 +339,11 @@
       "title": "Simple, Transparent Pricing",
       "subtitle": "Choose the plan that's right for your organisation. Start with our seven day free trial and upgrade as you grow."
     },
+    "billingInterval": {
+      "monthly": "Monthly",
+      "annual": "Annual",
+      "save": "Save 17%"
+    },
     "plans": {
       "mostPopular": "Most Popular",
       "perMonth": "/month",
