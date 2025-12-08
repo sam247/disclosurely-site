@@ -1,36 +1,20 @@
-"use client";
+import type { Metadata } from "next";
+import { generatePageMetadata } from "@/lib/seo";
+import HotlineContent from "./HotlineContent";
 
-import React, { useEffect } from "react";
-import Head from "next/head";
-import { CheckCircle } from "lucide-react";
-import I18nProvider from "@/components/I18nProvider";
-import { useTranslation } from "react-i18next";
-import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
-import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
-import { supportedLanguages } from "@/i18n/client";
+export async function generateMetadata(): Promise<Metadata> {
+  return generatePageMetadata({
+    pagePath: "/anonymous-hotline",
+    fallbackTitle: "Anonymous Hotline | Disclosurely",
+    fallbackDescription:
+      "Provide a secure, anonymous whistleblowing hotline with encrypted two-way messaging and audit trails.",
+    keywords: ["anonymous hotline", "whistleblowing hotline", "ethics hotline"],
+  });
+}
 
-type Lang = (typeof supportedLanguages)[number];
-
-function HotlineContent() {
-  const { i18n } = useTranslation();
-  const { currentLanguage } = useLanguageFromUrl();
-  useGeographicalLanguage();
-
-  useEffect(() => {
-    const lang = currentLanguage || "en";
-    if (i18n.language !== lang) i18n.changeLanguage(lang as Lang);
-    if (typeof document !== "undefined") document.documentElement.lang = lang;
-  }, [currentLanguage, i18n]);
-
-  return (
-    <div className="bg-white">
-      <Head>
-        <title>Anonymous Hotline | Disclosurely</title>
-        <meta
-          name="description"
-          content="Provide a secure, anonymous whistleblowing hotline with encrypted two-way messaging and audit trails."
-        />
-      </Head>
+export default function AnonymousHotlinePage() {
+  return <HotlineContent />;
+}
       <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
           <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">

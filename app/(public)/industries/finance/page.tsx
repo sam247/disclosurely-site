@@ -1,36 +1,20 @@
-"use client";
+import type { Metadata } from "next";
+import { generatePageMetadata } from "@/lib/seo";
+import FinanceContent from "./FinanceContent";
 
-import React, { useEffect } from "react";
-import Head from "next/head";
-import { CheckCircle2 } from "lucide-react";
-import I18nProvider from "@/components/I18nProvider";
-import { useTranslation } from "react-i18next";
-import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
-import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
-import { supportedLanguages } from "@/i18n/client";
+export async function generateMetadata(): Promise<Metadata> {
+  return generatePageMetadata({
+    pagePath: "/industries/finance",
+    fallbackTitle: "Financial Services Compliance | Disclosurely",
+    fallbackDescription:
+      "Secure whistleblowing and compliance workflows for banks and financial firms with encryption, audit trails, and SLAs.",
+    keywords: ["financial services compliance", "bank compliance", "AML compliance", "fraud reporting"],
+  });
+}
 
-type Lang = (typeof supportedLanguages)[number];
-
-function FinanceContent() {
-  const { i18n } = useTranslation();
-  const { currentLanguage } = useLanguageFromUrl();
-  useGeographicalLanguage();
-
-  useEffect(() => {
-    const lang = currentLanguage || "en";
-    if (i18n.language !== lang) i18n.changeLanguage(lang as Lang);
-    if (typeof document !== "undefined") document.documentElement.lang = lang;
-  }, [currentLanguage, i18n]);
-
-  return (
-    <div className="bg-white">
-      <Head>
-        <title>Financial Services Compliance | Disclosurely</title>
-        <meta
-          name="description"
-          content="Secure whistleblowing and compliance workflows for banks and financial firms with encryption, audit trails, and SLAs."
-        />
-      </Head>
+export default function FinancePage() {
+  return <FinanceContent />;
+}
       <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">

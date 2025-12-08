@@ -1,44 +1,20 @@
-"use client";
+import type { Metadata } from "next";
+import { generatePageMetadata } from "@/lib/seo";
+import ContactContent from "./ContactContent";
 
-import React, { useEffect } from "react";
-import Head from "next/head";
-import { Mail, Phone, MapPin } from "lucide-react";
+export async function generateMetadata(): Promise<Metadata> {
+  return generatePageMetadata({
+    pagePath: "/contact",
+    fallbackTitle: "Contact Disclosurely",
+    fallbackDescription:
+      "Contact Disclosurely for demos, pricing, and support. Secure whistleblowing and compliance solutions for your organisation.",
+    keywords: ["contact disclosurely", "whistleblowing support", "compliance consultation"],
+  });
+}
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import I18nProvider from "@/components/I18nProvider";
-import { useTranslation } from "react-i18next";
-import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
-import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
-import { supportedLanguages } from "@/i18n/client";
-
-type Lang = (typeof supportedLanguages)[number];
-
-function ContactContent() {
-  const { t, i18n } = useTranslation();
-  const { currentLanguage } = useLanguageFromUrl();
-  useGeographicalLanguage();
-
-  useEffect(() => {
-    const lang = currentLanguage || "en";
-    if (i18n.language !== lang) {
-      i18n.changeLanguage(lang as Lang);
-    }
-    if (typeof document !== "undefined") {
-      document.documentElement.lang = lang;
-    }
-  }, [currentLanguage, i18n]);
-
-  return (
-    <div className="bg-white">
-      <Head>
-        <title>Contact Disclosurely</title>
-        <meta
-          name="description"
-          content="Contact Disclosurely for demos, pricing, and support. Secure whistleblowing and compliance solutions for your organisation."
-        />
-      </Head>
+export default function ContactPage() {
+  return <ContactContent />;
+}
       <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">

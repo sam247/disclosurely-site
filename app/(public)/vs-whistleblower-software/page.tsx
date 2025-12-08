@@ -1,43 +1,20 @@
-"use client";
+import type { Metadata } from "next";
+import { generatePageMetadata } from "@/lib/seo";
+import CompareContent from "./CompareContent";
 
-import React, { useEffect } from "react";
-import Head from "next/head";
-import { CheckCircle2 } from "lucide-react";
-import I18nProvider from "@/components/I18nProvider";
-import { useTranslation } from "react-i18next";
-import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
-import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
-import { supportedLanguages } from "@/i18n/client";
+export async function generateMetadata(): Promise<Metadata> {
+  return generatePageMetadata({
+    pagePath: "/vs-whistleblower-software",
+    fallbackTitle: "Disclosurely vs Whistleblower Software",
+    fallbackDescription:
+      "Compare Disclosurely to traditional whistleblower software: encryption-first, AI automation, Directive-aligned SLAs.",
+    keywords: ["disclosurely vs whistleblower software", "whistleblowing software comparison"],
+  });
+}
 
-type Lang = (typeof supportedLanguages)[number];
-
-function CompareContent() {
-  const { i18n } = useTranslation();
-  const { currentLanguage } = useLanguageFromUrl();
-  useGeographicalLanguage();
-
-  useEffect(() => {
-    const lang = currentLanguage || "en";
-    if (i18n.language !== lang) i18n.changeLanguage(lang as Lang);
-    if (typeof document !== "undefined") document.documentElement.lang = lang;
-  }, [currentLanguage, i18n]);
-
-  const points = [
-    "Encryption-first platform with anonymous two-way messaging",
-    "AI-driven triage, summaries, and workflow automation",
-    "EU Whistleblowing Directive SLAs and reminders built in",
-    "Transparent pricing and rapid onboarding",
-  ];
-
-  return (
-    <div className="bg-white">
-      <Head>
-        <title>Disclosurely vs Whistleblower Software</title>
-        <meta
-          name="description"
-          content="Compare Disclosurely to traditional whistleblower software: encryption-first, AI automation, Directive-aligned SLAs."
-        />
-      </Head>
+export default function VsWhistleblowerSoftwarePage() {
+  return <CompareContent />;
+}
       <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">

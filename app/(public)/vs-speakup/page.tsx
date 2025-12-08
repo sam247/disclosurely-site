@@ -1,43 +1,19 @@
-"use client";
+import type { Metadata } from "next";
+import { generatePageMetadata } from "@/lib/seo";
+import CompareContent from "./CompareContent";
 
-import React, { useEffect } from "react";
-import Head from "next/head";
-import { CheckCircle2 } from "lucide-react";
-import I18nProvider from "@/components/I18nProvider";
-import { useTranslation } from "react-i18next";
-import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
-import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
-import { supportedLanguages } from "@/i18n/client";
+export async function generateMetadata(): Promise<Metadata> {
+  return generatePageMetadata({
+    pagePath: "/vs-speakup",
+    fallbackTitle: "Disclosurely vs SpeakUp",
+    fallbackDescription: "Compare Disclosurely with SpeakUp: encrypted whistleblowing, AI workflows, and fast onboarding.",
+    keywords: ["disclosurely vs speakup", "whistleblowing comparison", "speakup alternative"],
+  });
+}
 
-type Lang = (typeof supportedLanguages)[number];
-
-function CompareContent() {
-  const { i18n } = useTranslation();
-  const { currentLanguage } = useLanguageFromUrl();
-  useGeographicalLanguage();
-
-  useEffect(() => {
-    const lang = currentLanguage || "en";
-    if (i18n.language !== lang) i18n.changeLanguage(lang as Lang);
-    if (typeof document !== "undefined") document.documentElement.lang = lang;
-  }, [currentLanguage, i18n]);
-
-  const advantages = [
-    "End-to-end encryption and anonymous messaging by default",
-    "AI-powered triage and workflow automation",
-    "Transparent pricing with fast onboarding",
-    "Built-in EU Whistleblowing Directive support",
-  ];
-
-  return (
-    <div className="bg-white">
-      <Head>
-        <title>Disclosurely vs SpeakUp</title>
-        <meta
-          name="description"
-          content="Compare Disclosurely with SpeakUp: encrypted whistleblowing, AI workflows, and fast onboarding."
-        />
-      </Head>
+export default function VsSpeakUpPage() {
+  return <CompareContent />;
+}
       <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">

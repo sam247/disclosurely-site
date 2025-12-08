@@ -1,35 +1,19 @@
-"use client";
+import type { Metadata } from "next";
+import { generatePageMetadata } from "@/lib/seo";
+import CookiesContent from "./CookiesContent";
 
-import React, { useEffect } from "react";
-import Head from "next/head";
-import I18nProvider from "@/components/I18nProvider";
-import { useTranslation } from "react-i18next";
-import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
-import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
-import { supportedLanguages } from "@/i18n/client";
+export async function generateMetadata(): Promise<Metadata> {
+  return generatePageMetadata({
+    pagePath: "/cookies",
+    fallbackTitle: "Cookie Policy | Disclosurely",
+    fallbackDescription: "Understand how Disclosurely uses cookies and similar technologies across the platform.",
+    keywords: ["cookie policy", "cookies", "privacy"],
+  });
+}
 
-type Lang = (typeof supportedLanguages)[number];
-
-function CookiesContent() {
-  const { i18n } = useTranslation();
-  const { currentLanguage } = useLanguageFromUrl();
-  useGeographicalLanguage();
-
-  useEffect(() => {
-    const lang = currentLanguage || "en";
-    if (i18n.language !== lang) i18n.changeLanguage(lang as Lang);
-    if (typeof document !== "undefined") document.documentElement.lang = lang;
-  }, [currentLanguage, i18n]);
-
-  return (
-    <div className="bg-white">
-      <Head>
-        <title>Cookie Policy | Disclosurely</title>
-        <meta
-          name="description"
-          content="Understand how Disclosurely uses cookies and similar technologies across the platform."
-        />
-      </Head>
+export default function CookiesPage() {
+  return <CookiesContent />;
+}
       <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
