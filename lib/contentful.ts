@@ -79,6 +79,16 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
     include: 2, // Include linked assets and entries (for featuredImage)
   });
 
+  // Create a map of asset IDs to assets for resolving featured images
+  const assetMap = new Map();
+  if (response.includes?.Asset) {
+    response.includes.Asset.forEach((asset: any) => {
+      if (asset?.sys?.id) {
+        assetMap.set(asset.sys.id, asset);
+      }
+    });
+  }
+
   const posts = response.items
     .filter((item) => {
       // Only include published posts
@@ -103,13 +113,23 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
             }))
         : [];
 
+      // Resolve featured image from includes if it's a link
+      let featuredImage = item.fields.featuredImage as any;
+      if (featuredImage?.sys?.id && !featuredImage.fields) {
+        // If it's just a link reference, resolve it from the asset map
+        const resolvedAsset = assetMap.get(featuredImage.sys.id);
+        if (resolvedAsset) {
+          featuredImage = resolvedAsset;
+        }
+      }
+
       return {
         id: item.sys.id,
         title: item.fields.title,
         slug: item.fields.slug,
         excerpt: item.fields.excerpt,
         content: item.fields.content,
-        featuredImage: item.fields.featuredImage,
+        featuredImage,
         publishDate: item.fields.publishDate,
         seoTitle: item.fields.seoTitle,
         seoDescription: item.fields.seoDescription,
