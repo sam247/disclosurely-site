@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { contentfulClient } from '@/lib/contentful';
 
 export interface Announcement {
   id: string;
@@ -19,35 +18,19 @@ export const useAnnouncement = () => {
 
   useEffect(() => {
     const fetchAnnouncement = async () => {
-      if (!contentfulClient) {
-        console.warn('Contentful client not initialized - CONTENTFUL_DELIVERY_TOKEN missing');
-        setLoading(false);
-        return;
-      }
-
       try {
         setLoading(true);
         setError(null);
 
-        // Fetch published announcements (content type: 'announcement')
-        const response = await contentfulClient.getEntries({
-          content_type: 'announcement',
-          'fields.status': 'published',
-          limit: 1,
-        } as any);
+        // Fetch announcement from API route
+        const response = await fetch('/api/announcement');
+        if (!response.ok) {
+          throw new Error('Failed to fetch announcement');
+        }
 
-        if (response.items.length > 0) {
-          const item = response.items[0];
-          const fields = item.fields as any;
-
-          setAnnouncement({
-            id: item.sys.id,
-            message: fields.message || '',
-            displayOnDashboard: fields.displayOnDashboard || false,
-            displayOnFrontend: fields.displayOnFrontend || false,
-            linkUrl: fields.linkUrl,
-            linkText: fields.linkText,
-          });
+        const data = await response.json();
+        if (data.announcement) {
+          setAnnouncement(data.announcement);
         }
       } catch (err) {
         console.error('Error fetching announcement:', err);
