@@ -17,6 +17,8 @@ import PublicLanguageSelector from "@/components/PublicLanguageSelector";
 import TypingAnimation from "@/components/TypingAnimation";
 import I18nProvider from "@/components/I18nProvider";
 import { supportedLanguages } from "@/i18n/client";
+
+type Lang = (typeof supportedLanguages)[number];
 import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
 import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
 
@@ -58,8 +60,8 @@ function LandingInner() {
 
   useEffect(() => {
     const langSegment = pathname?.split("/")[1];
-    if (langSegment && supportedLanguages.includes(langSegment)) {
-      i18n.changeLanguage(langSegment);
+    if (langSegment && supportedLanguages.includes(langSegment as Lang)) {
+      i18n.changeLanguage(langSegment as Lang);
     } else {
       i18n.changeLanguage("en");
     }
