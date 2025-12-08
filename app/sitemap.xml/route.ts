@@ -12,7 +12,7 @@ type UrlEntry = {
 };
 
 interface BlogEntrySkeleton extends EntrySkeletonType {
-  contentTypeId: 'blogPost';
+  contentTypeId: '9oYANGj5uBRT6UHsl5LxO';
   fields: {
     slug: EntryFields.Symbol;
     publishDate?: EntryFields.Date;
