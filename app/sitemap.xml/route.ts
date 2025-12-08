@@ -48,8 +48,9 @@ const STATIC_ROUTES = [
 const BASE_URL = 'https://disclosurely.com';
 const DOCS_BASE = `${BASE_URL}/docs`;
 
-const contentfulToken = process.env.VITE_CONTENTFUL_DELIVERY_TOKEN;
-const contentfulSpace = process.env.VITE_CONTENTFUL_SPACE_ID || 'rm7hib748uv7';
+// Support both VITE_ prefix (for backward compatibility) and standard Next.js env vars
+const contentfulToken = process.env.CONTENTFUL_DELIVERY_TOKEN || process.env.VITE_CONTENTFUL_DELIVERY_TOKEN;
+const contentfulSpace = process.env.CONTENTFUL_SPACE_ID || process.env.VITE_CONTENTFUL_SPACE_ID || 'rm7hib748uv7';
 
 const client = contentfulToken
   ? createClient({

@@ -1,8 +1,9 @@
 import { createClient, type EntryFields, type EntrySkeletonType } from "contentful";
 import type { Document } from "@contentful/rich-text-types";
 
-const contentfulSpace = process.env.VITE_CONTENTFUL_SPACE_ID || "rm7hib748uv7";
-const contentfulToken = process.env.VITE_CONTENTFUL_DELIVERY_TOKEN;
+// Support both VITE_ prefix (for backward compatibility) and standard Next.js env vars
+const contentfulSpace = process.env.CONTENTFUL_SPACE_ID || process.env.VITE_CONTENTFUL_SPACE_ID || "rm7hib748uv7";
+const contentfulToken = process.env.CONTENTFUL_DELIVERY_TOKEN || process.env.VITE_CONTENTFUL_DELIVERY_TOKEN;
 
 export const contentfulClient = contentfulToken
   ? createClient({
