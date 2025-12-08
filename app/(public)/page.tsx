@@ -11,7 +11,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import AnnouncementBar from "@/components/AnnouncementBar";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
 import TypingAnimation from "@/components/TypingAnimation";
 import I18nProvider from "@/components/I18nProvider";
@@ -181,8 +180,6 @@ function LandingInner() {
 
   return (
     <div className="bg-white">
-      <AnnouncementBar />
-
       {/* Hero */}
       <section className="px-4 pb-20 pt-[100px] sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl text-center">
