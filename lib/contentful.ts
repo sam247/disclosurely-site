@@ -26,6 +26,17 @@ export type Author = {
   email?: string;
 };
 
+export type AuthorSkeleton = EntrySkeletonType<{
+  name: EntryFields.Text;
+  email?: EntryFields.Text;
+}>;
+
+export type CategorySkeleton = EntrySkeletonType<{
+  name: EntryFields.Text;
+  slug: EntryFields.Text;
+  isActive?: EntryFields.Boolean;
+}>;
+
 export type BlogPostSkeleton = EntrySkeletonType<{
   title: EntryFields.Text;
   slug: EntryFields.Text;
@@ -38,8 +49,8 @@ export type BlogPostSkeleton = EntrySkeletonType<{
   tags?: EntryFields.Symbol[];
   readingTime?: EntryFields.Number;
   status?: EntryFields.Text;
-  author?: EntryFields.EntryLink<Author>;
-  categories?: EntryFields.Array<EntryFields.EntryLink<Category>>;
+  author?: EntryFields.EntryLink<AuthorSkeleton>;
+  categories?: EntryFields.Array<EntryFields.EntryLink<CategorySkeleton>>;
 }>;
 
 export type BlogPost = {
