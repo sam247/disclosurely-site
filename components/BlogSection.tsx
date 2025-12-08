@@ -121,8 +121,12 @@ const BlogSection = () => {
                 )}
                 <CardHeader>
                   <div className="mb-2 flex items-center gap-2 text-sm text-gray-500">
-                    <Calendar className="h-4 w-4" />
-                    <span>{formatDate(post.publishDate)}</span>
+                    {post.publishDate && (
+                      <>
+                        <Calendar className="h-4 w-4" />
+                        <span>{formatDate(post.publishDate)}</span>
+                      </>
+                    )}
                     {post.readingTime && (
                       <>
                         <span>•</span>
