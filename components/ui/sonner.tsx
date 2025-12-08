@@ -1,29 +1,18 @@
-import { useTheme } from "next-themes"
-import { Toaster as Sonner, toast } from "sonner"
+import * as React from "react"
 
-type ToasterProps = React.ComponentProps<typeof Sonner>
-
-const Toaster = ({ ...props }: ToasterProps) => {
-  const { theme = "system" } = useTheme()
-
-  return (
-    <Sonner
-      theme={theme as ToasterProps["theme"]}
-      className="toaster group"
-      toastOptions={{
-        classNames: {
-          toast:
-            "group toast group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg",
-          description: "group-[.toast]:text-muted-foreground",
-          actionButton:
-            "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground",
-          cancelButton:
-            "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
-        },
-      }}
-      {...props}
-    />
-  )
+type ToasterProps = React.HTMLAttributes<HTMLDivElement> & {
+  theme?: "light" | "dark" | "system"
 }
 
-export { Toaster, toast }
+const Toaster = ({ theme: _theme = "system", ...props }: ToasterProps) => {
+  return <div className="toaster group" {...props} />
+}
+
+export const toast = {
+  success: (message: string) => console.log("Toast success:", message),
+  error: (message: string) => console.error("Toast error:", message),
+  info: (message: string) => console.info("Toast info:", message),
+  warning: (message: string) => console.warn("Toast warning:", message),
+}
+
+export { Toaster }
