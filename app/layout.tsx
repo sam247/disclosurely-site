@@ -51,7 +51,8 @@ export const metadata: Metadata = {
 async function getPreferredLang() {
   const headerList = await headers();
   const headerLang = headerList.get("x-lang");
-  const cookieLang = cookies().get("lang")?.value;
+  const cookieStore = await cookies();
+  const cookieLang = cookieStore.get("lang")?.value;
 
   const lang = headerLang || cookieLang;
   return supportedLanguages.includes((lang as any) || "") ? (lang as typeof supportedLanguages[number]) : "en";
