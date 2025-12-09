@@ -1,4 +1,4 @@
-// Nextra 4.x automatically handles routing for docs
-// This file is required for the catch-all route
-export { default } from 'nextra/catch-all';
+// Nextra 4.x App Router page
+// Nextra handles routing automatically through next.config.mjs
+export { default } from 'nextra/pages';
 
