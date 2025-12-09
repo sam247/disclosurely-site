@@ -318,6 +318,10 @@ function LandingInner() {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
+                <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-blue-700">
+                  <ShieldCheck className="h-4 w-4" />
+                  <span className="text-sm font-medium">Branding &amp; Identity</span>
+                </div>
                 <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">Custom Branding</h2>
                 <p className="mb-6 text-lg text-gray-600">
                   With our custom domain support, logo integration and branded portals, your reporting submission system looks and feels like a native part of your infrastructure.
@@ -350,12 +354,13 @@ function LandingInner() {
             </div>
             <div className="mb-8 flex justify-center">
               <Tabs value={billingInterval} onValueChange={(v) => setBillingInterval(v as "monthly" | "annual")} className="w-auto">
-                <TabsList className="grid w-full grid-cols-2">
-                  <TabsTrigger value="monthly" className="text-sm sm:text-base">
+                <TabsList className="grid w-full grid-cols-2 gap-2 rounded-full bg-gray-100 p-1">
+                  <TabsTrigger value="monthly" className="h-11 rounded-full text-sm sm:text-base flex items-center justify-center">
                     Monthly
                   </TabsTrigger>
-                  <TabsTrigger value="annual" className="text-sm sm:text-base">
-                    Annual <Badge className="ml-2 bg-green-600 px-1.5 py-0 text-[10px] text-white">Save 17%</Badge>
+                  <TabsTrigger value="annual" className="h-11 rounded-full text-sm sm:text-base flex items-center justify-center gap-2">
+                    <span>Annual</span>
+                    <Badge className="bg-green-600 px-1.5 py-0 text-[10px] text-white">Save 17%</Badge>
                   </TabsTrigger>
                 </TabsList>
               </Tabs>
