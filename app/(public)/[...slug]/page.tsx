@@ -160,18 +160,6 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { slug?: string[] } }) {
-  const path = '/' + (params.slug?.join('/') ?? '');
-  const page = pages[path];
-
-  if (!page) return {};
-
-  return {
-    title: `${page.title} | Disclosurely`,
-    description: page.subtitle,
-  };
-}
-
 export default function MarketingPage({ params }: { params: { slug?: string[] } }) {
   const path = '/' + (params.slug?.join('/') ?? '');
   const page = pages[path];
