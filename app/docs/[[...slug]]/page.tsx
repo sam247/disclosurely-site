@@ -6,11 +6,11 @@ export const generateStaticParams = generateStaticParamsFor('slug');
 export default async function DocsPage(props: { params: Promise<{ slug?: string[] }> }) {
   const params = await props.params;
   const result = await importPage(params.slug || []);
-  const { default: MDXContent, toc, metadata } = result;
+  const { default: MDXContent, toc, metadata, sourceCode } = result;
   const Wrapper = useMDXComponents().wrapper;
   
   return (
-    <Wrapper toc={toc} metadata={metadata}>
+    <Wrapper toc={toc} metadata={metadata} sourceCode={sourceCode}>
       <MDXContent {...props} params={params} />
     </Wrapper>
   );
