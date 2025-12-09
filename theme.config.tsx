@@ -5,7 +5,7 @@ const config = {
   project: {
     link: 'https://github.com/sam247/disclosurely-site',
   },
-  docsRepositoryBase: 'https://github.com/sam247/disclosurely-site/tree/main/docs',
+  docsRepositoryBase: 'https://github.com/sam247/disclosurely-site/tree/main/content',
   footer: {
     text: 'Disclosurely Documentation © 2025',
   },

@@ -3,7 +3,7 @@ import nextra from 'nextra';
 const withNextra = nextra({
   // Nextra 4.x configuration
   // Theme is auto-detected from nextra-theme-docs package
-  contentDir: 'docs', // Use docs directory instead of default 'content'
+  // Content directory defaults to 'content' at root level
 });
 
 /** @type {import('next').NextConfig} */
