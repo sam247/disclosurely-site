@@ -15,6 +15,10 @@ const nextConfig = {
       'next-mdx-import-source-file': './mdx-components.tsx',
     },
   },
+  // Force Webpack instead of Turbopack for production
+  experimental: {
+    useBuildWorker: false,
+  },
 };
 
 export default withNextra(nextConfig);
