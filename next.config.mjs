@@ -10,11 +10,9 @@ const withNextra = nextra({
 const nextConfig = {
   reactStrictMode: true,
   // Configure Turbopack to resolve MDX import source
-  experimental: {
-    turbo: {
-      resolveAlias: {
-        'next-mdx-import-source-file': './mdx-components.tsx',
-      },
+  turbopack: {
+    resolveAlias: {
+      'next-mdx-import-source-file': './mdx-components.tsx',
     },
   },
 };
