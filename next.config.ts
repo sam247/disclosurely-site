@@ -1,13 +1,12 @@
-import type { NextConfig } from "next";
-import nextra from "nextra";
-
-const withNextra = nextra({
+// Use CommonJS style to avoid config validation issues with Nextra on Vercel
+const withNextra = require("nextra")({
   theme: "nextra-theme-docs",
   themeConfig: "./theme.config.tsx",
 });
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
 };
 
-export default withNextra(nextConfig);
+module.exports = withNextra(nextConfig);
