@@ -11,32 +11,15 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'assets.ctfassets.net',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
     ],
   },
   async redirects() {
     return [
-      // Handle legacy VitePress-style .html routes
-      {
-        source: '/docs/index.html',
-        destination: '/docs',
-        permanent: true,
-      },
-      {
-        source: '/docs/:path*.html',
-        destination: '/docs/:path*',
-        permanent: true,
-      },
-      // Handle trailing "index" paths
-      {
-        source: '/docs/index',
-        destination: '/docs',
-        permanent: true,
-      },
-      {
-        source: '/docs/:path*/index',
-        destination: '/docs/:path*',
-        permanent: true,
-      },
+      // No legacy redirects needed; keep sitemap and links canonical
     ];
   },
 };
