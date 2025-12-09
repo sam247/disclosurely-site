@@ -48,20 +48,21 @@ export const metadata: Metadata = {
   themeColor: "#2563eb",
 };
 
-function getPreferredLang() {
-  const headerLang = headers().get("x-lang");
+async function getPreferredLang() {
+  const headerList = await headers();
+  const headerLang = headerList.get("x-lang");
   const cookieLang = cookies().get("lang")?.value;
 
   const lang = headerLang || cookieLang;
   return supportedLanguages.includes((lang as any) || "") ? (lang as typeof supportedLanguages[number]) : "en";
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const lang = getPreferredLang();
+  const lang = await getPreferredLang();
 
   return (
     <html lang={lang}>
