@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CheckCircle2 } from 'lucide-react';
+import type { Metadata } from 'next';
+import { generateHreflangAlternates } from '@/lib/hreflang';
 
 type PageConfig = {
   title: string;
@@ -113,6 +115,42 @@ const pages: Record<string, PageConfig> = {
     highlights: ['Anonymous messaging', 'Secure intake', 'Multi-channel options'],
   },
 };
+
+export function generateMetadata({ params }: { params: { slug?: string[] } }): Metadata {
+  const path = '/' + (params.slug?.join('/') ?? '');
+  const page = pages[path];
+
+  if (!page) {
+    return {
+      title: 'Disclosurely',
+      description: 'Disclosurely whistleblowing and compliance platform.',
+    };
+  }
+
+  const canonical = `https://disclosurely.com${path}`;
+  const alternates = generateHreflangAlternates(path);
+
+  return {
+    title: `${page.title} | Disclosurely`,
+    description: page.subtitle,
+    alternates: {
+      canonical,
+      languages: Object.fromEntries(alternates.map((alt) => [alt.hreflang, alt.url])),
+    },
+    openGraph: {
+      title: page.title,
+      description: page.subtitle,
+      url: canonical,
+      siteName: 'Disclosurely',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: page.title,
+      description: page.subtitle,
+    },
+  };
+}
 
 export const dynamicParams = false;
 

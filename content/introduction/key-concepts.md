@@ -133,7 +133,7 @@ Read-only access:
 
 ### Team Invitations
 
-[Adding team members](/admin/team-management) requires sending an invitation:
+[Adding team members](/docs/admin/team-management) requires sending an invitation:
 
 1. Admin or Org Admin sends invitation by email
 2. Invitation includes unique token and expires in 7 days
@@ -456,4 +456,4 @@ Real-time in-app notifications for:
 **Next Steps:**
 - [Getting Started Guide](/)
 - [Platform Overview](/introduction/platform-overview)
-- [Initial Setup](/admin/initial-setup)
+- [Initial Setup](/docs/admin/initial-setup)

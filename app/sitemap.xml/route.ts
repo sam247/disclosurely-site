@@ -71,36 +71,21 @@ function generateStaticEntries(now: string): UrlEntry[] {
     const normalizedPath = normalizePath(route.path);
     const basePath = normalizedPath === '' ? '' : normalizedPath;
 
+    const alternates = [
+      { hreflang: 'x-default', href: `${BASE_URL}${basePath}` },
+      { hreflang: 'en', href: `${BASE_URL}${basePath}` },
+      ...LANGUAGES.filter((lang) => lang !== 'en').map((lang) => ({
+        hreflang: lang,
+        href: `${BASE_URL}/${lang}${basePath}`,
+      })),
+    ];
+
     entries.push({
       loc: `${BASE_URL}${basePath}`,
       lastmod: now,
       changefreq: route.changefreq,
       priority: route.priority,
-      alternates: [
-        { hreflang: 'x-default', href: `${BASE_URL}${basePath}` },
-        { hreflang: 'en', href: `${BASE_URL}${basePath}` },
-        ...LANGUAGES.filter((lang) => lang !== 'en').map((lang) => ({
-          hreflang: lang,
-          href: `${BASE_URL}/${lang}${basePath}`,
-        })),
-      ],
-    });
-
-    LANGUAGES.filter((lang) => lang !== 'en').forEach((lang) => {
-      entries.push({
-        loc: `${BASE_URL}/${lang}${basePath}`,
-        lastmod: now,
-        changefreq: route.changefreq,
-        priority: (parseFloat(route.priority) * 0.9).toFixed(1),
-        alternates: [
-          { hreflang: 'x-default', href: `${BASE_URL}${basePath}` },
-          { hreflang: 'en', href: `${BASE_URL}${basePath}` },
-          ...LANGUAGES.filter((l) => l !== 'en').map((l) => ({
-            hreflang: l,
-            href: `${BASE_URL}/${l}${basePath}`,
-          })),
-        ],
-      });
+      alternates,
     });
   });
 
@@ -144,12 +129,22 @@ async function fetchBlogEntries(now: string): Promise<UrlEntry[]> {
 }
 
 async function generateDocsEntries(now: string): Promise<UrlEntry[]> {
+  const rootAlternates = [
+    { hreflang: 'x-default', href: DOCS_BASE },
+    { hreflang: 'en', href: DOCS_BASE },
+    ...LANGUAGES.filter((lang) => lang !== 'en').map((lang) => ({
+      hreflang: lang,
+      href: `${BASE_URL}/${lang}/docs`,
+    })),
+  ];
+
   const entries: UrlEntry[] = [
     {
       loc: DOCS_BASE,
       lastmod: now,
       changefreq: 'weekly',
       priority: '0.9',
+      alternates: rootAlternates,
     },
   ];
 
@@ -167,11 +162,21 @@ async function generateDocsEntries(now: string): Promise<UrlEntry[]> {
           item.name === 'index.md' ? parts : nextParts;
         const urlPath = slugParts.length ? `/${slugParts.join('/')}` : '';
 
+        const alternates = [
+          { hreflang: 'x-default', href: `${DOCS_BASE}${urlPath}` },
+          { hreflang: 'en', href: `${DOCS_BASE}${urlPath}` },
+          ...LANGUAGES.filter((lang) => lang !== 'en').map((lang) => ({
+            hreflang: lang,
+            href: `${BASE_URL}/${lang}/docs${urlPath}`,
+          })),
+        ];
+
         entries.push({
           loc: `${DOCS_BASE}${urlPath}`,
           lastmod: now,
           changefreq: 'monthly',
           priority: '0.7',
+          alternates,
         });
       }
     }

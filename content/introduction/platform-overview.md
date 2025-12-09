@@ -236,9 +236,9 @@ All customer data is stored securely in ISO 27001-certified data centers. We off
 Ready to get started with Disclosurely? Here's what to do next:
 
 1. **[Sign Up](https://disclosurely.com)** - Create your free account
-2. **[Initial Setup](/admin/initial-setup)** - Configure your organization
-3. **[Invite Your Team](/admin/team-management)** - Add team members
-4. **[Customize Branding](/admin/custom-branding)** - Make it yours
+2. **[Initial Setup](/docs/admin/initial-setup)** - Configure your organization
+3. **[Invite Your Team](/docs/admin/team-management)** - Add team members
+4. **[Customize Branding](/docs/admin/custom-branding)** - Make it yours
 5. **[Launch Reporting](/reporting/how-to-submit)** - Go live with secure reporting
 
 ## Support & Resources
@@ -254,5 +254,5 @@ Need help? We're here for you:
 
 **Next Steps:**
 - [Understanding Key Concepts](/introduction/key-concepts)
-- [Initial Setup Guide](/admin/initial-setup)
+- [Initial Setup Guide](/docs/admin/initial-setup)
 - [Platform Security](/security/encryption)
