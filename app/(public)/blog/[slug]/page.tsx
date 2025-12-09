@@ -43,7 +43,9 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
   const content = post.content as Document | undefined;
   const imageUrl = post.featuredImage
-    ? `https:${post.featuredImage}`
+    ? post.featuredImage.startsWith("http")
+      ? post.featuredImage
+      : `https:${post.featuredImage}`
     : null;
 
   // Create a map of asset IDs to assets for resolving embedded assets
