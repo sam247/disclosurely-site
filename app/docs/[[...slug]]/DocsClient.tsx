@@ -21,8 +21,8 @@ function slugify(text: string) {
   return text
     .toLowerCase()
     .trim()
-    .replace(/[^a-z0-9\\s-]/g, '')
-    .replace(/\\s+/g, '-')
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-')
     .replace(/-+/g, '-');
 }
 
@@ -120,7 +120,7 @@ export default function DocsClient({ doc, navigation, currentSlug, prevPage, nex
     const lines = doc.content.split('\n');
     const items: { id: string; text: string; level: number }[] = [];
     lines.forEach((line) => {
-      const match = /^(#{2,3})\\s+(.*)$/.exec(line.trim());
+      const match = /^(#{1,3})\s+(.*)$/.exec(line.trim());
       if (match) {
         const level = match[1].length;
         const text = match[2].trim();
