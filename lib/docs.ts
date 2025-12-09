@@ -17,6 +17,16 @@ export interface DocNavItem {
   children?: DocNavItem[];
 }
 
+// Prefix internal links in markdown to include /docs when missing
+function normalizeDocLinks(markdown: string): string {
+  let output = markdown;
+  // Markdown links: [text](/path) -> [text](/docs/path) when not already /docs/
+  output = output.replace(/\]\(\/(?!docs\/|#|\))/g, '](\/docs/');
+  // HTML anchors: href="/path" -> href="/docs/path" when not already /docs/
+  output = output.replace(/href="\/(?!docs\/)/g, 'href="/docs/');
+  return output;
+}
+
 // Get all markdown files recursively
 function getMarkdownFiles(dir: string, basePath: string[] = []): string[][] {
   const files: string[][] = [];
@@ -61,12 +71,13 @@ export function getDocBySlug(slug: string[]): DocPage | null {
   
   const fileContent = fs.readFileSync(filePath, 'utf-8');
   const { data, content } = matter(fileContent);
+  const normalizedContent = normalizeDocLinks(content);
   
   return {
     slug,
     title: data.title || slug[slug.length - 1] || 'Documentation',
     description: data.description,
-    content,
+    content: normalizedContent,
   };
 }
 
