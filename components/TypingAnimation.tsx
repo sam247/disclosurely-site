@@ -21,6 +21,11 @@ export default function TypingAnimation({
   const [isPaused, setIsPaused] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Prevent layout shift by reserving space for the longest phrase
+  const longestPhraseLength = useRef(
+    phrases.reduce((max, p) => Math.max(max, p.length), 0)
+  ).current;
+
   useEffect(() => {
     const currentPhrase = phrases[phraseIndex] || "";
     if (!currentPhrase) return;
@@ -71,6 +76,13 @@ export default function TypingAnimation({
     };
   }, [display, isDeleting, isPaused, phrases, phraseIndex, typingSpeed, deletingSpeed, pauseDuration]);
 
-  return <span>{display}</span>;
+  return (
+    <span
+      className="inline-block"
+      style={{ minWidth: `${Math.max(longestPhraseLength, 1)}ch` }}
+    >
+      {display || "\u00a0" /* keep line height during clear */}
+    </span>
+  );
 }
 
