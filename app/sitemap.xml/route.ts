@@ -153,28 +153,35 @@ async function generateDocsEntries(now: string): Promise<UrlEntry[]> {
     },
   ];
 
+  async function walkDocs(dir: string, parts: string[] = []) {
+    const items = await fs.readdir(dir, { withFileTypes: true });
+    for (const item of items) {
+      if (item.name.startsWith('_')) continue;
+      const nextParts = [...parts, item.name.replace('.md', '')];
+      const fullPath = path.join(dir, item.name);
+
+      if (item.isDirectory()) {
+        await walkDocs(fullPath, nextParts);
+      } else if (item.isFile() && item.name.endsWith('.md')) {
+        const slugParts =
+          item.name === 'index.md' ? parts : nextParts;
+        const urlPath = slugParts.length ? `/${slugParts.join('/')}` : '';
+
+        entries.push({
+          loc: `${DOCS_BASE}${urlPath}`,
+          lastmod: now,
+          changefreq: 'monthly',
+          priority: '0.7',
+        });
+      }
+    }
+  }
+
   try {
-    const hashmapPath = path.join(process.cwd(), 'public', 'docs', 'hashmap.json');
-    const raw = await fs.readFile(hashmapPath, 'utf-8');
-    const map = JSON.parse(raw) as Record<string, string>;
-
-    Object.keys(map).forEach((key) => {
-      const clean = key.replace('.md', '');
-      if (clean === 'index') return;
-      const parts = clean.split('_');
-      const section = parts.shift() || '';
-      const slug = parts.join('_');
-      const urlPath = slug ? `/${section}/${slug}` : `/${section}`;
-
-      entries.push({
-        loc: `${DOCS_BASE}${urlPath}`,
-        lastmod: now,
-        changefreq: 'monthly',
-        priority: '0.7',
-      });
-    });
+    const contentDir = path.join(process.cwd(), 'content');
+    await walkDocs(contentDir);
   } catch (error) {
-    console.error('Error reading docs hashmap for sitemap:', error);
+    console.error('Error reading docs content for sitemap:', error);
   }
 
   return entries;

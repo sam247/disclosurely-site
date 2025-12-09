@@ -6,6 +6,8 @@ import remarkGfm from 'remark-gfm';
 import { getAllDocSlugs, getDocBySlug, getDocsNavigation, DocNavItem } from '@/lib/docs';
 import DocsClient from './DocsClient';
 
+const SITE_URL = 'https://disclosurely.com';
+
 export async function generateStaticParams() {
   const slugs = getAllDocSlugs();
   return slugs.map((slug) => ({ slug }));
@@ -22,6 +24,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug?: st
   return {
     title: `${doc.title} | Disclosurely Docs`,
     description: doc.description,
+    alternates: {
+      canonical: `${SITE_URL}/docs${doc.slug.length ? `/${doc.slug.join('/')}` : ''}`,
+    },
   };
 }
 
@@ -64,6 +69,7 @@ export default async function DocsPage({ params }: { params: Promise<{ slug?: st
       currentSlug={currentSlug}
       prevPage={prevPage}
       nextPage={nextPage}
+      flatNav={flatNav}
     />
   );
 }
