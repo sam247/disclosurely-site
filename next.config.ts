@@ -1,5 +1,7 @@
-// Use CommonJS style to avoid config validation issues with Nextra on Vercel
-const withNextra = require("nextra")({
+// CommonJS wrapper with fallback for default export to avoid require(...) issues on Vercel
+const nextra = require("nextra");
+const nextraLoader = nextra.default || nextra;
+const withNextra = nextraLoader({
   theme: "nextra-theme-docs",
   themeConfig: "./theme.config.tsx",
 });
