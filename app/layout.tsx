@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { cookies, headers } from "next/headers";
+import { Analytics } from "@vercel/analytics/next";
 
 import { supportedLanguages } from "@/lib/hreflang";
 import "./globals.css";
@@ -64,7 +65,10 @@ export default function RootLayout({
 
   return (
     <html lang={lang}>
-      <body className="min-h-screen bg-background text-foreground antialiased">{children}</body>
+      <body className="min-h-screen bg-background text-foreground antialiased">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
