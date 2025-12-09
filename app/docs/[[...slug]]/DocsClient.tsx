@@ -114,8 +114,8 @@ export default function DocsClient({ doc, navigation, currentSlug, prevPage, nex
                 <Image
                   src={darkMode ? '/docs-logo-dark.png' : '/docs-logo-light.png'}
                   alt="Disclosurely"
-                  width={150}
-                  height={150}
+                  width={200}
+                  height={200}
                   className="rounded"
                 />
               </Link>
@@ -257,8 +257,8 @@ export default function DocsClient({ doc, navigation, currentSlug, prevPage, nex
               <Image
                 src={darkMode ? '/docs-logo-dark.png' : '/docs-logo-light.png'}
                 alt="Disclosurely"
-                width={100}
-                height={100}
+                width={150}
+                height={150}
                 className="rounded"
               />
               <span className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
