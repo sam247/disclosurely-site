@@ -179,6 +179,7 @@
         "Proactive Risk Detection",
         "Trust-First Technology"
       ],
+      "badge": "Military Grade AES-GCM Encryption",
       "subtitle": "Disclosurely helps compliance teams stay ahead by transforming ethics and compliance into a proactive advantage—building a culture of integrity, simplifying workflows, and reducing organisational risk.",
       "startFreeTrial": "Start Free Trial",
       "viewPricing": "View Pricing"
@@ -402,6 +403,7 @@
       "customDomain": "1 custom domain",
       "cname": "CNAME configuration",
       "workflows": "Automated workflows",
+      "multipleCustomDomains": "Multiple custom domains",
       "teamManagement": "Unlimited team members",
       "prioritySupport": "Priority support",
       "dedicatedSupport": "Dedicated support",

@@ -188,7 +188,7 @@ function LandingInner() {
             <div className="mb-6 flex justify-center">
               <div className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-white">
                 <ShieldCheck className="h-5 w-5" />
-                <span className="text-xs font-medium">Military Grade AES-GCM Encryption</span>
+                <span className="text-xs font-medium">{t("landing.hero.badge")}</span>
               </div>
             </div>
             <h1 className="mb-6 text-3xl font-bold text-gray-900 sm:text-5xl">
@@ -354,13 +354,13 @@ function LandingInner() {
             </div>
             <div className="mb-8 flex justify-center">
               <Tabs value={billingInterval} onValueChange={(v) => setBillingInterval(v as "monthly" | "annual")} className="w-auto">
-                <TabsList className="grid w-full grid-cols-2 gap-2 rounded-full bg-gray-100 p-1">
-                  <TabsTrigger value="monthly" className="h-11 rounded-full text-sm sm:text-base flex items-center justify-center">
+                <TabsList className="inline-flex items-center gap-2 rounded-full bg-gray-100 p-1 shadow-sm">
+                  <TabsTrigger value="monthly" className="flex h-11 items-center justify-center rounded-full px-5 text-sm sm:text-base">
                     Monthly
                   </TabsTrigger>
-                  <TabsTrigger value="annual" className="h-11 rounded-full text-sm sm:text-base flex items-center justify-center gap-2">
+                  <TabsTrigger value="annual" className="flex h-11 items-center justify-center gap-2 rounded-full px-5 text-sm sm:text-base">
                     <span>Annual</span>
-                    <Badge className="bg-green-600 px-1.5 py-0 text-[10px] text-white">Save 17%</Badge>
+                    <Badge className="rounded-full bg-green-600 px-2 py-1 text-[11px] font-semibold leading-none text-white">Save 17%</Badge>
                   </TabsTrigger>
                 </TabsList>
               </Tabs>

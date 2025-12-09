@@ -82,7 +82,7 @@ function PricingContent() {
         highlights: [
           t("pricing.features.everythingPro"),
           t("pricing.features.teamManagement"),
-          "Multiple custom domains",
+          t("pricing.features.multipleCustomDomains"),
           t("pricing.features.dedicatedSupport"),
           t("pricing.features.slaGuarantee"),
           t("pricing.features.customIntegrations"),
