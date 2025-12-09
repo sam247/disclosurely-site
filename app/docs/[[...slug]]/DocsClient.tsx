@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { Moon, Sun, ChevronLeft, ChevronRight, Menu, X, Search } from 'lucide-react';
+import { Moon, Sun, ChevronLeft, ChevronRight, Menu, X } from 'lucide-react';
 import { DocNavItem, DocPage } from '@/lib/docs';
 
 interface DocsClientProps {
@@ -61,7 +61,7 @@ function NavSection({ item, currentSlug, darkMode }: { item: DocNavItem; current
       }`}>
         {item.title}
       </h3>
-      <ul className="space-y-1">
+      <ul className="space-y-1 pl-3">
         {item.children!.map((child) => (
           <NavItem key={child.slug.join('/')} item={child} currentSlug={currentSlug} darkMode={darkMode} />
         ))}
@@ -112,13 +112,12 @@ export default function DocsClient({ doc, navigation, currentSlug, prevPage, nex
               </button>
               <Link href="/docs" className="flex items-center gap-3">
                 <Image
-                  src={darkMode ? '/docs-logo-light.png' : '/docs-logo-dark.png'}
+                  src={darkMode ? '/docs-logo-dark.png' : '/docs-logo-light.png'}
                   alt="Disclosurely"
-                  width={32}
-                  height={32}
+                  width={40}
+                  height={40}
                   className="rounded"
                 />
-                <span className="font-semibold text-lg hidden sm:block">Documentation</span>
               </Link>
             </div>
             
@@ -256,10 +255,10 @@ export default function DocsClient({ doc, navigation, currentSlug, prevPage, nex
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-3">
               <Image
-                src={darkMode ? '/docs-logo-light.png' : '/docs-logo-dark.png'}
+                src={darkMode ? '/docs-logo-dark.png' : '/docs-logo-light.png'}
                 alt="Disclosurely"
-                width={24}
-                height={24}
+                width={32}
+                height={32}
                 className="rounded"
               />
               <span className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
