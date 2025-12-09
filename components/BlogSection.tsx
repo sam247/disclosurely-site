@@ -53,8 +53,18 @@ const BlogSection = () => {
   };
 
   const getFeaturedImageUrl = (post: BlogPost): string | null => {
-    if (post.featuredImage?.fields?.file?.url) {
-      return `https:${post.featuredImage.fields.file.url}`;
+    if (typeof post.featuredImage === 'string') {
+      // If it's already a URL string, add https: prefix if needed
+      return post.featuredImage.startsWith('http') 
+        ? post.featuredImage 
+        : `https:${post.featuredImage}`;
+    }
+    // Handle legacy AssetWithFile format if it exists
+    if (post.featuredImage && typeof post.featuredImage === 'object' && 'fields' in post.featuredImage) {
+      const asset = post.featuredImage as any;
+      if (asset.fields?.file?.url) {
+        return `https:${asset.fields.file.url}`;
+      }
     }
     return null;
   };
