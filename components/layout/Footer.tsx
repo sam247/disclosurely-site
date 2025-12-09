@@ -95,19 +95,9 @@ export function Footer() {
             <h3 className="mb-4 font-semibold">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <Link href={`${langPrefix}/faq`} className="text-gray-400 transition-colors hover:text-white">
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="https://docs.disclosurely.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 transition-colors hover:text-white"
-                >
+                <Link href="/docs" className="text-gray-400 transition-colors hover:text-white">
                   Documentation
-                </a>
+                </Link>
               </li>
               <li>
                 <Link href={`${langPrefix}/security`} className="text-gray-400 transition-colors hover:text-white">

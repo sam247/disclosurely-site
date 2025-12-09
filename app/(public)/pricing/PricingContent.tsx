@@ -113,18 +113,12 @@ function PricingContent() {
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               {t("pricing.hero.subtitle2")}
             </p>
-            <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <div className="mt-6 flex flex-col items-center justify-center">
               <Link
                 href="https://app.disclosurely.com/auth/signup"
                 className="rounded-lg bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700"
               >
                 {t("landing.hero.startFreeTrial")}
-              </Link>
-              <Link
-                href={`${langPrefix}/contact`}
-                className="rounded-lg border border-gray-200 px-6 py-3 text-gray-700 transition-colors hover:border-gray-300"
-              >
-                {t("landing.cta.button")}
               </Link>
             </div>
           </div>
