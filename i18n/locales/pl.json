@@ -247,77 +247,10 @@
       "join": "Dołącz do organizacji na całym świecie, które ufają Disclosurely.",
       "startTrial": "Rozpocznij Darmowy Test",
       "contactSales": "Skontaktuj się z Działem Sprzedaży"
-    }
-  },
-  "privacy": {
-    "meta": {
-      "title": "Polityka Prywatności - Disclosurely",
-      "description": "Dowiedz się, jak chronimy Twoje dane osobowe i szanujemy Twoją prywatność."
     },
-    "hero": {
-      "title": "Polityka Prywatności",
-      "description": "Dowiedz się, jak chronimy Twoje dane osobowe i szanujemy Twoją prywatność."
-    }
-  },
-  "terms": {
-    "meta": {
-      "title": "Regulamin - Disclosurely",
-      "description": "Prosimy o uważne przeczytanie niniejszych warunków przed skorzystaniem z naszych usług."
-    },
-    "hero": {
-      "title": "Regulamin",
-      "description": "Prosimy o uważne przeczytanie niniejszych warunków przed skorzystaniem z naszych usług."
-    }
-  },
-  "contact": {
-    "hero": {
-      "title": "Skontaktuj się z Naszym Działem Sprzedaży",
-      "description": "Skontaktuj się z nami, a chętnie pomożemy odpowiedzieć na wszelkie pytania dotyczące Disclosurely."
-    },
-    "info": {
-      "title": "Informacje Kontaktowe",
-      "description": "Skontaktuj się z nami, a chętnie pomożemy odpowiedzieć na wszelkie pytania dotyczące Disclosurely.",
-      "email": {
-        "title": "E-mail",
-        "response": "Odpowiadamy w ciągu 24 godzin"
-      },
-      "phone": {
-        "title": "Telefon",
-        "number": "+44 7123 456789",
-        "hours": "Pn-Pt, 9-17 GMT"
-      },
-      "address": {
-        "title": "Adres",
-        "line1": "Londyn",
-        "line2": "Wielka Brytania",
-        "line3": ""
-      },
-      "enterprise": {
-        "title": "Rozwiązania Korporacyjne",
-        "description": "Potrzebujesz rozwiązania na miarę? Skontaktuj się z naszym zespołem Enterprise w sprawie niestandardowych cen i wsparcia w implementacji."
-      }
-    },
-    "form": {
-      "title": "Poproś o Demo",
-      "description": "Wypełnij formularz poniżej, a nasz zespół skontaktuje się z Tobą w ciągu 24 godzin, aby zaplanować spersonalizowane demo.",
-      "name": {
-        "label": "Imię i Nazwisko",
-        "placeholder": "Twoje pełne imię i nazwisko"
-      },
-      "email": {
-        "label": "E-mail",
-        "placeholder": "twoj@email.pl"
-      },
-      "company": {
-        "label": "Firma",
-        "placeholder": "Nazwa Twojej firmy"
-      },
-      "message": {
-        "label": "Wiadomość",
-        "placeholder": "Opowiedz nam o swoich wymaganiach..."
-      },
-      "submit": "Wyślij Zapytanie",
-      "privacy": "Przesyłając ten formularz, zgadzasz się z naszą Polityką Prywatności."
+    "trustIndicators": {
+      "badgeTrial": "7-Day Free Trial",
+      "badgeCancel": "Cancel Anytime"
     }
   },
   "privacy": {
@@ -432,6 +365,57 @@
       }
     },
     "lastUpdated": "Ostatnia aktualizacja: Wrzesień 2025"
+  },
+  "contact": {
+    "hero": {
+      "title": "Skontaktuj się z Naszym Działem Sprzedaży",
+      "description": "Skontaktuj się z nami, a chętnie pomożemy odpowiedzieć na wszelkie pytania dotyczące Disclosurely."
+    },
+    "info": {
+      "title": "Informacje Kontaktowe",
+      "description": "Skontaktuj się z nami, a chętnie pomożemy odpowiedzieć na wszelkie pytania dotyczące Disclosurely.",
+      "email": {
+        "title": "E-mail",
+        "response": "Odpowiadamy w ciągu 24 godzin"
+      },
+      "phone": {
+        "title": "Telefon",
+        "number": "+44 7123 456789",
+        "hours": "Pn-Pt, 9-17 GMT"
+      },
+      "address": {
+        "title": "Adres",
+        "line1": "Londyn",
+        "line2": "Wielka Brytania",
+        "line3": ""
+      },
+      "enterprise": {
+        "title": "Rozwiązania Korporacyjne",
+        "description": "Potrzebujesz rozwiązania na miarę? Skontaktuj się z naszym zespołem Enterprise w sprawie niestandardowych cen i wsparcia w implementacji."
+      }
+    },
+    "form": {
+      "title": "Poproś o Demo",
+      "description": "Wypełnij formularz poniżej, a nasz zespół skontaktuje się z Tobą w ciągu 24 godzin, aby zaplanować spersonalizowane demo.",
+      "name": {
+        "label": "Imię i Nazwisko",
+        "placeholder": "Twoje pełne imię i nazwisko"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "twoj@email.pl"
+      },
+      "company": {
+        "label": "Firma",
+        "placeholder": "Nazwa Twojej firmy"
+      },
+      "message": {
+        "label": "Wiadomość",
+        "placeholder": "Opowiedz nam o swoich wymaganiach..."
+      },
+      "submit": "Wyślij Zapytanie",
+      "privacy": "Przesyłając ten formularz, zgadzasz się z naszą Polityką Prywatności."
+    }
   },
   "admin": {
     "title": "Panel Administracyjny",

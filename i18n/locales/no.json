@@ -114,7 +114,16 @@
   "never": "Aldri",
   "caseHandler": "Sakshåndterer",
   "reviewer": "Anmelder",
-  "admin": "Administrator",
+  "admin": {
+    "title": "Adminpanel",
+    "description": "Administrer organisasjonens innhold og innstillinger",
+    "accessDenied": "Tilgang Nektet",
+    "accessDeniedDescription": "Du har ikke tillatelse til å få tilgang til adminpanelet. Vennligst kontakt din organisasjonsadministrator.",
+    "superAdmin": "Superadministrator",
+    "orgAdmin": "Organisasjonsadministrator",
+    "blogManagement": "Bloggadministrasjon",
+    "seoSettings": "SEO-innstillinger"
+  },
   "orgAdmin": "Org-administrator",
   "pendingInvitations": "Ventende invitasjoner",
   "invitedBy": "Invitert av",
@@ -398,6 +407,10 @@
       "join": "Bli med organisasjoner verden over som stoler på Disclosurely for sikker rapportering.",
       "startTrial": "Start gratis prøveperiode",
       "contactSales": "Kontakt salg"
+    },
+    "trustIndicators": {
+      "badgeTrial": "7-Day Free Trial",
+      "badgeCancel": "Cancel Anytime"
     }
   },
   "contact": {
@@ -564,16 +577,6 @@
       }
     },
     "lastUpdated": "Sist oppdatert: September 2025"
-  },
-  "admin": {
-    "title": "Adminpanel",
-    "description": "Administrer organisasjonens innhold og innstillinger",
-    "accessDenied": "Tilgang Nektet",
-    "accessDeniedDescription": "Du har ikke tillatelse til å få tilgang til adminpanelet. Vennligst kontakt din organisasjonsadministrator.",
-    "superAdmin": "Superadministrator",
-    "orgAdmin": "Organisasjonsadministrator",
-    "blogManagement": "Bloggadministrasjon",
-    "seoSettings": "SEO-innstillinger"
   },
   "sidebar": {
     "workflows": "Arbeidsflyter",

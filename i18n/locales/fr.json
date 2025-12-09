@@ -114,7 +114,16 @@
   "never": "Jamais",
   "caseHandler": "Gestionnaire de Cas",
   "reviewer": "Réviseur",
-  "admin": "Administrateur",
+  "admin": {
+    "title": "Panneau d'Administration",
+    "description": "Gérez le contenu et les paramètres de votre organisation",
+    "accessDenied": "Accès Refusé",
+    "accessDeniedDescription": "Vous n'avez pas l'autorisation d'accéder au panneau d'administration. Veuillez contacter l'administrateur de votre organisation.",
+    "superAdmin": "Super Administrateur",
+    "orgAdmin": "Administrateur d'Organisation",
+    "blogManagement": "Gestion du Blog",
+    "seoSettings": "Paramètres SEO"
+  },
   "orgAdmin": "Admin de l'Organisation",
   "pendingInvitations": "Invitations en Attente",
   "invitedBy": "Invité par",
@@ -400,6 +409,10 @@
       "join": "Rejoignez les organisations du monde entier qui font confiance à Disclosurely pour le signalement sécurisé.",
       "startTrial": "Commencer l'Essai Gratuit",
       "contactSales": "Contacter les Ventes"
+    },
+    "trustIndicators": {
+      "badgeTrial": "7-Day Free Trial",
+      "badgeCancel": "Cancel Anytime"
     }
   },
   "contact": {
@@ -664,16 +677,6 @@
       }
     },
     "lastUpdated": "Dernière mise à jour: Septembre 2025"
-  },
-  "admin": {
-    "title": "Panneau d'Administration",
-    "description": "Gérez le contenu et les paramètres de votre organisation",
-    "accessDenied": "Accès Refusé",
-    "accessDeniedDescription": "Vous n'avez pas l'autorisation d'accéder au panneau d'administration. Veuillez contacter l'administrateur de votre organisation.",
-    "superAdmin": "Super Administrateur",
-    "orgAdmin": "Administrateur d'Organisation",
-    "blogManagement": "Gestion du Blog",
-    "seoSettings": "Paramètres SEO"
   },
   "sidebar": {
     "workflows": "Flux de Travail",

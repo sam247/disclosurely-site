@@ -114,7 +114,19 @@
   "never": "Nunca",
   "caseHandler": "Gestor de Casos",
   "reviewer": "Revisor",
-  "admin": "Administrador",
+  "admin": {
+    "title": "Panel de Administración",
+    "description": "Gestiona el contenido y configuraciones de tu organización",
+    "accessDenied": "Acceso Denegado",
+    "accessDeniedDescription": "No tienes permisos para acceder al panel de administración. Por favor contacta al administrador de tu organización.",
+    "superAdmin": "Super Administrador",
+    "orgAdmin": "Administrador de Organización",
+    "blogManagement": "Gestión de Blog",
+    "seoSettings": "Configuración SEO",
+    "allActiveAndOngoingReports": "Todos los informes activos y en curso",
+    "assigned": "Asignado",
+    "filterByStatus": "Filtrar por estado"
+  },
   "orgAdmin": "Admin de Organización",
   "pendingInvitations": "Invitaciones Pendientes",
   "invitedBy": "Invitado por",
@@ -400,6 +412,10 @@
       "join": "Únase a organizaciones de todo el mundo que confían en Disclosurely para denuncias seguras.",
       "startTrial": "Iniciar Prueba Gratuita",
       "contactSales": "Contactar Ventas"
+    },
+    "trustIndicators": {
+      "badgeTrial": "7-Day Free Trial",
+      "badgeCancel": "Cancel Anytime"
     }
   },
   "contact": {
@@ -771,19 +787,6 @@
       "description": "¿No ves una posición que encaje? Aún nos encantaría escuchar de ti.",
       "email": "careers@disclosurely.com"
     }
-  },
-  "admin": {
-    "title": "Panel de Administración",
-    "description": "Gestiona el contenido y configuraciones de tu organización",
-    "accessDenied": "Acceso Denegado",
-    "accessDeniedDescription": "No tienes permisos para acceder al panel de administración. Por favor contacta al administrador de tu organización.",
-    "superAdmin": "Super Administrador",
-    "orgAdmin": "Administrador de Organización",
-    "blogManagement": "Gestión de Blog",
-    "seoSettings": "Configuración SEO",
-    "allActiveAndOngoingReports": "Todos los informes activos y en curso",
-    "assigned": "Asignado",
-    "filterByStatus": "Filtrar por estado"
   },
   "sidebar": {
     "workflows": "Flujos de Trabajo",

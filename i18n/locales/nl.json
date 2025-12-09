@@ -114,7 +114,16 @@
   "never": "Nooit",
   "caseHandler": "Casusbehandelaar",
   "reviewer": "Beoordelaar",
-  "admin": "Beheerder",
+  "admin": {
+    "title": "Beheerpaneel",
+    "description": "Beheer de inhoud en instellingen van uw organisatie",
+    "accessDenied": "Toegang Geweigerd",
+    "accessDeniedDescription": "U heeft geen toestemming om toegang te krijgen tot het beheerpaneel. Neem contact op met uw organisatiebeheerder.",
+    "superAdmin": "Superbeheerder",
+    "orgAdmin": "Organisatiebeheerder",
+    "blogManagement": "Blogbeheer",
+    "seoSettings": "SEO-instellingen"
+  },
   "orgAdmin": "Org-beheerder",
   "pendingInvitations": "Wachtende uitnodigingen",
   "invitedBy": "Uitgenodigd door",
@@ -398,6 +407,10 @@
       "join": "Word lid van organisaties wereldwijd die Disclosurely vertrouwen voor veilige rapportage.",
       "startTrial": "Start gratis proefperiode",
       "contactSales": "Contact opnemen met verkoop"
+    },
+    "trustIndicators": {
+      "badgeTrial": "7-Day Free Trial",
+      "badgeCancel": "Cancel Anytime"
     }
   },
   "contact": {
@@ -564,16 +577,6 @@
       }
     },
     "lastUpdated": "Laatst bijgewerkt: September 2025"
-  },
-  "admin": {
-    "title": "Beheerpaneel",
-    "description": "Beheer de inhoud en instellingen van uw organisatie",
-    "accessDenied": "Toegang Geweigerd",
-    "accessDeniedDescription": "U heeft geen toestemming om toegang te krijgen tot het beheerpaneel. Neem contact op met uw organisatiebeheerder.",
-    "superAdmin": "Superbeheerder",
-    "orgAdmin": "Organisatiebeheerder",
-    "blogManagement": "Blogbeheer",
-    "seoSettings": "SEO-instellingen"
   },
   "sidebar": {
     "workflows": "Workflows",

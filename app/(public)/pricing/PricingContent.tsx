@@ -105,7 +105,7 @@ function PricingContent() {
               {t("pricing.hero.tagline")}
             </span>
             <h1 className="mb-6 text-4xl font-bold text-gray-900 sm:text-5xl">
-              Start Free. Get Secure Whistleblowing.
+              {t("pricing.hero.title")}
             </h1>
             <p className="mb-4 text-xl text-gray-600 max-w-3xl mx-auto">
               {t("pricing.hero.subtitle1")}
@@ -165,13 +165,15 @@ function PricingContent() {
             {/* Billing Interval Tabs */}
             <div className="mb-8 flex justify-center">
               <Tabs value={billingInterval} onValueChange={(v) => setBillingInterval(v as "monthly" | "annual")} className="w-auto">
-                <TabsList className="grid w-full grid-cols-2">
-                  <TabsTrigger value="monthly" className="text-sm sm:text-base">
+                <TabsList className="inline-flex items-center gap-2 rounded-full bg-gray-100 p-1 shadow-sm">
+                  <TabsTrigger value="monthly" className="flex h-11 items-center justify-center rounded-full px-5 text-sm sm:text-base">
                     {t("pricing.billingInterval.monthly")}
                   </TabsTrigger>
-                  <TabsTrigger value="annual" className="text-sm sm:text-base">
+                  <TabsTrigger value="annual" className="flex h-11 items-center justify-center gap-2 rounded-full px-5 text-sm sm:text-base">
                     {t("pricing.billingInterval.annual")}
-                    <Badge className="ml-2 bg-green-600 px-1.5 py-0 text-[10px] text-white">{t("pricing.billingInterval.save")}</Badge>
+                    <Badge className="rounded-full bg-green-600 px-2 py-1 text-[11px] font-semibold leading-none text-white">
+                      {t("pricing.billingInterval.save")}
+                    </Badge>
                   </TabsTrigger>
                 </TabsList>
               </Tabs>
@@ -254,11 +256,11 @@ function PricingContent() {
             <div className="mb-12 flex flex-col items-center justify-center gap-8 md:flex-row">
               <div className="flex items-center gap-2 text-blue-600">
                 <CheckCircle className="h-5 w-5" />
-                <span className="font-semibold text-gray-900">7-Day Free Trial</span>
+                <span className="font-semibold text-gray-900">{t("pricing.trustIndicators.badgeTrial")}</span>
               </div>
               <div className="flex items-center gap-2 text-blue-600">
                 <CheckCircle className="h-5 w-5" />
-                <span className="font-semibold text-gray-900">Cancel Anytime</span>
+                <span className="font-semibold text-gray-900">{t("pricing.trustIndicators.badgeCancel")}</span>
               </div>
             </div>
           </div>

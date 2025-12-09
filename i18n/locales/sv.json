@@ -114,7 +114,16 @@
   "never": "Aldrig",
   "caseHandler": "Fallhanterare",
   "reviewer": "Granskare",
-  "admin": "Administratör",
+  "admin": {
+    "title": "Adminpanel",
+    "description": "Hantera din organisations innehåll och inställningar",
+    "accessDenied": "Åtkomst Nekad",
+    "accessDeniedDescription": "Du har inte behörighet att komma åt adminpanelen. Vänligen kontakta din organisationsadministratör.",
+    "superAdmin": "Superadministratör",
+    "orgAdmin": "Organisationsadministratör",
+    "blogManagement": "Blogghantering",
+    "seoSettings": "SEO-inställningar"
+  },
   "orgAdmin": "Org-administratör",
   "pendingInvitations": "Väntande inbjudningar",
   "invitedBy": "Inbjuden av",
@@ -398,6 +407,10 @@
       "join": "Gå med organisationer världen över som litar på Disclosurely för säker rapportering.",
       "startTrial": "Starta gratis provperiod",
       "contactSales": "Kontakta försäljning"
+    },
+    "trustIndicators": {
+      "badgeTrial": "7-Day Free Trial",
+      "badgeCancel": "Cancel Anytime"
     }
   },
   "contact": {
@@ -564,16 +577,6 @@
       }
     },
     "lastUpdated": "Senast uppdaterad: September 2025"
-  },
-  "admin": {
-    "title": "Adminpanel",
-    "description": "Hantera din organisations innehåll och inställningar",
-    "accessDenied": "Åtkomst Nekad",
-    "accessDeniedDescription": "Du har inte behörighet att komma åt adminpanelen. Vänligen kontakta din organisationsadministratör.",
-    "superAdmin": "Superadministratör",
-    "orgAdmin": "Organisationsadministratör",
-    "blogManagement": "Blogghantering",
-    "seoSettings": "SEO-inställningar"
   },
   "sidebar": {
     "workflows": "Arbetsflöden",

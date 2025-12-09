@@ -114,7 +114,16 @@
   "never": "Mai",
   "caseHandler": "Gestore casi",
   "reviewer": "Revisore",
-  "admin": "Amministratore",
+  "admin": {
+    "title": "Pannello di Amministrazione",
+    "description": "Gestisci contenuti e impostazioni della tua organizzazione",
+    "accessDenied": "Accesso Negato",
+    "accessDeniedDescription": "Non hai il permesso di accedere al pannello di amministrazione. Contatta l'amministratore della tua organizzazione.",
+    "superAdmin": "Super Amministratore",
+    "orgAdmin": "Amministratore dell'Organizzazione",
+    "blogManagement": "Gestione Blog",
+    "seoSettings": "Impostazioni SEO"
+  },
   "orgAdmin": "Admin organizzazione",
   "pendingInvitations": "Inviti in sospeso",
   "invitedBy": "Invitato da",
@@ -398,6 +407,10 @@
       "join": "Unisciti alle organizzazioni in tutto il mondo che si fidano di Disclosurely per segnalazioni sicure.",
       "startTrial": "Inizia prova gratuita",
       "contactSales": "Contatta vendite"
+    },
+    "trustIndicators": {
+      "badgeTrial": "7-Day Free Trial",
+      "badgeCancel": "Cancel Anytime"
     }
   },
   "contact": {
@@ -564,16 +577,6 @@
       }
     },
     "lastUpdated": "Ultimo aggiornamento: Settembre 2025"
-  },
-  "admin": {
-    "title": "Pannello di Amministrazione",
-    "description": "Gestisci contenuti e impostazioni della tua organizzazione",
-    "accessDenied": "Accesso Negato",
-    "accessDeniedDescription": "Non hai il permesso di accedere al pannello di amministrazione. Contatta l'amministratore della tua organizzazione.",
-    "superAdmin": "Super Amministratore",
-    "orgAdmin": "Amministratore dell'Organizzazione",
-    "blogManagement": "Gestione Blog",
-    "seoSettings": "Impostazioni SEO"
   },
   "sidebar": {
     "workflows": "Flussi di Lavoro",

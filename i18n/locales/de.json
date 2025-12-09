@@ -257,77 +257,10 @@
       "join": "Schließen Sie sich Organisationen weltweit an, die Disclosurely für sicheres Whistleblowing vertrauen.",
       "startTrial": "Kostenlose Testversion Starten",
       "contactSales": "Vertrieb Kontaktieren"
-    }
-  },
-  "privacy": {
-    "meta": {
-      "title": "Datenschutzerklärung - Disclosurely",
-      "description": "Erfahren Sie, wie wir Ihre persönlichen Daten schützen und Ihre Privatsphäre respektieren."
     },
-    "hero": {
-      "title": "Datenschutzerklärung",
-      "description": "Erfahren Sie, wie wir Ihre persönlichen Daten schützen und Ihre Privatsphäre respektieren."
-    }
-  },
-  "terms": {
-    "meta": {
-      "title": "Allgemeine Geschäftsbedingungen - Disclosurely",
-      "description": "Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie unsere Dienste nutzen."
-    },
-    "hero": {
-      "title": "Allgemeine Geschäftsbedingungen",
-      "description": "Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie unsere Dienste nutzen."
-    }
-  },
-  "contact": {
-    "hero": {
-      "title": "Kontaktieren Sie Unser Vertriebsteam",
-      "description": "Nehmen Sie Kontakt mit uns auf und wir helfen Ihnen gerne bei allen Fragen zu Disclosurely."
-    },
-    "info": {
-      "title": "Kontaktinformationen",
-      "description": "Nehmen Sie Kontakt mit uns auf und wir helfen Ihnen gerne bei allen Fragen zu Disclosurely.",
-      "email": {
-        "title": "E-Mail",
-        "response": "Wir antworten innerhalb von 24 Stunden"
-      },
-      "phone": {
-        "title": "Telefon",
-        "number": "+44 7123 456789",
-        "hours": "Mo-Fr, 9-17 Uhr GMT"
-      },
-      "address": {
-        "title": "Adresse",
-        "line1": "London",
-        "line2": "Vereinigtes Königreich",
-        "line3": ""
-      },
-      "enterprise": {
-        "title": "Unternehmenslösungen",
-        "description": "Benötigen Sie eine maßgeschneiderte Lösung? Kontaktieren Sie unser Enterprise-Team für individuelle Preise und Implementierungsunterstützung."
-      }
-    },
-    "form": {
-      "title": "Demo Anfordern",
-      "description": "Füllen Sie das Formular aus und unser Team wird sich innerhalb von 24 Stunden bei Ihnen melden, um eine personalisierte Demo zu vereinbaren.",
-      "name": {
-        "label": "Name",
-        "placeholder": "Ihr vollständiger Name"
-      },
-      "email": {
-        "label": "E-Mail",
-        "placeholder": "ihre@email.de"
-      },
-      "company": {
-        "label": "Firma",
-        "placeholder": "Ihr Firmenname"
-      },
-      "message": {
-        "label": "Nachricht",
-        "placeholder": "Erzählen Sie uns von Ihren Anforderungen..."
-      },
-      "submit": "Anfrage Senden",
-      "privacy": "Durch das Absenden dieses Formulars stimmen Sie unserer Datenschutzerklärung zu."
+    "trustIndicators": {
+      "badgeTrial": "7-Day Free Trial",
+      "badgeCancel": "Cancel Anytime"
     }
   },
   "privacy": {
@@ -442,6 +375,57 @@
       }
     },
     "lastUpdated": "Zuletzt aktualisiert: September 2025"
+  },
+  "contact": {
+    "hero": {
+      "title": "Kontaktieren Sie Unser Vertriebsteam",
+      "description": "Nehmen Sie Kontakt mit uns auf und wir helfen Ihnen gerne bei allen Fragen zu Disclosurely."
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "description": "Nehmen Sie Kontakt mit uns auf und wir helfen Ihnen gerne bei allen Fragen zu Disclosurely.",
+      "email": {
+        "title": "E-Mail",
+        "response": "Wir antworten innerhalb von 24 Stunden"
+      },
+      "phone": {
+        "title": "Telefon",
+        "number": "+44 7123 456789",
+        "hours": "Mo-Fr, 9-17 Uhr GMT"
+      },
+      "address": {
+        "title": "Adresse",
+        "line1": "London",
+        "line2": "Vereinigtes Königreich",
+        "line3": ""
+      },
+      "enterprise": {
+        "title": "Unternehmenslösungen",
+        "description": "Benötigen Sie eine maßgeschneiderte Lösung? Kontaktieren Sie unser Enterprise-Team für individuelle Preise und Implementierungsunterstützung."
+      }
+    },
+    "form": {
+      "title": "Demo Anfordern",
+      "description": "Füllen Sie das Formular aus und unser Team wird sich innerhalb von 24 Stunden bei Ihnen melden, um eine personalisierte Demo zu vereinbaren.",
+      "name": {
+        "label": "Name",
+        "placeholder": "Ihr vollständiger Name"
+      },
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "ihre@email.de"
+      },
+      "company": {
+        "label": "Firma",
+        "placeholder": "Ihr Firmenname"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Erzählen Sie uns von Ihren Anforderungen..."
+      },
+      "submit": "Anfrage Senden",
+      "privacy": "Durch das Absenden dieses Formulars stimmen Sie unserer Datenschutzerklärung zu."
+    }
   },
   "admin": {
     "title": "Admin-Panel",
