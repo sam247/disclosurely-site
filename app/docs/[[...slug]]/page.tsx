@@ -4,6 +4,7 @@ import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { getAllDocSlugs, getDocBySlug, getDocsNavigation, DocNavItem } from '@/lib/docs';
+import { generateHreflangAlternates } from '@/lib/hreflang';
 import DocsClient from './DocsClient';
 
 const SITE_URL = 'https://disclosurely.com';
@@ -20,12 +21,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug?: st
   if (!doc) {
     return { title: 'Documentation' };
   }
+
+  const path = `/docs${doc.slug.length ? `/${doc.slug.join('/')}` : ''}`;
+  const alternates = generateHreflangAlternates(path);
   
   return {
     title: `${doc.title} | Disclosurely Docs`,
     description: doc.description,
     alternates: {
-      canonical: `${SITE_URL}/docs${doc.slug.length ? `/${doc.slug.join('/')}` : ''}`,
+      canonical: `${SITE_URL}${path}`,
+      languages: Object.fromEntries(alternates.map((alt) => [alt.hreflang, alt.url])),
     },
   };
 }

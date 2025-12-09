@@ -32,7 +32,14 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   url.pathname = newPath === "/" ? "/" : newPath;
 
-  const response = NextResponse.rewrite(url);
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set("x-lang", first);
+
+  const response = NextResponse.rewrite(url, {
+    request: {
+      headers: requestHeaders,
+    },
+  });
   response.cookies.set("lang", first, { path: "/" });
 
   return response;

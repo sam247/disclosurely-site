@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { cookies, headers } from "next/headers";
+
+import { supportedLanguages } from "@/lib/hreflang";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -44,13 +47,23 @@ export const metadata: Metadata = {
   themeColor: "#2563eb",
 };
 
+function getPreferredLang() {
+  const headerLang = headers().get("x-lang");
+  const cookieLang = cookies().get("lang")?.value;
+
+  const lang = headerLang || cookieLang;
+  return supportedLanguages.includes((lang as any) || "") ? (lang as typeof supportedLanguages[number]) : "en";
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const lang = getPreferredLang();
+
   return (
-    <html lang="en">
+    <html lang={lang}>
       <body className="min-h-screen bg-background text-foreground antialiased">{children}</body>
     </html>
   );
