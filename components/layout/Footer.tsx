@@ -145,25 +145,28 @@ export function Footer() {
                   href="https://linkedin.com/company/disclosurely"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Disclosurely on LinkedIn"
                   className="text-gray-400 transition-colors hover:text-white"
                 >
-                  <Linkedin className="h-5 w-5" />
+                  <Linkedin className="h-5 w-5" aria-hidden="true" />
                 </a>
                 <a
                   href="https://facebook.com/disclosurely"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Disclosurely on Facebook"
                   className="text-gray-400 transition-colors hover:text-white"
                 >
-                  <Facebook className="h-5 w-5" />
+                  <Facebook className="h-5 w-5" aria-hidden="true" />
                 </a>
                 <a
                   href="https://instagram.com/disclosurely"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Disclosurely on Instagram"
                   className="text-gray-400 transition-colors hover:text-white"
                 >
-                  <Instagram className="h-5 w-5" />
+                  <Instagram className="h-5 w-5" aria-hidden="true" />
                 </a>
               </div>
             </div>

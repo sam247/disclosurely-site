@@ -106,8 +106,8 @@ export default function BlogClient({ posts, categories, selectedCategory }: Blog
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {filteredPosts.map((post) => {
-                    const imageUrl = post.featuredImage?.fields?.file?.url
-                      ? `https:${post.featuredImage.fields.file.url}`
+                    const imageUrl = post.featuredImage
+                      ? `https:${post.featuredImage}`
                       : null;
 
                     return (

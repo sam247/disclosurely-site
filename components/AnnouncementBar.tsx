@@ -91,7 +91,7 @@ export const AnnouncementBar: React.FC<AnnouncementBarProps> = ({
           className="text-white hover:text-gray-200 transition-colors flex-shrink-0 ml-2"
           aria-label="Dismiss announcement"
         >
-          <X className="w-4 h-4 sm:w-5 sm:h-5" />
+          <X className="w-4 h-4 sm:w-5 sm:h-5" aria-hidden="true" />
         </button>
       </div>
     </div>

@@ -47,7 +47,7 @@ function FeaturesContent() {
             <span className="mb-6 inline-block rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white">
               Anonymous Reporting Platform
             </span>
-            <h1 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl">
+            <h1 className="mb-6 text-4xl font-bold text-gray-900 sm:text-5xl">
               Powerful Features Built for Secure, Anonymous Reporting
             </h1>
             <p className="mx-auto max-w-3xl text-lg text-gray-600">

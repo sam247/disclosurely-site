@@ -152,7 +152,7 @@ function SecurityContent() {
                   <Shield className="h-8 w-8 text-blue-600" />
                 </div>
               </div>
-              <h1 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl">Security & Trust Center</h1>
+              <h1 className="mb-6 text-4xl font-bold text-gray-900 sm:text-5xl">Security & Trust Center</h1>
               <p className="mx-auto max-w-3xl text-xl text-gray-600">
                 Your security is our priority. Learn how we protect whistleblower anonymity with military-grade encryption,
                 zero-knowledge architecture, and industry-leading security practices.

@@ -59,7 +59,7 @@ export type BlogPost = {
   slug: string;
   excerpt?: string;
   content?: Document;
-  featuredImage?: AssetWithFile;
+  featuredImage?: string; // URL string instead of AssetWithFile
   publishDate?: string;
   seoTitle?: string;
   seoDescription?: string;
@@ -116,18 +116,21 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
             }))
         : [];
 
-      // Extract featured image - Contentful SDK with include: 2 automatically resolves linked assets
-      // Access directly like the backup implementation: (item.fields.featuredImage as any)?.fields?.file
+      // Extract featured image URL - Contentful SDK with include: 2 automatically resolves linked assets
+      // Extract URL directly like the backup implementation: (item.fields.featuredImage as any)?.fields?.file?.url
       const featuredImage = item.fields.featuredImage as any;
+      let featuredImageUrl: string | undefined;
+      
+      // If already resolved (has fields.file.url)
+      if (featuredImage?.fields?.file?.url) {
+        featuredImageUrl = featuredImage.fields.file.url;
+      }
       // If it's a link reference (has sys.id but no fields), resolve from asset map
-      let resolvedFeaturedImage = featuredImage;
-      if (featuredImage?.sys?.id && !featuredImage?.fields) {
+      else if (featuredImage?.sys?.id && !featuredImage?.fields) {
         const assetId = featuredImage.sys.id;
         const resolvedAsset = assetMap.get(assetId);
-        if (resolvedAsset) {
-          resolvedFeaturedImage = resolvedAsset;
-        } else {
-          resolvedFeaturedImage = undefined;
+        if (resolvedAsset?.fields?.file?.url) {
+          featuredImageUrl = resolvedAsset.fields.file.url;
         }
       }
 
@@ -137,7 +140,7 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
         slug: item.fields.slug,
         excerpt: item.fields.excerpt,
         content: item.fields.content,
-        featuredImage: resolvedFeaturedImage,
+        featuredImage: featuredImageUrl,
         publishDate: item.fields.publishDate,
         seoTitle: item.fields.seoTitle,
         seoDescription: item.fields.seoDescription,
@@ -187,13 +190,17 @@ export async function fetchBlogPost(slug: string): Promise<BlogPost & { links?: 
         }))
     : [];
 
+  // Extract featured image URL
+  const featuredImage = post.fields.featuredImage as any;
+  const featuredImageUrl = featuredImage?.fields?.file?.url;
+
   return {
     id: post.sys.id,
     title: post.fields.title,
     slug: post.fields.slug,
     excerpt: post.fields.excerpt,
     content: post.fields.content,
-    featuredImage: post.fields.featuredImage,
+    featuredImage: featuredImageUrl,
     publishDate: post.fields.publishDate,
     seoTitle: post.fields.seoTitle,
     seoDescription: post.fields.seoDescription,
