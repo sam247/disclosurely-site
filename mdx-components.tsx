@@ -1,7 +1,12 @@
+import { useMDXComponents as getThemeComponents } from 'nextra-theme-docs';
 import type { MDXComponents } from 'mdx/types';
-import { useMDXComponents as useNextraMDXComponents } from 'nextra-theme-docs';
 
-export function useMDXComponents(): MDXComponents {
-  return useNextraMDXComponents();
+const themeComponents = getThemeComponents();
+
+export function useMDXComponents(components?: MDXComponents): MDXComponents {
+  return {
+    ...themeComponents,
+    ...components,
+  };
 }
 
