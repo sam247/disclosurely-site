@@ -202,8 +202,8 @@ function PricingContent() {
                         {plan.name === t("pricing.plans.enterprise.name")
                           ? ""
                           : billingInterval === "monthly"
-                          ? "/month"
-                          : "/year"}
+                          ? t("pricing.plans.perMonth")
+                          : t("pricing.plans.perYear")}
                       </span>
                     </div>
                     <CardDescription className="text-sm sm:text-base">{plan.description}</CardDescription>
@@ -273,33 +273,29 @@ function PricingContent() {
               {/* Testimonial */}
               <div className="rounded-2xl bg-white p-8 shadow-sm">
                 <div className="mb-4 text-6xl font-bold leading-none text-blue-600">"</div>
-                <p className="mb-6 text-lg leading-relaxed text-gray-700">
-                  Disclosurely has transformed how we handle sensitive reports. The platform is intuitive, secure, and our
-                  employees feel confident reporting issues. Implementation was seamless and the support team was
-                  excellent.
-                </p>
+                <p className="mb-6 text-lg leading-relaxed text-gray-700">{t("pricing.testimonial.quote")}</p>
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-blue-700 font-semibold text-white">
-                    SJ
+                    {t("pricing.testimonial.initials")}
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900">Sarah Johnson</div>
-                    <div className="text-sm text-gray-600">Chief Compliance Officer</div>
+                    <div className="font-semibold text-gray-900">{t("pricing.testimonial.name")}</div>
+                    <div className="text-sm text-gray-600">{t("pricing.testimonial.role")}</div>
                   </div>
                 </div>
               </div>
 
               {/* Benefits */}
               <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 p-8 text-white shadow-lg">
-                <h3 className="mb-6 text-2xl font-bold">Why Organizations Choose Disclosurely</h3>
+                <h3 className="mb-6 text-2xl font-bold">{t("pricing.benefits.title")}</h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-white/20">
                       <CheckCircle className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <div className="mb-1 text-xl font-semibold">35% Faster Resolution</div>
-                      <div className="text-sm text-blue-100">AI-powered case analysis speeds up investigations</div>
+                      <div className="mb-1 text-xl font-semibold">{t("pricing.benefits.stat1.title")}</div>
+                      <div className="text-sm text-blue-100">{t("pricing.benefits.stat1.description")}</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -307,8 +303,8 @@ function PricingContent() {
                       <CheckCircle className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <div className="mb-1 text-xl font-semibold">100% Compliance Ready</div>
-                      <div className="text-sm text-blue-100">ISO 27001, GDPR, SOX compliant out of the box</div>
+                      <div className="mb-1 text-xl font-semibold">{t("pricing.benefits.stat2.title")}</div>
+                      <div className="text-sm text-blue-100">{t("pricing.benefits.stat2.description")}</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -316,8 +312,8 @@ function PricingContent() {
                       <CheckCircle className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <div className="mb-1 text-xl font-semibold">Enterprise-Grade Security</div>
-                      <div className="text-sm text-blue-100">Military-grade encryption and tamper-evident audit logs</div>
+                      <div className="mb-1 text-xl font-semibold">{t("pricing.benefits.stat3.title")}</div>
+                      <div className="text-sm text-blue-100">{t("pricing.benefits.stat3.description")}</div>
                     </div>
                   </div>
                 </div>
@@ -331,64 +327,60 @@ function PricingContent() {
           <div className="mx-auto max-w-7xl">
             <div className="grid items-center gap-12 md:grid-cols-2">
               <div>
-                <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
-                  Enterprise-grade security for every team
-                </h2>
-                <p className="mb-6 text-lg text-gray-600">
-                  Your data is protected with industry-leading security standards and compliance certifications.
-                </p>
+                <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">{t("pricing.security.title")}</h2>
+                <p className="mb-6 text-lg text-gray-600">{t("pricing.security.description")}</p>
                 <Button variant="outline" size="lg" className="border-gray-300">
-                  Learn more about security
+                  {t("pricing.security.cta")}
                 </Button>
               </div>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-6 w-6 flex-shrink-0 text-green-600" />
                   <div>
-                    <div className="mb-1 font-semibold text-gray-900">Zero data retention by third-party LLMs</div>
-                    <div className="text-sm text-gray-600">Your data never leaves our secure infrastructure</div>
+                    <div className="mb-1 font-semibold text-gray-900">{t("pricing.security.points.0.title")}</div>
+                    <div className="text-sm text-gray-600">{t("pricing.security.points.0.description")}</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-6 w-6 flex-shrink-0 text-green-600" />
                   <div>
-                    <div className="mb-1 font-semibold text-gray-900">Private AI model</div>
-                    <div className="text-sm text-gray-600">Dedicated AI processing for enhanced privacy</div>
+                    <div className="mb-1 font-semibold text-gray-900">{t("pricing.security.points.1.title")}</div>
+                    <div className="text-sm text-gray-600">{t("pricing.security.points.1.description")}</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-6 w-6 flex-shrink-0 text-green-600" />
                   <div>
-                    <div className="mb-1 font-semibold text-gray-900">SOC 2 Type II & GDPR Ready</div>
-                    <div className="text-sm text-gray-600">Certified compliance with industry standards</div>
+                    <div className="mb-1 font-semibold text-gray-900">{t("pricing.security.points.2.title")}</div>
+                    <div className="text-sm text-gray-600">{t("pricing.security.points.2.description")}</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-6 w-6 flex-shrink-0 text-green-600" />
                   <div>
-                    <div className="mb-1 font-semibold text-gray-900">Data encryption in transit and at rest</div>
-                    <div className="text-sm text-gray-600">AES-256 encryption for maximum protection</div>
+                    <div className="mb-1 font-semibold text-gray-900">{t("pricing.security.points.3.title")}</div>
+                    <div className="text-sm text-gray-600">{t("pricing.security.points.3.description")}</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-6 w-6 flex-shrink-0 text-green-600" />
                   <div>
-                    <div className="mb-1 font-semibold text-gray-900">Role-based access control</div>
-                    <div className="text-sm text-gray-600">Granular permissions for team members</div>
+                    <div className="mb-1 font-semibold text-gray-900">{t("pricing.security.points.4.title")}</div>
+                    <div className="text-sm text-gray-600">{t("pricing.security.points.4.description")}</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-6 w-6 flex-shrink-0 text-green-600" />
                   <div>
-                    <div className="mb-1 font-semibold text-gray-900">SAML-based SSO & SCIM provisioning</div>
-                    <div className="text-sm text-gray-600">Enterprise identity management integration</div>
+                    <div className="mb-1 font-semibold text-gray-900">{t("pricing.security.points.5.title")}</div>
+                    <div className="text-sm text-gray-600">{t("pricing.security.points.5.description")}</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-6 w-6 flex-shrink-0 text-green-600" />
                   <div>
-                    <div className="mb-1 font-semibold text-gray-900">IP Whitelisting</div>
-                    <div className="text-sm text-gray-600">Restrict access to approved IP addresses</div>
+                    <div className="mb-1 font-semibold text-gray-900">{t("pricing.security.points.6.title")}</div>
+                    <div className="text-sm text-gray-600">{t("pricing.security.points.6.description")}</div>
                   </div>
                 </div>
               </div>
@@ -400,45 +392,41 @@ function PricingContent() {
         <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 text-center">
-              <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">Compare All Features</h2>
-              <p className="text-lg text-gray-600">See exactly what's included in each plan</p>
+              <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">{t("pricing.compare.title")}</h2>
+              <p className="text-lg text-gray-600">{t("pricing.compare.subtitle")}</p>
             </div>
 
             <div className="overflow-x-auto">
               <table className="w-full rounded-lg bg-white shadow-lg">
                 <thead className="bg-gray-50">
                   <tr>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Features</th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">Starter</th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-blue-600">Pro</th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">Enterprise</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">{t("pricing.compare.headers.features")}</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">{t("pricing.compare.headers.starter")}</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-blue-600">{t("pricing.compare.headers.pro")}</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">{t("pricing.compare.headers.enterprise")}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
                   <tr className="bg-gray-50">
-                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">
-                      Reporting
-                    </td>
+                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">{t("pricing.compare.groups.reporting")}</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Reports per Month</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">Unlimited</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">Unlimited</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">Unlimited</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.reportsPerMonth")}</td>
+                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">{t("pricing.compare.values.unlimited")}</td>
+                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">{t("pricing.compare.values.unlimited")}</td>
+                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">{t("pricing.compare.values.unlimited")}</td>
                   </tr>
                   <tr className="bg-white hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Storage per Report</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">Unlimited</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">Unlimited</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">Unlimited</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.storagePerReport")}</td>
+                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">{t("pricing.compare.values.unlimited")}</td>
+                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">{t("pricing.compare.values.unlimited")}</td>
+                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">{t("pricing.compare.values.unlimited")}</td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">
-                      Security & Compliance
-                    </td>
+                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">{t("pricing.compare.groups.security")}</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Military-Grade Encryption (AES-GCM)</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.encryption")}</td>
                     <td className="px-6 py-4 text-center">
                       <CheckCircle className="mx-auto h-5 w-5 text-green-600" />
                     </td>
@@ -450,7 +438,7 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="bg-white hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">GDPR Compliant</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.gdpr")}</td>
                     <td className="px-6 py-4 text-center">
                       <CheckCircle className="mx-auto h-5 w-5 text-green-600" />
                     </td>
@@ -462,7 +450,7 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Audit Trail</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.auditTrail")}</td>
                     <td className="px-6 py-4 text-center">
                       <CheckCircle className="mx-auto h-5 w-5 text-green-600" />
                     </td>
@@ -474,12 +462,10 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">
-                      AI Features
-                    </td>
+                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">{t("pricing.compare.groups.ai")}</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm font-semibold text-gray-900">AI Case Analysis (DeepSeek)</td>
+                    <td className="px-6 py-4 text-sm font-semibold text-gray-900">{t("pricing.compare.rows.aiCaseAnalysis")}</td>
                     <td className="px-6 py-4 text-center">
                       <X className="mx-auto h-5 w-5 text-gray-400" />
                     </td>
@@ -491,7 +477,7 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="bg-white hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">AI Risk Assessment</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.aiRiskAssessment")}</td>
                     <td className="px-6 py-4 text-center">
                       <X className="mx-auto h-5 w-5 text-gray-400" />
                     </td>
@@ -503,7 +489,7 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">AI Chat Support</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.aiChatSupport")}</td>
                     <td className="px-6 py-4 text-center">
                       <X className="mx-auto h-5 w-5 text-gray-400" />
                     </td>
@@ -515,12 +501,10 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">
-                      Communication
-                    </td>
+                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">{t("pricing.compare.groups.communication")}</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Two-Way Messaging</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.twoWayMessaging")}</td>
                     <td className="px-6 py-4 text-center">
                       <X className="mx-auto h-5 w-5 text-gray-400" />
                     </td>
@@ -532,7 +516,7 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="bg-white hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Anonymous Report Submission</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.anonymousReports")}</td>
                     <td className="px-6 py-4 text-center">
                       <CheckCircle className="mx-auto h-5 w-5 text-green-600" />
                     </td>
@@ -544,18 +528,16 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">
-                      Team & Collaboration
-                    </td>
+                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">{t("pricing.compare.groups.team")}</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Team Members</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">5</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">20</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">Unlimited</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.teamMembers")}</td>
+                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">{t("pricing.compare.values.teamMembers.starter")}</td>
+                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">{t("pricing.compare.values.teamMembers.pro")}</td>
+                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">{t("pricing.compare.values.teamMembers.enterprise")}</td>
                   </tr>
                   <tr className="bg-white hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Automated Assignment Rules</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.assignmentRules")}</td>
                     <td className="px-6 py-4 text-center">
                       <X className="mx-auto h-5 w-5 text-gray-400" />
                     </td>
@@ -567,7 +549,7 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">SLA Management</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.slaManagement")}</td>
                     <td className="px-6 py-4 text-center">
                       <X className="mx-auto h-5 w-5 text-gray-400" />
                     </td>
@@ -579,12 +561,10 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">
-                      Customization
-                    </td>
+                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">{t("pricing.compare.groups.customization")}</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Custom Branding</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.customBranding")}</td>
                     <td className="px-6 py-4 text-center">
                       <X className="mx-auto h-5 w-5 text-gray-400" />
                     </td>
@@ -596,15 +576,15 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="bg-white hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Custom Domain (CNAME)</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.customDomain")}</td>
                     <td className="px-6 py-4 text-center">
                       <X className="mx-auto h-5 w-5 text-gray-400" />
                     </td>
-                    <td className="px-6 py-4 text-center text-sm text-gray-700">1 domain</td>
-                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">Multiple domains</td>
+                    <td className="px-6 py-4 text-center text-sm text-gray-700">{t("pricing.compare.values.oneDomain")}</td>
+                    <td className="px-6 py-4 text-center text-sm font-semibold text-gray-700">{t("pricing.compare.values.multipleDomains")}</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Real-time Analytics Dashboard</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.analyticsDashboard")}</td>
                     <td className="px-6 py-4 text-center">
                       <CheckCircle className="mx-auto h-5 w-5 text-green-600" />
                     </td>
@@ -616,12 +596,10 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">
-                      Support
-                    </td>
+                    <td colSpan={4} className="px-6 py-3 text-sm font-semibold text-gray-900">{t("pricing.compare.groups.support")}</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Email Support</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.emailSupport")}</td>
                     <td className="px-6 py-4 text-center">
                       <CheckCircle className="mx-auto h-5 w-5 text-green-600" />
                     </td>
@@ -633,7 +611,7 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="bg-white hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Priority Support</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.prioritySupport")}</td>
                     <td className="px-6 py-4 text-center">
                       <X className="mx-auto h-5 w-5 text-gray-400" />
                     </td>
@@ -645,7 +623,7 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">Dedicated Account Manager</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.dedicatedManager")}</td>
                     <td className="px-6 py-4 text-center">
                       <X className="mx-auto h-5 w-5 text-gray-400" />
                     </td>
@@ -657,7 +635,7 @@ function PricingContent() {
                     </td>
                   </tr>
                   <tr className="bg-white hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-900">SLA Guarantee</td>
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.slaGuarantee")}</td>
                     <td className="px-6 py-4 text-center">
                       <X className="mx-auto h-5 w-5 text-gray-400" />
                     </td>
@@ -738,43 +716,29 @@ function PricingContent() {
         <section className="bg-white py-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-8 text-center">
-              <h2 className="mb-2 text-2xl font-bold text-gray-900 sm:text-3xl">Explore More</h2>
-              <p className="text-gray-600">Learn more about our platform and solutions</p>
+              <h2 className="mb-2 text-2xl font-bold text-gray-900 sm:text-3xl">{t("pricing.related.title")}</h2>
+              <p className="text-gray-600">{t("pricing.related.subtitle")}</p>
             </div>
 
             <div className="grid gap-6 md:grid-cols-3">
               <Link href={`${langPrefix}/features`} className="group block">
                 <div className="h-full rounded-lg bg-gray-50 p-6 shadow-sm transition-shadow hover:shadow-lg">
-                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">
-                    Platform Features
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Explore all features included in your plan - anonymous reporting, AI case analysis, and secure
-                    messaging.
-                  </p>
+                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">{t("pricing.related.cards.features.title")}</h3>
+                  <p className="text-sm text-gray-600">{t("pricing.related.cards.features.description")}</p>
                 </div>
               </Link>
 
               <Link href={`${langPrefix}/compliance-software`} className="group block">
                 <div className="h-full rounded-lg bg-gray-50 p-6 shadow-sm transition-shadow hover:shadow-lg">
-                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">
-                    Compliance Software
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Discover how our compliance software helps you meet GDPR, ISO 27001, and EU Directive
-                    requirements.
-                  </p>
+                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">{t("pricing.related.cards.compliance.title")}</h3>
+                  <p className="text-sm text-gray-600">{t("pricing.related.cards.compliance.description")}</p>
                 </div>
               </Link>
 
               <Link href={`${langPrefix}/vs-speakup`} className="group block">
                 <div className="h-full rounded-lg bg-gray-50 p-6 shadow-sm transition-shadow hover:shadow-lg">
-                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">
-                    Compare Solutions
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    See how Disclosurely compares to other whistleblowing platforms like SpeakUp and competitors.
-                  </p>
+                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">{t("pricing.related.cards.compare.title")}</h3>
+                  <p className="text-sm text-gray-600">{t("pricing.related.cards.compare.description")}</p>
                 </div>
               </Link>
             </div>

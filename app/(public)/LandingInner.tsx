@@ -285,7 +285,7 @@ function LandingInner() {
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                   <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-blue-700">
                     {highlightIcons[index]}
-                    <span className="text-sm font-medium">Security &amp; Compliance</span>
+                    <span className="text-sm font-medium">{t("landing.highlights.tag")}</span>
                   </div>
                   <h3 className="mb-3 text-2xl font-bold text-gray-900 sm:text-3xl">{item.title}</h3>
                   <p className="mb-4 text-gray-700">{item.description}</p>
@@ -314,30 +314,28 @@ function LandingInner() {
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div className="order-2 lg:order-1">
                 <div className="flex h-80 w-full items-center justify-center rounded-lg">
-                  <Image src="/custom_branding.jpeg" alt="Custom Branding" width={900} height={400} className="h-full w-full object-contain" />
+                  <Image src="/custom_branding.jpeg" alt={t("landing.branding.imageAlt")} width={900} height={400} className="h-full w-full object-contain" />
                 </div>
               </div>
               <div className="order-1 lg:order-2">
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-blue-700">
                   <ShieldCheck className="h-4 w-4" />
-                  <span className="text-sm font-medium">Branding &amp; Identity</span>
+                  <span className="text-sm font-medium">{t("landing.branding.tag")}</span>
                 </div>
-                <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">Custom Branding</h2>
-                <p className="mb-6 text-lg text-gray-600">
-                  With our custom domain support, logo integration and branded portals, your reporting submission system looks and feels like a native part of your infrastructure.
-                </p>
+                <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">{t("landing.branding.title")}</h2>
+                <p className="mb-6 text-lg text-gray-600">{t("landing.branding.description")}</p>
                 <ul className="mb-6 space-y-3">
                   <li className="flex items-center">
                     <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600" />
-                    <span>Custom CNAME support for branded secure links</span>
+                    <span>{t("landing.branding.point1")}</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600" />
-                    <span>Your logo and branding on all submission portals</span>
+                    <span>{t("landing.branding.point2")}</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600" />
-                    <span>White-label options for complete brand control</span>
+                    <span>{t("landing.branding.point3")}</span>
                   </li>
                 </ul>
               </div>
@@ -356,11 +354,13 @@ function LandingInner() {
               <Tabs value={billingInterval} onValueChange={(v) => setBillingInterval(v as "monthly" | "annual")} className="w-auto">
                 <TabsList className="inline-flex items-center gap-2 rounded-full bg-gray-100 p-1 shadow-sm">
                   <TabsTrigger value="monthly" className="flex h-11 items-center justify-center rounded-full px-5 text-sm sm:text-base">
-                    Monthly
+                    {t("pricing.billingInterval.monthly")}
                   </TabsTrigger>
                   <TabsTrigger value="annual" className="flex h-11 items-center justify-center gap-2 rounded-full px-5 text-sm sm:text-base">
-                    <span>Annual</span>
-                    <Badge className="rounded-full bg-green-600 px-2 py-1 text-[11px] font-semibold leading-none text-white">Save 17%</Badge>
+                    <span>{t("pricing.billingInterval.annual")}</span>
+                    <Badge className="rounded-full bg-green-600 px-2 py-1 text-[11px] font-semibold leading-none text-white">
+                      {t("pricing.billingInterval.save")}
+                    </Badge>
                   </TabsTrigger>
                 </TabsList>
               </Tabs>
@@ -373,12 +373,12 @@ function LandingInner() {
                     {billingInterval === "monthly" ? (
                       <>
                         <span className="text-3xl font-bold sm:text-4xl">£19.99</span>
-                        <span className="text-sm text-gray-600 sm:text-base">/month</span>
+                        <span className="text-sm text-gray-600 sm:text-base">{t("pricing.plans.perMonth")}</span>
                       </>
                     ) : (
                       <>
                         <span className="text-3xl font-bold sm:text-4xl">£199.90</span>
-                        <span className="text-sm text-gray-600 sm:text-base">/year</span>
+                        <span className="text-sm text-gray-600 sm:text-base">{t("pricing.plans.perYear")}</span>
                       </>
                     )}
                   </div>
@@ -426,12 +426,12 @@ function LandingInner() {
                     {billingInterval === "monthly" ? (
                       <>
                         <span className="text-3xl font-bold sm:text-4xl">£39.99</span>
-                        <span className="text-sm text-gray-600 sm:text-base">/month</span>
+                        <span className="text-sm text-gray-600 sm:text-base">{t("pricing.plans.perMonth")}</span>
                       </>
                     ) : (
                       <>
                         <span className="text-3xl font-bold sm:text-4xl">£399.90</span>
-                        <span className="text-sm text-gray-600 sm:text-base">/year</span>
+                        <span className="text-sm text-gray-600 sm:text-base">{t("pricing.plans.perYear")}</span>
                       </>
                     )}
                   </div>
@@ -493,7 +493,7 @@ function LandingInner() {
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>Multiple custom domains</span>
+                    <span>{t("pricing.features.multipleCustomDomains")}</span>
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="h-5 w-5 text-green-600" />
