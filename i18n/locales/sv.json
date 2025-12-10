@@ -583,7 +583,8 @@
     "hero": {
       "title": "Kontakta vårt säljteam",
       "description": "Kontakta oss så hjälper vi gärna till att svara på alla frågor om Disclosurely.",
-      "subtitle": "Redo att förvandla din organisations rapporteringsförmåga? Kontakta vårt team."
+      "subtitle": "Redo att förvandla din organisations rapporteringsförmåga? Kontakta vårt team.",
+      "tag": "Contact"
     },
     "info": {
       "title": "Kontaktinformation",

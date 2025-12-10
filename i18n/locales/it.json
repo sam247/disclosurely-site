@@ -583,7 +583,8 @@
     "hero": {
       "title": "Contatta il nostro team vendite",
       "description": "Mettiti in contatto con noi e saremo felici di aiutarti a rispondere a qualsiasi domanda su Disclosurely.",
-      "subtitle": "Pronto a trasformare le capacità di segnalazione della tua organizzazione? Mettiti in contatto con il nostro team."
+      "subtitle": "Pronto a trasformare le capacità di segnalazione della tua organizzazione? Mettiti in contatto con il nostro team.",
+      "tag": "Contact"
     },
     "info": {
       "title": "Informazioni di contatto",

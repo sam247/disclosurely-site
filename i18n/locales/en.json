@@ -583,8 +583,30 @@
       "securityDescription": "AES-GCM encryption, access logging, and continuous monitoring help meet GDPR, ISO 27001, and sector frameworks."
     }
   },
+  "careers": {
+    "hero": {
+      "tag": "Careers",
+      "title": "Join the Disclosurely team",
+      "subtitle": "Build secure whistleblowing and compliance technology that helps organisations protect their people."
+    },
+    "culture": {
+      "title": "Our culture",
+      "description": "We move fast, stay security-first, and obsess over customer trust. Remote-friendly, inclusive, and collaborative.",
+      "points": [
+        "Security and privacy are core values",
+        "Remote-first with flexible working",
+        "Inclusive team and continuous learning"
+      ]
+    },
+    "roles": {
+      "title": "Open roles",
+      "description": "We're hiring across engineering, security, product, and customer success. Reach out with your CV and a short note on why you want to work on whistleblowing and compliance.",
+      "cta": "Send us your CV"
+    }
+  },
   "contact": {
     "hero": {
+      "tag": "Contact",
       "title": "Contact Our Sales Team",
       "description": "Get in touch with us and we'll be happy to help answer any questions about Disclosurely.",
       "subtitle": "Ready to transform your organization's reporting capabilities? Get in touch with our team."

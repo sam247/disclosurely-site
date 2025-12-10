@@ -35,7 +35,7 @@ function ContactContent() {
         <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
-              Contact
+              {t("contact.hero.tag")}
             </span>
             <h1 className="mb-4 text-4xl font-bold text-gray-900 sm:text-5xl">{t("contact.hero.title")}</h1>
             <p className="text-lg text-gray-600">{t("contact.hero.description")}</p>

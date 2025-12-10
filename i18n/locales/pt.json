@@ -583,7 +583,8 @@
     "hero": {
       "title": "Contacte a nossa equipa de vendas",
       "description": "Entre em contacto connosco e teremos todo o prazer em ajudar a responder a qualquer questão sobre o Disclosurely.",
-      "subtitle": "Pronto para transformar as capacidades de relatório da sua organização? Entre em contacto com a nossa equipa."
+      "subtitle": "Pronto para transformar as capacidades de relatório da sua organização? Entre em contacto com a nossa equipa.",
+      "tag": "Contact"
     },
     "info": {
       "title": "Informações de contacto",

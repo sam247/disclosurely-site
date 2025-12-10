@@ -865,7 +865,8 @@
     "hero": {
       "title": "Skontaktuj się z Naszym Działem Sprzedaży",
       "description": "Skontaktuj się z nami, a chętnie pomożemy odpowiedzieć na wszelkie pytania dotyczące Disclosurely.",
-      "subtitle": "Ready to transform your organization's reporting capabilities? Get in touch with our team."
+      "subtitle": "Ready to transform your organization's reporting capabilities? Get in touch with our team.",
+      "tag": "Contact"
     },
     "info": {
       "title": "Informacje Kontaktowe",
