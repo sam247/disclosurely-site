@@ -43,7 +43,7 @@ Following these best practices protects whistleblower identities, prevents unaut
 ### Initial Setup and Configuration
 
 **Secure Platform Configuration:**
-- Complete [initial setup](/admin/initial-setup) with security as top priority
+- Complete [initial setup](/docs/admin/initial-setup) with security as top priority
 - Enable [multi-factor authentication](/security/mfa) requirement for all users immediately
 - Configure appropriate session timeout settings (2 hours idle recommended)
 - Set strong password requirements (minimum 12 characters, complexity required)

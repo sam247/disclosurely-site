@@ -74,7 +74,7 @@ A: Yes, you'll receive status updates and final outcome (within confidentiality 
 ## For Administrators
 
 **Q: How do I set up my organization?**
-A: See [Initial Setup Guide](/admin/initial-setup).
+A: See [Initial Setup Guide](/docs/admin/initial-setup).
 
 **Q: Can I customize the branding?**
 A: Yes, on Pro and Enterprise plans. See [Custom Branding](/admin/custom-branding).
