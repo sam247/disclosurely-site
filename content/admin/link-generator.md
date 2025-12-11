@@ -590,4 +590,4 @@ https://yourorg.disclosurely.com/report?dept=finance
 Questions about link management?
 - Email: support@disclosurely.com
 - [Contact Support](/support/contact)
-- [Video Tutorial](https://disclosurely.com/tutorials/link-generator)
+- [Video Tutorial](/docs/admin/link-generator)

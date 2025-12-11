@@ -522,4 +522,4 @@ Resolution Rate = (Closed Cases / Total Cases) × 100
 Need help with the dashboard?
 - Email: support@disclosurely.com
 - [Contact Support](/support/contact)
-- [Video Tutorials](https://disclosurely.com/tutorials)
+- [Guides & Tutorials](/docs/guides)

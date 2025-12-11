@@ -689,7 +689,7 @@ Languages tested with popular screen readers:
 - VoiceOver (macOS, iOS)
 - TalkBack (Android)
 
-**Learn More:** [Accessibility Features](/features/accessibility)
+**Learn More:** [Accessibility Features](/docs/features/accessibility)
 
 ## Troubleshooting
 

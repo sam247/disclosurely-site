@@ -803,4 +803,4 @@ Questions about the referral program?
 - Email: referrals@disclosurely.com
 - Partnership inquiries: partnerships@disclosurely.com
 - [Contact Support](/support/contact)
-- [Referral Program FAQ](https://disclosurely.com/referrals/faq)
+- [Referral Program FAQ](/docs/support/faqs)

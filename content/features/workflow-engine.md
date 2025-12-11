@@ -729,5 +729,5 @@ Trigger actions in integrated systems:
 Questions about workflow automation?
 - Email: support@disclosurely.com
 - [Contact Support](/support/contact)
-- [Schedule Demo](https://disclosurely.com/demo)
-- [Video Tutorials](https://disclosurely.com/tutorials/workflows)
+- [Schedule Demo](/contact)
+- [Guides & Tutorials](/docs/guides)

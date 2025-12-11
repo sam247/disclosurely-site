@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { cookies, headers } from "next/headers";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 
 import { supportedLanguages } from "@/lib/hreflang";
@@ -67,6 +68,9 @@ export default async function RootLayout({
 
   return (
     <html lang={lang}>
+      <head>
+        <Script src="https://analytics.ahrefs.com/analytics.js" data-key="NOZ1bom3LOJmqVM2vVZ51A" strategy="afterInteractive" />
+      </head>
       <body className="min-h-screen bg-background text-foreground antialiased">
         {children}
         <Analytics />

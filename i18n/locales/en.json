@@ -586,8 +586,8 @@
   "careers": {
     "hero": {
       "tag": "Careers",
-      "title": "Join the Disclosurely team",
-      "subtitle": "Build secure whistleblowing and compliance technology that helps organisations protect their people."
+      "title": "Careers at Disclosurely",
+      "subtitle": "We're not hiring right now, but we always want to meet great people. Share your CV and we'll reach out when new roles open."
     },
     "culture": {
       "title": "Our culture",
@@ -599,9 +599,9 @@
       ]
     },
     "roles": {
-      "title": "Open roles",
-      "description": "We're hiring across engineering, security, product, and customer success. Reach out with your CV and a short note on why you want to work on whistleblowing and compliance.",
-      "cta": "Send us your CV"
+      "title": "No open roles right now",
+      "description": "We don't have any open positions currently. Send your CV and a short note to be considered when new roles open.",
+      "cta": "Join our talent network"
     }
   },
   "contact": {
