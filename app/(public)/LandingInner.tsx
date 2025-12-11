@@ -4,6 +4,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { track } from "@vercel/analytics";
 import { usePathname } from "next/navigation";
 import { ShieldCheck, CheckCircle, CheckCircle2, MessageSquare, Brain } from "lucide-react";
 
@@ -179,6 +180,10 @@ function LandingInner() {
     [t],
   );
 
+  const handleStartTrial = () => {
+    track("start_free_trial", { location: "landing_hero" });
+  };
+
   return (
     <I18nProvider>
       <div className="bg-white">
@@ -207,6 +212,7 @@ function LandingInner() {
               <a
                 href="https://app.disclosurely.com/auth/signup"
                 className="w-full rounded-lg bg-blue-600 px-8 py-3 text-center text-lg font-semibold text-white transition-colors hover:bg-blue-700 sm:w-auto"
+                onClick={handleStartTrial}
               >
                 {t("landing.hero.startFreeTrial")}
               </a>

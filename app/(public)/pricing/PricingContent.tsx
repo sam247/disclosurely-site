@@ -11,6 +11,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import I18nProvider from "@/components/I18nProvider";
 import { useTranslation } from "react-i18next";
+import { track } from "@vercel/analytics";
 import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
 import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
 import { supportedLanguages } from "@/i18n/client";
@@ -22,6 +23,10 @@ function PricingContent() {
   const { currentLanguage, langPrefix } = useLanguageFromUrl();
   useGeographicalLanguage();
   const [billingInterval, setBillingInterval] = useState<"monthly" | "annual">("monthly");
+  const handleStartTrial = (location: string, plan?: string) => {
+    track("start_free_trial", { location, plan, billingInterval });
+    window.location.href = "https://app.disclosurely.com/auth/signup";
+  };
 
   useEffect(() => {
     const lang = currentLanguage || "en";
@@ -52,7 +57,7 @@ function PricingContent() {
           t("pricing.features.cname"),
           t("pricing.features.workflows"),
         ],
-        cta: () => alert("Subscribe starter"),
+        ctaPlan: "starter",
         featured: false,
       },
       {
@@ -71,7 +76,7 @@ function PricingContent() {
           t("pricing.features.workflows"),
         ],
         missing: [],
-        cta: () => alert("Subscribe pro"),
+        ctaPlan: "pro",
         featured: true,
       },
       {
@@ -89,7 +94,7 @@ function PricingContent() {
           t("pricing.features.api"),
         ],
         missing: [],
-        cta: null,
+        ctaPlan: null,
         featured: false,
       },
     ],
@@ -117,6 +122,7 @@ function PricingContent() {
               <Link
                 href="https://app.disclosurely.com/auth/signup"
                 className="rounded-lg bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700"
+                onClick={() => handleStartTrial("pricing_hero")}
               >
                 {t("landing.hero.startFreeTrial")}
               </Link>
@@ -223,7 +229,7 @@ function PricingContent() {
                         </div>
                       ))}
                     </div>
-                    {plan.cta ? (
+                    {plan.ctaPlan ? (
                       <button
                         type="button"
                         className={`mt-6 w-full rounded-md px-4 py-2 text-sm shadow-sm transition-colors ${
@@ -231,7 +237,7 @@ function PricingContent() {
                             ? "bg-blue-600 font-semibold text-white hover:bg-blue-700"
                             : "border border-input bg-background hover:bg-accent hover:text-accent-foreground"
                         }`}
-                        onClick={plan.cta}
+                        onClick={() => handleStartTrial("pricing_plan", plan.ctaPlan || plan.name)}
                       >
                         {t("pricing.cta.startTrial")}
                       </button>
