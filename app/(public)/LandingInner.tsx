@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { track } from "@vercel/analytics";
 import { usePathname } from "next/navigation";
-import { ShieldCheck, CheckCircle, CheckCircle2, MessageSquare, Brain } from "lucide-react";
+import { ShieldCheck, CheckCircle, CheckCircle2, MessageSquare, Brain, X } from "lucide-react";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -57,6 +57,74 @@ function LandingInner() {
   useGeographicalLanguage();
 
   const [billingInterval, setBillingInterval] = useState<"monthly" | "annual">("monthly");
+
+  const handleStartTrial = (location: string, plan?: string) => {
+    track("start_free_trial", { location, plan, billingInterval });
+    window.location.href = "https://app.disclosurely.com/auth/signup";
+  };
+
+  const plans = useMemo(
+    () => [
+      {
+        name: t("pricing.plans.starter.name"),
+        priceMonthly: "£19.99",
+        priceAnnual: "£199.90",
+        description: t("pricing.plans.starter.description"),
+        highlights: [
+          t("pricing.features.unlimitedCases"),
+          t("pricing.features.unlimitedStorage"),
+          t("pricing.features.emailSupport"),
+        ],
+        missing: [
+          t("pricing.features.messaging"),
+          t("pricing.features.aiHelper"),
+          t("pricing.features.customBranding"),
+          t("pricing.features.cname"),
+          t("pricing.features.workflows"),
+        ],
+        ctaPlan: "starter",
+        featured: false,
+      },
+      {
+        name: t("pricing.plans.pro.name"),
+        priceMonthly: "£39.99",
+        priceAnnual: "£399.90",
+        description: t("pricing.plans.pro.description"),
+        highlights: [
+          t("pricing.features.unlimitedCases"),
+          t("pricing.features.unlimitedStorage"),
+          t("pricing.features.emailSupport"),
+          t("pricing.features.messaging"),
+          t("pricing.features.aiHelper"),
+          t("pricing.features.customBranding"),
+          t("pricing.features.cname"),
+          t("pricing.features.workflows"),
+        ],
+        missing: [],
+        ctaPlan: "pro",
+        featured: true,
+      },
+      {
+        name: t("pricing.plans.enterprise.name"),
+        priceMonthly: t("pricing.plans.enterprise.price"),
+        priceAnnual: t("pricing.plans.enterprise.price"),
+        description: t("pricing.plans.enterprise.description"),
+        highlights: [
+          t("pricing.features.everythingPro"),
+          t("pricing.features.teamManagement"),
+          t("pricing.features.multipleCustomDomains"),
+          t("pricing.features.dedicatedSupport"),
+          t("pricing.features.slaGuarantee"),
+          t("pricing.features.customIntegrations"),
+          t("pricing.features.api"),
+        ],
+        missing: [],
+        ctaPlan: null,
+        featured: false,
+      },
+    ],
+    [t],
+  );
 
   useEffect(() => {
     const langSegment = pathname?.split("/")[1];
@@ -180,9 +248,6 @@ function LandingInner() {
     [t],
   );
 
-  const handleStartTrial = () => {
-    track("start_free_trial", { location: "landing_hero" });
-  };
 
   return (
     <I18nProvider>
@@ -212,7 +277,7 @@ function LandingInner() {
               <a
                 href="https://app.disclosurely.com/auth/signup"
                 className="w-full rounded-lg bg-blue-600 px-8 py-3 text-center text-lg font-semibold text-white transition-colors hover:bg-blue-700 sm:w-auto"
-                onClick={handleStartTrial}
+                onClick={() => handleStartTrial("landing_hero")}
               >
                 {t("landing.hero.startFreeTrial")}
               </a>
@@ -363,150 +428,73 @@ function LandingInner() {
                 </TabsList>
               </Tabs>
             </div>
-            <div className="mx-auto grid max-w-5xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              <Card>
-                <CardHeader className="pb-6 text-center">
-                  <CardTitle className="text-xl font-bold sm:text-2xl">{t("pricing.plans.starter.name")}</CardTitle>
-                  <div className="mt-4">
-                    {billingInterval === "monthly" ? (
-                      <>
-                        <span className="text-3xl font-bold sm:text-4xl">£19.99</span>
-                        <span className="text-sm text-gray-600 sm:text-base">{t("pricing.plans.perMonth")}</span>
-                      </>
+            <div className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
+              {plans.map((plan) => (
+                <Card
+                  key={plan.name}
+                  className={plan.featured ? "relative border-blue-200 shadow-lg" : ""}
+                >
+                  {plan.featured && (
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 transform">
+                      <span className="rounded-full bg-blue-600 px-4 py-1 text-xs font-medium text-white sm:text-sm">
+                        {t("pricing.plans.mostPopular")}
+                      </span>
+                    </div>
+                  )}
+                  <CardHeader className="pb-6 text-center">
+                    <CardTitle className="text-xl font-bold sm:text-2xl">{plan.name}</CardTitle>
+                    <div className="mt-4">
+                      <span className="text-3xl font-bold sm:text-4xl">
+                        {billingInterval === "monthly" ? plan.priceMonthly : plan.priceAnnual}
+                      </span>
+                      <span className="text-sm text-gray-600 sm:text-base">
+                        {plan.name === t("pricing.plans.enterprise.name")
+                          ? ""
+                          : billingInterval === "monthly"
+                          ? t("pricing.plans.perMonth")
+                          : t("pricing.plans.perYear")}
+                      </span>
+                    </div>
+                    <CardDescription className="text-sm sm:text-base">{plan.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="space-y-3">
+                      {plan.highlights.map((item) => (
+                        <div key={item} className="flex items-center space-x-3">
+                          <CheckCircle className={`h-5 w-5 ${item === t("pricing.features.customIntegrations") || item === t("pricing.features.api") ? "text-gray-400" : "text-green-600"}`} />
+                          <span className="text-sm text-gray-700 sm:text-base">{item}</span>
+                        </div>
+                      ))}
+                      {plan.missing.map((item) => (
+                        <div key={item} className="flex items-center space-x-3">
+                          <X className="h-5 w-5 text-red-500" />
+                          <span className="text-sm text-gray-500 sm:text-base">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                    {plan.ctaPlan ? (
+                      <button
+                        type="button"
+                        className={`mt-6 w-full rounded-md px-4 py-2 text-sm shadow-sm transition-colors ${
+                          plan.featured
+                            ? "bg-blue-600 font-semibold text-white hover:bg-blue-700"
+                            : "border border-input bg-background hover:bg-accent hover:text-accent-foreground"
+                        }`}
+                        onClick={() => handleStartTrial("pricing_plan", plan.ctaPlan || plan.name)}
+                      >
+                        {t("pricing.cta.startTrial")}
+                      </button>
                     ) : (
-                      <>
-                        <span className="text-3xl font-bold sm:text-4xl">£199.90</span>
-                        <span className="text-sm text-gray-600 sm:text-base">{t("pricing.plans.perYear")}</span>
-                      </>
+                      <Link
+                        href={`${langPrefix}/contact`}
+                        className="mt-6 block w-full rounded-md border border-input bg-background px-4 py-2 text-center text-sm shadow-sm hover:bg-accent hover:text-accent-foreground"
+                      >
+                        {t("pricing.cta.contactSales")}
+                      </Link>
                     )}
-                  </div>
-                  <CardDescription className="text-sm sm:text-base">{t("pricing.plans.starter.description")}</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-3 text-sm text-gray-700 sm:text-base">
-                  <ul className="space-y-3">
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>{t("pricing.features.unlimitedCases")}</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>{t("pricing.features.unlimitedStorage")}</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>{t("pricing.features.emailSupport")}</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600 opacity-40" />
-                      <span className="text-gray-500">{t("pricing.features.messaging")}</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600 opacity-40" />
-                      <span className="text-gray-500">{t("pricing.features.aiHelper")}</span>
-                    </li>
-                  </ul>
-                  <Link
-                    href="https://app.disclosurely.com/auth/signup"
-                    className="mt-4 inline-flex w-full justify-center rounded-md border border-gray-300 px-4 py-2 text-center text-gray-800 transition hover:border-gray-400"
-                  >
-                    {t("pricing.cta.startTrial")}
-                  </Link>
-                </CardContent>
-              </Card>
-
-              <Card className="relative flex flex-col border-blue-200 shadow-lg shadow-blue-50">
-                <div className="absolute -top-3 left-1/2 w-max -translate-x-1/2 transform rounded-full bg-blue-600 px-4 py-1 text-xs font-medium text-white sm:text-sm">
-                  {t("pricing.plans.mostPopular")}
-                </div>
-                <CardHeader className="pb-6 text-center">
-                  <CardTitle className="text-xl font-bold sm:text-2xl">{t("pricing.plans.pro.name")}</CardTitle>
-                  <div className="mt-4">
-                    {billingInterval === "monthly" ? (
-                      <>
-                        <span className="text-3xl font-bold sm:text-4xl">£39.99</span>
-                        <span className="text-sm text-gray-600 sm:text-base">{t("pricing.plans.perMonth")}</span>
-                      </>
-                    ) : (
-                      <>
-                        <span className="text-3xl font-bold sm:text-4xl">£399.90</span>
-                        <span className="text-sm text-gray-600 sm:text-base">{t("pricing.plans.perYear")}</span>
-                      </>
-                    )}
-                  </div>
-                  <CardDescription className="text-sm sm:text-base">{t("pricing.plans.pro.description")}</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-3 text-sm text-gray-700 sm:text-base">
-                  <ul className="space-y-3">
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>{t("pricing.features.unlimitedCases")}</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>{t("pricing.features.unlimitedStorage")}</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>{t("pricing.features.emailSupport")}</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>{t("pricing.features.messaging")}</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>{t("pricing.features.aiHelper")}</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>{t("pricing.features.customBranding")}</span>
-                    </li>
-                  </ul>
-                  <Link
-                    href="https://app.disclosurely.com/auth/signup"
-                    className="mt-4 inline-flex w-full justify-center rounded-md bg-blue-600 px-4 py-2 text-center text-white transition hover:bg-blue-700"
-                  >
-                    {t("pricing.cta.startTrial")}
-                  </Link>
-                </CardContent>
-              </Card>
-
-              <Card className="flex flex-col">
-                <CardHeader className="pb-6 text-center">
-                  <CardTitle className="text-xl font-bold sm:text-2xl">{t("pricing.plans.enterprise.name")}</CardTitle>
-                  <div className="mt-4">
-                    <span className="text-3xl font-bold sm:text-4xl">{t("pricing.plans.enterprise.price")}</span>
-                  </div>
-                  <CardDescription className="text-sm sm:text-base">{t("pricing.plans.enterprise.description")}</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-3 text-sm text-gray-700 sm:text-base">
-                  <ul className="space-y-3">
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>{t("pricing.features.everythingPro")}</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>{t("pricing.features.teamManagement")}</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                    <span>{t("pricing.features.multipleCustomDomains")}</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>{t("pricing.features.dedicatedSupport")}</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
-                      <span>{t("pricing.features.slaGuarantee")}</span>
-                    </li>
-                  </ul>
-                  <Link href="/contact" className="mt-4 inline-flex w-full justify-center rounded-md border border-gray-300 px-4 py-2 text-center text-gray-800 transition hover:border-gray-400">
-                    {t("pricing.cta.contactSales")}
-                  </Link>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </section>
