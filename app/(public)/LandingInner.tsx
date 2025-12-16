@@ -134,7 +134,7 @@ function LandingInner() {
           t("landing.anonymousReporting.benefit2"),
           t("landing.anonymousReporting.benefit3"),
         ],
-        image: "/assets/artwork/anonymous_reporting_made_simple.png",
+        image: "/assets/artwork/new_anonymous_reporting_made_simple.jpeg",
       },
       {
         title: t("landing.encryption.title"),
@@ -144,7 +144,7 @@ function LandingInner() {
           t("landing.encryption.benefit2"),
           t("landing.encryption.benefit3"),
         ],
-        image: "/assets/artwork/military_grade_encryption.png",
+        image: "/assets/artwork/new_military_grade_encryption.jpeg",
       },
       {
         title: t("landing.compliance.title"),
@@ -154,7 +154,7 @@ function LandingInner() {
           t("landing.compliance.benefit2"),
           t("landing.compliance.benefit3"),
         ],
-        image: "/assets/artwork/compliance_made_easy.png",
+        image: "/assets/artwork/new_compliance_made_easy.jpeg",
       },
       {
         title: t("landing.messaging.title"),
