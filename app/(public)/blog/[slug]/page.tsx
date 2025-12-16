@@ -254,8 +254,8 @@ export default async function BlogPostPage({ params }: { params: Params }) {
         {relatedPosts.length > 0 && (
           <section className="px-4 pb-12 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-4xl">
-              <h2 className="mt-12 mb-6 text-xl font-bold text-gray-900">Related Articles</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <h2 className="mt-8 mb-4 text-lg font-bold text-gray-900">Related Articles</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {relatedPosts.map((relatedPost) => {
                   const relatedImageUrl = relatedPost.featuredImage
                     ? relatedPost.featuredImage.startsWith("http")
@@ -273,14 +273,14 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                           <Image
                             src={relatedImageUrl}
                             alt={relatedPost.title}
-                            width={500}
-                            height={375}
+                            width={375}
+                            height={281}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                           />
                         </div>
                       )}
-                      <CardHeader className="p-4">
-                        <div className="flex items-center gap-2 text-xs text-gray-500 mb-1.5">
+                      <CardHeader className="p-3">
+                        <div className="flex items-center gap-1.5 text-xs text-gray-500 mb-1">
                           <Calendar className="h-3 w-3" aria-hidden="true" />
                           <span>
                             {relatedPost.publishDate
@@ -296,23 +296,23 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                           )}
                         </div>
                         <Link href={`/blog/${relatedPost.slug}`}>
-                          <CardTitle className="text-lg font-semibold line-clamp-2 group-hover:text-blue-600 transition-colors cursor-pointer">
+                          <CardTitle className="text-base font-semibold line-clamp-2 group-hover:text-blue-600 transition-colors cursor-pointer">
                             {relatedPost.title}
                           </CardTitle>
                         </Link>
                         {relatedPost.authorName && (
-                          <div className="flex items-center gap-2 text-xs text-gray-600 mt-1">
+                          <div className="flex items-center gap-2 text-xs text-gray-600 mt-0.5">
                             <span>By {relatedPost.authorName}</span>
                           </div>
                         )}
                       </CardHeader>
-                      <CardContent className="p-4 pt-0 flex-1 flex flex-col justify-between">
-                        <CardDescription className="text-sm text-gray-600 line-clamp-2 mb-3">
+                      <CardContent className="p-3 pt-0 flex-1 flex flex-col justify-between">
+                        <CardDescription className="text-xs text-gray-600 line-clamp-2 mb-2">
                           {relatedPost.excerpt}
                         </CardDescription>
                         <Link
                           href={`/blog/${relatedPost.slug}`}
-                          className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold transition-colors hover:bg-blue-700"
+                          className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-blue-700"
                           aria-label={`Read more about ${relatedPost.title}`}
                         >
                           Read Article
