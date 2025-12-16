@@ -164,7 +164,7 @@ function LandingInner() {
           t("landing.messaging.benefit2"),
           t("landing.messaging.benefit3"),
         ],
-        image: "/assets/artwork/secure_two_way_communication.png",
+        image: "/assets/artwork/new_secure_two_way_communication.jpeg",
       },
       {
         title: t("landing.aiPowered.title"),
@@ -289,10 +289,6 @@ function LandingInner() {
             {highlights.map((item, index) => (
               <div key={item.title} className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                  <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-blue-700">
-                    {highlightIcons[index]}
-                    <span className="text-sm font-medium">{t("landing.highlights.tag")}</span>
-                  </div>
                   <h3 className="mb-3 text-2xl font-bold text-gray-900 sm:text-3xl">{item.title}</h3>
                   <p className="mb-4 text-gray-700">{item.description}</p>
                   <ul className="space-y-2 text-gray-700">
@@ -324,10 +320,6 @@ function LandingInner() {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-blue-700">
-                  <ShieldCheck className="h-4 w-4" />
-                  <span className="text-sm font-medium">{t("landing.branding.tag")}</span>
-                </div>
                 <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">{t("landing.branding.title")}</h2>
                 <p className="mb-6 text-lg text-gray-600">{t("landing.branding.description")}</p>
                 <ul className="mb-6 space-y-3">
