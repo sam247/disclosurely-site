@@ -174,7 +174,7 @@ function LandingInner() {
           t("landing.aiPowered.benefit2"),
           t("landing.aiPowered.benefit3"),
         ],
-        image: "/assets/artwork/ai_powered_case_analysis.png",
+        image: "/assets/artwork/new_ai_powered_case_analysis.jpeg",
       },
     ],
     [t],
