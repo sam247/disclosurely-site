@@ -249,12 +249,15 @@ function LandingInner() {
         image: "/assets/artwork/new_secure_two_way_communication.jpeg",
       },
       {
-        title: t("landing.aiPowered.title"),
-        description: t("landing.aiPowered.description"),
+        title: "AI-Powered Case Analysis",
+        description: "",
+        additionalContent: [
+          "Leverage artificial intelligence to detect emerging risks earlier and focus your attention where it matters most. The built-in AI assistant reviews incoming whistleblowing cases, surfaces patterns across reports, and highlights high-risk issues so compliance teams can respond faster and more consistently. By turning raw incident data into practical insights, Disclosurely helps you move from reactive case handling to proactive risk management.",
+        ],
         bullets: [
-          t("landing.aiPowered.benefit1"),
-          t("landing.aiPowered.benefit2"),
-          t("landing.aiPowered.benefit3"),
+          "Automated risk assessment that scores new reports based on factors like severity, topic, and potential regulatory impact, giving investigators an instant view of what needs attention first.",
+          "Pattern detection across cases to reveal recurring issues, hotspots in specific locations or departments, and trends that may indicate systemic problems.",
+          "Intelligent case prioritisation that dynamically orders your case queue, ensuring high-impact and time-sensitive whistleblowing reports never get buried or overlooked.",
         ],
         image: "/assets/artwork/new_ai_powered_case_analysis.jpeg",
       },
