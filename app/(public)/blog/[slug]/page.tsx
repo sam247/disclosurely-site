@@ -11,12 +11,17 @@ import { Card } from "@/components/ui/card";
 import { fetchBlogPost } from "@/lib/contentful";
 import { generatePageMetadata, generatePageStructuredData, StructuredData } from "@/lib/seo";
 
-type Params = { slug: string };
+type Params = { slug: string } | Promise<{ slug: string }>;
 
 export const revalidate = 60;
 
 export async function generateMetadata({ params }: { params: Params }) {
-  const post = await fetchBlogPost(params.slug);
+  // #region agent log
+  const resolvedParams = await Promise.resolve(params);
+  const slugValue = resolvedParams.slug;
+  fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app/(public)/blog/[slug]/page.tsx:18',message:'generateMetadata params check',data:{isPromise:params instanceof Promise,paramsType:typeof params,slugValue,resolvedParams},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
+  // #endregion
+  const post = await fetchBlogPost(slugValue);
   if (!post) {
     return {
       title: "Blog Post Not Found",
@@ -29,7 +34,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     : undefined;
 
   return generatePageMetadata({
-    pagePath: `/blog/${params.slug}`,
+    pagePath: `/blog/${slugValue}`,
     fallbackTitle: post.seoTitle || post.title,
     fallbackDescription: post.seoDescription || post.excerpt || "",
     fallbackImage: imageUrl,
@@ -38,7 +43,15 @@ export async function generateMetadata({ params }: { params: Params }) {
 }
 
 export default async function BlogPostPage({ params }: { params: Params }) {
-  const post = await fetchBlogPost(params.slug);
+  // #region agent log
+  const resolvedParams = await Promise.resolve(params);
+  const slugValue = resolvedParams.slug;
+  fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app/(public)/blog/[slug]/page.tsx:40',message:'BlogPostPage params check',data:{isPromise:params instanceof Promise,paramsType:typeof params,slugValue,resolvedParams},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
+  // #endregion
+  const post = await fetchBlogPost(slugValue);
+  // #region agent log
+  fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app/(public)/blog/[slug]/page.tsx:43',message:'BlogPostPage post received',data:{slugValue,postId:post?.id,postTitle:post?.title,postSlug:post?.slug,hasContent:!!post?.content},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+  // #endregion
   if (!post) return notFound();
 
   const content = post.content as Document | undefined;
@@ -64,7 +77,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
   const articleSchema = generatePageStructuredData("article", {
     headline: post.title,
     description: post.excerpt || "",
-    url: `https://disclosurely.com/blog/${params.slug}`,
+    url: `https://disclosurely.com/blog/${slugValue}`,
     image: imageUrl,
     datePublished: post.publishDate || undefined,
     dateModified: post.publishDate || undefined,

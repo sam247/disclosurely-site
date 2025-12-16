@@ -161,16 +161,29 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
 }
 
 export async function fetchBlogPost(slug: string): Promise<BlogPost & { links?: any } | null> {
+  // #region agent log
+  fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'lib/contentful.ts:163',message:'fetchBlogPost entry',data:{slug,slugType:typeof slug,hasClient:!!contentfulClient,hasToken:!!contentfulToken},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+  // #endregion
   if (!contentfulClient || !contentfulToken) return null;
 
-  const response = await contentfulClient.getEntries<BlogPostSkeleton>({
+  const queryParams = {
     content_type: "9oYANGj5uBRT6UHsl5LxO",
     "fields.slug": slug,
     limit: 1,
     include: 10, // Include linked assets and entries (increased to ensure all embedded assets are included)
-  } as any); // eslint-disable-line @typescript-eslint/no-explicit-any
+  };
+  // #region agent log
+  fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'lib/contentful.ts:170',message:'fetchBlogPost query params',data:{slug,queryParams},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+  // #endregion
+  const response = await contentfulClient.getEntries<BlogPostSkeleton>(queryParams as any); // eslint-disable-line @typescript-eslint/no-explicit-any
+  // #region agent log
+  fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'lib/contentful.ts:173',message:'fetchBlogPost response received',data:{slug,itemsCount:response.items.length,firstItemId:response.items[0]?.sys?.id,firstItemSlug:response.items[0]?.fields?.slug,firstItemTitle:response.items[0]?.fields?.title},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+  // #endregion
 
   const post = response.items[0];
+  // #region agent log
+  fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'lib/contentful.ts:175',message:'fetchBlogPost post extracted',data:{slug,hasPost:!!post,postId:post?.sys?.id,postSlug:post?.fields?.slug,postTitle:post?.fields?.title},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+  // #endregion
   if (!post) return null;
 
   // Extract author
@@ -194,7 +207,7 @@ export async function fetchBlogPost(slug: string): Promise<BlogPost & { links?: 
   const featuredImage = post.fields.featuredImage as any;
   const featuredImageUrl = featuredImage?.fields?.file?.url;
 
-  return {
+  const result = {
     id: post.sys.id,
     title: post.fields.title,
     slug: post.fields.slug,
@@ -211,6 +224,10 @@ export async function fetchBlogPost(slug: string): Promise<BlogPost & { links?: 
     categories,
     links: response.includes, // Include the links for resolving embedded assets
   };
+  // #region agent log
+  fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'lib/contentful.ts:212',message:'fetchBlogPost returning result',data:{requestedSlug:slug,resultSlug:result.slug,resultId:result.id,resultTitle:result.title,slugMatch:slug===result.slug},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+  // #endregion
+  return result;
 }
 
 export async function fetchCategories(): Promise<Category[]> {
