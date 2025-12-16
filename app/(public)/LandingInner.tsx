@@ -197,6 +197,10 @@ function LandingInner() {
       {
         title: t("landing.anonymousReporting.title"),
         description: t("landing.anonymousReporting.description"),
+        additionalContent: [
+          "Enable employees to report misconduct, ethics violations, or other concerns completely anonymously through a dedicated whistleblower reporting channel. Our advanced encryption and zero data collection on reporters ensure whistleblower identity protection while maintaining full compliance with GDPR, the EU Whistleblower Protection Directive, and other regulatory requirements your organisation must meet.​",
+          "Anonymous reports are submitted via a simple, browser-based whistleblower form that works on any device, so people can speak up quickly and safely from anywhere. Behind the scenes, cases are routed into your whistleblower software workspace, giving case handlers a centralised view of every report, clear audit trails, and deadlines for acknowledgement, follow-up, and resolution.",
+        ],
         bullets: [
           t("landing.anonymousReporting.benefit1"),
           t("landing.anonymousReporting.benefit2"),
@@ -356,6 +360,15 @@ function LandingInner() {
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                   <h3 className="mb-3 text-2xl font-bold text-gray-900 sm:text-3xl">{item.title}</h3>
                   <p className="mb-4 text-gray-700">{item.description}</p>
+                  {item.additionalContent && (
+                    <div className="mb-4 space-y-4 text-gray-700">
+                      {item.additionalContent.map((paragraph, idx) => (
+                        <p key={idx} className="text-base leading-relaxed">
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+                  )}
                   <ul className="space-y-2 text-gray-700">
                     {item.bullets.map((point) => (
                       <li key={point} className="flex items-center gap-2">
