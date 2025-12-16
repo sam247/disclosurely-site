@@ -306,7 +306,7 @@ function LandingInner() {
                 </div>
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                   <div className="overflow-hidden rounded-xl border border-gray-100 shadow-sm">
-                    <Image src={item.image} alt={item.title} width={1200} height={900} className="h-full w-full object-cover" />
+                    <Image src={item.image} alt={item.title} width={1200} height={720} className="h-full w-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -319,8 +319,8 @@ function LandingInner() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div className="order-2 lg:order-1">
-                <div className="flex h-96 w-full items-center justify-center rounded-lg">
-                  <Image src="/assets/artwork/new_branding.jpeg" alt={t("landing.branding.imageAlt")} width={900} height={600} className="h-full w-full object-contain" />
+                <div className="flex h-[600px] w-full items-center justify-center rounded-lg">
+                  <Image src="/assets/artwork/new_branding.jpeg" alt={t("landing.branding.imageAlt")} width={600} height={600} className="h-full w-full object-contain" />
                 </div>
               </div>
               <div className="order-1 lg:order-2">
