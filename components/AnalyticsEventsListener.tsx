@@ -11,6 +11,10 @@ type SignupMessage =
     }
   | Record<string, unknown>;
 
+function isSignupCompletedMessage(data: SignupMessage): data is { type: "signup_completed"; plan?: string; location?: string } {
+  return data.type === "signup_completed";
+}
+
 export default function AnalyticsEventsListener() {
   useEffect(() => {
     // Capture signup completion via query param ?signup=success&plan=pro
@@ -32,8 +36,9 @@ export default function AnalyticsEventsListener() {
     // Capture signup completion via postMessage from the app shell
     const onMessage = (event: MessageEvent<SignupMessage>) => {
       if (!event?.data || typeof event.data !== "object") return;
-      if ((event.data as SignupMessage).type === "signup_completed") {
-        const { plan, location } = event.data as SignupMessage;
+      const data = event.data as SignupMessage;
+      if (isSignupCompletedMessage(data)) {
+        const { plan, location } = data;
         track("signup_completed", { plan, location });
       }
     };
