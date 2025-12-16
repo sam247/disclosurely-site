@@ -201,9 +201,9 @@ function LandingInner() {
           "Anonymous reports are submitted via a simple, browser-based whistleblower form that works on any device, so people can speak up quickly and safely from anywhere. Behind the scenes, cases are routed into your whistleblower software workspace, giving case handlers a centralised view of every report, clear audit trails, and deadlines for acknowledgement, follow-up, and resolution.",
         ],
         bullets: [
-          t("landing.anonymousReporting.benefit1"),
-          t("landing.anonymousReporting.benefit2"),
-          t("landing.anonymousReporting.benefit3"),
+          "Zero data collection on reporters (no IP tracking, device fingerprinting, or hidden identifiers) to maximise trust and protect employees from retaliation.​",
+          "Anonymous follow-up messaging so investigators can ask clarifying questions and share updates while the whistleblower stays completely anonymous.​",
+          "Multiple language support to meet EU whistleblowing requirements and make it easy for global teams to report concerns in their preferred language.",
         ],
         image: "/assets/artwork/new_anonymous_reporting_made_simple.jpeg",
       },
