@@ -215,9 +215,9 @@ function LandingInner() {
           "By combining strong encryption with strict access controls and detailed audit trails, Disclosurely helps your organisation meet modern whistleblower protection, GDPR, and data security expectations while giving reporters the confidence to speak up safely.",
         ],
         bullets: [
-          t("landing.encryption.benefit1"),
-          t("landing.encryption.benefit2"),
-          t("landing.encryption.benefit3"),
+          "AES-256 end-to-end encryption so whistleblower reports, internal comments, and case updates are encrypted in transit and at rest, reducing the risk of interception or data leakage.",
+          "Encrypted file attachments for evidence such as screenshots, documents, or emails, ensuring supporting material is secured to the same standard as the report itself.",
+          "Secure data storage in hardened, access-controlled environments with role-based permissions, so only authorised case handlers can decrypt and review whistleblowing data.",
         ],
         image: "/assets/artwork/new_military_grade_encryption.jpeg",
       },
@@ -229,9 +229,9 @@ function LandingInner() {
           "Built-in audit trails, case timelines, and exportable reports give compliance teams everything needed to evidence how reports were handled, support internal investigations, and demonstrate regulatory adherence to boards, regulators, or external auditors.",
         ],
         bullets: [
-          t("landing.compliance.benefit1"),
-          t("landing.compliance.benefit2"),
-          t("landing.compliance.benefit3"),
+          "EU Whistleblowing Directive compliant workflows, including anonymous reporting, clear acknowledgement timelines, and role-based access for designated handlers and investigators.",
+          "GDPR-ready by design, with data minimisation, strict access controls, and configurable retention policies for whistleblowing records and evidence.",
+          "Automated compliance reports that surface key KPIs (volumes, categories, outcomes, timelines) and generate exportable audit packs for management, regulators, and external advisers.",
         ],
         image: "/assets/artwork/new_compliance_made_easy.jpeg",
       },
@@ -378,8 +378,8 @@ function LandingInner() {
                   )}
                   <ul className="space-y-2 text-gray-700">
                     {item.bullets.map((point) => (
-                      <li key={point} className="flex items-center gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-blue-600" />
+                      <li key={point} className="flex items-start gap-2">
+                        <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
                         <span>{point}</span>
                       </li>
                     ))}
