@@ -320,7 +320,7 @@ function LandingInner() {
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div className="order-2 lg:order-1">
                 <div className="overflow-hidden rounded-xl border border-gray-100 shadow-sm">
-                  <Image src="/assets/artwork/new_branding.jpeg" alt={t("landing.branding.imageAlt")} width={1200} height={720} className="h-full w-full object-cover" />
+                  <Image src="/assets/artwork/new_branding.jpeg" alt={t("landing.branding.imageAlt")} width={600} height={600} className="h-full w-full object-cover" />
                 </div>
               </div>
               <div className="order-1 lg:order-2">
