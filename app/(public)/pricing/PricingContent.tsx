@@ -2,7 +2,7 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { CheckCircle, X } from "lucide-react";
+import { CheckCircle, X, Star } from "lucide-react";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -130,40 +130,6 @@ function PricingContent() {
           </div>
         </section>
 
-        {/* Trust Indicators */}
-        <section className="border-b border-gray-200 bg-gray-50 px-4 py-12 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
-            <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:gap-12">
-              <div className="flex items-center gap-3 text-center md:text-left">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-600 sm:h-12 sm:w-12">
-                  <CheckCircle className="h-5 w-5 text-white sm:h-7 sm:w-7" />
-                </div>
-                <div>
-                  <div className="text-base font-bold text-gray-900 sm:text-lg">{t("pricing.trustIndicators.guarantee.title")}</div>
-                  <div className="text-xs text-gray-600 sm:text-sm">{t("pricing.trustIndicators.guarantee.description")}</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 text-center md:text-left">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-600 sm:h-12 sm:w-12">
-                  <CheckCircle className="h-5 w-5 text-white sm:h-7 sm:w-7" />
-                </div>
-                <div>
-                  <div className="text-base font-bold text-gray-900 sm:text-lg">{t("pricing.trustIndicators.ukBusiness.title")}</div>
-                  <div className="text-xs text-gray-600 sm:text-sm">{t("pricing.trustIndicators.ukBusiness.description")}</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 text-center md:text-left">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-600 sm:h-12 sm:w-12">
-                  <CheckCircle className="h-5 w-5 text-white sm:h-7 sm:w-7" />
-                </div>
-                <div>
-                  <div className="text-base font-bold text-gray-900 sm:text-lg">{t("pricing.trustIndicators.enterpriseSecurity.title")}</div>
-                  <div className="text-xs text-gray-600 sm:text-sm">{t("pricing.trustIndicators.enterpriseSecurity.description")}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Pricing Section */}
         <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
@@ -272,16 +238,24 @@ function PricingContent() {
           </div>
         </section>
 
-        {/* Testimonials & Benefits Section */}
-        <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
+        {/* Testimonials Section - Trusted by companies */}
+        <section className="bg-gradient-to-b from-gray-900 to-gray-800 px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <div className="grid gap-8 lg:gap-12 md:grid-cols-2">
-              {/* Testimonial */}
-              <div className="rounded-2xl bg-white p-8 shadow-sm">
-                <div className="mb-4 text-6xl font-bold leading-none text-blue-600">"</div>
-                <p className="mb-6 text-lg leading-relaxed text-gray-700">{t("pricing.testimonial.quote")}</p>
+            <div className="mb-12 text-center">
+              <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">Trusted by companies in all industries</h2>
+            </div>
+            <div className="mx-auto max-w-3xl">
+              <div className="rounded-2xl bg-white p-8 shadow-xl">
+                <p className="mb-6 text-lg leading-relaxed text-gray-700">
+                  {t("pricing.testimonial.quote")}
+                </p>
+                <div className="mb-4 flex gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
                 <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-blue-700 font-semibold text-white">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-blue-700 font-semibold text-white text-xl">
                     {t("pricing.testimonial.initials")}
                   </div>
                   <div>
@@ -290,55 +264,51 @@ function PricingContent() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
 
-              {/* Benefits */}
-              <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 p-8 text-white shadow-lg">
-                <h3 className="mb-6 text-2xl font-bold">{t("pricing.benefits.title")}</h3>
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-white/20">
-                      <CheckCircle className="h-6 w-6 text-white" />
-                    </div>
-                    <div>
-                      <div className="mb-1 text-xl font-semibold">{t("pricing.benefits.stat1.title")}</div>
-                      <div className="text-sm text-blue-100">{t("pricing.benefits.stat1.description")}</div>
-                    </div>
+        {/* Benefits Section */}
+        <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl">
+            <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 p-8 text-white shadow-lg md:p-12">
+              <h3 className="mb-8 text-center text-2xl font-bold md:text-3xl">{t("pricing.benefits.title")}</h3>
+              <div className="grid gap-6 md:grid-cols-3">
+                <div className="flex flex-col items-center text-center">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-white/20">
+                    <CheckCircle className="h-6 w-6 text-white" />
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-white/20">
-                      <CheckCircle className="h-6 w-6 text-white" />
-                    </div>
-                    <div>
-                      <div className="mb-1 text-xl font-semibold">{t("pricing.benefits.stat2.title")}</div>
-                      <div className="text-sm text-blue-100">{t("pricing.benefits.stat2.description")}</div>
-                    </div>
+                  <div className="mb-1 text-xl font-semibold">{t("pricing.benefits.stat1.title")}</div>
+                  <div className="text-sm text-blue-100">{t("pricing.benefits.stat1.description")}</div>
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-white/20">
+                    <CheckCircle className="h-6 w-6 text-white" />
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-white/20">
-                      <CheckCircle className="h-6 w-6 text-white" />
-                    </div>
-                    <div>
-                      <div className="mb-1 text-xl font-semibold">{t("pricing.benefits.stat3.title")}</div>
-                      <div className="text-sm text-blue-100">{t("pricing.benefits.stat3.description")}</div>
-                    </div>
+                  <div className="mb-1 text-xl font-semibold">{t("pricing.benefits.stat2.title")}</div>
+                  <div className="text-sm text-blue-100">{t("pricing.benefits.stat2.description")}</div>
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-white/20">
+                    <CheckCircle className="h-6 w-6 text-white" />
                   </div>
+                  <div className="mb-1 text-xl font-semibold">{t("pricing.benefits.stat3.title")}</div>
+                  <div className="text-sm text-blue-100">{t("pricing.benefits.stat3.description")}</div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Security Features Section */}
+        {/* Security Features Section - Two Columns */}
         <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <div className="grid items-center gap-12 md:grid-cols-2">
-              <div>
-                <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">{t("pricing.security.title")}</h2>
-                <p className="mb-6 text-lg text-gray-600">{t("pricing.security.description")}</p>
-                <Button variant="outline" size="lg" className="border-gray-300">
-                  {t("pricing.security.cta")}
-                </Button>
-              </div>
+            <div className="mb-12 text-center">
+              <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">{t("pricing.security.title")}</h2>
+              <p className="text-lg text-gray-600">{t("pricing.security.description")}</p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-2">
+              {/* Left Column */}
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-6 w-6 flex-shrink-0 text-green-600" />
@@ -368,6 +338,9 @@ function PricingContent() {
                     <div className="text-sm text-gray-600">{t("pricing.security.points.3.description")}</div>
                   </div>
                 </div>
+              </div>
+              {/* Right Column */}
+              <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="mt-0.5 h-6 w-6 flex-shrink-0 text-green-600" />
                   <div>
@@ -388,6 +361,13 @@ function PricingContent() {
                     <div className="mb-1 font-semibold text-gray-900">{t("pricing.security.points.6.title")}</div>
                     <div className="text-sm text-gray-600">{t("pricing.security.points.6.description")}</div>
                   </div>
+                </div>
+                <div className="pt-4">
+                  <Link href={`${langPrefix}/security`}>
+                    <Button variant="outline" size="lg" className="border-gray-300">
+                      {t("pricing.security.cta")}
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
