@@ -223,7 +223,11 @@ function LandingInner() {
       },
       {
         title: t("landing.compliance.title"),
-        description: t("landing.compliance.description"),
+        description: "",
+        additionalContent: [
+          "Stay compliant with UK and EU whistleblowing regulations with whistleblower software designed around real legal requirements, not just checklists. The platform supports the EU Whistleblowing Directive and UK whistleblowing protections under the Employment Rights Act and related case law, helping you provide secure, accessible reporting channels, timely acknowledgements, and documented follow-up on every concern.",
+          "Built-in audit trails, case timelines, and exportable reports give compliance teams everything needed to evidence how reports were handled, support internal investigations, and demonstrate regulatory adherence to boards, regulators, or external auditors.",
+        ],
         bullets: [
           t("landing.compliance.benefit1"),
           t("landing.compliance.benefit2"),
