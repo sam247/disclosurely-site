@@ -211,11 +211,11 @@ function LandingInner() {
         title: t("landing.encryption.title"),
         description: "",
         additionalContent: [
-          "Every whistleblowing report in Disclosurely is protected with AES-256 encryption, the same widely trusted standard used by banks, defence organisations, and government agencies to safeguard highly sensitive data. This ensures that from the moment a concern is submitted through to final case resolution, all messages, case notes, and attachments remain confidential and protected against unauthorised access.",
-          "By combining strong encryption with strict access controls and detailed audit trails, Disclosurely helps your organisation meet modern whistleblower protection, GDPR, and data security expectations while giving reporters the confidence to speak up safely.",
+          <>Every whistleblowing report in Disclosurely is protected with <Link href="/blog/what-is-aes-gcm-encryption/" className="text-blue-600 hover:text-blue-700 underline">AES-256 encryption</Link>, the same widely trusted standard used by banks, defence organisations, and government agencies to safeguard highly sensitive data. This ensures that from the moment a concern is submitted through to final case resolution, all messages, case notes, and attachments remain confidential and protected against unauthorised access.</>,
+          <>By combining strong encryption with strict access controls and detailed audit trails, Disclosurely helps your organisation meet modern whistleblower protection, <Link href="/blog/gdpr-whistleblowing-compliance/" className="text-blue-600 hover:text-blue-700 underline">GDPR</Link>, and data security expectations while giving reporters the confidence to speak up safely.</>,
         ],
         bullets: [
-          "AES-256 end-to-end encryption so whistleblower reports, internal comments, and case updates are encrypted in transit and at rest, reducing the risk of interception or data leakage.",
+          <><Link href="/blog/what-is-aes-gcm-encryption/" className="text-blue-600 hover:text-blue-700 underline">AES-256 end-to-end encryption</Link> so whistleblower reports, internal comments, and case updates are encrypted in transit and at rest, reducing the risk of interception or data leakage.</>,
           "Encrypted file attachments for evidence such as screenshots, documents, or emails, ensuring supporting material is secured to the same standard as the report itself.",
           "Secure data storage in hardened, access-controlled environments with role-based permissions, so only authorised case handlers can decrypt and review whistleblowing data.",
         ],
@@ -225,12 +225,12 @@ function LandingInner() {
         title: t("landing.compliance.title"),
         description: "",
         additionalContent: [
-          "Stay compliant with UK and EU whistleblowing regulations with whistleblower software designed around real legal requirements, not just checklists. The platform supports the EU Whistleblowing Directive and UK whistleblowing protections under the Employment Rights Act and related case law, helping you provide secure, accessible reporting channels, timely acknowledgements, and documented follow-up on every concern.",
-          "Built-in audit trails, case timelines, and exportable reports give compliance teams everything needed to evidence how reports were handled, support internal investigations, and demonstrate regulatory adherence to boards, regulators, or external auditors.",
+          <>Stay compliant with UK and EU whistleblowing regulations with whistleblower software designed around real legal requirements, not just checklists. The platform supports the <Link href="/blog/eu-whistleblowing-directive-2025/" className="text-blue-600 hover:text-blue-700 underline">EU Whistleblowing Directive</Link> and UK whistleblowing protections under the Employment Rights Act and related case law, helping you provide secure, accessible reporting channels, timely acknowledgements, and documented follow-up on every concern.</>,
+          <>Built-in audit trails, case timelines, and exportable reports give <Link href="https://disclosurely.com/compliance-software" className="text-blue-600 hover:text-blue-700 underline">compliance</Link> teams everything needed to evidence how reports were handled, support internal investigations, and demonstrate regulatory adherence to boards, regulators, or external auditors.</>,
         ],
         bullets: [
-          "EU Whistleblowing Directive compliant workflows, including anonymous reporting, clear acknowledgement timelines, and role-based access for designated handlers and investigators.",
-          "GDPR-ready by design, with data minimisation, strict access controls, and configurable retention policies for whistleblowing records and evidence.",
+          <><Link href="/blog/eu-whistleblowing-directive-2025/" className="text-blue-600 hover:text-blue-700 underline">EU Whistleblowing Directive</Link> compliant workflows, including <Link href="/features/" className="text-blue-600 hover:text-blue-700 underline">anonymous reporting</Link>, clear acknowledgement timelines, and role-based access for designated handlers and investigators.</>,
+          <><Link href="/blog/gdpr-whistleblowing-compliance/" className="text-blue-600 hover:text-blue-700 underline">GDPR-ready</Link> by design, with data minimisation, strict access controls, and configurable retention policies for whistleblowing records and evidence.</>,
           "Automated compliance reports that surface key KPIs (volumes, categories, outcomes, timelines) and generate exportable audit packs for management, regulators, and external advisers.",
         ],
         image: "/assets/artwork/new_compliance_made_easy.jpeg",
@@ -383,8 +383,8 @@ function LandingInner() {
                     </div>
                   )}
                   <ul className="space-y-2 text-gray-700">
-                    {item.bullets.map((point) => (
-                      <li key={point} className="flex items-start gap-2">
+                    {item.bullets.map((point, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
                         <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
                         <span>{point}</span>
                       </li>
