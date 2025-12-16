@@ -236,12 +236,15 @@ function LandingInner() {
         image: "/assets/artwork/new_compliance_made_easy.jpeg",
       },
       {
-        title: t("landing.messaging.title"),
-        description: t("landing.messaging.description"),
+        title: "Secure Two-Way Communication",
+        description: "",
+        additionalContent: [
+          "Maintain a confidential, anonymous dialogue with whistleblowers from first report to final outcome. Secure in-platform messaging allows case handlers to request additional information, clarify details, and share updates without ever revealing or collecting the reporter's identity. Each conversation is encrypted, time-stamped, and linked to the underlying case, giving you a clear audit trail while building trust and transparency with the people who speak up.",
+        ],
         bullets: [
-          t("landing.messaging.benefit1"),
-          t("landing.messaging.benefit2"),
-          t("landing.messaging.benefit3"),
+          "Encrypted messaging so every message, attachment, and case note exchanged with whistleblowers is fully protected against unauthorised access.",
+          "Maintain anonymity by keeping all communication inside the whistleblower portal, with no IP tracking or personal details required to continue the conversation.",
+          "Real-time notifications for new messages and case updates, ensuring investigators respond quickly while whistleblowers stay informed and engaged.",
         ],
         image: "/assets/artwork/new_secure_two_way_communication.jpeg",
       },
