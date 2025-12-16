@@ -252,10 +252,10 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
         {/* Related Articles Section */}
         {relatedPosts.length > 0 && (
-          <section className="px-4 pb-20 sm:px-6 lg:px-8 border-t border-gray-200">
+          <section className="px-4 pb-12 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-4xl">
-              <h2 className="mt-12 mb-8 text-2xl font-bold text-gray-900">Related Articles</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <h2 className="mt-12 mb-6 text-xl font-bold text-gray-900">Related Articles</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {relatedPosts.map((relatedPost) => {
                   const relatedImageUrl = relatedPost.featuredImage
                     ? relatedPost.featuredImage.startsWith("http")
@@ -269,50 +269,50 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                       className="group h-full flex flex-col hover:shadow-lg transition-shadow duration-300"
                     >
                       {relatedImageUrl && (
-                        <div className="aspect-video overflow-hidden rounded-t-lg">
+                        <div className="aspect-[4/3] overflow-hidden rounded-t-lg">
                           <Image
                             src={relatedImageUrl}
                             alt={relatedPost.title}
-                            width={700}
-                            height={400}
+                            width={500}
+                            height={375}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                           />
                         </div>
                       )}
-                      <CardHeader>
-                        <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
-                          <Calendar className="h-4 w-4" aria-hidden="true" />
+                      <CardHeader className="p-4">
+                        <div className="flex items-center gap-2 text-xs text-gray-500 mb-1.5">
+                          <Calendar className="h-3 w-3" aria-hidden="true" />
                           <span>
                             {relatedPost.publishDate
-                              ? format(new Date(relatedPost.publishDate), "PPP")
+                              ? format(new Date(relatedPost.publishDate), "MMM d, yyyy")
                               : "—"}
                           </span>
                           {relatedPost.readingTime && (
                             <>
                               <span aria-hidden="true">•</span>
-                              <Clock className="h-4 w-4" aria-hidden="true" />
+                              <Clock className="h-3 w-3" aria-hidden="true" />
                               <span>{relatedPost.readingTime} min read</span>
                             </>
                           )}
                         </div>
                         <Link href={`/blog/${relatedPost.slug}`}>
-                          <CardTitle className="text-xl font-semibold line-clamp-2 group-hover:text-blue-600 transition-colors cursor-pointer">
+                          <CardTitle className="text-lg font-semibold line-clamp-2 group-hover:text-blue-600 transition-colors cursor-pointer">
                             {relatedPost.title}
                           </CardTitle>
                         </Link>
                         {relatedPost.authorName && (
-                          <div className="flex items-center gap-2 text-sm text-gray-600 mt-1">
+                          <div className="flex items-center gap-2 text-xs text-gray-600 mt-1">
                             <span>By {relatedPost.authorName}</span>
                           </div>
                         )}
                       </CardHeader>
-                      <CardContent className="flex-1 flex flex-col justify-between">
-                        <CardDescription className="text-gray-600 line-clamp-3 mb-4">
+                      <CardContent className="p-4 pt-0 flex-1 flex flex-col justify-between">
+                        <CardDescription className="text-sm text-gray-600 line-clamp-2 mb-3">
                           {relatedPost.excerpt}
                         </CardDescription>
                         <Link
                           href={`/blog/${relatedPost.slug}`}
-                          className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-white font-semibold transition-colors hover:bg-blue-700"
+                          className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold transition-colors hover:bg-blue-700"
                           aria-label={`Read more about ${relatedPost.title}`}
                         >
                           Read Article
