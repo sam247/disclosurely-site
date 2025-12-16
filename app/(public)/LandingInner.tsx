@@ -411,20 +411,22 @@ function LandingInner() {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">{t("landing.branding.title")}</h2>
-                <p className="mb-6 text-lg text-gray-600">{t("landing.branding.description")}</p>
-                <ul className="mb-6 space-y-3">
-                  <li className="flex items-center">
-                    <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600" />
-                    <span>{t("landing.branding.point1")}</span>
+                <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">Custom Branding</h2>
+                <p className="mb-6 text-lg text-gray-600">
+                  Make your whistleblower reporting portal look and feel like a native part of your organisation. With custom domains, logo integration, and branded portals, employees and third parties see a familiar, trustworthy environment when they submit a concern. This reduces friction, boosts confidence in the channel, and helps your whistleblower software blend seamlessly into your existing compliance and HR ecosystem.
+                </p>
+                <ul className="mb-6 space-y-2">
+                  <li className="flex items-start">
+                    <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
+                    <span>Custom CNAME support for branded secure links, so reporting URLs sit on your own domain and align with your security and IT standards.</span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600" />
-                    <span>{t("landing.branding.point2")}</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
+                    <span>Your logo and branding on all submission portals, email notifications, and dashboards to create a consistent, trusted experience for reporters and case handlers.</span>
                   </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600" />
-                    <span>{t("landing.branding.point3")}</span>
+                  <li className="flex items-start">
+                    <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
+                    <span>White-label options for complete brand control, ideal for groups, partners, or consultants offering whistleblowing channels as part of a broader compliance service.</span>
                   </li>
                 </ul>
               </div>
