@@ -209,7 +209,7 @@ function LandingInner() {
       },
       {
         title: t("landing.encryption.title"),
-        description: t("landing.encryption.description"),
+        description: "",
         additionalContent: [
           "Every whistleblowing report in Disclosurely is protected with AES-256 encryption, the same widely trusted standard used by banks, defence organisations, and government agencies to safeguard highly sensitive data. This ensures that from the moment a concern is submitted through to final case resolution, all messages, case notes, and attachments remain confidential and protected against unauthorised access.",
           "By combining strong encryption with strict access controls and detailed audit trails, Disclosurely helps your organisation meet modern whistleblower protection, GDPR, and data security expectations while giving reporters the confidence to speak up safely.",
@@ -362,7 +362,7 @@ function LandingInner() {
               <div key={item.title} className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                   <h3 className="mb-3 text-2xl font-bold text-gray-900 sm:text-3xl">{item.title}</h3>
-                  <p className="mb-4 text-gray-700">{item.description}</p>
+                  {item.description && <p className="mb-4 text-gray-700">{item.description}</p>}
                   {item.additionalContent && (
                     <div className="mb-4 space-y-4 text-gray-700">
                       {item.additionalContent.map((paragraph, idx) => (
