@@ -210,6 +210,10 @@ function LandingInner() {
       {
         title: t("landing.encryption.title"),
         description: t("landing.encryption.description"),
+        additionalContent: [
+          "Every whistleblowing report in Disclosurely is protected with AES-256 encryption, the same widely trusted standard used by banks, defence organisations, and government agencies to safeguard highly sensitive data. This ensures that from the moment a concern is submitted through to final case resolution, all messages, case notes, and attachments remain confidential and protected against unauthorised access.",
+          "By combining strong encryption with strict access controls and detailed audit trails, Disclosurely helps your organisation meet modern whistleblower protection, GDPR, and data security expectations while giving reporters the confidence to speak up safely.",
+        ],
         bullets: [
           t("landing.encryption.benefit1"),
           t("landing.encryption.benefit2"),
