@@ -7,9 +7,10 @@ import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 import { format } from "date-fns";
 
-import { Card } from "@/components/ui/card";
-import { fetchBlogPost } from "@/lib/contentful";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { fetchBlogPost, fetchRelatedBlogPosts } from "@/lib/contentful";
 import { generatePageMetadata, generatePageStructuredData, StructuredData } from "@/lib/seo";
+import { Clock, Calendar } from "lucide-react";
 
 type Params = { slug: string } | Promise<{ slug: string }>;
 
@@ -53,6 +54,10 @@ export default async function BlogPostPage({ params }: { params: Params }) {
   fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app/(public)/blog/[slug]/page.tsx:43',message:'BlogPostPage post received',data:{slugValue,postId:post?.id,postTitle:post?.title,postSlug:post?.slug,hasContent:!!post?.content},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
   // #endregion
   if (!post) return notFound();
+
+  // Fetch related posts from the same categories
+  const categoryIds = post.categories?.map((cat) => cat.id) || [];
+  const relatedPosts = await fetchRelatedBlogPosts(post.id, categoryIds, 2);
 
   const content = post.content as Document | undefined;
   const imageUrl = post.featuredImage
@@ -244,6 +249,82 @@ export default async function BlogPostPage({ params }: { params: Params }) {
             </article>
           </div>
         </section>
+
+        {/* Related Articles Section */}
+        {relatedPosts.length > 0 && (
+          <section className="px-4 pb-20 sm:px-6 lg:px-8 border-t border-gray-200">
+            <div className="mx-auto max-w-4xl">
+              <h2 className="mt-12 mb-8 text-2xl font-bold text-gray-900">Related Articles</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {relatedPosts.map((relatedPost) => {
+                  const relatedImageUrl = relatedPost.featuredImage
+                    ? relatedPost.featuredImage.startsWith("http")
+                      ? relatedPost.featuredImage
+                      : `https:${relatedPost.featuredImage}`
+                    : null;
+
+                  return (
+                    <Card
+                      key={relatedPost.id}
+                      className="group h-full flex flex-col hover:shadow-lg transition-shadow duration-300"
+                    >
+                      {relatedImageUrl && (
+                        <div className="aspect-video overflow-hidden rounded-t-lg">
+                          <Image
+                            src={relatedImageUrl}
+                            alt={relatedPost.title}
+                            width={700}
+                            height={400}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      )}
+                      <CardHeader>
+                        <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                          <Calendar className="h-4 w-4" aria-hidden="true" />
+                          <span>
+                            {relatedPost.publishDate
+                              ? format(new Date(relatedPost.publishDate), "PPP")
+                              : "—"}
+                          </span>
+                          {relatedPost.readingTime && (
+                            <>
+                              <span aria-hidden="true">•</span>
+                              <Clock className="h-4 w-4" aria-hidden="true" />
+                              <span>{relatedPost.readingTime} min read</span>
+                            </>
+                          )}
+                        </div>
+                        <Link href={`/blog/${relatedPost.slug}`}>
+                          <CardTitle className="text-xl font-semibold line-clamp-2 group-hover:text-blue-600 transition-colors cursor-pointer">
+                            {relatedPost.title}
+                          </CardTitle>
+                        </Link>
+                        {relatedPost.authorName && (
+                          <div className="flex items-center gap-2 text-sm text-gray-600 mt-1">
+                            <span>By {relatedPost.authorName}</span>
+                          </div>
+                        )}
+                      </CardHeader>
+                      <CardContent className="flex-1 flex flex-col justify-between">
+                        <CardDescription className="text-gray-600 line-clamp-3 mb-4">
+                          {relatedPost.excerpt}
+                        </CardDescription>
+                        <Link
+                          href={`/blog/${relatedPost.slug}`}
+                          className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-white font-semibold transition-colors hover:bg-blue-700"
+                          aria-label={`Read more about ${relatedPost.title}`}
+                        >
+                          Read Article
+                        </Link>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        )}
       </div>
     </>
   );

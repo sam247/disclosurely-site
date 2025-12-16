@@ -230,6 +230,101 @@ export async function fetchBlogPost(slug: string): Promise<BlogPost & { links?: 
   return result;
 }
 
+export async function fetchRelatedBlogPosts(
+  currentPostId: string,
+  categoryIds: string[],
+  limit: number = 2
+): Promise<BlogPost[]> {
+  if (!contentfulClient || !contentfulToken || categoryIds.length === 0) return [];
+
+  try {
+    // Fetch all published posts
+    const response = await contentfulClient.getEntries<BlogPostSkeleton>({
+      content_type: "9oYANGj5uBRT6UHsl5LxO",
+      limit: 100,
+      include: 2,
+    });
+
+    // Filter posts that:
+    // 1. Are not the current post
+    // 2. Share at least one category with the current post
+    // 3. Are published
+    const relatedPosts = response.items
+      .filter((item) => {
+        // Exclude current post
+        if (item.sys.id === currentPostId) return false;
+        
+        // Only include published posts
+        const status = item.fields.status;
+        if (status !== 'published' && status) return false;
+
+        // Check if post shares at least one category
+        const postCategories = (item.fields.categories as any) || [];
+        if (!Array.isArray(postCategories)) return false;
+
+        return postCategories.some((cat: any) => 
+          cat?.sys?.id && categoryIds.includes(cat.sys.id)
+        );
+      })
+      .map((item) => {
+        // Extract author
+        const authorEntry = item.fields.author as any;
+        const authorName = authorEntry?.fields?.name;
+        const authorEmail = authorEntry?.fields?.email;
+
+        // Extract categories
+        const categoryEntries = (item.fields.categories as any) || [];
+        const categories: Category[] = Array.isArray(categoryEntries)
+          ? categoryEntries
+              .filter((cat: any) => cat?.fields)
+              .map((cat: any) => ({
+                id: cat.sys?.id || '',
+                name: cat.fields?.name || '',
+                slug: cat.fields?.slug || '',
+              }))
+          : [];
+
+        // Extract featured image URL
+        const featuredImage = item.fields.featuredImage as any;
+        let featuredImageUrl: string | undefined;
+        
+        if (featuredImage?.fields?.file?.url) {
+          featuredImageUrl = featuredImage.fields.file.url;
+        }
+
+        return {
+          id: item.sys.id,
+          title: item.fields.title,
+          slug: item.fields.slug,
+          excerpt: item.fields.excerpt,
+          content: item.fields.content,
+          featuredImage: featuredImageUrl,
+          publishDate: item.fields.publishDate,
+          seoTitle: item.fields.seoTitle,
+          seoDescription: item.fields.seoDescription,
+          tags: item.fields.tags || [],
+          readingTime: item.fields.readingTime,
+          authorName,
+          authorEmail,
+          categories,
+        };
+      })
+      // Sort by publishDate descending
+      .sort((a, b) => {
+        const aDate = a.publishDate ? new Date(a.publishDate).getTime() : 0;
+        const bDate = b.publishDate ? new Date(b.publishDate).getTime() : 0;
+        return bDate - aDate;
+      })
+      // Limit to requested number
+      .slice(0, limit);
+
+    return relatedPosts;
+  } catch (error) {
+    console.error('Error fetching related blog posts:', error);
+    return [];
+  }
+}
+
 export async function fetchCategories(): Promise<Category[]> {
   if (!contentfulClient || !contentfulToken) return [];
 
