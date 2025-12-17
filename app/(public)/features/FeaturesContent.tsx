@@ -1,14 +1,12 @@
 "use client";
 
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import {
   Shield,
   Brain,
   BarChart3,
   CheckCircle,
-  CheckCircle2,
   Smartphone,
   Plug,
   Lock,
@@ -29,76 +27,6 @@ import I18nProvider from "@/components/I18nProvider";
 
 type Lang = (typeof supportedLanguages)[number];
 
-const businessLogos = [
-  { src: "/business_logos/page-1.png", alt: "Business Partner 1" },
-  { src: "/business_logos/page-2.png", alt: "Business Partner 2" },
-  { src: "/business_logos/page-3.png", alt: "Business Partner 3" },
-  { src: "/business_logos/page-4.png", alt: "Business Partner 4" },
-  { src: "/business_logos/page-5.png", alt: "Business Partner 5" },
-  { src: "/business_logos/page-6.png", alt: "Business Partner 6" },
-  { src: "/business_logos/page-7.png", alt: "Business Partner 7" },
-  { src: "/business_logos/page-8.png", alt: "Business Partner 8" },
-];
-
-// Helper function to format bullet points: bold beginning keywords and remove links from them
-function formatBulletPoint(point: string | React.ReactNode): React.ReactNode {
-  let fullText = "";
-  if (typeof point === "string") {
-    fullText = point;
-  } else if (React.isValidElement(point)) {
-    const extractText = (node: React.ReactNode): string => {
-      if (typeof node === "string") return node;
-      if (typeof node === "number") return String(node);
-      if (React.isValidElement(node)) {
-        const element = node as React.ReactElement<{ children?: React.ReactNode }>;
-        if (element.type === Link) {
-          return React.Children.toArray(element.props.children || [])
-            .map(extractText)
-            .join("");
-        }
-        return React.Children.toArray(element.props.children || [])
-          .map(extractText)
-          .join("");
-      }
-      if (Array.isArray(node)) {
-        return node.map(extractText).join("");
-      }
-      return "";
-    };
-    fullText = extractText(point);
-  } else {
-    return point;
-  }
-
-  let match = fullText.match(/^([^,]+?)(\s+(?:that|so|to)\s+)(.+)$/);
-  if (!match) {
-    match = fullText.match(/^([^,()]+(?:\([^)]*\))?[^,()]*?)(,\s+)(.+)$/);
-  }
-  if (match) {
-    const [, keyword, separator, rest] = match;
-    return (
-      <>
-        <strong>{keyword.trim()}</strong>
-        {separator}
-        {rest}
-      </>
-    );
-  }
-
-  const words = fullText.split(/\s+/);
-  if (words.length > 3) {
-    const keywordWords = words.slice(0, 3).join(" ");
-    const rest = words.slice(3).join(" ");
-    return (
-      <>
-        <strong>{keywordWords}</strong> {rest}
-      </>
-    );
-  }
-
-  return point;
-}
-
 function FeaturesContent() {
   const { t } = useTranslation();
   const { currentLanguage } = useLanguageFromUrl();
@@ -110,90 +38,6 @@ function FeaturesContent() {
       document.documentElement.lang = lang;
     }
   }, [currentLanguage]);
-
-  const highlights = useMemo(
-    () => [
-      {
-        title: t("landing.anonymousReporting.title"),
-        description: "",
-        additionalContent: [
-          "Enable employees to report misconduct, ethics violations, or other concerns completely anonymously through a simple browser-based whistleblower form that works on any device. Advanced encryption protects whistleblower identities while supporting compliance with key regulatory requirements. Behind the scenes, cases flow into a central workspace, giving handlers a clear view of every report with audit trails and defined deadlines for acknowledgement, follow-up, and resolution.",
-        ],
-        bullets: [
-          "Zero data collection on reporters (no IP tracking, device fingerprinting, or hidden identifiers) to maximise trust and protect employees from retaliation.​",
-          "Anonymous follow-up messaging so investigators can ask clarifying questions and share updates while the whistleblower stays completely anonymous.​",
-          "Multiple language support to meet EU whistleblowing requirements and make it easy for global teams to report concerns in their preferred language.",
-        ],
-        image: "/assets/artwork/new_anonymous_reporting_made_simple.jpeg",
-      },
-      {
-        title: t("landing.encryption.title"),
-        description: "",
-        additionalContent: [
-          <>Every whistleblowing report in Disclosurely is protected with <Link href="/blog/what-is-aes-gcm-encryption/" className="text-blue-600 hover:text-blue-700 underline">AES-256 encryption</Link>, the same widely trusted standard used by banks, defence organisations, and government agencies. From submission to final resolution, all messages, case notes, and attachments remain confidential and protected against unauthorised access. Strong encryption, strict access controls, and detailed audit trails help your organisation meet modern whistleblower protection, <Link href="/blog/gdpr-whistleblowing-compliance/" className="text-blue-600 hover:text-blue-700 underline">GDPR</Link>, and data security expectations while giving reporters the confidence to speak up safely.</>,
-        ],
-        bullets: [
-          "AES-256 end-to-end encryption so whistleblower reports, internal comments, and case updates are encrypted in transit and at rest, reducing the risk of interception or data leakage.",
-          "Encrypted file attachments for evidence such as screenshots, documents, or emails, ensuring supporting material is secured to the same standard as the report itself.",
-          "Secure data storage in hardened, access-controlled environments with role-based permissions, so only authorised case handlers can decrypt and review whistleblowing data.",
-        ],
-        image: "/assets/artwork/new_military_grade_encryption.jpeg",
-      },
-      {
-        title: t("landing.compliance.title"),
-        description: "",
-        additionalContent: [
-          <>Stay compliant with UK and EU whistleblowing regulations with whistleblower software built around real legal requirements, not just checklists. The platform supports the <Link href="/blog/eu-whistleblowing-directive-2025/" className="text-blue-600 hover:text-blue-700 underline">EU Whistleblowing Directive</Link> and UK whistleblowing protections under the Employment Rights Act, helping you provide secure, accessible reporting channels, timely acknowledgements, and documented follow-up on every concern. Built-in audit trails, case timelines, and exportable reports give <Link href="https://disclosurely.com/compliance-software" className="text-blue-600 hover:text-blue-700 underline">compliance</Link> teams everything needed to evidence how reports were handled and demonstrate regulatory adherence to boards, regulators, and external auditors.</>,
-        ],
-        bullets: [
-          "EU Whistleblowing Directive compliant workflows, including anonymous reporting, clear acknowledgement timelines, and role-based access for designated handlers and investigators.",
-          "GDPR-ready by design, with data minimisation, strict access controls, and configurable retention policies for whistleblowing records and evidence.",
-          "Automated compliance reports that surface key KPIs (volumes, categories, outcomes, timelines) and generate exportable audit packs for management, regulators, and external advisers.",
-        ],
-        image: "/assets/artwork/new_compliance_made_easy.jpeg",
-      },
-      {
-        title: "Secure Two-Way Communication",
-        description: "",
-        additionalContent: [
-          "Maintain a confidential, anonymous dialogue with whistleblowers from first report to final outcome. Secure in-platform messaging allows case handlers to request additional information, clarify details, and share updates without ever revealing or collecting the reporter's identity. Each conversation is encrypted, time-stamped, and linked to the underlying case, giving you a clear audit trail while building trust and transparency with the people who speak up.",
-        ],
-        bullets: [
-          "Encrypted messaging so every message, attachment, and case note exchanged with whistleblowers is fully protected against unauthorised access.",
-          "Maintain anonymity by keeping all communication inside the whistleblower portal, with no IP tracking or personal details required to continue the conversation.",
-          "Real-time notifications for new messages and case updates, ensuring investigators respond quickly while whistleblowers stay informed and engaged.",
-        ],
-        image: "/assets/artwork/new_secure_two_way_communication.jpeg",
-      },
-      {
-        title: "AI-Powered Case Analysis",
-        description: "",
-        additionalContent: [
-          "Leverage artificial intelligence to detect emerging risks earlier and focus your attention where it matters most. The built-in AI assistant reviews incoming whistleblowing cases, surfaces patterns across reports, and highlights high-risk issues so compliance teams can respond faster and more consistently. By turning raw incident data into practical insights, Disclosurely helps you move from reactive case handling to proactive risk management.",
-        ],
-        bullets: [
-          "Automated risk assessment that scores new reports based on factors like severity, topic, and potential regulatory impact, giving investigators an instant view of what needs attention first.",
-          "Pattern detection across cases to reveal recurring issues, hotspots in specific locations or departments, and trends that may indicate systemic problems.",
-          "Intelligent case prioritisation that dynamically orders your case queue, ensuring high-impact and time-sensitive whistleblowing reports never get buried or overlooked.",
-        ],
-        image: "/assets/artwork/new_ai_powered_case_analysis.jpeg",
-      },
-      {
-        title: "Custom Branding",
-        description: "",
-        additionalContent: [
-          "Make your whistleblower reporting portal look and feel like a native part of your organisation. With custom domains, logo integration, and branded portals, employees and third parties see a familiar, trustworthy environment when they submit a concern. This reduces friction, boosts confidence in the channel, and helps your whistleblower software blend seamlessly into your existing compliance and HR ecosystem.",
-        ],
-        bullets: [
-          "Custom CNAME support for branded secure links, so reporting URLs sit on your own domain and align with your security and IT standards.",
-          "Your logo and branding on all submission portals, email notifications, and dashboards to create a consistent, trusted experience for reporters and case handlers.",
-          "White-label options for complete brand control, ideal for groups, partners, or consultants offering whistleblowing channels as part of a broader compliance service.",
-        ],
-        image: "/assets/artwork/new_branding.jpeg",
-      },
-    ],
-    [t],
-  );
 
   return (
     <I18nProvider>
@@ -212,63 +56,6 @@ function FeaturesContent() {
                 From encrypted submissions to real-time dashboards, Disclosurely gives compliance teams the tools they
                 need to manage reports efficiently, protect employee identities, and resolve issues before they escalate.
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Trust Section */}
-        <section className="bg-white px-4 pb-16 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
-            <div className="text-center">
-              <p className="mb-12 text-lg font-medium text-gray-700">{t("landing.trusted")}</p>
-              <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-center gap-8">
-                {businessLogos.map((logo) => (
-                  <div key={logo.src} className="flex-shrink-0">
-                    <Image src={logo.src} alt={logo.alt} width={140} height={48} className="h-12 w-auto object-contain opacity-70 transition-opacity hover:opacity-100" loading="lazy" />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Highlights Section */}
-        <section className="bg-gray-50 py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-16 text-center">
-              <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">Disclosurely Features</h2>
-            </div>
-            <div className="space-y-32 sm:space-y-40">
-              {highlights.map((item, index) => (
-                <div key={item.title} className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-                  <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                    <h3 className="mb-3 text-2xl font-bold text-gray-900 sm:text-3xl">{item.title}</h3>
-                    {item.description && <p className="mb-4 text-gray-700">{item.description}</p>}
-                    {item.additionalContent && (
-                      <div className="mb-4 space-y-4 text-gray-700">
-                        {item.additionalContent.map((paragraph, idx) => (
-                          <p key={idx} className="text-base leading-relaxed">
-                            {paragraph}
-                          </p>
-                        ))}
-                      </div>
-                    )}
-                    <ul className="space-y-2 text-gray-700">
-                      {item.bullets.map((point, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                          <span>{formatBulletPoint(point)}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                    <div className="overflow-hidden rounded-xl border border-gray-100 shadow-sm">
-                      <Image src={item.image} alt={item.title} width={1200} height={720} className="h-full w-full object-cover" loading={index === 0 ? "eager" : "lazy"} />
-                    </div>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </section>
@@ -313,12 +100,14 @@ function FeaturesContent() {
         </div>
       </section>
 
-      {/* Dashboard Showcase Section - Continue with remaining sections... */}
+      {/* Dashboard Showcase Section */}
       <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">Comprehensive Dashboard</h2>
-            <p className="text-lg text-gray-600">Centralized management with real-time insights and powerful analytics</p>
+            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+              Get a complete view of all whistleblowing reports in one centralized workspace. Our intuitive dashboard gives compliance teams real-time visibility into case status, priorities, and trends, making it easy to manage multiple reports efficiently and ensure nothing falls through the cracks.
+            </p>
           </div>
 
           <Card className="rounded-lg bg-white p-8 shadow-2xl">
@@ -482,9 +271,11 @@ function FeaturesContent() {
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <div>
               <h2 className="mb-6 text-3xl font-bold text-gray-900 md:text-4xl">Decision-Ready Analytics</h2>
-              <p className="mb-8 text-lg text-gray-600">
-                Get comprehensive insights with performance metrics, report trends, and AI-generated recommendations to
-                make data-driven compliance decisions.
+              <p className="mb-4 text-lg text-gray-600">
+                Transform raw whistleblowing data into actionable insights with comprehensive analytics and AI-powered recommendations. Track key performance indicators, identify emerging patterns, and make data-driven decisions that improve your compliance program effectiveness.
+              </p>
+              <p className="mb-8 text-gray-600">
+                Our analytics dashboard surfaces critical metrics like resolution rates, average response times, and category distributions, helping you understand organizational risk trends and allocate resources where they're needed most.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -625,9 +416,11 @@ function FeaturesContent() {
             </Card>
             <div className="order-1 lg:order-2">
               <h2 className="mb-6 text-3xl font-bold text-gray-900 md:text-4xl">Comprehensive Audit Trail</h2>
-              <p className="mb-8 text-lg text-gray-600">
-                Tamper-evident logging with chain verification ensures complete transparency and compliance. Track every
-                action with full accountability.
+              <p className="mb-4 text-lg text-gray-600">
+                Every action taken within Disclosurely is automatically logged with cryptographic verification, creating an immutable record that meets the highest compliance standards. Our tamper-evident audit trail ensures complete transparency and accountability for regulatory inspections, internal reviews, and legal proceedings.
+              </p>
+              <p className="mb-8 text-gray-600">
+                Track user actions, case updates, message exchanges, and system changes with detailed timestamps, user identification, and severity classifications. Export complete audit logs in standard formats for external auditors, regulators, or legal teams.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -665,9 +458,11 @@ function FeaturesContent() {
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <div>
               <h2 className="mb-6 text-3xl font-bold text-gray-900 md:text-4xl">AI-Powered Case Analysis</h2>
-              <p className="mb-8 text-lg text-gray-600">
-                DeepSeek AI analyzes cases, identifies risk patterns, and provides actionable insights. Upload company
-                documents for comprehensive analysis with intelligent risk assessment.
+              <p className="mb-4 text-lg text-gray-600">
+                Leverage advanced artificial intelligence to analyze whistleblowing cases, identify risk patterns, and receive actionable recommendations. Our AI assistant reviews case details, company policies, and historical data to provide intelligent risk assessments and prioritization guidance.
+              </p>
+              <p className="mb-8 text-gray-600">
+                Upload company handbooks, policies, and relevant documents to enable context-aware analysis. The AI considers your organization's specific compliance requirements, industry standards, and regulatory obligations when providing insights and recommendations.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -755,7 +550,10 @@ function FeaturesContent() {
       <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mb-16 text-center">
-            <h2 className="mb-6 text-3xl font-bold text-gray-900 md:text-4xl">{t("features.security.title")}</h2>
+            <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">{t("features.security.title")}</h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+              Disclosurely is built with security at its core. Every feature is designed to protect sensitive whistleblowing data, maintain complete confidentiality, and meet the highest standards for data protection and regulatory compliance.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -809,10 +607,13 @@ function FeaturesContent() {
             <h2 className="mb-6 text-3xl font-bold text-gray-900 md:text-4xl">
               Built for Compliance Teams Who Care About Details
             </h2>
-            <p className="mx-auto mb-8 max-w-3xl text-lg text-gray-600">
+            <p className="mx-auto mb-4 max-w-3xl text-lg text-gray-600">
               Disclosurely isn&apos;t just a platform—it&apos;s your partner in building a culture of integrity. Every feature is
               designed with your compliance team&apos;s workflow in mind, from encrypted submissions to comprehensive audit
               trails.
+            </p>
+            <p className="mx-auto mb-8 max-w-3xl text-gray-600">
+              Whether you're managing a handful of reports or hundreds of cases, our platform scales with your needs while maintaining the same high standards for security, anonymity, and compliance. Join organizations worldwide who trust Disclosurely to protect their employees and maintain regulatory compliance.
             </p>
           </div>
 
