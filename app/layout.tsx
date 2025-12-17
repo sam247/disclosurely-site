@@ -69,6 +69,8 @@ export default async function RootLayout({
   return (
     <html lang={lang}>
       <head>
+        <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
+        <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="anonymous" />
         <Script src="https://analytics.ahrefs.com/analytics.js" data-key="NOZ1bom3LOJmqVM2vVZ51A" strategy="afterInteractive" />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased">

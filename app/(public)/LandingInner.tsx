@@ -376,7 +376,7 @@ function LandingInner() {
               <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-center gap-8">
                 {businessLogos.map((logo) => (
                   <div key={logo.src} className="flex-shrink-0">
-                    <Image src={logo.src} alt={logo.alt} width={140} height={48} className="h-12 w-auto object-contain opacity-70 transition-opacity hover:opacity-100" />
+                    <Image src={logo.src} alt={logo.alt} width={140} height={48} className="h-12 w-auto object-contain opacity-70 transition-opacity hover:opacity-100" loading="lazy" />
                   </div>
                 ))}
               </div>
@@ -396,7 +396,7 @@ function LandingInner() {
                 <Card key={feature.title} className="text-center">
                   <CardHeader>
                     <div className="mx-auto mb-4 h-16 w-16">
-                      <Image src={feature.icon} alt={feature.title} width={64} height={64} className="h-full w-full object-contain" />
+                      <Image src={feature.icon} alt={feature.title} width={64} height={64} className="h-full w-full object-contain" loading="lazy" />
                     </div>
                     <CardTitle className="text-xl sm:text-2xl">{feature.title}</CardTitle>
                   </CardHeader>
@@ -462,7 +462,7 @@ function LandingInner() {
                 </div>
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                   <div className="overflow-hidden rounded-xl border border-gray-100 shadow-sm">
-                    <Image src={item.image} alt={item.title} width={1200} height={720} className="h-full w-full object-cover" />
+                    <Image src={item.image} alt={item.title} width={1200} height={720} className="h-full w-full object-cover" loading={index === 0 ? "eager" : "lazy"} />
                   </div>
                 </div>
               </div>
@@ -477,7 +477,7 @@ function LandingInner() {
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div className="order-2 lg:order-1">
                 <div className="overflow-hidden rounded-xl border border-gray-100 shadow-sm">
-                  <Image src="/assets/artwork/new_branding.jpeg" alt={t("landing.branding.imageAlt")} width={600} height={600} className="h-full w-full object-cover" />
+                  <Image src="/assets/artwork/new_branding.jpeg" alt={t("landing.branding.imageAlt")} width={600} height={600} className="h-full w-full object-cover" loading="lazy" />
                 </div>
               </div>
               <div className="order-1 lg:order-2">
@@ -642,7 +642,7 @@ function LandingInner() {
               ].map((badge) => (
                 <div key={badge.title} className="text-center">
                   <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-lg">
-                    <Image src={badge.src} alt={badge.title} width={64} height={64} className="mx-auto mb-3 h-16 w-16" />
+                    <Image src={badge.src} alt={badge.title} width={64} height={64} className="mx-auto mb-3 h-16 w-16" loading="lazy" />
                     <h3 className="mb-1 font-semibold text-gray-900">{badge.title}</h3>
                     <p className="text-sm text-gray-600">{badge.desc}</p>
                   </div>
