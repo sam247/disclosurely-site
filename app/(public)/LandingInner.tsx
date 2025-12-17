@@ -50,6 +50,79 @@ const highlightIcons = [
   <Brain key="brain" className="h-6 w-6 text-blue-600" />,
 ];
 
+// Helper function to format bullet points: bold beginning keywords and remove links from them
+function formatBulletPoint(point: string | React.ReactNode): React.ReactNode {
+  // Extract full text from point (handling JSX with Links)
+  let fullText = "";
+  if (typeof point === "string") {
+    fullText = point;
+  } else if (React.isValidElement(point)) {
+    // Extract text from JSX, including Link components
+    const extractText = (node: React.ReactNode): string => {
+      if (typeof node === "string") return node;
+      if (typeof node === "number") return String(node);
+      if (React.isValidElement(node)) {
+        if (node.type === Link) {
+          // Extract text from Link children
+          return React.Children.toArray(node.props.children)
+            .map(extractText)
+            .join("");
+        }
+        return React.Children.toArray(node.props.children)
+          .map(extractText)
+          .join("");
+      }
+      if (Array.isArray(node)) {
+        return node.map(extractText).join("");
+      }
+      return "";
+    };
+    fullText = extractText(point);
+  } else {
+    return point;
+  }
+
+  // Find the first phrase (usually ends at "that", "so", "to", or comma)
+  const match = fullText.match(/^([^,]+?)(\s+(?:that|so|to|,|—|–|-)\s+)(.+)$/);
+  if (match) {
+    const [, keyword, separator, rest] = match;
+    // Rebuild with keyword bolded and links removed from keyword
+    if (typeof point === "string") {
+      return (
+        <>
+          <strong>{keyword}</strong>
+          {separator}
+          {rest}
+        </>
+      );
+    } else {
+      // For JSX, we need to rebuild it without links in the keyword part
+      // For now, just bold the keyword text
+      return (
+        <>
+          <strong>{keyword}</strong>
+          {separator}
+          {rest}
+        </>
+      );
+    }
+  }
+
+  // If no separator found, try to find first 2-4 words as keywords
+  const words = fullText.split(/\s+/);
+  if (words.length > 3) {
+    const keywordWords = words.slice(0, 3).join(" ");
+    const rest = words.slice(3).join(" ");
+    return (
+      <>
+        <strong>{keywordWords}</strong> {rest}
+      </>
+    );
+  }
+
+  return point;
+}
+
 function LandingInner() {
   const { t, i18n } = useTranslation();
   const pathname = usePathname();
@@ -214,7 +287,7 @@ function LandingInner() {
           <>Every whistleblowing report in Disclosurely is protected with <Link href="/blog/what-is-aes-gcm-encryption/" className="text-blue-600 hover:text-blue-700 underline">AES-256 encryption</Link>, the same widely trusted standard used by banks, defence organisations, and government agencies. From submission to final resolution, all messages, case notes, and attachments remain confidential and protected against unauthorised access. Strong encryption, strict access controls, and detailed audit trails help your organisation meet modern whistleblower protection, <Link href="/blog/gdpr-whistleblowing-compliance/" className="text-blue-600 hover:text-blue-700 underline">GDPR</Link>, and data security expectations while giving reporters the confidence to speak up safely.</>,
         ],
         bullets: [
-          <><Link href="/blog/what-is-aes-gcm-encryption/" className="text-blue-600 hover:text-blue-700 underline">AES-256 end-to-end encryption</Link> so whistleblower reports, internal comments, and case updates are encrypted in transit and at rest, reducing the risk of interception or data leakage.</>,
+          "AES-256 end-to-end encryption so whistleblower reports, internal comments, and case updates are encrypted in transit and at rest, reducing the risk of interception or data leakage.",
           "Encrypted file attachments for evidence such as screenshots, documents, or emails, ensuring supporting material is secured to the same standard as the report itself.",
           "Secure data storage in hardened, access-controlled environments with role-based permissions, so only authorised case handlers can decrypt and review whistleblowing data.",
         ],
@@ -227,8 +300,8 @@ function LandingInner() {
           <>Stay compliant with UK and EU whistleblowing regulations with whistleblower software built around real legal requirements, not just checklists. The platform supports the <Link href="/blog/eu-whistleblowing-directive-2025/" className="text-blue-600 hover:text-blue-700 underline">EU Whistleblowing Directive</Link> and UK whistleblowing protections under the Employment Rights Act, helping you provide secure, accessible reporting channels, timely acknowledgements, and documented follow-up on every concern. Built-in audit trails, case timelines, and exportable reports give <Link href="https://disclosurely.com/compliance-software" className="text-blue-600 hover:text-blue-700 underline">compliance</Link> teams everything needed to evidence how reports were handled and demonstrate regulatory adherence to boards, regulators, and external auditors.</>,
         ],
         bullets: [
-          <><Link href="/blog/eu-whistleblowing-directive-2025/" className="text-blue-600 hover:text-blue-700 underline">EU Whistleblowing Directive</Link> compliant workflows, including <Link href="/features/" className="text-blue-600 hover:text-blue-700 underline">anonymous reporting</Link>, clear acknowledgement timelines, and role-based access for designated handlers and investigators.</>,
-          <><Link href="/blog/gdpr-whistleblowing-compliance/" className="text-blue-600 hover:text-blue-700 underline">GDPR-ready</Link> by design, with data minimisation, strict access controls, and configurable retention policies for whistleblowing records and evidence.</>,
+          "EU Whistleblowing Directive compliant workflows, including anonymous reporting, clear acknowledgement timelines, and role-based access for designated handlers and investigators.",
+          "GDPR-ready by design, with data minimisation, strict access controls, and configurable retention policies for whistleblowing records and evidence.",
           "Automated compliance reports that surface key KPIs (volumes, categories, outcomes, timelines) and generate exportable audit packs for management, regulators, and external advisers.",
         ],
         image: "/assets/artwork/new_compliance_made_easy.jpeg",
@@ -365,7 +438,7 @@ function LandingInner() {
 
         {/* Highlights */}
         <section className="bg-gray-50 py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl space-y-16 sm:space-y-20 px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl space-y-32 sm:space-y-40 px-4 sm:px-6 lg:px-8">
             {highlights.map((item, index) => (
               <div key={item.title} className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
@@ -384,7 +457,7 @@ function LandingInner() {
                     {item.bullets.map((point, idx) => (
                       <li key={idx} className="flex items-start gap-2">
                         <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                        <span>{point}</span>
+                        <span>{formatBulletPoint(point)}</span>
                       </li>
                     ))}
                   </ul>
@@ -416,15 +489,15 @@ function LandingInner() {
                 <ul className="mb-6 space-y-2">
                   <li className="flex items-start">
                     <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span>Custom CNAME support for branded secure links, so reporting URLs sit on your own domain and align with your security and IT standards.</span>
+                    <span>{formatBulletPoint("Custom CNAME support for branded secure links, so reporting URLs sit on your own domain and align with your security and IT standards.")}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span>Your logo and branding on all submission portals, email notifications, and dashboards to create a consistent, trusted experience for reporters and case handlers.</span>
+                    <span>{formatBulletPoint("Your logo and branding on all submission portals, email notifications, and dashboards to create a consistent, trusted experience for reporters and case handlers.")}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span>White-label options for complete brand control, ideal for groups, partners, or consultants offering whistleblowing channels as part of a broader compliance service.</span>
+                    <span>{formatBulletPoint("White-label options for complete brand control, ideal for groups, partners, or consultants offering whistleblowing channels as part of a broader compliance service.")}</span>
                   </li>
                 </ul>
               </div>
@@ -467,9 +540,9 @@ function LandingInner() {
                       </span>
                     </div>
                   )}
-                  <CardHeader className="pb-6 text-center">
+                <CardHeader className="pb-6 text-center">
                     <CardTitle className="text-xl font-bold sm:text-2xl">{plan.name}</CardTitle>
-                    <div className="mt-4">
+                  <div className="mt-4">
                       <span className="text-3xl font-bold sm:text-4xl">
                         {billingInterval === "monthly" ? plan.priceMonthly : plan.priceAnnual}
                       </span>
@@ -480,9 +553,9 @@ function LandingInner() {
                           ? t("pricing.plans.perMonth")
                           : t("pricing.plans.perYear")}
                       </span>
-                    </div>
+                  </div>
                     <CardDescription className="text-sm sm:text-base">{plan.description}</CardDescription>
-                  </CardHeader>
+                </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="space-y-3">
                       {plan.highlights.map((item) => (
@@ -507,19 +580,19 @@ function LandingInner() {
                             : "border border-input bg-background hover:bg-accent hover:text-accent-foreground"
                         }`}
                         onClick={() => handleStartTrial("pricing_plan", plan.ctaPlan || plan.name)}
-                      >
-                        {t("pricing.cta.startTrial")}
+                  >
+                    {t("pricing.cta.startTrial")}
                       </button>
                     ) : (
-                      <Link
+                  <Link
                         href={`${langPrefix}/contact`}
                         className="mt-6 block w-full rounded-md border border-input bg-background px-4 py-2 text-center text-sm shadow-sm hover:bg-accent hover:text-accent-foreground"
                       >
-                        {t("pricing.cta.contactSales")}
-                      </Link>
+                    {t("pricing.cta.contactSales")}
+                  </Link>
                     )}
-                  </CardContent>
-                </Card>
+                </CardContent>
+              </Card>
               ))}
             </div>
           </div>
