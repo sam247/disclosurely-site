@@ -431,7 +431,11 @@ function LandingInner() {
 
         {/* Highlights */}
         <section className="bg-gray-50 py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl space-y-32 sm:space-y-40 px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-16 text-center">
+              <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">Disclosurely Features</h2>
+            </div>
+            <div className="space-y-32 sm:space-y-40">
             {highlights.map((item, index) => (
               <div key={item.title} className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
@@ -461,7 +465,8 @@ function LandingInner() {
                   </div>
                 </div>
               </div>
-            ))}
+              ))}
+            </div>
           </div>
         </section>
 
