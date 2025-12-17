@@ -363,7 +363,16 @@
       "subtitle": "Velg riktig plan for din organisasjon. Start med vår sjudagers gratis prøveperiode og oppgrader når du vokser.",
       "tagline": "Transparent Pricing Built For Business.",
       "subtitle1": "7-day free trial • Unlimited reports included",
-      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow."
+      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow.",
+      "startFreeTrial": "Start gratis prøveperiode"
+    },
+    "designedForBusinesses": {
+      "title": "Designet for bedrifter av alle størrelser",
+      "description": "Enten du er en liten organisasjon som implementerer varslingssoftware for første gang eller en større gruppe som ruller det ut på tvers av flere enheter, skalerer Disclosurely med deg. Enkle, transparente priser og fleksible arbeidsområder gjør det enkelt å starte smått, bevise verdi og utvide dekningen når rapporteringsvolumene og regulatoriske forpliktelser vokser.",
+      "bullet1": "Ideelt for små og mellomstore bedrifter som trenger sikre, kompatible varslingskanaler uten bedriftsnivå kompleksitet eller oppsettkostnader.",
+      "bullet2": "Fleksibelt for voksende team, med ekstra brukere, enheter og språk som er enkle å legge til når organisasjonen din utvikler seg.",
+      "bullet3": "Klar for større organisasjoner, med strukturert saksbehandling, revisjonsspor og rapportering som møter forventningene til styre, regulatorer og eksterne rådgivere.",
+      "imageAlt": "Designet for bedrifter av alle størrelser"
     },
     "plans": {
       "mostPopular": "Mest populær",

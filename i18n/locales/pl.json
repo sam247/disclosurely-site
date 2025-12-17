@@ -202,7 +202,16 @@
       "subtitle": "Wybierz plan odpowiedni dla Twojej organizacji. Zacznij od naszego siedmiodniowego darmowego okresu próbnego i skaluj wraz z rozwojem.",
       "tagline": "Transparent Pricing Built For Business.",
       "subtitle1": "7-day free trial • Unlimited reports included",
-      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow."
+      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow.",
+      "startFreeTrial": "Rozpocznij darmowy okres próbny"
+    },
+    "designedForBusinesses": {
+      "title": "Zaprojektowane dla firm wszystkich rozmiarów",
+      "description": "Niezależnie od tego, czy jesteś małą organizacją wdrażającą oprogramowanie do zgłaszania nieprawidłowości po raz pierwszy, czy większą grupą wdrażającą je w wielu podmiotach, Disclosurely skaluje się wraz z Tobą. Proste, przejrzyste ceny i elastyczne przestrzenie robocze ułatwiają rozpoczęcie od małego, udowodnienie wartości i rozszerzenie zasięgu w miarę wzrostu wolumenów raportów i zobowiązań regulacyjnych.",
+      "bullet1": "Idealne dla MŚP, które potrzebują bezpiecznych, zgodnych kanałów zgłaszania nieprawidłowości bez złożoności lub kosztów konfiguracji na poziomie przedsiębiorstwa.",
+      "bullet2": "Elastyczne dla rosnących zespołów, z dodatkowymi użytkownikami, podmiotami i językami łatwymi do dodania w miarę rozwoju organizacji.",
+      "bullet3": "Gotowe dla większych organizacji, z ustrukturyzowanym zarządzaniem sprawami, śladami audytu i raportowaniem spełniającym oczekiwania zarządów, regulatorów i zewnętrznych doradców.",
+      "imageAlt": "Zaprojektowane dla firm wszystkich rozmiarów"
     },
     "plans": {
       "mostPopular": "Najpopularniejszy",

@@ -363,7 +363,16 @@
       "subtitle": "Επιλέξτε το σωστό σχέδιο για τον οργανισμό σας. Ξεκινήστε με τη δωρεάν δοκιμή επτά ημερών μας και αναβαθμίστε καθώς μεγαλώνετε.",
       "tagline": "Transparent Pricing Built For Business.",
       "subtitle1": "7-day free trial • Unlimited reports included",
-      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow."
+      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow.",
+      "startFreeTrial": "Ξεκινήστε δωρεάν δοκιμή"
+    },
+    "designedForBusinesses": {
+      "title": "Σχεδιασμένο για επιχειρήσεις όλων των μεγεθών",
+      "description": "Είτε είστε μια μικρή οργάνωση που εφαρμόζει λογισμικό αναφοράς για πρώτη φορά είτε μια μεγαλύτερη ομάδα που το αναπτύσσει σε πολλαπλές οντότητες, το Disclosurely κλιμακώνεται μαζί σας. Απλές, διαφανείς τιμές και ευέλικτοι χώροι εργασίας διευκολύνουν την έναρξη από μικρό, την απόδειξη αξίας και την επέκταση της κάλυψης καθώς οι όγκοι αναφορών και οι ρυθμιστικές υποχρεώσεις σας αυξάνονται.",
+      "bullet1": "Ιδανικό για ΜΜΕ που χρειάζονται ασφαλείς, συμβατούς κανάλια αναφοράς χωρίς πολυπλοκότητα επιπέδου επιχείρησης ή κόστη εγκατάστασης.",
+      "bullet2": "Ευέλικτο για ομάδες που αναπτύσσονται, με πρόσθετους χρήστες, οντότητες και γλώσσες εύκολες στην προσθήκη καθώς η οργάνωσή σας εξελίσσεται.",
+      "bullet3": "Έτοιμο για μεγαλύτερες οργανώσεις, με δομημένη διαχείριση υποθέσεων, ίχνη ελέγχου και αναφορά που πληρούν τις προσδοκίες των διοικητικών συμβουλίων, ρυθμιστών και εξωτερικών συμβούλων.",
+      "imageAlt": "Σχεδιασμένο για επιχειρήσεις όλων των μεγεθών"
     },
     "plans": {
       "mostPopular": "Πιο Δημοφιλές",

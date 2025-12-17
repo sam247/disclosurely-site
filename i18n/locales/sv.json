@@ -363,7 +363,16 @@
       "subtitle": "Välj rätt plan för din organisation. Börja med vår sjudagars gratis provperiod och uppgradera när du växer.",
       "tagline": "Transparent Pricing Built For Business.",
       "subtitle1": "7-day free trial • Unlimited reports included",
-      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow."
+      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow.",
+      "startFreeTrial": "Starta gratis provperiod"
+    },
+    "designedForBusinesses": {
+      "title": "Designad för företag av alla storlekar",
+      "description": "Oavsett om du är en liten organisation som implementerar visselblåsningsprogramvara för första gången eller en större grupp som rullar ut den över flera enheter, skalar Disclosurely med dig. Enkla, transparenta priser och flexibla arbetsytor gör det enkelt att börja små, bevisa värde och utöka täckningen när dina rapporteringsvolymer och regulatoriska förpliktelser växer.",
+      "bullet1": "Ideal för små och medelstora företag som behöver säkra, kompatibla visselblåsningskanaler utan företagsnivå komplexitet eller installationskostnader.",
+      "bullet2": "Flexibelt för växande team, med ytterligare användare, enheter och språk som är lätta att lägga till när din organisation utvecklas.",
+      "bullet3": "Redo för större organisationer, med strukturerad ärendehantering, revisionsspår och rapportering som möter förväntningarna från styrelser, tillsynsmyndigheter och externa rådgivare.",
+      "imageAlt": "Designad för företag av alla storlekar"
     },
     "plans": {
       "mostPopular": "Mest populär",
