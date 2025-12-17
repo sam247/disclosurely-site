@@ -5,7 +5,7 @@ import SmallBusinessContent from "./SmallBusinessContent";
 // Force rebuild - page should be accessible at /solutions/small-business
 
 export async function generateMetadata(): Promise<Metadata> {
-  const structuredData = generatePageStructuredData("service", {
+  const structuredData = generatePageStructuredData("webpage", {
     title: "Whistleblowing for Small Businesses | Disclosurely",
     description:
       "Simple whistleblower software for UK SMEs. Reduce fraud, theft, and HR issues with secure anonymous reporting. No complex setup – start protecting your business today.",
@@ -31,7 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function SmallBusinessPage() {
-  const serviceSchema = generatePageStructuredData("service", {
+  const serviceSchema = generatePageStructuredData("webpage", {
     title: "Whistleblowing for Small Businesses | Disclosurely",
     description:
       "Simple whistleblower software for UK SMEs. Reduce fraud, theft, and HR issues with secure anonymous reporting. No complex setup – start protecting your business today.",
