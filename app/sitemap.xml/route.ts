@@ -29,6 +29,7 @@ const STATIC_ROUTES = [
   { path: '/careers', priority: '0.6', changefreq: 'monthly' },
   { path: '/contact', priority: '0.6', changefreq: 'monthly' },
   { path: '/blog', priority: '0.7', changefreq: 'weekly' },
+  { path: '/solutions/small-business', priority: '0.7', changefreq: 'monthly' },
   { path: '/terms', priority: '0.3', changefreq: 'yearly' },
   { path: '/privacy', priority: '0.3', changefreq: 'yearly' },
   { path: '/cookies', priority: '0.3', changefreq: 'yearly' },
@@ -104,6 +105,7 @@ async function fetchBlogEntries(now: string): Promise<UrlEntry[]> {
 
     response.items.forEach((item) => {
       const slug = item.fields?.slug;
+      const status = item.fields?.status;
       const publishDate = item.fields?.publishDate
         ? new Date(item.fields.publishDate).toISOString().split('T')[0]
         : now;
@@ -111,7 +113,8 @@ async function fetchBlogEntries(now: string): Promise<UrlEntry[]> {
         ? new Date(item.sys.updatedAt).toISOString().split('T')[0]
         : publishDate;
 
-      if (slug) {
+      // Only include published posts or posts without status field (for backward compatibility)
+      if (slug && (status === 'published' || !status)) {
         entries.push({
           loc: `${BASE_URL}/blog/${slug}`,
           lastmod: updatedDate,
