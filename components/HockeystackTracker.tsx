@@ -13,9 +13,10 @@ export default function HockeystackTracker() {
     hsscript.id = 'wphs';
     hsscript.src = 'https://cdn.jsdelivr.net/npm/hockeystack@latest/hockeystack.min.js';
     hsscript.async = true;
-    hsscript.setAttribute('data-apikey', 'cdf5d6ce7ab794038a5cd0ba4e333e');
-    hsscript.setAttribute('data-cookieless', '1');
-    hsscript.setAttribute('data-autoIdentify', '1');
+    // Use dataset property to ensure correct attribute names (auto-converts camelCase to kebab-case)
+    hsscript.dataset.apikey = 'cdf5d6ce7ab794038a5cd0ba4e333e';
+    hsscript.dataset.cookieless = '1';
+    hsscript.dataset.autoIdentify = '1';
     document.getElementsByTagName('head')[0].appendChild(hsscript);
   }, []);
 
