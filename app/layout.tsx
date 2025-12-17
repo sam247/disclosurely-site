@@ -4,6 +4,7 @@ import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 
 import { supportedLanguages } from "@/lib/hreflang";
+import HockeystackTracker from "@/components/HockeystackTracker";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -72,24 +73,9 @@ export default async function RootLayout({
         <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
         <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="anonymous" />
         <Script src="https://analytics.ahrefs.com/analytics.js" data-key="NOZ1bom3LOJmqVM2vVZ51A" strategy="afterInteractive" />
-        <Script
-          id="hockeystack"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              var hsscript = document.createElement("script");
-              hsscript.id = "wphs";
-              hsscript.src = "https://cdn.jsdelivr.net/npm/hockeystack@latest/hockeystack.min.js";
-              hsscript.async = 1;
-              hsscript.dataset.apikey = "cdf5d6ce7ab794038a5cd0ba4e333e";
-              hsscript.dataset.cookieless = 1;
-              hsscript.dataset.autoIdentify = 1;
-              document.getElementsByTagName('head')[0].append(hsscript);
-            `,
-          }}
-        />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased">
+        <HockeystackTracker />
         {children}
         <Analytics />
       </body>
