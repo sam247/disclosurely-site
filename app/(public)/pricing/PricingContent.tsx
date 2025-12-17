@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useEffect, useMemo, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle, X, Star } from "lucide-react";
+import { CheckCircle, CheckCircle2, X, Star } from "lucide-react";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -238,30 +239,33 @@ function PricingContent() {
           </div>
         </section>
 
-        {/* Testimonials Section - Trusted by companies */}
-        <section className="bg-gradient-to-b from-gray-900 to-gray-800 px-4 py-20 sm:px-6 lg:px-8">
+        {/* Designed For Businesses Section */}
+        <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <div className="mb-12 text-center">
-              <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">Trusted by companies in all industries</h2>
-            </div>
-            <div className="mx-auto max-w-3xl">
-              <div className="rounded-2xl bg-white p-8 shadow-xl">
-                <p className="mb-6 text-lg leading-relaxed text-gray-700">
-                  {t("pricing.testimonial.quote")}
+            <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+              <div>
+                <h2 className="mb-3 text-2xl font-bold text-gray-900 sm:text-3xl">Designed For Businesses Of All Sizes</h2>
+                <p className="mb-4 text-base leading-relaxed text-gray-700">
+                  Whether you are a small organisation implementing whistleblower software for the first time or a larger group rolling it out across multiple entities, Disclosurely scales with you. Simple, transparent pricing and flexible workspaces make it easy to start small, prove value, and expand coverage as your reporting volumes and regulatory obligations grow.
                 </p>
-                <div className="mb-4 flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-blue-700 font-semibold text-white text-xl">
-                    {t("pricing.testimonial.initials")}
-                  </div>
-                  <div>
-                    <div className="font-semibold text-gray-900">{t("pricing.testimonial.name")}</div>
-                    <div className="text-sm text-gray-600">{t("pricing.testimonial.role")}</div>
-                  </div>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
+                    <span><strong>Ideal for SMEs</strong> that need secure, compliant whistleblowing channels without enterprise-level complexity or setup costs.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
+                    <span><strong>Flexible for growing teams</strong>, with additional users, entities, and languages easy to add as your organisation evolves.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
+                    <span><strong>Ready for larger organisations</strong>, supporting structured case handling, audit trails, and reporting that meet the expectations of boards, regulators, and external advisers.</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="lg:order-1">
+                <div className="overflow-hidden rounded-xl border border-gray-100 shadow-sm">
+                  <Image src="/assets/artwork/pricing_image.jpeg" alt="Designed For Businesses Of All Sizes" width={1200} height={720} className="h-full w-full object-cover" />
                 </div>
               </div>
             </div>
