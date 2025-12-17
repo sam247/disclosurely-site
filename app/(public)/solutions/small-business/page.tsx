@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { generatePageMetadata, generatePageStructuredData, StructuredData } from "@/lib/seo";
 import SmallBusinessContent from "./SmallBusinessContent";
 
+// Force rebuild - page should be accessible at /solutions/small-business
+
 export async function generateMetadata(): Promise<Metadata> {
   const structuredData = generatePageStructuredData("service", {
     title: "Whistleblowing for Small Businesses | Disclosurely",
