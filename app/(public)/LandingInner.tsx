@@ -559,9 +559,10 @@ function LandingInner() {
                     <div className="space-y-3">
                       {plan.highlights.map((item) => {
                         const isComingSoon = item === t("pricing.features.customIntegrations") || item === t("pricing.features.api") || item === t("pricing.features.webhooks");
-                        const parts = item.split(" (coming soon)");
-                        const mainText = parts[0];
-                        const comingSoonText = parts.length > 1 ? " (coming soon)" : "";
+                        // Extract text in parentheses at the end (for "coming soon" in various languages)
+                        const match = item.match(/^(.+?)\s*\(([^)]+)\)$/);
+                        const mainText = match ? match[1] : item;
+                        const comingSoonText = match ? ` (${match[2]})` : "";
                         return (
                           <div key={item} className="flex items-center space-x-3">
                             <CheckCircle className={`h-5 w-5 ${isComingSoon ? "text-gray-400" : "text-green-600"}`} />
