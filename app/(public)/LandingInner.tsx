@@ -33,6 +33,7 @@ const businessLogos = [
   { src: "/business_logos/page-8.png", alt: "Business Partner 8" },
 ];
 
+
 const featureIcons = [
   "/assets/icons/anonymous_reporting.png",
   "/assets/icons/secure_messaging.png",
@@ -435,6 +436,9 @@ function LandingInner() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-16 text-center">
               <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">Disclosurely Features</h2>
+              <p className="mx-auto max-w-3xl px-4 text-lg text-gray-700 sm:text-xl">
+                Comprehensive tools for secure anonymous reporting, compliance, and case management
+              </p>
             </div>
             <div className="space-y-32 sm:space-y-40">
             {highlights.map((item, index) => (
