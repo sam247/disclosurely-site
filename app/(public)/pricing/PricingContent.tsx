@@ -216,12 +216,21 @@ function PricingContent() {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="space-y-3">
-                      {plan.highlights.map((item) => (
-                        <div key={item} className="flex items-center space-x-3">
-                          <CheckCircle className={`h-5 w-5 ${item === t("pricing.features.customIntegrations") || item === t("pricing.features.api") || item === t("pricing.features.webhooks") ? "text-gray-400" : "text-green-600"}`} />
-                          <span className="text-sm text-gray-700 sm:text-base">{item}</span>
-                        </div>
-                      ))}
+                      {plan.highlights.map((item) => {
+                        const isComingSoon = item === t("pricing.features.customIntegrations") || item === t("pricing.features.api") || item === t("pricing.features.webhooks");
+                        const parts = item.split(" (coming soon)");
+                        const mainText = parts[0];
+                        const comingSoonText = parts.length > 1 ? " (coming soon)" : "";
+                        return (
+                          <div key={item} className="flex items-center space-x-3">
+                            <CheckCircle className={`h-5 w-5 ${isComingSoon ? "text-gray-400" : "text-green-600"}`} />
+                            <span className="text-sm text-gray-700 sm:text-base">
+                              {mainText}
+                              {comingSoonText && <span className="text-xs">{comingSoonText}</span>}
+                            </span>
+                          </div>
+                        );
+                      })}
                       {plan.missing.map((item) => (
                         <div key={item} className="flex items-center space-x-3">
                           <X className="h-5 w-5 text-red-500" />
