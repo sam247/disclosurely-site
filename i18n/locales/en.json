@@ -421,8 +421,9 @@
       "prioritySupport": "Priority support",
       "dedicatedSupport": "Dedicated support",
       "slaGuarantee": "SLA guarantee",
-      "customIntegrations": "Custom integrations",
-      "api": "API access",
+      "customIntegrations": "Custom integrations (coming soon)",
+      "api": "API access (coming soon)",
+      "webhooks": "Webhooks (coming soon)",
       "everythingPro": "Everything in Pro"
     },
     "testimonial": {
@@ -498,7 +499,8 @@
         "emailSupport": "Email Support",
         "prioritySupport": "Priority Support",
         "dedicatedManager": "Dedicated Account Manager",
-        "slaGuarantee": "SLA Guarantee"
+        "slaGuarantee": "SLA Guarantee",
+        "webhooks": "Webhooks"
       },
       "values": {
         "unlimited": "Unlimited",
@@ -545,7 +547,7 @@
       },
       "security": {
         "question": "What security certifications do you have?",
-        "answer": "We're ISO 27001 certified, SOC 2 Type II compliant, and GDPR ready."
+        "answer": "We're GDPR compliant, working towards ISO 27001 and SOX compliance."
       }
     },
     "cta": {

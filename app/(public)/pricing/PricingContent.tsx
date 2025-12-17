@@ -93,6 +93,7 @@ function PricingContent() {
           t("pricing.features.slaGuarantee"),
           t("pricing.features.customIntegrations"),
           t("pricing.features.api"),
+          t("pricing.features.webhooks"),
         ],
         missing: [],
         ctaPlan: null,
@@ -217,7 +218,7 @@ function PricingContent() {
                     <div className="space-y-3">
                       {plan.highlights.map((item) => (
                         <div key={item} className="flex items-center space-x-3">
-                          <CheckCircle className={`h-5 w-5 ${item === t("pricing.features.customIntegrations") || item === t("pricing.features.api") ? "text-gray-400" : "text-green-600"}`} />
+                          <CheckCircle className={`h-5 w-5 ${item === t("pricing.features.customIntegrations") || item === t("pricing.features.api") || item === t("pricing.features.webhooks") ? "text-gray-400" : "text-green-600"}`} />
                           <span className="text-sm text-gray-700 sm:text-base">{item}</span>
                         </div>
                       ))}
@@ -562,8 +563,53 @@ function PricingContent() {
                       <CheckCircle className="mx-auto h-5 w-5 text-blue-600" />
                     </td>
                   </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 text-sm text-gray-900">{t("pricing.compare.rows.webhooks")}</td>
+                    <td className="px-6 py-4 text-center">
+                      <X className="mx-auto h-5 w-5 text-gray-400" />
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <X className="mx-auto h-5 w-5 text-gray-400" />
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <X className="mx-auto h-5 w-5 text-gray-400" />
+                    </td>
+                  </tr>
                 </tbody>
               </table>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Pages */}
+        <section className="bg-white py-12">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-8 text-center">
+              <h2 className="mb-2 text-2xl font-bold text-gray-900 sm:text-3xl">{t("pricing.related.title")}</h2>
+              <p className="text-gray-600">{t("pricing.related.subtitle")}</p>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-3">
+              <Link href={`${langPrefix}/features`} className="group block">
+                <div className="h-full rounded-lg bg-gray-50 p-6 shadow-sm transition-shadow hover:shadow-lg">
+                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">{t("pricing.related.cards.features.title")}</h3>
+                  <p className="text-sm text-gray-600">{t("pricing.related.cards.features.description")}</p>
+                </div>
+              </Link>
+
+              <Link href={`${langPrefix}/compliance-software`} className="group block">
+                <div className="h-full rounded-lg bg-gray-50 p-6 shadow-sm transition-shadow hover:shadow-lg">
+                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">{t("pricing.related.cards.compliance.title")}</h3>
+                  <p className="text-sm text-gray-600">{t("pricing.related.cards.compliance.description")}</p>
+                </div>
+              </Link>
+
+              <Link href={`${langPrefix}/vs-speakup`} className="group block">
+                <div className="h-full rounded-lg bg-gray-50 p-6 shadow-sm transition-shadow hover:shadow-lg">
+                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">{t("pricing.related.cards.compare.title")}</h3>
+                  <p className="text-sm text-gray-600">{t("pricing.related.cards.compare.description")}</p>
+                </div>
+              </Link>
             </div>
           </div>
         </section>
@@ -627,39 +673,6 @@ function PricingContent() {
             </a>
           </div>
         </div>
-
-        {/* Related Pages */}
-        <section className="bg-white py-12">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-8 text-center">
-              <h2 className="mb-2 text-2xl font-bold text-gray-900 sm:text-3xl">{t("pricing.related.title")}</h2>
-              <p className="text-gray-600">{t("pricing.related.subtitle")}</p>
-            </div>
-
-            <div className="grid gap-6 md:grid-cols-3">
-              <Link href={`${langPrefix}/features`} className="group block">
-                <div className="h-full rounded-lg bg-gray-50 p-6 shadow-sm transition-shadow hover:shadow-lg">
-                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">{t("pricing.related.cards.features.title")}</h3>
-                  <p className="text-sm text-gray-600">{t("pricing.related.cards.features.description")}</p>
-                </div>
-              </Link>
-
-              <Link href={`${langPrefix}/compliance-software`} className="group block">
-                <div className="h-full rounded-lg bg-gray-50 p-6 shadow-sm transition-shadow hover:shadow-lg">
-                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">{t("pricing.related.cards.compliance.title")}</h3>
-                  <p className="text-sm text-gray-600">{t("pricing.related.cards.compliance.description")}</p>
-                </div>
-              </Link>
-
-              <Link href={`${langPrefix}/vs-speakup`} className="group block">
-                <div className="h-full rounded-lg bg-gray-50 p-6 shadow-sm transition-shadow hover:shadow-lg">
-                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">{t("pricing.related.cards.compare.title")}</h3>
-                  <p className="text-sm text-gray-600">{t("pricing.related.cards.compare.description")}</p>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </section>
       </div>
     </I18nProvider>
   );

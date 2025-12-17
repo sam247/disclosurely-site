@@ -40,7 +40,7 @@ function CareersContent() {
               <h2 className="text-3xl font-bold text-gray-900">{t("careers.culture.title")}</h2>
               <p className="mt-4 text-gray-700">{t("careers.culture.description")}</p>
               <ul className="mt-6 space-y-3 text-gray-700">
-                {(t("careers.culture.points", { returnObjects: true }) as string[]).map((item, idx) => (
+                {Object.values(t("careers.culture.values", { returnObjects: true }) as Record<string, string>).map((item, idx) => (
                   <li key={idx} className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-blue-600" />
                     <span>{item}</span>

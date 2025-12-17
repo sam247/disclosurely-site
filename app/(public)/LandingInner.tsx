@@ -183,6 +183,7 @@ function LandingInner() {
           t("pricing.features.slaGuarantee"),
           t("pricing.features.customIntegrations"),
           t("pricing.features.api"),
+          t("pricing.features.webhooks"),
         ],
         missing: [],
         ctaPlan: null,
@@ -558,7 +559,7 @@ function LandingInner() {
                     <div className="space-y-3">
                       {plan.highlights.map((item) => (
                         <div key={item} className="flex items-center space-x-3">
-                          <CheckCircle className={`h-5 w-5 ${item === t("pricing.features.customIntegrations") || item === t("pricing.features.api") ? "text-gray-400" : "text-green-600"}`} />
+                          <CheckCircle className={`h-5 w-5 ${item === t("pricing.features.customIntegrations") || item === t("pricing.features.api") || item === t("pricing.features.webhooks") ? "text-gray-400" : "text-green-600"}`} />
                           <span className="text-sm text-gray-700 sm:text-base">{item}</span>
                         </div>
                       ))}
