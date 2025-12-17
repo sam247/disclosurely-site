@@ -57,7 +57,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
   // Fetch related posts from the same categories
   const categoryIds = post.categories?.map((cat) => cat.id) || [];
-  const relatedPosts = await fetchRelatedBlogPosts(post.id, categoryIds, 2);
+  const relatedPosts = await fetchRelatedBlogPosts(post.id, categoryIds, 3);
 
   const content = post.content as Document | undefined;
   const imageUrl = post.featuredImage
@@ -254,8 +254,8 @@ export default async function BlogPostPage({ params }: { params: Params }) {
         {relatedPosts.length > 0 && (
           <section className="px-4 pb-12 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-4xl">
-              <h2 className="mt-8 mb-4 text-lg font-bold text-gray-900">Related Articles</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <h2 className="mt-4 mb-4 text-lg font-bold text-gray-900">Related Articles</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                 {relatedPosts.map((relatedPost) => {
                   const relatedImageUrl = relatedPost.featuredImage
                     ? relatedPost.featuredImage.startsWith("http")

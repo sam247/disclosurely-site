@@ -233,7 +233,7 @@ export async function fetchBlogPost(slug: string): Promise<BlogPost & { links?: 
 export async function fetchRelatedBlogPosts(
   currentPostId: string,
   categoryIds: string[],
-  limit: number = 2
+  limit: number = 3
 ): Promise<BlogPost[]> {
   if (!contentfulClient || !contentfulToken || categoryIds.length === 0) return [];
 
