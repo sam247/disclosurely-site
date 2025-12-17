@@ -198,7 +198,7 @@ function LandingInner() {
         title: t("landing.anonymousReporting.title"),
         description: t("landing.anonymousReporting.description"),
         additionalContent: [
-          "Anonymous reports are submitted via a simple, browser-based whistleblower form that works on any device, so people can speak up quickly and safely from anywhere. Behind the scenes, cases are routed into your whistleblower software workspace, giving case handlers a centralised view of every report, clear audit trails, and deadlines for acknowledgement, follow-up, and resolution.",
+          "Enable employees to report misconduct, ethics violations, or other concerns completely anonymously through a simple browser-based whistleblower form that works on any device. Advanced encryption protects whistleblower identities while supporting compliance with key regulatory requirements. Behind the scenes, cases flow into a central workspace, giving handlers a clear view of every report with audit trails and defined deadlines for acknowledgement, follow-up, and resolution.",
         ],
         bullets: [
           "Zero data collection on reporters (no IP tracking, device fingerprinting, or hidden identifiers) to maximise trust and protect employees from retaliation.​",
