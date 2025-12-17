@@ -403,8 +403,9 @@
       "customDomain": "Dominio personalizado",
       "dedicatedSupport": "Soporte dedicado",
       "slaGuarantee": "Garantía de SLA",
-      "customIntegrations": "Integraciones personalizadas",
+      "customIntegrations": "Integraciones personalizadas (próximamente)",
       "api": "API (próximamente)",
+      "webhooks": "Webhooks (próximamente)",
       "basicReporting": "Basic case management",
       "multipleCustomDomains": "Multiple custom domains",
       "teamManagement": "Unlimited team members",
@@ -426,7 +427,7 @@
       },
       "security": {
         "question": "¿Qué certificaciones de seguridad tienen?",
-        "answer": "Estamos certificados ISO 27001, cumplimos con SOC 2 Tipo II y estamos listos para RGPD."
+        "answer": "Estamos conformes con el RGPD y trabajamos hacia la conformidad ISO 27001 y SOX."
       }
     },
     "cta": {
@@ -470,7 +471,7 @@
       },
       "stat2": {
         "title": "100% Compliance Ready",
-        "description": "ISO 27001, GDPR, SOX compliant out of the box"
+        "description": "GDPR compliant, working towards ISO 27001 and SOX compliance"
       },
       "stat3": {
         "title": "Enterprise-Grade Security",
@@ -536,7 +537,7 @@
         "encryption": "Military-Grade Encryption (AES-GCM)",
         "gdpr": "GDPR Compliant",
         "auditTrail": "Audit Trail",
-        "aiCaseAnalysis": "AI Case Analysis (DeepSeek)",
+        "aiCaseAnalysis": "AI Case Analysis",
         "aiRiskAssessment": "AI Risk Assessment",
         "aiChatSupport": "AI Chat Support",
         "twoWayMessaging": "Two-Way Messaging",
@@ -550,7 +551,8 @@
         "emailSupport": "Email Support",
         "prioritySupport": "Priority Support",
         "dedicatedManager": "Dedicated Account Manager",
-        "slaGuarantee": "SLA Guarantee"
+        "slaGuarantee": "SLA Guarantee",
+        "webhooks": "Webhooks"
       },
       "values": {
         "unlimited": "Unlimited",

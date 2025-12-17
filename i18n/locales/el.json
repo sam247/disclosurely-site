@@ -398,8 +398,9 @@
       "customDomain": "Προσαρμοσμένος τομέας",
       "dedicatedSupport": "Αφοσιωμένη υποστήριξη",
       "slaGuarantee": "Εγγύηση SLA",
-      "customIntegrations": "Προσαρμοσμένες ενσωματώσεις",
+      "customIntegrations": "Προσαρμοσμένες ενσωματώσεις (σύντομα)",
       "api": "API (σύντομα)",
+      "webhooks": "Webhooks (σύντομα)",
       "basicReporting": "Basic case management",
       "cname": "CNAME configuration",
       "workflows": "Automated workflows",
@@ -423,7 +424,7 @@
       },
       "security": {
         "question": "Ποιες πιστοποιήσεις ασφάλειας έχετε;",
-        "answer": "Είμαστε πιστοποιημένοι ISO 27001, πληρούμε SOC 2 Type II και είμαστε έτοιμοι για GDPR."
+        "answer": "Είμαστε συμβατοί με το GDPR και εργαζόμαστε για συμμόρφωση ISO 27001 και SOX."
       }
     },
     "cta": {
@@ -467,7 +468,7 @@
       },
       "stat2": {
         "title": "100% Compliance Ready",
-        "description": "ISO 27001, GDPR, SOX compliant out of the box"
+        "description": "GDPR compliant, working towards ISO 27001 and SOX compliance"
       },
       "stat3": {
         "title": "Enterprise-Grade Security",
@@ -533,7 +534,7 @@
         "encryption": "Military-Grade Encryption (AES-GCM)",
         "gdpr": "GDPR Compliant",
         "auditTrail": "Audit Trail",
-        "aiCaseAnalysis": "AI Case Analysis (DeepSeek)",
+        "aiCaseAnalysis": "AI Case Analysis",
         "aiRiskAssessment": "AI Risk Assessment",
         "aiChatSupport": "AI Chat Support",
         "twoWayMessaging": "Two-Way Messaging",
@@ -547,7 +548,8 @@
         "emailSupport": "Email Support",
         "prioritySupport": "Priority Support",
         "dedicatedManager": "Dedicated Account Manager",
-        "slaGuarantee": "SLA Guarantee"
+        "slaGuarantee": "SLA Guarantee",
+        "webhooks": "Webhooks"
       },
       "values": {
         "unlimited": "Unlimited",
