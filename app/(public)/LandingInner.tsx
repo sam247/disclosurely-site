@@ -196,7 +196,7 @@ function LandingInner() {
     () => [
       {
         title: t("landing.anonymousReporting.title"),
-        description: t("landing.anonymousReporting.description"),
+        description: "",
         additionalContent: [
           "Enable employees to report misconduct, ethics violations, or other concerns completely anonymously through a simple browser-based whistleblower form that works on any device. Advanced encryption protects whistleblower identities while supporting compliance with key regulatory requirements. Behind the scenes, cases flow into a central workspace, giving handlers a clear view of every report with audit trails and defined deadlines for acknowledgement, follow-up, and resolution.",
         ],
