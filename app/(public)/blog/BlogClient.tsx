@@ -35,13 +35,13 @@ export default function BlogClient({ posts, categories, selectedCategory }: Blog
   return (
     <div className="bg-white min-h-screen">
       {/* Main Content with Sidebar */}
-      <section className="px-3 pb-20 pt-24 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+      <section className="pb-20 pt-24">
+        <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
             {/* Left Sidebar - Blog Title and Categories */}
             <aside className="w-full lg:w-80 flex-shrink-0">
               <div className="lg:sticky lg:top-8">
-                <h1 className="text-3xl font-bold text-gray-900 sm:text-5xl mb-3">Blog</h1>
+                <h1 className="text-3xl font-bold text-gray-900 sm:text-5xl mb-6">Blog</h1>
                 <p className="text-gray-600 mb-12 text-lg">
                   Compiled notes from the Disclosurely team
                 </p>
