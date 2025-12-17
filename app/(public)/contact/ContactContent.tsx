@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,6 +18,16 @@ function ContactContent() {
   const { t, i18n } = useTranslation();
   const { currentLanguage } = useLanguageFromUrl();
   useGeographicalLanguage();
+  
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     const lang = currentLanguage || "en";
@@ -104,42 +114,123 @@ function ContactContent() {
                 <CardDescription>{t("contact.form.description")}</CardDescription>
               </CardHeader>
               <CardContent>
-                <form className="space-y-4">
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="name">
-                      {t("contact.form.name.label")}
-                    </label>
-                    <Input id="name" name="name" placeholder={t("contact.form.name.placeholder")} required />
+                {submitStatus === "success" ? (
+                  <div className="rounded-lg bg-green-50 p-4 text-center">
+                    <p className="text-green-800 font-semibold">
+                      {t("contact.form.success") || "Thank you! Your message has been sent. We'll get back to you within 24 hours."}
+                    </p>
                   </div>
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="email">
-                      {t("contact.form.email.label")}
-                    </label>
-                    <Input id="email" name="email" type="email" placeholder={t("contact.form.email.placeholder")} required />
-                  </div>
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="company">
-                      {t("contact.form.company.label")}
-                    </label>
-                    <Input id="company" name="company" placeholder={t("contact.form.company.placeholder")} />
-                  </div>
-                  <div>
-                    <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="message">
-                      {t("contact.form.message.label")}
-                    </label>
-                    <Textarea id="message" name="message" placeholder={t("contact.form.message.placeholder")} rows={4} />
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700"
-                    onClick={(e) => {
+                ) : (
+                  <form
+                    className="space-y-4"
+                    onSubmit={async (e) => {
                       e.preventDefault();
-                      window.location.href = "mailto:team@disclosurely.com";
+                      setIsSubmitting(true);
+                      setSubmitStatus("idle");
+                      setErrorMessage("");
+
+                      try {
+                        const response = await fetch("/api/contact", {
+                          method: "POST",
+                          headers: {
+                            "Content-Type": "application/json",
+                          },
+                          body: JSON.stringify(formData),
+                        });
+
+                        const data = await response.json();
+
+                        if (!response.ok) {
+                          throw new Error(data.error || "Failed to send message");
+                        }
+
+                        setSubmitStatus("success");
+                        setFormData({ name: "", email: "", company: "", message: "" });
+                      } catch (error) {
+                        setSubmitStatus("error");
+                        setErrorMessage(
+                          error instanceof Error
+                            ? error.message
+                            : "Failed to send message. Please try again."
+                        );
+                      } finally {
+                        setIsSubmitting(false);
+                      }
                     }}
                   >
-                    {t("contact.form.submit")}
-                  </button>
-                </form>
+                    <div>
+                      <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="name">
+                        {t("contact.form.name.label")}
+                      </label>
+                      <Input
+                        id="name"
+                        name="name"
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        placeholder={t("contact.form.name.placeholder")}
+                        required
+                        disabled={isSubmitting}
+                      />
+                    </div>
+                    <div>
+                      <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="email">
+                        {t("contact.form.email.label")}
+                      </label>
+                      <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        placeholder={t("contact.form.email.placeholder")}
+                        required
+                        disabled={isSubmitting}
+                      />
+                    </div>
+                    <div>
+                      <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="company">
+                        {t("contact.form.company.label")}
+                      </label>
+                      <Input
+                        id="company"
+                        name="company"
+                        value={formData.company}
+                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                        placeholder={t("contact.form.company.placeholder")}
+                        disabled={isSubmitting}
+                      />
+                    </div>
+                    <div>
+                      <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="message">
+                        {t("contact.form.message.label")}
+                      </label>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        placeholder={t("contact.form.message.placeholder")}
+                        rows={4}
+                        required
+                        disabled={isSubmitting}
+                      />
+                    </div>
+                    {submitStatus === "error" && errorMessage && (
+                      <div className="rounded-lg bg-red-50 p-3">
+                        <p className="text-sm text-red-800">{errorMessage}</p>
+                      </div>
+                    )}
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      {isSubmitting
+                        ? t("contact.form.submitting") || "Sending..."
+                        : t("contact.form.submit")}
+                    </button>
+                  </form>
+                )}
               </CardContent>
             </Card>
           </div>
