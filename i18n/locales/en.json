@@ -362,7 +362,16 @@
       "tagline": "Transparent Pricing Built For Business.",
       "subtitle": "Choose the plan that's right for your organisation. Start with our seven day free trial and upgrade as you grow.",
       "subtitle1": "7-day free trial • Unlimited reports included",
-      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow."
+      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow.",
+      "startFreeTrial": "Start Free Trial"
+    },
+    "designedForBusinesses": {
+      "title": "Designed For Businesses Of All Sizes",
+      "description": "Whether you are a small organisation implementing whistleblower software for the first time or a larger group rolling it out across multiple entities, Disclosurely scales with you. Simple, transparent pricing and flexible workspaces make it easy to start small, prove value, and expand coverage as your reporting volumes and regulatory obligations grow.",
+      "bullet1": "Ideal for SMEs that need secure, compliant whistleblowing channels without enterprise-level complexity or setup costs.",
+      "bullet2": "Flexible for growing teams, with additional users, entities, and languages easy to add as your organisation evolves.",
+      "bullet3": "Ready for larger organisations, supporting structured case handling, audit trails, and reporting that meet the expectations of boards, regulators, and external advisers.",
+      "imageAlt": "Designed For Businesses Of All Sizes"
     },
     "trustIndicators": {
       "guarantee": {

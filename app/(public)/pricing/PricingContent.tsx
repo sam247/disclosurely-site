@@ -126,7 +126,7 @@ function PricingContent() {
                 className="rounded-lg bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700"
                 onClick={() => handleStartTrial("pricing_hero")}
               >
-                {t("landing.hero.startFreeTrial")}
+                {t("pricing.hero.startFreeTrial")}
               </Link>
             </div>
           </div>
@@ -137,28 +137,28 @@ function PricingContent() {
           <div className="mx-auto max-w-7xl">
             <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
               <div>
-                <h2 className="mb-3 text-2xl font-bold text-gray-900 sm:text-3xl">Designed For Businesses Of All Sizes</h2>
+                <h2 className="mb-3 text-2xl font-bold text-gray-900 sm:text-3xl">{t("pricing.designedForBusinesses.title")}</h2>
                 <p className="mb-4 text-base leading-relaxed text-gray-700">
-                  Whether you are a small organisation implementing whistleblower software for the first time or a larger group rolling it out across multiple entities, Disclosurely scales with you. Simple, transparent pricing and flexible workspaces make it easy to start small, prove value, and expand coverage as your reporting volumes and regulatory obligations grow.
+                  {t("pricing.designedForBusinesses.description")}
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span><strong>Ideal for SMEs</strong> that need secure, compliant whistleblowing channels without enterprise-level complexity or setup costs.</span>
+                    <span>{t("pricing.designedForBusinesses.bullet1")}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span><strong>Flexible for growing teams</strong>, with additional users, entities, and languages easy to add as your organisation evolves.</span>
+                    <span>{t("pricing.designedForBusinesses.bullet2")}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span><strong>Ready for larger organisations</strong>, supporting structured case handling, audit trails, and reporting that meet the expectations of boards, regulators, and external advisers.</span>
+                    <span>{t("pricing.designedForBusinesses.bullet3")}</span>
                   </li>
                 </ul>
               </div>
               <div className="lg:order-1">
                 <div className="overflow-hidden rounded-xl border border-gray-100 shadow-sm">
-                  <Image src="/assets/artwork/pricing_image.jpeg" alt="Designed For Businesses Of All Sizes" width={1200} height={720} className="h-full w-full object-cover" />
+                  <Image src="/assets/artwork/pricing_image.jpeg" alt={t("pricing.designedForBusinesses.imageAlt")} width={1200} height={720} className="h-full w-full object-cover" />
                 </div>
               </div>
             </div>
@@ -587,39 +587,6 @@ function PricingContent() {
                   </tr>
                 </tbody>
               </table>
-            </div>
-          </div>
-        </section>
-
-        {/* Related Pages */}
-        <section className="bg-white py-12">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-8 text-center">
-              <h2 className="mb-2 text-2xl font-bold text-gray-900 sm:text-3xl">{t("pricing.related.title")}</h2>
-              <p className="text-gray-600">{t("pricing.related.subtitle")}</p>
-            </div>
-
-            <div className="grid gap-6 md:grid-cols-3">
-              <Link href={`${langPrefix}/features`} className="group block">
-                <div className="h-full rounded-lg bg-gray-50 p-6 shadow-sm transition-shadow hover:shadow-lg">
-                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">{t("pricing.related.cards.features.title")}</h3>
-                  <p className="text-sm text-gray-600">{t("pricing.related.cards.features.description")}</p>
-                </div>
-              </Link>
-
-              <Link href={`${langPrefix}/compliance-software`} className="group block">
-                <div className="h-full rounded-lg bg-gray-50 p-6 shadow-sm transition-shadow hover:shadow-lg">
-                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">{t("pricing.related.cards.compliance.title")}</h3>
-                  <p className="text-sm text-gray-600">{t("pricing.related.cards.compliance.description")}</p>
-                </div>
-              </Link>
-
-              <Link href={`${langPrefix}/vs-speakup`} className="group block">
-                <div className="h-full rounded-lg bg-gray-50 p-6 shadow-sm transition-shadow hover:shadow-lg">
-                  <h3 className="mb-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">{t("pricing.related.cards.compare.title")}</h3>
-                  <p className="text-sm text-gray-600">{t("pricing.related.cards.compare.description")}</p>
-                </div>
-              </Link>
             </div>
           </div>
         </section>

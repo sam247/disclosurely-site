@@ -363,7 +363,16 @@
       "subtitle": "Kies het juiste plan voor uw organisatie. Begin met onze zeven-daagse gratis proefperiode en upgrade naarmate u groeit.",
       "tagline": "Transparent Pricing Built For Business.",
       "subtitle1": "7-day free trial • Unlimited reports included",
-      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow."
+      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow.",
+      "startFreeTrial": "Start gratis proefperiode"
+    },
+    "designedForBusinesses": {
+      "title": "Ontworpen voor bedrijven van alle groottes",
+      "description": "Of u nu een kleine organisatie bent die voor het eerst klokkenluiderssoftware implementeert of een grotere groep die het uitrolt over meerdere entiteiten, Disclosurely schaalt met u mee. Eenvoudige, transparante prijzen en flexibele werkruimten maken het gemakkelijk om klein te beginnen, waarde te bewijzen en dekking uit te breiden naarmate uw rapportagevolumes en regelgevingsverplichtingen groeien.",
+      "bullet1": "Ideaal voor MKB-bedrijven die veilige, conforme klokkenluiderskanalen nodig hebben zonder bedrijfsniveau complexiteit of opstartkosten.",
+      "bullet2": "Flexibel voor groeiende teams, met extra gebruikers, entiteiten en talen die gemakkelijk toe te voegen zijn naarmate uw organisatie evolueert.",
+      "bullet3": "Klaar voor grotere organisaties, met gestructureerde case handling, audittrails en rapportage die voldoen aan de verwachtingen van besturen, toezichthouders en externe adviseurs.",
+      "imageAlt": "Ontworpen voor bedrijven van alle groottes"
     },
     "plans": {
       "mostPopular": "Meest populair",

@@ -362,7 +362,16 @@
       "subtitle": "Choisissez le plan qui convient à votre organisation. Commencez avec notre essai gratuit de sept jours et évoluez à mesure que vous grandissez.",
       "tagline": "Transparent Pricing Built For Business.",
       "subtitle1": "7-day free trial • Unlimited reports included",
-      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow."
+      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow.",
+      "startFreeTrial": "Commencer l'essai gratuit"
+    },
+    "designedForBusinesses": {
+      "title": "Conçu pour les entreprises de toutes tailles",
+      "description": "Que vous soyez une petite organisation qui met en place un logiciel de signalement pour la première fois ou un groupe plus important qui le déploie sur plusieurs entités, Disclosurely s'adapte à vous. Des tarifs simples et transparents et des espaces de travail flexibles facilitent le démarrage à petite échelle, la démonstration de la valeur et l'expansion de la couverture à mesure que vos volumes de signalement et obligations réglementaires augmentent.",
+      "bullet1": "Idéal pour les PME qui ont besoin de canaux de signalement sécurisés et conformes sans la complexité ou les coûts d'installation de niveau entreprise.",
+      "bullet2": "Flexible pour les équipes en croissance, avec des utilisateurs, entités et langues supplémentaires faciles à ajouter au fur et à mesure que votre organisation évolue.",
+      "bullet3": "Prêt pour les grandes organisations, avec une gestion structurée des cas, des pistes d'audit et des rapports qui répondent aux attentes des conseils d'administration, des régulateurs et des conseillers externes.",
+      "imageAlt": "Conçu pour les entreprises de toutes tailles"
     },
     "plans": {
       "mostPopular": "Le Plus Populaire",
