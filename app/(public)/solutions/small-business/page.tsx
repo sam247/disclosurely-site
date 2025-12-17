@@ -24,6 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "fraud prevention small business",
     ],
     structuredData: structuredData,
+    canonicalUrl: "https://disclosurely.com/solutions/small-business/",
   });
 }
 
