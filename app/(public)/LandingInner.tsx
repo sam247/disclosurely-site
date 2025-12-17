@@ -62,13 +62,14 @@ function formatBulletPoint(point: string | React.ReactNode): React.ReactNode {
       if (typeof node === "string") return node;
       if (typeof node === "number") return String(node);
       if (React.isValidElement(node)) {
-        if (node.type === Link) {
+        const element = node as React.ReactElement<{ children?: React.ReactNode }>;
+        if (element.type === Link) {
           // Extract text from Link children
-          return React.Children.toArray(node.props.children)
+          return React.Children.toArray(element.props.children || [])
             .map(extractText)
             .join("");
         }
-        return React.Children.toArray(node.props.children)
+        return React.Children.toArray(element.props.children || [])
           .map(extractText)
           .join("");
       }
