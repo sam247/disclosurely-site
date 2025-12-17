@@ -19,6 +19,41 @@ import { supportedLanguages } from "@/i18n/client";
 
 type Lang = (typeof supportedLanguages)[number];
 
+// Helper function to format bullet points: bold beginning keywords
+function formatBulletPoint(point: string): React.ReactNode {
+  // Find the first phrase (usually ends at "that", "so", "to", or comma, but not inside parentheses)
+  // Try to match common patterns: "keyword that/so/to rest" or "keyword, rest"
+  let match = point.match(/^([^,]+?)(\s+(?:that|so|to)\s+)(.+)$/);
+  if (!match) {
+    // Try comma pattern but be careful with parentheses
+    match = point.match(/^([^,()]+(?:\([^)]*\))?[^,()]*?)(,\s+)(.+)$/);
+  }
+  if (match) {
+    const [, keyword, separator, rest] = match;
+    return (
+      <>
+        <strong>{keyword.trim()}</strong>
+        {separator}
+        {rest}
+      </>
+    );
+  }
+
+  // If no separator found, try to find first 2-4 words as keywords
+  const words = point.split(/\s+/);
+  if (words.length > 3) {
+    const keywordWords = words.slice(0, 3).join(" ");
+    const rest = words.slice(3).join(" ");
+    return (
+      <>
+        <strong>{keywordWords}</strong> {rest}
+      </>
+    );
+  }
+
+  return point;
+}
+
 function PricingContent() {
   const { t, i18n } = useTranslation();
   const { currentLanguage, langPrefix } = useLanguageFromUrl();
@@ -144,15 +179,27 @@ function PricingContent() {
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span>{t("pricing.designedForBusinesses.bullet1")}</span>
+                    <span>{formatBulletPoint(t("pricing.designedForBusinesses.bullet1"))}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span>{t("pricing.designedForBusinesses.bullet2")}</span>
+                    <span>{formatBulletPoint(t("pricing.designedForBusinesses.bullet2"))}</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span>{t("pricing.designedForBusinesses.bullet3")}</span>
+                    <span>{formatBulletPoint(t("pricing.designedForBusinesses.bullet3"))}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
+                    <span>{formatBulletPoint(t("pricing.designedForBusinesses.bullet4"))}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
+                    <span>{formatBulletPoint(t("pricing.designedForBusinesses.bullet5"))}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
+                    <span>{formatBulletPoint(t("pricing.designedForBusinesses.bullet6"))}</span>
                   </li>
                 </ul>
               </div>
