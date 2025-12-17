@@ -82,30 +82,22 @@ function formatBulletPoint(point: string | React.ReactNode): React.ReactNode {
     return point;
   }
 
-  // Find the first phrase (usually ends at "that", "so", "to", or comma)
-  const match = fullText.match(/^([^,]+?)(\s+(?:that|so|to|,|—|–|-)\s+)(.+)$/);
+  // Find the first phrase (usually ends at "that", "so", "to", or comma, but not inside parentheses)
+  // Try to match common patterns: "keyword that/so/to rest" or "keyword, rest"
+  let match = fullText.match(/^([^,]+?)(\s+(?:that|so|to)\s+)(.+)$/);
+  if (!match) {
+    // Try comma pattern but be careful with parentheses
+    match = fullText.match(/^([^,()]+(?:\([^)]*\))?[^,()]*?)(,\s+)(.+)$/);
+  }
   if (match) {
     const [, keyword, separator, rest] = match;
-    // Rebuild with keyword bolded and links removed from keyword
-    if (typeof point === "string") {
-      return (
-        <>
-          <strong>{keyword}</strong>
-          {separator}
-          {rest}
-        </>
-      );
-    } else {
-      // For JSX, we need to rebuild it without links in the keyword part
-      // For now, just bold the keyword text
-      return (
-        <>
-          <strong>{keyword}</strong>
-          {separator}
-          {rest}
-        </>
-      );
-    }
+    return (
+      <>
+        <strong>{keyword.trim()}</strong>
+        {separator}
+        {rest}
+      </>
+    );
   }
 
   // If no separator found, try to find first 2-4 words as keywords
