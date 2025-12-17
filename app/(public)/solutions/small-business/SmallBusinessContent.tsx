@@ -175,10 +175,10 @@ function SmallBusinessContent() {
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="mt-1 h-6 w-6 flex-shrink-0 text-blue-600" />
                   <div>
-                    <strong>AES-256 encryption</strong> (military-grade, no tech skills needed) –{" "}
                     <Link href="/blog/what-is-aes-gcm-encryption/" className="text-blue-600 hover:text-blue-700 underline">
-                      learn more
-                    </Link>
+                      <strong>AES-256 encryption</strong>
+                    </Link>{" "}
+                    (military-grade, no tech skills needed)
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
