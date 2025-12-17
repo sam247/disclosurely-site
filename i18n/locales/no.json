@@ -1313,6 +1313,7 @@
       "description": "Join our team and help us build safer workplaces. Explore career opportunities at Disclosurely."
     },
     "hero": {
+      "tag": "Karriere",
       "title": "Join Our Team",
       "subtitle": "Building the Future of Workplace Safety",
       "description": "We're looking for passionate individuals who want to make a difference in workplace safety and compliance. Join us in creating a world where every voice matters."
@@ -1353,6 +1354,11 @@
         "integrity": "Integrity in everything we do",
         "diversity": "Diversity and inclusion"
       }
+    },
+    "roles": {
+      "title": "Åpne Stillinger",
+      "description": "Vi søker alltid etter talentfulle personer for å bli med i teamet vårt. Ser du ingen stilling som passer? Vi vil fortsatt gjerne høre fra deg.",
+      "cta": "Send oss CV-en din"
     },
     "contact": {
       "title": "Get in Touch",

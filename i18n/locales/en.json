@@ -1232,6 +1232,11 @@
         "diversity": "Diversity and inclusion"
       }
     },
+    "roles": {
+      "title": "Open Roles",
+      "description": "We're always looking for talented individuals to join our team. Don't see a position that fits? We'd still love to hear from you.",
+      "cta": "Send us your CV"
+    },
     "contact": {
       "title": "Get in Touch",
       "description": "Don't see a position that fits? We'd still love to hear from you.",

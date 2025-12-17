@@ -1299,6 +1299,7 @@
       "description": "Únete a nuestro equipo y ayúdanos a construir lugares de trabajo más seguros. Explora oportunidades de carrera en Disclosurely."
     },
     "hero": {
+      "tag": "Carreras",
       "title": "Únete a Nuestro Equipo",
       "subtitle": "Construyendo el Futuro de la Seguridad Laboral",
       "description": "Buscamos individuos apasionados que quieran hacer una diferencia en la seguridad laboral y el cumplimiento. Únete a nosotros para crear un mundo donde cada voz importe."
@@ -1339,6 +1340,11 @@
         "integrity": "Integridad en todo lo que hacemos",
         "diversity": "Diversidad e inclusión"
       }
+    },
+    "roles": {
+      "title": "Vacantes Abiertas",
+      "description": "Siempre estamos buscando personas talentosas para unirse a nuestro equipo. ¿No ves una posición que encaje? Aún nos encantaría escuchar de ti.",
+      "cta": "Envíanos tu CV"
     },
     "contact": {
       "title": "Ponte en Contacto",
