@@ -1,20 +1,25 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { CheckCircle2, Shield, Lock, Users, TrendingUp } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
+import { CheckCircle2, Shield, Lock, Users, TrendingUp, Calendar, Clock, ArrowRight } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import I18nProvider from "@/components/I18nProvider";
 import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
 import { useLangPrefix } from "@/hooks/useLangPrefix";
 import { supportedLanguages } from "@/i18n/client";
 import { track } from "@vercel/analytics";
+import type { BlogPost } from "@/lib/contentful";
 
 type Lang = (typeof supportedLanguages)[number];
 
 function SmallBusinessContent() {
   const { currentLanguage } = useLanguageFromUrl();
   const { prefix: langPrefix } = useLangPrefix();
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
+  const [loadingBlog, setLoadingBlog] = useState(true);
 
   useEffect(() => {
     const lang = currentLanguage || "en";
@@ -23,9 +28,63 @@ function SmallBusinessContent() {
     }
   }, [currentLanguage]);
 
+  useEffect(() => {
+    const fetchBlogPosts = async () => {
+      try {
+        setLoadingBlog(true);
+        const response = await fetch("/api/blog");
+        if (!response.ok) {
+          throw new Error("Failed to fetch blog posts");
+        }
+        const allPosts: BlogPost[] = await response.json();
+        // Filter by "Small Businesses" category (checking both slug and name)
+        const smallBusinessPosts = allPosts
+          .filter((post) => {
+            if (!post.publishDate || new Date(post.publishDate) > new Date()) return false;
+            return post.categories?.some(
+              (cat) =>
+                cat.slug?.toLowerCase().includes("small-business") ||
+                cat.name?.toLowerCase().includes("small business") ||
+                cat.slug?.toLowerCase() === "small-businesses"
+            );
+          })
+          .slice(0, 3);
+        setBlogPosts(smallBusinessPosts);
+      } catch (err) {
+        console.error("Error fetching blog posts:", err);
+      } finally {
+        setLoadingBlog(false);
+      }
+    };
+
+    fetchBlogPosts();
+  }, []);
+
   const handleStartTrial = (location: string) => {
     track("start_free_trial", { location, plan: "small_business" });
     window.location.href = "https://app.disclosurely.com/auth/signup";
+  };
+
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  };
+
+  const getFeaturedImageUrl = (post: BlogPost): string | null => {
+    if (typeof post.featuredImage === "string") {
+      return post.featuredImage.startsWith("http") ? post.featuredImage : `https:${post.featuredImage}`;
+    }
+    if (post.featuredImage && typeof post.featuredImage === "object" && "fields" in post.featuredImage) {
+      const asset = post.featuredImage as any;
+      if (asset.fields?.file?.url) {
+        return `https:${asset.fields.file.url}`;
+      }
+    }
+    return null;
   };
 
   return (
@@ -59,35 +118,35 @@ function SmallBusinessContent() {
           </div>
         </section>
 
-        {/* Section 1: The Problem */}
+        {/* Problem & Solution Section - 2 Column Layout */}
         <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <div className="mx-auto max-w-3xl">
-              <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">
-                Small Businesses Can&apos;t Afford Fraud or Drama
-              </h2>
-              <div className="space-y-4 text-lg text-gray-700">
-                <p>
-                  UK SMEs lose millions annually to employee theft, expense fraud, and unresolved workplace issues. One bad actor can wipe out a quarter&apos;s profit. Messy HR disputes drain time and morale.
-                </p>
-                <p>
-                  Without a proper speak-up channel, problems fester until they explode – costing you money, reputation, and good people.
-                </p>
+            <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+              <div>
+                <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">
+                  Small Businesses Can&apos;t Afford Fraud or Drama
+                </h2>
+                <div className="space-y-4 text-lg text-gray-700">
+                  <p>
+                    UK SMEs lose millions annually to employee theft, expense fraud, and unresolved workplace issues. One bad actor can wipe out a quarter&apos;s profit. Messy HR disputes drain time and morale. Without a proper speak-up channel, problems fester until they explode – costing you money, reputation, and good people.
+                  </p>
+                  <p>
+                    Disclosurely gives your team a safe, anonymous way to report concerns before they become crises. No compliance complexity, no big IT setup – just fast, secure reporting that protects your business.
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 2: The Solution */}
-        <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
-            <div className="mx-auto max-w-3xl text-center">
-              <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">
-                Simple Whistleblower Software That Actually Works
-              </h2>
-              <p className="text-lg text-gray-700">
-                Disclosurely gives your team a safe, anonymous way to report concerns before they become crises. No compliance complexity, no big IT setup – just fast, secure reporting that protects your business.
-              </p>
+              <div>
+                <div className="overflow-hidden rounded-xl border border-gray-100 shadow-sm">
+                  <Image
+                    src="/assets/artwork/small_business_image.jpg"
+                    alt="Whistleblowing software for small UK businesses"
+                    width={1200}
+                    height={720}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -249,6 +308,83 @@ function SmallBusinessContent() {
             </div>
           </div>
         </section>
+
+        {/* Blog Section */}
+        {!loadingBlog && blogPosts.length > 0 && (
+          <section className="bg-gray-50 py-16 sm:py-20">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="mb-12 text-center">
+                <h2 className="mb-4 text-3xl font-bold text-gray-900">Latest Insights for Small Businesses</h2>
+                <p className="text-lg text-gray-600">
+                  Stay informed with articles specifically tailored for UK SMEs and small business owners.
+                </p>
+              </div>
+
+              <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+                {blogPosts.map((post) => {
+                  const imageUrl = getFeaturedImageUrl(post);
+                  return (
+                    <Card key={post.id} className="group transition-shadow duration-300 hover:shadow-lg">
+                      {imageUrl && (
+                        <div className="aspect-video overflow-hidden rounded-t-lg">
+                          <Image
+                            src={imageUrl}
+                            alt={post.title}
+                            width={400}
+                            height={225}
+                            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            loading="lazy"
+                          />
+                        </div>
+                      )}
+                      <CardHeader>
+                        <div className="mb-2 flex items-center gap-2 text-sm text-gray-500">
+                          {post.publishDate && (
+                            <>
+                              <Calendar className="h-4 w-4" />
+                              <span>{formatDate(post.publishDate)}</span>
+                            </>
+                          )}
+                          {post.readingTime && (
+                            <>
+                              <span>•</span>
+                              <Clock className="h-4 w-4" />
+                              <span>{post.readingTime} min read</span>
+                            </>
+                          )}
+                        </div>
+                        <CardTitle className="line-clamp-2 text-xl font-semibold transition-colors group-hover:text-blue-600">
+                          {post.title}
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <CardDescription className="mb-4 line-clamp-3 text-gray-600">
+                          {post.excerpt}
+                        </CardDescription>
+                        <Link
+                          href={`${langPrefix}/blog/${post.slug}`}
+                          className="inline-flex items-center gap-2 font-medium text-blue-600 transition-all hover:text-blue-700 group-hover:gap-3"
+                        >
+                          Read More
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </div>
+
+              <div className="text-center">
+                <Link href={`${langPrefix}/blog`}>
+                  <Button variant="outline" size="lg" className="group">
+                    View All Articles
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Section 6: CTA Section */}
         <section className="bg-blue-600 px-4 py-16 sm:px-6 lg:px-8">
