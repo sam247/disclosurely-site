@@ -72,6 +72,14 @@ export default async function RootLayout({
         <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
         <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="anonymous" />
         <Script src="https://analytics.ahrefs.com/analytics.js" data-key="NOZ1bom3LOJmqVM2vVZ51A" strategy="afterInteractive" />
+        <Script
+          id="vtag-ai-js"
+          src="https://r2.leadsy.ai/tag.js"
+          data-pid="1i990Kn7NzGZwPDjo"
+          data-version="062024"
+          strategy="afterInteractive"
+          async
+        />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased">
         {children}

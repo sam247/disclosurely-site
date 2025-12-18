@@ -639,6 +639,8 @@
         "placeholder": "Parlez-nous de vos exigences..."
       },
       "submit": "Envoyer la Demande",
+      "submitting": "Envoi en cours...",
+      "success": "Merci ! Votre message a été envoyé. Nous vous répondrons dans les 24 heures.",
       "privacy": "En soumettant ce formulaire, vous acceptez notre Politique de Confidentialité."
     }
   },

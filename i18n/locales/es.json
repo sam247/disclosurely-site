@@ -643,6 +643,8 @@
         "placeholder": "Cuéntenos sobre sus requisitos..."
       },
       "submit": "Enviar Consulta",
+      "submitting": "Enviando...",
+      "success": "¡Gracias! Su mensaje ha sido enviado. Nos pondremos en contacto con usted en un plazo de 24 horas.",
       "privacy": "Al enviar este formulario, acepta nuestra Política de Privacidad."
     }
   },

@@ -640,6 +640,8 @@
         "placeholder": "Conte-nos sobre os seus requisitos..."
       },
       "submit": "Enviar consulta",
+      "submitting": "Enviando...",
+      "success": "Obrigado! A sua mensagem foi enviada. Entraremos em contacto consigo no prazo de 24 horas.",
       "privacy": "Ao submeter este formulário, concorda com a nossa Política de Privacidade."
     }
   },

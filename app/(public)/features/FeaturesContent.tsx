@@ -16,8 +16,10 @@ import {
   Activity,
   TrendingUp,
   Upload,
+  MessageSquare,
+  Globe,
 } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useTranslation } from "react-i18next";
 import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
@@ -541,6 +543,130 @@ function FeaturesContent() {
                   </div>
                 </div>
               </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Essential Features Section from Compliance Page */}
+      <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 text-center">
+            <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">
+              Essential Features of Effective Compliance Software
+            </h2>
+            <p className="mx-auto max-w-4xl text-xl text-gray-600">
+              Disclosurely provides everything you need for secure, compliant whistleblowing
+            </p>
+          </div>
+
+          <div className="mb-8 grid gap-8 md:grid-cols-2">
+            <Card>
+              <CardHeader>
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600">
+                  <Shield className="h-6 w-6 text-white" />
+                </div>
+                <CardTitle className="text-xl">Secure Anonymous Reporting Channels</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-3 text-gray-600">
+                  Multiple reporting options protect whistleblowers regardless of location or device:
+                </p>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" />
+                    <span>Web forms, mobile apps, phone lines, SMS</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" />
+                    <span>End-to-end encryption (ISO 27001, SOC Type II)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" />
+                    <span>True anonymity throughout investigation</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600">
+                  <MessageSquare className="h-6 w-6 text-white" />
+                </div>
+                <CardTitle className="text-xl">Two-Way Anonymous Communication</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-3 text-gray-600">
+                  Investigators can ask follow-up questions without revealing identity:
+                </p>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" />
+                    <span>Secure messaging with unique case numbers and PINs</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" />
+                    <span>Keeps whistleblowers engaged and informed</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" />
+                    <span>Maintains anonymity while gathering evidence</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600">
+                  <Globe className="h-6 w-6 text-white" />
+                </div>
+                <CardTitle className="text-xl">Multi-Language Support</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-3 text-gray-600">Global organisations need global support:</p>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" />
+                    <span>Reporting in 35+ languages via ML and translation</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" />
+                    <span>Every employee can report in their native language</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" />
+                    <span>Critical for multinational operations</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600">
+                  <Lock className="h-6 w-6 text-white" />
+                </div>
+                <CardTitle className="text-xl">GDPR-Compliant Data Protection</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-3 text-gray-600">Enterprise-grade security built-in:</p>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" />
+                    <span>Encrypted data storage in certified facilities</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" />
+                    <span>Automated retention period management</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" />
+                    <span>Full audit trail for regulatory compliance</span>
+                  </li>
+                </ul>
+              </CardContent>
             </Card>
           </div>
         </div>

@@ -922,6 +922,8 @@
         "placeholder": "Opowiedz nam o swoich wymaganiach..."
       },
       "submit": "Wyślij Zapytanie",
+      "submitting": "Wysyłanie...",
+      "success": "Dziękujemy! Twoja wiadomość została wysłana. Skontaktujemy się z Tobą w ciągu 24 godzin.",
       "privacy": "Przesyłając ten formularz, zgadzasz się z naszą Polityką Prywatności."
     }
   },

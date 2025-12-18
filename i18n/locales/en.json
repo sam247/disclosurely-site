@@ -668,6 +668,8 @@
         "placeholder": "Tell us about your requirements..."
       },
       "submit": "Send Inquiry",
+      "submitting": "Sending...",
+      "success": "Thank you! Your message has been sent. We'll get back to you within 24 hours.",
       "privacy": "By submitting this form, you agree to our Privacy Policy."
     }
   },

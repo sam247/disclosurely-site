@@ -640,6 +640,8 @@
         "placeholder": "Fortell oss om kravene dine..."
       },
       "submit": "Send forespørsel",
+      "submitting": "Sender...",
+      "success": "Takk! Meldingen din er sendt. Vi kommer tilbake til deg innen 24 timer.",
       "privacy": "Ved å sende dette skjemaet godtar du vår personvernpolicy."
     }
   },

@@ -640,6 +640,8 @@
         "placeholder": "Vertel ons over uw vereisten..."
       },
       "submit": "Verstuur aanvraag",
+      "submitting": "Verzenden...",
+      "success": "Bedankt! Uw bericht is verzonden. We nemen binnen 24 uur contact met u op.",
       "privacy": "Door dit formulier in te dienen, gaat u akkoord met ons Privacybeleid."
     }
   },

@@ -930,6 +930,8 @@
         "placeholder": "Erzählen Sie uns von Ihren Anforderungen..."
       },
       "submit": "Anfrage Senden",
+      "submitting": "Wird gesendet...",
+      "success": "Vielen Dank! Ihre Nachricht wurde gesendet. Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.",
       "privacy": "Durch das Absenden dieses Formulars stimmen Sie unserer Datenschutzerklärung zu."
     }
   },

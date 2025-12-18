@@ -640,6 +640,8 @@
         "placeholder": "Raccontaci i tuoi requisiti..."
       },
       "submit": "Invia richiesta",
+      "submitting": "Invio in corso...",
+      "success": "Grazie! Il tuo messaggio è stato inviato. Ti risponderemo entro 24 ore.",
       "privacy": "Inviando questo modulo, accetti la nostra Informativa sulla Privacy."
     }
   },

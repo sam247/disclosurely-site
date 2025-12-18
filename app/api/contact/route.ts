@@ -3,7 +3,26 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, company, message } = body;
+    const { name, email, company, message, recaptchaToken } = body;
+
+    // Verify reCAPTCHA if token is provided
+    if (recaptchaToken) {
+      const recaptchaSecret = process.env.RECAPTCHA_SECRET_KEY;
+      if (recaptchaSecret) {
+        const recaptchaResponse = await fetch(
+          `https://www.google.com/recaptcha/api/siteverify?secret=${recaptchaSecret}&response=${recaptchaToken}`,
+          { method: 'POST' }
+        );
+        const recaptchaData = await recaptchaResponse.json();
+        
+        if (!recaptchaData.success || recaptchaData.score < 0.5) {
+          return NextResponse.json(
+            { error: 'reCAPTCHA verification failed. Please try again.' },
+            { status: 400 }
+          );
+        }
+      }
+    }
 
     // Validate required fields
     if (!name || !email || !message) {
@@ -55,6 +74,7 @@ This email was sent from the Disclosurely contact form.
       body: JSON.stringify({
         from: 'Disclosurely Contact Form <noreply@disclosurely.com>',
         to: ['sales@disclosurely.com'],
+        cc: ['sam@disclosurely.com'],
         reply_to: email,
         subject: `New Contact Form Submission from ${name}${company ? ` at ${company}` : ''}`,
         text: emailBody,

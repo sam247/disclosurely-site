@@ -640,6 +640,8 @@
         "placeholder": "Berätta om dina krav..."
       },
       "submit": "Skicka förfrågan",
+      "submitting": "Skickar...",
+      "success": "Tack! Ditt meddelande har skickats. Vi återkommer till dig inom 24 timmar.",
       "privacy": "Genom att skicka detta formulär godkänner du vår integritetspolicy."
     }
   },

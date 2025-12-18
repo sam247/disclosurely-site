@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
+import Script from "next/script";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -13,6 +14,15 @@ import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
 import { supportedLanguages } from "@/i18n/client";
 
 type Lang = (typeof supportedLanguages)[number];
+
+declare global {
+  interface Window {
+    grecaptcha: {
+      ready: (callback: () => void) => void;
+      execute: (siteKey: string, options: { action: string }) => Promise<string>;
+    };
+  }
+}
 
 function ContactContent() {
   const { t, i18n } = useTranslation();
@@ -28,6 +38,7 @@ function ContactContent() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [recaptchaLoaded, setRecaptchaLoaded] = useState(false);
 
   useEffect(() => {
     const lang = currentLanguage || "en";
@@ -39,8 +50,39 @@ function ContactContent() {
     }
   }, [currentLanguage, i18n]);
 
+  const executeRecaptcha = useCallback(async (): Promise<string | null> => {
+    if (!recaptchaLoaded || typeof window === "undefined" || !window.grecaptcha) {
+      return null;
+    }
+
+    const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+    if (!recaptchaSiteKey) {
+      return null;
+    }
+
+    try {
+      return await window.grecaptcha.execute(recaptchaSiteKey, { action: "contact_form" });
+    } catch (error) {
+      console.error("reCAPTCHA error:", error);
+      return null;
+    }
+  }, [recaptchaLoaded]);
+
   return (
     <I18nProvider>
+      {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && (
+        <Script
+          src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
+          onLoad={() => {
+            if (window.grecaptcha) {
+              window.grecaptcha.ready(() => {
+                setRecaptchaLoaded(true);
+              });
+            }
+          }}
+          strategy="lazyOnload"
+        />
+      )}
       <div className="bg-white">
         <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
@@ -130,12 +172,18 @@ function ContactContent() {
                       setErrorMessage("");
 
                       try {
+                        // Execute reCAPTCHA
+                        const recaptchaToken = await executeRecaptcha();
+                        
                         const response = await fetch("/api/contact", {
                           method: "POST",
                           headers: {
                             "Content-Type": "application/json",
                           },
-                          body: JSON.stringify(formData),
+                          body: JSON.stringify({
+                            ...formData,
+                            recaptchaToken,
+                          }),
                         });
 
                         const data = await response.json();
