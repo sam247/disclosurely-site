@@ -164,6 +164,40 @@ export default function ChatWidget() {
     }
   };
 
+  const handleSubmitBooking = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || !name || !bookingDate || !bookingTime || isSubmittingBooking) return;
+
+    setIsSubmittingBooking(true);
+    try {
+      const response = await fetch("/api/lead", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message: `Demo Booking Request\n\nPreferred Date: ${bookingDate}\nPreferred Time: ${bookingTime}\n\nRequested via chat widget.`,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || "Failed to submit booking");
+      }
+
+      setBookingSubmitted(true);
+      setShowBookingForm(false);
+      setEmailCaptured(true);
+    } catch (error) {
+      console.error("Booking submission error:", error);
+      alert("Failed to submit booking. Please try again.");
+    } finally {
+      setIsSubmittingBooking(false);
+    }
+  };
+
   return (
     <>
       {/* Floating Button */}
