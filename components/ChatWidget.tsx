@@ -18,6 +18,11 @@ export default function ChatWidget() {
   const [isSubmittingLead, setIsSubmittingLead] = useState(false);
   const [leadSubmitted, setLeadSubmitted] = useState(false);
   const [showGetStarted, setShowGetStarted] = useState(false);
+  const [showBookingForm, setShowBookingForm] = useState(false);
+  const [bookingDate, setBookingDate] = useState("");
+  const [bookingTime, setBookingTime] = useState("");
+  const [isSubmittingBooking, setIsSubmittingBooking] = useState(false);
+  const [bookingSubmitted, setBookingSubmitted] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -62,17 +67,30 @@ export default function ChatWidget() {
       lowerMessage.includes('talk to someone') ||
       lowerMessage.includes('human support') ||
       lowerMessage.includes('contact sales') ||
-      lowerMessage.includes('speak to sales') ||
+      lowerMessage.includes('speak to sales');
+
+    // Check if user wants to book a demo
+    const wantsBooking = 
       lowerMessage.includes('book a demo') ||
-      lowerMessage.includes('schedule a call');
+      lowerMessage.includes('book demo') ||
+      lowerMessage.includes('schedule a demo') ||
+      lowerMessage.includes('schedule demo') ||
+      lowerMessage.includes('book a call') ||
+      lowerMessage.includes('schedule a call') ||
+      lowerMessage.includes('demo') && (lowerMessage.includes('book') || lowerMessage.includes('schedule'));
 
     await sendMessage(message, {
       userEmail: email || undefined,
       userName: name || undefined,
     });
 
-    // Show lead form if they asked to speak to human
-    if (wantsHuman && !emailCaptured && !showLeadForm) {
+    // Show booking form if they asked to book a demo
+    if (wantsBooking && !showBookingForm && !bookingSubmitted) {
+      setShowBookingForm(true);
+      setShowGetStarted(false);
+    }
+    // Show lead form if they asked to speak to human (but not if booking)
+    else if (wantsHuman && !emailCaptured && !showLeadForm && !wantsBooking) {
       setShowLeadForm(true);
     }
   };
@@ -106,6 +124,10 @@ export default function ChatWidget() {
     setShowLeadForm(false);
     setLeadSubmitted(false);
     setShowGetStarted(false);
+    setShowBookingForm(false);
+    setBookingSubmitted(false);
+    setBookingDate("");
+    setBookingTime("");
   };
 
   const handleSubmitLead = async (e: React.FormEvent) => {
@@ -295,7 +317,7 @@ export default function ChatWidget() {
             </div>
 
             {/* Get Started Prompt - Shown after user has engaged */}
-            {showGetStarted && !showLeadForm && !leadSubmitted && (
+            {showGetStarted && !showLeadForm && !leadSubmitted && !showBookingForm && !bookingSubmitted && (
               <div className="mt-4 rounded-lg border border-blue-200 bg-blue-50 p-4">
                 <p className="mb-3 text-sm font-medium text-gray-900">
                   Ready to get started?
@@ -333,6 +355,100 @@ export default function ChatWidget() {
               </div>
             )}
           </div>
+
+          {/* Booking Form - Shown when user requests to book a demo */}
+          {showBookingForm && !bookingSubmitted && (
+            <div className="border-t border-gray-200 bg-gray-50 p-3">
+              <p className="mb-2 text-xs font-medium text-gray-700">
+                Book a Demo
+              </p>
+              <p className="mb-3 text-xs text-gray-500">
+                Fill out the form below and we'll get back to you to confirm your demo time.
+              </p>
+              <form onSubmit={handleSubmitBooking} className="space-y-2">
+                <Input
+                  type="text"
+                  placeholder="Your name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                  className="h-8 text-sm"
+                />
+                <Input
+                  type="email"
+                  placeholder="Your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="h-8 text-sm"
+                />
+                <div className="grid grid-cols-2 gap-2">
+                  <Input
+                    type="date"
+                    placeholder="Preferred date"
+                    value={bookingDate}
+                    onChange={(e) => setBookingDate(e.target.value)}
+                    required
+                    min={new Date().toISOString().split('T')[0]}
+                    className="h-8 text-sm"
+                  />
+                  <Input
+                    type="time"
+                    placeholder="Preferred time"
+                    value={bookingTime}
+                    onChange={(e) => setBookingTime(e.target.value)}
+                    required
+                    className="h-8 text-sm"
+                  />
+                </div>
+                <div className="flex gap-2">
+                  <Button
+                    type="button"
+                    onClick={() => {
+                      setShowBookingForm(false);
+                    }}
+                    size="sm"
+                    variant="outline"
+                    className="h-8 flex-1 text-xs"
+                  >
+                    Cancel
+                  </Button>
+                  <Button
+                    type="submit"
+                    disabled={isSubmittingBooking || !email || !name || !bookingDate || !bookingTime}
+                    size="sm"
+                    className="h-8 flex-1 text-xs bg-blue-600 hover:bg-blue-700"
+                  >
+                    {isSubmittingBooking ? (
+                      <Loader2 className="h-3 w-3 animate-spin" />
+                    ) : (
+                      "Book Demo"
+                    )}
+                  </Button>
+                </div>
+              </form>
+            </div>
+          )}
+
+          {/* Booking Submitted Success */}
+          {bookingSubmitted && (
+            <div className="border-t border-gray-200 bg-green-50 p-3">
+              <p className="mb-2 text-xs font-medium text-green-800">
+                ✓ Demo booking requested! We'll confirm your time via email soon.
+              </p>
+              <p className="mb-3 text-xs text-green-700">
+                In the meantime, why not start a free trial to explore Disclosurely?
+              </p>
+              <a
+                href="https://app.disclosurely.com/auth/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg bg-blue-600 px-4 py-2 text-center text-xs font-medium text-white transition-colors hover:bg-blue-700"
+              >
+                Start Free Trial
+              </a>
+            </div>
+          )}
 
           {/* Lead Form - Only shown when user requests to speak to human */}
           {showLeadForm && !leadSubmitted && (
@@ -418,7 +534,7 @@ export default function ChatWidget() {
           )}
 
           {/* Persistent CTA Footer */}
-          {messages.length > 0 && !showLeadForm && !leadSubmitted && (
+          {messages.length > 0 && !showLeadForm && !leadSubmitted && !showBookingForm && !bookingSubmitted && (
             <div className="border-t border-gray-200 bg-gray-50 px-3 py-2">
               <a
                 href="https://app.disclosurely.com/auth/signup"
