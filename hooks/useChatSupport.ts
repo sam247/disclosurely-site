@@ -61,18 +61,10 @@ export function useChatSupport() {
       setMessages((prev) => [...prev, userMessage]);
 
       try {
-        const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-        const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-
-        if (!supabaseUrl || !supabaseAnonKey) {
-          throw new Error("Supabase configuration missing");
-        }
-
-        const response = await fetch(`${supabaseUrl}/functions/v1/chat-support`, {
+        const response = await fetch("/api/chat", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${supabaseAnonKey}`,
           },
           body: JSON.stringify({
             action: "send_message",
