@@ -397,7 +397,7 @@ export default function ChatWidget() {
                 Book a Demo
               </p>
               <p className="mb-3 text-xs text-gray-500">
-                Fill out the form below and we'll get back to you to confirm your demo time.
+                Fill out the form below and we'll get back to you to confirm your demo time. Available times: 9:30 AM - 2:30 PM, Monday - Friday (UK GMT).
               </p>
               <form onSubmit={handleSubmitBooking} className="space-y-2">
                 <Input
