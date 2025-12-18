@@ -168,6 +168,38 @@ export default function ChatWidget() {
     e.preventDefault();
     if (!email || !name || !bookingDate || !bookingTime || isSubmittingBooking) return;
 
+    // Validate weekday
+    const date = new Date(bookingDate);
+    const dayOfWeek = date.getDay();
+    if (dayOfWeek === 0 || dayOfWeek === 6) {
+      alert("Please select a weekday (Monday - Friday)");
+      return;
+    }
+
+    // Format time for display
+    const timeOptions: { [key: string]: string } = {
+      "09:30": "9:30 AM",
+      "10:00": "10:00 AM",
+      "10:30": "10:30 AM",
+      "11:00": "11:00 AM",
+      "11:30": "11:30 AM",
+      "12:00": "12:00 PM",
+      "12:30": "12:30 PM",
+      "13:00": "1:00 PM",
+      "13:30": "1:30 PM",
+      "14:00": "2:00 PM",
+      "14:30": "2:30 PM",
+    };
+    const formattedTime = timeOptions[bookingTime] || bookingTime;
+
+    // Format date for display
+    const formattedDate = new Date(bookingDate).toLocaleDateString('en-GB', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
+
     setIsSubmittingBooking(true);
     try {
       const response = await fetch("/api/lead", {
@@ -178,7 +210,7 @@ export default function ChatWidget() {
         body: JSON.stringify({
           name,
           email,
-          message: `Demo Booking Request\n\nPreferred Date: ${bookingDate}\nPreferred Time: ${bookingTime}\n\nRequested via chat widget.`,
+          message: `Demo Booking Request\n\nPreferred Date: ${formattedDate}\nPreferred Time: ${formattedTime} (UK GMT)\n\nRequested via chat widget.`,
         }),
       });
 
