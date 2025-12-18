@@ -146,7 +146,7 @@ export default function ChatWidget() {
         <div className="fixed bottom-0 right-0 z-50 flex h-[100vh] w-full flex-col border-t border-gray-200 bg-white shadow-2xl transition-all sm:bottom-6 sm:right-6 sm:h-[650px] sm:w-[420px] sm:rounded-lg sm:border">
           {/* Header */}
           <div className="flex items-center justify-between border-b border-gray-200 bg-blue-600 px-4 py-3">
-            <div className="flex items-center">
+            <div className="flex flex-col">
               <Image
                 src="/lovable-uploads/c46ace0e-df58-4119-b5e3-8dcfa075ea2f.png"
                 alt="Disclosurely"
@@ -154,6 +154,7 @@ export default function ChatWidget() {
                 height={32}
                 className="h-6 w-auto brightness-0 invert"
               />
+              <span className="mt-1 text-xs text-blue-100">AI Chat Support</span>
             </div>
             <button
               onClick={handleClose}
@@ -174,13 +175,13 @@ export default function ChatWidget() {
                     alt="Chat"
                     width={48}
                     height={48}
-                    className="mx-auto mb-3 h-12 w-12 opacity-50"
+                    className="mx-auto mb-3 h-12 w-12 opacity-30"
                   />
                   <p className="text-sm text-gray-600">
                     Hi! I'm here to help answer questions about Disclosurely.
                   </p>
                   <p className="mt-2 text-sm text-gray-500">
-                    Ask me anything about our features, pricing, or how to get started.
+                    Ask me anything about our features, pricing, or how Disclosurely can work for your business?
                   </p>
                 </div>
               </div>
