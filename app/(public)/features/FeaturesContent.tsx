@@ -705,28 +705,6 @@ function FeaturesContent() {
         </div>
       </section>
 
-      {/* Full-Width Image Section with Overlay */}
-      <section className="relative h-[500px] w-full overflow-hidden sm:h-[600px]">
-        <Image
-          src="/assets/artwork/section_image.jpg"
-          alt="Disclosurely Features"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-white/60">
-          <div className="flex h-full items-center justify-center px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center">
-              <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl">
-                Built for Modern Compliance Teams
-              </h2>
-              <p className="mx-auto max-w-2xl text-lg text-gray-800 sm:text-xl">
-                Disclosurely combines powerful features with intuitive design, making it easy for compliance teams to manage reports, protect whistleblowers, and maintain regulatory compliance.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Sign-Off Section */}
       <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
