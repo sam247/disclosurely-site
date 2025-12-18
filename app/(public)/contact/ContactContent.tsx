@@ -108,11 +108,10 @@ function ContactContent() {
                     <Mail className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900">{t("contact.info.email.title")}</h3>
-                    <p className="text-sm text-gray-500">{t("contact.info.email.response")}</p>
-                    <a href="mailto:team@disclosurely.com" className="text-blue-600 underline">
-                      team@disclosurely.com
-                    </a>
+                    <h3 className="mb-2 text-lg font-semibold text-gray-900">{t("contact.info.email.title")}</h3>
+                    <p className="text-base text-gray-600">
+                      Use the contact form, we aim to respond within 24 hours.
+                    </p>
                   </div>
                 </div>
 
@@ -121,9 +120,9 @@ function ContactContent() {
                     <Phone className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900">{t("contact.info.phone.title")}</h3>
-                    <p className="text-sm text-gray-500">{t("contact.info.phone.hours")}</p>
-                    <span className="text-gray-700">+44 (0)20 1234 5678</span>
+                    <h3 className="mb-2 text-lg font-semibold text-gray-900">{t("contact.info.phone.title")}</h3>
+                    <p className="mb-1 text-base text-gray-600">{t("contact.info.phone.hours")}</p>
+                    <p className="text-base text-gray-600">+44 (0)20 1234 5678</p>
                   </div>
                 </div>
 
@@ -132,8 +131,8 @@ function ContactContent() {
                     <MapPin className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900">{t("contact.info.address.title")}</h3>
-                    <p className="text-gray-600">
+                    <h3 className="mb-2 text-lg font-semibold text-gray-900">{t("contact.info.address.title")}</h3>
+                    <p className="text-base text-gray-600">
                       {t("contact.info.address.line1")}
                       <br />
                       {t("contact.info.address.line2")}

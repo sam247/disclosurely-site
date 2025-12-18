@@ -80,6 +80,23 @@ export default async function RootLayout({
           strategy="afterInteractive"
           async
         />
+        <Script
+          id="crisp-chat"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.$crisp=[];
+              window.CRISP_WEBSITE_ID="ca7b3f6e-ec90-42ad-9173-780d59c149f2";
+              (function(){
+                d=document;
+                s=d.createElement("script");
+                s.src="https://client.crisp.chat/l.js";
+                s.async=1;
+                d.getElementsByTagName("head")[0].appendChild(s);
+              })();
+            `,
+          }}
+        />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased">
         {children}
