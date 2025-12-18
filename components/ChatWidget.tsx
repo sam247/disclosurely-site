@@ -191,15 +191,13 @@ export default function ChatWidget() {
               <div className="flex h-full items-center justify-center">
                 <div className="text-center px-4">
                   <div className="mb-6 flex justify-center">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
-                      <Image
-                        src="/assets/chat.png"
-                        alt="Chat"
-                        width={40}
-                        height={40}
-                        className="h-10 w-10"
-                      />
-                    </div>
+                    <Image
+                      src="/assets/chat.png"
+                      alt="Chat"
+                      width={48}
+                      height={48}
+                      className="h-12 w-12 brightness-0 opacity-60"
+                    />
                   </div>
                   <p className="text-sm text-gray-600">
                     Hi! I'm here to help answer questions about Disclosurely.
