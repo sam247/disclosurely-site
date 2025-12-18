@@ -94,7 +94,7 @@ export default function ChatWidget() {
 
     setIsSubmittingLead(true);
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/api/lead", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -102,17 +102,18 @@ export default function ChatWidget() {
         body: JSON.stringify({
           name: name || "Chat User",
           email,
-          company: "",
-          message: `Lead from Chat Widget:\n\n${leadMessage}`,
+          message: leadMessage,
         }),
       });
 
       if (!response.ok) {
-        throw new Error("Failed to submit lead");
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || "Failed to submit lead");
       }
 
       setLeadSubmitted(true);
       setShowLeadForm(false);
+      setEmailCaptured(true);
     } catch (error) {
       console.error("Lead submission error:", error);
       alert("Failed to submit. Please try again.");

@@ -1,0 +1,86 @@
+import { NextRequest, NextResponse } from 'next/server';
+
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json();
+    const { name, email, message } = body;
+
+    // Validate required fields
+    if (!name || !email || !message) {
+      return NextResponse.json(
+        { error: 'Name, email, and message are required' },
+        { status: 400 }
+      );
+    }
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return NextResponse.json(
+        { error: 'Invalid email format' },
+        { status: 400 }
+      );
+    }
+
+    // Send email using Resend API
+    const resendApiKey = process.env.RESEND_API_KEY;
+    
+    if (!resendApiKey) {
+      console.error('RESEND_API_KEY is not configured');
+      return NextResponse.json(
+        { error: 'Email service is not configured' },
+        { status: 500 }
+      );
+    }
+
+    const emailBody = `
+New Lead from Chat Widget
+
+Name: ${name}
+Email: ${email}
+Message:
+${message}
+
+---
+This lead was submitted through the chat widget on disclosurely.com.
+    `.trim();
+
+    const response = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${resendApiKey}`,
+      },
+      body: JSON.stringify({
+        from: 'Disclosurely Chat Widget <noreply@disclosurely.com>',
+        to: ['sam@disclosurely.com'],
+        reply_to: email,
+        subject: `New Lead from Chat Widget - ${name}`,
+        text: emailBody,
+      }),
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({}));
+      console.error('Resend API error:', errorData);
+      return NextResponse.json(
+        { error: 'Failed to send email' },
+        { status: 500 }
+      );
+    }
+
+    const data = await response.json();
+
+    return NextResponse.json(
+      { success: true, message: 'Lead submitted successfully', id: data.id },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error('Lead form error:', error);
+    return NextResponse.json(
+      { error: 'Internal server error' },
+      { status: 500 }
+    );
+  }
+}
+
