@@ -36,12 +36,7 @@ export default function ChatWidget() {
     }
   }, [isOpen]);
 
-  // Show email capture after first message if not already captured
-  useEffect(() => {
-    if (messages.length > 0 && !emailCaptured && !showEmailCapture) {
-      setShowEmailCapture(true);
-    }
-  }, [messages.length, emailCaptured, showEmailCapture]);
+  // Don't auto-show email capture - only show when user requests to speak to human
 
   const handleSendMessage = async (message: string) => {
     if (!message.trim() || isLoading) return;
@@ -223,57 +218,7 @@ export default function ChatWidget() {
             </div>
           </div>
 
-          {/* Email Capture (shown after first message) */}
-          {showEmailCapture && !emailCaptured && !showLeadForm && (
-            <div className="border-t border-gray-200 bg-gray-50 p-3">
-              <p className="mb-2 text-xs font-medium text-gray-700">
-                Get updates on your conversation
-              </p>
-              <div className="space-y-2">
-                <Input
-                  type="text"
-                  placeholder="Your name (optional)"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  className="h-8 text-sm"
-                />
-                <Input
-                  type="email"
-                  placeholder="Your email (optional)"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="h-8 text-sm"
-                />
-                <div className="flex gap-2">
-                  <Button
-                    onClick={() => {
-                      if (email) {
-                        setEmailCaptured(true);
-                        setShowEmailCapture(false);
-                      } else {
-                        setShowEmailCapture(false);
-                      }
-                    }}
-                    size="sm"
-                    variant="outline"
-                    className="h-8 flex-1 text-xs"
-                  >
-                    Continue
-                  </Button>
-                  <Button
-                    onClick={() => {
-                      setShowEmailCapture(false);
-                      setShowLeadForm(true);
-                    }}
-                    size="sm"
-                    className="h-8 flex-1 text-xs bg-blue-600 hover:bg-blue-700"
-                  >
-                    Speak to Human
-                  </Button>
-                </div>
-              </div>
-            </div>
-          )}
+          {/* Lead Form - Only shown when user requests to speak to human */}
 
           {/* Lead Form */}
           {showLeadForm && !leadSubmitted && (
@@ -339,9 +284,20 @@ export default function ChatWidget() {
           {/* Lead Submitted Success */}
           {leadSubmitted && (
             <div className="border-t border-gray-200 bg-green-50 p-3">
-              <p className="text-xs font-medium text-green-800">
-                ✓ Thank you! We'll get back to you soon.
+              <p className="mb-2 text-xs font-medium text-green-800">
+                ✓ Thank you! We'll get back to you via email soon.
               </p>
+              <p className="mb-3 text-xs text-green-700">
+                In the meantime, why not start a free trial to see Disclosurely in action?
+              </p>
+              <a
+                href="https://app.disclosurely.com/auth/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg bg-blue-600 px-4 py-2 text-center text-xs font-medium text-white transition-colors hover:bg-blue-700"
+              >
+                Start Free Trial
+              </a>
             </div>
           )}
 
