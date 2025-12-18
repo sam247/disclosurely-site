@@ -417,23 +417,53 @@ export default function ChatWidget() {
                   className="h-8 text-sm"
                 />
                 <div className="grid grid-cols-2 gap-2">
-                  <Input
-                    type="date"
-                    placeholder="Preferred date"
-                    value={bookingDate}
-                    onChange={(e) => setBookingDate(e.target.value)}
-                    required
-                    min={new Date().toISOString().split('T')[0]}
-                    className="h-8 text-sm"
-                  />
-                  <Input
-                    type="time"
-                    placeholder="Preferred time"
-                    value={bookingTime}
-                    onChange={(e) => setBookingTime(e.target.value)}
-                    required
-                    className="h-8 text-sm"
-                  />
+                  <div>
+                    <Input
+                      type="date"
+                      placeholder="Preferred date"
+                      value={bookingDate}
+                      onChange={(e) => {
+                        const selectedDate = e.target.value;
+                        if (selectedDate) {
+                          const date = new Date(selectedDate);
+                          const dayOfWeek = date.getDay();
+                          // 0 = Sunday, 6 = Saturday
+                          if (dayOfWeek === 0 || dayOfWeek === 6) {
+                            alert("Please select a weekday (Monday - Friday)");
+                            setBookingDate("");
+                            return;
+                          }
+                        }
+                        setBookingDate(selectedDate);
+                      }}
+                      required
+                      min={new Date().toISOString().split('T')[0]}
+                      className="h-8 text-sm"
+                    />
+                    <p className="mt-1 text-xs text-gray-500">Mon - Fri only</p>
+                  </div>
+                  <div>
+                    <select
+                      value={bookingTime}
+                      onChange={(e) => setBookingTime(e.target.value)}
+                      required
+                      className="flex h-8 w-full rounded-md border border-input bg-background px-3 py-1 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      <option value="">Select time</option>
+                      <option value="09:30">9:30 AM</option>
+                      <option value="10:00">10:00 AM</option>
+                      <option value="10:30">10:30 AM</option>
+                      <option value="11:00">11:00 AM</option>
+                      <option value="11:30">11:30 AM</option>
+                      <option value="12:00">12:00 PM</option>
+                      <option value="12:30">12:30 PM</option>
+                      <option value="13:00">1:00 PM</option>
+                      <option value="13:30">1:30 PM</option>
+                      <option value="14:00">2:00 PM</option>
+                      <option value="14:30">2:30 PM</option>
+                    </select>
+                    <p className="mt-1 text-xs text-gray-500">UK GMT time</p>
+                  </div>
                 </div>
                 <div className="flex gap-2">
                   <Button
