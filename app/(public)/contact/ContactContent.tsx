@@ -71,26 +71,17 @@ function ContactContent() {
   return (
     <I18nProvider>
       {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && (
-        <>
-          <Script
-            src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
-            onLoad={() => {
-              if (window.grecaptcha) {
-                window.grecaptcha.ready(() => {
-                  setRecaptchaLoaded(true);
-                });
-              }
-            }}
-            strategy="lazyOnload"
-          />
-          <style jsx global>{`
-            .grecaptcha-badge {
-              visibility: hidden !important;
-              opacity: 0 !important;
-              display: none !important;
+        <Script
+          src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
+          onLoad={() => {
+            if (window.grecaptcha) {
+              window.grecaptcha.ready(() => {
+                setRecaptchaLoaded(true);
+              });
             }
-          `}</style>
-        </>
+          }}
+          strategy="lazyOnload"
+        />
       )}
       <div className="bg-white">
         <section className="px-4 pb-12 pt-24 sm:px-6 lg:px-8">
