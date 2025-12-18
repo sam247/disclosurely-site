@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { MessageCircle, X, Send, Loader2 } from "lucide-react";
+import Image from "next/image";
+import { X, Send, Loader2 } from "lucide-react";
 import { useChatSupport } from "@/hooks/useChatSupport";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,6 +13,10 @@ export default function ChatWidget() {
   const [name, setName] = useState("");
   const [showEmailCapture, setShowEmailCapture] = useState(false);
   const [emailCaptured, setEmailCaptured] = useState(false);
+  const [showLeadForm, setShowLeadForm] = useState(false);
+  const [leadMessage, setLeadMessage] = useState("");
+  const [isSubmittingLead, setIsSubmittingLead] = useState(false);
+  const [leadSubmitted, setLeadSubmitted] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -79,6 +84,41 @@ export default function ChatWidget() {
     clearConversation();
     setShowEmailCapture(false);
     setEmailCaptured(false);
+    setShowLeadForm(false);
+    setLeadSubmitted(false);
+  };
+
+  const handleSubmitLead = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || !leadMessage.trim() || isSubmittingLead) return;
+
+    setIsSubmittingLead(true);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: name || "Chat User",
+          email,
+          company: "",
+          message: `Lead from Chat Widget:\n\n${leadMessage}`,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit lead");
+      }
+
+      setLeadSubmitted(true);
+      setShowLeadForm(false);
+    } catch (error) {
+      console.error("Lead submission error:", error);
+      alert("Failed to submit. Please try again.");
+    } finally {
+      setIsSubmittingLead(false);
+    }
   };
 
   return (
@@ -90,7 +130,13 @@ export default function ChatWidget() {
           className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-blue-600 text-white shadow-lg transition-all hover:bg-blue-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           aria-label="Open chat"
         >
-          <MessageCircle className="h-6 w-6" />
+          <Image
+            src="/assets/chat.png"
+            alt="Chat"
+            width={24}
+            height={24}
+            className="h-6 w-6"
+          />
         </button>
       )}
 
@@ -99,26 +145,22 @@ export default function ChatWidget() {
         <div className="fixed bottom-0 right-0 z-50 flex h-[100vh] w-full flex-col border-t border-gray-200 bg-white shadow-2xl transition-all sm:bottom-6 sm:right-6 sm:h-[650px] sm:w-[420px] sm:rounded-lg sm:border">
           {/* Header */}
           <div className="flex items-center justify-between border-b border-gray-200 bg-blue-600 px-4 py-3">
-            <div>
-              <h3 className="text-lg font-semibold text-white">Chat with us</h3>
-              <p className="text-xs text-blue-100">We're here to help</p>
+            <div className="flex items-center">
+              <Image
+                src="/lovable-uploads/c46ace0e-df58-4119-b5e3-8dcfa075ea2f.png"
+                alt="Disclosurely"
+                width={120}
+                height={32}
+                className="h-6 w-auto brightness-0 invert"
+              />
             </div>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={handleNewConversation}
-                className="rounded px-2 py-1 text-xs text-blue-100 hover:bg-blue-700"
-                title="New conversation"
-              >
-                New
-              </button>
-              <button
-                onClick={handleClose}
-                className="rounded p-1 text-white hover:bg-blue-700 focus:outline-none"
-                aria-label="Close chat"
-              >
-                <X className="h-5 w-5" />
-              </button>
-            </div>
+            <button
+              onClick={handleClose}
+              className="rounded p-1 text-white hover:bg-blue-700 focus:outline-none"
+              aria-label="Close chat"
+            >
+              <X className="h-5 w-5" />
+            </button>
           </div>
 
           {/* Messages Area */}
@@ -126,7 +168,13 @@ export default function ChatWidget() {
             {messages.length === 0 && (
               <div className="flex h-full items-center justify-center">
                 <div className="text-center">
-                  <MessageCircle className="mx-auto mb-3 h-12 w-12 text-gray-400" />
+                  <Image
+                    src="/assets/chat.png"
+                    alt="Chat"
+                    width={48}
+                    height={48}
+                    className="mx-auto mb-3 h-12 w-12 opacity-50"
+                  />
                   <p className="text-sm text-gray-600">
                     Hi! I'm here to help answer questions about Disclosurely.
                   </p>
@@ -174,7 +222,7 @@ export default function ChatWidget() {
           </div>
 
           {/* Email Capture (shown after first message) */}
-          {showEmailCapture && !emailCaptured && (
+          {showEmailCapture && !emailCaptured && !showLeadForm && (
             <div className="border-t border-gray-200 bg-gray-50 p-3">
               <p className="mb-2 text-xs font-medium text-gray-700">
                 Get updates on your conversation
@@ -194,21 +242,104 @@ export default function ChatWidget() {
                   onChange={(e) => setEmail(e.target.value)}
                   className="h-8 text-sm"
                 />
-                <Button
-                  onClick={() => {
-                    if (email) {
-                      setEmailCaptured(true);
+                <div className="flex gap-2">
+                  <Button
+                    onClick={() => {
+                      if (email) {
+                        setEmailCaptured(true);
+                        setShowEmailCapture(false);
+                      } else {
+                        setShowEmailCapture(false);
+                      }
+                    }}
+                    size="sm"
+                    variant="outline"
+                    className="h-8 flex-1 text-xs"
+                  >
+                    Continue
+                  </Button>
+                  <Button
+                    onClick={() => {
                       setShowEmailCapture(false);
-                    } else {
-                      setShowEmailCapture(false);
-                    }
-                  }}
-                  size="sm"
-                  className="h-8 w-full text-xs"
-                >
-                  Continue
-                </Button>
+                      setShowLeadForm(true);
+                    }}
+                    size="sm"
+                    className="h-8 flex-1 text-xs bg-blue-600 hover:bg-blue-700"
+                  >
+                    Speak to Human
+                  </Button>
+                </div>
               </div>
+            </div>
+          )}
+
+          {/* Lead Form */}
+          {showLeadForm && !leadSubmitted && (
+            <div className="border-t border-gray-200 bg-gray-50 p-3">
+              <p className="mb-2 text-xs font-medium text-gray-700">
+                Request to speak with our team
+              </p>
+              <form onSubmit={handleSubmitLead} className="space-y-2">
+                <Input
+                  type="text"
+                  placeholder="Your name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                  className="h-8 text-sm"
+                />
+                <Input
+                  type="email"
+                  placeholder="Your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="h-8 text-sm"
+                />
+                <Input
+                  type="text"
+                  placeholder="Your message"
+                  value={leadMessage}
+                  onChange={(e) => setLeadMessage(e.target.value)}
+                  required
+                  className="h-8 text-sm"
+                />
+                <div className="flex gap-2">
+                  <Button
+                    type="button"
+                    onClick={() => {
+                      setShowLeadForm(false);
+                      setShowEmailCapture(true);
+                    }}
+                    size="sm"
+                    variant="outline"
+                    className="h-8 flex-1 text-xs"
+                  >
+                    Back
+                  </Button>
+                  <Button
+                    type="submit"
+                    disabled={isSubmittingLead || !email || !leadMessage.trim()}
+                    size="sm"
+                    className="h-8 flex-1 text-xs bg-blue-600 hover:bg-blue-700"
+                  >
+                    {isSubmittingLead ? (
+                      <Loader2 className="h-3 w-3 animate-spin" />
+                    ) : (
+                      "Send"
+                    )}
+                  </Button>
+                </div>
+              </form>
+            </div>
+          )}
+
+          {/* Lead Submitted Success */}
+          {leadSubmitted && (
+            <div className="border-t border-gray-200 bg-green-50 p-3">
+              <p className="text-xs font-medium text-green-800">
+                ✓ Thank you! We'll get back to you soon.
+              </p>
             </div>
           )}
 
