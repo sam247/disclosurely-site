@@ -41,15 +41,27 @@ export default function ChatWidget() {
   const handleSendMessage = async (message: string) => {
     if (!message.trim() || isLoading) return;
 
+    // Check if user is asking to speak to a human
+    const lowerMessage = message.toLowerCase();
+    const wantsHuman = 
+      lowerMessage.includes('speak to human') ||
+      lowerMessage.includes('talk to human') ||
+      lowerMessage.includes('speak to someone') ||
+      lowerMessage.includes('talk to someone') ||
+      lowerMessage.includes('human support') ||
+      lowerMessage.includes('contact sales') ||
+      lowerMessage.includes('speak to sales') ||
+      lowerMessage.includes('book a demo') ||
+      lowerMessage.includes('schedule a call');
+
     await sendMessage(message, {
       userEmail: email || undefined,
       userName: name || undefined,
     });
 
-    // Capture email after first message if provided
-    if (email && !emailCaptured) {
-      setEmailCaptured(true);
-      setShowEmailCapture(false);
+    // Show lead form if they asked to speak to human
+    if (wantsHuman && !emailCaptured && !showLeadForm) {
+      setShowLeadForm(true);
     }
   };
 
@@ -164,7 +176,7 @@ export default function ChatWidget() {
           <div className="flex-1 overflow-y-auto p-4">
             {messages.length === 0 && (
               <div className="flex h-full items-center justify-center">
-                <div className="text-center">
+                <div className="text-center px-4">
                   <Image
                     src="/assets/chat.png"
                     alt="Chat"
@@ -178,6 +190,32 @@ export default function ChatWidget() {
                   <p className="mt-2 text-sm text-gray-500">
                     Ask me anything about our features, pricing, or how Disclosurely can work for your business?
                   </p>
+                  <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:justify-center">
+                    <button
+                      onClick={() => {
+                        const input = inputRef.current;
+                        if (input) {
+                          input.value = "Start free trial";
+                          handleSendMessage("Start free trial");
+                        }
+                      }}
+                      className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+                    >
+                      Start Free Trial
+                    </button>
+                    <button
+                      onClick={() => {
+                        const input = inputRef.current;
+                        if (input) {
+                          input.value = "See pricing";
+                          handleSendMessage("See pricing");
+                        }
+                      }}
+                      className="rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
+                    >
+                      See Pricing
+                    </button>
+                  </div>
                 </div>
               </div>
             )}
@@ -219,12 +257,13 @@ export default function ChatWidget() {
           </div>
 
           {/* Lead Form - Only shown when user requests to speak to human */}
-
-          {/* Lead Form */}
           {showLeadForm && !leadSubmitted && (
             <div className="border-t border-gray-200 bg-gray-50 p-3">
               <p className="mb-2 text-xs font-medium text-gray-700">
                 Request to speak with our team
+              </p>
+              <p className="mb-3 text-xs text-gray-500">
+                Fill out the form below and we'll get back to you via email.
               </p>
               <form onSubmit={handleSubmitLead} className="space-y-2">
                 <Input
@@ -256,13 +295,12 @@ export default function ChatWidget() {
                     type="button"
                     onClick={() => {
                       setShowLeadForm(false);
-                      setShowEmailCapture(true);
                     }}
                     size="sm"
                     variant="outline"
                     className="h-8 flex-1 text-xs"
                   >
-                    Back
+                    Cancel
                   </Button>
                   <Button
                     type="submit"
