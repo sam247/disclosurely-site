@@ -4,7 +4,6 @@ import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 
 import { supportedLanguages } from "@/lib/hreflang";
-import HockeystackTracker from "@/components/HockeystackTracker";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -75,7 +74,6 @@ export default async function RootLayout({
         <Script src="https://analytics.ahrefs.com/analytics.js" data-key="NOZ1bom3LOJmqVM2vVZ51A" strategy="afterInteractive" />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased">
-        <HockeystackTracker />
         {children}
         <Analytics />
       </body>
