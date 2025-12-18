@@ -1,14 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function CookieConsentBanner() {
-  const [visible, setVisible] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return localStorage.getItem("cookie-consent") !== "accepted";
-  });
+  const [visible, setVisible] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  if (!visible) return null;
+  useEffect(() => {
+    setMounted(true);
+    // Check localStorage after component mounts (client-side only)
+    const consent = localStorage.getItem("cookie-consent");
+    if (consent !== "accepted") {
+      setVisible(true);
+    }
+  }, []);
+
+  // Don't render until after hydration to prevent mismatch
+  if (!mounted || !visible) return null;
 
   return (
     <div className="fixed bottom-4 left-4 right-4 z-50 rounded-lg border border-gray-200 bg-white p-4 shadow-lg sm:left-1/2 sm:max-w-xl sm:-translate-x-1/2">

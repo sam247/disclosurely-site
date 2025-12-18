@@ -546,60 +546,6 @@ function FeaturesContent() {
         </div>
       </section>
 
-      {/* Security Features Section */}
-      <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">{t("features.security.title")}</h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-600">
-              Disclosurely is built with security at its core. Every feature is designed to protect sensitive whistleblowing data, maintain complete confidentiality, and meet the highest standards for data protection and regulatory compliance.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <Card className="rounded-2xl p-6 transition-shadow hover:shadow-lg">
-              <CardContent className="p-0">
-                <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
-                  <Lock className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">{t("features.security.items.encryption.title")}</h3>
-                <p className="text-gray-600">{t("features.security.items.encryption.description")}</p>
-              </CardContent>
-            </Card>
-
-            <Card className="rounded-2xl p-6 transition-shadow hover:shadow-lg">
-              <CardContent className="p-0">
-                <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gray-100">
-                  <FileText className="h-8 w-8 text-gray-700" />
-                </div>
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">{t("features.security.items.audit.title")}</h3>
-                <p className="text-gray-600">{t("features.security.items.audit.description")}</p>
-              </CardContent>
-            </Card>
-
-            <Card className="rounded-2xl p-6 transition-shadow hover:shadow-lg">
-              <CardContent className="p-0">
-                <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
-                  <Users className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">{t("features.security.items.access.title")}</h3>
-                <p className="text-gray-600">{t("features.security.items.access.description")}</p>
-              </CardContent>
-            </Card>
-
-            <Card className="rounded-2xl p-6 transition-shadow hover:shadow-lg">
-              <CardContent className="p-0">
-                <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gray-100">
-                  <HardDrive className="h-8 w-8 text-gray-700" />
-                </div>
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">{t("features.security.items.backup.title")}</h3>
-                <p className="text-gray-600">{t("features.security.items.backup.description")}</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Sign-Off Section */}
       <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
