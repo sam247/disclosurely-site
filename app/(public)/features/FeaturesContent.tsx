@@ -63,6 +63,38 @@ function FeaturesContent() {
         </div>
       </section>
 
+      {/* Why Organizations Choose Disclosurely Section */}
+      <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 p-8 text-white shadow-lg md:p-12">
+            <h3 className="mb-8 text-center text-2xl font-bold md:text-3xl">{t("pricing.benefits.title")}</h3>
+            <div className="grid gap-6 md:grid-cols-3">
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-white/20">
+                  <CheckCircle className="h-6 w-6 text-white" />
+                </div>
+                <div className="mb-1 text-xl font-semibold">{t("pricing.benefits.stat1.title")}</div>
+                <div className="text-sm text-blue-100">{t("pricing.benefits.stat1.description")}</div>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-white/20">
+                  <CheckCircle className="h-6 w-6 text-white" />
+                </div>
+                <div className="mb-1 text-xl font-semibold">{t("pricing.benefits.stat2.title")}</div>
+                <div className="text-sm text-blue-100">{t("pricing.benefits.stat2.description")}</div>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-white/20">
+                  <CheckCircle className="h-6 w-6 text-white" />
+                </div>
+                <div className="mb-1 text-xl font-semibold">{t("pricing.benefits.stat3.title")}</div>
+                <div className="text-sm text-blue-100">{t("pricing.benefits.stat3.description")}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Value Proposition Section */}
       <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
