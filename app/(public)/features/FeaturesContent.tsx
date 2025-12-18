@@ -44,24 +44,24 @@ function FeaturesContent() {
 
   return (
     <I18nProvider>
-      <div className="min-h-screen bg-white">
-        {/* Hero Section */}
-        <section className="bg-white px-4 pb-16 pt-32 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
-            <div className="mb-12 text-center">
-              <span className="mb-6 inline-block rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white">
-                Anonymous Reporting Platform
-              </span>
-              <h1 className="mb-6 text-4xl font-bold text-gray-900 sm:text-5xl">
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="bg-white px-4 pb-16 pt-32 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 text-center">
+            <span className="mb-6 inline-block rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white">
+              Anonymous Reporting Platform
+            </span>
+            <h1 className="mb-6 text-4xl font-bold text-gray-900 sm:text-5xl">
                 Powerful Features for Anonymous Reporting
-              </h1>
-              <p className="mx-auto max-w-3xl text-lg text-gray-600">
-                From encrypted submissions to real-time dashboards, Disclosurely gives compliance teams the tools they
-                need to manage reports efficiently, protect employee identities, and resolve issues before they escalate.
-              </p>
-            </div>
+            </h1>
+            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+              From encrypted submissions to real-time dashboards, Disclosurely gives compliance teams the tools they
+              need to manage reports efficiently, protect employee identities, and resolve issues before they escalate.
+            </p>
           </div>
-        </section>
+        </div>
+      </section>
 
       {/* Value Proposition Section */}
       <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
@@ -673,6 +673,79 @@ function FeaturesContent() {
         </div>
       </section>
 
+      {/* Full-Width Image Section with Overlay */}
+      <section className="relative h-[500px] w-full overflow-hidden sm:h-[600px]">
+        <Image
+          src="/assets/artwork/section_image.jpg"
+          alt="Disclosurely Features"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-700/60">
+          <div className="flex h-full items-center justify-center px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-4xl text-center">
+              <h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl md:text-5xl">
+                Built for Modern Compliance Teams
+              </h2>
+              <p className="mx-auto max-w-2xl text-lg text-blue-50 sm:text-xl">
+                Disclosurely combines powerful features with intuitive design, making it easy for compliance teams to manage reports, protect whistleblowers, and maintain regulatory compliance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 50/50 Image-Content Split Section */}
+      <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+            <div className="relative h-[400px] w-full overflow-hidden rounded-lg sm:h-[500px]">
+              <Image
+                src="/assets/artwork/section_image.jpg"
+                alt="Secure Whistleblowing Platform"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">
+                Trusted by Compliance Teams Worldwide
+              </h2>
+              <p className="mb-4 text-lg text-gray-600">
+                Organizations across industries rely on Disclosurely to provide secure, anonymous reporting channels that protect both employees and the business. Our platform is designed to scale with your needs while maintaining the highest standards for security and compliance.
+              </p>
+              <p className="mb-8 text-lg text-gray-600">
+                From small businesses to large enterprises, Disclosurely helps you build a culture of integrity where employees feel safe to speak up about concerns, knowing their identity is protected throughout the entire process.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="mt-1 h-6 w-6 flex-shrink-0 text-blue-600" />
+                  <div>
+                    <h3 className="mb-1 font-semibold text-gray-900">Enterprise-Grade Security</h3>
+                    <p className="text-gray-600">Military-grade encryption and zero-knowledge architecture protect sensitive data</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="mt-1 h-6 w-6 flex-shrink-0 text-blue-600" />
+                  <div>
+                    <h3 className="mb-1 font-semibold text-gray-900">Regulatory Compliance</h3>
+                    <p className="text-gray-600">Built to meet EU Whistleblowing Directive, GDPR, and UK PIDA requirements</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="mt-1 h-6 w-6 flex-shrink-0 text-blue-600" />
+                  <div>
+                    <h3 className="mb-1 font-semibold text-gray-900">Easy Implementation</h3>
+                    <p className="text-gray-600">Get up and running in minutes, not weeks, with our intuitive interface</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Sign-Off Section */}
       <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
@@ -751,7 +824,7 @@ function FeaturesContent() {
         </div>
       </section>
 
-      </div>
+          </div>
     </I18nProvider>
   );
 }
