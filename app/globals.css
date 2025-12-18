@@ -137,3 +137,10 @@
     overflow-x: hidden !important;
   }
 }
+
+/* Hide reCAPTCHA badge to avoid interference with chat widget */
+.grecaptcha-badge {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  display: none !important;
+}
