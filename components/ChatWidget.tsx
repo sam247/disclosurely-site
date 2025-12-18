@@ -17,6 +17,7 @@ export default function ChatWidget() {
   const [leadMessage, setLeadMessage] = useState("");
   const [isSubmittingLead, setIsSubmittingLead] = useState(false);
   const [leadSubmitted, setLeadSubmitted] = useState(false);
+  const [showGetStarted, setShowGetStarted] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -28,6 +29,17 @@ export default function ChatWidget() {
       messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [messages, isOpen]);
+
+  // Show "Get Started" prompt after user has sent 2+ messages and received responses
+  useEffect(() => {
+    const userMessages = messages.filter((m) => m.role === "user");
+    const assistantMessages = messages.filter((m) => m.role === "assistant");
+    
+    // Show after 2+ user messages and at least 1 assistant response
+    if (userMessages.length >= 2 && assistantMessages.length >= 1 && !showGetStarted && !showLeadForm && !leadSubmitted) {
+      setShowGetStarted(true);
+    }
+  }, [messages, showGetStarted, showLeadForm, leadSubmitted]);
 
   // Focus input when chat opens
   useEffect(() => {
@@ -93,6 +105,7 @@ export default function ChatWidget() {
     setEmailCaptured(false);
     setShowLeadForm(false);
     setLeadSubmitted(false);
+    setShowGetStarted(false);
   };
 
   const handleSubmitLead = async (e: React.FormEvent) => {
@@ -190,7 +203,7 @@ export default function ChatWidget() {
                   <p className="mt-2 text-sm text-gray-500">
                     Ask me anything about our features, pricing, or how Disclosurely can work for your business?
                   </p>
-                  <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:justify-center">
+                  <div className="mt-6 grid grid-cols-2 gap-2">
                     <button
                       onClick={() => {
                         const input = inputRef.current;
@@ -199,7 +212,7 @@ export default function ChatWidget() {
                           handleSendMessage("Start free trial");
                         }
                       }}
-                      className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+                      className="rounded-lg bg-blue-600 px-3 py-2 text-xs font-medium text-white transition-colors hover:bg-blue-700"
                     >
                       Start Free Trial
                     </button>
@@ -211,9 +224,33 @@ export default function ChatWidget() {
                           handleSendMessage("See pricing");
                         }
                       }}
-                      className="rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
+                      className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-xs font-medium text-gray-700 transition-colors hover:bg-gray-50"
                     >
                       See Pricing
+                    </button>
+                    <button
+                      onClick={() => {
+                        const input = inputRef.current;
+                        if (input) {
+                          input.value = "Book a demo";
+                          handleSendMessage("Book a demo");
+                        }
+                      }}
+                      className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-xs font-medium text-gray-700 transition-colors hover:bg-gray-50"
+                    >
+                      Book Demo
+                    </button>
+                    <button
+                      onClick={() => {
+                        const input = inputRef.current;
+                        if (input) {
+                          input.value = "View features";
+                          handleSendMessage("View features");
+                        }
+                      }}
+                      className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-xs font-medium text-gray-700 transition-colors hover:bg-gray-50"
+                    >
+                      View Features
                     </button>
                   </div>
                 </div>
@@ -254,6 +291,45 @@ export default function ChatWidget() {
 
               <div ref={messagesEndRef} />
             </div>
+
+            {/* Get Started Prompt - Shown after user has engaged */}
+            {showGetStarted && !showLeadForm && !leadSubmitted && (
+              <div className="mt-4 rounded-lg border border-blue-200 bg-blue-50 p-4">
+                <p className="mb-3 text-sm font-medium text-gray-900">
+                  Ready to get started?
+                </p>
+                <div className="flex flex-col gap-2 sm:flex-row">
+                  <a
+                    href="https://app.disclosurely.com/auth/signup"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setShowGetStarted(false)}
+                    className="flex-1 rounded-lg bg-blue-600 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-blue-700"
+                  >
+                    Start Free Trial
+                  </a>
+                  <button
+                    onClick={() => {
+                      const input = inputRef.current;
+                      if (input) {
+                        input.value = "Book a demo";
+                        handleSendMessage("Book a demo");
+                        setShowGetStarted(false);
+                      }
+                    }}
+                    className="flex-1 rounded-lg border border-blue-600 bg-white px-4 py-2 text-sm font-medium text-blue-600 transition-colors hover:bg-blue-50"
+                  >
+                    Book Demo
+                  </button>
+                </div>
+                <button
+                  onClick={() => setShowGetStarted(false)}
+                  className="mt-2 text-xs text-gray-500 hover:text-gray-700"
+                >
+                  Not ready yet
+                </button>
+              </div>
+            )}
           </div>
 
           {/* Lead Form - Only shown when user requests to speak to human */}
@@ -335,6 +411,20 @@ export default function ChatWidget() {
                 className="block w-full rounded-lg bg-blue-600 px-4 py-2 text-center text-xs font-medium text-white transition-colors hover:bg-blue-700"
               >
                 Start Free Trial
+              </a>
+            </div>
+          )}
+
+          {/* Persistent CTA Footer */}
+          {messages.length > 0 && !showLeadForm && !leadSubmitted && (
+            <div className="border-t border-gray-200 bg-gray-50 px-3 py-2">
+              <a
+                href="https://app.disclosurely.com/auth/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg bg-blue-600 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-blue-700"
+              >
+                Start Free Trial - No Credit Card Required
               </a>
             </div>
           )}
