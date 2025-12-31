@@ -78,7 +78,7 @@ export default function TypingAnimation({
 
   return (
     <span
-      className="inline-block"
+      className="block mx-auto text-center"
       style={{ minWidth: `${Math.max(longestPhraseLength, 1)}ch` }}
     >
       {display || "\u00a0" /* keep line height during clear */}
