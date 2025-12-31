@@ -344,7 +344,19 @@ function LandingInner() {
                 <span className="text-xs font-medium">{t("landing.hero.badge")}</span>
               </div>
             </div>
-            <h1 className="mb-6 text-3xl font-bold text-gray-900 sm:text-5xl">
+            <h1 
+              ref={(el) => {
+                if (el) {
+                  const computed = window.getComputedStyle(el);
+                  const parent = el.parentElement;
+                  const parentComputed = parent ? window.getComputedStyle(parent) : null;
+                  // #region agent log
+                  fetch('http://127.0.0.1:7244/ingest/07653db5-872b-400e-be82-7b21f3f1ca8c', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ location: 'LandingInner.tsx:h1', message: 'H1 element styles', hypothesisId: 'A', data: { h1TextAlign: computed.textAlign, h1Display: computed.display, h1Width: el.offsetWidth, h1Left: el.offsetLeft, parentTextAlign: parentComputed?.textAlign, parentWidth: parent?.offsetWidth, windowWidth: window.innerWidth, isMobile: window.innerWidth < 640 }, timestamp: Date.now(), sessionId: 'debug-session' }) }).catch(() => {});
+                  // #endregion
+                }
+              }}
+              className="mb-6 text-3xl font-bold text-gray-900 sm:text-5xl"
+            >
               {t("landing.hero.title1")}
               <span className="mt-2 block text-center text-blue-600">
                 <TypingAnimation
