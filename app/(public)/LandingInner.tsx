@@ -358,7 +358,7 @@ function LandingInner() {
               className="mb-6 text-center text-3xl font-bold text-gray-900 sm:text-5xl"
             >
               {t("landing.hero.title1")}
-              <span className="mt-2 text-center text-blue-600">
+              <span className="mt-2 flex justify-center text-blue-600">
                 <TypingAnimation
                   phrases={(t("landing.hero.typingPhrases", { returnObjects: true }) as string[]) || []}
                   typingSpeed={100}
