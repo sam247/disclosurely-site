@@ -93,23 +93,40 @@ export default function TypingAnimation({
       const h1 = parent?.closest('h1');
       const h1Computed = h1 ? window.getComputedStyle(h1) : null;
       
+      // Calculate visual centering
+      const parentWidth = parent?.offsetWidth || 0;
+      const elementWidth = el.offsetWidth;
+      const elementLeftRelativeToParent = el.offsetLeft - (parent?.offsetLeft || 0);
+      const expectedCenterLeft = (parentWidth - elementWidth) / 2;
+      const isVisuallyCentered = Math.abs(elementLeftRelativeToParent - expectedCenterLeft) < 2; // 2px tolerance
+      
       // #region agent log
-      log({ location: 'TypingAnimation.tsx:render', message: 'Element dimensions and styles', hypothesisId: 'B', data: { 
+      log({ location: 'TypingAnimation.tsx:render', message: 'Element dimensions and centering calculation', hypothesisId: 'F', data: { 
         elementWidth: el.offsetWidth, 
         elementLeft: el.offsetLeft,
+        elementLeftRelativeToParent,
         parentWidth: parent?.offsetWidth,
         parentLeft: parent?.offsetLeft,
         h1Width: h1?.offsetWidth,
         h1Left: h1?.offsetLeft,
+        expectedCenterLeft,
+        isVisuallyCentered,
+        centeringOffset: elementLeftRelativeToParent - expectedCenterLeft,
         minWidth: computed.minWidth,
         textAlign: computed.textAlign,
         display: computed.display,
         marginLeft: computed.marginLeft,
         marginRight: computed.marginRight,
+        paddingLeft: computed.paddingLeft,
+        paddingRight: computed.paddingRight,
         parentTextAlign: parentComputed?.textAlign,
         parentDisplay: parentComputed?.display,
+        parentPaddingLeft: parentComputed?.paddingLeft,
+        parentPaddingRight: parentComputed?.paddingRight,
         h1TextAlign: h1Computed?.textAlign,
         h1Display: h1Computed?.display,
+        h1PaddingLeft: h1Computed?.paddingLeft,
+        h1PaddingRight: h1Computed?.paddingRight,
         longestPhraseLength,
         windowWidth: window.innerWidth,
         isMobile: window.innerWidth < 640
