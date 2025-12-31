@@ -355,7 +355,7 @@ function LandingInner() {
                   // #endregion
                 }
               }}
-              className="mb-6 text-3xl font-bold text-gray-900 sm:text-5xl"
+              className="mb-6 text-center text-3xl font-bold text-gray-900 sm:text-5xl"
             >
               {t("landing.hero.title1")}
               <span className="mt-2 block text-center text-blue-600">
