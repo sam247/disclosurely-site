@@ -58,7 +58,11 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      // No legacy redirects needed; keep sitemap and links canonical
+      {
+        source: '/blog/what-is-rsa-encryption',
+        destination: '/blog/why-encryption-matters-in-whistleblowing-systems',
+        permanent: true,
+      },
     ];
   },
 };
