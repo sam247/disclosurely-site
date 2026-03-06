@@ -6,6 +6,7 @@ import { X, Send, Loader2 } from "lucide-react";
 import { useChatSupport } from "@/hooks/useChatSupport";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { trackEvent } from "@/lib/events/trackEvent";
 
 export default function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -222,6 +223,7 @@ export default function ChatWidget() {
       setBookingSubmitted(true);
       setShowBookingForm(false);
       setEmailCaptured(true);
+      trackEvent("demo_booked", { location: "chat_widget" });
     } catch (error) {
       console.error("Booking submission error:", error);
       alert("Failed to submit booking. Please try again.");

@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { useLanguageFromUrl } from '@/hooks/useLanguageFromUrl';
 import PublicLanguageSelector from '@/components/PublicLanguageSelector';
 import { AnnouncementBar } from '@/components/AnnouncementBar';
+import { trackEvent } from '@/lib/events/trackEvent';
 
 export function Header() {
   const { t } = useTranslation();
@@ -37,6 +38,11 @@ export function Header() {
             <a
               href="https://app.disclosurely.com/auth/signup"
               className="rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700"
+              onClick={(e) => {
+                e.preventDefault();
+                trackEvent('signup_click', { location: 'header' });
+                window.location.href = 'https://app.disclosurely.com/auth/signup';
+              }}
             >
               {t('nav.getStarted')}
             </a>

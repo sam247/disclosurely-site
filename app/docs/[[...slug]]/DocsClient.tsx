@@ -1,12 +1,13 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Moon, Sun, ChevronLeft, ChevronRight, Menu, X } from 'lucide-react';
 import { DocNavItem, DocPage } from '@/lib/docs';
+import { trackEvent } from '@/lib/events/trackEvent';
 
 interface DocsClientProps {
   doc: DocPage;
@@ -85,7 +86,14 @@ export default function DocsClient({ doc, navigation, currentSlug, prevPage, nex
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchOpen, setSearchOpen] = useState(false);
-  
+  const docsViewFired = useRef(false);
+
+  useEffect(() => {
+    if (docsViewFired.current || typeof window === 'undefined') return;
+    docsViewFired.current = true;
+    trackEvent('docs_view', { path: window.location.pathname });
+  }, []);
+
   useEffect(() => {
     const stored = localStorage.getItem('docs-dark-mode');
     if (stored) {

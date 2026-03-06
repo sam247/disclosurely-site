@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
@@ -21,6 +21,7 @@ import { supportedLanguages } from "@/i18n/client";
 type Lang = (typeof supportedLanguages)[number];
 import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
 import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
+import { trackEvent } from "@/lib/events/trackEvent";
 
 const businessLogos = [
   { src: "/business_logos/page-1.png", alt: "Business Partner 1" },
@@ -124,8 +125,18 @@ function LandingInner() {
   useGeographicalLanguage();
 
   const [billingInterval, setBillingInterval] = useState<"monthly" | "annual">("monthly");
+  const pageViewFired = useRef(false);
+
+  useEffect(() => {
+    if (pageViewFired.current) return;
+    pageViewFired.current = true;
+    trackEvent("landing_view", { page: "/" });
+  }, []);
 
   const handleStartTrial = (location: string, plan?: string) => {
+    const specLocation =
+      location === "landing_hero" || location === "landing_cta" ? "hero" : location === "pricing_plan" ? "pricing" : location;
+    trackEvent("signup_click", { location: specLocation });
     track("start_free_trial", { location, plan, billingInterval });
     window.location.href = "https://app.disclosurely.com/auth/signup";
   };
@@ -698,6 +709,10 @@ function LandingInner() {
             <a
               href="https://app.disclosurely.com/auth/signup"
               className="inline-block rounded-lg bg-white px-6 py-3 text-lg font-semibold text-blue-600 transition hover:bg-gray-100"
+              onClick={(e) => {
+                e.preventDefault();
+                handleStartTrial("landing_cta");
+              }}
             >
               {t("landing.cta.button")}
             </a>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle, CheckCircle2, X, Star } from "lucide-react";
@@ -16,6 +16,7 @@ import { track } from "@vercel/analytics";
 import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
 import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
 import { supportedLanguages } from "@/i18n/client";
+import { trackEvent } from "@/lib/events/trackEvent";
 
 type Lang = (typeof supportedLanguages)[number];
 
@@ -59,10 +60,19 @@ function PricingContent() {
   const { currentLanguage, langPrefix } = useLanguageFromUrl();
   useGeographicalLanguage();
   const [billingInterval, setBillingInterval] = useState<"monthly" | "annual">("monthly");
+  const pageViewFired = useRef(false);
+
   const handleStartTrial = (location: string, plan?: string) => {
+    trackEvent("signup_click", { location: "pricing" });
     track("start_free_trial", { location, plan, billingInterval });
     window.location.href = "https://app.disclosurely.com/auth/signup";
   };
+
+  useEffect(() => {
+    if (pageViewFired.current) return;
+    pageViewFired.current = true;
+    trackEvent("pricing_page_view", { page: "/pricing" });
+  }, []);
 
   useEffect(() => {
     const lang = currentLanguage || "en";
@@ -685,6 +695,10 @@ function PricingContent() {
             <a
               href="https://app.disclosurely.com/auth/signup"
               className="inline-block rounded-lg bg-white px-6 py-3 text-lg font-semibold text-blue-600 hover:bg-gray-100 sm:px-8"
+              onClick={(e) => {
+                e.preventDefault();
+                handleStartTrial("pricing_cta");
+              }}
             >
               {t("pricing.cta.startTrial")}
             </a>

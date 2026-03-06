@@ -12,6 +12,7 @@ import { useTranslation } from "react-i18next";
 import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
 import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
 import { supportedLanguages } from "@/i18n/client";
+import { trackEvent } from "@/lib/events/trackEvent";
 
 type Lang = (typeof supportedLanguages)[number];
 
@@ -193,6 +194,7 @@ function ContactContent() {
 
                         setSubmitStatus("success");
                         setFormData({ name: "", email: "", company: "", message: "" });
+                        trackEvent("demo_booked", { location: "contact_page" });
                       } catch (error) {
                         setSubmitStatus("error");
                         setErrorMessage(

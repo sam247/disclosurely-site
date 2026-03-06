@@ -1,12 +1,13 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { CheckCircle2 } from "lucide-react";
 import I18nProvider from "@/components/I18nProvider";
 import { useTranslation } from "react-i18next";
 import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
 import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
 import { supportedLanguages } from "@/i18n/client";
+import { trackEvent } from "@/lib/events/trackEvent";
 
 type Lang = (typeof supportedLanguages)[number];
 
@@ -14,12 +15,19 @@ function DirectiveContent() {
   const { i18n } = useTranslation();
   const { currentLanguage } = useLanguageFromUrl();
   useGeographicalLanguage();
+  const pageViewFired = useRef(false);
 
   useEffect(() => {
     const lang = currentLanguage || "en";
     if (i18n.language !== lang) i18n.changeLanguage(lang as Lang);
     if (typeof document !== "undefined") document.documentElement.lang = lang;
   }, [currentLanguage, i18n]);
+
+  useEffect(() => {
+    if (pageViewFired.current) return;
+    pageViewFired.current = true;
+    trackEvent("directive_page_view", { page: "/whistleblowing-directive" });
+  }, []);
 
   return (
     <I18nProvider>
@@ -82,6 +90,11 @@ function DirectiveContent() {
               <a
                 href="https://app.disclosurely.com/auth/signup"
                 className="w-full rounded-lg bg-white px-6 py-3 text-center text-blue-600 transition-colors hover:bg-gray-100 sm:w-auto"
+                onClick={(e) => {
+                  e.preventDefault();
+                  trackEvent("signup_click", { location: "directive_page" });
+                  window.location.href = "https://app.disclosurely.com/auth/signup";
+                }}
               >
                 Start free trial
               </a>
