@@ -2,7 +2,10 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CheckCircle2 } from 'lucide-react';
 import type { Metadata } from 'next';
+import { headers } from 'next/headers';
 import { generateHreflangAlternates } from '@/lib/hreflang';
+
+const BASE_URL = 'https://disclosurely.com';
 
 type PageConfig = {
   title: string;
@@ -116,8 +119,9 @@ const pages: Record<string, PageConfig> = {
   },
 };
 
-export function generateMetadata({ params }: { params: { slug?: string[] } }): Metadata {
-  const path = '/' + (params.slug?.join('/') ?? '');
+export async function generateMetadata({ params }: { params: Promise<{ slug?: string[] }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const path = '/' + (slug?.join('/') ?? '');
   const page = pages[path];
 
   if (!page) {
@@ -127,7 +131,10 @@ export function generateMetadata({ params }: { params: { slug?: string[] } }): M
     };
   }
 
-  const canonical = `https://disclosurely.com${path}`;
+  const headerList = await headers();
+  const lang = headerList.get('x-lang');
+  const pathForCanonical = lang && lang !== 'en' ? `/${lang}${path}` : path;
+  const canonical = `${BASE_URL}${pathForCanonical}`;
   const alternates = generateHreflangAlternates(path);
 
   return {

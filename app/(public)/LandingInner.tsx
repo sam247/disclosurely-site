@@ -367,7 +367,15 @@ function LandingInner() {
                 />
               </span>
             </h1>
-            <p className="mx-auto mb-8 max-w-3xl px-4 text-lg text-gray-700 sm:text-xl">{t("landing.hero.subtitle")}</p>
+            <p className="mx-auto mb-6 max-w-3xl px-4 text-lg text-gray-700 sm:text-xl whitespace-pre-line">{t("landing.hero.subtitle")}</p>
+            <ul className="mx-auto mb-8 flex max-w-2xl flex-wrap justify-center gap-x-6 gap-y-2 px-4 text-left text-base text-gray-700 sm:justify-center sm:text-lg">
+              {((t("landing.hero.bullets", { returnObjects: true }) as string[]) || []).map((bullet) => (
+                <li key={bullet} className="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600" />
+                  <span>{bullet}</span>
+                </li>
+              ))}
+            </ul>
             <div className="flex flex-col items-center justify-center gap-4 px-4 sm:flex-row">
               <a
                 href="https://app.disclosurely.com/auth/signup"

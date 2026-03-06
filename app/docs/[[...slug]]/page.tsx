@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { headers } from 'next/headers';
 import { getAllDocSlugs, getDocBySlug, getDocsNavigation, DocNavItem } from '@/lib/docs';
 import { generateHreflangAlternates } from '@/lib/hreflang';
 import DocsClient from './DocsClient';
@@ -23,13 +24,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug?: st
   }
 
   const path = `/docs${doc.slug.length ? `/${doc.slug.join('/')}` : ''}`;
+  const headerList = await headers();
+  const lang = headerList.get('x-lang');
+  const pathForCanonical = lang && lang !== 'en' ? `/${lang}${path}` : path;
+  const canonical = `${SITE_URL}${pathForCanonical}`;
   const alternates = generateHreflangAlternates(path);
-  
+
   return {
     title: `${doc.title} | Disclosurely Docs`,
     description: doc.description,
     alternates: {
-      canonical: `${SITE_URL}${path}`,
+      canonical,
       languages: Object.fromEntries(alternates.map((alt) => [alt.hreflang, alt.url])),
     },
   };

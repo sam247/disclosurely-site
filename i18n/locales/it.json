@@ -167,22 +167,26 @@
   },
   "landing": {
     "hero": {
-      "title1": "Trasformando Segnalazioni Con…",
+      "title1": "Conformità alla direttiva UE sui whistleblower",
       "title2": "Flussi di Lavoro Alimentati dall'IA",
       "typingPhrases": [
-        "Flussi di Lavoro Alimentati dall'IA",
-        "Segnalazioni Anonime",
-        "Tracciamenti Audit in Tempo Reale",
-        "Assistenza IA Privata",
-        "Sicurezza di Livello Militare",
-        "Valutazione Automatica del Rischio",
-        "Rilevamento Proattivo dei Rischi",
-        "Tecnologia Basata sulla Fiducia"
+        "Canali di segnalazione anonimi",
+        "Gestione sicura dei casi",
+        "Registri investigativi auditabili",
+        "Messaggistica crittografata per whistleblower",
+        "Portali di segnalazione multilingue",
+        "Analisi casi assistita da IA"
       ],
-      "subtitle": "Disclosurely aiuta i team di compliance a rimanere all'avanguardia trasformando etica e compliance in un vantaggio proattivo: costruendo una cultura di integrità, semplificando i flussi di lavoro e riducendo il rischio organizzativo.",
-      "startFreeTrial": "Inizia prova gratuita",
-      "viewPricing": "Visualizza prezzi",
-      "badge": "Military Grade AES-GCM Encryption"
+      "badge": "Military Grade AES-GCM Encryption",
+      "subtitle": "Segnalazioni anonime sicure e gestione dei casi per organizzazioni con 50+ dipendenti.\n\nDisclosurely fornisce un sistema di segnalazione conforme con canali crittografati, gestione casi auditabile e portali di invio multilingue.",
+      "bullets": [
+        "Portale di segnalazione anonimo",
+        "Tracciabilità audit a prova di manomissione",
+        "Messaggistica sicura per investigatori",
+        "Analisi casi assistita da IA"
+      ],
+      "startFreeTrial": "Crea il tuo canale di segnalazione",
+      "viewPricing": "Visualizza prezzi"
     },
     "trusted": "Fidato da centinaia di aziende",
     "features": {

@@ -170,22 +170,26 @@
   },
   "landing": {
     "hero": {
-      "title1": "Transformando Denuncias Con…",
+      "title1": "Cumplimiento de la directiva UE sobre denunciantes",
       "title2": "Flujos de Trabajo Impulsados por IA",
       "typingPhrases": [
-        "Flujos de Trabajo Impulsados por IA",
-        "Denuncias Anónimas",
-        "Trazas de Auditoría en Tiempo Real",
-        "Asistencia IA Privada",
-        "Seguridad de Grado Militar",
-        "Puntuación de Riesgo Automatizada",
-        "Detección Proactiva de Riesgos",
-        "Tecnología Basada en la Confianza"
+        "Canales de denuncia anónimos",
+        "Gestión segura de casos",
+        "Registros de investigación auditables",
+        "Mensajería cifrada para denunciantes",
+        "Portales de denuncia multilingües",
+        "Análisis de casos asistido por IA"
       ],
-      "subtitle": "Disclosurely ayuda a los equipos de cumplimiento a mantenerse a la vanguardia transformando la ética y el cumplimiento en una ventaja proactiva: construyendo una cultura de integridad, simplificando flujos de trabajo y reduciendo el riesgo organizacional.",
-      "startFreeTrial": "Iniciar Prueba Gratuita",
-      "viewPricing": "Ver Precios",
-      "badge": "Military Grade AES-GCM Encryption"
+      "badge": "Military Grade AES-GCM Encryption",
+      "subtitle": "Denuncia anónima segura y gestión de casos para organizaciones con 50+ empleados.\n\nDisclosurely ofrece un sistema de denuncias conforme con canales cifrados, gestión de casos auditables y portales de envío multilingües.",
+      "bullets": [
+        "Portal de denuncia anónima",
+        "Trazas de auditoría a prueba de manipulaciones",
+        "Mensajería segura para investigadores",
+        "Análisis de casos asistido por IA"
+      ],
+      "startFreeTrial": "Crear su canal de denuncias",
+      "viewPricing": "Ver precios"
     },
     "trusted": "Confiado por cientos de empresas",
     "features": {

@@ -167,21 +167,25 @@
   },
   "landing": {
     "hero": {
-      "title1": "Transforming Whistleblowing With…",
+      "title1": "EU Whistleblowing Directive Compliance",
       "title2": "AI-Powered Workflows",
       "typingPhrases": [
-        "AI-Powered Workflows",
-        "Anonymous Reporting",
-        "Real-Time Audit Trails",
-        "Private AI Assistance",
-        "Military-Grade Security",
-        "Automated Risk Scoring",
-        "Proactive Risk Detection",
-        "Trust-First Technology"
+        "Anonymous Reporting Channels",
+        "Secure Case Management",
+        "Audit-Ready Investigation Logs",
+        "Encrypted Whistleblower Messaging",
+        "Multilingual Reporting Portals",
+        "AI-Assisted Case Analysis"
       ],
       "badge": "Military Grade AES-GCM Encryption",
-      "subtitle": "Disclosurely helps compliance teams stay ahead by transforming ethics and compliance into a proactive advantage—building a culture of integrity, simplifying workflows, and reducing organisational risk.",
-      "startFreeTrial": "Start Free Trial",
+      "subtitle": "Secure anonymous reporting and case management for organisations with 50+ employees.\n\nDisclosurely provides a compliant whistleblowing system with encrypted reporting channels, audit-ready case management and multilingual submission portals.",
+      "bullets": [
+        "Anonymous reporting portal",
+        "Tamper-evident audit trails",
+        "Secure investigator messaging",
+        "AI-assisted case analysis"
+      ],
+      "startFreeTrial": "Create Your Reporting Channel",
       "viewPricing": "View Pricing"
     },
     "trusted": "Trusted by hundreds of businesses",

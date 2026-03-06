@@ -15,22 +15,26 @@
   },
   "landing": {
     "hero": {
-      "title1": "Whistleblowing Transformieren Mit…",
+      "title1": "EU-Hinweisgeberrichtlinie Konformität",
       "title2": "KI-Gestützten Workflows",
       "typingPhrases": [
-        "KI-Gestützten Workflows",
-        "Anonyme Meldungen",
-        "Echtzeit-Prüfpfade",
-        "Private KI-Assistenz",
-        "Militärische Sicherheit",
-        "Automatisierte Risikobewertung",
-        "Proaktive Risikoerkennung",
-        "Vertrauensbasierte Technologie"
+        "Anonyme Meldekanäle",
+        "Sichere Fallverwaltung",
+        "Prüffähige Untersuchungsprotokolle",
+        "Verschlüsselte Hinweisgeber-Kommunikation",
+        "Mehrsprachige Meldeportale",
+        "KI-gestützte Fallanalyse"
       ],
-      "subtitle": "Disclosurely hilft Compliance-Teams, durch proaktive Ethik und Compliance einen Wettbewerbsvorteil zu schaffen.",
-      "startFreeTrial": "Kostenlos Testen",
-      "viewPricing": "Preise Ansehen",
-      "badge": "Military Grade AES-GCM Encryption"
+      "badge": "Military Grade AES-GCM Encryption",
+      "subtitle": "Sichere anonyme Meldungen und Fallverwaltung für Organisationen mit 50+ Mitarbeitern.\n\nDisclosurely bietet ein konformes Hinweisgebersystem mit verschlüsselten Meldekanälen, prüffähigem Fallmanagement und mehrsprachigen Einreichungsportalen.",
+      "bullets": [
+        "Anonymes Meldeportal",
+        "Manipulationssichere Prüfpfade",
+        "Sichere Ermittler-Kommunikation",
+        "KI-gestützte Fallanalyse"
+      ],
+      "startFreeTrial": "Meldekanal einrichten",
+      "viewPricing": "Preise ansehen"
     },
     "trusted": "Vertraut von hunderten Unternehmen",
     "features": {

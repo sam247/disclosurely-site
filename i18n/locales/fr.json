@@ -167,22 +167,26 @@
   },
   "landing": {
     "hero": {
-      "title1": "Transformer le Signalement Avec…",
+      "title1": "Conformité à la directive UE sur les lanceurs d'alerte",
       "title2": "Des Workflows Alimentés par l'IA",
       "typingPhrases": [
-        "Des Workflows Alimentés par l'IA",
-        "Signalement Anonyme",
-        "Traces d'Audit en Temps Réel",
-        "Assistance IA Privée",
-        "Sécurité de Niveau Militaire",
-        "Évaluation Automatique des Risques",
-        "Détection Proactive des Risques",
-        "Technologie Axée sur la Confiance"
+        "Canaux de signalement anonymes",
+        "Gestion sécurisée des dossiers",
+        "Journaux d'enquête exploitables en audit",
+        "Messagerie chiffrée pour lanceurs d'alerte",
+        "Portails de signalement multilingues",
+        "Analyse des dossiers assistée par l'IA"
       ],
-      "subtitle": "Disclosurely aide les équipes de conformité à garder une longueur d'avance en transformant l'éthique et la conformité en un avantage proactif.",
-      "startFreeTrial": "Essai Gratuit",
-      "viewPricing": "Voir les Tarifs",
-      "badge": "Military Grade AES-GCM Encryption"
+      "badge": "Military Grade AES-GCM Encryption",
+      "subtitle": "Signalement anonyme sécurisé et gestion des dossiers pour les organisations de 50+ employés.\n\nDisclosurely fournit un système de signalement conforme avec canaux chiffrés, gestion des dossiers exploitable en audit et portails de dépôt multilingues.",
+      "bullets": [
+        "Portail de signalement anonyme",
+        "Traces d'audit à l'épreuve des falsifications",
+        "Messagerie sécurisée pour les enquêteurs",
+        "Analyse des dossiers assistée par l'IA"
+      ],
+      "startFreeTrial": "Créer votre canal de signalement",
+      "viewPricing": "Voir les tarifs"
     },
     "trusted": "Approuvé par des centaines d'entreprises",
     "features": {

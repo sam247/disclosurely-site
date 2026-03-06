@@ -41,9 +41,10 @@ export function generateHreflangUrls(path: string): Record<string, string> {
 
   const urls: Record<string, string> = {};
 
-  // x-default and en both point to English version (without /en prefix)
-  urls["x-default"] = `${BASE_URL}${pathWithoutLang}`;
-  urls["en"] = `${BASE_URL}${pathWithoutLang}`;
+  // x-default: tells Google "if language unknown → use this (English)". Required for EU targeting.
+  const englishUrl = `${BASE_URL}${pathWithoutLang}`;
+  urls["x-default"] = englishUrl;
+  urls["en"] = englishUrl;
 
   // Other languages with their prefix
   for (const lang of supportedLanguages) {
@@ -56,15 +57,16 @@ export function generateHreflangUrls(path: string): Record<string, string> {
 }
 
 /**
- * Generate hreflang alternates array for Next.js metadata
+ * Generate hreflang alternate links for Next.js metadata.
+ * Includes x-default pointing to English so Google uses it when language is unknown (EU targeting).
  * @param path - The page path
- * @returns Array of alternate link objects
+ * @returns Array of alternate link objects (x-default first)
  */
 export function generateHreflangAlternates(path: string): Array<{ hreflang: string; url: string }> {
   const urls = generateHreflangUrls(path);
-  return Object.entries(urls).map(([hreflang, url]) => ({
-    hreflang,
-    url,
-  }));
+  const entries = Object.entries(urls);
+  // Ensure x-default is first in output (recommended for crawlers)
+  const sorted = entries.sort(([a], [b]) => (a === "x-default" ? -1 : b === "x-default" ? 1 : 0));
+  return sorted.map(([hreflang, url]) => ({ hreflang, url }));
 }
 

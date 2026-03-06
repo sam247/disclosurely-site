@@ -167,22 +167,26 @@
   },
   "landing": {
     "hero": {
-      "title1": "Transformer Varsling Med…",
+      "title1": "Overholdelse af EU's varslerdirektiv",
       "title2": "AI-Drevne Arbejdsgange",
       "typingPhrases": [
-        "AI-Drevne Arbejdsgange",
-        "Anonym Rapportering",
-        "Realtidsrevisionsspor",
-        "Privat AI-Assistance",
-        "Militær Sikkerhed",
-        "Automatiseret Risikovurdering",
-        "Proaktiv Risikodetectering",
-        "Tillidsbaseret Teknologi"
+        "Anonyme rapporteringskanaler",
+        "Sikker sagsbehandling",
+        "Revisionsklar undersøgelseslog",
+        "Krypteret varslerkommunikation",
+        "Flersprogede rapporteringsportaler",
+        "AI-understøttet saganalyse"
       ],
-      "subtitle": "Disclosurely hjælper compliance-teams med at holde sig i fronten ved at transformere etik og compliance til en proaktiv fordel: bygge en kultur af integritet, forenkle arbejdsgange og reducere organisationsrisiko.",
-      "startFreeTrial": "Start gratis prøveperiode",
-      "viewPricing": "Se priser",
-      "badge": "Military Grade AES-GCM Encryption"
+      "badge": "Military Grade AES-GCM Encryption",
+      "subtitle": "Sikker anonym rapportering og sagsbehandling til organisationer med 50+ medarbejdere.\n\nDisclosurely leverer et compliant varslersystem med krypterede rapporteringskanaler, revisionsklar sagsbehandling og flersprogede indsendelsesportaler.",
+      "bullets": [
+        "Anonymt rapporteringsportal",
+        "Manipulationssikre revisionstrails",
+        "Sikker kommunikation til efterforskere",
+        "AI-understøttet saganalyse"
+      ],
+      "startFreeTrial": "Opret din rapporteringskanal",
+      "viewPricing": "Se priser"
     },
     "trusted": "Betroet af hundredvis af virksomheder",
     "features": {

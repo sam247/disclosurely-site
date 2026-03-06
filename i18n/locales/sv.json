@@ -167,22 +167,26 @@
   },
   "landing": {
     "hero": {
-      "title1": "Transformera Visselblåsning Med…",
+      "title1": "Efterlevnad av EU:s visselblåsardirektiv",
       "title2": "AI-Drivna Arbetsflöden",
       "typingPhrases": [
-        "AI-Drivna Arbetsflöden",
-        "Anonym Rapportering",
-        "Realtidsrevisionsspår",
-        "Privat AI-Assistans",
-        "Militär Säkerhet",
-        "Automatiserad Riskbedömning",
-        "Proaktiv Riskdetektering",
-        "Förtroendebaserad Teknologi"
+        "Anonyma rapporteringskanaler",
+        "Säker ärendehantering",
+        "Revisionsfärdiga utredningsloggar",
+        "Krypterad visselblåsarkommunikation",
+        "Flerspråkiga rapporteringsportaler",
+        "AI-assisterad ärendeanalys"
       ],
-      "subtitle": "Disclosurely hjälper compliance-team att hålla sig i framkant genom att förvandla etik och compliance till en proaktiv fördel: bygga en kultur av integritet, förenkla arbetsflöden och minska organisationsrisk.",
-      "startFreeTrial": "Starta gratis provperiod",
-      "viewPricing": "Visa priser",
-      "badge": "Military Grade AES-GCM Encryption"
+      "badge": "Military Grade AES-GCM Encryption",
+      "subtitle": "Säker anonym rapportering och ärendehantering för organisationer med 50+ anställda.\n\nDisclosurely erbjuder ett compliant visselblåsarsystem med krypterade rapporteringskanaler, revisionsfärdig ärendehantering och flerspråkiga portaler för inlämning.",
+      "bullets": [
+        "Anonymt rapporteringsportal",
+        "Manipulationssäkra revisionstrails",
+        "Säker kommunikation för utredare",
+        "AI-assisterad ärendeanalys"
+      ],
+      "startFreeTrial": "Skapa din rapporteringskanal",
+      "viewPricing": "Visa priser"
     },
     "trusted": "Betrodd av hundratals företag",
     "features": {

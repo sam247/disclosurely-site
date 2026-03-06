@@ -167,22 +167,26 @@
   },
   "landing": {
     "hero": {
-      "title1": "Klokkenluider Transformeren Met…",
+      "title1": "Conformiteit EU-klokkenluidersrichtlijn",
       "title2": "AI-Aangedreven Workflows",
       "typingPhrases": [
-        "AI-Aangedreven Workflows",
-        "Anonieme Rapportage",
-        "Real-Time Audit Trails",
-        "Privé AI-Assistentie",
-        "Militaire Beveiliging",
-        "Geautomatiseerde Risicobeoordeling",
-        "Proactieve Risicodetectie",
-        "Vertrouwensgebaseerde Technologie"
+        "Anonieme meldkanalen",
+        "Veilig casemanagement",
+        "Audit-ready onderzoekslogboeken",
+        "Versleutelde klokkenluiderberichten",
+        "Meertalige meldportalen",
+        "AI-ondersteunde casusanalyse"
       ],
-      "subtitle": "Disclosurely helpt compliance-teams voorop te blijven door ethiek en compliance te transformeren in een proactief voordeel: het bouwen van een cultuur van integriteit, het vereenvoudigen van workflows en het verminderen van organisatierisico.",
-      "startFreeTrial": "Start gratis proefperiode",
-      "viewPricing": "Bekijk prijzen",
-      "badge": "Military Grade AES-GCM Encryption"
+      "badge": "Military Grade AES-GCM Encryption",
+      "subtitle": "Veilige anonieme meldingen en casemanagement voor organisaties met 50+ werknemers.\n\nDisclosurely biedt een conform klokkenluiderssysteem met versleutelde meldkanalen, audit-ready casemanagement en meertalige aanmeldportalen.",
+      "bullets": [
+        "Anoniem meldportaal",
+        "Manipulatiebestendige audittrails",
+        "Veilige berichten voor onderzoekers",
+        "AI-ondersteunde casusanalyse"
+      ],
+      "startFreeTrial": "Maak uw meldkanaal aan",
+      "viewPricing": "Bekijk prijzen"
     },
     "trusted": "Vertrouwd door honderden bedrijven",
     "features": {

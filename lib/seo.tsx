@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { generateHreflangAlternates } from "./hreflang";
 import { fetchSEOPageData, fetchGlobalSEOData, type SEOData, type GlobalSEOData } from "./contentful-seo";
 import {
@@ -48,8 +49,12 @@ export async function generatePageMetadata(options: GenerateMetadataOptions): Pr
   const robots = noindex ? "noindex,nofollow" : seoData?.robots_directive || "index,follow";
   const finalKeywords = keywords || seoData?.meta_keywords || [];
 
-  // Generate canonical URL
-  const canonical = canonicalUrl || `${BASE_URL}${pagePath}`;
+  // Generate canonical URL (match current URL path including locale when set by middleware)
+  const headerList = await headers();
+  const lang = headerList.get("x-lang");
+  const pathForCanonical =
+    lang && lang !== "en" ? `/${lang}${pagePath === "/" ? "" : pagePath}` : pagePath;
+  const canonical = canonicalUrl || `${BASE_URL}${pathForCanonical}`;
 
   // Generate hreflang alternates
   const alternates = generateHreflangAlternates(pagePath);
