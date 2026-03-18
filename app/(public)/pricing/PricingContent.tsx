@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle, CheckCircle2, X, Star } from "lucide-react";
 
@@ -19,41 +18,6 @@ import { supportedLanguages } from "@/i18n/client";
 import { trackEvent } from "@/lib/events/trackEvent";
 
 type Lang = (typeof supportedLanguages)[number];
-
-// Helper function to format bullet points: bold beginning keywords
-function formatBulletPoint(point: string): React.ReactNode {
-  // Find the first phrase (usually ends at "that", "so", "to", or comma, but not inside parentheses)
-  // Try to match common patterns: "keyword that/so/to rest" or "keyword, rest"
-  let match = point.match(/^([^,]+?)(\s+(?:that|so|to)\s+)(.+)$/);
-  if (!match) {
-    // Try comma pattern but be careful with parentheses
-    match = point.match(/^([^,()]+(?:\([^)]*\))?[^,()]*?)(,\s+)(.+)$/);
-  }
-  if (match) {
-    const [, keyword, separator, rest] = match;
-    return (
-      <>
-        <strong>{keyword.trim()}</strong>
-        {separator}
-        {rest}
-      </>
-    );
-  }
-
-  // If no separator found, try to find first 2-4 words as keywords
-  const words = point.split(/\s+/);
-  if (words.length > 3) {
-    const keywordWords = words.slice(0, 3).join(" ");
-    const rest = words.slice(3).join(" ");
-    return (
-      <>
-        <strong>{keywordWords}</strong> {rest}
-      </>
-    );
-  }
-
-  return point;
-}
 
 function PricingContent() {
   const { t, i18n } = useTranslation();
@@ -88,6 +52,7 @@ function PricingContent() {
     () => [
       {
         name: t("pricing.plans.starter.name"),
+        bestFor: t("pricing.plans.starter.bestFor"),
         priceMonthly: "£19.99",
         priceAnnual: "£199.90",
         description: t("pricing.plans.starter.description"),
@@ -108,6 +73,7 @@ function PricingContent() {
       },
       {
         name: t("pricing.plans.pro.name"),
+        bestFor: t("pricing.plans.pro.bestFor"),
         priceMonthly: "£39.99",
         priceAnnual: "£399.90",
         description: t("pricing.plans.pro.description"),
@@ -127,6 +93,7 @@ function PricingContent() {
       },
       {
         name: t("pricing.plans.enterprise.name"),
+        bestFor: t("pricing.plans.enterprise.bestFor"),
         priceMonthly: t("pricing.plans.enterprise.price"),
         priceAnnual: t("pricing.plans.enterprise.price"),
         description: t("pricing.plans.enterprise.description"),
@@ -209,40 +176,21 @@ function PricingContent() {
           </div>
         </section>
 
-        {/* Designed For Businesses Section */}
+        {/* What's included in every plan */}
         <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
-            <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-              <div>
-                <h2 className="mb-3 text-2xl font-bold text-gray-900 sm:text-3xl">{t("pricing.designedForBusinesses.title")}</h2>
-                <p className="mb-4 text-base leading-relaxed text-gray-700">
-                  {t("pricing.designedForBusinesses.description")}
-                </p>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span>{formatBulletPoint(t("pricing.designedForBusinesses.bullet1"))}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span>{formatBulletPoint(t("pricing.designedForBusinesses.bullet2"))}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span>{formatBulletPoint(t("pricing.designedForBusinesses.bullet3"))}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span>{formatBulletPoint(t("pricing.designedForBusinesses.bullet4"))}</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="lg:order-1">
-                <div className="overflow-hidden rounded-xl border border-gray-100 shadow-sm">
-                  <Image src="/assets/artwork/pricing_image.jpeg" alt={t("pricing.designedForBusinesses.imageAlt")} width={1200} height={720} className="h-full w-full object-cover" />
-                </div>
-              </div>
-            </div>
+          <div className="mx-auto max-w-3xl">
+            <h2 className="mb-3 text-2xl font-bold text-gray-900 sm:text-3xl">{t("pricing.designedForBusinesses.title")}</h2>
+            <p className="mb-6 text-base leading-relaxed text-gray-700">
+              {t("pricing.designedForBusinesses.description")}
+            </p>
+            <ul className="space-y-2 text-gray-700">
+              {[1, 2, 3, 4, 5, 6].map((i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" />
+                  <span>{t(`pricing.designedForBusinesses.bullet${i}`)}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
@@ -250,7 +198,7 @@ function PricingContent() {
         <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             {/* Billing Interval Tabs */}
-            <div className="mb-8 flex justify-center">
+            <div className="mb-6 flex justify-center">
               <Tabs value={billingInterval} onValueChange={(v) => setBillingInterval(v as "monthly" | "annual")} className="w-auto">
                 <TabsList className="inline-flex items-center gap-2 rounded-full bg-gray-100 p-1 shadow-sm">
                   <TabsTrigger value="monthly" className="flex h-11 items-center justify-center rounded-full px-5 text-sm sm:text-base">
@@ -264,6 +212,26 @@ function PricingContent() {
                   </TabsTrigger>
                 </TabsList>
               </Tabs>
+            </div>
+
+            {/* Reassurance row */}
+            <div className="mb-8 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-600 sm:gap-8">
+              <span className="flex items-center gap-2">
+                <CheckCircle className="h-5 w-5 text-blue-600" />
+                {t("pricing.reassurance.freeTrial")}
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle className="h-5 w-5 text-blue-600" />
+                {t("pricing.reassurance.changePlans")}
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle className="h-5 w-5 text-blue-600" />
+                {t("pricing.reassurance.noHiddenFees")}
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle className="h-5 w-5 text-blue-600" />
+                {t("pricing.reassurance.secureHosting")}
+              </span>
             </div>
 
             <div className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
@@ -281,6 +249,9 @@ function PricingContent() {
                   )}
                   <CardHeader className="pb-6 text-center">
                     <CardTitle className="text-xl font-bold sm:text-2xl">{plan.name}</CardTitle>
+                    {plan.bestFor && (
+                      <p className="mt-1 text-sm text-gray-600">{plan.bestFor}</p>
+                    )}
                     <div className="mt-4">
                       <span className="text-3xl font-bold sm:text-4xl">
                         {billingInterval === "monthly" ? plan.priceMonthly : plan.priceAnnual}
@@ -648,41 +619,25 @@ function PricingContent() {
               <h2 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl">{t("pricing.faq.title")}</h2>
             </div>
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="item-1" className="rounded-lg border bg-white px-6">
-                <AccordionTrigger className="text-left text-lg font-semibold hover:no-underline">
-                  {t("pricing.faq.trial.question")}
-                </AccordionTrigger>
-                <AccordionContent className="pt-2 text-gray-600">
-                  {t("pricing.faq.trial.answer")}
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-2" className="rounded-lg border bg-white px-6">
-                <AccordionTrigger className="text-left text-lg font-semibold hover:no-underline">
-                  {t("pricing.faq.limit.question")}
-                </AccordionTrigger>
-                <AccordionContent className="pt-2 text-gray-600">
-                  {t("pricing.faq.limit.answer")}
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-3" className="rounded-lg border bg-white px-6">
-                <AccordionTrigger className="text-left text-lg font-semibold hover:no-underline">
-                  {t("pricing.faq.change.question")}
-                </AccordionTrigger>
-                <AccordionContent className="pt-2 text-gray-600">
-                  {t("pricing.faq.change.answer")}
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-4" className="rounded-lg border bg-white px-6">
-                <AccordionTrigger className="text-left text-lg font-semibold hover:no-underline">
-                  {t("pricing.faq.security.question")}
-                </AccordionTrigger>
-                <AccordionContent className="pt-2 text-gray-600">
-                  {t("pricing.faq.security.answer")}
-                </AccordionContent>
-              </AccordionItem>
+              {[
+                "trial",
+                "includedInEveryPlan",
+                "planFor50Plus",
+                "upgradeDowngrade",
+                "onboardingSupport",
+                "anonymousOnAllPlans",
+                "securityFeatures",
+                "hiddenCosts",
+              ].map((key, i) => (
+                <AccordionItem key={key} value={`item-${i + 1}`} className="rounded-lg border bg-white px-6">
+                  <AccordionTrigger className="text-left text-lg font-semibold hover:no-underline">
+                    {t(`pricing.faq.${key}.question`)}
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-2 text-gray-600">
+                    {t(`pricing.faq.${key}.answer`)}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
             </Accordion>
           </div>
         </div>
@@ -692,16 +647,25 @@ function PricingContent() {
           <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
             <h2 className="mb-4 text-2xl font-bold text-white sm:text-3xl">{t("pricing.cta.ready")}</h2>
             <p className="mb-6 px-4 text-lg text-blue-100 sm:mb-8 sm:text-xl">{t("pricing.cta.join")}</p>
-            <a
-              href="https://app.disclosurely.com/auth/signup"
-              className="inline-block rounded-lg bg-white px-6 py-3 text-lg font-semibold text-blue-600 hover:bg-gray-100 sm:px-8"
-              onClick={(e) => {
-                e.preventDefault();
-                handleStartTrial("pricing_cta");
-              }}
-            >
-              {t("pricing.cta.startTrial")}
-            </a>
+            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <a
+                href="https://app.disclosurely.com/auth/signup"
+                className="inline-block w-full rounded-lg bg-white px-6 py-3 text-center text-lg font-semibold text-blue-600 hover:bg-gray-100 sm:w-auto sm:px-8"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleStartTrial("pricing_cta");
+                }}
+              >
+                {t("pricing.cta.startTrial")}
+              </a>
+              <Link
+                href={`${langPrefix}/contact`}
+                className="inline-block w-full rounded-lg border border-white/30 px-6 py-3 text-center text-lg font-semibold text-white transition-colors hover:bg-white/10 sm:w-auto sm:px-8"
+                onClick={() => trackEvent("demo_click", { location: "pricing_cta" })}
+              >
+                {t("pricing.cta.talkToTeam")}
+              </Link>
+            </div>
           </div>
         </div>
       </div>

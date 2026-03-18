@@ -167,28 +167,36 @@
   },
   "landing": {
     "hero": {
-      "title1": "Efterlevnad av EU:s visselblåsardirektiv",
-      "title2": "AI-Drivna Arbetsflöden",
+      "title1": "Säker visselblåsarsprogramvara för UK- och EU-efterlevnad",
+      "mobilePhrase": "Anonym rapportering för compliance-team",
       "typingPhrases": [
-        "Anonyma rapporteringskanaler",
-        "Säker ärendehantering",
-        "Revisionsfärdiga utredningsloggar",
-        "Krypterad visselblåsarkommunikation",
-        "Flerspråkiga rapporteringsportaler",
-        "AI-assisterad ärendeanalys"
+        "Anonym rapportering",
+        "Krypterad ärendehantering",
+        "Revisionsfärdig compliance",
+        "Säker tvåvägskommunikation"
       ],
       "badge": "Military Grade AES-GCM Encryption",
-      "subtitle": "Säker anonym rapportering och ärendehantering för organisationer med 50+ anställda. Disclosurely erbjuder ett compliant visselblåsarsystem med krypterade rapporteringskanaler, revisionsfärdig ärendehantering och flerspråkiga portaler för inlämning.",
+      "subtitle": "Ge anställda ett säkert, anonymt sätt att rapportera oro. Disclosurely erbjuder krypterade kanaler, strukturerad ärendehantering och revisionsfärdiga uppgifter — i linje med EU-direktivet och UK-krav.",
       "bullets": [
-        "Anonymt rapporteringsportal",
+        "Anonymt mottagningsportal",
         "Manipulationssäkra revisionstrails",
-        "Säker kommunikation för utredare",
-        "AI-assisterad ärendeanalys"
+        "Krypterad kommunikation för utredare",
+        "AI-driven ärendetriage"
       ],
-      "startFreeTrial": "Skapa din rapporteringskanal",
+      "startFreeTrial": "Starta gratis provperiod",
+      "bookDemo": "Boka en demo",
       "viewPricing": "Visa priser"
     },
     "trusted": "Betrodd av hundratals företag",
+    "trustBar": {
+      "items": [
+        "Anonym rapportering",
+        "Ende-till-ende krypterad",
+        "GDPR-medveten design",
+        "EU-direktiv enligt",
+        "Säker tvåvägskommunikation"
+      ]
+    },
     "features": {
       "title": "Allt du behöver för säker rapportering",
       "subtitle": "Vår plattform ger omfattande verktyg för att hantera visselblåsarrapporter med fullständig konfidentialitet och compliance.",
@@ -322,15 +330,52 @@
       "question6": {
         "question": "Kan vi avbryta eller ändra vår plan när som helst?",
         "answer": "Ja, du kan uppgradera, nedgradera eller avbryta din prenumeration när som helst. Om du avbryter behåller du åtkomst till slutet av din faktureringsperiod. Vi erbjuder också en 14-dagars gratis provperiod så att du kan testa alla funktioner innan du förbinder dig."
+      },
+      "question7": {
+        "question": "Hur snabbt kan vi komma igång?",
+        "answer": "De flesta organisationer är live inom 24 timmar. Efter registrering kan du anpassa portalen, bjuda in teamet och ta emot rapporter. Onboarding ingår."
       }
     },
     "cta": {
-      "title": "Redo att stärka ditt compliance-program?",
-      "description": "Inte redo för en gratis provperiod eller demo? Dela dina krav med oss och vi svarar snabbt för att diskutera hur Disclosurely kan stödja din organisation.",
-      "button": "Starta gratis provperiod"
+      "title": "Redo att lansera en säker visselblåsarkanal?",
+      "description": "Starta din gratis provperiod idag eller boka en demo med vårt team.",
+      "button": "Starta gratis provperiod",
+      "bookDemo": "Boka en demo"
     },
     "highlights": {
-      "tag": "Security & Compliance"
+      "tag": "Security & Compliance",
+      "sectionTitle": "Disclosurely-funktioner",
+      "sectionSubtitle": "Omfattande verktyg för säker anonym rapportering, compliance och ärendehantering",
+      "anonymousReporting": {
+        "additionalContent": "Anställda kan rapportera oegentligheter, etikbrott eller andra oro helt anonymt via ett webbläsarbaserat formulär. Kryptering skyddar identitet och compliance; ärenden flödar till en central arbetsyta med revisionstrails och tydliga frister.",
+        "bullet1": "Ingen datainsamling om rapporterare",
+        "bullet2": "Anonym uppföljningsmeddelande",
+        "bullet3": "Flerspråkiga inlämningsportaler"
+      },
+      "encryption": {
+        "additionalContent": "Varje rapport i Disclosurely skyddas med AES-256-kryptering, samma standard som banker och myndigheter. Meddelanden, ärendenoteringar och bilagor förblir konfidentiella från inlämning till avslut.",
+        "bullet1": "AES-256 från inlämning till avslut",
+        "bullet2": "Krypterade filbilagor",
+        "bullet3": "Rollbaserad dekrypteringsåtkomst"
+      },
+      "compliance": {
+        "additionalContent": "Efterlevnad av UK- och EU-visselblåsarregler med mjukvara baserad på verkliga juridiska krav. Plattformen stöder EU-direktivet och UK Employment Rights Act.",
+        "bullet1": "EU-direktiv och UK ERA-efterlevnadsarbetsflöden",
+        "bullet2": "GDPR-redo datahantering",
+        "bullet3": "Exporterbara revisionspaket för tillsyn"
+      },
+      "messaging": {
+        "additionalContent": "Konfidentiell, anonym dialog med visselblåsare från första rapport till resultat. Säker meddelandehantering i plattformen låter utredare begära information och dela uppdateringar utan att avslöja identitet.",
+        "bullet1": "Ende-till-ende krypterade samtal",
+        "bullet2": "Anonymitet bevarad genomgående",
+        "bullet3": "Realtidsnotifikation till utredare"
+      },
+      "aiPowered": {
+        "additionalContent": "Integritetsförst AI-analys med automatisk PII-redigering. Assistenten granskar inkommande ärenden, hittar mönster och belyser risker.",
+        "bullet1": "AI med automatisk PII-redigering",
+        "bullet2": "Riskscoring och ärendeprioritering",
+        "bullet3": "Mönsterigenkänning över rapporter"
+      }
     },
     "branding": {
       "tag": "Branding & Identity",
@@ -363,40 +408,52 @@
   },
   "pricing": {
     "hero": {
-      "title": "Enkla, transparenta priser",
-      "subtitle": "Välj rätt plan för din organisation. Börja med vår sjudagars gratis provperiod och uppgradera när du växer.",
-      "tagline": "Transparent Pricing Built For Business.",
-      "subtitle1": "7-dagars gratis provperiod • Obegränsade rapporter inkluderade",
-      "subtitle2": "Alla planer inkluderar militärgrad kryptering, GDPR-efterlevnad och realtidsanalys. Välj den plan som matchar dina compliance-behov och skala när du växer.",
+      "title": "Priser visselblåsningsprogramvara för team i alla storlekar",
+      "tagline": "Visselblåsning och compliance",
+      "subtitle": "Välj rätt plan för din organisation. Gratis provperiod, byt när som helst.",
+      "subtitle1": "Börja med säker anonym rapportering, ärendehantering och inbyggda compliance-verktyg. Uppgradera när behovet växer.",
+      "subtitle2": "14 dagars gratis provperiod, inget kort. Byt eller uppgradera plan när som helst.",
       "startFreeTrial": "Starta gratis provperiod"
     },
+    "reassurance": {
+      "freeTrial": "Gratis provperiod tillgänglig",
+      "changePlans": "Byt plan när som helst",
+      "noHiddenFees": "Inga dolda avgifter",
+      "secureHosting": "Säker hosting inkluderad"
+    },
     "designedForBusinesses": {
-      "title": "Designad för företag av alla storlekar",
-      "description": "Oavsett om du är en liten organisation som implementerar visselblåsningsprogramvara för första gången eller en större grupp som rullar ut den över flera enheter, skalar Disclosurely med dig. Enkla, transparenta priser och flexibla arbetsytor gör det enkelt att börja små, bevisa värde och utöka täckningen när dina rapporteringsvolymer och regulatoriska förpliktelser växer.",
-      "bullet1": "Ideal för små och medelstora företag som behöver säkra, kompatibla visselblåsningskanaler utan företagsnivå komplexitet eller installationskostnader.",
-      "bullet2": "Flexibelt för växande team, med ytterligare användare, enheter och språk som är lätta att lägga till när din organisation utvecklas.",
-      "bullet3": "Redo för större organisationer, med strukturerad ärendehantering, revisionsspår och rapportering som möter förväntningarna från styrelser, tillsynsmyndigheter och externa rådgivare.",
-      "imageAlt": "Designad för företag av alla storlekar"
+      "title": "Vad ingår i alla planer",
+      "description": "Alla planer innehåller det väsentliga för säker, compliant visselblåsning.",
+      "bullet1": "Säker anonym rapportering",
+      "bullet2": "Ärendehantering och revisionsloggar",
+      "bullet3": "Krypterad databehandling",
+      "bullet4": "Hostad rapporteringsportal",
+      "bullet5": "E-postaviseringar",
+      "bullet6": "GDPR-medveten design",
+      "imageAlt": "Vad ingår i alla planer"
     },
     "plans": {
       "mostPopular": "Mest populär",
       "perMonth": "/månad",
+      "perYear": "/år",
       "starter": {
         "name": "Starter",
         "price": "£19.99",
-        "description": "Perfekt för små organisationer som startar"
+        "description": "Kom igång med anonym rapportering och ärendehantering.",
+        "bestFor": "Små organisationer som lanserar en säker rapporteringskanal"
       },
       "pro": {
         "name": "Pro",
         "price": "£39.99",
-        "description": "För växande organisationer med avancerade behov"
+        "description": "Varumärkesportaler, säkra meddelanden, AI-triage och workflow-automatisering.",
+        "bestFor": "Växande team som behöver varumärkesportaler, automatisering och insikter"
       },
       "enterprise": {
         "name": "Enterprise",
         "price": "Anpassat",
-        "description": "För stora organisationer med skräddarsydda krav"
-      },
-      "perYear": "/year"
+        "description": "SSO, anpassad onboarding, avancerade rättigheter och multi-team-uppsättning, dedikerat stöd och hosting eller databehandling vid behov.",
+        "bestFor": "Större eller flerenhetsorganisationer med avancerad säkerhet och utrullning"
+      }
     },
     "features": {
       "casesLimit": "5 fall/månad",
@@ -425,25 +482,42 @@
       "title": "Vanliga frågor",
       "trial": {
         "question": "Finns det en gratis provperiod?",
-        "answer": "Ja, alla planer kommer med en 7-dagars gratis provperiod så att du kan se hur plattformen fungerar. Inget kreditkort krävs."
+        "answer": "Ja. Alla planer har 14 dagars gratis provperiod, inget kort. Du kan prova plattformen innan du binder dig."
       },
-      "limit": {
-        "question": "Vad händer om jag når min fallgräns på Starter-planen?",
-        "answer": "Om du överskrider din månatliga fallallokering kommer du att meddelas i instrumentpanelen. Du kan uppgradera till Pro-planen för obegränsade fall eller vänta till nästa månad."
+      "includedInEveryPlan": {
+        "question": "Vad ingår i alla planer?",
+        "answer": "Varje plan inkluderar säker anonym rapportering, ärendehantering och revisionsloggar, krypterad databehandling, hostad portal, e-postaviseringar och GDPR-medveten design. Pro lägger till varumärkesportaler, säkra meddelanden, AI-triage och mer."
       },
-      "change": {
-        "question": "Kan jag ändra plan senare?",
-        "answer": "Absolut! Du kan uppgradera eller nedgradera din plan när som helst från din instrumentpanel."
+      "planFor50Plus": {
+        "question": "Vilken plan passar för ett team med 50+ anställda?",
+        "answer": "Pro passar för de flesta organisationer med 50+: varumärkesportaler, säkra meddelanden, AI-triage och automatisering. Välj Enterprise för flerenhetsutrullning, SSO, anpassad onboarding eller dedikerat stöd."
       },
-      "security": {
-        "question": "Vilka säkerhetscertifieringar har ni?",
-        "answer": "Vi är GDPR-kompatibla och arbetar mot ISO 27001- och SOX-efterlevnad."
+      "upgradeDowngrade": {
+        "question": "Kan vi uppgradera eller nedgradera senare?",
+        "answer": "Ja. Du kan ändra plan när som helst från instrumentpanelen. Inga långsiktiga åtaganden."
+      },
+      "onboardingSupport": {
+        "question": "Erbjuder ni onboarding-stöd?",
+        "answer": "Ja. Alla planer har e-poststöd med onboarding. Pro har prioritetsstöd; Enterprise har dedikerat stöd och anpassad onboarding vid behov."
+      },
+      "anonymousOnAllPlans": {
+        "question": "Ingår anonym rapportering i alla planer?",
+        "answer": "Ja. Säker anonym rapportering och hostad portal ingår i alla planer. Visselblåsare kan skicka in utan att avslöja identitet."
+      },
+      "securityFeatures": {
+        "question": "Vilka säkerhetsfunktioner ingår?",
+        "answer": "Alla planer: kryptering (AES-GCM), GDPR-efterlevnad databehandling, revisionsloggar och rollbaserad åtkomst. Enterprise lägger till SSO och avancerade inloggningsalternativ. Vi är GDPR-kompatibla och arbetar mot ISO 27001 och SOX."
+      },
+      "hiddenCosts": {
+        "question": "Finns det dolda kostnader?",
+        "answer": "Nej. Priset är tydligt per plan; inga dolda avgifter. Valfria tillägg anges uttryckligen. Säker hosting ingår."
       }
     },
     "cta": {
-      "ready": "Redo att komma igång?",
-      "join": "Gå med organisationer världen över som litar på Disclosurely för säker rapportering.",
+      "ready": "Redo att lansera en säker visselblåsningskanal?",
+      "join": "Starta din gratis provperiod eller prata med vårt team om rätt plan.",
       "startTrial": "Starta gratis provperiod",
+      "talkToTeam": "Prata med vårt team",
       "contactSales": "Kontakta försäljning"
     },
     "trustIndicators": {
@@ -525,7 +599,7 @@
     },
     "compare": {
       "title": "Compare All Features",
-      "subtitle": "See exactly what's included in each plan",
+      "subtitle": "Se vilken plan som passar för ditt företag.",
       "headers": {
         "features": "Features",
         "starter": "Starter",
@@ -1452,6 +1526,131 @@
       },
       "securityTitle": "Security and compliance",
       "securityDescription": "AES-GCM encryption, access logging, and continuous monitoring help meet GDPR, ISO 27001, and sector frameworks."
+    }
+  },
+  "directive": {
+    "hero": {
+      "badge": "EU:s direktiv om skydd för visselblåsare",
+      "title": "Efterlevnad av EU:s visselblåsardirektiv – praktiskt genomfört",
+      "subtitle": "Sätt upp säkra anonyma rapporteringskanaler, uppfyll krav på svarstider och hantera ärenden med ett system för EU-organisationer.",
+      "startFreeTrial": "Starta gratis provperiod",
+      "bookDemo": "Boka en demo",
+      "reassurance": {
+        "anonymous": "Anonym rapportering",
+        "secureCase": "Säker ärendehantering",
+        "sevenDay": "Kvitto inom 7 dagar",
+        "ninetyDay": "Uppföljning inom 90 dagar",
+        "multilingual": "Flerspråkiga portaler"
+      }
+    },
+    "whoComplies": {
+      "title": "Vem måste följa direktivet?",
+      "card1Title": "Organisationer med 50+ anställda",
+      "card1Desc": "Offentliga och privata enheter över tröskeln måste erbjuda interna rapporteringskanaler.",
+      "card2Title": "Offentliga myndigheter",
+      "card2Desc": "Många offentliga enheter omfattas oavsett storlek.",
+      "card3Title": "Företag verksamma i flera EU-länder",
+      "card3Desc": "Gränsöverskridande verksamhet kräver efterlevnad i varje medlemsland.",
+      "card4Title": "Ansvarliga för intern rapportering",
+      "card4Desc": "Utsedda personer för säkra kanaler och ärendehantering."
+    },
+    "requirements": {
+      "title": "Vad kräver EU:s visselblåsardirektiv?",
+      "subtitle": "Praktisk sammanfattning av centrala krav.",
+      "item1": "Säkra interna rapporteringskanaler",
+      "item2": "Konfidentialitet för rapporterande",
+      "item3": "Kvitto inom 7 dagar",
+      "item4": "Uppföljning inom 3 månader",
+      "item5": "Skydd mot repressalier",
+      "item6": "Säker journalföring och kontrollerad åtkomst",
+      "item7": "Flerspråkig och tillgänglig rapportering där det är relevant"
+    },
+    "risks": {
+      "title": "Varför en compliant rapporteringskanal spelar roll",
+      "item1Title": "Tillsynsrisk",
+      "item1Desc": "Böter och genomdrivande vid otillräckliga kanaler eller processer.",
+      "item2Title": "Brister i intern rapportering",
+      "item2Desc": "Utan säkra, tillförlitliga kanaler lämnas eller hanteras inte rapporter.",
+      "item3Title": "Rykte skada",
+      "item3Desc": "Offentlig eller tillsynskritik när förhållanden kommer fram utan ordentlig hantering.",
+      "item4Title": "Mindre tillit bland anställda",
+      "item4Desc": "De anställda tappar förtroendet om systemen är oklara eller osäkra.",
+      "item5Title": "Operativ belastning",
+      "item5Desc": "Manuella eller ad hoc-processer ger förseningar, inkonsistens och revisionsrisk."
+    },
+    "systemNeeds": {
+      "title": "Vad ett compliant visselblåsarsystem bör innehålla",
+      "subtitle": "Funktioner i linje med direktivet.",
+      "card1Title": "Säkra anonyma rapporteringskanaler",
+      "card1Desc": "Webb- och valfritt telefonintag med kryptering och utan identitetsregistrering.",
+      "card1Bullet1": "Anonym mottagning med säker meddelandehantering",
+      "card1Bullet2": "Ende-till-ende-kryptering",
+      "card1Bullet3": "Verklig anonymitet genom hela processen",
+      "card2Title": "Säker tvåvägskommunikation",
+      "card2Desc": "Uppföljning med rapporterande utan att avslöja deras identitet.",
+      "card2Bullet1": "Säkra meddelanden med ärendenummer och PIN",
+      "card2Bullet2": "Håller rapporterande engagerade och informerade",
+      "card2Bullet3": "Bevara anonymitet vid insamling av bevis",
+      "card3Title": "Ärendehantering och revisionsklara uppteckningar",
+      "card3Desc": "Strukturerade arbetsflöden och dokumenterad hantering.",
+      "card3Bullet1": "Automatisk routing och tidsfrister",
+      "card3Bullet2": "Bevarlagring med revisionsspår",
+      "card3Bullet3": "Kvarhållande och åtkomstkontroll",
+      "card4Title": "Flerspråkig support",
+      "card4Desc": "Rapportering på flera språk för EU-team.",
+      "card4Bullet1": "Rapportering på mer än 35 språk",
+      "card4Bullet2": "Modersmål för varje anställd",
+      "card4Bullet3": "Avgörande för multinationella verksamheter",
+      "card5Title": "Rollbaserad åtkomst och behörigheter",
+      "card5Desc": "Endast utsedda handläggare ser känsliga rapporter.",
+      "card5Bullet1": "Detaljerade behörigheter",
+      "card5Bullet2": "Åtkomstloggning",
+      "card5Bullet3": "Revisionsklart överblick",
+      "card6Title": "Dataskyddskontroller",
+      "card6Desc": "GDPR-enlig kryptering, kvarhållande och åtkomst.",
+      "card6Bullet1": "Krypterad lagring i certifierade anläggningar",
+      "card6Bullet2": "Automatiserad kvarhållandehantering",
+      "card6Bullet3": "Fullständigt revisionsspår för tillsynsmyndigheter"
+    },
+    "howWeHelp": {
+      "title": "Så stödjer Disclosurely EU visselblåsarefterlevnad",
+      "subtitle": "Utformat för direktivets krav.",
+      "item1": "Anonym rapporteringsmottagning med krypterade formulär",
+      "item2": "Krypterad ärendehantering och tvåvägskommunikation",
+      "item3": "Rollbaserad ärendeåtkomst för utsedda handläggare",
+      "item4": "Arbetsflödesstöd och påminnelser för 7 och 90 dagar",
+      "item5": "Flerspråkiga rapporteringsportaler",
+      "item6": "Revisionsklara uppteckningar och exporterbara bevis",
+      "item7": "Integritet-först design",
+      "item8": "AI-stödda redigering och privat AI-gateway"
+    },
+    "midCta": {
+      "title": "Redo att lansera en compliant rapporteringskanal?",
+      "startFreeTrial": "Starta gratis provperiod",
+      "talkToTeam": "Prata med vårt team"
+    },
+    "impact": {
+      "title": "Det operativa värdet av att göra det rätt",
+      "card1Title": "Riskantering",
+      "card1Desc": "Tidig upptäckt, dokumenterad hantering och mindre exponering för böter.",
+      "card2Title": "Operativ effektivitet",
+      "card2Desc": "Automatiserade arbetsflöden och tydliga tidsfrister i stället för manuella eller ad hoc-processer.",
+      "card3Title": "Förtroende och kultur",
+      "card3Desc": "Anställda vågar rapportera; efterlevnad är synlig och trovärdig."
+    },
+    "gettingStarted": {
+      "title": "Kom igång",
+      "item1": "Sätt upp säkra rapporteringskanaler",
+      "item2": "Konfigurera arbetsflöden i linje med direktivet",
+      "item3": "Träna utredningsteam",
+      "item4": "Kommunica kanalen till personalen",
+      "item5": "Övervaka och finjustera processer"
+    },
+    "finalCta": {
+      "title": "Lansera en compliant rapporteringskanal på några dagar",
+      "subtitle": "Guidad onboarding, säkra rapporteringsarbetsflöden och inbyggt efterlevnadsstöd för EU-organisationer.",
+      "startFreeTrial": "Starta gratis provperiod",
+      "bookDemo": "Boka en demo"
     }
   }
 }

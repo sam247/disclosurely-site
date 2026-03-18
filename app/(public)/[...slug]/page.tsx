@@ -77,15 +77,10 @@ const pages: Record<string, PageConfig> = {
     subtitle: 'Discover how Disclosurely simplifies secure reporting compared to Resolver.',
     highlights: ['Built-in encryption', 'AI triage', 'UK & EU focus'],
   },
-  '/compliance-software': {
-    title: 'Compliance Software',
-    subtitle: 'Streamline regulatory obligations, protect whistleblowers, and build an ethical workplace culture.',
-    highlights: ['Whistleblowing compliant', 'Secure messaging', 'ISO 27001 aligned'],
-  },
   '/whistleblowing-directive': {
     title: 'EU Whistleblowing Directive',
-    subtitle: 'Stay compliant with EU Whistleblowing Directive requirements using Disclosurely.',
-    highlights: ['50+ employee coverage', 'Timely acknowledgment', 'Retaliation safeguards'],
+    subtitle: 'EU Whistleblowing Directive compliance made practical: secure channels, 7-day and 90-day workflows, audit-ready records.',
+    highlights: ['Who must comply', 'Directive requirements', 'Compliant system checklist'],
   },
   '/industries': {
     title: 'Industry Solutions',

@@ -167,82 +167,122 @@
   },
   "landing": {
     "hero": {
-      "title1": "EU Whistleblowing Directive Compliance",
-      "title2": "AI-Powered Workflows",
+      "title1": "Secure Whistleblowing Software for UK and EU Compliance",
+      "mobilePhrase": "Anonymous reporting built for compliance teams",
       "typingPhrases": [
-        "Anonymous Reporting Channels",
-        "Secure Case Management",
-        "Audit-Ready Investigation Logs",
-        "Encrypted Whistleblower Messaging",
-        "Multilingual Reporting Portals",
-        "AI-Assisted Case Analysis"
+        "Anonymous Reporting",
+        "Encrypted Case Management",
+        "Audit-Ready Compliance",
+        "Secure Two-Way Messaging"
       ],
       "badge": "Military Grade AES-GCM Encryption",
-      "subtitle": "Secure anonymous reporting and case management for organisations with 50+ employees. Disclosurely provides a compliant whistleblowing system with encrypted reporting channels, audit-ready case management and multilingual submission portals.",
+      "subtitle": "Give employees a safe, anonymous way to report concerns. Disclosurely provides encrypted reporting channels, structured case management, and audit-ready records — built to meet EU Whistleblowing Directive and UK regulatory requirements.",
       "bullets": [
-        "Anonymous reporting portal",
+        "Anonymous intake portal",
         "Tamper-evident audit trails",
-        "Secure investigator messaging",
-        "AI-assisted case analysis"
+        "Encrypted investigator messaging",
+        "AI-powered case triage"
       ],
-      "startFreeTrial": "Create Your Reporting Channel",
+      "startFreeTrial": "Start Free Trial",
+      "bookDemo": "Book a Demo",
       "viewPricing": "View Pricing"
     },
     "trusted": "Trusted by hundreds of businesses",
+    "trustBar": {
+      "items": [
+        "Anonymous Reporting",
+        "End-to-End Encrypted",
+        "GDPR-Conscious Design",
+        "EU Directive Compliant",
+        "Secure Two-Way Messaging"
+      ]
+    },
     "highlights": {
-      "tag": "Security & Compliance"
+      "tag": "Security & Compliance",
+      "sectionTitle": "Disclosurely Features",
+      "sectionSubtitle": "Comprehensive tools for secure anonymous reporting, compliance, and case management",
+      "anonymousReporting": {
+        "additionalContent": "Employees can report misconduct, ethics violations, or other concerns completely anonymously via a browser-based form on any device. Encryption protects reporter identity and supports compliance; cases flow into a central workspace with audit trails and clear deadlines for acknowledgement, follow-up, and resolution.",
+        "bullet1": "Zero data collection on reporters",
+        "bullet2": "Anonymous follow-up messaging",
+        "bullet3": "Multilingual submission portals"
+      },
+      "encryption": {
+        "additionalContent": "Every report in Disclosurely is protected with AES-256 encryption, the same standard used by banks and government agencies. Messages, case notes, and attachments stay confidential from submission to resolution. Strong encryption, access controls, and audit trails help you meet whistleblower protection, GDPR, and data security expectations.",
+        "bullet1": "AES-256 encryption from submission to resolution",
+        "bullet2": "Encrypted file attachments",
+        "bullet3": "Role-based decryption access"
+      },
+      "compliance": {
+        "additionalContent": "Stay compliant with UK and EU whistleblowing regulations with software built around real legal requirements. The platform supports the EU Whistleblowing Directive and UK Employment Rights Act — secure reporting channels, timely acknowledgements, and documented follow-up. Audit trails, case timelines, and exportable reports give compliance teams what they need to evidence handling and demonstrate adherence to boards and regulators.",
+        "bullet1": "EU Directive and UK ERA compliant workflows",
+        "bullet2": "GDPR-ready data handling",
+        "bullet3": "Exportable audit packs for regulators"
+      },
+      "messaging": {
+        "additionalContent": "Maintain confidential, anonymous dialogue with whistleblowers from first report to outcome. Secure in-platform messaging lets case handlers request information, clarify details, and share updates without revealing or collecting reporter identity. Every conversation is encrypted, time-stamped, and linked to the case for a clear audit trail.",
+        "bullet1": "End-to-end encrypted conversations",
+        "bullet2": "Full anonymity maintained throughout",
+        "bullet3": "Real-time notification for investigators"
+      },
+      "aiPowered": {
+        "additionalContent": "Privacy-first AI analysis with automatic PII redaction. The built-in assistant reviews incoming cases, surfaces patterns, and highlights high-risk issues so compliance teams can respond faster. Turn incident data into actionable insights and move from reactive case handling to proactive risk management.",
+        "bullet1": "Privacy-first AI with automatic PII redaction",
+        "bullet2": "Risk scoring and case prioritisation",
+        "bullet3": "Pattern detection across reports"
+      }
     },
     "branding": {
       "tag": "Branding & Identity",
       "title": "Custom Branding",
-      "description": "With our custom domain support, logo integration and branded portals, your reporting submission system looks and feels like a native part of your infrastructure.",
-      "point1": "Custom CNAME support for branded secure links",
-      "point2": "Your logo and branding on all submission portals",
-      "point3": "White-label options for complete brand control",
+      "description": "Make your whistleblower reporting portal look and feel like a native part of your organisation. With custom domains, logo integration, and branded portals, employees and third parties see a familiar, trustworthy environment when they submit a concern. This reduces friction, boosts confidence in the channel, and helps your whistleblower software blend seamlessly into your existing compliance and HR ecosystem.",
+      "point1": "Custom CNAME support for branded secure links, so reporting URLs sit on your own domain and align with your security and IT standards.",
+      "point2": "Your logo and branding on all submission portals, email notifications, and dashboards to create a consistent, trusted experience for reporters and case handlers.",
+      "point3": "White-label options for complete brand control, ideal for groups, partners, or consultants offering whistleblowing channels as part of a broader compliance service.",
       "imageAlt": "Custom Branding"
     },
     "features": {
-      "title": "Everything you need for secure reporting",
-      "subtitle": "Our platform provides comprehensive tools to manage whistleblower reports with complete confidentiality and compliance.",
+      "title": "Built for compliance teams",
+      "subtitle": "Tools to manage whistleblower reports with full confidentiality, audit trails, and regulatory alignment.",
       "anonymousReporting": {
         "title": "Anonymous Reporting",
-        "description": "Complete anonymity for whistleblowers with encrypted submissions and secure identity protection."
+        "description": "Encrypted, browser-based intake forms with zero data collection on reporters. No IP tracking, no device fingerprinting."
       },
       "secureMessaging": {
-        "title": "Secure Messaging",
-        "description": "Two-way encrypted communication between whistleblowers and investigators while maintaining anonymity."
+        "title": "Encrypted Two-Way Messaging",
+        "description": "Communicate securely with reporters without breaking anonymity. All messages encrypted end-to-end."
       },
       "caseManagement": {
         "title": "Case Management",
-        "description": "Comprehensive dashboard to track, investigate, and resolve cases with full audit trails."
+        "description": "Track, investigate, and resolve reports with structured workflows, defined deadlines, and tamper-evident audit trails."
       },
       "multiUserAccess": {
-        "title": "Multi-User Access",
-        "description": "Role-based permissions for legal, HR, and compliance teams with controlled access levels."
+        "title": "Role-Based Access Control",
+        "description": "Granular permissions for compliance officers, investigators, HR, and legal — with full segregation of duties."
       },
       "regulatoryCompliance": {
-        "title": "Regulatory Compliance",
-        "description": "Built-in compliance with GDPR, SOX, and other regulatory requirements across industries."
+        "title": "EU and UK Compliance",
+        "description": "Built around EU Whistleblowing Directive requirements, UK Employment Rights Act, and GDPR data protection standards."
       },
       "enterpriseSecurity": {
-        "title": "Enterprise Security",
-        "description": "Bank-level encryption, secure hosting, and comprehensive data protection measures."
+        "title": "Enterprise-Grade Encryption",
+        "description": "AES-256 encryption at rest and in transit, access-controlled hosting, and comprehensive data protection."
       }
     },
     "howItWorks": {
       "title": "How It Works",
-      "subtitle": "Get started with Disclosurely in three simple steps",
+      "subtitle": "From setup to audit-ready in three steps",
       "step1": {
-        "title": "Set Up Your Portal",
-        "description": "Create your account and customize your reporting portal in minutes. Add your branding, set up notification preferences, and configure your team access."
+        "title": "Set Up Your Reporting Channel",
+        "description": "Create your portal, add your branding, and share a secure link with employees — live in minutes."
       },
       "step2": {
-        "title": "Share with Your Team",
-        "description": "Distribute your secure reporting link to employees through email, intranet, or QR codes. Reports can be submitted 24/7 from any device, anywhere."
+        "title": "Receive and Manage Reports",
+        "description": "Reports arrive encrypted. Review, assign, and investigate with structured workflows and full audit trails."
       },
       "step3": {
-        "title": "Manage & Resolve Cases",
-        "description": "Receive instant notifications of new reports. Investigate, communicate securely with whistleblowers, and track cases through resolution with complete audit trails."
+        "title": "Resolve and Evidence Compliance",
+        "description": "Close cases with documented outcomes. Export audit packs for regulators, boards, and external advisers."
       }
     },
     "anonymousReporting": {
@@ -292,17 +332,17 @@
       "title": "Trusted by Organizations Worldwide",
       "subtitle": "See what our customers say about their experience with Disclosurely",
       "testimonial1": {
-        "quote": "Disclosurely has transformed how we handle sensitive reports. The anonymous messaging feature is particularly valuable.",
+        "quote": "The encrypted reporting channel gave our employees genuine confidence to speak up. Case management and audit trails made our first regulatory review straightforward.",
         "name": "Sarah Johnson",
         "role": "Chief Compliance Officer"
       },
       "testimonial2": {
-        "quote": "The platform is intuitive and secure. Our employees feel confident reporting issues, and we can investigate them effectively.",
+        "quote": "We needed a solution that met the EU Directive and UK requirements without heavy IT lift. We were live in a day, with branded portals and secure two-way messaging from the start.",
         "name": "Michael Chen",
         "role": "HR Director"
       },
       "testimonial3": {
-        "quote": "Implementation was seamless and the support team was excellent. Highly recommend for any organization serious about compliance.",
+        "quote": "Anonymous intake, encrypted case handling, and exportable audit packs — exactly what legal and compliance need to evidence how we handle reports.",
         "name": "Emily Rodriguez",
         "role": "Legal Counsel"
       }
@@ -311,34 +351,39 @@
       "title": "Frequently Asked Questions",
       "subtitle": "Everything you need to know about Disclosurely",
       "question1": {
-        "question": "How does anonymous reporting work?",
-        "answer": "Whistleblowers can submit reports through your custom portal without providing any personal information. Our system uses advanced encryption and doesn't collect IP addresses or identifying data. Reporters receive a unique access code to check their report status and communicate securely."
+        "question": "Can reports be submitted completely anonymously?",
+        "answer": "Yes. Reporters use your custom portal without providing personal information. We do not collect IP addresses, device fingerprints, or other identifying data. Each reporter receives a unique access code to check status and communicate securely while staying anonymous."
       },
       "question2": {
-        "question": "Is Disclosurely compliant with GDPR and other regulations?",
-        "answer": "Yes, Disclosurely is built with compliance in mind. We're GDPR compliant and meet requirements for SOX, EU Whistleblowing Directive, and other major regulatory frameworks. All data is encrypted and stored securely in compliance with international data protection standards."
+        "question": "Does Disclosurely meet EU Whistleblowing Directive requirements?",
+        "answer": "Yes. The platform is built around the EU Whistleblowing Directive and UK whistleblowing protections under the Employment Rights Act. You get secure reporting channels, clear acknowledgement timelines, documented follow-up, and audit-ready records for regulators."
       },
       "question3": {
-        "question": "Can we customize the reporting portal?",
-        "answer": "Absolutely. You can add your company branding, customize the reporting form fields, set up specific categories for reports, and even use your own domain (on Professional and Enterprise plans). The portal can be tailored to match your organization's needs and culture."
+        "question": "Is it suitable for small and mid-sized organisations?",
+        "answer": "Yes. Disclosurely is designed for organisations with 50+ employees and scales from single-entity SMEs to larger groups. Pricing is transparent, and you can start with a 7-day free trial and add users or features as you grow."
       },
       "question4": {
-        "question": "How quickly can we get started?",
-        "answer": "Most organizations are up and running within 24 hours. After signing up, you can immediately customize your portal, invite team members, and start accepting reports. Our support team is available to help with setup and onboarding at no extra cost."
+        "question": "How does secure two-way messaging work?",
+        "answer": "All messages are encrypted end-to-end and stay inside the platform. Case handlers can request information and share updates with reporters without ever seeing or storing their identity. Reporters use their unique access code to read and reply; anonymity is maintained throughout."
       },
       "question5": {
-        "question": "What support is included?",
-        "answer": "All plans include email support and access to our comprehensive knowledge base. Professional plans include priority support with faster response times, while Enterprise customers receive dedicated support with SLA guarantees and optional on-site training."
+        "question": "Can the reporting portal be customised with our branding?",
+        "answer": "Yes. You can add your logo, colours, and branding to submission portals and notifications. On Pro and Enterprise plans you can use your own domain (CNAME) so the reporting URL sits on your site. White-label options are available for full brand control."
       },
       "question6": {
-        "question": "Can we cancel or change our plan anytime?",
-        "answer": "Yes, you can upgrade, downgrade, or cancel your subscription at any time. If you cancel, you'll retain access until the end of your billing period. We also offer a 7-day free trial so you can test all features before committing."
+        "question": "Where is data stored and how is it protected?",
+        "answer": "Data is stored in access-controlled, hardened environments. All content is protected with AES-256 encryption in transit and at rest. We are GDPR-aligned, with strict access controls, role-based permissions, and configurable retention so only authorised handlers can access case data."
+      },
+      "question7": {
+        "question": "How quickly can we get started?",
+        "answer": "Most organisations are live within 24 hours. After sign-up you can customise your portal, invite team members, and start accepting reports. Onboarding support is included at no extra cost."
       }
     },
     "cta": {
-      "title": "Ready to Strengthen Your Compliance Program?",
-      "description": "Not ready for a free trial or demo? Share your requirements with us, and we'll respond quickly to discuss how Disclosurely can support your organisation.",
-      "button": "Start Free Trial"
+      "title": "Ready to launch a secure whistleblowing channel?",
+      "description": "Start your free trial today or book a walkthrough with our team.",
+      "button": "Start Free Trial",
+      "bookDemo": "Book a Demo"
     }
   },
   "auth": {
@@ -362,23 +407,29 @@
   },
   "pricing": {
     "hero": {
-      "title": "Simple, Transparent Pricing",
-      "tagline": "Transparent Pricing Built For Business.",
-      "subtitle": "Choose the plan that's right for your organisation. Start with our seven day free trial and upgrade as you grow.",
-      "subtitle1": "7-day free trial • Unlimited reports included",
-      "subtitle2": "All plans include military-grade encryption, GDPR compliance, and real-time analytics. Choose the plan that matches your compliance needs and scale as you grow.",
+      "title": "Whistleblowing software pricing for teams of all sizes",
+      "tagline": "Whistleblowing & compliance",
+      "subtitle": "Choose the plan that's right for your organisation. Start with our free trial and upgrade as you grow.",
+      "subtitle1": "Start with secure anonymous reporting, case management, and built-in compliance tools. Upgrade as your reporting needs grow.",
+      "subtitle2": "14-day free trial, no credit card required. Change or upgrade plans anytime.",
       "startFreeTrial": "Start Free Trial"
     },
+    "reassurance": {
+      "freeTrial": "Free trial available",
+      "changePlans": "Change plans anytime",
+      "noHiddenFees": "No hidden fees",
+      "secureHosting": "Secure hosting included"
+    },
     "designedForBusinesses": {
-      "title": "Designed For Businesses Of All Sizes",
-      "description": "Whether you are a small organisation implementing whistleblower software for the first time or a larger group rolling it out across multiple entities, Disclosurely scales with you. Simple, transparent pricing and flexible workspaces make it easy to start small, prove value, and expand coverage as your reporting volumes and regulatory obligations grow.",
-      "bullet1": "Ideal for SMEs that need secure, compliant whistleblowing channels without enterprise-level complexity or setup costs.",
-      "bullet2": "Flexible for growing teams, with additional users, entities, and languages easy to add as your organisation evolves.",
-      "bullet3": "Ready for larger organisations, supporting structured case handling, audit trails, and reporting that meet the expectations of boards, regulators, and external advisers.",
-      "bullet4": "No long-term contracts, so you can align your whistleblowing spend with headcount and actual usage rather than committing to rigid enterprise deals.",
-      "bullet5": "Predictable monthly pricing that makes budgeting straightforward for finance teams while still delivering enterprise-grade security and compliance features.",
-      "bullet6": "Fast implementation with minimal IT overhead, allowing businesses of any size to launch a secure whistleblowing channel in days, not months.",
-      "imageAlt": "Designed For Businesses Of All Sizes"
+      "title": "What's included in every plan",
+      "description": "All plans include the essentials for secure, compliant whistleblowing.",
+      "bullet1": "Secure anonymous reporting",
+      "bullet2": "Case management and audit logs",
+      "bullet3": "Encrypted data handling",
+      "bullet4": "Hosted reporting portal",
+      "bullet5": "Email notifications",
+      "bullet6": "GDPR-conscious design",
+      "imageAlt": "What's included in every plan"
     },
     "trustIndicators": {
       "guarantee": {
@@ -408,30 +459,33 @@
       "starter": {
         "name": "Starter",
         "price": "£19.99",
-        "description": "Perfect for small organizations getting started"
+        "description": "Get started with anonymous reporting and case management.",
+        "bestFor": "Best for small organisations launching a secure reporting channel"
       },
       "pro": {
         "name": "Pro",
         "price": "£39.99",
-        "description": "For growing organizations with advanced needs"
+        "description": "Branded portals, secure messaging, AI triage, and workflow automation.",
+        "bestFor": "Best for growing teams that need branded portals, automation, and reporting insights"
       },
       "enterprise": {
         "name": "Enterprise",
         "price": "Custom",
-        "description": "For large organizations with bespoke requirements"
+        "description": "SSO, custom onboarding, advanced permissions and multi-team setups, dedicated support, and tailored hosting or data handling where needed.",
+        "bestFor": "Best for larger or multi-entity organisations with advanced security and rollout needs"
       }
     },
     "features": {
-      "unlimitedCases": "Unlimited cases",
-      "unlimitedStorage": "Unlimited storage",
-      "emailSupport": "Email Support",
+      "unlimitedCases": "Unlimited anonymous reports",
+      "unlimitedStorage": "Unlimited secure storage",
+      "emailSupport": "Email support with onboarding",
       "basicReporting": "Basic case management",
-      "messaging": "Two-way secure messaging",
-      "aiHelper": "AI case analysis",
-      "customBranding": "Custom branding",
+      "messaging": "Secure two-way reporter messaging",
+      "aiHelper": "AI case triage and risk scoring",
+      "customBranding": "Branded reporting portal",
       "customDomain": "1 custom domain",
-      "cname": "CNAME configuration",
-      "workflows": "Automated workflows",
+      "cname": "Custom domain (CNAME)",
+      "workflows": "Automated case workflows",
       "multipleCustomDomains": "Multiple custom domains",
       "teamManagement": "Unlimited team members",
       "prioritySupport": "Priority support",
@@ -479,7 +533,7 @@
     },
     "compare": {
       "title": "Compare All Features",
-      "subtitle": "See exactly what's included in each plan",
+      "subtitle": "See which plan is right for your business.",
       "headers": {
         "features": "Features",
         "starter": "Starter",
@@ -551,25 +605,42 @@
       "title": "Frequently Asked Questions",
       "trial": {
         "question": "Is there a free trial?",
-        "answer": "Yes, all plans come with a 7-day free trial so you can see how the platform works and how you can use it in your organisation."
+        "answer": "Yes. All plans include a 14-day free trial, no credit card required. You can explore the platform and see how it fits your organisation before committing."
       },
-      "limit": {
-        "question": "What's the difference between Starter and Pro?",
-        "answer": "Both plans include unlimited cases and storage. Pro adds AI case analysis (10x faster investigations), two-way secure messaging, custom branding, custom domains, and unlimited team members. Starter is perfect for getting started, Pro is for teams that need advanced features."
+      "includedInEveryPlan": {
+        "question": "What's included in every plan?",
+        "answer": "Every plan includes secure anonymous reporting, case management and audit logs, encrypted data handling, a hosted reporting portal, email notifications, and GDPR-conscious design. Upgrade for branded portals, secure two-way messaging, AI triage, and more."
       },
-      "change": {
-        "question": "Can I change plans later?",
-        "answer": "Absolutely! You can upgrade or downgrade your plan at any time from your dashboard."
+      "planFor50Plus": {
+        "question": "Which plan is right for a team with 50+ employees?",
+        "answer": "Pro is the right fit for most organisations with 50+ employees: it includes branded portals, secure messaging, AI triage, and workflow automation. Choose Enterprise if you need multi-entity rollout, SSO, custom onboarding, or dedicated support."
       },
-      "security": {
-        "question": "What security certifications do you have?",
-        "answer": "We're GDPR compliant, working towards ISO 27001 and SOX compliance."
+      "upgradeDowngrade": {
+        "question": "Can we upgrade or downgrade later?",
+        "answer": "Yes. You can change your plan at any time from your dashboard. Upgrade when you need more features; downgrade if your needs change. No long-term lock-in."
+      },
+      "onboardingSupport": {
+        "question": "Do you offer onboarding support?",
+        "answer": "Yes. All plans include email support with onboarding. Pro includes priority support; Enterprise includes dedicated support and custom onboarding where needed."
+      },
+      "anonymousOnAllPlans": {
+        "question": "Is anonymous reporting included on all plans?",
+        "answer": "Yes. Secure anonymous reporting and a hosted reporting portal are included on every plan. Reporters can submit concerns without revealing their identity."
+      },
+      "securityFeatures": {
+        "question": "What security features are included?",
+        "answer": "All plans include encryption (AES-GCM), GDPR-aligned data handling, audit trails, and role-based access. Enterprise adds SSO and advanced authentication options. We are GDPR compliant and work towards ISO 27001 and SOX alignment."
+      },
+      "hiddenCosts": {
+        "question": "Are there any hidden costs?",
+        "answer": "No. Pricing is clear per plan; there are no hidden fees. Optional add-ons, if any, are stated explicitly. Secure hosting is included."
       }
     },
     "cta": {
-      "ready": "Ready to Get Started?",
-      "join": "Join organizations worldwide who trust Disclosurely for secure whistleblowing.",
+      "ready": "Ready to launch a secure whistleblowing channel?",
+      "join": "Start your free trial or talk to our team about the right plan for your organisation.",
       "startTrial": "Start Free Trial",
+      "talkToTeam": "Talk to Our Team",
       "contactSales": "Contact Sales"
     }
   },
@@ -1361,5 +1432,130 @@
     "typeReply": "Type your reply...",
     "enterFirstName": "Enter your first name",
     "enterLastName": "Enter your last name"
+  },
+  "directive": {
+    "hero": {
+      "badge": "EU Whistleblowing Directive",
+      "title": "EU Whistleblowing Directive Compliance, Made Practical",
+      "subtitle": "Set up secure anonymous reporting channels, meet required response timelines, and manage cases with a whistleblowing system built for EU organisations.",
+      "startFreeTrial": "Start Free Trial",
+      "bookDemo": "Book a Demo",
+      "reassurance": {
+        "anonymous": "Anonymous reporting",
+        "secureCase": "Secure case handling",
+        "sevenDay": "7-day acknowledgement support",
+        "ninetyDay": "90-day follow-up tracking",
+        "multilingual": "Multilingual portals"
+      }
+    },
+    "whoComplies": {
+      "title": "Who needs to comply?",
+      "card1Title": "Organisations with 50+ employees",
+      "card1Desc": "Private and public sector entities above the threshold must provide internal reporting channels.",
+      "card2Title": "Public sector bodies",
+      "card2Desc": "Many public bodies are in scope regardless of headcount.",
+      "card3Title": "Companies operating across EU jurisdictions",
+      "card3Desc": "Cross-border operations must comply in each Member State where they operate.",
+      "card4Title": "Internal reporting owners",
+      "card4Desc": "Designated persons responsible for safe channels and case handling."
+    },
+    "requirements": {
+      "title": "What does the EU Whistleblowing Directive require?",
+      "subtitle": "A practical summary of key obligations.",
+      "item1": "Secure internal reporting channels",
+      "item2": "Confidentiality for reporters",
+      "item3": "Acknowledgement within 7 days",
+      "item4": "Follow-up within 3 months",
+      "item5": "Protection against retaliation",
+      "item6": "Secure record keeping and controlled access",
+      "item7": "Multilingual and accessible reporting where relevant"
+    },
+    "risks": {
+      "title": "Why a compliant reporting channel matters",
+      "item1Title": "Regulatory exposure",
+      "item1Desc": "Fines and enforcement action where channels or processes fall short.",
+      "item2Title": "Internal reporting failures",
+      "item2Desc": "Concerns go unreported or unaddressed without safe, trusted channels.",
+      "item3Title": "Reputational harm",
+      "item3Desc": "Public or regulatory scrutiny when wrongdoing surfaces without proper handling.",
+      "item4Title": "Lower employee trust",
+      "item4Desc": "Staff lose confidence in reporting systems if they are unclear or insecure.",
+      "item5Title": "Operational pain",
+      "item5Desc": "Manual or ad hoc processes create delay, inconsistency, and audit risk."
+    },
+    "systemNeeds": {
+      "title": "What a compliant whistleblowing system should include",
+      "subtitle": "Capabilities that align with Directive obligations.",
+      "card1Title": "Secure anonymous reporting channels",
+      "card1Desc": "Web and optional phone intake with encryption and no identity capture.",
+      "card1Bullet1": "Anonymous intake with secure messaging",
+      "card1Bullet2": "End-to-end encryption",
+      "card1Bullet3": "True anonymity throughout",
+      "card2Title": "Secure two-way communication",
+      "card2Desc": "Follow-up with reporters without revealing their identity.",
+      "card2Bullet1": "Secure messaging with case numbers and PINs",
+      "card2Bullet2": "Keeps reporters engaged and informed",
+      "card2Bullet3": "Maintains anonymity while gathering evidence",
+      "card3Title": "Case management and audit-ready records",
+      "card3Desc": "Structured workflows and documented handling.",
+      "card3Bullet1": "Automated routing and deadlines",
+      "card3Bullet2": "Evidence storage with audit trails",
+      "card3Bullet3": "Retention and access controls",
+      "card4Title": "Multilingual support",
+      "card4Desc": "Reporting in multiple languages for EU teams.",
+      "card4Bullet1": "Reporting in 35+ languages",
+      "card4Bullet2": "Native language for every employee",
+      "card4Bullet3": "Critical for multinational operations",
+      "card5Title": "Role-based access and permissions",
+      "card5Desc": "Only designated handlers see sensitive reports.",
+      "card5Bullet1": "Granular permissions",
+      "card5Bullet2": "Access logging",
+      "card5Bullet3": "Audit-ready oversight",
+      "card6Title": "Data protection controls",
+      "card6Desc": "GDPR-aligned encryption, retention, and access.",
+      "card6Bullet1": "Encrypted storage in certified facilities",
+      "card6Bullet2": "Automated retention management",
+      "card6Bullet3": "Full audit trail for regulators"
+    },
+    "howWeHelp": {
+      "title": "How Disclosurely supports EU whistleblowing compliance",
+      "subtitle": "Purpose-built for Directive requirements.",
+      "item1": "Anonymous reporting intake with encrypted forms",
+      "item2": "Encrypted case handling and two-way messaging",
+      "item3": "Role-based case access for designated handlers",
+      "item4": "7-day and 90-day workflow support and reminders",
+      "item5": "Multilingual submission portals",
+      "item6": "Audit-ready records and exportable evidence",
+      "item7": "Privacy-first design and data protection",
+      "item8": "AI-powered redaction and private AI gateway"
+    },
+    "midCta": {
+      "title": "Ready to launch a compliant whistleblowing channel?",
+      "startFreeTrial": "Start Free Trial",
+      "talkToTeam": "Talk to Our Team"
+    },
+    "impact": {
+      "title": "The operational value of getting this right",
+      "card1Title": "Risk mitigation",
+      "card1Desc": "Early detection, documented handling, and reduced exposure to fines and enforcement.",
+      "card2Title": "Operational efficiency",
+      "card2Desc": "Automated workflows and clear timelines instead of manual, ad hoc processes.",
+      "card3Title": "Trust and culture",
+      "card3Desc": "Employees feel safe to report; compliance is visible and credible."
+    },
+    "gettingStarted": {
+      "title": "Getting started",
+      "item1": "Set up secure reporting channels",
+      "item2": "Configure Directive-aligned workflows",
+      "item3": "Train investigation teams",
+      "item4": "Communicate the channel to staff",
+      "item5": "Monitor and refine processes"
+    },
+    "finalCta": {
+      "title": "Launch a compliant whistleblowing channel in days",
+      "subtitle": "Guided onboarding, secure reporting workflows, and built-in compliance support for EU organisations.",
+      "startFreeTrial": "Start Free Trial",
+      "bookDemo": "Book a Demo"
+    }
   }
 }

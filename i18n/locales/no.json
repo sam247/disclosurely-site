@@ -167,28 +167,36 @@
   },
   "landing": {
     "hero": {
-      "title1": "Overholdelse av EUs varslerdirektiv",
-      "title2": "AI-Drevne Arbeidsflyter",
+      "title1": "Sikker varslersoftware for UK- og EU-compliance",
+      "mobilePhrase": "Anonym rapportering for compliance-team",
       "typingPhrases": [
-        "Anonyme rapporteringskanaler",
-        "Sikker saksbehandling",
-        "Revisjonsklare undersøkelseslogger",
-        "Kryptert varslerkommunikasjon",
-        "Flerspråklige rapporteringsportaler",
-        "AI-assistert saksanalyse"
+        "Anonym rapportering",
+        "Kryptert saksbehandling",
+        "Revisjonsklar compliance",
+        "Sikker toveiskommunikasjon"
       ],
       "badge": "Military Grade AES-GCM Encryption",
-      "subtitle": "Sikker anonym rapportering og saksbehandling for organisasjoner med 50+ ansatte. Disclosurely leverer et compliant varslersystem med krypterte rapporteringskanaler, revisjonsklar saksbehandling og flerspråklige innsendingsportaler.",
+      "subtitle": "Gi ansatte en sikker, anonym måte å rapportere bekymringer. Disclosurely leverer krypterte kanaler, strukturert saksbehandling og revisjonsklar dokumentasjon — tilpasset EU-direktivet og UK-krav.",
       "bullets": [
-        "Anonymt rapporteringsportal",
+        "Anonymt mottakelsesportal",
         "Manipulasjonssikre revisjonsspor",
-        "Sikker kommunikasjon for etterforskere",
-        "AI-assistert saksanalyse"
+        "Kryptert kommunikasjon for etterforskere",
+        "AI-drevet sakstriage"
       ],
-      "startFreeTrial": "Opprett rapporteringskanalen din",
+      "startFreeTrial": "Start gratis prøveperiode",
+      "bookDemo": "Book en demo",
       "viewPricing": "Se priser"
     },
     "trusted": "Stolt av hundrevis av bedrifter",
+    "trustBar": {
+      "items": [
+        "Anonym rapportering",
+        "Ende-til-ende kryptert",
+        "GDPR-bevisst design",
+        "EU-direktiv i tråd",
+        "Sikker toveiskommunikasjon"
+      ]
+    },
     "features": {
       "title": "Alt du trenger for sikker rapportering",
       "subtitle": "Vår plattform gir omfattende verktøy for å administrere varslerrapporter med fullstendig konfidensialitet og compliance.",
@@ -322,15 +330,52 @@
       "question6": {
         "question": "Kan vi avbryte eller endre planen vår når som helst?",
         "answer": "Ja, du kan oppgradere, nedgradere eller avbryte abonnementet ditt når som helst. Hvis du avbryter, beholder du tilgang til slutten av faktureringsperioden din. Vi tilbyr også en 14-dagers gratis prøveperiode så du kan teste alle funksjoner før du forplikter deg."
+      },
+      "question7": {
+        "question": "Hvor raskt kan vi komme i gang?",
+        "answer": "De fleste organisasjoner er live innen 24 timer. Etter registrering kan du tilpasse portalen, invitere teamet og motta rapporter. Onboarding er inkludert."
       }
     },
     "cta": {
-      "title": "Klar til å styrke compliance-programmet ditt?",
-      "description": "Ikke klar for en gratis prøveperiode eller demo? Del kravene dine med oss og vi svarer raskt for å diskutere hvordan Disclosurely kan støtte din organisasjon.",
-      "button": "Start gratis prøveperiode"
+      "title": "Klar til å lansere en sikker varslerkanal?",
+      "description": "Start gratis prøveperiode i dag eller book en demo med teamet vårt.",
+      "button": "Start gratis prøveperiode",
+      "bookDemo": "Book en demo"
     },
     "highlights": {
-      "tag": "Security & Compliance"
+      "tag": "Security & Compliance",
+      "sectionTitle": "Disclosurely-funksjoner",
+      "sectionSubtitle": "Omfattende verktøy for sikker anonym rapportering, compliance og saksbehandling",
+      "anonymousReporting": {
+        "additionalContent": "Ansatte kan rapportere uregelmessigheter, etikkbrudd eller andre bekymringer helt anonymt via et nettleserbasert skjema. Kryptering beskytter identitet og compliance; saker flyter inn i et sentralt arbeidsområde med revisjonsspor og klare frister.",
+        "bullet1": "Ingen datainnsamling om rapportere",
+        "bullet2": "Anonym oppfølgingsmelding",
+        "bullet3": "Flerspråklige innsendingsportaler"
+      },
+      "encryption": {
+        "additionalContent": "Hver rapport i Disclosurely er beskyttet med AES-256-kryptering, samme standard som banker og myndigheter. Meldinger, saksnotater og vedlegg forblir konfidensielle fra innsending til avslutning.",
+        "bullet1": "AES-256 fra innsending til avslutning",
+        "bullet2": "Krypterte filvedlegg",
+        "bullet3": "Rollebasert dekrypteringstilgang"
+      },
+      "compliance": {
+        "additionalContent": "Overholdelse av UK- og EU-varslingsregler med programvare basert på reelle juridiske krav. Plattformen støtter EU-direktivet og UK Employment Rights Act.",
+        "bullet1": "EU-direktiv og UK ERA-overholdende arbeidsflyter",
+        "bullet2": "GDPR-klar databehandling",
+        "bullet3": "Eksporterbare auditpakker for tilsyn"
+      },
+      "messaging": {
+        "additionalContent": "Konfidensiell, anonym dialog med varslere fra første rapport til resultat. Sikker melding i plattformen lar etterforskere be om informasjon og dele oppdateringer uten å avsløre identitet.",
+        "bullet1": "Ende-til-ende krypterte samtaler",
+        "bullet2": "Anonymitet bevart hele veien",
+        "bullet3": "Sanntidsvarsling til etterforskere"
+      },
+      "aiPowered": {
+        "additionalContent": "Personvernførst AI-analyse med automatisk PII-redaksjon. Assistenten gjennomgår innkommende saker, finner mønstre og fremhever risiko.",
+        "bullet1": "AI med automatisk PII-redaksjon",
+        "bullet2": "Risikovurdering og saksprioritering",
+        "bullet3": "Mønstergjenkjenning på tvers av rapporter"
+      }
     },
     "branding": {
       "tag": "Branding & Identity",
@@ -363,40 +408,52 @@
   },
   "pricing": {
     "hero": {
-      "title": "Enkle, transparente priser",
-      "subtitle": "Velg riktig plan for din organisasjon. Start med vår sjudagers gratis prøveperiode og oppgrader når du vokser.",
-      "tagline": "Transparent Pricing Built For Business.",
-      "subtitle1": "7-dagers gratis prøveperiode • Ubegrensede rapporter inkludert",
-      "subtitle2": "Alle planer inkluderer militærgrad kryptering, GDPR-etterlevelse og sanntidsanalyse. Velg planen som matcher dine compliance-behov og skaler etter hvert som du vokser.",
+      "title": "Priser på varslingsprogramvare for team av alle størrelser",
+      "tagline": "Varsling og compliance",
+      "subtitle": "Velg plan som passer din organisasjon. Gratis prøveperiode, bytt når som helst.",
+      "subtitle1": "Start med sikker anonym rapportering, saksbehandling og innebygde compliance-verktøy. Oppgrader når behovet vokser.",
+      "subtitle2": "14 dagers gratis prøveperiode, ingen kort. Bytt eller oppgrader plan når som helst.",
       "startFreeTrial": "Start gratis prøveperiode"
     },
+    "reassurance": {
+      "freeTrial": "Gratis prøveperiode tilgjengelig",
+      "changePlans": "Bytt plan når som helst",
+      "noHiddenFees": "Ingen skjulte gebyrer",
+      "secureHosting": "Sikker hosting inkludert"
+    },
     "designedForBusinesses": {
-      "title": "Designet for bedrifter av alle størrelser",
-      "description": "Enten du er en liten organisasjon som implementerer varslingssoftware for første gang eller en større gruppe som ruller det ut på tvers av flere enheter, skalerer Disclosurely med deg. Enkle, transparente priser og fleksible arbeidsområder gjør det enkelt å starte smått, bevise verdi og utvide dekningen når rapporteringsvolumene og regulatoriske forpliktelser vokser.",
-      "bullet1": "Ideelt for små og mellomstore bedrifter som trenger sikre, kompatible varslingskanaler uten bedriftsnivå kompleksitet eller oppsettkostnader.",
-      "bullet2": "Fleksibelt for voksende team, med ekstra brukere, enheter og språk som er enkle å legge til når organisasjonen din utvikler seg.",
-      "bullet3": "Klar for større organisasjoner, med strukturert saksbehandling, revisjonsspor og rapportering som møter forventningene til styre, regulatorer og eksterne rådgivere.",
-      "imageAlt": "Designet for bedrifter av alle størrelser"
+      "title": "Hva er inkludert i alle planer",
+      "description": "Alle planer inneholder det viktigste for sikker, compliant varsling.",
+      "bullet1": "Sikker anonym rapportering",
+      "bullet2": "Saksbehandling og revisjonslogger",
+      "bullet3": "Kryptert databehandling",
+      "bullet4": "Hostet rapporteringsportal",
+      "bullet5": "E-postvarsler",
+      "bullet6": "GDPR-bevisst design",
+      "imageAlt": "Hva er inkludert i alle planer"
     },
     "plans": {
       "mostPopular": "Mest populær",
       "perMonth": "/måned",
+      "perYear": "/år",
       "starter": {
         "name": "Starter",
         "price": "£19.99",
-        "description": "Perfekt for små organisasjoner som starter"
+        "description": "Kom i gang med anonym rapportering og saksbehandling.",
+        "bestFor": "Små organisasjoner som lanserer en sikker rapporteringskanal"
       },
       "pro": {
         "name": "Pro",
         "price": "£39.99",
-        "description": "For voksende organisasjoner med avanserte behov"
+        "description": "Merkevareportaler, sikre meldinger, AI-triage og workflow-automatisering.",
+        "bestFor": "Voksende team som trenger merkevareportaler, automatisering og innsikt"
       },
       "enterprise": {
         "name": "Enterprise",
         "price": "Tilpasset",
-        "description": "For store organisasjoner med skreddersydde krav"
-      },
-      "perYear": "/year"
+        "description": "SSO, tilpasset onboarding, avanserte rettigheter og multi-team-oppsett, dedikert support og hosting eller databehandling etter behov.",
+        "bestFor": "Større eller flerenhetsorganisasjoner med avansert sikkerhet og utrulling"
+      }
     },
     "features": {
       "casesLimit": "5 saker/måned",
@@ -425,25 +482,42 @@
       "title": "Vanlige spørsmål",
       "trial": {
         "question": "Finnes det en gratis prøveperiode?",
-        "answer": "Ja, alle planer kommer med en 7-dagers gratis prøveperiode så du kan se hvordan plattformen fungerer. Ingen kredittkort kreves."
+        "answer": "Ja. Alle planer har 14 dagers gratis prøveperiode, ingen kort. Du kan prøve plattformen før du forplikter deg."
       },
-      "limit": {
-        "question": "Hva skjer hvis jeg når sakgrensen min på Starter-planen?",
-        "answer": "Hvis du overskrider din månedlige sakallokering, vil du bli varslet i dashbordet. Du kan oppgradere til Pro-planen for ubegrensede saker eller vente til neste måned."
+      "includedInEveryPlan": {
+        "question": "Hva er inkludert i alle planer?",
+        "answer": "Hver plan inkluderer sikker anonym rapportering, saksbehandling og revisjonslogger, kryptert databehandling, hostet portal, e-postvarsler og GDPR-bevisst design. Pro legger til merkevareportaler, sikre meldinger, AI-triage og mer."
       },
-      "change": {
-        "question": "Kan jeg endre plan senere?",
-        "answer": "Absolutt! Du kan oppgradere eller nedgradere planen din når som helst fra dashbordet ditt."
+      "planFor50Plus": {
+        "question": "Hvilken plan passer for et team med 50+ ansatte?",
+        "answer": "Pro passer for de fleste organisasjoner med 50+: merkevareportaler, sikre meldinger, AI-triage og automatisering. Velg Enterprise for flerenhetsutrulling, SSO, tilpasset onboarding eller dedikert support."
       },
-      "security": {
-        "question": "Hvilke sikkerhetssertifiseringer har dere?",
-        "answer": "Vi er GDPR-kompatible og jobber mot ISO 27001- og SOX-kompatibilitet."
+      "upgradeDowngrade": {
+        "question": "Kan vi oppgradere eller nedgradere senere?",
+        "answer": "Ja. Du kan endre plan når som helst fra dashbordet. Ingen langsiktige forpliktelser."
+      },
+      "onboardingSupport": {
+        "question": "Tilbyr dere onboarding-støtte?",
+        "answer": "Ja. Alle planer har e-poststøtte med onboarding. Pro har prioritetsstøtte; Enterprise har dedikert støtte og tilpasset onboarding etter behov."
+      },
+      "anonymousOnAllPlans": {
+        "question": "Er anonym rapportering inkludert i alle planer?",
+        "answer": "Ja. Sikker anonym rapportering og hostet portal er inkludert i alle planer. Varslere kan sende inn uten å avsløre identitet."
+      },
+      "securityFeatures": {
+        "question": "Hvilke sikkerhetsfunksjoner er inkludert?",
+        "answer": "Alle planer: kryptering (AES-GCM), GDPR-samsvar databehandling, revisjonslogger og rollebasert tilgang. Enterprise legger til SSO og avanserte innloggingsvalg. Vi er GDPR-kompatible og jobber mot ISO 27001 og SOX."
+      },
+      "hiddenCosts": {
+        "question": "Er det skjulte kostnader?",
+        "answer": "Nei. Prisen er tydelig per plan; ingen skjulte gebyrer. Valgfrie tillegg oppgis eksplisitt. Sikker hosting er inkludert."
       }
     },
     "cta": {
-      "ready": "Klar til å komme i gang?",
-      "join": "Bli med organisasjoner verden over som stoler på Disclosurely for sikker rapportering.",
+      "ready": "Klar til å lansere en sikker varslingskanal?",
+      "join": "Start gratis prøveperiode eller snakk med teamet vårt om riktig plan.",
       "startTrial": "Start gratis prøveperiode",
+      "talkToTeam": "Snakk med teamet vårt",
       "contactSales": "Kontakt salg"
     },
     "trustIndicators": {
@@ -525,7 +599,7 @@
     },
     "compare": {
       "title": "Compare All Features",
-      "subtitle": "See exactly what's included in each plan",
+      "subtitle": "Se hvilken plan som passer for virksomheten din.",
       "headers": {
         "features": "Features",
         "starter": "Starter",
@@ -1452,6 +1526,131 @@
       },
       "securityTitle": "Security and compliance",
       "securityDescription": "AES-GCM encryption, access logging, and continuous monitoring help meet GDPR, ISO 27001, and sector frameworks."
+    }
+  },
+  "directive": {
+    "hero": {
+      "badge": "EUs direktiv om beskyttelse av varslere",
+      "title": "Overholdelse av EUs varslerdirektiv – praktisk gjort",
+      "subtitle": "Sett opp sikre anonyme varslingskanaler, overhold krav til svarfrister og håndter saker med et system for EU-organisasjoner.",
+      "startFreeTrial": "Start gratis prøveperiode",
+      "bookDemo": "Book en demo",
+      "reassurance": {
+        "anonymous": "Anonym varsling",
+        "secureCase": "Sikker saksbehandling",
+        "sevenDay": "Kvittering innen 7 dager",
+        "ninetyDay": "Oppfølging innen 90 dager",
+        "multilingual": "Flerspråklige portaler"
+      }
+    },
+    "whoComplies": {
+      "title": "Hvem må overholde direktivet?",
+      "card1Title": "Organisasjoner med 50+ ansatte",
+      "card1Desc": "Offentlige og private enheter over terskelen må tilby interne varslingskanaler.",
+      "card2Title": "Offentlige myndigheter",
+      "card2Desc": "Mange offentlige enheter er omfattet uavhengig av størrelse.",
+      "card3Title": "Selskaper med virksomhet i flere EU-land",
+      "card3Desc": "Tverrgående virksomhet krever overholdelse i hvert medlemsland.",
+      "card4Title": "Ansvarlige for intern varsling",
+      "card4Desc": "Utnemte personer for sikre kanaler og saksbehandling."
+    },
+    "requirements": {
+      "title": "Hva krever EUs varslerdirektiv?",
+      "subtitle": "Praktisk oppsummering av sentrale krav.",
+      "item1": "Sikre interne varslingskanaler",
+      "item2": "Konfidensialitet for varslere",
+      "item3": "Kvittering innen 7 dager",
+      "item4": "Oppfølging innen 3 måneder",
+      "item5": "Beskyttelse mot represalier",
+      "item6": "Sikker journalføring og kontrollert tilgang",
+      "item7": "Flerspråklig og tilgjengelig varsling der relevant"
+    },
+    "risks": {
+      "title": "Hvorfor en compliant varslingskanal betyr noe",
+      "item1Title": "Tilsynsrisiko",
+      "item1Desc": "Bøter og håndhevelse ved utilstrekkelige kanaler eller prosesser.",
+      "item2Title": "Svikt i intern varsling",
+      "item2Desc": "Uten sikre, troverdige kanaler blir varsler ikke gitt eller behandlet.",
+      "item3Title": "Rykte skade",
+      "item3Desc": "Offentlig eller tilsynskritikk når forhold kommer frem uten skikkelig håndtering.",
+      "item4Title": "Mindre tillit blant ansatte",
+      "item4Desc": "Ansatte mister tilliten hvis systemer er uklare eller usikre.",
+      "item5Title": "Operasjonell belastning",
+      "item5Desc": "Manuelle eller ad hoc-prosesser gir forsinkelser, inkonsistens og revisjonsrisiko."
+    },
+    "systemNeeds": {
+      "title": "Hva et compliant varslersystem bør inneholde",
+      "subtitle": "Funksjoner i tråd med direktivet.",
+      "card1Title": "Sikre anonyme varslingskanaler",
+      "card1Desc": "Web- og valgfri telefoningang med kryptering og uten identitetsregistrering.",
+      "card1Bullet1": "Anonym mottak med sikker melding",
+      "card1Bullet2": "Ende-til-ende-kryptering",
+      "card1Bullet3": "Ekte anonymitet gjennom hele forløpet",
+      "card2Title": "Sikker toveiskommunikasjon",
+      "card2Desc": "Oppfølging med varslere uten å avsløre deres identitet.",
+      "card2Bullet1": "Sikker melding med saksnummer og PIN",
+      "card2Bullet2": "Holder varslere engasjert og informert",
+      "card2Bullet3": "Bevarer anonymitet under innsamling av bevis",
+      "card3Title": "Saksstyring og revisjonsklare opptegnelser",
+      "card3Desc": "Strukturerte arbeidsflyter og dokumentert håndtering.",
+      "card3Bullet1": "Automatisk ruting og frister",
+      "card3Bullet2": "Bevislagring med revisjonsspor",
+      "card3Bullet3": "Oppbevaring og tilgangskontroll",
+      "card4Title": "Flerspråklig støtte",
+      "card4Desc": "Varsling på flere språk for EU-team.",
+      "card4Bullet1": "Varsling på mer enn 35 språk",
+      "card4Bullet2": "Morsmål for hver ansatt",
+      "card4Bullet3": "Avgjørende for multinasjonale operasjoner",
+      "card5Title": "Rollebasert tilgang og tillatelser",
+      "card5Desc": "Kun utpekte behandlere ser sensitive varsler.",
+      "card5Bullet1": "Granulære tillatelser",
+      "card5Bullet2": "Tilgangslogging",
+      "card5Bullet3": "Revisjonsklart overblikk",
+      "card6Title": "Databeskyttelseskontroller",
+      "card6Desc": "GDPR-overensstemmende kryptering, oppbevaring og tilgang.",
+      "card6Bullet1": "Kryptert lagring i sertifiserte fasiliteter",
+      "card6Bullet2": "Automatisert oppbevaringsstyring",
+      "card6Bullet3": "Full revisjonsspor for tilsynsmyndigheter"
+    },
+    "howWeHelp": {
+      "title": "Slik støtter Disclosurely EU varsleroverholdelse",
+      "subtitle": "Designet for direktivets krav.",
+      "item1": "Anonym varslingsmottak med krypterte skjemaer",
+      "item2": "Kryptert saksbehandling og toveiskommunikasjon",
+      "item3": "Rollebasert sakstilgang for utpekte behandlere",
+      "item4": "Arbeidsflyt-støtte og påminnelser for 7 og 90 dager",
+      "item5": "Flerspråklige varslingsportaler",
+      "item6": "Revisjonsklare opptegnelser og eksporterbare bevis",
+      "item7": "Personvern-first design",
+      "item8": "AI-støttet redigering og privat AI-gateway"
+    },
+    "midCta": {
+      "title": "Klar til å lansere en compliant varslingskanal?",
+      "startFreeTrial": "Start gratis prøveperiode",
+      "talkToTeam": "Snakk med vårt team"
+    },
+    "impact": {
+      "title": "Den operasjonelle verdien av å gjøre det riktig",
+      "card1Title": "Risikoreduksjon",
+      "card1Desc": "Tidlig oppdaget, dokumentert håndtering og mindre eksponering overfor bøter.",
+      "card2Title": "Operasjonell effektivitet",
+      "card2Desc": "Automatiserte arbeidsflyter og klare frister i stedet for manuelle eller ad hoc-prosesser.",
+      "card3Title": "Tillit og kultur",
+      "card3Desc": "Ansatte tør varsle; overholdelse er synlig og troverdig."
+    },
+    "gettingStarted": {
+      "title": "Kom i gang",
+      "item1": "Sett opp sikre varslingskanaler",
+      "item2": "Konfigurer arbeidsflyter i tråd med direktivet",
+      "item3": "Trening av undersøkelses team",
+      "item4": "Kommuniser kanalen til personalet",
+      "item5": "Overvåk og finpuss prosesser"
+    },
+    "finalCta": {
+      "title": "Lanser en compliant varslingskanal på få dager",
+      "subtitle": "Guidet onboarding, sikre varslingsarbeidsflyter og innebygd compliance-støtte for EU-organisasjoner.",
+      "startFreeTrial": "Start gratis prøveperiode",
+      "bookDemo": "Book en demo"
     }
   }
 }

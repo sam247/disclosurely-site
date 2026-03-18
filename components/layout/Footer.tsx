@@ -46,10 +46,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href={`${langPrefix}/compliance-software`}
+                  href={`${langPrefix}/whistleblowing-directive`}
                   className="text-gray-400 transition-colors hover:text-white"
                 >
-                  Compliance Software
+                  EU Whistleblowing Directive
                 </Link>
               </li>
               <li>

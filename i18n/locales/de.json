@@ -15,70 +15,78 @@
   },
   "landing": {
     "hero": {
-      "title1": "EU-Hinweisgeberrichtlinie Konformität",
-      "title2": "KI-Gestützten Workflows",
+      "title1": "Sichere Hinweisgeber-Software für UK- und EU-Compliance",
+      "mobilePhrase": "Anonymes Meldewesen für Compliance-Teams",
       "typingPhrases": [
-        "Anonyme Meldekanäle",
-        "Sichere Fallverwaltung",
-        "Prüffähige Untersuchungsprotokolle",
-        "Verschlüsselte Hinweisgeber-Kommunikation",
-        "Mehrsprachige Meldeportale",
-        "KI-gestützte Fallanalyse"
+        "Anonyme Meldungen",
+        "Verschlüsselte Fallverwaltung",
+        "Prüffähige Compliance",
+        "Sichere Zwei-Wege-Kommunikation"
       ],
       "badge": "Military Grade AES-GCM Encryption",
-      "subtitle": "Sichere anonyme Meldungen und Fallverwaltung für Organisationen mit 50+ Mitarbeitern. Disclosurely bietet ein konformes Hinweisgebersystem mit verschlüsselten Meldekanälen, prüffähigem Fallmanagement und mehrsprachigen Einreichungsportalen.",
+      "subtitle": "Mitarbeitern eine sichere, anonyme Möglichkeit geben, Bedenken zu melden. Disclosurely bietet verschlüsselte Meldekanäle, strukturiertes Fallmanagement und prüffähige Aufzeichnungen – für EU-Hinweisgeberrichtlinie und UK-Anforderungen.",
       "bullets": [
-        "Anonymes Meldeportal",
+        "Anonymes Aufnahmeportal",
         "Manipulationssichere Prüfpfade",
-        "Sichere Ermittler-Kommunikation",
-        "KI-gestützte Fallanalyse"
+        "Verschlüsselte Ermittler-Kommunikation",
+        "KI-gestützte Falltriage"
       ],
-      "startFreeTrial": "Meldekanal einrichten",
+      "startFreeTrial": "Kostenlose Testversion starten",
+      "bookDemo": "Demo buchen",
       "viewPricing": "Preise ansehen"
     },
     "trusted": "Vertraut von hunderten Unternehmen",
+    "trustBar": {
+      "items": [
+        "Anonyme Meldungen",
+        "Ende-zu-Ende verschlüsselt",
+        "DSGVO-bewusste Gestaltung",
+        "EU-Richtlinie konform",
+        "Sichere Zwei-Wege-Kommunikation"
+      ]
+    },
     "features": {
-      "title": "Alles für sicheres Melden",
-      "subtitle": "Unsere Plattform bietet umfassende Tools zur Verwaltung von Hinweisgeberberichten mit vollständiger Vertraulichkeit und Compliance.",
+      "title": "Für Compliance-Teams",
+      "subtitle": "Tools zur Verwaltung von Hinweisgeberberichten mit vollständiger Vertraulichkeit, Prüfpfaden und regulatorischer Ausrichtung.",
       "anonymousReporting": {
         "title": "Anonyme Meldungen",
-        "description": "Vollständige Anonymität für Hinweisgeber mit verschlüsselten Einreichungen und sicherem Identitätsschutz."
+        "description": "Verschlüsselte, browserbasierte Aufnahmeformulare ohne Datenerfassung zu Meldern. Kein IP-Tracking, kein Geräte-Fingerprinting."
       },
       "secureMessaging": {
-        "title": "Sichere Nachrichtenübermittlung",
-        "description": "Bidirektionale verschlüsselte Kommunikation zwischen Hinweisgebern und Ermittlern unter Wahrung der Anonymität."
+        "title": "Verschlüsselte Zwei-Wege-Kommunikation",
+        "description": "Sichere Kommunikation mit Meldern ohne Anonymitätsbruch. Alle Nachrichten Ende-zu-Ende verschlüsselt."
       },
       "caseManagement": {
         "title": "Fallverwaltung",
-        "description": "Umfassendes Dashboard zum Verfolgen, Untersuchen und Lösen von Fällen mit vollständigen Audit-Trails."
+        "description": "Fälle verfolgen, untersuchen und abschließen mit strukturierten Abläufen, Fristen und manipulationssicheren Prüfpfaden."
       },
       "multiUserAccess": {
-        "title": "Mehrbenutzer-Zugriff",
-        "description": "Rollenbasierte Berechtigungen für Rechts-, HR- und Compliance-Teams mit kontrollierten Zugriffsebenen."
+        "title": "Rollenbasierte Zugriffskontrolle",
+        "description": "Granulare Berechtigungen für Compliance, Ermittler, HR und Recht – mit klarer Aufgabentrennung."
       },
       "regulatoryCompliance": {
-        "title": "Regulatorische Compliance",
-        "description": "Integrierte Compliance mit DSGVO, SOX und anderen regulatorischen Anforderungen branchenübergreifend."
+        "title": "EU- und UK-Compliance",
+        "description": "Ausgerichtet auf EU-Hinweisgeberrichtlinie, UK Employment Rights Act und DSGVO-Datenschutz."
       },
       "enterpriseSecurity": {
-        "title": "Unternehmenssicherheit",
-        "description": "Verschlüsselung auf Bankniveau, sicheres Hosting und umfassende Datenschutzmaßnahmen."
+        "title": "Verschlüsselung auf Unternehmensniveau",
+        "description": "AES-256-Verschlüsselung in Ruhe und Übertragung, kontrolliertes Hosting und umfassender Datenschutz."
       }
     },
     "howItWorks": {
       "title": "Wie Es Funktioniert",
-      "subtitle": "Starten Sie mit Disclosurely in drei einfachen Schritten",
+      "subtitle": "Von der Einrichtung bis prüffähig in drei Schritten",
       "step1": {
-        "title": "Richten Sie Ihr Portal Ein",
-        "description": "Erstellen Sie Ihr Konto und passen Sie Ihr Meldeportal in Minuten an. Fügen Sie Ihr Branding hinzu, richten Sie Benachrichtigungseinstellungen ein und konfigurieren Sie den Teamzugriff."
+        "title": "Meldekanal einrichten",
+        "description": "Portal anlegen, Branding hinzufügen und sicheren Link an Mitarbeiter teilen – in Minuten live."
       },
       "step2": {
-        "title": "Teilen Sie Mit Ihrem Team",
-        "description": "Verteilen Sie Ihren sicheren Meldelink an Mitarbeiter per E-Mail, Intranet oder QR-Codes. Berichte können rund um die Uhr von jedem Gerät und überall eingereicht werden."
+        "title": "Meldungen empfangen und verwalten",
+        "description": "Meldungen kommen verschlüsselt an. Prüfen, zuweisen und untersuchen mit strukturierten Abläufen und vollständigen Prüfpfaden."
       },
       "step3": {
-        "title": "Verwalten & Lösen Sie Fälle",
-        "description": "Erhalten Sie sofortige Benachrichtigungen über neue Berichte. Untersuchen Sie, kommunizieren Sie sicher mit Hinweisgebern und verfolgen Sie Fälle bis zur Lösung mit vollständigen Audit-Trails."
+        "title": "Abschließen und Compliance belegen",
+        "description": "Fälle mit dokumentierten Ergebnissen abschließen. Prüfpakete für Aufsicht, Vorstand und Berater exportieren."
       }
     },
     "anonymousReporting": {
@@ -128,17 +136,17 @@
       "title": "Vertraut von Organisationen Weltweit",
       "subtitle": "Sehen Sie, was unsere Kunden über ihre Erfahrungen mit Disclosurely sagen",
       "testimonial1": {
-        "quote": "Disclosurely hat die Art und Weise verändert, wie wir mit sensiblen Berichten umgehen. Die anonyme Nachrichtenfunktion ist besonders wertvoll.",
+        "quote": "Der verschlüsselte Meldekanal hat unseren Mitarbeitern echtes Vertrauen gegeben, sich zu melden. Fallverwaltung und Prüfpfade haben unsere erste Aufsichtsprüfung unkompliziert gemacht.",
         "name": "Sarah Johnson",
         "role": "Chief Compliance Officer"
       },
       "testimonial2": {
-        "quote": "Die Plattform ist intuitiv und sicher. Unsere Mitarbeiter fühlen sich sicher bei der Meldung von Problemen, und wir können sie effektiv untersuchen.",
+        "quote": "Wir brauchten eine Lösung für EU-Richtlinie und UK-Anforderungen ohne großen IT-Aufwand. In einem Tag live – mit Branding und sicherer Zwei-Wege-Kommunikation.",
         "name": "Michael Chen",
         "role": "HR Director"
       },
       "testimonial3": {
-        "quote": "Die Implementierung war nahtlos und das Support-Team war ausgezeichnet. Sehr empfehlenswert für jede Organisation, die es mit Compliance ernst meint.",
+        "quote": "Anonyme Aufnahme, verschlüsselte Fallbearbeitung und exportierbare Prüfpakete – genau das, was Recht und Compliance für den Nachweis brauchen.",
         "name": "Emily Rodriguez",
         "role": "Legal Counsel"
       }
@@ -147,45 +155,82 @@
       "title": "Häufig Gestellte Fragen",
       "subtitle": "Alles, was Sie über Disclosurely wissen müssen",
       "question1": {
-        "question": "Wie funktioniert anonymes Melden?",
-        "answer": "Hinweisgeber können Berichte über Ihr benutzerdefiniertes Portal einreichen, ohne persönliche Informationen anzugeben. Unser System verwendet fortschrittliche Verschlüsselung und erfasst keine IP-Adressen oder identifizierenden Daten. Melder erhalten einen eindeutigen Zugangscode, um ihren Berichtsstatus zu überprüfen und sicher zu kommunizieren."
+        "question": "Können Meldungen vollständig anonym eingereicht werden?",
+        "answer": "Ja. Melder nutzen Ihr Portal ohne Angabe persönlicher Daten. Wir erfassen keine IP-Adressen, Geräte-Fingerprints oder andere Identifikatoren. Jeder Melder erhält einen Zugangscode für Status und sichere Kommunikation bei voller Anonymität."
       },
       "question2": {
-        "question": "Ist Disclosurely DSGVO und anderen Vorschriften konform?",
-        "answer": "Ja, Disclosurely wurde mit Compliance im Hinterkopf entwickelt. Wir sind DSGVO-konform und erfüllen die Anforderungen für SOX, EU-Whistleblowing-Richtlinie und andere wichtige regulatorische Rahmenbedingungen. Alle Daten werden verschlüsselt und sicher gemäß internationalen Datenschutzstandards gespeichert."
+        "question": "Erfüllt Disclosurely die EU-Hinweisgeberrichtlinie?",
+        "answer": "Ja. Die Plattform ist auf die EU-Hinweisgeberrichtlinie und UK-Schutz nach dem Employment Rights Act ausgerichtet. Sie erhalten sichere Meldekanäle, klare Fristen und prüffähige Aufzeichnungen für Aufsichtsbehörden."
       },
       "question3": {
-        "question": "Können wir das Meldeportal anpassen?",
-        "answer": "Absolut. Sie können Ihr Unternehmensbranding hinzufügen, die Formularfelder anpassen, spezifische Kategorien für Berichte einrichten und sogar Ihre eigene Domain verwenden (bei Professional- und Enterprise-Plänen). Das Portal kann an die Bedürfnisse und Kultur Ihrer Organisation angepasst werden."
+        "question": "Eignet sich die Lösung für kleine und mittlere Organisationen?",
+        "answer": "Ja. Disclosurely ist für Organisationen mit 50+ Mitarbeitern konzipiert und skaliert von KMU bis zu größeren Gruppen. Transparente Preise, 7-Tage-Testversion und Erweiterung nach Bedarf."
       },
       "question4": {
-        "question": "Wie schnell können wir beginnen?",
-        "answer": "Die meisten Organisationen sind innerhalb von 24 Stunden einsatzbereit. Nach der Anmeldung können Sie sofort Ihr Portal anpassen, Teammitglieder einladen und Berichte annehmen. Unser Support-Team steht Ihnen kostenlos bei der Einrichtung und Einarbeitung zur Verfügung."
+        "question": "Wie funktioniert sichere Zwei-Wege-Kommunikation?",
+        "answer": "Alle Nachrichten sind Ende-zu-Ende verschlüsselt und bleiben in der Plattform. Bearbeiter können Informationen anfragen und Updates teilen, ohne die Identität der Melder zu sehen. Melder nutzen ihren Zugangscode; Anonymität bleibt gewahrt."
       },
       "question5": {
-        "question": "Welche Unterstützung ist enthalten?",
-        "answer": "Alle Pläne beinhalten E-Mail-Support und Zugang zu unserer umfassenden Wissensdatenbank. Professional-Pläne beinhalten Priority-Support mit schnelleren Reaktionszeiten, während Enterprise-Kunden dedizierten Support mit SLA-Garantien und optionaler Vor-Ort-Schulung erhalten."
+        "question": "Kann das Meldeportal mit unserem Branding angepasst werden?",
+        "answer": "Ja. Logo, Farben und Branding auf Portalen und Benachrichtigungen. Bei Pro und Enterprise können Sie Ihre eigene Domain (CNAME) nutzen. White-Label-Optionen für volle Markenkontrolle."
       },
       "question6": {
-        "question": "Können wir unseren Plan jederzeit kündigen oder ändern?",
-        "answer": "Ja, Sie können Ihr Abonnement jederzeit upgraden, downgraden oder kündigen. Wenn Sie kündigen, behalten Sie den Zugriff bis zum Ende Ihres Abrechnungszeitraums. Wir bieten auch eine 14-tägige kostenlose Testversion, damit Sie alle Funktionen vor der Verpflichtung testen können."
+        "question": "Wo werden Daten gespeichert und wie geschützt?",
+        "answer": "Daten werden in kontrollierten, gehärteten Umgebungen gespeichert. Alle Inhalte sind mit AES-256 in Übertragung und Ruhe geschützt. DSGVO-orientiert, mit strikten Zugriffskontrollen und rollenbasierter Berechtigung."
+      },
+      "question7": {
+        "question": "Wie schnell können wir starten?",
+        "answer": "Die meisten Organisationen sind innerhalb von 24 Stunden live. Nach der Anmeldung können Sie Portal anpassen, Team einladen und Meldungen annehmen. Onboarding-Support ist inklusive."
       }
     },
     "cta": {
-      "title": "Bereit, Ihr Compliance-Programm Zu Stärken?",
-      "description": "Noch nicht bereit für eine kostenlose Testversion oder Demo? Teilen Sie uns Ihre Anforderungen mit und wir werden uns schnell melden, um zu besprechen, wie Disclosurely Ihre Organisation unterstützen kann.",
-      "button": "Kostenlose Testversion Starten"
+      "title": "Bereit für einen sicheren Hinweisgeberkanal?",
+      "description": "Starten Sie noch heute Ihre kostenlose Testversion oder buchen Sie eine Demo mit unserem Team.",
+      "button": "Kostenlose Testversion starten",
+      "bookDemo": "Demo buchen"
     },
     "highlights": {
-      "tag": "Security & Compliance"
+      "tag": "Security & Compliance",
+      "sectionTitle": "Disclosurely Funktionen",
+      "sectionSubtitle": "Umfassende Tools für sicheres anonymes Meldewesen, Compliance und Fallverwaltung",
+      "anonymousReporting": {
+        "additionalContent": "Mitarbeiter können Fehlverhalten, Ethikverstöße oder andere Bedenken vollständig anonym über ein browserbasiertes Formular melden. Verschlüsselung schützt die Identität und unterstützt die Compliance; Fälle laufen in einen zentralen Arbeitsbereich mit Prüfpfaden und klaren Fristen.",
+        "bullet1": "Keine Datenerfassung zu Meldern",
+        "bullet2": "Anonyme Folgenachrichten",
+        "bullet3": "Mehrsprachige Einreichungsportale"
+      },
+      "encryption": {
+        "additionalContent": "Jede Meldung in Disclosurely ist mit AES-256 verschlüsselt – derselbe Standard wie bei Banken und Behörden. Nachrichten, Fallnotizen und Anhänge bleiben von der Einreichung bis zur Lösung vertraulich.",
+        "bullet1": "AES-256 von Einreichung bis Lösung",
+        "bullet2": "Verschlüsselte Dateianhänge",
+        "bullet3": "Rollenbasierter Entschlüsselungszugriff"
+      },
+      "compliance": {
+        "additionalContent": "Konform mit UK- und EU-Hinweisgebervorschriften durch Software, die auf echten rechtlichen Anforderungen basiert. Die Plattform unterstützt die EU-Hinweisgeberrichtlinie und den UK Employment Rights Act.",
+        "bullet1": "EU-Richtlinie und UK ERA konforme Abläufe",
+        "bullet2": "DSGVO-gerechte Datenverarbeitung",
+        "bullet3": "Exportierbare Prüfpakete für Aufsicht"
+      },
+      "messaging": {
+        "additionalContent": "Vertraulicher, anonymer Dialog mit Hinweisgebern von der ersten Meldung bis zum Ergebnis. Sichere In-Plattform-Nachrichten ermöglichen es Bearbeitern, Informationen anzufordern und Updates zu teilen, ohne die Identität zu offenlegen.",
+        "bullet1": "Ende-zu-Ende verschlüsselte Gespräche",
+        "bullet2": "Anonymität durchgängig gewahrt",
+        "bullet3": "Echtzeit-Benachrichtigung für Ermittler"
+      },
+      "aiPowered": {
+        "additionalContent": "Datenschutzorientierte KI-Analyse mit automatischer PII-Redaktion. Der Assistent prüft eingehende Fälle, erkennt Muster und hebt Risikofälle hervor.",
+        "bullet1": "KI mit automatischer PII-Redaktion",
+        "bullet2": "Risikobewertung und Fallpriorisierung",
+        "bullet3": "Mustererkennung über Berichte"
+      }
     },
     "branding": {
       "tag": "Branding & Identity",
       "title": "Custom Branding",
-      "description": "With our custom domain support, logo integration and branded portals, your reporting submission system looks and feels like a native part of your infrastructure.",
-      "point1": "Custom CNAME support for branded secure links",
-      "point2": "Your logo and branding on all submission portals",
-      "point3": "White-label options for complete brand control",
+      "description": "Ihr Meldeportal wirkt wie ein fester Bestandteil Ihrer Organisation. Mit eigenen Domains, Logo und Branding sehen Mitarbeiter und Dritte eine vertraute Umgebung – weniger Reibung, mehr Vertrauen in den Kanal.",
+      "point1": "CNAME-Support für sichere Links unter Ihrer Domain, abgestimmt auf IT und Sicherheit.",
+      "point2": "Ihr Logo und Branding auf allen Portalen, E-Mails und Dashboards für eine einheitliche Erfahrung.",
+      "point3": "White-Label-Optionen für volle Markenkontrolle, ideal für Gruppen, Partner oder Berater.",
       "imageAlt": "Custom Branding"
     }
   },
@@ -210,52 +255,64 @@
   },
   "pricing": {
     "hero": {
-      "title": "Einfache, Transparente Preise",
-      "subtitle": "Wählen Sie den Plan, der zu Ihrer Organisation passt. Beginnen Sie mit unserer siebentägigen kostenlosen Testversion und skalieren Sie mit Ihrem Wachstum.",
-      "tagline": "Transparent Pricing Built For Business.",
-      "subtitle1": "7-tägige kostenlose Testversion • Unbegrenzte Berichte enthalten",
-      "subtitle2": "Alle Pläne beinhalten Verschlüsselung auf Militärniveau, GDPR-Konformität und Echtzeit-Analysen. Wählen Sie den Plan, der Ihren Compliance-Anforderungen entspricht und skalieren Sie mit Ihrem Wachstum.",
+      "title": "Whistleblowing-Software-Preise für Teams jeder Größe",
+      "tagline": "Whistleblowing & Compliance",
+      "subtitle": "Wählen Sie den Plan, der zu Ihrer Organisation passt. Kostenlose Testversion, jederzeit kündbar.",
+      "subtitle1": "Starten Sie mit sicherer anonymer Meldung, Fallmanagement und Compliance-Tools. Rüsten Sie auf, wenn Ihr Meldebedarf wächst.",
+      "subtitle2": "14 Tage kostenlose Testversion, keine Kreditkarte nötig. Plan jederzeit wechseln oder upgraden.",
       "startFreeTrial": "Kostenlose Testversion starten"
     },
+    "reassurance": {
+      "freeTrial": "Kostenlose Testversion",
+      "changePlans": "Plan jederzeit wechseln",
+      "noHiddenFees": "Keine versteckten Kosten",
+      "secureHosting": "Sichere Hosting inklusive"
+    },
     "designedForBusinesses": {
-      "title": "Für Unternehmen aller Größen entwickelt",
-      "description": "Ob Sie ein kleines Unternehmen sind, das Whistleblowing-Software zum ersten Mal implementiert, oder eine größere Gruppe, die sie über mehrere Einheiten hinweg einführt - Disclosurely skaliert mit Ihnen. Einfache, transparente Preise und flexible Arbeitsbereiche machen es einfach, klein anzufangen, den Wert zu beweisen und die Abdeckung zu erweitern, wenn Ihre Meldevolumen und regulatorischen Verpflichtungen wachsen.",
-      "bullet1": "Ideal für KMU, die sichere, konforme Whistleblowing-Kanäle ohne unternehmensweite Komplexität oder Einrichtungskosten benötigen.",
-      "bullet2": "Flexibel für wachsende Teams, mit zusätzlichen Benutzern, Einheiten und Sprachen, die einfach hinzugefügt werden können, wenn sich Ihre Organisation entwickelt.",
-      "bullet3": "Bereit für größere Organisationen, mit strukturierter Fallbearbeitung, Prüfpfaden und Berichten, die den Erwartungen von Vorständen, Aufsichtsbehörden und externen Beratern entsprechen.",
-      "imageAlt": "Für Unternehmen aller Größen entwickelt"
+      "title": "Was in jedem Plan enthalten ist",
+      "description": "Alle Pläne enthalten das Wichtigste für sicheres, konformes Whistleblowing.",
+      "bullet1": "Sichere anonyme Meldung",
+      "bullet2": "Fallmanagement und Prüfprotokolle",
+      "bullet3": "Verschlüsselte Datenverarbeitung",
+      "bullet4": "Gehostetes Meldeportal",
+      "bullet5": "E-Mail-Benachrichtigungen",
+      "bullet6": "DSGVO-bewusste Gestaltung",
+      "imageAlt": "Was in jedem Plan enthalten ist"
     },
     "plans": {
       "mostPopular": "Beliebteste",
       "perMonth": "/Monat",
+      "perYear": "/Jahr",
       "starter": {
         "name": "Starter",
         "price": "19,99 €",
-        "description": "Perfekt für kleine Organisationen, die anfangen"
+        "description": "Einstieg mit anonymer Meldung und Fallmanagement.",
+        "bestFor": "Kleine Organisationen, die einen sicheren Meldekanal einrichten"
       },
       "pro": {
         "name": "Pro",
         "price": "39,99 €",
-        "description": "Für wachsende Organisationen mit erweiterten Anforderungen"
+        "description": "Gebrandete Portale, sichere Nachrichten, KI-Triage und Workflow-Automatisierung.",
+        "bestFor": "Wachsende Teams mit Bedarf an gebrandeten Portalen, Automatisierung und Auswertungen"
       },
       "enterprise": {
         "name": "Enterprise",
         "price": "Individuell",
-        "description": "Für große Organisationen mit maßgeschneiderten Anforderungen"
-      },
-      "perYear": "/year"
+        "description": "SSO, individuelles Onboarding, erweiterte Rechte und Multi-Team-Setups, dedizierter Support und angepasstes Hosting oder Datenhandling auf Wunsch.",
+        "bestFor": "Größere oder mehrgliedrige Organisationen mit hohen Sicherheits- und Rollout-Anforderungen"
+      }
     },
     "features": {
       "casesLimit": "5 Fälle/Monat",
       "storage": "1 GB Speicher",
-      "emailSupport": "E-Mail-Support",
-      "messaging": "Sichere bidirektionale Nachrichtenübermittlung",
-      "aiHelper": "KI-Fallhelfer",
-      "customBranding": "Benutzerdefiniertes Branding",
-      "unlimitedCases": "Unbegrenzte Fälle/Monat",
-      "unlimitedStorage": "Unbegrenzter Speicher",
-      "cname": "CNAME-Konfiguration",
-      "workflows": "Automatisierte Workflows",
+      "emailSupport": "E-Mail-Support mit Onboarding",
+      "messaging": "Sichere Zwei-Wege-Melder-Kommunikation",
+      "aiHelper": "KI-Falltriage und Risikobewertung",
+      "customBranding": "Gebrandetes Meldeportal",
+      "unlimitedCases": "Unbegrenzte anonyme Meldungen",
+      "unlimitedStorage": "Unbegrenzter sicherer Speicher",
+      "cname": "Eigene Domain (CNAME)",
+      "workflows": "Automatisierte Fall-Workflows",
       "everythingPro": "Alles in Professional",
       "customDomain": "Benutzerdefinierte Domain",
       "dedicatedSupport": "Dedizierter Support",
@@ -272,26 +329,43 @@
       "title": "Häufig Gestellte Fragen",
       "trial": {
         "question": "Gibt es eine kostenlose Testversion?",
-        "answer": "Ja, alle Pläne beinhalten eine 7-tägige kostenlose Testversion, damit Sie sehen können, wie die Plattform funktioniert und wie Sie sie in Ihrer Organisation nutzen können. Keine Kreditkarte erforderlich."
+        "answer": "Ja. Alle Pläne haben eine 14-tägige kostenlose Testversion, keine Kreditkarte nötig. So können Sie die Plattform prüfen, bevor Sie sich festlegen."
       },
-      "limit": {
-        "question": "Was passiert, wenn ich mein Falllimit im Starter-Plan erreiche?",
-        "answer": "Wenn Sie Ihr monatliches Fallkontingent überschreiten, werden Sie im Dashboard benachrichtigt. Sie können entweder auf den Pro-Plan upgraden für unbegrenzte Fälle oder bis zum nächsten Monat warten, wenn Ihr Kontingent zurückgesetzt wird."
+      "includedInEveryPlan": {
+        "question": "Was ist in jedem Plan enthalten?",
+        "answer": "Jeder Plan enthält sichere anonyme Meldung, Fallmanagement und Prüfprotokolle, verschlüsselte Datenverarbeitung, ein gehostetes Meldeportal, E-Mail-Benachrichtigungen und DSGVO-bewusste Gestaltung. Mit Pro kommen gebrandete Portale, sichere Zwei-Wege-Kommunikation, KI-Triage und mehr."
       },
-      "change": {
-        "question": "Kann ich den Plan später ändern?",
-        "answer": "Absolut! Sie können Ihren Plan jederzeit von Ihrem Dashboard aus upgraden oder downgraden."
+      "planFor50Plus": {
+        "question": "Welcher Plan passt für ein Team mit 50+ Mitarbeitenden?",
+        "answer": "Pro passt für die meisten Organisationen mit 50+ Mitarbeitenden: gebrandete Portale, sichere Nachrichten, KI-Triage und Workflow-Automatisierung. Enterprise, wenn Sie Multi-Entity-Rollout, SSO, individuelles Onboarding oder dedizierten Support brauchen."
       },
-      "security": {
-        "question": "Welche Sicherheitszertifizierungen haben Sie?",
-        "answer": "Wir sind DSGVO-konform und arbeiten an der ISO 27001- und SOX-Compliance."
+      "upgradeDowngrade": {
+        "question": "Können wir später upgraden oder downgraden?",
+        "answer": "Ja. Sie können Ihren Plan jederzeit im Dashboard wechseln. Keine langfristige Bindung."
+      },
+      "onboardingSupport": {
+        "question": "Bieten Sie Onboarding-Support?",
+        "answer": "Ja. Alle Pläne haben E-Mail-Support inkl. Onboarding. Pro hat Prioritäts-Support; Enterprise hat dedizierten Support und auf Wunsch individuelles Onboarding."
+      },
+      "anonymousOnAllPlans": {
+        "question": "Ist anonyme Meldung in allen Plänen enthalten?",
+        "answer": "Ja. Sichere anonyme Meldung und ein gehostetes Meldeportal sind in jedem Plan enthalten. Melder können sich anonym äußern."
+      },
+      "securityFeatures": {
+        "question": "Welche Sicherheitsfunktionen sind enthalten?",
+        "answer": "Alle Pläne: Verschlüsselung (AES-GCM), DSGVO-konforme Datenverarbeitung, Prüfprotokolle und rollenbasierter Zugriff. Enterprise ergänzt SSO und erweiterte Authentifizierung. Wir sind DSGVO-konform und streben ISO 27001 und SOX an."
+      },
+      "hiddenCosts": {
+        "question": "Gibt es versteckte Kosten?",
+        "answer": "Nein. Der Preis ist pro Plan klar; es gibt keine versteckten Gebühren. Optionale Zusatzleistungen werden ausdrücklich genannt. Sichere Hosting ist inklusive."
       }
     },
     "cta": {
-      "ready": "Bereit Anzufangen?",
-      "join": "Schließen Sie sich Organisationen weltweit an, die Disclosurely für sicheres Whistleblowing vertrauen.",
-      "startTrial": "Kostenlose Testversion Starten",
-      "contactSales": "Vertrieb Kontaktieren"
+      "ready": "Bereit für einen sicheren Whistleblowing-Kanal?",
+      "join": "Starten Sie Ihre kostenlose Testversion oder sprechen Sie mit uns über den passenden Plan.",
+      "startTrial": "Kostenlose Testversion starten",
+      "talkToTeam": "Mit unserem Team sprechen",
+      "contactSales": "Vertrieb kontaktieren"
     },
     "trustIndicators": {
       "badgeTrial": "7-Day Free Trial",
@@ -372,7 +446,7 @@
     },
     "compare": {
       "title": "Compare All Features",
-      "subtitle": "See exactly what's included in each plan",
+      "subtitle": "Sehen Sie, welcher Plan zu Ihrem Unternehmen passt.",
       "headers": {
         "features": "Features",
         "starter": "Starter",
@@ -1450,6 +1524,131 @@
       },
       "securityTitle": "Security and compliance",
       "securityDescription": "AES-GCM encryption, access logging, and continuous monitoring help meet GDPR, ISO 27001, and sector frameworks."
+    }
+  },
+  "directive": {
+    "hero": {
+      "badge": "EU-Hinweisgeberrichtlinie",
+      "title": "EU-Hinweisgeberrichtlinie: Compliance praxisnah umsetzen",
+      "subtitle": "Richten Sie sichere anonyme Meldekanäle ein, halten Sie Fristen ein und verwalten Sie Fälle mit einem Hinweisgebersystem für EU-Organisationen.",
+      "startFreeTrial": "Kostenlose Testversion starten",
+      "bookDemo": "Demo buchen",
+      "reassurance": {
+        "anonymous": "Anonyme Meldung",
+        "secureCase": "Sichere Fallbearbeitung",
+        "sevenDay": "7-Tage-Bestätigung",
+        "ninetyDay": "90-Tage-Nachverfolgung",
+        "multilingual": "Mehrsprachige Portale"
+      }
+    },
+    "whoComplies": {
+      "title": "Wer muss die Richtlinie umsetzen?",
+      "card1Title": "Organisationen mit 50+ Mitarbeitenden",
+      "card1Desc": "Private und öffentliche Einrichtungen oberhalb der Schwelle müssen interne Meldekanäle bereitstellen.",
+      "card2Title": "Öffentliche Stellen",
+      "card2Desc": "Viele öffentliche Stellen sind unabhängig von der Mitarbeiterzahl in scope.",
+      "card3Title": "Unternehmen mit Tätigkeit in mehreren EU-Mitgliedstaaten",
+      "card3Desc": "Grenzüberschreitende Tätigkeit erfordert Umsetzung in jedem Mitgliedstaat.",
+      "card4Title": "Interne Meldeverantwortliche",
+      "card4Desc": "Benannte Personen für sichere Kanäle und Fallbearbeitung."
+    },
+    "requirements": {
+      "title": "Was verlangt die EU-Hinweisgeberrichtlinie?",
+      "subtitle": "Praktische Übersicht der Kernpflichten.",
+      "item1": "Sichere interne Meldekanäle",
+      "item2": "Vertraulichkeit für Melder",
+      "item3": "Bestätigung innerhalb von 7 Tagen",
+      "item4": "Nachverfolgung innerhalb von 3 Monaten",
+      "item5": "Schutz vor Vergeltung",
+      "item6": "Sichere Aufzeichnungen und Zugriffskontrolle",
+      "item7": "Mehrsprachige und barrierefreie Meldung wo relevant"
+    },
+    "risks": {
+      "title": "Warum ein konformer Meldekanal wichtig ist",
+      "item1Title": "Regulatorisches Risiko",
+      "item1Desc": "Bußen und Durchsetzung bei mangelhaften Kanälen oder Prozessen.",
+      "item2Title": "Interne Meldeprobleme",
+      "item2Desc": "Hinweise werden ohne sichere, vertrauenswürdige Kanäle nicht gemeldet oder bearbeitet.",
+      "item3Title": "Reputationsschaden",
+      "item3Desc": "Öffentliche oder behördliche Kritik, wenn Fehlverhalten ohne ordnungsgemäße Bearbeitung bekannt wird.",
+      "item4Title": "Geringeres Mitarbeitervertrauen",
+      "item4Desc": "Mitarbeiter verlieren das Vertrauen, wenn Meldesysteme unklar oder unsicher sind.",
+      "item5Title": "Operative Belastung",
+      "item5Desc": "Manuelle oder Ad-hoc-Prozesse führen zu Verzögerung, Inkonsistenz und Audit-Risiko."
+    },
+    "systemNeeds": {
+      "title": "Was ein konformes Hinweisgebersystem braucht",
+      "subtitle": "Funktionen, die zu den Richtlinienanforderungen passen.",
+      "card1Title": "Sichere anonyme Meldekanäle",
+      "card1Desc": "Web- und optional Telefon-Erfassung mit Verschlüsselung und ohne Identitätserfassung.",
+      "card1Bullet1": "Anonymer Eingang mit sicherer Kommunikation",
+      "card1Bullet2": "Ende-zu-Ende-Verschlüsselung",
+      "card1Bullet3": "Echte Anonymität während des gesamten Prozesses",
+      "card2Title": "Sichere Zwei-Wege-Kommunikation",
+      "card2Desc": "Nachfragen an Melder ohne Preisgabe ihrer Identität.",
+      "card2Bullet1": "Sichere Nachrichten mit Fallnummer und PIN",
+      "card2Bullet2": "Hält Melder einbezogen und informiert",
+      "card2Bullet3": "Wahrung der Anonymität bei der Beweissammlung",
+      "card3Title": "Fallmanagement und prüffeste Aufzeichnungen",
+      "card3Desc": "Strukturierte Abläufe und dokumentierte Bearbeitung.",
+      "card3Bullet1": "Automatisches Routing und Fristen",
+      "card3Bullet2": "Beweisspeicherung mit Prüfpfaden",
+      "card3Bullet3": "Aufbewahrung und Zugriffskontrolle",
+      "card4Title": "Mehrsprachige Unterstützung",
+      "card4Desc": "Meldung in mehreren Sprachen für EU-Teams.",
+      "card4Bullet1": "Meldung in über 35 Sprachen",
+      "card4Bullet2": "Muttersprache für jeden Mitarbeiter",
+      "card4Bullet3": "Wichtig für multinationale Betriebe",
+      "card5Title": "Rollenbasierter Zugriff und Berechtigungen",
+      "card5Desc": "Nur benannte Bearbeiter sehen sensible Meldungen.",
+      "card5Bullet1": "Granulare Berechtigungen",
+      "card5Bullet2": "Zugriffsprotokollierung",
+      "card5Bullet3": "Prüffähige Übersicht",
+      "card6Title": "Datenschutz-Kontrollen",
+      "card6Desc": "DSGVO-konforme Verschlüsselung, Aufbewahrung und Zugriff.",
+      "card6Bullet1": "Verschlüsselte Speicherung in zertifizierten Rechenzentren",
+      "card6Bullet2": "Automatisierte Aufbewahrungsfristen",
+      "card6Bullet3": "Vollständiger Prüfpfad für Aufsichtsbehörden"
+    },
+    "howWeHelp": {
+      "title": "Wie Disclosurely die EU-Hinweisgeber-Compliance unterstützt",
+      "subtitle": "Speziell für die Anforderungen der Richtlinie.",
+      "item1": "Anonymer Meldungseingang mit verschlüsselten Formularen",
+      "item2": "Verschlüsselte Fallbearbeitung und Zwei-Wege-Kommunikation",
+      "item3": "Rollenbasierter Fallzugriff für benannte Bearbeiter",
+      "item4": "7-Tage- und 90-Tage-Workflow-Unterstützung und Erinnerungen",
+      "item5": "Mehrsprachige Meldeportale",
+      "item6": "Prüffeste Aufzeichnungen und exportierbare Beweise",
+      "item7": "Datenschutz-First-Design",
+      "item8": "KI-gestützte Schwärzung und privates KI-Gateway"
+    },
+    "midCta": {
+      "title": "Bereit für einen konformen Hinweisgeberkanal?",
+      "startFreeTrial": "Kostenlose Testversion starten",
+      "talkToTeam": "Mit unserem Team sprechen"
+    },
+    "impact": {
+      "title": "Der operative Nutzen einer richtigen Umsetzung",
+      "card1Title": "Risikominimierung",
+      "card1Desc": "Früherkennung, dokumentierte Bearbeitung und geringere Exposition gegenüber Bußen und Durchsetzung.",
+      "card2Title": "Operative Effizienz",
+      "card2Desc": "Automatisierte Abläufe und klare Fristen statt manueller Ad-hoc-Prozesse.",
+      "card3Title": "Vertrauen und Kultur",
+      "card3Desc": "Mitarbeiter melden sich sicher; Compliance ist sichtbar und glaubwürdig."
+    },
+    "gettingStarted": {
+      "title": "Erste Schritte",
+      "item1": "Sichere Meldekanäle einrichten",
+      "item2": "Richtlinienkonforme Workflows konfigurieren",
+      "item3": "Untersuchungsteams schulen",
+      "item4": "Den Kanal an die Belegschaft kommunizieren",
+      "item5": "Prozesse überwachen und optimieren"
+    },
+    "finalCta": {
+      "title": "In wenigen Tagen einen konformen Hinweisgeberkanal starten",
+      "subtitle": "Geführte Einrichtung, sichere Meldeabläufe und integrierte Compliance-Unterstützung für EU-Organisationen.",
+      "startFreeTrial": "Kostenlose Testversion starten",
+      "bookDemo": "Demo buchen"
     }
   }
 }

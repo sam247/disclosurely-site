@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { track } from "@vercel/analytics";
 import { usePathname } from "next/navigation";
-import { ShieldCheck, CheckCircle, CheckCircle2, MessageSquare, Brain, X } from "lucide-react";
+import { ShieldCheck, CheckCircle, CheckCircle2, MessageSquare, Brain, X, Lock } from "lucide-react";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -276,65 +276,55 @@ function LandingInner() {
       {
         title: t("landing.anonymousReporting.title"),
         description: "",
-        additionalContent: [
-          "Enable employees to report misconduct, ethics violations, or other concerns completely anonymously through a simple browser-based whistleblower form that works on any device. Advanced encryption protects whistleblower identities while supporting compliance with key regulatory requirements. Behind the scenes, cases flow into a central workspace, giving handlers a clear view of every report with audit trails and defined deadlines for acknowledgement, follow-up, and resolution.",
-        ],
+        additionalContent: [t("landing.highlights.anonymousReporting.additionalContent")],
         bullets: [
-          "Zero data collection on reporters (no IP tracking, device fingerprinting, or hidden identifiers) to maximise trust and protect employees from retaliation.​",
-          "Anonymous follow-up messaging so investigators can ask clarifying questions and share updates while the whistleblower stays completely anonymous.​",
-          "Multiple language support to meet EU whistleblowing requirements and make it easy for global teams to report concerns in their preferred language.",
+          t("landing.highlights.anonymousReporting.bullet1"),
+          t("landing.highlights.anonymousReporting.bullet2"),
+          t("landing.highlights.anonymousReporting.bullet3"),
         ],
         image: "/assets/artwork/new_anonymous_reporting_made_simple.jpeg",
       },
       {
         title: t("landing.encryption.title"),
         description: "",
-        additionalContent: [
-          <>Every whistleblowing report in Disclosurely is protected with <Link href="/blog/what-is-aes-gcm-encryption/" className="text-blue-600 hover:text-blue-700 underline">AES-256 encryption</Link>, the same widely trusted standard used by banks, defence organisations, and government agencies. From submission to final resolution, all messages, case notes, and attachments remain confidential and protected against unauthorised access. Strong encryption, strict access controls, and detailed audit trails help your organisation meet modern whistleblower protection, <Link href="/blog/gdpr-whistleblowing-compliance/" className="text-blue-600 hover:text-blue-700 underline">GDPR</Link>, and data security expectations while giving reporters the confidence to speak up safely.</>,
-        ],
+        additionalContent: [t("landing.highlights.encryption.additionalContent")],
         bullets: [
-          "AES-256 end-to-end encryption so whistleblower reports, internal comments, and case updates are encrypted in transit and at rest, reducing the risk of interception or data leakage.",
-          "Encrypted file attachments for evidence such as screenshots, documents, or emails, ensuring supporting material is secured to the same standard as the report itself.",
-          "Secure data storage in hardened, access-controlled environments with role-based permissions, so only authorised case handlers can decrypt and review whistleblowing data.",
+          t("landing.highlights.encryption.bullet1"),
+          t("landing.highlights.encryption.bullet2"),
+          t("landing.highlights.encryption.bullet3"),
         ],
         image: "/assets/artwork/new_military_grade_encryption.jpeg",
       },
       {
         title: t("landing.compliance.title"),
         description: "",
-        additionalContent: [
-          <>Stay compliant with UK and EU whistleblowing regulations with whistleblower software built around real legal requirements, not just checklists. The platform supports the <Link href="/blog/eu-whistleblowing-directive-2025/" className="text-blue-600 hover:text-blue-700 underline">EU Whistleblowing Directive</Link> and UK whistleblowing protections under the Employment Rights Act, helping you provide secure, accessible reporting channels, timely acknowledgements, and documented follow-up on every concern. Built-in audit trails, case timelines, and exportable reports give <Link href="https://disclosurely.com/compliance-software" className="text-blue-600 hover:text-blue-700 underline">compliance</Link> teams everything needed to evidence how reports were handled and demonstrate regulatory adherence to boards, regulators, and external auditors.</>,
-        ],
+        additionalContent: [t("landing.highlights.compliance.additionalContent")],
         bullets: [
-          "EU Whistleblowing Directive compliant workflows, including anonymous reporting, clear acknowledgement timelines, and role-based access for designated handlers and investigators.",
-          "GDPR-ready by design, with data minimisation, strict access controls, and configurable retention policies for whistleblowing records and evidence.",
-          "Automated compliance reports that surface key KPIs (volumes, categories, outcomes, timelines) and generate exportable audit packs for management, regulators, and external advisers.",
+          t("landing.highlights.compliance.bullet1"),
+          t("landing.highlights.compliance.bullet2"),
+          t("landing.highlights.compliance.bullet3"),
         ],
         image: "/assets/artwork/new_compliance_made_easy.jpeg",
       },
       {
-        title: "Secure Two-Way Communication",
+        title: t("landing.messaging.title"),
         description: "",
-        additionalContent: [
-          "Maintain a confidential, anonymous dialogue with whistleblowers from first report to final outcome. Secure in-platform messaging allows case handlers to request additional information, clarify details, and share updates without ever revealing or collecting the reporter's identity. Each conversation is encrypted, time-stamped, and linked to the underlying case, giving you a clear audit trail while building trust and transparency with the people who speak up.",
-        ],
+        additionalContent: [t("landing.highlights.messaging.additionalContent")],
         bullets: [
-          "Encrypted messaging so every message, attachment, and case note exchanged with whistleblowers is fully protected against unauthorised access.",
-          "Maintain anonymity by keeping all communication inside the whistleblower portal, with no IP tracking or personal details required to continue the conversation.",
-          "Real-time notifications for new messages and case updates, ensuring investigators respond quickly while whistleblowers stay informed and engaged.",
+          t("landing.highlights.messaging.bullet1"),
+          t("landing.highlights.messaging.bullet2"),
+          t("landing.highlights.messaging.bullet3"),
         ],
         image: "/assets/artwork/new_secure_two_way_communication.jpeg",
       },
       {
-        title: "AI-Powered Case Analysis",
+        title: t("landing.aiPowered.title"),
         description: "",
-        additionalContent: [
-          "Leverage artificial intelligence to detect emerging risks earlier and focus your attention where it matters most. The built-in AI assistant reviews incoming whistleblowing cases, surfaces patterns across reports, and highlights high-risk issues so compliance teams can respond faster and more consistently. By turning raw incident data into practical insights, Disclosurely helps you move from reactive case handling to proactive risk management.",
-        ],
+        additionalContent: [t("landing.highlights.aiPowered.additionalContent")],
         bullets: [
-          "Automated risk assessment that scores new reports based on factors like severity, topic, and potential regulatory impact, giving investigators an instant view of what needs attention first.",
-          "Pattern detection across cases to reveal recurring issues, hotspots in specific locations or departments, and trends that may indicate systemic problems.",
-          "Intelligent case prioritisation that dynamically orders your case queue, ensuring high-impact and time-sensitive whistleblowing reports never get buried or overlooked.",
+          t("landing.highlights.aiPowered.bullet1"),
+          t("landing.highlights.aiPowered.bullet2"),
+          t("landing.highlights.aiPowered.bullet3"),
         ],
         image: "/assets/artwork/new_ai_powered_case_analysis.jpeg",
       },
@@ -355,16 +345,20 @@ function LandingInner() {
                 <span className="text-xs font-medium">{t("landing.hero.badge")}</span>
               </div>
             </div>
-            <h1 className="mb-6 text-center text-3xl font-bold text-gray-900 sm:text-5xl"
-            >
+            <h1 className="mb-6 text-center text-3xl font-bold text-gray-900 sm:text-5xl">
               {t("landing.hero.title1")}
-              <span className="mt-2 flex justify-center text-blue-600">
-                <TypingAnimation
-                  phrases={(t("landing.hero.typingPhrases", { returnObjects: true }) as string[]) || []}
-                  typingSpeed={100}
-                  deletingSpeed={50}
-                  pauseDuration={2000}
-                />
+              <span className="mt-2 flex w-full justify-center overflow-hidden text-blue-600">
+                <span className="flex min-h-[1.4em] w-full items-center justify-center sm:hidden">
+                  {t("landing.hero.mobilePhrase")}
+                </span>
+                <span className="hidden min-h-[1.4em] w-full items-center justify-center overflow-hidden sm:flex">
+                  <TypingAnimation
+                    phrases={(t("landing.hero.typingPhrases", { returnObjects: true }) as string[]) || []}
+                    typingSpeed={100}
+                    deletingSpeed={50}
+                    pauseDuration={2000}
+                  />
+                </span>
               </span>
             </h1>
             <p className="mx-auto mb-6 max-w-3xl px-4 text-lg text-gray-700 sm:text-xl whitespace-pre-line">{t("landing.hero.subtitle")}</p>
@@ -385,11 +379,27 @@ function LandingInner() {
                 {t("landing.hero.startFreeTrial")}
               </a>
               <Link
-                href={`${langPrefix}/pricing`}
+                href={`${langPrefix}/contact`}
                 className="w-full rounded-lg border border-gray-300 px-8 py-3 text-center text-lg font-semibold text-gray-700 transition-colors hover:border-gray-400 sm:w-auto"
               >
-                {t("landing.hero.viewPricing")}
+                {t("landing.hero.bookDemo")}
               </Link>
+            </div>
+
+            <div className="mx-auto mt-10 flex max-w-4xl flex-wrap items-center justify-center gap-3 px-4">
+              {((t("landing.trustBar.items", { returnObjects: true }) as string[]) || []).map((label, idx) => {
+                const icons = [ShieldCheck, Lock, CheckCircle, CheckCircle, MessageSquare];
+                const Icon = icons[idx] ?? CheckCircle;
+                return (
+                  <div
+                    key={label}
+                    className="flex items-center gap-2 rounded-full bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700"
+                  >
+                    <Icon className="h-4 w-4 flex-shrink-0 text-blue-600" />
+                    <span>{label}</span>
+                  </div>
+                );
+              })}
             </div>
 
             <div className="mt-16">
@@ -455,9 +465,9 @@ function LandingInner() {
         <section className="bg-gray-50 py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-16 text-center">
-              <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">Disclosurely Features</h2>
+              <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">{t("landing.highlights.sectionTitle")}</h2>
               <p className="mx-auto max-w-3xl px-4 text-lg text-gray-700 sm:text-xl">
-                Comprehensive tools for secure anonymous reporting, compliance, and case management
+                {t("landing.highlights.sectionSubtitle")}
               </p>
             </div>
             <div className="space-y-32 sm:space-y-40">
@@ -505,22 +515,22 @@ function LandingInner() {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">Custom Branding</h2>
+                <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">{t("landing.branding.title")}</h2>
                 <p className="mb-6 text-lg text-gray-600">
-                  Make your whistleblower reporting portal look and feel like a native part of your organisation. With custom domains, logo integration, and branded portals, employees and third parties see a familiar, trustworthy environment when they submit a concern. This reduces friction, boosts confidence in the channel, and helps your whistleblower software blend seamlessly into your existing compliance and HR ecosystem.
+                  {t("landing.branding.description")}
                 </p>
                 <ul className="mb-6 space-y-2">
                   <li className="flex items-start">
                     <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span>{formatBulletPoint("Custom CNAME support for branded secure links, so reporting URLs sit on your own domain and align with your security and IT standards.")}</span>
+                    <span>{formatBulletPoint(t("landing.branding.point1"))}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span>{formatBulletPoint("Your logo and branding on all submission portals, email notifications, and dashboards to create a consistent, trusted experience for reporters and case handlers.")}</span>
+                    <span>{formatBulletPoint(t("landing.branding.point2"))}</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="mr-3 h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                    <span>{formatBulletPoint("White-label options for complete brand control, ideal for groups, partners, or consultants offering whistleblowing channels as part of a broader compliance service.")}</span>
+                    <span>{formatBulletPoint(t("landing.branding.point3"))}</span>
                   </li>
                 </ul>
               </div>
@@ -686,9 +696,6 @@ function LandingInner() {
           </div>
         </section>
 
-        {/* Blog Section */}
-        <BlogSection />
-
         {/* FAQ */}
         <section className="bg-white py-16 sm:py-20">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -697,7 +704,7 @@ function LandingInner() {
               <p className="text-lg text-gray-600">{t("landing.faq.subtitle")}</p>
             </div>
             <Accordion type="single" collapsible defaultValue="item-1" className="space-y-4">
-              {[1, 2, 3, 4, 5, 6].map((n) => (
+              {[1, 2, 3, 4, 5, 6, 7].map((n) => (
                 <AccordionItem key={n} value={`item-${n}`} className="rounded-lg border bg-white px-6">
                   <AccordionTrigger className="text-left text-lg font-semibold hover:no-underline">
                     {t(`landing.faq.question${n}.question`)}
@@ -709,21 +716,32 @@ function LandingInner() {
           </div>
         </section>
 
+        {/* Blog Section - de-emphasised */}
+        <BlogSection compact />
+
         {/* CTA */}
         <section className="bg-blue-600 py-12 text-white sm:py-16">
           <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
             <h2 className="mb-4 text-2xl font-bold sm:text-3xl">{t("landing.cta.title")}</h2>
             <p className="mb-6 text-blue-100 sm:mb-8 sm:text-xl">{t("landing.cta.description")}</p>
-            <a
-              href="https://app.disclosurely.com/auth/signup"
-              className="inline-block rounded-lg bg-white px-6 py-3 text-lg font-semibold text-blue-600 transition hover:bg-gray-100"
-              onClick={(e) => {
-                e.preventDefault();
-                handleStartTrial("landing_cta");
-              }}
-            >
-              {t("landing.cta.button")}
-            </a>
+            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <a
+                href="https://app.disclosurely.com/auth/signup"
+                className="w-full rounded-lg bg-white px-6 py-3 text-center text-lg font-semibold text-blue-600 transition hover:bg-gray-100 sm:w-auto"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleStartTrial("landing_cta");
+                }}
+              >
+                {t("landing.cta.button")}
+              </a>
+              <Link
+                href={`${langPrefix}/contact`}
+                className="w-full rounded-lg border-2 border-white px-6 py-3 text-center text-lg font-semibold text-white transition hover:bg-white/10 sm:w-auto"
+              >
+                {t("landing.cta.bookDemo")}
+              </Link>
+            </div>
           </div>
         </section>
 

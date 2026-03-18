@@ -167,28 +167,36 @@
   },
   "landing": {
     "hero": {
-      "title1": "Conformiteit EU-klokkenluidersrichtlijn",
-      "title2": "AI-Aangedreven Workflows",
+      "title1": "Veilige klokkenluiderssoftware voor UK- en EU-compliance",
+      "mobilePhrase": "Anonieme meldingen voor compliance-teams",
       "typingPhrases": [
-        "Anonieme meldkanalen",
-        "Veilig casemanagement",
-        "Audit-ready onderzoekslogboeken",
-        "Versleutelde klokkenluiderberichten",
-        "Meertalige meldportalen",
-        "AI-ondersteunde casusanalyse"
+        "Anonieme meldingen",
+        "Versleuteld casemanagement",
+        "Audit-ready compliance",
+        "Veilige tweewegscommunicatie"
       ],
       "badge": "Military Grade AES-GCM Encryption",
-      "subtitle": "Veilige anonieme meldingen en casemanagement voor organisaties met 50+ werknemers. Disclosurely biedt een conform klokkenluiderssysteem met versleutelde meldkanalen, audit-ready casemanagement en meertalige aanmeldportalen.",
+      "subtitle": "Geef medewerkers een veilige, anonieme manier om zorgen te melden. Disclosurely biedt versleutelde meldkanalen, gestructureerd casemanagement en audit-ready dossiers — afgestemd op de EU-richtlijn en UK-eisen.",
       "bullets": [
-        "Anoniem meldportaal",
+        "Anoniem aanmeldportaal",
         "Manipulatiebestendige audittrails",
-        "Veilige berichten voor onderzoekers",
-        "AI-ondersteunde casusanalyse"
+        "Versleutelde berichten voor onderzoekers",
+        "AI-case-triage"
       ],
-      "startFreeTrial": "Maak uw meldkanaal aan",
+      "startFreeTrial": "Start gratis proefperiode",
+      "bookDemo": "Demo boeken",
       "viewPricing": "Bekijk prijzen"
     },
     "trusted": "Vertrouwd door honderden bedrijven",
+    "trustBar": {
+      "items": [
+        "Anonieme meldingen",
+        "End-to-end versleuteld",
+        "AVG-bewust ontwerp",
+        "EU-richtlijn conform",
+        "Veilige tweewegscommunicatie"
+      ]
+    },
     "features": {
       "title": "Alles wat u nodig heeft voor veilige rapportage",
       "subtitle": "Ons platform biedt uitgebreide tools voor het beheren van klokkenluiderrapporten met volledige vertrouwelijkheid en compliance.",
@@ -322,15 +330,52 @@
       "question6": {
         "question": "Kunnen we ons plan op elk moment annuleren of wijzigen?",
         "answer": "Ja, u kunt uw abonnement op elk moment upgraden, downgraden of annuleren. Als u annuleert, behoudt u toegang tot het einde van uw factureringsperiode. We bieden ook een 14-daagse gratis proefperiode zodat u alle functies kunt testen voordat u zich vastlegt."
+      },
+      "question7": {
+        "question": "Hoe snel kunnen we starten?",
+        "answer": "De meeste organisaties zijn binnen 24 uur live. Na aanmelding kunt u het portaal aanpassen, het team uitnodigen en meldingen accepteren. Onboarding is inbegrepen."
       }
     },
     "cta": {
-      "title": "Klaar om uw compliance-programma te versterken?",
-      "description": "Nog niet klaar voor een gratis proefperiode of demo? Deel uw vereisten met ons en we reageren snel om te bespreken hoe Disclosurely uw organisatie kan ondersteunen.",
-      "button": "Start gratis proefperiode"
+      "title": "Klaar om een veilig klokkenluiderskanaal te lanceren?",
+      "description": "Start vandaag uw gratis proefperiode of boek een demo met ons team.",
+      "button": "Start gratis proefperiode",
+      "bookDemo": "Demo boeken"
     },
     "highlights": {
-      "tag": "Security & Compliance"
+      "tag": "Security & Compliance",
+      "sectionTitle": "Disclosurely functionaliteiten",
+      "sectionSubtitle": "Uitgebreide tools voor veilige anonieme meldingen, compliance en casemanagement",
+      "anonymousReporting": {
+        "additionalContent": "Medewerkers kunnen misstanden, ethische schendingen of andere zorgen volledig anoniem melden via een formulier in de browser. Versleuteling beschermt identiteit en compliance; zaken komen in een centrale werkruimte met audittrails en duidelijke termijnen.",
+        "bullet1": "Geen gegevensverzameling over melders",
+        "bullet2": "Anonieme follow-upberichten",
+        "bullet3": "Meertalige aanmeldportalen"
+      },
+      "encryption": {
+        "additionalContent": "Elke melding in Disclosurely is beschermd met AES-256-versleuteling, dezelfde standaard als banken en overheidsinstanties. Berichten, casusnotities en bijlagen blijven vertrouwelijk van indiening tot afronding.",
+        "bullet1": "AES-256 van indiening tot afronding",
+        "bullet2": "Versleutelde bestandsbijlagen",
+        "bullet3": "Rolgebaseerde decryptietoegang"
+      },
+      "compliance": {
+        "additionalContent": "Conform UK- en EU-klokkenluidersregelgeving met software gebaseerd op wettelijke vereisten. Het platform ondersteunt de EU-richtlijn en de UK Employment Rights Act.",
+        "bullet1": "EU-richtlijn en UK ERA-conforme workflows",
+        "bullet2": "AVG-gereed gegevensbeheer",
+        "bullet3": "Exporteerbare auditpakketten voor toezichthouders"
+      },
+      "messaging": {
+        "additionalContent": "Vertrouwelijke, anonieme dialoog met klokkenluiders van eerste melding tot resultaat. Veilige berichten in het platform stellen onderzoekers in staat informatie op te vragen en updates te delen zonder identiteit te onthullen.",
+        "bullet1": "End-to-end versleutelde gesprekken",
+        "bullet2": "Anonimiteit doorlopend gewaarborgd",
+        "bullet3": "Realtime melding voor onderzoekers"
+      },
+      "aiPowered": {
+        "additionalContent": "Privacy-first AI-analyse met automatische PII-redactie. De assistent beoordeelt binnenkomende zaken, detecteert patronen en benadrukt risico's.",
+        "bullet1": "AI met automatische PII-redactie",
+        "bullet2": "Risicoscoring en caseprioritering",
+        "bullet3": "Patroonherkenning over meldingen"
+      }
     },
     "branding": {
       "tag": "Branding & Identity",
@@ -363,40 +408,52 @@
   },
   "pricing": {
     "hero": {
-      "title": "Eenvoudige, transparante prijzen",
-      "subtitle": "Kies het juiste plan voor uw organisatie. Begin met onze zeven-daagse gratis proefperiode en upgrade naarmate u groeit.",
-      "tagline": "Transparent Pricing Built For Business.",
-      "subtitle1": "7-daagse gratis proefperiode • Onbeperkte rapporten inbegrepen",
-      "subtitle2": "Alle plannen omvatten versleuteling op militair niveau, GDPR-naleving en real-time analyses. Kies het plan dat aansluit bij uw compliancebehoeften en schaal naarmate u groeit.",
+      "title": "Prijzen klokkenluiderssoftware voor teams van elke omvang",
+      "tagline": "Klokkenluiden & compliance",
+      "subtitle": "Kies het plan dat bij uw organisatie past. Gratis proefperiode, altijd wijzigen.",
+      "subtitle1": "Start met veilige anonieme rapportage, casusbeheer en ingebouwde compliance-tools. Upgrade naarmate uw rapportagebehoeften groeien.",
+      "subtitle2": "14 dagen gratis proefperiode, geen creditcard. Wissel of upgrade uw plan wanneer u wilt.",
       "startFreeTrial": "Start gratis proefperiode"
     },
+    "reassurance": {
+      "freeTrial": "Gratis proefperiode beschikbaar",
+      "changePlans": "Wissel elk moment van plan",
+      "noHiddenFees": "Geen verborgen kosten",
+      "secureHosting": "Veilige hosting inbegrepen"
+    },
     "designedForBusinesses": {
-      "title": "Ontworpen voor bedrijven van alle groottes",
-      "description": "Of u nu een kleine organisatie bent die voor het eerst klokkenluiderssoftware implementeert of een grotere groep die het uitrolt over meerdere entiteiten, Disclosurely schaalt met u mee. Eenvoudige, transparante prijzen en flexibele werkruimten maken het gemakkelijk om klein te beginnen, waarde te bewijzen en dekking uit te breiden naarmate uw rapportagevolumes en regelgevingsverplichtingen groeien.",
-      "bullet1": "Ideaal voor MKB-bedrijven die veilige, conforme klokkenluiderskanalen nodig hebben zonder bedrijfsniveau complexiteit of opstartkosten.",
-      "bullet2": "Flexibel voor groeiende teams, met extra gebruikers, entiteiten en talen die gemakkelijk toe te voegen zijn naarmate uw organisatie evolueert.",
-      "bullet3": "Klaar voor grotere organisaties, met gestructureerde case handling, audittrails en rapportage die voldoen aan de verwachtingen van besturen, toezichthouders en externe adviseurs.",
-      "imageAlt": "Ontworpen voor bedrijven van alle groottes"
+      "title": "Wat zit in elk plan",
+      "description": "Alle plannen bevatten het nodige voor veilige, conforme rapportage.",
+      "bullet1": "Veilige anonieme rapportage",
+      "bullet2": "Casusbeheer en auditlogs",
+      "bullet3": "Versleutelde gegevensverwerking",
+      "bullet4": "Gehost rapportageportaal",
+      "bullet5": "E-mailnotificaties",
+      "bullet6": "AVG-bewust ontwerp",
+      "imageAlt": "Wat zit in elk plan"
     },
     "plans": {
       "mostPopular": "Meest populair",
       "perMonth": "/maand",
+      "perYear": "/jaar",
       "starter": {
         "name": "Starter",
         "price": "£19.99",
-        "description": "Perfect voor kleine organisaties die beginnen"
+        "description": "Begin met anonieme rapportage en casusbeheer.",
+        "bestFor": "Kleine organisaties die een veilig rapportagekanaal starten"
       },
       "pro": {
         "name": "Pro",
         "price": "£39.99",
-        "description": "Voor groeiende organisaties met geavanceerde behoeften"
+        "description": "Gebrandmerkte portalen, veilige berichten, AI-triage en workflowautomation.",
+        "bestFor": "Groeiende teams die gebrandmerkte portalen, automatisering en inzichten nodig hebben"
       },
       "enterprise": {
         "name": "Enterprise",
         "price": "Aangepast",
-        "description": "Voor grote organisaties met specifieke vereisten"
-      },
-      "perYear": "/year"
+        "description": "SSO, maatwerk onboarding, geavanceerde rechten en multi-team setups, dedicated support en hosting of gegevensverwerking op maat indien nodig.",
+        "bestFor": "Grote of multi-entiteit organisaties met geavanceerde beveiliging en uitrol"
+      }
     },
     "features": {
       "casesLimit": "5 zaken/maand",
@@ -425,25 +482,42 @@
       "title": "Veelgestelde vragen",
       "trial": {
         "question": "Is er een gratis proefperiode?",
-        "answer": "Ja, alle plannen komen met een 7-daagse gratis proefperiode zodat u kunt zien hoe het platform werkt. Geen creditcard vereist."
+        "answer": "Ja. Alle plannen hebben 14 dagen gratis proefperiode, geen creditcard. U kunt het platform uitproberen voordat u zich vastlegt."
       },
-      "limit": {
-        "question": "Wat gebeurt er als ik mijn casuslimiet bereik op het Starter-plan?",
-        "answer": "Als u uw maandelijkse casustoewijzing overschrijdt, wordt u op de hoogte gesteld in het dashboard. U kunt upgraden naar het Pro-plan voor onbeperkte zaken of wachten tot volgende maand."
+      "includedInEveryPlan": {
+        "question": "Wat zit in elk plan?",
+        "answer": "Elk plan bevat veilige anonieme rapportage, casusbeheer en auditlogs, versleutelde gegevensverwerking, een gehost portaal, e-mailnotificaties en AVG-bewust ontwerp. Pro voegt gebrandmerkte portalen, veilige berichten, AI-triage en meer toe."
       },
-      "change": {
-        "question": "Kan ik later van plan veranderen?",
-        "answer": "Absoluut! U kunt uw plan op elk moment upgraden of downgraden vanuit uw dashboard."
+      "planFor50Plus": {
+        "question": "Welk plan past bij een team van 50+ medewerkers?",
+        "answer": "Pro past bij de meeste organisaties met 50+: gebrandmerkte portalen, veilige berichten, AI-triage en automation. Kies Enterprise voor multi-entiteit uitrol, SSO, maatwerk onboarding of dedicated support."
       },
-      "security": {
-        "question": "Welke beveiligingscertificeringen heeft u?",
-        "answer": "We zijn GDPR-compliant en werken aan ISO 27001- en SOX-compliance."
+      "upgradeDowngrade": {
+        "question": "Kunnen we later upgraden of downgraden?",
+        "answer": "Ja. U kunt uw plan elk moment wijzigen via het dashboard. Geen lange termijn verplichting."
+      },
+      "onboardingSupport": {
+        "question": "Bieden jullie onboarding-ondersteuning?",
+        "answer": "Ja. Alle plannen hebben e-mailondersteuning met onboarding. Pro heeft prioriteitsondersteuning; Enterprise heeft dedicated support en maatwerk onboarding indien nodig."
+      },
+      "anonymousOnAllPlans": {
+        "question": "Zit anonieme rapportage in alle plannen?",
+        "answer": "Ja. Veilige anonieme rapportage en een gehost portaal zitten in elk plan. Melders kunnen anoniem indienen."
+      },
+      "securityFeatures": {
+        "question": "Welke beveiligingsfuncties zitten erin?",
+        "answer": "Alle plannen: versleuteling (AES-GCM), AVG-conforme gegevensverwerking, auditlogs en rolgebaseerde toegang. Enterprise voegt SSO en geavanceerde authenticatie toe. We zijn AVG-conform en streven ISO 27001 en SOX na."
+      },
+      "hiddenCosts": {
+        "question": "Zijn er verborgen kosten?",
+        "answer": "Nee. De prijs is per plan duidelijk; geen verborgen kosten. Optionele add-ons worden expliciet vermeld. Veilige hosting is inbegrepen."
       }
     },
     "cta": {
-      "ready": "Klaar om te beginnen?",
-      "join": "Word lid van organisaties wereldwijd die Disclosurely vertrouwen voor veilige rapportage.",
+      "ready": "Klaar om een veilig rapportagekanaal te lanceren?",
+      "join": "Start uw gratis proefperiode of praat met ons over het juiste plan.",
       "startTrial": "Start gratis proefperiode",
+      "talkToTeam": "Praat met ons team",
       "contactSales": "Contact opnemen met verkoop"
     },
     "trustIndicators": {
@@ -525,7 +599,7 @@
     },
     "compare": {
       "title": "Compare All Features",
-      "subtitle": "See exactly what's included in each plan",
+      "subtitle": "Bekijk welk plan past bij uw bedrijf.",
       "headers": {
         "features": "Features",
         "starter": "Starter",
@@ -1452,6 +1526,131 @@
       },
       "securityTitle": "Security and compliance",
       "securityDescription": "AES-GCM encryption, access logging, and continuous monitoring help meet GDPR, ISO 27001, and sector frameworks."
+    }
+  },
+  "directive": {
+    "hero": {
+      "badge": "EU-klokkenluidersrichtlijn",
+      "title": "Conform de EU-klokkenluidersrichtlijn: praktisch uitgevoerd",
+      "subtitle": "Zet veilige anonieme meldkanalen op, voldoe aan reactietermijnen en beheer zaken met een systeem voor EU-organisaties.",
+      "startFreeTrial": "Start gratis proefperiode",
+      "bookDemo": "Demo boeken",
+      "reassurance": {
+        "anonymous": "Anonieme melding",
+        "secureCase": "Veilige zaakafhandeling",
+        "sevenDay": "Bevestiging binnen 7 dagen",
+        "ninetyDay": "Opvolging binnen 90 dagen",
+        "multilingual": "Meertalige portalen"
+      }
+    },
+    "whoComplies": {
+      "title": "Wie moet voldoen?",
+      "card1Title": "Organisaties met 50+ werknemers",
+      "card1Desc": "Publieke en private entiteiten boven de drempel moeten interne meldkanalen bieden.",
+      "card2Title": "Publieke sector",
+      "card2Desc": "Veel overheidsorganisaties vallen in scope ongeacht de omvang.",
+      "card3Title": "Bedrijven actief in meerdere EU-lidstaten",
+      "card3Desc": "Grensoverschrijdende activiteit vereist naleving in elke lidstaat.",
+      "card4Title": "Verantwoordelijken interne melding",
+      "card4Desc": "Aangewezen personen voor veilige kanalen en zaakafhandeling."
+    },
+    "requirements": {
+      "title": "Wat vereist de EU-klokkenluidersrichtlijn?",
+      "subtitle": "Praktische samenvatting van de kernverplichtingen.",
+      "item1": "Veilige interne meldkanalen",
+      "item2": "Vertrouwelijkheid voor melders",
+      "item3": "Bevestiging binnen 7 dagen",
+      "item4": "Opvolging binnen 3 maanden",
+      "item5": "Bescherming tegen vergelding",
+      "item6": "Veilige vastlegging en gecontroleerde toegang",
+      "item7": "Meertalige en toegankelijke melding waar relevant"
+    },
+    "risks": {
+      "title": "Waarom een conform meldkanaal belangrijk is",
+      "item1Title": "Toezichtrisico",
+      "item1Desc": "Boetes en handhaving bij ontoereikende kanalen of processen.",
+      "item2Title": "Falen interne melding",
+      "item2Desc": "Zonder veilige, betrouwbare kanalen worden meldingen niet gedaan of afgehandeld.",
+      "item3Title": "Reputatieschade",
+      "item3Desc": "Publieke of toezichtkritiek wanneer misstanden naar buiten komen zonder goede afhandeling.",
+      "item4Title": "Minder vertrouwen medewerkers",
+      "item4Desc": "Medewerkers verliezen vertrouwen als systemen onduidelijk of onveilig zijn.",
+      "item5Title": "Operationele last",
+      "item5Desc": "Handmatige of ad-hoc processen zorgen voor vertraging, inconsistentie en auditrisico."
+    },
+    "systemNeeds": {
+      "title": "Wat een conform klokkenluiderssysteem moet bevatten",
+      "subtitle": "Functionaliteit in lijn met de richtlijn.",
+      "card1Title": "Veilige anonieme meldkanalen",
+      "card1Desc": "Web- en optioneel telefoonintake met versleuteling en zonder identiteitsvastlegging.",
+      "card1Bullet1": "Anonieme intake met veilige berichten",
+      "card1Bullet2": "End-to-endversleuteling",
+      "card1Bullet3": "Echte anonimiteit door het hele proces",
+      "card2Title": "Veilige tweewegcommunicatie",
+      "card2Desc": "Opvolging met melders zonder hun identiteit te onthullen.",
+      "card2Bullet1": "Veilige berichten met zaaknummer en PIN",
+      "card2Bullet2": "Houdt melders betrokken en geïnformeerd",
+      "card2Bullet3": "Anonimiteit behouden bij het verzamelen van bewijs",
+      "card3Title": "Zaakbeheer en audit-proof vastlegging",
+      "card3Desc": "Gestructureerde workflows en gedocumenteerde afhandeling.",
+      "card3Bullet1": "Geautomatiseerde routing en termijnen",
+      "card3Bullet2": "Bewaarplaats met audittrails",
+      "card3Bullet3": "Bewaring en toegangscontrole",
+      "card4Title": "Meertalige ondersteuning",
+      "card4Desc": "Melding in meerdere talen voor EU-teams.",
+      "card4Bullet1": "Melding in meer dan 35 talen",
+      "card4Bullet2": "Moedertaal voor elke werknemer",
+      "card4Bullet3": "Cruciaal voor multinationale activiteiten",
+      "card5Title": "Rolgebaseerde toegang en rechten",
+      "card5Desc": "Alleen aangewezen behandelaars zien gevoelige meldingen.",
+      "card5Bullet1": "Gedetailleerde rechten",
+      "card5Bullet2": "Toegangslogging",
+      "card5Bullet3": "Audit-proof overzicht",
+      "card6Title": "Gegevensbeschermingscontroles",
+      "card6Desc": "AVG-conforme versleuteling, bewaartermijnen en toegang.",
+      "card6Bullet1": "Versleutelde opslag in gecertificeerde omgevingen",
+      "card6Bullet2": "Geautomatiseerd bewaarbeheer",
+      "card6Bullet3": "Volledige audittrail voor toezichthouders"
+    },
+    "howWeHelp": {
+      "title": "Hoe Disclosurely EU-klokkenluidersnaleving ondersteunt",
+      "subtitle": "Ontworpen voor de vereisten van de richtlijn.",
+      "item1": "Anonieme meldingsintake met versleutelde formulieren",
+      "item2": "Versleutelde zaakafhandeling en tweewegcommunicatie",
+      "item3": "Rolgebaseerde zaaktoegang voor aangewezen behandelaars",
+      "item4": "Workflowondersteuning en herinneringen 7 en 90 dagen",
+      "item5": "Meertalige meldportalen",
+      "item6": "Audit-proof vastlegging en exporteerbaar bewijs",
+      "item7": "Privacy-first ontwerp",
+      "item8": "AI-ondersteunde redactie en privé AI-gateway"
+    },
+    "midCta": {
+      "title": "Klaar om een conform meldkanaal te lanceren?",
+      "startFreeTrial": "Start gratis proefperiode",
+      "talkToTeam": "Praat met ons team"
+    },
+    "impact": {
+      "title": "De operationele waarde van correcte uitvoering",
+      "card1Title": "Risicobeheersing",
+      "card1Desc": "Vroege detectie, gedocumenteerde afhandeling en minder blootstelling aan boetes en handhaving.",
+      "card2Title": "Operationele efficiëntie",
+      "card2Desc": "Geautomatiseerde workflows en duidelijke termijnen in plaats van handmatige of ad-hoc processen.",
+      "card3Title": "Vertrouwen en cultuur",
+      "card3Desc": "Medewerkers durven te melden; naleving is zichtbaar en geloofwaardig."
+    },
+    "gettingStarted": {
+      "title": "Aan de slag",
+      "item1": "Veilige meldkanalen opzetten",
+      "item2": "Workflows in lijn met de richtlijn configureren",
+      "item3": "Onderzoeksteams trainen",
+      "item4": "Het kanaal aan medewerkers communiceren",
+      "item5": "Processen monitoren en verfijnen"
+    },
+    "finalCta": {
+      "title": "Lanceer in enkele dagen een conform meldkanaal",
+      "subtitle": "Begeleide onboarding, veilige meldworkflows en ingebouwde nalevingsondersteuning voor EU-organisaties.",
+      "startFreeTrial": "Start gratis proefperiode",
+      "bookDemo": "Demo boeken"
     }
   }
 }

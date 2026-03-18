@@ -10,7 +10,9 @@ import { useTranslation } from 'react-i18next';
 import { useLanguageFromUrl } from '@/hooks/useLanguageFromUrl';
 import type { BlogPost } from '@/lib/contentful';
 
-const BlogSection = () => {
+type BlogSectionProps = { compact?: boolean };
+
+const BlogSection = ({ compact = false }: BlogSectionProps) => {
   const { t, i18n } = useTranslation();
   const { langPrefix } = useLanguageFromUrl();
   const [posts, setPosts] = useState<BlogPost[]>([]);
@@ -69,12 +71,15 @@ const BlogSection = () => {
     return null;
   };
 
+  const sectionPadding = compact ? "py-12" : "py-16";
+  const headingClass = compact ? "mb-4 text-2xl font-bold text-gray-900" : "mb-4 text-3xl font-bold text-gray-900";
+
   if (loading) {
     return (
-      <div className="bg-gray-50 py-16">
+      <div className={`bg-gray-50 ${sectionPadding}`}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="mb-4 text-3xl font-bold text-gray-900">Latest Insights</h2>
+            <h2 className={headingClass}>Latest Insights</h2>
             <p className="mb-8 text-lg text-gray-600">Loading our latest articles...</p>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
               {[1, 2, 3].map((i) => (
@@ -104,10 +109,10 @@ const BlogSection = () => {
   }
 
   return (
-    <div className="bg-gray-50 py-16">
+    <div className={`bg-gray-50 ${sectionPadding}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-gray-900">Latest Insights</h2>
+        <div className={compact ? "mb-8 text-center" : "mb-12 text-center"}>
+          <h2 className={headingClass}>Latest Insights</h2>
           <p className="text-lg text-gray-600">
             Stay informed with our latest articles on compliance, security, and whistleblowing best practices.
           </p>

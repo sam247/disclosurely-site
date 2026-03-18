@@ -23,6 +23,18 @@ export function middleware(request: NextRequest) {
   const segments = pathname.split("/").filter(Boolean);
   const first = segments[0];
 
+  // 301: /compliance-software -> /whistleblowing-directive (merge)
+  if (pathname === "/compliance-software") {
+    const redirectUrl = request.nextUrl.clone();
+    redirectUrl.pathname = "/whistleblowing-directive";
+    return NextResponse.redirect(redirectUrl, 301);
+  }
+  if (first && SUPPORTED_LANGUAGES.includes(first) && segments[1] === "compliance-software") {
+    const redirectUrl = request.nextUrl.clone();
+    redirectUrl.pathname = `/${first}/whistleblowing-directive`;
+    return NextResponse.redirect(redirectUrl, 301);
+  }
+
   if (!SUPPORTED_LANGUAGES.includes(first)) {
     return NextResponse.next();
   }

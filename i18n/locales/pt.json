@@ -167,28 +167,36 @@
   },
   "landing": {
     "hero": {
-      "title1": "Conformidade com a diretiva UE sobre denunciantes",
-      "title2": "Fluxos de Trabalho Alimentados por IA",
+      "title1": "Software de denúncias seguro para conformidade UK e UE",
+      "mobilePhrase": "Denúncia anónima para equipas de conformidade",
       "typingPhrases": [
-        "Canais de denúncia anónimos",
-        "Gestão segura de casos",
-        "Registos de investigação auditáveis",
-        "Mensagens encriptadas para denunciantes",
-        "Portais de denúncia multilingues",
-        "Análise de casos assistida por IA"
+        "Denúncia anónima",
+        "Gestão de casos encriptada",
+        "Conformidade auditável",
+        "Comunicação bidireccional segura"
       ],
       "badge": "Military Grade AES-GCM Encryption",
-      "subtitle": "Denúncia anónima segura e gestão de casos para organizações com 50+ colaboradores. O Disclosurely fornece um sistema de denúncias conforme com canais encriptados, gestão de casos auditável e portais de submissão multilingues.",
+      "subtitle": "Dê aos colaboradores uma forma segura e anónima de reportar preocupações. O Disclosurely oferece canais encriptados, gestão estruturada de casos e registos auditáveis — em conformidade com a diretiva UE e requisitos UK.",
       "bullets": [
-        "Portal de denúncia anónimo",
+        "Portal de receção anónimo",
         "Trilhos de auditoria à prova de adulteração",
-        "Mensagens seguras para investigadores",
-        "Análise de casos assistida por IA"
+        "Mensagens encriptadas para investigadores",
+        "Triagem de casos com IA"
       ],
-      "startFreeTrial": "Criar o seu canal de denúncias",
+      "startFreeTrial": "Iniciar teste gratuito",
+      "bookDemo": "Marcar demo",
       "viewPricing": "Ver preços"
     },
     "trusted": "Confiado por centenas de empresas",
+    "trustBar": {
+      "items": [
+        "Denúncia anónima",
+        "Encriptação fim-a-fim",
+        "Design consciente do RGPD",
+        "Conforme diretiva UE",
+        "Comunicação bidireccional segura"
+      ]
+    },
     "features": {
       "title": "Tudo o que precisa para relatórios seguros",
       "subtitle": "A nossa plataforma fornece ferramentas abrangentes para gerir relatórios de denunciantes com total confidencialidade e conformidade.",
@@ -322,15 +330,52 @@
       "question6": {
         "question": "Podemos cancelar ou alterar o nosso plano a qualquer momento?",
         "answer": "Sim, pode fazer upgrade, downgrade ou cancelar a sua subscrição a qualquer momento. Se cancelar, manterá o acesso até ao final do seu período de faturação. Também oferecemos um teste gratuito de 14 dias para que possa testar todas as funcionalidades antes de se comprometer."
+      },
+      "question7": {
+        "question": "Com que rapidez podemos começar?",
+        "answer": "A maioria das organizações está operacional em 24 horas. Após registo pode personalizar o portal, convidar a equipa e aceitar denúncias. O onboarding está incluído."
       }
     },
     "cta": {
-      "title": "Pronto para fortalecer o seu programa de conformidade?",
-      "description": "Não está pronto para um teste gratuito ou demo? Partilhe os seus requisitos connosco e responderemos rapidamente para discutir como o Disclosurely pode apoiar a sua organização.",
-      "button": "Iniciar teste gratuito"
+      "title": "Pronto para lançar um canal de denúncias seguro?",
+      "description": "Comece o seu teste gratuito hoje ou marque uma demo com a nossa equipa.",
+      "button": "Iniciar teste gratuito",
+      "bookDemo": "Marcar demo"
     },
     "highlights": {
-      "tag": "Security & Compliance"
+      "tag": "Security & Compliance",
+      "sectionTitle": "Funcionalidades Disclosurely",
+      "sectionSubtitle": "Ferramentas completas para denúncia anónima segura, conformidade e gestão de casos",
+      "anonymousReporting": {
+        "additionalContent": "Os colaboradores podem reportar irregularidades, violações éticas ou outras preocupações de forma totalmente anónima através de um formulário no browser. A encriptação protege a identidade e a conformidade; os casos fluem para um espaço central com trilhos de auditoria e prazos claros.",
+        "bullet1": "Zero recolha de dados sobre denunciantes",
+        "bullet2": "Mensagens de follow-up anónimas",
+        "bullet3": "Portais de submissão multilingues"
+      },
+      "encryption": {
+        "additionalContent": "Cada denúncia no Disclosurely está protegida com encriptação AES-256, o mesmo padrão usado por bancos e agências governamentais. Mensagens, notas de caso e anexos permanecem confidenciais da submissão ao encerramento.",
+        "bullet1": "AES-256 da submissão ao encerramento",
+        "bullet2": "Anexos encriptados",
+        "bullet3": "Acesso à desencriptação por função"
+      },
+      "compliance": {
+        "additionalContent": "Conformidade com as regulamentações UK e UE sobre denúncias com software baseado em requisitos legais. A plataforma suporta a diretiva UE e o UK Employment Rights Act.",
+        "bullet1": "Fluxos conformes com a diretiva UE e UK ERA",
+        "bullet2": "Tratamento de dados pronto para RGPD",
+        "bullet3": "Pacotes de auditoria exportáveis para reguladores"
+      },
+      "messaging": {
+        "additionalContent": "Diálogo confidencial e anónimo com denunciantes do primeiro report ao resultado. A mensagem segura na plataforma permite que os investigadores solicitem informações e partilhem atualizações sem revelar identidade.",
+        "bullet1": "Conversas encriptadas fim-a-fim",
+        "bullet2": "Anonimato mantido em todo o percurso",
+        "bullet3": "Notificação em tempo real para investigadores"
+      },
+      "aiPowered": {
+        "additionalContent": "Análise de IA com prioridade à privacidade e mascaramento automático de dados pessoais. O assistente analisa casos recebidos, deteta padrões e destaca riscos.",
+        "bullet1": "IA com mascaramento automático de dados pessoais",
+        "bullet2": "Pontuação de risco e priorização de casos",
+        "bullet3": "Deteção de padrões entre denúncias"
+      }
     },
     "branding": {
       "tag": "Branding & Identity",
@@ -363,40 +408,52 @@
   },
   "pricing": {
     "hero": {
-      "title": "Preços simples e transparentes",
-      "subtitle": "Escolha o plano certo para a sua organização. Comece com o nosso teste gratuito de sete dias e faça upgrade conforme cresce.",
-      "tagline": "Transparent Pricing Built For Business.",
-      "subtitle1": "Teste gratuito de 7 dias • Relatórios ilimitados incluídos",
-      "subtitle2": "Todos os planos incluem criptografia de nível militar, conformidade com GDPR e análises em tempo real. Escolha o plano que corresponde às suas necessidades de conformidade e escale conforme cresce.",
+      "title": "Preços de software de denúncias para equipas de qualquer dimensão",
+      "tagline": "Denúncias e conformidade",
+      "subtitle": "Escolha o plano certo para a sua organização. Teste gratuito, altere quando quiser.",
+      "subtitle1": "Comece com denúncia anónima segura, gestão de casos e ferramentas de conformidade integradas. Faça upgrade quando as necessidades crescerem.",
+      "subtitle2": "14 dias de teste gratuito, sem cartão. Altere ou faça upgrade do plano a qualquer momento.",
       "startFreeTrial": "Iniciar teste gratuito"
     },
+    "reassurance": {
+      "freeTrial": "Teste gratuito disponível",
+      "changePlans": "Altere o plano quando quiser",
+      "noHiddenFees": "Sem custos ocultos",
+      "secureHosting": "Alojamento seguro incluído"
+    },
     "designedForBusinesses": {
-      "title": "Projetado para empresas de todos os tamanhos",
-      "description": "Seja você uma pequena organização implementando software de denúncias pela primeira vez ou um grupo maior implantando-o em várias entidades, o Disclosurely escala com você. Preços simples e transparentes e espaços de trabalho flexíveis facilitam começar pequeno, provar valor e expandir a cobertura à medida que seus volumes de relatórios e obrigações regulatórias crescem.",
-      "bullet1": "Ideal para PMEs que precisam de canais de denúncias seguros e compatíveis sem complexidade ou custos de configuração de nível empresarial.",
-      "bullet2": "Flexível para equipes em crescimento, com usuários, entidades e idiomas adicionais fáceis de adicionar conforme sua organização evolui.",
-      "bullet3": "Pronto para organizações maiores, com tratamento estruturado de casos, trilhas de auditoria e relatórios que atendem às expectativas de conselhos, reguladores e assessores externos.",
-      "imageAlt": "Projetado para empresas de todos os tamanhos"
+      "title": "O que está incluído em cada plano",
+      "description": "Todos os planos incluem o essencial para denúncias seguras e conformes.",
+      "bullet1": "Denúncia anónima segura",
+      "bullet2": "Gestão de casos e registos de auditoria",
+      "bullet3": "Tratamento de dados encriptado",
+      "bullet4": "Portal de denúncias alojado",
+      "bullet5": "Notificações por e-mail",
+      "bullet6": "Design consciente do RGPD",
+      "imageAlt": "O que está incluído em cada plano"
     },
     "plans": {
       "mostPopular": "Mais popular",
       "perMonth": "/mês",
+      "perYear": "/ano",
       "starter": {
         "name": "Starter",
         "price": "£19.99",
-        "description": "Perfeito para organizações pequenas que estão começando"
+        "description": "Comece com denúncia anónima e gestão de casos.",
+        "bestFor": "Pequenas organizações a lançar um canal de denúncias seguro"
       },
       "pro": {
         "name": "Pro",
         "price": "£39.99",
-        "description": "Para organizações em crescimento com necessidades avançadas"
+        "description": "Portais com marca, mensagens seguras, triagem com IA e automação de fluxos.",
+        "bestFor": "Equipas em crescimento que precisam de portais com marca, automação e relatórios"
       },
       "enterprise": {
         "name": "Enterprise",
         "price": "Personalizado",
-        "description": "Para grandes organizações com requisitos personalizados"
-      },
-      "perYear": "/year"
+        "description": "SSO, onboarding à medida, permissões avançadas e configurações multiequipa, suporte dedicado e alojamento ou tratamento de dados sob medida quando necessário.",
+        "bestFor": "Organizações grandes ou multi-entidade com necessidades avançadas de segurança e implementação"
+      }
     },
     "features": {
       "casesLimit": "5 casos/mês",
@@ -425,25 +482,42 @@
       "title": "Perguntas frequentes",
       "trial": {
         "question": "Há um teste gratuito?",
-        "answer": "Sim, todos os planos vêm com um teste gratuito de 7 dias para que possa ver como a plataforma funciona. Não é necessário cartão de crédito."
+        "answer": "Sim. Todos os planos incluem 14 dias de teste gratuito, sem cartão. Pode experimentar a plataforma antes de se comprometer."
       },
-      "limit": {
-        "question": "O que acontece se atingir o meu limite de casos no plano Starter?",
-        "answer": "Se exceder a sua alocação mensal de casos, será notificado no painel. Pode fazer upgrade para o plano Pro para casos ilimitados ou aguardar até ao próximo mês."
+      "includedInEveryPlan": {
+        "question": "O que está incluído em cada plano?",
+        "answer": "Cada plano inclui denúncia anónima segura, gestão de casos e registos de auditoria, tratamento de dados encriptado, portal alojado, notificações por e-mail e design RGPD. O Pro adiciona portais com marca, mensagens seguras, triagem com IA e mais."
       },
-      "change": {
-        "question": "Posso alterar o plano mais tarde?",
-        "answer": "Absolutamente! Pode fazer upgrade ou downgrade do seu plano a qualquer momento a partir do seu painel."
+      "planFor50Plus": {
+        "question": "Que plano para uma equipa com 50+ colaboradores?",
+        "answer": "O Pro é o mais adequado para a maioria das organizações com 50+: portais com marca, mensagens seguras, triagem com IA e automação. Escolha Enterprise para implementação multi-entidade, SSO, onboarding à medida ou suporte dedicado."
       },
-      "security": {
-        "question": "Que certificações de segurança têm?",
-        "answer": "Somos compatíveis com GDPR e estamos a trabalhar para a conformidade ISO 27001 e SOX."
+      "upgradeDowngrade": {
+        "question": "Podemos alterar o plano mais tarde?",
+        "answer": "Sim. Pode alterar o plano a qualquer momento a partir do painel. Sem compromissos de longo prazo."
+      },
+      "onboardingSupport": {
+        "question": "Oferecem suporte à implementação?",
+        "answer": "Sim. Todos os planos incluem suporte por e-mail com implementação. O Pro inclui suporte prioritário; o Enterprise inclui suporte dedicado e onboarding à medida quando necessário."
+      },
+      "anonymousOnAllPlans": {
+        "question": "A denúncia anónima está incluída em todos os planos?",
+        "answer": "Sim. Denúncia anónima segura e portal alojado estão incluídos em todos os planos. Os denunciantes podem submeter sem revelar identidade."
+      },
+      "securityFeatures": {
+        "question": "Que funcionalidades de segurança estão incluídas?",
+        "answer": "Todos os planos: encriptação (AES-GCM), tratamento de dados conforme RGPD, registos de auditoria e acesso por funções. O Enterprise adiciona SSO e opções de autenticação avançadas. Somos conformes com o RGPD e trabalhamos para ISO 27001 e SOX."
+      },
+      "hiddenCosts": {
+        "question": "Há custos ocultos?",
+        "answer": "Não. O preço é claro por plano; não há custos ocultos. Opcionais, se existirem, são indicados explicitamente. O alojamento seguro está incluído."
       }
     },
     "cta": {
-      "ready": "Pronto para começar?",
-      "join": "Junte-se a organizações em todo o mundo que confiam no Disclosurely para relatórios seguros.",
+      "ready": "Pronto para lançar um canal de denúncias seguro?",
+      "join": "Comece o seu teste gratuito ou fale com a nossa equipa sobre o plano certo.",
       "startTrial": "Iniciar teste gratuito",
+      "talkToTeam": "Falar com a nossa equipa",
       "contactSales": "Contactar vendas"
     },
     "trustIndicators": {
@@ -525,7 +599,7 @@
     },
     "compare": {
       "title": "Compare All Features",
-      "subtitle": "See exactly what's included in each plan",
+      "subtitle": "Veja qual plano se adequa à sua empresa.",
       "headers": {
         "features": "Features",
         "starter": "Starter",
@@ -1451,6 +1525,131 @@
       },
       "securityTitle": "Security and compliance",
       "securityDescription": "AES-GCM encryption, access logging, and continuous monitoring help meet GDPR, ISO 27001, and sector frameworks."
+    }
+  },
+  "directive": {
+    "hero": {
+      "badge": "Diretiva UE sobre denunciantes",
+      "title": "Conformidade com a Diretiva UE: na prática",
+      "subtitle": "Configure canais de denúncia anónimos e seguros, cumpra prazos de resposta e gere casos com um sistema para organizações da UE.",
+      "startFreeTrial": "Iniciar período de teste gratuito",
+      "bookDemo": "Marcar uma demo",
+      "reassurance": {
+        "anonymous": "Denúncia anónima",
+        "secureCase": "Tratamento seguro de casos",
+        "sevenDay": "Confirmação de receção em 7 dias",
+        "ninetyDay": "Acompanhamento em 90 dias",
+        "multilingual": "Portais multilingues"
+      }
+    },
+    "whoComplies": {
+      "title": "Quem deve cumprir?",
+      "card1Title": "Organizações com 50+ trabalhadores",
+      "card1Desc": "Entidades públicas e privadas acima do limiar devem disponibilizar canais internos de denúncia.",
+      "card2Title": "Entidades do setor público",
+      "card2Desc": "Muitas entidades públicas estão no âmbito independentemente da dimensão.",
+      "card3Title": "Empresas a operar em vários Estados-membros da UE",
+      "card3Desc": "Atividade transfronteiriça exige conformidade em cada Estado-membro.",
+      "card4Title": "Responsáveis pela denúncia interna",
+      "card4Desc": "Pessoas designadas para canais seguros e tratamento de casos."
+    },
+    "requirements": {
+      "title": "O que exige a Diretiva UE sobre denunciantes?",
+      "subtitle": "Resumo prático das obrigações principais.",
+      "item1": "Canais internos de denúncia seguros",
+      "item2": "Confidencialidade dos denunciantes",
+      "item3": "Confirmação de receção em 7 dias",
+      "item4": "Acompanhamento em 3 meses",
+      "item5": "Proteção contra retaliação",
+      "item6": "Registo seguro e acesso controlado",
+      "item7": "Denúncia multilingue e acessível quando aplicável"
+    },
+    "risks": {
+      "title": "Por que importa um canal de denúncia conforme",
+      "item1Title": "Exposição regulatória",
+      "item1Desc": "Multas e ação de supervisão quando os canais ou processos são insuficientes.",
+      "item2Title": "Falhas na denúncia interna",
+      "item2Desc": "Sem canais seguros e de confiança, as denúncias não são feitas nem tratadas.",
+      "item3Title": "Dano reputacional",
+      "item3Desc": "Escrutínio público ou regulador quando surgem irregularidades sem tratamento adequado.",
+      "item4Title": "Menor confiança dos trabalhadores",
+      "item4Desc": "Os trabalhadores perdem confiança se os sistemas forem pouco claros ou inseguros.",
+      "item5Title": "Carga operacional",
+      "item5Desc": "Processos manuais ou ad hoc geram atrasos, inconsistência e risco de auditoria."
+    },
+    "systemNeeds": {
+      "title": "O que deve incluir um sistema de denúncia conforme",
+      "subtitle": "Capacidades alinhadas com a Diretiva.",
+      "card1Title": "Canais de denúncia anónimos e seguros",
+      "card1Desc": "Entrada por web e opcional por telefone, com cifragem e sem captura de identidade.",
+      "card1Bullet1": "Entrada anónima com mensagens seguras",
+      "card1Bullet2": "Cifragem de ponta a ponta",
+      "card1Bullet3": "Anonimato real em todo o processo",
+      "card2Title": "Comunicação bidirecional segura",
+      "card2Desc": "Acompanhamento com denunciantes sem revelar a sua identidade.",
+      "card2Bullet1": "Mensagens seguras com número de caso e PIN",
+      "card2Bullet2": "Mantém os denunciantes informados",
+      "card2Bullet3": "Anonimato preservado na recolha de provas",
+      "card3Title": "Gestão de casos e registos auditáveis",
+      "card3Desc": "Fluxos estruturados e tratamento documentado.",
+      "card3Bullet1": "Encaminhamento e prazos automáticos",
+      "card3Bullet2": "Armazenamento de provas com trilhos de auditoria",
+      "card3Bullet3": "Retenção e controlos de acesso",
+      "card4Title": "Suporte multilingue",
+      "card4Desc": "Denúncia em várias línguas para equipas da UE.",
+      "card4Bullet1": "Denúncia em mais de 35 línguas",
+      "card4Bullet2": "Língua materna para cada trabalhador",
+      "card4Bullet3": "Crucial para operações multinacionais",
+      "card5Title": "Acesso e permissões por função",
+      "card5Desc": "Apenas os responsáveis designados veem denúncias sensíveis.",
+      "card5Bullet1": "Permissões granulares",
+      "card5Bullet2": "Registo de acessos",
+      "card5Bullet3": "Visão geral auditável",
+      "card6Title": "Controlos de proteção de dados",
+      "card6Desc": "Cifragem, retenção e acesso alinhados com o RGPD.",
+      "card6Bullet1": "Armazenamento cifrado em instalações certificadas",
+      "card6Bullet2": "Gestão automática de prazos de retenção",
+      "card6Bullet3": "Trilho de auditoria completo para supervisores"
+    },
+    "howWeHelp": {
+      "title": "Como a Disclosurely apoia a conformidade UE",
+      "subtitle": "Concebido para os requisitos da Diretiva.",
+      "item1": "Entrada de denúncias anónimas com formulários cifrados",
+      "item2": "Tratamento de casos cifrado e comunicação bidirecional",
+      "item3": "Acesso a casos por função para responsáveis designados",
+      "item4": "Suporte de fluxos de 7 e 90 dias e lembretes",
+      "item5": "Portais de denúncia multilingues",
+      "item6": "Registos auditáveis e provas exportáveis",
+      "item7": "Conceção centrada na privacidade",
+      "item8": "Ofuscação com IA e gateway IA privado"
+    },
+    "midCta": {
+      "title": "Pronto para lançar um canal de denúncia conforme?",
+      "startFreeTrial": "Iniciar período de teste gratuito",
+      "talkToTeam": "Falar com a nossa equipa"
+    },
+    "impact": {
+      "title": "O valor operacional de fazer bem",
+      "card1Title": "Mitigação de riscos",
+      "card1Desc": "Deteção precoce, tratamento documentado e menor exposição a multas.",
+      "card2Title": "Eficiência operacional",
+      "card2Desc": "Fluxos automáticos e prazos claros em vez de processos manuais ou ad hoc.",
+      "card3Title": "Confiança e cultura",
+      "card3Desc": "Os trabalhadores sentem-se seguros a denunciar; a conformidade é visível e credível."
+    },
+    "gettingStarted": {
+      "title": "Começar",
+      "item1": "Configurar canais de denúncia seguros",
+      "item2": "Configurar fluxos alinhados com a Diretiva",
+      "item3": "Formar equipas de investigação",
+      "item4": "Comunicar o canal aos trabalhadores",
+      "item5": "Monitorizar e refinar processos"
+    },
+    "finalCta": {
+      "title": "Lance um canal de denúncia conforme em dias",
+      "subtitle": "Onboarding guiado, fluxos de denúncia seguros e apoio à conformidade integrado para organizações da UE.",
+      "startFreeTrial": "Iniciar período de teste gratuito",
+      "bookDemo": "Marcar uma demo"
     }
   }
 }

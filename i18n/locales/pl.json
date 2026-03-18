@@ -7,28 +7,36 @@
   },
   "landing": {
     "hero": {
-      "title1": "Zgodność z dyrektywą UE o sygnalistach",
-      "title2": "Przepływami Pracy Napędzanymi przez AI",
+      "title1": "Bezpieczne oprogramowanie dla sygnalistów – zgodność UK i UE",
+      "mobilePhrase": "Anonimowe zgłoszenia dla zespołów ds. zgodności",
       "typingPhrases": [
-        "Anonimowe kanały zgłoszeń",
-        "Bezpieczne zarządzanie sprawami",
-        "Dzienniki dochodzeń zdatne do audytu",
-        "Szyfrowana korespondencja z sygnalistami",
-        "Wielojęzyczne portale zgłoszeń",
-        "Analiza spraw wspomagana przez IA"
+        "Anonimowe zgłoszenia",
+        "Szyfrowane zarządzanie sprawami",
+        "Zgodność zdatna do audytu",
+        "Bezpieczna komunikacja dwukierunkowa"
       ],
       "badge": "Military Grade AES-GCM Encryption",
-      "subtitle": "Bezpieczne anonimowe zgłoszenia i zarządzanie sprawami dla organizacji z 50+ pracownikami. Disclosurely zapewnia zgodny system zgłoszeń z szyfrowanymi kanałami, zarządzaniem sprawami zdatnym do audytu i wielojęzycznymi portalami zgłoszeń.",
+      "subtitle": "Daj pracownikom bezpieczny, anonimowy sposób zgłaszania obaw. Disclosurely oferuje szyfrowane kanały, uporządkowane zarządzanie sprawami i dokumentację zdatną do audytu — zgodnie z dyrektywą UE i wymogami UK.",
       "bullets": [
-        "Anonimowy portal zgłoszeń",
+        "Anonimowy portal przyjmowania",
         "Ścieżki audytu odporne na manipulację",
-        "Bezpieczna korespondencja dla badających",
-        "Analiza spraw wspomagana przez IA"
+        "Szyfrowana korespondencja dla badających",
+        "Triage spraw z wykorzystaniem AI"
       ],
-      "startFreeTrial": "Utwórz kanał zgłoszeń",
+      "startFreeTrial": "Rozpocznij darmowy test",
+      "bookDemo": "Zarezerwuj demo",
       "viewPricing": "Zobacz cennik"
     },
     "trusted": "Zaufane przez setki firm",
+    "trustBar": {
+      "items": [
+        "Anonimowe zgłoszenia",
+        "Szyfrowanie end-to-end",
+        "Projektowanie z myślą o RODO",
+        "Zgodność z dyrektywą UE",
+        "Bezpieczna komunikacja dwukierunkowa"
+      ]
+    },
     "features": {
       "title": "Wszystko czego potrzebujesz do bezpiecznego raportowania",
       "subtitle": "Nasza platforma zapewnia kompleksowe narzędzia do zarządzania zgłoszeniami sygnalistów z pełną poufnością i zgodnością.",
@@ -161,15 +169,52 @@
       "question6": {
         "question": "Czy możemy anulować lub zmienić nasz plan w dowolnym momencie?",
         "answer": "Tak, możesz ulepszyć, obniżyć lub anulować swoją subskrypcję w dowolnym momencie. Jeśli anulujesz, zachowasz dostęp do końca okresu rozliczeniowego. Oferujemy również 14-dniowy darmowy okres próbny, dzięki czemu możesz przetestować wszystkie funkcje przed podjęciem zobowiązania."
+      },
+      "question7": {
+        "question": "Jak szybko możemy zacząć?",
+        "answer": "Większość organizacji jest gotowa w ciągu 24 godzin. Po rejestracji możesz dostosować portal, zaprosić zespół i przyjmować zgłoszenia. Wdrożenie w cenie."
       }
     },
     "cta": {
-      "title": "Gotowy Wzmocnić Swój Program Zgodności?",
-      "description": "Nie jesteś jeszcze gotowy na darmowy okres próbny lub demo? Podziel się z nami swoimi wymaganiami, a szybko odpowiemy, aby omówić, jak Disclosurely może wspierać Twoją organizację.",
-      "button": "Rozpocznij Darmowy Test"
+      "title": "Gotowy uruchomić bezpieczny kanał dla sygnalistów?",
+      "description": "Rozpocznij dziś darmowy test lub zarezerwuj demo z naszym zespołem.",
+      "button": "Rozpocznij darmowy test",
+      "bookDemo": "Zarezerwuj demo"
     },
     "highlights": {
-      "tag": "Security & Compliance"
+      "tag": "Security & Compliance",
+      "sectionTitle": "Funkcje Disclosurely",
+      "sectionSubtitle": "Kompleksowe narzędzia do bezpiecznych anonimowych zgłoszeń, zgodności i zarządzania sprawami",
+      "anonymousReporting": {
+        "additionalContent": "Pracownicy mogą zgłaszać nieprawidłowości, naruszenia etyki lub inne obawy w pełni anonimowo przez formularz w przeglądarce. Szyfrowanie chroni tożsamość i zgodność; sprawy trafiają do centralnej przestrzeni z ścieżkami audytu i jasnymi terminami.",
+        "bullet1": "Brak gromadzenia danych o zgłaszających",
+        "bullet2": "Anonimowa korespondencja następcza",
+        "bullet3": "Wielojęzyczne portale zgłoszeń"
+      },
+      "encryption": {
+        "additionalContent": "Każde zgłoszenie w Disclosurely jest chronione szyfrowaniem AES-256 — ten sam standard co w bankach i agencjach rządowych. Wiadomości, notatki i załączniki pozostają poufne od zgłoszenia do zamknięcia.",
+        "bullet1": "AES-256 od zgłoszenia do zamknięcia",
+        "bullet2": "Zaszyfrowane załączniki",
+        "bullet3": "Dostęp do odszyfrowania według ról"
+      },
+      "compliance": {
+        "additionalContent": "Zgodność z przepisami UK i UE dotyczącymi sygnalistów dzięki oprogramowaniu opartemu na wymogach prawnych. Platforma obsługuje dyrektywę UE i UK Employment Rights Act.",
+        "bullet1": "Przepływy zgodne z dyrektywą UE i UK ERA",
+        "bullet2": "Przetwarzanie danych z myślą o RODO",
+        "bullet3": "Eksportowalne pakiety audytu dla organów"
+      },
+      "messaging": {
+        "additionalContent": "Poufny, anonimowy dialog z sygnalistami od pierwszego zgłoszenia do wyniku. Bezpieczna korespondencja w platformie pozwala badającym prosić o informacje i udostępniać aktualizacje bez ujawniania tożsamości.",
+        "bullet1": "Rozmowy szyfrowane end-to-end",
+        "bullet2": "Anonimowość zachowana przez cały czas",
+        "bullet3": "Powiadomienia w czasie rzeczywistym dla badających"
+      },
+      "aiPowered": {
+        "additionalContent": "Analiza AI z naciskiem na prywatność i automatyczne maskowanie danych osobowych. Asystent analizuje napływające sprawy, wykrywa wzorce i wyróżnia ryzyka.",
+        "bullet1": "AI z automatycznym maskowaniem danych osobowych",
+        "bullet2": "Ocena ryzyka i priorytetyzacja spraw",
+        "bullet3": "Wykrywanie wzorców w zgłoszeniach"
+      }
     },
     "branding": {
       "tag": "Branding & Identity",
@@ -202,40 +247,52 @@
   },
   "pricing": {
     "hero": {
-      "title": "Proste, Przejrzyste Ceny",
-      "subtitle": "Wybierz plan odpowiedni dla Twojej organizacji. Zacznij od naszego siedmiodniowego darmowego okresu próbnego i skaluj wraz z rozwojem.",
-      "tagline": "Transparent Pricing Built For Business.",
-      "subtitle1": "7-dniowy darmowy okres próbny • Nieograniczone raporty wliczone",
-      "subtitle2": "Wszystkie plany obejmują szyfrowanie na poziomie militarnym, zgodność z RODO i analitykę w czasie rzeczywistym. Wybierz plan, który odpowiada Twoim potrzebom w zakresie zgodności i skaluj się wraz z rozwojem.",
+      "title": "Cennik oprogramowania do zgłaszania nieprawidłowości dla zespołów każdej wielkości",
+      "tagline": "Zgłaszanie i zgodność",
+      "subtitle": "Wybierz plan dla swojej organizacji. Okres próbny gratis, zmiana planu w dowolnym momencie.",
+      "subtitle1": "Zacznij od bezpiecznego anonimowego zgłaszania, zarządzania sprawami i wbudowanych narzędzi zgodności. Przejdź na wyższy plan, gdy rosną potrzeby.",
+      "subtitle2": "14 dni darmowego okresu próbnego, bez karty. Zmień lub ulepsz plan w dowolnym momencie.",
       "startFreeTrial": "Rozpocznij darmowy okres próbny"
     },
+    "reassurance": {
+      "freeTrial": "Dostępny okres próbny",
+      "changePlans": "Zmień plan w dowolnym momencie",
+      "noHiddenFees": "Bez ukrytych opłat",
+      "secureHosting": "Bezpieczny hosting w cenie"
+    },
     "designedForBusinesses": {
-      "title": "Zaprojektowane dla firm wszystkich rozmiarów",
-      "description": "Niezależnie od tego, czy jesteś małą organizacją wdrażającą oprogramowanie do zgłaszania nieprawidłowości po raz pierwszy, czy większą grupą wdrażającą je w wielu podmiotach, Disclosurely skaluje się wraz z Tobą. Proste, przejrzyste ceny i elastyczne przestrzenie robocze ułatwiają rozpoczęcie od małego, udowodnienie wartości i rozszerzenie zasięgu w miarę wzrostu wolumenów raportów i zobowiązań regulacyjnych.",
-      "bullet1": "Idealne dla MŚP, które potrzebują bezpiecznych, zgodnych kanałów zgłaszania nieprawidłowości bez złożoności lub kosztów konfiguracji na poziomie przedsiębiorstwa.",
-      "bullet2": "Elastyczne dla rosnących zespołów, z dodatkowymi użytkownikami, podmiotami i językami łatwymi do dodania w miarę rozwoju organizacji.",
-      "bullet3": "Gotowe dla większych organizacji, z ustrukturyzowanym zarządzaniem sprawami, śladami audytu i raportowaniem spełniającym oczekiwania zarządów, regulatorów i zewnętrznych doradców.",
-      "imageAlt": "Zaprojektowane dla firm wszystkich rozmiarów"
+      "title": "Co obejmuje każdy plan",
+      "description": "Wszystkie plany zawierają to, co niezbędne do bezpiecznego, zgodnego zgłaszania.",
+      "bullet1": "Bezpieczne anonimowe zgłaszanie",
+      "bullet2": "Zarządzanie sprawami i rejestry audytu",
+      "bullet3": "Szyfrowane przetwarzanie danych",
+      "bullet4": "Hostowany portal zgłoszeń",
+      "bullet5": "Powiadomienia e-mail",
+      "bullet6": "Projekt z myślą o RODO",
+      "imageAlt": "Co obejmuje każdy plan"
     },
     "plans": {
       "mostPopular": "Najpopularniejszy",
       "perMonth": "/miesiąc",
+      "perYear": "/rok",
       "starter": {
         "name": "Starter",
         "price": "79,99 zł",
-        "description": "Idealny dla małych organizacji, które zaczynają"
+        "description": "Rozpocznij od anonimowego zgłaszania i zarządzania sprawami.",
+        "bestFor": "Małe organizacje uruchamiające bezpieczny kanał zgłoszeń"
       },
       "pro": {
         "name": "Pro",
         "price": "159,99 zł",
-        "description": "Dla rozwijających się organizacji z zaawansowanymi potrzebami"
+        "description": "Portale z brandingiem, bezpieczna wiadomość, triage AI i automatyzacja workflow.",
+        "bestFor": "Rosnące zespoły potrzebujące portali z brandingiem, automatyzacji i raportów"
       },
       "enterprise": {
         "name": "Enterprise",
         "price": "Indywidualnie",
-        "description": "Dla dużych organizacji z indywidualnymi wymaganiami"
-      },
-      "perYear": "/year"
+        "description": "SSO, onboarding na zamówienie, zaawansowane uprawnienia i konfiguracje wielozespołowe, dedykowane wsparcie i hosting lub przetwarzanie danych na życzenie.",
+        "bestFor": "Większe lub wielopodmiotowe organizacje z zaawansowanymi wymaganiami bezpieczeństwa i wdrożenia"
+      }
     },
     "features": {
       "casesLimit": "5 spraw/miesiąc",
@@ -264,26 +321,43 @@
       "title": "Często Zadawane Pytania",
       "trial": {
         "question": "Czy jest bezpłatny okres próbny?",
-        "answer": "Tak, wszystkie plany zawierają 7-dniowy bezpłatny okres próbny, abyś mógł zobaczyć, jak działa platforma. Karta kredytowa nie jest wymagana."
+        "answer": "Tak. Wszystkie plany mają 14-dniowy okres próbny, bez karty. Możesz wypróbować platformę przed zobowiązaniem."
       },
-      "limit": {
-        "question": "Co się stanie, jeśli osiągnę limit spraw?",
-        "answer": "Jeśli przekroczysz swój miesięczny limit spraw, zostaniesz powiadomiony w panelu. Możesz przejść na plan Pro lub poczekać do następnego miesiąca."
+      "includedInEveryPlan": {
+        "question": "Co obejmuje każdy plan?",
+        "answer": "Każdy plan: bezpieczne anonimowe zgłaszanie, zarządzanie sprawami i rejestry audytu, szyfrowane dane, hostowany portal, powiadomienia e-mail i projekt RODO. Pro dodaje portale z brandingiem, bezpieczną wiadomość, triage AI i więcej."
       },
-      "change": {
-        "question": "Czy mogę zmienić plan później?",
-        "answer": "Absolutnie! Możesz podwyższyć lub obniżyć swój plan w dowolnym momencie z panelu."
+      "planFor50Plus": {
+        "question": "Który plan dla zespołu 50+ pracowników?",
+        "answer": "Pro pasuje do większości organizacji 50+: portale z brandingiem, bezpieczna wiadomość, triage AI i automatyzacja. Wybierz Enterprise przy wdrożeniu wielopodmiotowym, SSO, onboarding na zamówienie lub dedykowane wsparcie."
       },
-      "security": {
-        "question": "Jakie certyfikaty bezpieczeństwa posiadacie?",
-        "answer": "Jesteśmy zgodni z RODO i pracujemy nad zgodnością z ISO 27001 i SOX."
+      "upgradeDowngrade": {
+        "question": "Czy można później zmienić plan?",
+        "answer": "Tak. Plan można zmienić w dowolnym momencie w panelu. Bez długoterminowych zobowiązań."
+      },
+      "onboardingSupport": {
+        "question": "Czy oferujecie wsparcie przy wdrożeniu?",
+        "answer": "Tak. Wszystkie plany mają wsparcie e-mail z wdrożeniem. Pro ma wsparcie priorytetowe; Enterprise ma wsparcie dedykowane i onboarding na zamówienie."
+      },
+      "anonymousOnAllPlans": {
+        "question": "Czy anonimowe zgłaszanie jest we wszystkich planach?",
+        "answer": "Tak. Bezpieczne anonimowe zgłaszanie i hostowany portal są w każdym planie. Zgłaszający mogą wysyłać bez ujawniania tożsamości."
+      },
+      "securityFeatures": {
+        "question": "Jakie funkcje bezpieczeństwa są w cenie?",
+        "answer": "Wszystkie plany: szyfrowanie (AES-GCM), przetwarzanie zgodne z RODO, rejestry audytu i dostęp rolowy. Enterprise dodaje SSO i zaawansowane uwierzytelnianie. Jesteśmy zgodni z RODO i dążymy do ISO 27001 i SOX."
+      },
+      "hiddenCosts": {
+        "question": "Czy są ukryte koszty?",
+        "answer": "Nie. Cena jest jasna w ramach planu; brak ukrytych opłat. Opcjonalne dodatki są wyraźnie podane. Bezpieczny hosting w cenie."
       }
     },
     "cta": {
-      "ready": "Gotowy do Rozpoczęcia?",
-      "join": "Dołącz do organizacji na całym świecie, które ufają Disclosurely.",
-      "startTrial": "Rozpocznij Darmowy Test",
-      "contactSales": "Skontaktuj się z Działem Sprzedaży"
+      "ready": "Gotowy uruchomić bezpieczny kanał zgłoszeń?",
+      "join": "Rozpocznij okres próbny lub porozmawiaj z nami o odpowiednim planie.",
+      "startTrial": "Rozpocznij darmowy okres próbny",
+      "talkToTeam": "Porozmawiaj z naszym zespołem",
+      "contactSales": "Skontaktuj się ze sprzedażą"
     },
     "trustIndicators": {
       "badgeTrial": "7-Day Free Trial",
@@ -364,7 +438,7 @@
     },
     "compare": {
       "title": "Compare All Features",
-      "subtitle": "See exactly what's included in each plan",
+      "subtitle": "Zobacz, który plan pasuje do Twojej firmy.",
       "headers": {
         "features": "Features",
         "starter": "Starter",
@@ -1450,6 +1524,131 @@
       },
       "securityTitle": "Security and compliance",
       "securityDescription": "AES-GCM encryption, access logging, and continuous monitoring help meet GDPR, ISO 27001, and sector frameworks."
+    }
+  },
+  "directive": {
+    "hero": {
+      "badge": "Dyrektywa UE o sygnalistach",
+      "title": "Zgodność z dyrektywą UE w praktyce",
+      "subtitle": "Wdróż bezpieczne anonimowe kanały zgłoszeń, dotrzymuj terminów i zarządzaj sprawami w systemie dla organizacji UE.",
+      "startFreeTrial": "Rozpocznij bezpłatny okres próbny",
+      "bookDemo": "Umów demo",
+      "reassurance": {
+        "anonymous": "Anonimowe zgłoszenia",
+        "secureCase": "Bezpieczne prowadzenie spraw",
+        "sevenDay": "Potwierdzenie w 7 dni",
+        "ninetyDay": "Informacja zwrotna w 90 dni",
+        "multilingual": "Portale wielojęzyczne"
+      }
+    },
+    "whoComplies": {
+      "title": "Kto musi być zgodny?",
+      "card1Title": "Organizacje z 50+ pracownikami",
+      "card1Desc": "Podmioty publiczne i prywatne powyżej progu muszą zapewnić wewnętrzne kanały zgłoszeń.",
+      "card2Title": "Podmioty sektora publicznego",
+      "card2Desc": "Wiele podmiotów publicznych podlega dyrektywie niezależnie od wielkości.",
+      "card3Title": "Firmy działające w kilku państwach UE",
+      "card3Desc": "Działalność transgraniczna wymaga zgodności w każdym państwie członkowskim.",
+      "card4Title": "Osoby odpowiedzialne za wewnętrzne zgłoszenia",
+      "card4Desc": "Wyznaczone osoby do bezpiecznych kanałów i obsługi spraw."
+    },
+    "requirements": {
+      "title": "Czego wymaga dyrektywa UE o sygnalistach?",
+      "subtitle": "Praktyczne podsumowanie głównych obowiązków.",
+      "item1": "Bezpieczne wewnętrzne kanały zgłoszeń",
+      "item2": "Poufność sygnalistów",
+      "item3": "Potwierdzenie w ciągu 7 dni",
+      "item4": "Informacja zwrotna w ciągu 3 miesięcy",
+      "item5": "Ochrona przed odwetem",
+      "item6": "Bezpieczne przechowywanie i kontrolowany dostęp",
+      "item7": "Wielojęzyczne i dostępne zgłoszenia tam, gdzie ma to zastosowanie"
+    },
+    "risks": {
+      "title": "Dlaczego zgodny kanał zgłoszeń ma znaczenie",
+      "item1Title": "Narażenie regulacyjne",
+      "item1Desc": "Kary i działania nadzorcze przy niewystarczających kanałach lub procesach.",
+      "item2Title": "Niewydolność wewnętrznych zgłoszeń",
+      "item2Desc": "Bez bezpiecznych, wiarygodnych kanałów zgłoszenia nie są składane ani obsługiwane.",
+      "item3Title": "Szkoda reputacyjna",
+      "item3Desc": "Kontrola publiczna lub regulacyjna, gdy nieprawidłowości wychodzą na jaw bez właściwej obsługi.",
+      "item4Title": "Mniejsze zaufanie pracowników",
+      "item4Desc": "Personel traci zaufanie, gdy systemy są niejasne lub niebezpieczne.",
+      "item5Title": "Obciążenie operacyjne",
+      "item5Desc": "Ręczne lub doraźne procesy powodują opóźnienia, niespójność i ryzyko audytu."
+    },
+    "systemNeeds": {
+      "title": "Co powinien zawierać zgodny system zgłoszeń",
+      "subtitle": "Możliwości zgodne z dyrektywą.",
+      "card1Title": "Bezpieczne anonimowe kanały zgłoszeń",
+      "card1Desc": "Wprowadzanie przez internet i opcjonalnie telefon, szyfrowanie, bez ujawniania tożsamości.",
+      "card1Bullet1": "Anonimowe przyjmowanie i bezpieczna wiadomość",
+      "card1Bullet2": "Szyfrowanie end-to-end",
+      "card1Bullet3": "Prawdziwa anonimowość przez cały proces",
+      "card2Title": "Bezpieczna komunikacja dwukierunkowa",
+      "card2Desc": "Kontakt z sygnalistami bez ujawniania ich tożsamości.",
+      "card2Bullet1": "Bezpieczna wiadomość z numerem sprawy i PIN",
+      "card2Bullet2": "Utrzymuje zaangażowanie i informuje sygnalistów",
+      "card2Bullet3": "Zachowanie anonimowości przy zbieraniu dowodów",
+      "card3Title": "Zarządzanie sprawami i zapisy do audytu",
+      "card3Desc": "Strukturyzowane przepływy i udokumentowana obsługa.",
+      "card3Bullet1": "Automatyczne kierowanie i terminy",
+      "card3Bullet2": "Przechowywanie dowodów ze śladami audytu",
+      "card3Bullet3": "Przechowywanie i kontrola dostępu",
+      "card4Title": "Wsparcie wielojęzyczne",
+      "card4Desc": "Zgłoszenia w wielu językach dla zespołów UE.",
+      "card4Bullet1": "Zgłoszenia w ponad 35 językach",
+      "card4Bullet2": "Język ojczysty dla każdego pracownika",
+      "card4Bullet3": "Kluczowe dla operacji międzynarodowych",
+      "card5Title": "Dostęp i uprawnienia według ról",
+      "card5Desc": "Tylko wyznaczeni obsługujący widzą wrażliwe zgłoszenia.",
+      "card5Bullet1": "Szczegółowe uprawnienia",
+      "card5Bullet2": "Rejestrowanie dostępu",
+      "card5Bullet3": "Przegląd do audytu",
+      "card6Title": "Kontrola ochrony danych",
+      "card6Desc": "Szyfrowanie, przechowywanie i dostęp zgodne z RODO.",
+      "card6Bullet1": "Szyfrowane przechowywanie w certyfikowanych obiektach",
+      "card6Bullet2": "Automatyczne zarządzanie okresami przechowywania",
+      "card6Bullet3": "Pełny ślad audytu dla organów"
+    },
+    "howWeHelp": {
+      "title": "Jak Disclosurely wspiera zgodność z dyrektywą UE",
+      "subtitle": "Zaprojektowane pod wymogi dyrektywy.",
+      "item1": "Anonimowe przyjmowanie zgłoszeń z formularzami szyfrowanymi",
+      "item2": "Szyfrowana obsługa spraw i komunikacja dwukierunkowa",
+      "item3": "Dostęp do spraw według ról dla wyznaczonych obsługujących",
+      "item4": "Wsparcie workflow 7 i 90 dni oraz przypomnienia",
+      "item5": "Wielojęzyczne portale zgłoszeń",
+      "item6": "Zapisy do audytu i eksportowalne dowody",
+      "item7": "Projekt z naciskiem na prywatność",
+      "item8": "Redakcja z użyciem AI i prywatna brama AI"
+    },
+    "midCta": {
+      "title": "Gotowy uruchomić zgodny kanał zgłoszeń?",
+      "startFreeTrial": "Rozpocznij bezpłatny okres próbny",
+      "talkToTeam": "Porozmawiaj z naszym zespołem"
+    },
+    "impact": {
+      "title": "Wartość operacyjna prawidłowego wdrożenia",
+      "card1Title": "Łagodzenie ryzyka",
+      "card1Desc": "Wczesne wykrywanie, udokumentowana obsługa i mniejsza ekspozycja na kary.",
+      "card2Title": "Efektywność operacyjna",
+      "card2Desc": "Zautomatyzowane przepływy i jasne terminy zamiast procesów ręcznych lub doraźnych.",
+      "card3Title": "Zaufanie i kultura",
+      "card3Desc": "Pracownicy czują się bezpiecznie zgłaszając; zgodność jest widoczna i wiarygodna."
+    },
+    "gettingStarted": {
+      "title": "Pierwsze kroki",
+      "item1": "Skonfiguruj bezpieczne kanały zgłoszeń",
+      "item2": "Skonfiguruj workflow zgodne z dyrektywą",
+      "item3": "Przeszkól zespoły dochodzeniowe",
+      "item4": "Poinformuj personel o kanale",
+      "item5": "Monitoruj i udoskonalaj procesy"
+    },
+    "finalCta": {
+      "title": "Uruchom zgodny kanał zgłoszeń w kilka dni",
+      "subtitle": "Pilotowane wdrożenie, bezpieczne przepływy zgłoszeń i wbudowane wsparcie zgodności dla organizacji UE.",
+      "startFreeTrial": "Rozpocznij bezpłatny okres próbny",
+      "bookDemo": "Umów demo"
     }
   }
 }

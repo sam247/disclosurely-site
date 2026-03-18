@@ -167,28 +167,36 @@
   },
   "landing": {
     "hero": {
-      "title1": "Conformità alla direttiva UE sui whistleblower",
-      "title2": "Flussi di Lavoro Alimentati dall'IA",
+      "title1": "Software per whistleblower sicuro per conformità UK e UE",
+      "mobilePhrase": "Segnalazioni anonime per team compliance",
       "typingPhrases": [
-        "Canali di segnalazione anonimi",
-        "Gestione sicura dei casi",
-        "Registri investigativi auditabili",
-        "Messaggistica crittografata per whistleblower",
-        "Portali di segnalazione multilingue",
-        "Analisi casi assistita da IA"
+        "Segnalazioni anonime",
+        "Gestione casi crittografata",
+        "Conformità auditabile",
+        "Comunicazione bidirezionale sicura"
       ],
       "badge": "Military Grade AES-GCM Encryption",
-      "subtitle": "Segnalazioni anonime sicure e gestione dei casi per organizzazioni con 50+ dipendenti. Disclosurely fornisce un sistema di segnalazione conforme con canali crittografati, gestione casi auditabile e portali di invio multilingue.",
+      "subtitle": "Offri ai dipendenti un modo sicuro e anonimo per segnalare preoccupazioni. Disclosurely fornisce canali crittografati, gestione strutturata dei casi e registri auditabili — conforme alla direttiva UE e ai requisiti UK.",
       "bullets": [
-        "Portale di segnalazione anonimo",
+        "Portale di ricezione anonimo",
         "Tracciabilità audit a prova di manomissione",
-        "Messaggistica sicura per investigatori",
-        "Analisi casi assistita da IA"
+        "Messaggistica crittografata per investigatori",
+        "Triage casi con IA"
       ],
-      "startFreeTrial": "Crea il tuo canale di segnalazione",
+      "startFreeTrial": "Inizia prova gratuita",
+      "bookDemo": "Prenota demo",
       "viewPricing": "Visualizza prezzi"
     },
     "trusted": "Fidato da centinaia di aziende",
+    "trustBar": {
+      "items": [
+        "Segnalazioni anonime",
+        "Crittografia end-to-end",
+        "Design GDPR-conscious",
+        "Conforme direttiva UE",
+        "Comunicazione bidirezionale sicura"
+      ]
+    },
     "features": {
       "title": "Tutto ciò che serve per segnalazioni sicure",
       "subtitle": "La nostra piattaforma fornisce strumenti completi per gestire segnalazioni di whistleblower con totale riservatezza e compliance.",
@@ -322,15 +330,52 @@
       "question6": {
         "question": "Possiamo cancellare o cambiare il nostro piano in qualsiasi momento?",
         "answer": "Sì, puoi aggiornare, degradare o cancellare il tuo abbonamento in qualsiasi momento. Se cancelli, manterrai l'accesso fino alla fine del tuo periodo di fatturazione. Offriamo anche una prova gratuita di 14 giorni così puoi testare tutte le funzionalità prima di impegnarti."
+      },
+      "question7": {
+        "question": "Quanto velocemente possiamo iniziare?",
+        "answer": "La maggior parte delle organizzazioni è operativa entro 24 ore. Dopo la registrazione puoi personalizzare il portale, invitare il team e accettare segnalazioni. L'onboarding è incluso."
       }
     },
     "cta": {
-      "title": "Pronto a rafforzare il tuo programma di compliance?",
-      "description": "Non pronto per una prova gratuita o demo? Condividi i tuoi requisiti con noi e risponderemo rapidamente per discutere come Disclosurely può supportare la tua organizzazione.",
-      "button": "Inizia prova gratuita"
+      "title": "Pronto a lanciare un canale di segnalazione sicuro?",
+      "description": "Inizia oggi la prova gratuita o prenota una demo con il nostro team.",
+      "button": "Inizia prova gratuita",
+      "bookDemo": "Prenota demo"
     },
     "highlights": {
-      "tag": "Security & Compliance"
+      "tag": "Security & Compliance",
+      "sectionTitle": "Funzionalità Disclosurely",
+      "sectionSubtitle": "Strumenti completi per segnalazioni anonime sicure, conformità e gestione casi",
+      "anonymousReporting": {
+        "additionalContent": "I dipendenti possono segnalare irregolarità, violazioni etiche o altre preoccupazioni in modo del tutto anonimo tramite un modulo nel browser. La crittografia protegge l'identità e la conformità; i casi confluiscono in un'area centrale con audit trail e scadenze chiare.",
+        "bullet1": "Nessuna raccolta dati sui segnalanti",
+        "bullet2": "Messaggistica di follow-up anonima",
+        "bullet3": "Portali di invio multilingue"
+      },
+      "encryption": {
+        "additionalContent": "Ogni segnalazione in Disclosurely è protetta con crittografia AES-256, lo stesso standard usato da banche e agenzie governative. Messaggi, note e allegati restano riservati dall'invio alla chiusura.",
+        "bullet1": "AES-256 dall'invio alla chiusura",
+        "bullet2": "Allegati crittografati",
+        "bullet3": "Accesso alla decrittazione per ruolo"
+      },
+      "compliance": {
+        "additionalContent": "Conformità alle normative UK e UE sulle segnalazioni con software basato su requisiti legali. La piattaforma supporta la direttiva UE e lo UK Employment Rights Act.",
+        "bullet1": "Flussi conformi alla direttiva UE e UK ERA",
+        "bullet2": "Trattamento dati conforme GDPR",
+        "bullet3": "Pacchetti audit esportabili per autorità"
+      },
+      "messaging": {
+        "additionalContent": "Dialogo riservato e anonimo con i segnalanti dal primo report al risultato. La messaggistica sicura consente agli investigatori di richiedere informazioni e condividere aggiornamenti senza rivelare l'identità.",
+        "bullet1": "Conversazioni crittografate end-to-end",
+        "bullet2": "Anonimato mantenuto per tutto il percorso",
+        "bullet3": "Notifica in tempo reale per investigatori"
+      },
+      "aiPowered": {
+        "additionalContent": "Analisi IA privacy-first con mascheramento automatico dei dati personali. L'assistente esamina i casi in arrivo, rileva pattern e mette in evidenza i rischi.",
+        "bullet1": "IA con mascheramento automatico dati personali",
+        "bullet2": "Punteggio di rischio e priorizzazione casi",
+        "bullet3": "Rilevamento pattern tra le segnalazioni"
+      }
     },
     "branding": {
       "tag": "Branding & Identity",
@@ -363,40 +408,52 @@
   },
   "pricing": {
     "hero": {
-      "title": "Prezzi semplici e trasparenti",
-      "subtitle": "Scegli il piano giusto per la tua organizzazione. Inizia con la nostra prova gratuita di sette giorni e aggiorna man mano che cresci.",
-      "tagline": "Transparent Pricing Built For Business.",
-      "subtitle1": "Prova gratuita di 7 giorni • Rapporti illimitati inclusi",
-      "subtitle2": "Tutti i piani includono crittografia di livello militare, conformità GDPR e analisi in tempo reale. Scegli il piano che corrisponde alle tue esigenze di conformità e scala man mano che cresci.",
+      "title": "Prezzi software segnalazioni per team di ogni dimensione",
+      "tagline": "Segnalazioni e conformità",
+      "subtitle": "Scegli il piano giusto per la tua organizzazione. Prova gratuita, cambia quando vuoi.",
+      "subtitle1": "Inizia con segnalazione anonima sicura, gestione casi e strumenti di conformità integrati. Passa a un piano superiore quando crescono le esigenze.",
+      "subtitle2": "14 giorni di prova gratuita, senza carta. Cambia o upgrade del piano in qualsiasi momento.",
       "startFreeTrial": "Inizia prova gratuita"
     },
+    "reassurance": {
+      "freeTrial": "Prova gratuita disponibile",
+      "changePlans": "Cambia piano quando vuoi",
+      "noHiddenFees": "Nessun costo nascosto",
+      "secureHosting": "Hosting sicuro incluso"
+    },
     "designedForBusinesses": {
-      "title": "Progettato per aziende di tutte le dimensioni",
-      "description": "Che tu sia una piccola organizzazione che implementa software per segnalazioni per la prima volta o un gruppo più grande che lo distribuisce su più entità, Disclosurely si adatta a te. Prezzi semplici e trasparenti e spazi di lavoro flessibili facilitano l'inizio in piccolo, la dimostrazione del valore e l'espansione della copertura man mano che i volumi di segnalazione e gli obblighi normativi crescono.",
-      "bullet1": "Ideale per le PMI che necessitano di canali di segnalazione sicuri e conformi senza la complessità o i costi di configurazione di livello aziendale.",
-      "bullet2": "Flessibile per team in crescita, con utenti, entità e lingue aggiuntive facili da aggiungere man mano che la tua organizzazione evolve.",
-      "bullet3": "Pronto per organizzazioni più grandi, con gestione strutturata dei casi, tracce di audit e reporting che soddisfano le aspettative di consigli di amministrazione, regolatori e consulenti esterni.",
-      "imageAlt": "Progettato per aziende di tutte le dimensioni"
+      "title": "Cosa include ogni piano",
+      "description": "Tutti i piani includono l'essenziale per segnalazioni sicure e conformi.",
+      "bullet1": "Segnalazione anonima sicura",
+      "bullet2": "Gestione casi e registri di audit",
+      "bullet3": "Trattamento dati crittografato",
+      "bullet4": "Portale di segnalazione ospitato",
+      "bullet5": "Notifiche email",
+      "bullet6": "Design attento al GDPR",
+      "imageAlt": "Cosa include ogni piano"
     },
     "plans": {
       "mostPopular": "Più popolare",
       "perMonth": "/mese",
+      "perYear": "/anno",
       "starter": {
         "name": "Starter",
         "price": "£19.99",
-        "description": "Perfetto per organizzazioni piccole che iniziano"
+        "description": "Inizia con segnalazione anonima e gestione casi.",
+        "bestFor": "Piccole organizzazioni che lanciano un canale di segnalazione sicuro"
       },
       "pro": {
         "name": "Pro",
         "price": "£39.99",
-        "description": "Per organizzazioni in crescita con esigenze avanzate"
+        "description": "Portali con marchio, messaggistica sicura, triage IA e automazione dei flussi.",
+        "bestFor": "Team in crescita che necessitano portali con marchio, automazione e insight"
       },
       "enterprise": {
         "name": "Enterprise",
         "price": "Personalizzato",
-        "description": "Per grandi organizzazioni con requisiti personalizzati"
-      },
-      "perYear": "/year"
+        "description": "SSO, onboarding personalizzato, permessi avanzati e setup multi-team, supporto dedicato e hosting o trattamento dati su misura se richiesto.",
+        "bestFor": "Organizzazioni grandi o multi-entità con esigenze avanzate di sicurezza e rollout"
+      }
     },
     "features": {
       "casesLimit": "5 casi/mese",
@@ -425,25 +482,42 @@
       "title": "Domande frequenti",
       "trial": {
         "question": "C'è una prova gratuita?",
-        "answer": "Sì, tutti i piani vengono con una prova gratuita di 7 giorni così puoi vedere come funziona la piattaforma. Non è richiesta carta di credito."
+        "answer": "Sì. Tutti i piani includono 14 giorni di prova gratuita, senza carta. Puoi provare la piattaforma prima di impegnarti."
       },
-      "limit": {
-        "question": "Cosa succede se raggiungo il mio limite di casi nel piano Starter?",
-        "answer": "Se superi la tua allocazione mensile di casi, sarai notificato nella dashboard. Puoi aggiornare al piano Pro per casi illimitati o aspettare fino al prossimo mese."
+      "includedInEveryPlan": {
+        "question": "Cosa include ogni piano?",
+        "answer": "Ogni piano include segnalazione anonima sicura, gestione casi e registri di audit, trattamento dati crittografato, portale ospitato, notifiche email e design GDPR. Con Pro: portali con marchio, messaggistica sicura, triage IA e altro."
       },
-      "change": {
-        "question": "Posso cambiare piano più tardi?",
-        "answer": "Assolutamente! Puoi aggiornare o degradare il tuo piano in qualsiasi momento dalla tua dashboard."
+      "planFor50Plus": {
+        "question": "Quale piano per un team con 50+ dipendenti?",
+        "answer": "Pro è adatto alla maggior parte delle organizzazioni con 50+: portali con marchio, messaggistica sicura, triage IA e automazione. Scegli Enterprise per rollout multi-entità, SSO, onboarding personalizzato o supporto dedicato."
       },
-      "security": {
-        "question": "Che certificazioni di sicurezza avete?",
-        "answer": "Siamo conformi al GDPR e stiamo lavorando verso la conformità ISO 27001 e SOX."
+      "upgradeDowngrade": {
+        "question": "Possiamo fare upgrade o downgrade dopo?",
+        "answer": "Sì. Puoi cambiare piano in qualsiasi momento dalla dashboard. Nessun vincolo a lungo termine."
+      },
+      "onboardingSupport": {
+        "question": "Offrite supporto per l'onboarding?",
+        "answer": "Sì. Tutti i piani includono supporto email con onboarding. Pro include supporto prioritario; Enterprise include supporto dedicato e onboarding personalizzato se necessario."
+      },
+      "anonymousOnAllPlans": {
+        "question": "La segnalazione anonima è inclusa in tutti i piani?",
+        "answer": "Sì. Segnalazione anonima sicura e portale ospitato sono inclusi in ogni piano. I segnalanti possono inviare senza rivelare la propria identità."
+      },
+      "securityFeatures": {
+        "question": "Quali funzionalità di sicurezza sono incluse?",
+        "answer": "Tutti i piani: crittografia (AES-GCM), trattamento dati conforme GDPR, registri di audit e accesso per ruoli. Enterprise aggiunge SSO e opzioni di autenticazione avanzate. Siamo conformi GDPR e lavoriamo verso ISO 27001 e SOX."
+      },
+      "hiddenCosts": {
+        "question": "Ci sono costi nascosti?",
+        "answer": "No. Il prezzo è chiaro per piano; nessun costo nascosto. Gli add-on opzionali, se presenti, sono indicati esplicitamente. L'hosting sicuro è incluso."
       }
     },
     "cta": {
-      "ready": "Pronto per iniziare?",
-      "join": "Unisciti alle organizzazioni in tutto il mondo che si fidano di Disclosurely per segnalazioni sicure.",
+      "ready": "Pronto a lanciare un canale di segnalazione sicuro?",
+      "join": "Inizia la prova gratuita o parla con il nostro team per il piano giusto.",
       "startTrial": "Inizia prova gratuita",
+      "talkToTeam": "Parla con il nostro team",
       "contactSales": "Contatta vendite"
     },
     "trustIndicators": {
@@ -525,7 +599,7 @@
     },
     "compare": {
       "title": "Compare All Features",
-      "subtitle": "See exactly what's included in each plan",
+      "subtitle": "Scopri quale piano è giusto per la tua azienda.",
       "headers": {
         "features": "Features",
         "starter": "Starter",
@@ -1452,6 +1526,131 @@
       },
       "securityTitle": "Security and compliance",
       "securityDescription": "AES-GCM encryption, access logging, and continuous monitoring help meet GDPR, ISO 27001, and sector frameworks."
+    }
+  },
+  "directive": {
+    "hero": {
+      "badge": "Direttiva UE sulla protezione dei whistleblower",
+      "title": "Conformità alla direttiva UE: in modo pratico",
+      "subtitle": "Configura canali di segnalazione anonimi e sicuri, rispetta i tempi di risposta e gestisci i casi con un sistema per le organizzazioni UE.",
+      "startFreeTrial": "Inizia la prova gratuita",
+      "bookDemo": "Prenota una demo",
+      "reassurance": {
+        "anonymous": "Segnalazione anonima",
+        "secureCase": "Gestione sicura dei casi",
+        "sevenDay": "Accusa di ricevuta entro 7 giorni",
+        "ninetyDay": "Follow-up entro 90 giorni",
+        "multilingual": "Portali multilingue"
+      }
+    },
+    "whoComplies": {
+      "title": "Chi deve conformarsi?",
+      "card1Title": "Organizzazioni con 50+ dipendenti",
+      "card1Desc": "Entità pubbliche e private oltre la soglia devono fornire canali di segnalazione interni.",
+      "card2Title": "Enti del settore pubblico",
+      "card2Desc": "Molte amministrazioni pubbliche rientrano nell'ambito indipendentemente dalle dimensioni.",
+      "card3Title": "Imprese che operano in più Stati membri UE",
+      "card3Desc": "L'attività transfrontaliera richiede conformità in ogni Stato membro.",
+      "card4Title": "Responsabili della segnalazione interna",
+      "card4Desc": "Persone designate per canali sicuri e gestione dei casi."
+    },
+    "requirements": {
+      "title": "Cosa richiede la direttiva UE sulla protezione dei whistleblower?",
+      "subtitle": "Riepilogo pratico degli obblighi principali.",
+      "item1": "Canali interni di segnalazione sicuri",
+      "item2": "Riservatezza per i segnalanti",
+      "item3": "Accusa di ricevuta entro 7 giorni",
+      "item4": "Follow-up entro 3 mesi",
+      "item5": "Protezione dalle ritorsioni",
+      "item6": "Registrazione sicura e accesso controllato",
+      "item7": "Segnalazione multilingue e accessibile ove rilevante"
+    },
+    "risks": {
+      "title": "Perché un canale conforme conta",
+      "item1Title": "Esposizione normativa",
+      "item1Desc": "Sanzioni e controlli se i canali o i processi sono insufficienti.",
+      "item2Title": "Fallimenti della segnalazione interna",
+      "item2Desc": "Senza canali sicuri e affidabili, le segnalazioni non vengono fatte o gestite.",
+      "item3Title": "Danno reputazionale",
+      "item3Desc": "Scrutinio pubblico o del regolatore quando emergono illeciti senza adeguata gestione.",
+      "item4Title": "Meno fiducia dei dipendenti",
+      "item4Desc": "Il personale perde fiducia se i sistemi sono poco chiari o insicuri.",
+      "item5Title": "Peso operativo",
+      "item5Desc": "Processi manuali o ad hoc creano ritardi, incoerenze e rischio di audit."
+    },
+    "systemNeeds": {
+      "title": "Cosa deve includere un sistema di segnalazione conforme",
+      "subtitle": "Funzionalità allineate alla direttiva.",
+      "card1Title": "Canali di segnalazione anonimi e sicuri",
+      "card1Desc": "Ingresso web e opzionale telefonico, con crittografia e senza raccolta identità.",
+      "card1Bullet1": "Ingresso anonimo con messaggistica sicura",
+      "card1Bullet2": "Crittografia end-to-end",
+      "card1Bullet3": "Anonimato reale per tutto il processo",
+      "card2Title": "Comunicazione bidirezionale sicura",
+      "card2Desc": "Follow-up con i segnalanti senza rivelare la loro identità.",
+      "card2Bullet1": "Messaggistica sicura con numero caso e PIN",
+      "card2Bullet2": "Mantiene i segnalanti coinvolti e informati",
+      "card2Bullet3": "Anonimato preservato nella raccolta di prove",
+      "card3Title": "Gestione casi e registrazioni auditabile",
+      "card3Desc": "Flussi strutturati e gestione documentata.",
+      "card3Bullet1": "Instradamento e scadenze automatizzati",
+      "card3Bullet2": "Archiviazione prove con tracce di audit",
+      "card3Bullet3": "Conservazione e controlli di accesso",
+      "card4Title": "Supporto multilingue",
+      "card4Desc": "Segnalazione in più lingue per i team UE.",
+      "card4Bullet1": "Segnalazione in oltre 35 lingue",
+      "card4Bullet2": "Lingua madre per ogni dipendente",
+      "card4Bullet3": "Cruciale per le operazioni multinazionali",
+      "card5Title": "Accesso e permessi per ruolo",
+      "card5Desc": "Solo i responsabili designati vedono le segnalazioni sensibili.",
+      "card5Bullet1": "Permessi granulari",
+      "card5Bullet2": "Registrazione accessi",
+      "card5Bullet3": "Panoramica auditabile",
+      "card6Title": "Controlli sulla protezione dei dati",
+      "card6Desc": "Crittografia, conservazione e accesso conformi al GDPR.",
+      "card6Bullet1": "Archiviazione crittografata in strutture certificate",
+      "card6Bullet2": "Gestione automatizzata dei periodi di conservazione",
+      "card6Bullet3": "Tracciabilità completa per le autorità"
+    },
+    "howWeHelp": {
+      "title": "Come Disclosurely supporta la conformità UE",
+      "subtitle": "Progettato per i requisiti della direttiva.",
+      "item1": "Ingresso segnalazioni anonime con moduli crittografati",
+      "item2": "Gestione casi crittografata e comunicazione bidirezionale",
+      "item3": "Accesso ai casi per ruolo per i responsabili designati",
+      "item4": "Supporto workflow 7 e 90 giorni e promemoria",
+      "item5": "Portali di segnalazione multilingue",
+      "item6": "Registrazioni auditabile e prove esportabili",
+      "item7": "Design privacy-first",
+      "item8": "Redazione con IA e gateway IA privato"
+    },
+    "midCta": {
+      "title": "Pronto a lanciare un canale conforme?",
+      "startFreeTrial": "Inizia la prova gratuita",
+      "talkToTeam": "Parla con il nostro team"
+    },
+    "impact": {
+      "title": "Il valore operativo di farlo bene",
+      "card1Title": "Mitigazione del rischio",
+      "card1Desc": "Rilevamento tempestivo, gestione documentata e minore esposizione a sanzioni.",
+      "card2Title": "Efficienza operativa",
+      "card2Desc": "Flussi automatizzati e scadenze chiare invece di processi manuali o ad hoc.",
+      "card3Title": "Fiducia e cultura",
+      "card3Desc": "I dipendenti si sentono sicuri a segnalare; la conformità è visibile e credibile."
+    },
+    "gettingStarted": {
+      "title": "Per iniziare",
+      "item1": "Configurare canali di segnalazione sicuri",
+      "item2": "Configurare i workflow in linea con la direttiva",
+      "item3": "Formare i team di indagine",
+      "item4": "Comunicare il canale al personale",
+      "item5": "Monitorare e perfezionare i processi"
+    },
+    "finalCta": {
+      "title": "Lancia un canale conforme in pochi giorni",
+      "subtitle": "Onboarding guidato, flussi di segnalazione sicuri e supporto alla conformità integrato per le organizzazioni UE.",
+      "startFreeTrial": "Inizia la prova gratuita",
+      "bookDemo": "Prenota una demo"
     }
   }
 }
