@@ -69,6 +69,16 @@ type CommitmentCardItem = {
   status: "inPlace" | "inProgress";
 };
 
+/** Split copy at full stops so each sentence can sit in its own block next to feature imagery. */
+function splitTextAtFullStops(text: string): string[] {
+  const trimmed = text.trim();
+  if (!trimmed) return [];
+  return trimmed
+    .split(/(?<=\.)\s+/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
 // Helper function to format bullet points: bold beginning keywords and remove links from them
 function formatBulletPoint(point: string | React.ReactNode): React.ReactNode {
   // Extract full text from point (handling JSX with Links)
@@ -484,18 +494,20 @@ function LandingInner() {
                   {item.description && <p className="mb-4 text-gray-700">{item.description}</p>}
                   {item.additionalContent && (
                     <div className="mb-4 space-y-4 text-gray-700">
-                      {item.additionalContent.map((paragraph, idx) => (
-                        <p key={idx} className="text-base leading-relaxed">
-                          {paragraph}
-                        </p>
-                      ))}
+                      {item.additionalContent.flatMap((paragraph, idx) =>
+                        splitTextAtFullStops(paragraph).map((block, j) => (
+                          <p key={`${idx}-${j}`} className="text-base leading-relaxed">
+                            {block}
+                          </p>
+                        )),
+                      )}
                     </div>
                   )}
                   <ul className="space-y-2 text-gray-700">
                     {item.bullets.map((point, idx) => (
                       <li key={idx} className="flex items-start gap-2">
                         <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600 mt-0.5" />
-                        <span>{formatBulletPoint(point)}</span>
+                        <span>{point}</span>
                       </li>
                     ))}
                   </ul>

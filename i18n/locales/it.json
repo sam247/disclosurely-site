@@ -457,8 +457,8 @@
       "statusInProgress": "In corso",
       "items": [
         {
-          "name": "Progettazione consapevole del GDPR",
-          "description": "Trattamento dei dati allineato agli obblighi GDPR",
+          "name": "Progettazione consapevole del GDPR e framework",
+          "description": "Trattamento dei dati allineato agli obblighi GDPR per proteggere i dipendenti",
           "status": "inPlace"
         },
         {
@@ -473,7 +473,7 @@
         },
         {
           "name": "Quadro di audit e controlli in corso",
-          "description": "Sviluppo di controlli e pratiche di evidenza allineate ad attese di tipo SOC 2 su sicurezza, disponibilità e riservatezza.",
+          "description": "Sviluppo di pratiche di sicurezza, riservatezza ed evidenza allineate ad attese di tipo SOC 2.",
           "status": "inProgress"
         }
       ]

@@ -457,8 +457,8 @@
       "statusInProgress": "Pågår",
       "items": [
         {
-          "name": "GDPR-bevisst design",
-          "description": "Databehandling i tråd med GDPR-forpliktelser",
+          "name": "GDPR-bevisst design og rammeverk",
+          "description": "Databehandling i tråd med GDPR-forpliktelser for å beskytte de ansatte",
           "status": "inPlace"
         },
         {
@@ -473,7 +473,7 @@
         },
         {
           "name": "Revisjons- og kontrollramme pågår",
-          "description": "Bygging av kontroller og bevispraksis i tråd med SOC-2-lignende forventninger for sikkerhet, tilgjengelighet og konfidensialitet.",
+          "description": "Bygging av praksis for sikkerhet, konfidensialitet og bevis i tråd med SOC-2-lignende forventninger.",
           "status": "inProgress"
         }
       ]

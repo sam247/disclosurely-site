@@ -304,8 +304,8 @@
       "statusInProgress": "In Arbeit",
       "items": [
         {
-          "name": "DSGVO-bewusstes Design",
-          "description": "Datenverarbeitung orientiert an DSGVO-Pflichten",
+          "name": "DSGVO-bewusstes Design und Rahmenwerk",
+          "description": "Datenverarbeitung orientiert an DSGVO-Pflichten zum Schutz Ihrer Mitarbeitenden",
           "status": "inPlace"
         },
         {
@@ -320,7 +320,7 @@
         },
         {
           "name": "Audit- und Kontrollrahmen in Arbeit",
-          "description": "Aufbau von Kontrollen und Nachweispraktiken im Einklang mit SOC-2-ähnlichen Erwartungen zu Sicherheit, Verfügbarkeit und Vertraulichkeit.",
+          "description": "Aufbau von Sicherheits-, Vertraulichkeits- und Nachweispraktiken im Einklang mit SOC-2-ähnlichen Erwartungen.",
           "status": "inProgress"
         }
       ]

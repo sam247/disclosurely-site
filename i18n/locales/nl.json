@@ -457,8 +457,8 @@
       "statusInProgress": "Lopend",
       "items": [
         {
-          "name": "AVG-bewust ontwerp",
-          "description": "Gegevensverwerking afgestemd op AVG-verplichtingen",
+          "name": "AVG-bewust ontwerp en kader",
+          "description": "Gegevensverwerking afgestemd op AVG-verplichtingen ter bescherming van uw medewerkers",
           "status": "inPlace"
         },
         {
@@ -473,7 +473,7 @@
         },
         {
           "name": "Audit- en controlekader lopend",
-          "description": "Opbouwen van controles en bewijspraktijken in lijn met SOC-2-typeverwachtingen voor beveiliging, beschikbaarheid en vertrouwelijkheid.",
+          "description": "Opbouwen van beveiligings-, vertrouwelijkheids- en bewijspraktijken in lijn met SOC-2-typeverwachtingen.",
           "status": "inProgress"
         }
       ]

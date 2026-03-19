@@ -456,8 +456,8 @@
       "statusInProgress": "In progress",
       "items": [
         {
-          "name": "GDPR-conscious design",
-          "description": "Data handling designed around GDPR obligations",
+          "name": "GDPR-conscious design and framework",
+          "description": "Data handling designed around GDPR obligations to protect your employees",
           "status": "inPlace"
         },
         {
@@ -472,7 +472,7 @@
         },
         {
           "name": "Audit and control framework in progress",
-          "description": "Building security, availability, and confidentiality controls and evidence practices aligned with SOC 2-type expectations.",
+          "description": "Building security, confidentiality and evidence practices aligned with SOC 2-type expectations.",
           "status": "inProgress"
         }
       ]

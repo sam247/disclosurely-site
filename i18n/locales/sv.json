@@ -457,8 +457,8 @@
       "statusInProgress": "Pågår",
       "items": [
         {
-          "name": "GDPR-medveten design",
-          "description": "Databehandling i linje med GDPR-skyldigheter",
+          "name": "GDPR-medveten design och ramverk",
+          "description": "Databehandling i linje med GDPR-skyldigheter för att skydda era medarbetare",
           "status": "inPlace"
         },
         {
@@ -473,7 +473,7 @@
         },
         {
           "name": "Ramverk för revision och kontroll pågår",
-          "description": "Uppbyggnad av kontroller och bevispraxis i linje med SOC-2-liknande förväntningar på säkerhet, tillgänglighet och konfidentialitet.",
+          "description": "Uppbyggnad av säkerhets-, konfidentialitets- och bevispraxis i linje med SOC-2-liknande förväntningar.",
           "status": "inProgress"
         }
       ]

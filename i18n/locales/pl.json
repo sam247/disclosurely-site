@@ -296,8 +296,8 @@
       "statusInProgress": "W toku",
       "items": [
         {
-          "name": "Projekt świadomy RODO",
-          "description": "Przetwarzanie danych zgodne z obowiązkami RODO",
+          "name": "Projekt świadomy RODO i ramy",
+          "description": "Przetwarzanie danych zgodne z obowiązkami RODO w celu ochrony pracowników",
           "status": "inPlace"
         },
         {
@@ -312,7 +312,7 @@
         },
         {
           "name": "Ram audytu i kontroli w toku",
-          "description": "Budowa kontroli i praktyk dowodowych zgodnych z oczekiwaniami typu SOC 2 w zakresie bezpieczeństwa, dostępności i poufności.",
+          "description": "Budowa praktyk bezpieczeństwa, poufności i dowodowych zgodnych z oczekiwaniami typu SOC 2.",
           "status": "inProgress"
         }
       ]

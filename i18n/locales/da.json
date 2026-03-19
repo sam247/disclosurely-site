@@ -457,8 +457,8 @@
       "statusInProgress": "I gang",
       "items": [
         {
-          "name": "GDPR-bevidst design",
-          "description": "Databehandling i tråd med GDPR-forpligtelser",
+          "name": "GDPR-bevidst design og ramme",
+          "description": "Databehandling i tråd med GDPR-forpligtelser for at beskytte jeres medarbejdere",
           "status": "inPlace"
         },
         {
@@ -473,7 +473,7 @@
         },
         {
           "name": "Revisions- og kontrolramme i gang",
-          "description": "Opbygning af kontroller og bevispraksis på linje med SOC-2-lignende forventninger til sikkerhed, tilgængelighed og fortrolighed.",
+          "description": "Opbygning af sikkerheds-, fortroligheds- og bevispraksis på linje med SOC-2-lignende forventninger.",
           "status": "inProgress"
         }
       ]

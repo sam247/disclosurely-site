@@ -460,8 +460,8 @@
       "statusInProgress": "En curso",
       "items": [
         {
-          "name": "Diseño consciente del RGPD",
-          "description": "Tratamiento de datos alineado con obligaciones del RGPD",
+          "name": "Diseño consciente del RGPD y marco",
+          "description": "Tratamiento de datos alineado con las obligaciones del RGPD para proteger a sus empleados",
           "status": "inPlace"
         },
         {
@@ -476,7 +476,7 @@
         },
         {
           "name": "Marco de auditoría y controles en curso",
-          "description": "Desarrollo de controles y prácticas de evidencia alineadas con expectativas de tipo SOC 2 en seguridad, disponibilidad y confidencialidad.",
+          "description": "Desarrollo de prácticas de seguridad, confidencialidad y evidencia alineadas con expectativas de tipo SOC 2.",
           "status": "inProgress"
         }
       ]

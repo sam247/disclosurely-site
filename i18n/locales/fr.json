@@ -456,8 +456,8 @@
       "statusInProgress": "En cours",
       "items": [
         {
-          "name": "Conception attentive au RGPD",
-          "description": "Traitement des données aligné sur les obligations du RGPD",
+          "name": "Conception attentive au RGPD et cadre",
+          "description": "Traitement des données aligné sur les obligations du RGPD pour protéger vos salariés",
           "status": "inPlace"
         },
         {
@@ -472,7 +472,7 @@
         },
         {
           "name": "Cadre d'audit et de contrôle en cours",
-          "description": "Mise en place de contrôles et de pratiques de preuve alignées sur des attentes de type SOC 2 en matière de sécurité, disponibilité et confidentialité.",
+          "description": "Mise en place de pratiques de sécurité, de confidentialité et de preuve alignées sur des attentes de type SOC 2.",
           "status": "inProgress"
         }
       ]
