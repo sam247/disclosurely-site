@@ -1,0 +1,206 @@
+{
+  "competitorName": "Whistleblower Software",
+  "hero": {
+    "titleLine1": "Disclosurely vs",
+    "titleLine2": "Whistleblower Software",
+    "subtitle": "Compare modelos de preços, fluxos de denúncia e flexibilidade da plataforma para ver qual sistema de whistleblowing se adequa à sua organização."
+  },
+  "fairnessNote": "Esta comparação baseia-se em informação pública e posicionamento do produto na data de redação. As funcionalidades e os preços podem alterar-se — verifique os detalhes com cada fornecedor.",
+  "quickSummary": {
+    "title": "Orientação rápida",
+    "disclosurelyTitle": "O Disclosurely pode ser mais adequado para organizações que querem:",
+    "disclosurelyBullet1": "Seleção de plano mais simples sem escadas por número de colaboradores",
+    "disclosurelyBullet2": "Um percurso de teste online claro para validar fluxos cedo",
+    "disclosurelyBullet3": "Gestão de casos com apoio de IA nos planos relevantes",
+    "disclosurelyBullet4": "Automação moderna e flexibilidade à medida que cresce",
+    "competitorTitle": "O Whistleblower Software pode adequar-se se preferir:",
+    "competitorBullet1": "Estruturas de preços por número de colaboradores ou escalões",
+    "competitorBullet2": "Uma estrutura de pacotes mais fixa",
+    "competitorBullet3": "Comparar ferramentas com preços ligados à headcount",
+    "competitorBullet4": "Um modelo de compra estruturado como em fornecedores semelhantes"
+  },
+  "tables": {
+    "pricing": {
+      "title": "Preços e modelo de compra",
+      "rows": [
+        {
+          "feature": "How pricing is typically structured",
+          "disclosurely": "Published tiers with limits on our pricing page; not primarily sold as employee-count bands",
+          "competitor": "Often organised around employee ranges or stepped packages — confirm on their published pricing"
+        },
+        {
+          "feature": "Choosing the right plan",
+          "disclosurely": "Compare features and limits side-by-side online",
+          "competitor": "Map bands to your headcount and required modules — verify against their plan descriptions"
+        },
+        {
+          "feature": "Trial or demo path",
+          "disclosurely": "Free trial available — see current terms at signup",
+          "competitor": "Confirm trial length and whether a demo is typical for your segment"
+        },
+        {
+          "feature": "Starting small and scaling",
+          "disclosurely": "Upgrade paths described on the pricing page",
+          "competitor": "Check how band changes affect cost as headcount grows"
+        },
+        {
+          "feature": "Buying flexibility",
+          "disclosurely": "Self-serve signup and upgrades where appropriate",
+          "competitor": "May favour a more packaged purchase flow — confirm for your organisation"
+        }
+      ]
+    },
+    "reporting": {
+      "title": "Denúncia e recolha",
+      "rows": [
+        {
+          "feature": "Web-based reporting channel",
+          "disclosurely": "Yes",
+          "competitor": "Yes — confirm for your edition"
+        },
+        {
+          "feature": "Anonymous reporting",
+          "disclosurely": "Yes",
+          "competitor": "Confirm how anonymity is implemented for your setup"
+        },
+        {
+          "feature": "Secure two-way communication",
+          "disclosurely": "Yes",
+          "competitor": "Confirm supported channels on your plan"
+        },
+        {
+          "feature": "Branding and portal customisation",
+          "disclosurely": "Yes — see product documentation",
+          "competitor": "Confirm branding options for your package"
+        },
+        {
+          "feature": "Multilingual reporting",
+          "disclosurely": "Broad language coverage for reporters",
+          "competitor": "Confirm coverage for the languages you need"
+        }
+      ]
+    },
+    "caseHandling": {
+      "title": "Gestão de casos e fluxos",
+      "rows": [
+        {
+          "feature": "Case inbox and workflow",
+          "disclosurely": "Yes",
+          "competitor": "Yes"
+        },
+        {
+          "feature": "Role-based permissions",
+          "disclosurely": "Yes",
+          "competitor": "Confirm scope for your plan"
+        },
+        {
+          "feature": "Workflow automation and integrations",
+          "disclosurely": "Integrations such as Zapier on supported plans",
+          "competitor": "Confirm automation and integrations for your tier"
+        },
+        {
+          "feature": "AI-assisted analysis or triage",
+          "disclosurely": "Built into the product on relevant plans",
+          "competitor": "Confirm whether AI features are offered and how they are positioned"
+        }
+      ]
+    },
+    "security": {
+      "title": "Segurança e controlo de acesso",
+      "rows": [
+        {
+          "feature": "Encryption for data in transit and at rest",
+          "disclosurely": "Encryption used throughout the service — see security documentation",
+          "competitor": "Review their security materials for technical detail"
+        },
+        {
+          "feature": "Role-based access and permissions",
+          "disclosurely": "Yes",
+          "competitor": "Yes — confirm for your edition"
+        },
+        {
+          "feature": "Audit logging",
+          "disclosurely": "Yes — key access and case events for authorised administrators",
+          "competitor": "Confirm logging capabilities for your plan"
+        },
+        {
+          "feature": "Data protection alignment (e.g. GDPR)",
+          "disclosurely": "Designed with GDPR-oriented controls — not legal advice",
+          "competitor": "Review their privacy and compliance documentation for your jurisdiction"
+        }
+      ]
+    },
+    "rollout": {
+      "title": "Implementação e suporte",
+      "rows": [
+        {
+          "feature": "Onboarding and setup guidance",
+          "disclosurely": "Guided setup, documentation, and customer success touchpoints",
+          "competitor": "Confirm onboarding and professional services for your contract"
+        },
+        {
+          "feature": "Help resources",
+          "disclosurely": "Help centre and in-product guidance",
+          "competitor": "Confirm support channels and response expectations"
+        },
+        {
+          "feature": "Practical rollout support",
+          "disclosurely": "Support for forms, categories, and handler roles during setup",
+          "competitor": "Confirm what is included when you purchase"
+        }
+      ]
+    }
+  },
+  "why": {
+    "title": "Porque as equipas escolhem o Disclosurely",
+    "card1": {
+      "title": "Clearer plan selection",
+      "body": "Compare tiers and limits online so commercial and compliance owners can align quickly without decoding complex ladders first.",
+      "bullet1": "Transparent list pricing where published",
+      "bullet2": "Straightforward trial to test real workflows",
+      "bullet3": "Less friction when matching plan to team size"
+    },
+    "card2": {
+      "title": "Modern automation",
+      "body": "Connect Disclosurely to tools you already use and reduce manual hand-offs on supported plans.",
+      "bullet1": "Integration options where available",
+      "bullet2": "AI assistance for everyday case tasks on relevant plans",
+      "bullet3": "Room to mature processes over time"
+    },
+    "card3": {
+      "title": "Practical adoption",
+      "body": "Built for organisations that want secure reporting without over-engineering the first rollout.",
+      "bullet1": "Focused onboarding for case handlers",
+      "bullet2": "Sensible defaults with room to configure",
+      "bullet3": "Strong fit for small and mid-sized programmes"
+    }
+  },
+  "fitCompetitor": {
+    "title": "O Whistleblower Software pode adequar-se a organizações que:",
+    "bullet1": "Prefer employee-based pricing bands or headcount-linked tiers",
+    "bullet2": "Want a more fixed package structure they can benchmark internally",
+    "bullet3": "Already evaluate whistleblowing vendors using employee-count models",
+    "bullet4": "Are comfortable with a more structured procurement and banding approach"
+  },
+  "migration": {
+    "title": "Mudar de plataforma não deve atrasá-lo",
+    "subtitle": "Migração prática com acompanhamento, implementação faseada se necessário e perturbação mínima para gestores internos.",
+    "step1": {
+      "title": "Planear a mudança",
+      "body": "Acordem o que migrar, o que recriar e o que as políticas exigem antes de alterar o canal de denúncia."
+    },
+    "step2": {
+      "title": "Recriar formulários e fluxos",
+      "body": "Ajudamo-lo a mapear categorias, formulários e funções de gestão no Disclosurely para manter processos reconhecíveis."
+    },
+    "step3": {
+      "title": "Implementar em fases",
+      "body": "Comunique o novo canal, forme gestores e entre em produção com apoio — o calendário depende de aprovações e dados."
+    },
+    "disclaimer": "Os prazos variam conforme os dados, aprovações internas e configuração atual — esclarecemos em cada passo o que é viável."
+  },
+  "finalCta": {
+    "title": "Procura uma alternativa mais flexível ao Whistleblower Software?",
+    "subtitle": "Inicie um teste gratuito ou marque uma demo para ver se o Disclosurely se adequa ao seu fluxo de denúncias."
+  }
+}

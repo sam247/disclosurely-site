@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "O Disclosurely",
+    "description": "Dlaczego Disclosurely istnieje: bezpieczne oprogramowanie sygnalistyczne zaprojektowane tak, by było łatwiejsze do wdrożenia, zarządzania i zaufania — bez zbędnej złożoności."
+  },
+  "hero": {
+    "tag": "O Disclosurely",
+    "title": "Stworzone, aby sygnalizacja była prostsza, bezpieczniejsza i bardziej wiarygodna",
+    "description": "Disclosurely powstało, by pomagać organizacjom uruchamiać bezpieczne kanały zgłoszeń, którym ludzie naprawdę ufają — bez zbędnej złożoności, przestarzałych procesów i ciężkiego wdrożenia."
+  },
+  "mission": {
+    "title": "Dlaczego istniejemy",
+    "p1": "Z kanałów zgłoszeń korzysta się tylko wtedy, gdy są postrzegane jako bezpieczne i poważane. Organizacje potrzebują narzędzi do przejrzystego przyjmowania, triażu i właściwej obsługi spraw.",
+    "p2": "Wiele systemów sygnalistycznych wciąż wydaje się przestarzałe, przekomplikowane lub kosztowne w wdrożeniu. To tarcie utrudnia to, czego wszyscy chcą: wczesnego ujawniania problemów i sprawiedliwej obsługi.",
+    "p3": "Disclosurely ma ułatwiać uruchomienie bezpiecznej sygnalizacji i codzienną pracę zespołów wewnętrznych — poprzez praktyczne, świadome prywatności procesy, a nie hasła marketingowe."
+  },
+  "beliefs": {
+    "title": "Co dobry software sygnalistyczny powinien robić — według nas",
+    "items": [
+      "Chronić tożsamości i wrażliwe informacje od projektu, z kontrolami dopasowanymi do realnych dochodzeń.",
+      "Ułatwiać organizacjom właściwą obsługę zgłoszeń — jasny intake, uporządkowany follow-up, odpowiedzialny dostęp.",
+      "Budować zaufanie przez bezpieczną komunikację i sensowne procesy, a nie mgliste obietnice.",
+      "Zmniejszać tarcie dla compliance, HR i właścicieli spraw korzystających z narzędzia co tydzień.",
+      "Pomagać spełniać oczekiwania regulacyjne tam, gdzie obowiązują — bez obciążania mniejszych zespołów.",
+      "Rozwijać się w czasie: dostarczamy iteracyjnie i słuchamy, jak zespoły używają platformy."
+    ]
+  },
+  "audience": {
+    "title": "Dla kogo jest Disclosurely",
+    "items": [
+      "Zespoły compliance i ryzyka odpowiedzialne za programy speak-up",
+      "HR i właściciele wewnętrznych zgłoszeń koordynujący obsługę spraw",
+      "Organizacje wdrażające lub odnawiające kanały sygnalistyczne UE lub UK",
+      "Zespoły chcące nowoczesnej, bezpiecznej sygnalizacji bez ciężkiego programu enterprise",
+      "Nabywcy ceniący jasność w kwestii bezpieczeństwa i danych — szczegóły na stronie Security"
+    ]
+  },
+  "trust": {
+    "title": "Jak podchodzimy do zaufania i bezpiecznej sygnalizacji",
+    "intro": "Skupiamy się na zrozumiałych kontrolach i niezawodnych praktykach operacyjnych. Pełny obraz — szyfrowanie, dostęp, kopie zapasowe, logi i ochrona danych — jest na dedykowanej stronie bezpieczeństwa.",
+    "items": [
+      "Silne szyfrowanie danych w tranzycie i w spoczynku (AES-256-GCM), zgodne z opisem działającej usługi.",
+      "Obsługa spraw z kontrolą dostępu: tylko upoważnione osoby w organizacji widzą zgłoszenia — według ról i uprawnień, które ustawiacie.",
+      "Projekt świadomy prywatności, wspierający zgodne z RODO przetwarzanie wrażliwych danych osobowych.",
+      "Logi audytu kluczowych zdarzeń dostępu i spraw dla rozliczalności.",
+      "Hosting na renomowanej infrastrukturze chmurowej z monitoringiem i szyfrowanymi kopiami zapasowymi."
+    ],
+    "securityCta": "Przeczytaj stronę Bezpieczeństwo i zaufanie"
+  },
+  "cta": {
+    "title": "Chcesz zobaczyć, jak działa Disclosurely?",
+    "subtitle": "Poznaj platformę, sprawdź cennik lub umów demo, by ocenić dopasowanie do organizacji.",
+    "pricing": "Zobacz cennik",
+    "demo": "Umów demo"
+  },
+  "explore": {
+    "title": "Dowiedz się więcej",
+    "subtitle": "Praktyczne kolejne kroki przy ocenie oprogramowania sygnalistycznego.",
+    "featuresTitle": "Funkcje platformy",
+    "featuresBody": "Kanały zgłoszeń, obsługa spraw, automatyzacja i codzienna praca zespołów w Disclosurely.",
+    "pricingTitle": "Cennik",
+    "pricingBody": "Przejrzyste poziomy tam, gdzie publikujemy — zobacz, co jest w cenie, zanim rozmowa ze sprzedażą.",
+    "directiveTitle": "Dyrektywa UE o sygnalistach",
+    "directiveBody": "Kontekst wymagań i sposobu, w jaki organizacje często budują wewnętrzne kanały."
+  }
+}

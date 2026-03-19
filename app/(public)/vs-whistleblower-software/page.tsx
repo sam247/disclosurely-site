@@ -1,17 +1,41 @@
 import type { Metadata } from "next";
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, generatePageStructuredData, StructuredData } from "@/lib/seo";
 import CompareContent from "./CompareContent";
 
 export async function generateMetadata(): Promise<Metadata> {
+  const structuredData = generatePageStructuredData("webpage", {
+    title: "Disclosurely vs Whistleblower Software — platform comparison",
+    description:
+      "Compare pricing models, reporting workflows, and platform flexibility. A balanced overview to help you decide what fits your organisation — verify details with each vendor.",
+    url: "https://disclosurely.com/vs-whistleblower-software",
+  });
+
   return generatePageMetadata({
     pagePath: "/vs-whistleblower-software",
-    fallbackTitle: "Disclosurely vs WhistleblowerSoftware.com - Save €276/Year with Better AI Features",
+    fallbackTitle: "Disclosurely vs Whistleblower Software — platform comparison",
     fallbackDescription:
-      "Compare Disclosurely and WhistleblowerSoftware.com. Get AI case analysis, better pricing (£39.99 vs €70/mo), and faster setup. See why teams are switching.",
-    keywords: ["disclosurely vs whistleblower software", "whistleblowing software comparison", "whistleblowersoftware alternative"],
+      "Compare pricing models, reporting workflows, and platform flexibility. A balanced overview to help you decide what fits your organisation — verify details with each vendor.",
+    keywords: [
+      "disclosurely vs whistleblower software",
+      "whistleblowing software comparison",
+      "whistleblower software alternative",
+    ],
+    structuredData: structuredData,
   });
 }
 
 export default function VsWhistleblowerSoftwarePage() {
-  return <CompareContent />;
+  const webpageSchema = generatePageStructuredData("webpage", {
+    title: "Disclosurely vs Whistleblower Software — platform comparison",
+    description:
+      "Compare pricing models, reporting workflows, and platform flexibility. A balanced overview to help you decide what fits your organisation — verify details with each vendor.",
+    url: "https://disclosurely.com/vs-whistleblower-software",
+  });
+
+  return (
+    <>
+      <StructuredData data={webpageSchema} />
+      <CompareContent />
+    </>
+  );
 }

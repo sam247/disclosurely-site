@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Om Disclosurely",
+    "description": "Hvorfor Disclosurely finnes: sikker varslerprogramvare som skal være enklere å lansere, forvalte og stole på — uten unødvendig kompleksitet."
+  },
+  "hero": {
+    "tag": "Om Disclosurely",
+    "title": "Bygget for å gjøre varsling enklere, tryggere og mer pålitelig",
+    "description": "Disclosurely ble laget for å hjelpe organisasjoner med å lansere sikre varslingskanaler folk faktisk stoler på — uten unødvendig kompleksitet, utdaterte arbeidsflyter eller tung implementeringsbyrde."
+  },
+  "mission": {
+    "title": "Hvorfor vi finnes",
+    "p1": "Folk bruker bare varslingskanaler de opplever som trygge og alvorlige mente. Organisasjoner trenger verktøy som gjør det enkelt å motta, triage og håndtere bekymringer skikkelig.",
+    "p2": "For mange varslingssystemer føles utdaterte, overkompliserte eller tunge å rulle ut. Friksjonen står i veien for det alle ønsker: å avdekke problemer tidlig og håndtere dem rettferdig.",
+    "p3": "Disclosurely er laget for å gjøre sikker varsling enklere å lansere og enklere for interne team å forvalte — med personvernbevisste, praktiske arbeidsflyter, ikke tomme slagord."
+  },
+  "beliefs": {
+    "title": "Hva god varslerprogramvare bør gjøre, mener vi",
+    "items": [
+      "Beskytt identiteter og sensitiv informasjon i designen, med kontroller som passer ekte undersøkelser.",
+      "Gjøre det enklere for organisasjoner å håndtere varsler riktig — tydelig inntak, strukturert oppfølging, ansvarlig tilgang.",
+      "Støtte tillit gjennom sikker kommunikasjon og fornuftige prosesser, ikke vage løfter.",
+      "Redusere friksjon for compliance, HR og saksansvarlige som bruker verktøyet ukentlig.",
+      "Hjelpe organisasjoner å møte regulatoriske forventninger der de gjelder — uten å belaste mindre team unødig.",
+      "Forbedre seg over tid: vi leverer iterativt og lytter til hvordan team bruker plattformen i praksis."
+    ]
+  },
+  "audience": {
+    "title": "Hvem Disclosurely er bygget for",
+    "items": [
+      "Compliance- og risikoteam ansvarlige for speak-up-programmer",
+      "HR og interne varslingseiere som koordinerer saksbehandling",
+      "Organisasjoner som ruller ut eller fornyer EU- eller UK-varslingskanaler",
+      "Team som ønsker moderne, sikker rapportering uten et tungt enterprise-program",
+      "Kjøpere som verdsetter klarhet om sikkerhet og data — se sikkerhetssiden vår"
+    ]
+  },
+  "trust": {
+    "title": "Hvordan vi nærmer oss tillit og sikker varsling",
+    "intro": "Vi fokuserer på kontroller du kan forstå og drift du kan stole på. Helhetsbildet — kryptering, tilgang, sikkerhetskopier, logging og databeskyttelse — er dokumentert på sikkerhetssiden vår.",
+    "items": [
+      "Sterk kryptering for data underveis og i hvile (AES-256-GCM), i tråd med hvordan vi beskriver den levende tjenesten.",
+      "Tilgangskontrollert saksbehandling: bare autoriserte personer i organisasjonen ser varsler, etter roller og tillatelser dere setter.",
+      "Personvernbevisst utforming som støtter GDPR-lignende behandling av sensitive personopplysninger.",
+      "Revisjonslogger for viktige tilgangs- og sakshendelser for ansvarlighet.",
+      "Drift på anerkjent skyinfrastruktur med overvåking og krypterte sikkerhetskopier."
+    ],
+    "securityCta": "Les siden Sikkerhet og tillit"
+  },
+  "cta": {
+    "title": "Vil du se hvordan Disclosurely fungerer?",
+    "subtitle": "Utforsk plattformen, se priser eller bestill en demo for å se om det passer organisasjonen deres.",
+    "pricing": "Se priser",
+    "demo": "Bestill demo"
+  },
+  "explore": {
+    "title": "Utforsk mer",
+    "subtitle": "Praktiske neste steg hvis dere vurderer varslerprogramvare.",
+    "featuresTitle": "Plattformsfunksjoner",
+    "featuresBody": "Varslingskanaler, saksbehandling, automatisering og hverdagen til team i Disclosurely.",
+    "pricingTitle": "Priser",
+    "pricingBody": "Transparente nivåer der de publiseres — se hva som inngår før dere snakker med salg.",
+    "directiveTitle": "EUs varslingsdirektiv",
+    "directiveBody": "Kontekst om krav og hvordan organisasjoner ofte strukturerer interne kanaler."
+  }
+}

@@ -27,15 +27,16 @@ const pages: Record<string, PageConfig> = {
     highlights: ['End-to-end encryption', 'Role-based access', 'Real-time analytics'],
   },
   '/about': {
-    title: 'About Disclosurely',
+    title: 'Why Disclosurely exists',
     subtitle:
-      'We help organisations build trust with secure whistleblowing, compliance automation, and privacy-first technology.',
-    highlights: ['London-based team', 'Security-first culture', 'Serving UK & EU organisations'],
+      'Mission-led whistleblowing software — practical secure reporting, clearer rollouts, and trust without fake scale or filler.',
+    highlights: ['Grounded security story', 'EU & UK channel context', 'Link through to full Security page'],
   },
   '/contact': {
-    title: 'Contact Our Team',
-    subtitle: 'Have questions about Disclosurely? We are here to help with demos, pricing, and support.',
-    highlights: ['support@disclosurely.com', 'Fast response times', 'Enterprise onboarding help'],
+    title: 'Talk to Disclosurely',
+    subtitle:
+      'Book a demo, ask about pricing, or get rollout guidance — we aim to reply within one business day.',
+    highlights: ['Demo and pricing help', 'EU & UK whistleblowing context', 'No hard sales pressure'],
   },
   '/careers': {
     title: 'Careers at Disclosurely',
@@ -59,18 +60,18 @@ const pages: Record<string, PageConfig> = {
   },
   '/vs-speakup': {
     title: 'Disclosurely vs SpeakUp',
-    subtitle: 'Compare Disclosurely with SpeakUp across security, compliance, and usability.',
-    highlights: ['Native encryption', 'AI-powered insights', 'Multi-language support'],
+    subtitle: 'Compare pricing models, workflows, and reporting features to see which platform fits your organisation.',
+    highlights: ['Balanced vendor comparison', 'AI-assisted case handling', 'Clear trial path'],
   },
   '/vs-whistleblower-software': {
     title: 'Disclosurely vs Whistleblower Software',
-    subtitle: 'See how Disclosurely offers deeper security, automation, and analytics.',
-    highlights: ['End-to-end encryption', 'Automated workflows', 'Compliance reporting'],
+    subtitle: 'Compare pricing models, reporting workflows, and platform flexibility for your organisation.',
+    highlights: ['Fair pricing-model comparison', 'Decision-focused tables', 'Balanced buyer guidance'],
   },
   '/vs-navex': {
     title: 'Disclosurely vs NAVEX',
-    subtitle: 'Evaluate Disclosurely against NAVEX for modern whistleblowing and compliance.',
-    highlights: ['Faster setup', 'Transparent pricing', 'Modern UX'],
+    subtitle: 'Compare buying models, rollout complexity, and whistleblowing workflows for your organisation.',
+    highlights: ['Balanced enterprise comparison', 'Procurement and fit focus', 'Practical rollout guidance'],
   },
   '/vs-resolver': {
     title: 'Disclosurely vs Resolver',
@@ -99,8 +100,8 @@ const pages: Record<string, PageConfig> = {
   },
   '/security': {
     title: 'Security & Trust',
-    subtitle: 'Security is built into Disclosurely from data storage to communications.',
-    highlights: ['AES-256 encryption', 'ISO 27001 alignment', 'Continuous monitoring'],
+    subtitle: 'How Disclosurely protects sensitive reports with encryption, access controls, and privacy-conscious design.',
+    highlights: ['AES-256-GCM encryption', 'Role-based access', 'GDPR-conscious design'],
   },
   '/faq': {
     title: 'Frequently Asked Questions',

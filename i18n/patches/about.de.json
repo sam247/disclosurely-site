@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Über Disclosurely",
+    "description": "Warum es Disclosurely gibt: sichere Hinweisgeber-Software, die einfacher einzuführen, zu betreuen und zu vertrauen sein soll — ohne unnötige Komplexität."
+  },
+  "hero": {
+    "tag": "Über Disclosurely",
+    "title": "Gebaut, um sicheres Melden einfacher, transparenter und vertrauenswürdiger zu machen",
+    "description": "Disclosurely wurde entwickelt, damit Organisationen sichere Meldekanäle einführen können, denen Menschen wirklich vertrauen — ohne unnötige Komplexität, veraltete Workflows oder schwere Implementierungslast."
+  },
+  "mission": {
+    "title": "Warum wir existieren",
+    "p1": "Meldewege werden nur genutzt, wenn sie als sicher und ernst gemeint wahrgenommen werden. Organisationen brauchen Werkzeuge, mit denen Hinweise klar aufgenommen, priorisiert und ordnungsgemäß bearbeitet werden können.",
+    "p2": "Viele Hinweisgeber-Systeme wirken noch veraltet, überkomplex oder sind schmerzhaft auszurollen. Diese Reibung steht dem entgegen, was alle wollen: Themen früh sichtbar machen und fair bearbeiten.",
+    "p3": "Disclosurely soll sicheres Melden einfacher einführbar und für interne Teams einfacher handhabbar machen — mit datenschutzbewussten, pragmatischen Workflows statt Schlagworten."
+  },
+  "beliefs": {
+    "title": "Was gute Hinweisgeber-Software unserer Meinung nach leisten sollte",
+    "items": [
+      "Identitäten und sensible Informationen von vornherein schützen — mit Kontrollen, die zu echten Untersuchungen passen.",
+      "Organisationen helfen, Meldungen ordentlich zu bearbeiten — klare Aufnahme, strukturierte Nachverfolgung, nachvollziehbare Zugriffe.",
+      "Vertrauen durch sichere Kommunikation und sinnvolle Prozesse stützen — nicht durch vage Versprechen.",
+      "Reibung für Compliance, HR und Fallverantwortliche reduzieren, die das Tool jede Woche nutzen.",
+      "Organisationen helfen, regulatorische Erwartungen zu erfüllen, wo sie gelten — ohne kleinere Teams unnötig zu überfordern.",
+      "Sich weiterentwickeln: wir liefern iterativ und orientieren uns daran, wie Teams die Plattform in der Praxis nutzen."
+    ]
+  },
+  "audience": {
+    "title": "Für wen Disclosurely gedacht ist",
+    "items": [
+      "Compliance- und Risikoteams mit Verantwortung für Speak-up-Programme",
+      "HR und interne Meldeverantwortliche, die Fallbearbeitung koordinieren",
+      "Organisationen, die EU- oder UK-Hinweisgeberkanäle einführen oder erneuern",
+      "Teams, die moderne, sichere Meldewege ohne schweres Enterprise-Programm wollen",
+      "Einkäufer, die Klarheit zu Sicherheit und Datenverarbeitung schätzen — Details auf unserer Security-Seite"
+    ]
+  },
+  "trust": {
+    "title": "Wie wir Vertrauen und sicheres Melden angehen",
+    "intro": "Wir konzentrieren uns auf nachvollziehbare Kontrollen und betriebliche Praktiken, auf die man sich verlassen kann. Das Gesamtbild — Verschlüsselung, Zugriff, Backups, Protokollierung und Datenschutz — steht auf unserer Security-Seite.",
+    "items": [
+      "Starke Verschlüsselung für Daten bei Übertragung und Speicherung (AES-256-GCM), konsistent mit unserer Beschreibung des Live-Dienstes.",
+      "Zugriffskontrollierte Fallbearbeitung: Nur autorisierte Personen in Ihrer Organisation sehen Meldungen — gemäß Rollen und Berechtigungen, die Sie setzen.",
+      "Datenschutzbewusstes Design zur Unterstützung DSGVO-konformer Verarbeitung sensibler personenbezogener Daten.",
+      "Audit-Protokolle zu wichtigen Zugriffs- und Fallereignissen zur Unterstützung von Rechenschaftspflicht.",
+      "Hosting auf etablierter Cloud-Infrastruktur mit Monitoring und verschlüsselten Backups."
+    ],
+    "securityCta": "Zur Seite Sicherheit & Vertrauen"
+  },
+  "cta": {
+    "title": "Möchten Sie sehen, wie Disclosurely arbeitet?",
+    "subtitle": "Plattform erkunden, Preise prüfen oder eine Demo buchen — ob es zu Ihrer Organisation passt.",
+    "pricing": "Preise ansehen",
+    "demo": "Demo buchen"
+  },
+  "explore": {
+    "title": "Mehr entdecken",
+    "subtitle": "Praktische nächste Schritte bei der Bewertung von Hinweisgeber-Software.",
+    "featuresTitle": "Plattform-Funktionen",
+    "featuresBody": "Meldekanäle, Fallbearbeitung, Automatisierung und der Alltag von Teams in Disclosurely.",
+    "pricingTitle": "Preise",
+    "pricingBody": "Transparente Stufen, wo veröffentlicht — sehen Sie, was enthalten ist, bevor Sie mit dem Vertrieb sprechen.",
+    "directiveTitle": "EU-Hinweisgeber-Richtlinie",
+    "directiveBody": "Kontext zu Anforderungen der Richtlinie und wie Organisationen interne Kanäle oft aufsetzen."
+  }
+}

@@ -406,6 +406,124 @@
       "subtitle": "Word lid van het veilige openbaarmakingsplatform"
     }
   },
+  "securityPage": {
+    "hero": {
+      "title": "Beveiliging en vertrouwen",
+      "subtitle": "Disclosurely is ontworpen om gevoelige meldingen te beschermen met sterke versleuteling, gecontroleerde toegang, veilige back-ups en privacybewuste zaakbehandeling."
+    },
+    "highlights": {
+      "card1Title": "AES-256-GCM-versleuteling",
+      "card1Body": "AES-256-GCM beschermt alle gegevens tijdens transport en in rust.",
+      "card2Title": "Toegangsgecontroleerde zaakbehandeling",
+      "card2Body": "Alleen geautoriseerde behandelaars binnen uw organisatie kunnen ingediende meldingen inzien, volgens rol en rechten.",
+      "card3Title": "AVG-bewust ontwerp",
+      "card3Body": "Ontworpen om uw AVG-verplichtingen bij gevoelige persoonsgegevens te ondersteunen."
+    },
+    "features": {
+      "title": "Uitgebreide beveiligingsfuncties",
+      "subtitle": "Beveiliging om gevoelige klokkenluidersmeldingen en de indieners te beschermen.",
+      "item1Title": "AES-256-GCM-versleuteling",
+      "item1Description": "AES-256-GCM wordt toegepast op gegevens in rust en tijdens transport.",
+      "item2Title": "Versleutelde toegangscontroles",
+      "item2Description": "Alleen geautoriseerde gebruikers met de juiste rechten kunnen meldingen inzien.",
+      "item3Title": "Veilige overdracht en verwerking",
+      "item3Description": "Meldingen worden versleuteld verzonden en verwerkt in de gecontroleerde accountomgeving van uw organisatie.",
+      "item4Title": "Meervoudige authenticatie",
+      "item4Description": "MFA is beschikbaar voor beheerdersaccounts om ongeautoriseerde toegang te beperken.",
+      "item5Title": "Rolgebaseerde toegangscontrole",
+      "item5Description": "Fijnmazige rechten beperken toegang tot zaken; toegangsgebeurtenissen worden vastgelegd.",
+      "item6Title": "Veilige cloudinfrastructuur",
+      "item6Description": "Gehost op betrouwbare cloudinfrastructuur met monitoring en versleutelde back-ups.",
+      "item7Title": "Versleutelde back-ups",
+      "item7Description": "Geautomatiseerde versleutelde back-ups in meerdere regio's. Herstelprocedures worden periodiek getest.",
+      "item8Title": "Auditlogs",
+      "item8Description": "Logs registreren belangrijke zaak- en toegangsgebeurtenissen en ondersteunen detectie van ongeautoriseerde wijzigingen.",
+      "item9Title": "AVG en regionale verwerking",
+      "item9Description": "Ontworpen om AVG te ondersteunen. Regionale opties waar het platform dit biedt."
+    },
+    "commitments": {
+      "title": "Beveiligingsverbintenissen",
+      "subtitle": "Huidige maatregelen en geplande certificeringsroadmap.",
+      "statusInPlace": "Actief",
+      "statusInProgress": "Lopend",
+      "items": [
+        {
+          "name": "AVG-bewust ontwerp",
+          "description": "Gegevensverwerking afgestemd op AVG-verplichtingen",
+          "status": "inPlace"
+        },
+        {
+          "name": "EU-klokkenluidersrichtlijn 2019/1937",
+          "description": "Ontworpen om richtlijnvoorwaarden voor in aanmerking komende organisaties te ondersteunen",
+          "status": "inPlace"
+        },
+        {
+          "name": "ISO 27001",
+          "description": "Certificering informatiebeveiligingsmanagementsysteem",
+          "status": "inProgress"
+        },
+        {
+          "name": "SOC 2 Type II",
+          "description": "Controles voor beveiliging, beschikbaarheid en vertrouwelijkheid",
+          "status": "inProgress"
+        }
+      ]
+    },
+    "dataProtection": {
+      "title": "Gegevensbeschermingspraktijken",
+      "subtitle": "Hoe we gevoelige gegevens verzamelen, opslaan en beschermen",
+      "collectionTitle": "Verzameling",
+      "collection1": "We minimaliseren gegevens tot wat nodig is voor meld- en zaakworkflow.",
+      "collection2": "Anonieme meldingen worden ondersteund waar uw configuratie dit toelaat.",
+      "collection3": "Optionele contactgegevens kunnen gescheiden van inhoud worden bewaard waar het product dit ondersteunt.",
+      "collection4": "Openbare meldformulieren vermijden onnodige marketing- of gedragsvolging.",
+      "storageTitle": "Opslag",
+      "storage1": "Gegevens in rust versleuteld met AES-256-GCM.",
+      "storage2": "Sleutels beheerd volgens cloudproviderpraktijken.",
+      "storage3": "Back-ups versleuteld en geografisch redundant.",
+      "storage4": "Regionale hosting kan beschikbaar zijn afhankelijk van configuratie en provider.",
+      "accessTitle": "Toegang",
+      "access1": "Rolgebaseerde toegang beperkt wie zaken kan zien en beheren.",
+      "access2": "MFA kan worden afgedwongen voor beheerderstoegang.",
+      "access3": "Toegang tot gevoelige acties wordt gelogd.",
+      "access4": "Sessiebeleid vermindert het risico op onbeheerde toegang.",
+      "retentionTitle": "Bewaring",
+      "retention1": "Bewaartermijnen configureerbaar volgens uw organisatiebeleid.",
+      "retention2": "Verwijdering na afloop van termijnen, rekening houdend met wettelijke en contractuele vereisten.",
+      "retention3": "Verwijderingspraktijken streven gegevens uit actieve systemen te halen binnen redelijke termijnen.",
+      "retention4": "Verzoeken van betrokkenen worden afgehandeld volgens toepasselijke AVG-termijnen."
+    },
+    "infrastructure": {
+      "title": "Veilige infrastructuur",
+      "intro": "Gebouwd op betrouwbare cloudinfrastructuur met monitoring, failover en versleutelde back-ups.",
+      "cdnTitle": "Wereldwijde levering",
+      "cdnBody": "Inhoud efficiënt en veilig via edge-locaties.",
+      "backupTitle": "Versleutelde back-ups",
+      "backupBody": "Geautomatiseerde versleutelde back-ups in meerdere geografische regio's.",
+      "ddosTitle": "Netwerkbeveiliging",
+      "ddosBody": "Providerbescherming tegen veelvoorkomende volumetrische aanvallen.",
+      "auditTitle": "Beveiligingstests",
+      "auditBody": "Periodieke reviews en penetratietests om problemen te vinden en te verhelpen.",
+      "safeguardsTitle": "Operationele waarborgen",
+      "safeguard1": "Versleuteling tijdens transport (TLS) en in rust (AES-256-GCM)",
+      "safeguard2": "Least-privilege-toegang voor systemen en operaties",
+      "safeguard3": "Geautomatiseerde versleutelde back-ups over meerdere regio's",
+      "safeguard4": "DDoS en andere netwerkbeveiliging van de hostingomgeving",
+      "safeguard5": "Infrastructuurmonitoring en waarschuwingen",
+      "safeguard6": "Periodieke beveiligingsreviews en penetratietests"
+    },
+    "disclosure": {
+      "title": "Verantwoorde openbaarmaking",
+      "intro": "Als u een beveiligingsprobleem vermoedt, neem contact op via",
+      "outro": "We streven ernaar meldingen snel te bevestigen en u op de hoogte te houden tijdens onderzoek."
+    },
+    "cta": {
+      "title": "Beveiliging voor gevoelige meldingen",
+      "subtitle": "Ontdek hoe Disclosurely klokkenluidersmeldingen beschermt met veilige zaakbehandeling en privacy-first ontwerp.",
+      "startTrial": "Start gratis proefperiode",
+      "bookDemo": "Demo boeken"
+    }
+  },
   "pricing": {
     "hero": {
       "title": "Prijzen klokkenluiderssoftware voor teams van elke omvang",
@@ -670,57 +788,75 @@
   },
   "contact": {
     "hero": {
-      "title": "Neem contact op met ons verkoopteam",
-      "description": "Neem contact met ons op en we helpen u graag bij het beantwoorden van vragen over Disclosurely.",
-      "subtitle": "Klaar om de rapportagecapaciteiten van uw organisatie te transformeren? Neem contact op met ons team.",
-      "tag": "Contact"
+      "tag": "Contact",
+      "title": "Praat met Disclosurely",
+      "description": "Of u nu leveranciers vergelijkt, een uitrol plant of prijzen verkent — we helpen u graag."
     },
-    "info": {
-      "title": "Contactinformatie",
-      "description": "Neem contact met ons op en we helpen u graag bij het beantwoorden van vragen over Disclosurely.",
-      "email": {
-        "title": "E-mail",
-        "response": "We reageren binnen 24 uur"
-      },
-      "phone": {
-        "title": "Telefoon",
-        "number": "+44 7123 456789",
-        "hours": "Ma-vr, 9-17 GMT"
-      },
-      "address": {
-        "title": "Adres",
-        "line1": "Londen",
-        "line2": "Verenigd Koninkrijk",
-        "line3": ""
-      },
-      "enterprise": {
-        "title": "Enterprise oplossingen",
-        "description": "Heeft u een aangepaste oplossing nodig? Neem contact op met ons Enterprise-team voor aangepaste prijzen en implementatieondersteuning."
+    "help": {
+      "title": "Waar we mee kunnen helpen",
+      "intro": "Vertel wat u nodig heeft: demo, prijsoriëntatie of ondersteuning bij uitrol.",
+      "items": {
+        "walkthrough": "Productwalkthrough boeken",
+        "pricing": "Vragen over prijzen of pakketten",
+        "compliance": "EU- of UK-klokkenluidersvereisten bespreken",
+        "rollout": "Uitrol voor uw organisatie verkennen",
+        "enterpriseSetups": "Multi-team- of enterprise-opstellingen bespreken"
       }
     },
+    "enterpriseCard": {
+      "title": "Maatwerk nodig?",
+      "description": "We helpen bij multi-team-uitrollen, maatwerkonboarding en grotere organisatorische vraagstukken."
+    },
     "form": {
-      "title": "Vraag een demo aan",
-      "description": "Vul het onderstaande formulier in en ons team neemt binnen 24 uur contact met u op om een aangepaste demonstratie in te plannen.",
+      "title": "Demo aanvragen",
+      "description": "Kort uw organisatie en uw vraag — we reageren zo snel mogelijk.",
+      "enquiryType": {
+        "label": "Waarmee kunnen we helpen?",
+        "placeholder": "Kies een optie",
+        "options": {
+          "demo": "Demo aanvragen",
+          "pricing": "Prijsvraag",
+          "compliance": "Compliance-vraag",
+          "rollout": "Enterprise-uitrol",
+          "enterprise": "Multi-team- of enterprise-setup",
+          "general": "Algemene vraag"
+        }
+      },
       "name": {
         "label": "Naam",
-        "placeholder": "Uw volledige naam"
+        "placeholder": "Volledige naam"
       },
       "email": {
-        "label": "E-mail",
-        "placeholder": "uw@email.nl"
+        "label": "Zakelijke e-mail",
+        "placeholder": "u@bedrijf.nl"
       },
       "company": {
-        "label": "Bedrijf",
-        "placeholder": "Uw bedrijfsnaam"
+        "label": "Organisatie",
+        "placeholder": "Naam van de organisatie"
+      },
+      "organisationSize": {
+        "label": "Organisatiegrootte (optioneel)",
+        "placeholder": "Zeg ik liever niet",
+        "options": {
+          "1_50": "1–50 personen",
+          "51_250": "51–250 personen",
+          "251_1000": "251–1.000 personen",
+          "1000_plus": "Meer dan 1.000 personen"
+        }
       },
       "message": {
-        "label": "Bericht",
-        "placeholder": "Vertel ons over uw vereisten..."
+        "label": "Hoe kunnen we helpen?",
+        "placeholder": "Planning, regio's of wat u in een gesprek wilt zien..."
       },
-      "submit": "Verstuur aanvraag",
+      "reassurance": {
+        "response": "We streven naar reactie binnen één werkdag",
+        "noPressure": "Geen harde verkoopdruk",
+        "tailored": "Gesprekken afgestemd op uw organisatie"
+      },
+      "submit": "Verzoek versturen",
       "submitting": "Verzenden...",
-      "success": "Bedankt! Uw bericht is verzonden. We nemen binnen 24 uur contact met u op.",
-      "privacy": "Door dit formulier in te dienen, gaat u akkoord met ons Privacybeleid."
+      "success": "Bedankt — we hebben uw bericht ontvangen en nemen snel contact op.",
+      "privacy": "Door dit formulier te versturen gaat u akkoord met ons privacybeleid."
     }
   },
   "privacy": {
@@ -1263,46 +1399,68 @@
   "new": "New",
   "about": {
     "meta": {
-      "title": "About Us - Disclosurely",
-      "description": "Learn about Disclosurely's mission to create safer workplaces through secure whistleblowing technology."
+      "title": "Over Disclosurely",
+      "description": "Waarom Disclosurely bestaat: veilige klokkenluiderssoftware die eenvoudiger te lanceren, te beheren en te vertrouwen moet zijn — zonder onnodige complexiteit."
     },
     "hero": {
-      "title": "About Disclosurely",
-      "subtitle": "Building Trust Through Transparency",
-      "description": "We're on a mission to create safer, more ethical workplaces by providing secure, anonymous reporting channels that protect whistleblowers while helping organizations address misconduct quickly and effectively."
+      "tag": "Over Disclosurely",
+      "title": "Gebouwd om klokkenluiden eenvoudiger, veiliger en betrouwbaarder te maken",
+      "description": "Disclosurely is gemaakt om organisaties te helpen veilige meldkanalen te starten waar mensen echt op vertrouwen — zonder onnodige complexiteit, verouderde workflows of zware implementatielast."
     },
     "mission": {
-      "title": "Our Mission",
-      "content": "To empower organizations to build cultures of integrity by providing secure, user-friendly whistleblowing solutions that protect both reporters and organizations."
+      "title": "Waarom we bestaan",
+      "p1": "Mensen gebruiken alleen meldkanalen die zij veilig en serieus nemen. Organisaties hebben tools nodig om meldingen duidelijk te ontvangen, te triëren en goed af te handelen.",
+      "p2": "Te veel systemen voelen nog verouderd, te complex of lastig uit te rollen. Die wrijving staat in de weg van wat iedereen wil: problemen vroeg zichtbaar maken en eerlijk afhandelen.",
+      "p3": "Disclosurely is bedoeld om veilig melden makkelijker te lanceren en voor interne teams eenvoudiger te beheren — met privacybewuste, praktische workflows, geen holle slogans."
     },
-    "values": {
-      "title": "Our Values",
-      "items": {
-        "security": {
-          "title": "Security First",
-          "description": "End-to-end encryption and anonymous reporting to protect whistleblowers"
-        },
-        "transparency": {
-          "title": "Transparency",
-          "description": "Clear processes and regular updates on case progress"
-        },
-        "compliance": {
-          "title": "Compliance",
-          "description": "GDPR-compliant solutions meeting international standards"
-        },
-        "support": {
-          "title": "Support",
-          "description": "24/7 support and comprehensive training for all users"
-        }
-      }
+    "beliefs": {
+      "title": "Wat goede klokkenluiderssoftware volgens ons moet doen",
+      "items": [
+        "Identiteiten en gevoelige informatie vanaf het ontwerp beschermen — met controles die passen bij echte onderzoeken.",
+        "Organisaties helpen meldingen goed af te handelen — duidelijke intake, gestructureerde opvolging, verantwoordelijke toegang.",
+        "Vertrouwen ondersteunen met veilige communicatie en zinnige processen, niet met vage beloften.",
+        "Wrijving verminderen voor compliance, HR en casus-eigenaren die het instrument wekelijks gebruiken.",
+        "Helpen aan regelgevende verwachtingen te voldoen waar van toepassing — zonder kleinere teams onnodig te belasten.",
+        "Blijven verbeteren: we leveren iteratief en luisteren naar hoe teams het platform in de praktijk gebruiken."
+      ]
     },
-    "team": {
-      "title": "Our Team",
-      "description": "Experienced professionals dedicated to workplace safety and compliance"
+    "audience": {
+      "title": "Voor wie Disclosurely is bedoeld",
+      "items": [
+        "Compliance- en riskteams verantwoordelijk voor speak-up-programma's",
+        "HR en eigenaren van interne meldingen die casusafhandeling coördineren",
+        "Organisaties die EU- of UK-klokkenluiderskanalen uitrollen of vernieuwen",
+        "Teams die moderne, veilige meldingen willen zonder een zwaar enterprise-programma",
+        "Kopers die helderheid over security en data waarderen — zie onze Security-pagina"
+      ]
     },
-    "story": {
-      "title": "Our Story",
-      "content": "Founded in 2024, Disclosurely was created by compliance professionals who saw the need for better whistleblowing solutions. We combine cutting-edge technology with deep industry expertise to deliver solutions that actually work."
+    "trust": {
+      "title": "Hoe wij vertrouwen en veilig melden benaderen",
+      "intro": "We richten ons op begrijpelijke controles en betrouwbare operationele praktijken. Het volledige beeld — encryptie, toegang, backups, logging en gegevensbescherming — staat op onze securitypagina.",
+      "items": [
+        "Sterke encryptie voor data onderweg en in rust (AES-256-GCM), in lijn met hoe we de live dienst beschrijven.",
+        "Toegangsbeheerste casusafhandeling: alleen geautoriseerde mensen in uw organisatie zien meldingen, volgens door u ingestelde rollen en rechten.",
+        "Privacybewust ontwerp ter ondersteuning van GDPR-achtige verwerking van gevoelige persoonsgegevens.",
+        "Auditlogs van belangrijke toegangs- en casusgebeurtenissen ter ondersteuning van verantwoording.",
+        "Hosting op gerenommeerde cloudinfrastructuur met monitoring en versleutelde backups."
+      ],
+      "securityCta": "Lees onze pagina Security & vertrouwen"
+    },
+    "cta": {
+      "title": "Disclosurely in actie zien?",
+      "subtitle": "Verken het platform, bekijk prijzen of boek een demo om te zien of het bij uw organisatie past.",
+      "pricing": "Bekijk prijzen",
+      "demo": "Boek een demo"
+    },
+    "explore": {
+      "title": "Verder verkennen",
+      "subtitle": "Praktische vervolgstappen bij de evaluatie van klokkenluiderssoftware.",
+      "featuresTitle": "Platformfuncties",
+      "featuresBody": "Meldkanalen, casusbeheer, automatisering en het dagelijks werk van teams in Disclosurely.",
+      "pricingTitle": "Prijzen",
+      "pricingBody": "Transparante niveaus waar gepubliceerd — zie wat inbegrepen is voordat u met sales spreekt.",
+      "directiveTitle": "EU-richtlijn klokkenluiders",
+      "directiveBody": "Context over vereisten en hoe organisaties interne kanalen vaak inrichten."
     }
   },
   "features": {
@@ -1651,6 +1809,641 @@
       "subtitle": "Begeleide onboarding, veilige meldworkflows en ingebouwde nalevingsondersteuning voor EU-organisaties.",
       "startFreeTrial": "Start gratis proefperiode",
       "bookDemo": "Demo boeken"
+    }
+  },
+  "compare": {
+    "common": {
+      "colFeature": "Functie",
+      "colDisclosurely": "Disclosurely",
+      "comparisonSectionTitle": "Vergelijking per thema",
+      "comparisonSectionSubtitle": "Gebruik dit overzicht samen met de documentatie van elke leverancier om de fit voor uw organisatie te beoordelen.",
+      "startFreeTrial": "Start gratis proefperiode",
+      "viewPricing": "Prijzen bekijken",
+      "bookDemo": "Demo boeken",
+      "noCardNote": "Geen creditcard nodig voor de proef — controleer de actuele voorwaarden bij aanmelding."
+    },
+    "speakup": {
+      "competitorName": "SpeakUp",
+      "hero": {
+        "titleLine1": "Disclosurely vs.",
+        "titleLine2": "SpeakUp",
+        "subtitle": "Vergelijk prijsmodellen, workflows en meldfuncties om te zien welk platform bij uw organisatie past."
+      },
+      "fairnessNote": "Deze vergelijking is gebaseerd op openbare informatie en productpositionering op het moment van schrijven. Functies en prijzen kunnen wijzigen — controleer details bij elke leverancier.",
+      "atAGlance": {
+        "title": "In het kort",
+        "card1": {
+          "title": "Eenvoudig proefpad",
+          "body": "Verken Disclosurely online met een gratis proef — handig om workflows vroeg te valideren."
+        },
+        "card2": {
+          "title": "AI-ondersteund zaakbeheer",
+          "body": "Disclosurely bouwt AI in voor samenvatting en triage om zaken te laten voortgaan — menselijk oordeel blijft centraal."
+        },
+        "card3": {
+          "title": "Pragmatische uitrol",
+          "body": "Disclosurely past bij organisaties die een duidelijk implementatiepad willen, vooral kleine en middelgrote teams die snelheid en controle balanceren."
+        }
+      },
+      "fitBetter": {
+        "title": "Disclosurely kan beter passen als u wilt:",
+        "bullet1": "Duidelijke online prijzen en een rechttoe-rechtaan proefpad",
+        "bullet2": "AI-ondersteund zaakbeheer in de dagelijkse workflow",
+        "bullet3": "Een lichtere, snellere uitrol voor kleine en middelgrote organisaties",
+        "bullet4": "Moderne automatisering en integraties in ondersteunde abonnementen",
+        "bullet5": "Een flexibel alternatief voor zwaardere enterprise-inkoopcycli"
+      },
+      "tables": {
+        "pricing": {
+          "title": "Prijzen en koopervaring",
+          "rows": [
+            {
+              "feature": "Gepubliceerde lijstprijzen",
+              "disclosurely": "Ja — zie onze prijspagina",
+              "competitor": "Ja — bevestig actuele niveaus op de site van SpeakUp"
+            },
+            {
+              "feature": "Typisch kooptraject",
+              "disclosurely": "Selfservice-proef en online aanmelding waar passend",
+              "competitor": "Vaak consult of demo's voor geschiktheid — bevestig op de site van SpeakUp"
+            },
+            {
+              "feature": "Gratis proef of pilot",
+              "disclosurely": "Gratis proef beschikbaar — zie actuele voorwaarden bij aanmelding",
+              "competitor": "Bevestig actuele proef- of pilotopties op de site van SpeakUp"
+            },
+            {
+              "feature": "Duidelijkheid van abonnementen",
+              "disclosurely": "Niveaus en limieten beschreven op de prijspagina",
+              "competitor": "Bekijk SpeakUps planbeschrijvingen voor uw use case"
+            }
+          ]
+        },
+        "security": {
+          "title": "Beveiliging en toegangsbeheer",
+          "rows": [
+            {
+              "feature": "Versleuteling tijdens transport en in rust",
+              "disclosurely": "Versleuteling in de hele dienst — zie beveiligingsdocumentatie",
+              "competitor": "SpeakUp publiceert beveiligingsinformatie — controleer technische details voor uw editie"
+            },
+            {
+              "feature": "Rolgebaseerde toegang en rechten",
+              "disclosurely": "Ja",
+              "competitor": "Ja — bevestig reikwijdte voor uw abonnement"
+            },
+            {
+              "feature": "Auditlogs",
+              "disclosurely": "Ja — activiteit zichtbaar voor geautoriseerde beheerders",
+              "competitor": "Bevestig logmogelijkheden voor uw editie"
+            },
+            {
+              "feature": "Uitlijning gegevensbescherming (bijv. AVG)",
+              "disclosurely": "Ontworpen met AVG-gerichte controls — geen juridisch advies",
+              "competitor": "Bekijk SpeakUps privacy- en compliance-materiaal voor uw rechtsgebied"
+            }
+          ]
+        },
+        "caseHandling": {
+          "title": "Zaakbeheer en workflows",
+          "rows": [
+            {
+              "feature": "Zaakinbox en workflow",
+              "disclosurely": "Ja",
+              "competitor": "Ja"
+            },
+            {
+              "feature": "Gesprekken in threads met melders",
+              "disclosurely": "Ja",
+              "competitor": "Bevestig ondersteunde kanalen voor uw abonnement"
+            },
+            {
+              "feature": "Aangepaste statussen en routing",
+              "disclosurely": "Ja",
+              "competitor": "Bevestig configuratieopties voor uw editie"
+            },
+            {
+              "feature": "Interne notities en samenwerking",
+              "disclosurely": "Ja",
+              "competitor": "Bevestig teamfuncties op uw abonnement"
+            }
+          ]
+        },
+        "reporting": {
+          "title": "Meldingskanalen en automatisering",
+          "rows": [
+            {
+              "feature": "Webmeldingskanaal",
+              "disclosurely": "Ja",
+              "competitor": "Ja"
+            },
+            {
+              "feature": "Mobiele toegang voor melders of behandelaars",
+              "disclosurely": "Ja — zie productdocumentatie",
+              "competitor": "Bevestig mobiele opties op de site van SpeakUp"
+            },
+            {
+              "feature": "Anonieme melding",
+              "disclosurely": "Ja",
+              "competitor": "Ja — bevestig details voor uw configuratie"
+            },
+            {
+              "feature": "Integraties en automatisering",
+              "disclosurely": "Integraties zoals Zapier in ondersteunde abonnementen",
+              "competitor": "Bevestig automatisering en integraties voor uw editie"
+            },
+            {
+              "feature": "AI-ondersteunde samenvatting of triage",
+              "disclosurely": "In het product ingebouwd in relevante abonnementen",
+              "competitor": "Bevestig of AI-functies worden aangeboden en hoe ze gepositioneerd zijn"
+            }
+          ]
+        },
+        "rollout": {
+          "title": "Uitrol en ondersteuning",
+          "rows": [
+            {
+              "feature": "Onboarding en configuratiebegeleiding",
+              "disclosurely": "Begeleide setup, documentatie en customer success-contact",
+              "competitor": "Bevestig onboarding en services voor uw contract"
+            },
+            {
+              "feature": "Hulpbronnen",
+              "disclosurely": "Helpcentrum en begeleiding in de app",
+              "competitor": "Bevestig supportkanalen en SLA's voor uw abonnement"
+            },
+            {
+              "feature": "Meertalige melding",
+              "disclosurely": "Brede taaldekking voor melders",
+              "competitor": "Vaak uitgebreid — bevestig de talen die u nodig heeft"
+            }
+          ]
+        }
+      },
+      "why": {
+        "title": "Waar Disclosurely vaak opvalt",
+        "card1": {
+          "title": "Pragmatische aankoop en uitrol",
+          "body": "Openbare prijzen en een proef helpen teams snel te evalueren zonder zwaar inkoopproces.",
+          "bullet1": "Online prijzen en aanmelding waar passend",
+          "bullet2": "Gerichte onboarding voor operationele teams",
+          "bullet3": "Geschikt voor organisaties die vaart willen zonder procesoverload"
+        },
+        "card2": {
+          "title": "AI in het dagelijkse zaakwerk",
+          "body": "Samenvatting en triage moeten handmatig lezen verminderen — onderzoekers houden de regie.",
+          "bullet1": "AI-ondersteuning voor zaaksamenvattingen waar ingeschakeld",
+          "bullet2": "Workflow-signalen in plaats van black-box-beslissingen",
+          "bullet3": "Bedoeld als aanvulling op beleid en menselijke review"
+        },
+        "card3": {
+          "title": "Automatisering voor moderne stacks",
+          "body": "Koppel Disclosurely aan tools die u al gebruikt waar integraties worden ondersteund.",
+          "bullet1": "Automatiseringsopties in ondersteunde abonnementen",
+          "bullet2": "Minder handovers voor routinetaken",
+          "bullet3": "Ruimte om mee te groeien met uw meldingsprogramma"
+        }
+      },
+      "fitCompetitor": {
+        "title": "SpeakUp kan passen bij organisaties die:",
+        "bullet1": "SpeakUps huidige prijs- en inkoopstructuur verkiezen",
+        "bullet2": "SpeakUp al gebruiken over teams of regio's heen",
+        "bullet3": "Afgestemd zijn op een bestaande SpeakUp-relatie of -contract",
+        "bullet4": "SpeakUps huidige functie- en serviceaanbod passend vinden"
+      },
+      "migration": {
+        "title": "Overstappen van SpeakUp hoeft niet pijnlijk te zijn",
+        "subtitle": "Een gemeten migratie met begeleiding, duidelijke mijlpalen en minimale verstoring voor interne teams.",
+        "step1": {
+          "title": "Plannen en exporteren",
+          "body": "Werk samen met uw SpeakUp-beheerder en SpeakUp-support om te bepalen wat u mag exporteren en wat uw beleid toestaat."
+        },
+        "step2": {
+          "title": "Workflows opnieuw opbouwen",
+          "body": "We helpen formulieren, categorieën en handlerrollen naar Disclosurely te mappen zodat processen herkenbaar blijven."
+        },
+        "step3": {
+          "title": "Gefaseerd live gaan",
+          "body": "Kies een go-live-venster, communiceer het nieuwe kanaal en zet meldpaden live met ondersteuning van ons team."
+        },
+        "disclaimer": "Tijdlijnen hangen af van uw data, interne goedkeuringen en SpeakUp-configuratie — we maken per stap duidelijk wat haalbaar is."
+      },
+      "finalCta": {
+        "title": "Zoekt u een flexibeler alternatief voor SpeakUp?",
+        "subtitle": "Start een gratis proef of boek een demo om te zien of Disclosurely bij uw meldworkflow past."
+      }
+    },
+    "whistleblower": {
+      "competitorName": "Whistleblower Software",
+      "hero": {
+        "titleLine1": "Disclosurely vs",
+        "titleLine2": "Whistleblower Software",
+        "subtitle": "Vergelijk prijsmodellen, meldworkflows en platformflexibiliteit om te zien welk klokkenluidersysteem bij uw organisatie past."
+      },
+      "fairnessNote": "Deze vergelijking is gebaseerd op openbare informatie en productpositionering op het moment van schrijven. Functies en prijzen kunnen wijzigen — verifieer details bij elke leverancier.",
+      "quickSummary": {
+        "title": "Snelle orientatie",
+        "disclosurelyTitle": "Disclosurely kan beter passen voor organisaties die willen:",
+        "disclosurelyBullet1": "Eenvoudigere plankeuze zonder medewerkersladders",
+        "disclosurelyBullet2": "Een duidelijk online testpad om workflows vroeg te valideren",
+        "disclosurelyBullet3": "AI-ondersteund zaakbeheer in relevante abonnementen",
+        "disclosurelyBullet4": "Moderne automatisering en flexibiliteit bij groei",
+        "competitorTitle": "Whistleblower Software kan passen als u de voorkeur geeft aan:",
+        "competitorBullet1": "Prijzen op basis van medewerkersaantallen of banden",
+        "competitorBullet2": "Een vastere pakketstructuur",
+        "competitorBullet3": "Tools vergelijken met personeelsgebonden prijzen",
+        "competitorBullet4": "Een gestructureerd inkoopmodel zoals bij vergelijkbare leveranciers"
+      },
+      "tables": {
+        "pricing": {
+          "title": "Prijzen en koopmodel",
+          "rows": [
+            {
+              "feature": "How pricing is typically structured",
+              "disclosurely": "Published tiers with limits on our pricing page; not primarily sold as employee-count bands",
+              "competitor": "Often organised around employee ranges or stepped packages — confirm on their published pricing"
+            },
+            {
+              "feature": "Choosing the right plan",
+              "disclosurely": "Compare features and limits side-by-side online",
+              "competitor": "Map bands to your headcount and required modules — verify against their plan descriptions"
+            },
+            {
+              "feature": "Trial or demo path",
+              "disclosurely": "Free trial available — see current terms at signup",
+              "competitor": "Confirm trial length and whether a demo is typical for your segment"
+            },
+            {
+              "feature": "Starting small and scaling",
+              "disclosurely": "Upgrade paths described on the pricing page",
+              "competitor": "Check how band changes affect cost as headcount grows"
+            },
+            {
+              "feature": "Buying flexibility",
+              "disclosurely": "Self-serve signup and upgrades where appropriate",
+              "competitor": "May favour a more packaged purchase flow — confirm for your organisation"
+            }
+          ]
+        },
+        "reporting": {
+          "title": "Melding en intake",
+          "rows": [
+            {
+              "feature": "Web-based reporting channel",
+              "disclosurely": "Yes",
+              "competitor": "Yes — confirm for your edition"
+            },
+            {
+              "feature": "Anonymous reporting",
+              "disclosurely": "Yes",
+              "competitor": "Confirm how anonymity is implemented for your setup"
+            },
+            {
+              "feature": "Secure two-way communication",
+              "disclosurely": "Yes",
+              "competitor": "Confirm supported channels on your plan"
+            },
+            {
+              "feature": "Branding and portal customisation",
+              "disclosurely": "Yes — see product documentation",
+              "competitor": "Confirm branding options for your package"
+            },
+            {
+              "feature": "Multilingual reporting",
+              "disclosurely": "Broad language coverage for reporters",
+              "competitor": "Confirm coverage for the languages you need"
+            }
+          ]
+        },
+        "caseHandling": {
+          "title": "Zaakbeheer en workflows",
+          "rows": [
+            {
+              "feature": "Case inbox and workflow",
+              "disclosurely": "Yes",
+              "competitor": "Yes"
+            },
+            {
+              "feature": "Role-based permissions",
+              "disclosurely": "Yes",
+              "competitor": "Confirm scope for your plan"
+            },
+            {
+              "feature": "Workflow automation and integrations",
+              "disclosurely": "Integrations such as Zapier on supported plans",
+              "competitor": "Confirm automation and integrations for your tier"
+            },
+            {
+              "feature": "AI-assisted analysis or triage",
+              "disclosurely": "Built into the product on relevant plans",
+              "competitor": "Confirm whether AI features are offered and how they are positioned"
+            }
+          ]
+        },
+        "security": {
+          "title": "Beveiliging en toegangsbeheer",
+          "rows": [
+            {
+              "feature": "Encryption for data in transit and at rest",
+              "disclosurely": "Encryption used throughout the service — see security documentation",
+              "competitor": "Review their security materials for technical detail"
+            },
+            {
+              "feature": "Role-based access and permissions",
+              "disclosurely": "Yes",
+              "competitor": "Yes — confirm for your edition"
+            },
+            {
+              "feature": "Audit logging",
+              "disclosurely": "Yes — key access and case events for authorised administrators",
+              "competitor": "Confirm logging capabilities for your plan"
+            },
+            {
+              "feature": "Data protection alignment (e.g. GDPR)",
+              "disclosurely": "Designed with GDPR-oriented controls — not legal advice",
+              "competitor": "Review their privacy and compliance documentation for your jurisdiction"
+            }
+          ]
+        },
+        "rollout": {
+          "title": "Uitrol en ondersteuning",
+          "rows": [
+            {
+              "feature": "Onboarding and setup guidance",
+              "disclosurely": "Guided setup, documentation, and customer success touchpoints",
+              "competitor": "Confirm onboarding and professional services for your contract"
+            },
+            {
+              "feature": "Help resources",
+              "disclosurely": "Help centre and in-product guidance",
+              "competitor": "Confirm support channels and response expectations"
+            },
+            {
+              "feature": "Practical rollout support",
+              "disclosurely": "Support for forms, categories, and handler roles during setup",
+              "competitor": "Confirm what is included when you purchase"
+            }
+          ]
+        }
+      },
+      "why": {
+        "title": "Waarom teams voor Disclosurely kiezen",
+        "card1": {
+          "title": "Clearer plan selection",
+          "body": "Compare tiers and limits online so commercial and compliance owners can align quickly without decoding complex ladders first.",
+          "bullet1": "Transparent list pricing where published",
+          "bullet2": "Straightforward trial to test real workflows",
+          "bullet3": "Less friction when matching plan to team size"
+        },
+        "card2": {
+          "title": "Modern automation",
+          "body": "Connect Disclosurely to tools you already use and reduce manual hand-offs on supported plans.",
+          "bullet1": "Integration options where available",
+          "bullet2": "AI assistance for everyday case tasks on relevant plans",
+          "bullet3": "Room to mature processes over time"
+        },
+        "card3": {
+          "title": "Practical adoption",
+          "body": "Built for organisations that want secure reporting without over-engineering the first rollout.",
+          "bullet1": "Focused onboarding for case handlers",
+          "bullet2": "Sensible defaults with room to configure",
+          "bullet3": "Strong fit for small and mid-sized programmes"
+        }
+      },
+      "fitCompetitor": {
+        "title": "Whistleblower Software kan passen bij organisaties die:",
+        "bullet1": "Prefer employee-based pricing bands or headcount-linked tiers",
+        "bullet2": "Want a more fixed package structure they can benchmark internally",
+        "bullet3": "Already evaluate whistleblowing vendors using employee-count models",
+        "bullet4": "Are comfortable with a more structured procurement and banding approach"
+      },
+      "migration": {
+        "title": "Van platform wisselen hoeft u niet te vertragen",
+        "subtitle": "Praktische migratie met begeleiding, gefaseerde uitrol indien nodig en minimale verstoring voor interne behandelaars.",
+        "step1": {
+          "title": "Plan de overstap",
+          "body": "Spreek af wat u migreert, wat u opnieuw opbouwt en wat uw beleid vereist voordat u van meldkanaal wisselt."
+        },
+        "step2": {
+          "title": "Formulieren en workflows opnieuw opbouwen",
+          "body": "We helpen categorieën, formulieren en behandelaarsrollen in Disclosurely te mappen zodat processen herkenbaar blijven."
+        },
+        "step3": {
+          "title": "Gefaseerd live gaan",
+          "body": "Communiceer het nieuwe kanaal, train behandelaars en ga live met ondersteuning — planning hangt af van goedkeuringen en data."
+        },
+        "disclaimer": "Tijdlijnen verschillen per data, interne goedkeuringen en huidige configuratie — we maken per stap duidelijk wat haalbaar is."
+      },
+      "finalCta": {
+        "title": "Zoekt u een flexibeler alternatief voor Whistleblower Software?",
+        "subtitle": "Start een gratis proef of boek een demo om te zien of Disclosurely bij uw meldworkflow past."
+      }
+    },
+    "navex": {
+      "competitorName": "NAVEX",
+      "hero": {
+        "titleLine1": "Disclosurely vs",
+        "titleLine2": "NAVEX",
+        "subtitle": "Vergelijk aankoopmodellen, uitrolcomplexiteit en klokkenluidersworkflows om te zien welk platform bij uw organisatie past."
+      },
+      "fairnessNote": "Deze vergelijking is gebaseerd op openbare informatie en productpositionering op het moment van schrijven. Functies en prijzen kunnen wijzigen — controleer details bij elke leverancier.",
+      "quickSummary": {
+        "title": "Snelle oriëntatie",
+        "disclosurelyTitle": "Disclosurely kan beter passen bij organisaties die willen:",
+        "disclosurelyBullet1": "Duidelijkere prijsverwachtingen en een lichter commercieel traject",
+        "disclosurelyBullet2": "Een aankoopproces met minder enterprise-inkoopoverhead",
+        "disclosurelyBullet3": "Een sneller, praktischer pad naar de eerste uitrol",
+        "disclosurelyBullet4": "Een gerichte klokkenluidersworkflow met moderne automatisering waar relevant",
+        "competitorTitle": "NAVEX kan passen bij organisaties die:",
+        "competitorBullet1": "Al standaardiseren op enterprise governance-, risico- of compliance-suites",
+        "competitorBullet2": "Een bredere leveranciersrelatie over meerdere risicodomeinen willen",
+        "competitorBullet3": "Inkoopprocessen hebben die geschikt zijn voor grote platformevaluaties",
+        "competitorBullet4": "Een traditioneel enterprise-aankoopmodel prefereren voor deze categorie"
+      },
+      "tables": {
+        "pricing": {
+          "title": "Aankoopmodel en inkoop",
+          "rows": [
+            {
+              "feature": "Prijszichtbaarheid en commercieel traject",
+              "disclosurely": "Gepubliceerde tiers en limieten op onze prijspagina waar aangeboden",
+              "competitor": "Meestal sales-gestuurde offertes voor enterprise-programma's — bevestig op NAVEX-materiaal"
+            },
+            {
+              "feature": "Typische aankoopervaring",
+              "disclosurely": "Selfservice-proef en online aanmelding waar passend",
+              "competitor": "Betreft vaak demo's, scope en enterprise-inkoopstappen — bevestig voor uw organisatie"
+            },
+            {
+              "feature": "Proef- of demo-toegang",
+              "disclosurely": "Gratis proef beschikbaar — zie actuele voorwaarden bij aanmelding",
+              "competitor": "Bevestig hoe NAVEX prospects in uw segment benadert"
+            },
+            {
+              "feature": "Productfocus",
+              "disclosurely": "Gericht op veilige intake en zaakbehandeling voor klokkenluiders",
+              "competitor": "Onderdeel van een breder GRC-portfolio — bevestig welke modules u nodig heeft"
+            },
+            {
+              "feature": "Passend bij slankere programma's",
+              "disclosurely": "Vaak gekozen wanneer teams snelheid willen zonder volledige suite-uitrol",
+              "competitor": "Vaak gekozen wanneer een bredere platformrelatie al in beeld is — intern valideren"
+            }
+          ]
+        },
+        "reporting": {
+          "title": "Melding en intake",
+          "rows": [
+            {
+              "feature": "Webgebaseerd meldingskanaal",
+              "disclosurely": "Ja",
+              "competitor": "Ja — bevestig voor uw NAVEX-configuratie"
+            },
+            {
+              "feature": "Anonieme melding",
+              "disclosurely": "Ja",
+              "competitor": "Bevestig implementatiedetails voor uw uitrol"
+            },
+            {
+              "feature": "Veilige tweerichtingscommunicatie",
+              "disclosurely": "Ja",
+              "competitor": "Bevestig ondersteunde kanalen voor uw editie"
+            },
+            {
+              "feature": "Portaalbranding en configuratie",
+              "disclosurely": "Ja — zie productdocumentatie",
+              "competitor": "Bevestig branding- en configuratieopties in uw contract"
+            },
+            {
+              "feature": "Meertalige melding",
+              "disclosurely": "Brede taaldekking voor melders",
+              "competitor": "Bevestig taaldekking voor uw personeel"
+            }
+          ]
+        },
+        "caseHandling": {
+          "title": "Zaakbehandeling en workflowbeheer",
+          "rows": [
+            {
+              "feature": "Postvak IN en workflow",
+              "disclosurely": "Ja",
+              "competitor": "Ja — reikwijdte hangt af van gekochte producten"
+            },
+            {
+              "feature": "Rolgebaseerde toegang en rechten",
+              "disclosurely": "Ja",
+              "competitor": "Ja — bevestig voor uw implementatie"
+            },
+            {
+              "feature": "Workflowautomatisering en integraties",
+              "disclosurely": "Integraties zoals Zapier op ondersteunde plannen",
+              "competitor": "Bevestig automatisering en integraties voor uw team"
+            },
+            {
+              "feature": "AI-ondersteunde afhandeling",
+              "disclosurely": "Ingebouwd in het product op relevante plannen",
+              "competitor": "Bevestig of AI- of geavanceerde analytics-functies voor uw use case gelden"
+            }
+          ]
+        },
+        "security": {
+          "title": "Beveiliging en toegangsbeheer",
+          "rows": [
+            {
+              "feature": "Versleuteling tijdens transport en in rust",
+              "disclosurely": "Versleuteling in de dienst — zie beveiligingsdocumentatie",
+              "competitor": "Raadpleeg NAVEX security- en trustmateriaal voor technische details"
+            },
+            {
+              "feature": "Toegangscontroles voor zaakgegevens",
+              "disclosurely": "Ja — rolgebaseerde rechten voor behandelaars",
+              "competitor": "Ja — bevestig controles voor uw uitrolmodel"
+            },
+            {
+              "feature": "Auditlogging",
+              "disclosurely": "Ja — belangrijke toegangs- en zaakevents voor geautoriseerde beheerders",
+              "competitor": "Bevestig logging en bewaartermijnen voor uw editie"
+            },
+            {
+              "feature": "Afstemming gegevensbescherming (bijv. AVG)",
+              "disclosurely": "Ontworpen met AVG-gerichte controls — geen juridisch advies",
+              "competitor": "Raadpleeg NAVEX privacy- en compliancedocumentatie voor uw rechtsgebied"
+            }
+          ]
+        },
+        "rollout": {
+          "title": "Uitrol en ondersteuning",
+          "rows": [
+            {
+              "feature": "Onboarding en implementatieondersteuning",
+              "disclosurely": "Begeleide setup, documentatie en customer success-contactpunten",
+              "competitor": "Omvat vaak professionele diensten voor enterprise-uitrollen — bevestig wat u koopt"
+            },
+            {
+              "feature": "Tijd tot eerste praktische uitrol",
+              "disclosurely": "Ontworpen voor organisaties die live willen zonder zwaar programma",
+              "competitor": "Hangt af van scope, integraties en governance — plan met uw NAVEX-team"
+            },
+            {
+              "feature": "Hulpbronnen",
+              "disclosurely": "Helpcentrum en begeleiding in het product",
+              "competitor": "Bevestig supportkanalen en SLA's in uw overeenkomst"
+            }
+          ]
+        }
+      },
+      "why": {
+        "title": "Waarom teams Disclosurely kiezen",
+        "card1": {
+          "title": "Lichter pad naar livegang",
+          "body": "Als prioriteit een werkend meldingskanaal is, kan een gericht product coördinatie verminderen vergeleken met een brede suite-uitrol.",
+          "bullet1": "Duidelijke stappen van proef naar productiegebruik",
+          "bullet2": "Minder afhankelijkheid van een groot cross-functioneel programma",
+          "bullet3": "Praktische defaults voor kleine en middelgrote teams"
+        },
+        "card2": {
+          "title": "Transparanter commercieel traject",
+          "body": "Gepubliceerde prijzen en een proef helpen finance en compliance af te stemmen vóór lange inkoopcycli.",
+          "bullet1": "Online prijzen waar gepubliceerd",
+          "bullet2": "Eenvoudige proef om echte workflows te valideren",
+          "bullet3": "Minder verrassingen bij afstemming plan op fte"
+        },
+        "card3": {
+          "title": "Gerichte workflow met moderne automatisering",
+          "body": "Disclosurely richt zich op veilige melding en zaakbehandeling, met automatisering waar het dagelijks helpt.",
+          "bullet1": "Integratie-opties op ondersteunde plannen",
+          "bullet2": "AI-ondersteuning voor routinematige zaaktaken waar ingeschakeld",
+          "bullet3": "Ruimte om te groeien zonder vroeg suite-complexiteit op te leggen"
+        }
+      },
+      "fitCompetitor": {
+        "title": "NAVEX kan passen bij organisaties die:",
+        "bullet1": "Al investeren in enterprise-GRC- of ethiek- en compliance-platforms van NAVEX of partners",
+        "bullet2": "Eén leveranciersrelatie willen over meerdere risico- en compliance-workflows",
+        "bullet3": "Inkoop uitvoeren die past bij grote evaluaties, statements of work en gefaseerde uitrollen",
+        "bullet4": "Een klassiek enterprise-contractpad voor deze categorie verwachten"
+      },
+      "migration": {
+        "title": "Overstappen naar een gericht klokkenluidersplatform kan eenvoudiger zijn dan u denkt",
+        "subtitle": "Begeleide onboarding, hulp bij het opnieuw opbouwen van formulieren en meldingsstromen, en gefaseerde implementatie waar nodig — zonder onnodige overhead.",
+        "step1": {
+          "title": "Scope bepalen",
+          "body": "Spreek af welke kanalen, formulieren en data u migreert en welke interne goedkeuringen vóór livegang nodig zijn."
+        },
+        "step2": {
+          "title": "Stromen in Disclosurely opbouwen",
+          "body": "We helpen categorieën, formulieren en behandelaarsrollen te mappen zodat het proces herkenbaar blijft."
+        },
+        "step3": {
+          "title": "Lanceren met ondersteuning",
+          "body": "Train behandelaars, communiceer het kanaal en open meldingspaden met ons team erbij."
+        },
+        "disclaimer": "Tijdlijnen hangen af van uw data, beleid en huidige omgeving — we maken per stap expliciet wat haalbaar is."
+      },
+      "finalCta": {
+        "title": "Zoekt u een lichter alternatief voor NAVEX?",
+        "subtitle": "Start een gratis proef of boek een demo om te zien of Disclosurely bij uw organisatie past."
+      }
     }
   }
 }

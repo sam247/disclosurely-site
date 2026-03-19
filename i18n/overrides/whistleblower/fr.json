@@ -1,0 +1,206 @@
+{
+  "competitorName": "Whistleblower Software",
+  "hero": {
+    "titleLine1": "Disclosurely vs",
+    "titleLine2": "Whistleblower Software",
+    "subtitle": "Comparez les modèles tarifaires, les workflows de signalement et la flexibilité de la plateforme pour voir quel système de signalement convient à votre organisation."
+  },
+  "fairnessNote": "Cette comparaison repose sur des informations publiques et le positionnement produit à la date de rédaction. Les fonctionnalités et les tarifs peuvent évoluer — vérifiez les détails auprès de chaque éditeur.",
+  "quickSummary": {
+    "title": "Orientation rapide",
+    "disclosurelyTitle": "Disclosurely peut mieux convenir aux organisations qui souhaitent :",
+    "disclosurelyBullet1": "Une sélection de plan plus simple sans paliers par effectif",
+    "disclosurelyBullet2": "Un parcours d’essai en ligne clair pour valider les workflows tôt",
+    "disclosurelyBullet3": "Un traitement des dossiers soutenu par l’IA sur les offres concernées",
+    "disclosurelyBullet4": "Une automatisation moderne et de la flexibilité à la croissance",
+    "competitorTitle": "Whistleblower Software peut convenir aux organisations qui préfèrent :",
+    "competitorBullet1": "Des structures tarifaires par effectif ou par tranches",
+    "competitorBullet2": "Une structure de forfaits plus figée",
+    "competitorBullet3": "De comparer des outils avec des prix liés à l’effectif",
+    "competitorBullet4": "Un modèle d’achat structuré déjà utilisé pour des fournisseurs similaires"
+  },
+  "tables": {
+    "pricing": {
+      "title": "Modèle tarifaire et parcours d’achat",
+      "rows": [
+        {
+          "feature": "Structure tarifaire typique",
+          "disclosurely": "Niveaux publiés avec limites sur notre page tarifs ; pas principalement vendu en paliers d’effectif",
+          "competitor": "Souvent organisé par tranches d’effectif ou forfaits échelonnés — confirmez sur leurs tarifs publiés"
+        },
+        {
+          "feature": "Choisir le bon plan",
+          "disclosurely": "Comparer fonctionnalités et limites en ligne",
+          "competitor": "Faire correspondre les tranches à l’effectif et aux modules — vérifier leurs descriptions de plans"
+        },
+        {
+          "feature": "Essai ou démo",
+          "disclosurely": "Essai gratuit disponible — voir les conditions actuelles à l’inscription",
+          "competitor": "Confirmer la durée d’essai et si une démo est courante pour votre segment"
+        },
+        {
+          "feature": "Commencer petit et évoluer",
+          "disclosurely": "Parcours de montée en gamme décrits sur la page tarifs",
+          "competitor": "Vérifier l’impact des changements de tranche sur le coût quand l’effectif augmente"
+        },
+        {
+          "feature": "Flexibilité d’achat",
+          "disclosurely": "Inscription en libre-service et mises à niveau le cas échéant",
+          "competitor": "Peut privilégier un parcours d’achat plus packagé — confirmez pour votre organisation"
+        }
+      ]
+    },
+    "reporting": {
+      "title": "Signalement et collecte",
+      "rows": [
+        {
+          "feature": "Canal web de signalement",
+          "disclosurely": "Oui",
+          "competitor": "Oui — confirmez pour votre édition"
+        },
+        {
+          "feature": "Signalement anonyme",
+          "disclosurely": "Oui",
+          "competitor": "Confirmez l’implémentation de l’anonymat pour votre configuration"
+        },
+        {
+          "feature": "Communication bidirectionnelle sécurisée",
+          "disclosurely": "Oui",
+          "competitor": "Confirmez les canaux pris en charge sur votre offre"
+        },
+        {
+          "feature": "Image de marque et personnalisation du portail",
+          "disclosurely": "Oui — voir la documentation produit",
+          "competitor": "Confirmez les options de marque pour votre forfait"
+        },
+        {
+          "feature": "Signalement multilingue",
+          "disclosurely": "Large couverture linguistique pour les signaleurs",
+          "competitor": "Confirmez les langues dont vous avez besoin"
+        }
+      ]
+    },
+    "caseHandling": {
+      "title": "Traitement des dossiers et workflows",
+      "rows": [
+        {
+          "feature": "Boîte de réception et workflow",
+          "disclosurely": "Oui",
+          "competitor": "Oui"
+        },
+        {
+          "feature": "Permissions par rôle",
+          "disclosurely": "Oui",
+          "competitor": "Confirmez la portée pour votre offre"
+        },
+        {
+          "feature": "Automatisation et intégrations",
+          "disclosurely": "Intégrations telles que Zapier sur les offres concernées",
+          "competitor": "Confirmez automatisation et intégrations pour votre niveau"
+        },
+        {
+          "feature": "Analyse ou tri assistés par l’IA",
+          "disclosurely": "Intégré au produit sur les offres concernées",
+          "competitor": "Confirmez si des fonctions IA sont proposées et comment elles sont positionnées"
+        }
+      ]
+    },
+    "security": {
+      "title": "Sécurité et contrôle d’accès",
+      "rows": [
+        {
+          "feature": "Chiffrement en transit et au repos",
+          "disclosurely": "Chiffrement utilisé dans le service — voir la documentation sécurité",
+          "competitor": "Consultez leurs documents de sécurité pour le détail technique"
+        },
+        {
+          "feature": "Accès et permissions par rôle",
+          "disclosurely": "Oui",
+          "competitor": "Oui — confirmez pour votre édition"
+        },
+        {
+          "feature": "Journaux d’audit",
+          "disclosurely": "Oui — événements d’accès et de dossier clés pour les administrateurs autorisés",
+          "competitor": "Confirmez les capacités de journalisation pour votre offre"
+        },
+        {
+          "feature": "Alignement protection des données (ex. RGPD)",
+          "disclosurely": "Conçu avec des contrôles orientés RGPD — pas un conseil juridique",
+          "competitor": "Consultez leurs documents confidentialité et conformité pour votre juridiction"
+        }
+      ]
+    },
+    "rollout": {
+      "title": "Déploiement et support",
+      "rows": [
+        {
+          "feature": "Onboarding et accompagnement à la configuration",
+          "disclosurely": "Configuration guidée, documentation et points de contact customer success",
+          "competitor": "Confirmez onboarding et services professionnels pour votre contrat"
+        },
+        {
+          "feature": "Ressources d’aide",
+          "disclosurely": "Centre d’aide et guidance dans le produit",
+          "competitor": "Confirmez canaux de support et attentes de réponse"
+        },
+        {
+          "feature": "Support pratique au déploiement",
+          "disclosurely": "Aide pour formulaires, catégories et rôles de gestionnaires pendant la mise en place",
+          "competitor": "Confirmez ce qui est inclus à l’achat"
+        }
+      ]
+    }
+  },
+  "why": {
+    "title": "Pourquoi les équipes choisissent Disclosurely",
+    "card1": {
+      "title": "Sélection de plan plus claire",
+      "body": "Comparez niveaux et limites en ligne pour aligner rapidement achat et conformité sans décoder d’abord des échelles complexes.",
+      "bullet1": "Tarifs publics clairs lorsqu’ils sont publiés",
+      "bullet2": "Essai simple pour tester des workflows réels",
+      "bullet3": "Moins de friction pour faire correspondre plan et taille d’équipe"
+    },
+    "card2": {
+      "title": "Automatisation moderne",
+      "body": "Reliez Disclosurely aux outils existants et réduisez les passages manuels sur les offres concernées.",
+      "bullet1": "Options d’intégration lorsque disponibles",
+      "bullet2": "Assistance IA pour les tâches courantes sur les offres concernées",
+      "bullet3": "Marge pour faire mûrir les processus"
+    },
+    "card3": {
+      "title": "Adoption pragmatique",
+      "body": "Pour les organisations qui veulent un signalement sécurisé sans sur-concevoir le premier déploiement.",
+      "bullet1": "Onboarding ciblé pour les gestionnaires de dossiers",
+      "bullet2": "Paramètres par défaut sensés avec marge de configuration",
+      "bullet3": "Bonne adéquation pour les programmes petits et moyens"
+    }
+  },
+  "fitCompetitor": {
+    "title": "Whistleblower Software peut convenir aux organisations qui :",
+    "bullet1": "Préfèrent des paliers tarifaires par effectif ou des niveaux liés à la tête",
+    "bullet2": "Veulent une structure de forfait plus fixe pour le benchmark interne",
+    "bullet3": "Évaluent déjà les fournisseurs avec des modèles basés sur l’effectif",
+    "bullet4": "Sont à l’aise avec un achat et un découpage plus structurés"
+  },
+  "migration": {
+    "title": "Changer de plateforme ne doit pas vous ralentir",
+    "subtitle": "Migration pratique avec accompagnement, déploiement échelonné si besoin, et perturbation minimale pour les gestionnaires internes.",
+    "step1": {
+      "title": "Planifier la bascule",
+      "body": "Convenez de ce qui est migré, recréé et exigé par vos politiques avant de changer de canal de signalement."
+    },
+    "step2": {
+      "title": "Reproduire formulaires et workflows",
+      "body": "Nous aidons à cartographier catégories, formulaires et rôles dans Disclosurely pour garder des processus familiers."
+    },
+    "step3": {
+      "title": "Déployer par étapes",
+      "body": "Communiquer le nouveau canal, former les gestionnaires et passer en production avec support — le calendrier dépend des validations et des données."
+    },
+    "disclaimer": "Les délais varient selon vos données, validations internes et configuration actuelle — nous précisons à chaque étape ce qui est réaliste."
+  },
+  "finalCta": {
+    "title": "Vous cherchez une alternative plus flexible à Whistleblower Software ?",
+    "subtitle": "Démarrez un essai gratuit ou réservez une démo pour voir si Disclosurely convient à votre workflow de signalement."
+  }
+}

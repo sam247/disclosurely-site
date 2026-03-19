@@ -1,0 +1,206 @@
+{
+  "competitorName": "Whistleblower Software",
+  "hero": {
+    "titleLine1": "Disclosurely vs.",
+    "titleLine2": "Whistleblower Software",
+    "subtitle": "Vergleichen Sie Preismodelle, Meldeworkflows und Plattformflexibilität, um zu sehen, welches Hinweisgebersystem zu Ihrer Organisation passt."
+  },
+  "fairnessNote": "Dieser Vergleich basiert auf öffentlich verfügbaren Informationen und der Produktpositionierung zum Zeitpunkt der Erstellung. Funktionen und Preise können sich ändern — bitte verifizieren Sie Details bei jedem Anbieter.",
+  "quickSummary": {
+    "title": "Kurzüberblick",
+    "disclosurelyTitle": "Disclosurely kann besser passen für Organisationen, die Folgendes wollen:",
+    "disclosurelyBullet1": "Einfachere Planauswahl ohne Mitarbeiterstufen-Leitern",
+    "disclosurelyBullet2": "Einen klaren Online-Testpfad, um Workflows früh zu prüfen",
+    "disclosurelyBullet3": "KI-unterstützte Fallbearbeitung in relevanten Tarifen",
+    "disclosurelyBullet4": "Moderne Automatisierung und Flexibilität beim Wachstum",
+    "competitorTitle": "Whistleblower Software kann passen für Organisationen, die Folgendes bevorzugen:",
+    "competitorBullet1": "Preisstrukturen nach Mitarbeiterzahl oder -bändern",
+    "competitorBullet2": "Eine festere, paketierte Stufenstruktur",
+    "competitorBullet3": "Vergleich von Tools mit kopfzahlbasierten Preisen",
+    "competitorBullet4": "Ein strukturiertes Beschaffungsmodell wie bei ähnlichen Anbietern"
+  },
+  "tables": {
+    "pricing": {
+      "title": "Preise und Kaufmodell",
+      "rows": [
+        {
+          "feature": "Typische Preisstruktur",
+          "disclosurely": "Veröffentlichte Stufen mit Limits auf unserer Preisseite; primär nicht als Mitarbeiter-Band-Modell verkauft",
+          "competitor": "Oft nach Mitarbeiterbereichen oder gestaffelten Paketen — auf veröffentlichten Preisen prüfen"
+        },
+        {
+          "feature": "Den passenden Plan wählen",
+          "disclosurely": "Funktionen und Limits online vergleichen",
+          "competitor": "Bänder zu Kopfzahl und Modulen zuordnen — mit deren Planbeschreibungen abgleichen"
+        },
+        {
+          "feature": "Test- oder Demoweg",
+          "disclosurely": "Kostenlose Testversion — aktuelle Bedingungen bei der Anmeldung",
+          "competitor": "Testdauer und übliche Demos für Ihr Segment prüfen"
+        },
+        {
+          "feature": "Klein starten und skalieren",
+          "disclosurely": "Upgrade-Pfade auf der Preisseite beschrieben",
+          "competitor": "Prüfen, wie Bandwechsel die Kosten bei wachsender Kopfzahl beeinflussen"
+        },
+        {
+          "feature": "Flexibilität beim Kauf",
+          "disclosurely": "Self-Service-Anmeldung und Upgrades wo sinnvoll",
+          "competitor": "Kann stärker paketierten Kauf bevorzugen — für Ihre Organisation prüfen"
+        }
+      ]
+    },
+    "reporting": {
+      "title": "Meldung und Aufnahme",
+      "rows": [
+        {
+          "feature": "Web-Meldekanal",
+          "disclosurely": "Ja",
+          "competitor": "Ja — für Ihre Edition bestätigen"
+        },
+        {
+          "feature": "Anonyme Meldung",
+          "disclosurely": "Ja",
+          "competitor": "Umsetzung der Anonymität für Ihr Setup bestätigen"
+        },
+        {
+          "feature": "Sichere Zwei-Wege-Kommunikation",
+          "disclosurely": "Ja",
+          "competitor": "Unterstützte Kanäle für Ihren Tarif bestätigen"
+        },
+        {
+          "feature": "Branding und Portal-Anpassung",
+          "disclosurely": "Ja — siehe Produktdokumentation",
+          "competitor": "Branding-Optionen für Ihr Paket bestätigen"
+        },
+        {
+          "feature": "Mehrsprachige Meldung",
+          "disclosurely": "Breite Sprachabdeckung für Meldende",
+          "competitor": "Abdeckung für Ihre benötigten Sprachen bestätigen"
+        }
+      ]
+    },
+    "caseHandling": {
+      "title": "Fallbearbeitung und Workflows",
+      "rows": [
+        {
+          "feature": "Fall-Posteingang und Workflow",
+          "disclosurely": "Ja",
+          "competitor": "Ja"
+        },
+        {
+          "feature": "Rollenbasierte Berechtigungen",
+          "disclosurely": "Ja",
+          "competitor": "Umfang für Ihren Tarif bestätigen"
+        },
+        {
+          "feature": "Workflow-Automatisierung und Integrationen",
+          "disclosurely": "Integrationen wie Zapier in unterstützten Tarifen",
+          "competitor": "Automatisierung und Integrationen für Ihre Stufe bestätigen"
+        },
+        {
+          "feature": "KI-unterstützte Analyse oder Triage",
+          "disclosurely": "In relevanten Tarifen im Produkt integriert",
+          "competitor": "Prüfen, ob KI-Funktionen angeboten werden und wie sie positioniert sind"
+        }
+      ]
+    },
+    "security": {
+      "title": "Sicherheit und Zugriffskontrolle",
+      "rows": [
+        {
+          "feature": "Verschlüsselung bei Übertragung und Speicherung",
+          "disclosurely": "Verschlüsselung im gesamten Dienst — siehe Sicherheitsdokumentation",
+          "competitor": "Deren Sicherheitsunterlagen für technische Details prüfen"
+        },
+        {
+          "feature": "Rollenbasierter Zugriff und Berechtigungen",
+          "disclosurely": "Ja",
+          "competitor": "Ja — für Ihre Edition bestätigen"
+        },
+        {
+          "feature": "Audit-Protokolle",
+          "disclosurely": "Ja — wichtige Zugriffs- und Fallereignisse für berechtigte Administratoren",
+          "competitor": "Protokollfunktionen für Ihren Tarif bestätigen"
+        },
+        {
+          "feature": "Datenschutz-Ausrichtung (z. B. DSGVO)",
+          "disclosurely": "Mit DSGVO-orientierten Kontrollen gestaltet — keine Rechtsberatung",
+          "competitor": "Deren Datenschutz- und Compliance-Dokumente für Ihre Rechtsordnung prüfen"
+        }
+      ]
+    },
+    "rollout": {
+      "title": "Rollout und Support",
+      "rows": [
+        {
+          "feature": "Onboarding und Einrichtungshilfe",
+          "disclosurely": "Geführte Einrichtung, Dokumentation und Customer-Success-Ansprechpartner",
+          "competitor": "Onboarding und Professional Services für Ihren Vertrag bestätigen"
+        },
+        {
+          "feature": "Hilferessourcen",
+          "disclosurely": "Hilfe-Center und Anleitung in der Anwendung",
+          "competitor": "Supportkanäle und Reaktionserwartungen bestätigen"
+        },
+        {
+          "feature": "Praktischer Rollout-Support",
+          "disclosurely": "Unterstützung bei Formularen, Kategorien und Bearbeiterrollen in der Einrichtung",
+          "competitor": "Bestätigen, was beim Kauf enthalten ist"
+        }
+      ]
+    }
+  },
+  "why": {
+    "title": "Warum Teams Disclosurely wählen",
+    "card1": {
+      "title": "Klarere Planauswahl",
+      "body": "Stufen und Limits online vergleichen, damit Einkauf und Compliance schnell übereinstimmen — ohne zuerst komplexe Leitern zu entschlüsseln.",
+      "bullet1": "Transparente Listenpreise wo veröffentlicht",
+      "bullet2": "Unkomplizierter Test echter Workflows",
+      "bullet3": "Weniger Reibung bei der Zuordnung Plan zu Teamgröße"
+    },
+    "card2": {
+      "title": "Moderne Automatisierung",
+      "body": "Disclosurely mit bestehenden Tools verbinden und manuelle Übergaben in unterstützten Tarifen reduzieren.",
+      "bullet1": "Integrationsoptionen wo verfügbar",
+      "bullet2": "KI-Hilfe für tägliche Fallaufgaben in relevanten Tarifen",
+      "bullet3": "Spielraum für reifere Prozesse"
+    },
+    "card3": {
+      "title": "Pragmatische Einführung",
+      "body": "Für Organisationen, die sichere Meldung wollen, ohne den ersten Rollout zu überkonstruieren.",
+      "bullet1": "Fokussiertes Onboarding für Fallbearbeiter",
+      "bullet2": "Sinnvolle Standardwerte mit Konfigurationsspielraum",
+      "bullet3": "Gute Passform für kleine und mittlere Programme"
+    }
+  },
+  "fitCompetitor": {
+    "title": "Whistleblower Software kann Organisationen passen, die:",
+    "bullet1": "Mitarbeiterbasierte Preisbänder oder kopfzahlbasierte Stufen bevorzugen",
+    "bullet2": "Eine festere Paketstruktur für interne Benchmarks wollen",
+    "bullet3": "Hinweisgeber-Anbieter bereits mit Kopfzahlmodellen vergleichen",
+    "bullet4": "Mit einem strukturierteren Beschaffungs- und Bändigungsansatz vertraut sind"
+  },
+  "migration": {
+    "title": "Ein Plattformwechsel soll Sie nicht ausbremsen",
+    "subtitle": "Pragmatische Migration mit Begleitung, gestaffeltem Rollout bei Bedarf und minimaler Störung für interne Fallbearbeiter.",
+    "step1": {
+      "title": "Umzug planen",
+      "body": "Vereinbaren Sie, was migriert, was neu aufgebaut wird und was Ihre Richtlinien vor einem Kanalwechsel verlangen."
+    },
+    "step2": {
+      "title": "Formulare und Workflows nachbilden",
+      "body": "Wir helfen, Kategorien, Formulare und Bearbeiterrollen in Disclosurely abzubilden, damit der Alltag wiedererkennbar bleibt."
+    },
+    "step3": {
+      "title": "Gestaffelt live gehen",
+      "body": "Neuen Kanal kommunizieren, Bearbeiter schulen und mit Unterstützung live gehen — Zeitplan hängt von Freigaben und Daten ab."
+    },
+    "disclaimer": "Zeitpläne variieren je nach Daten, internen Freigaben und Konfiguration Ihrer aktuellen Plattform — wir sagen pro Schritt klar, was realistisch ist."
+  },
+  "finalCta": {
+    "title": "Suchen Sie eine flexiblere Alternative zu Whistleblower Software?",
+    "subtitle": "Starten Sie eine kostenlose Testversion oder buchen Sie eine Demo, um zu prüfen, ob Disclosurely zu Ihrem Meldeworkflow passt."
+  }
+}

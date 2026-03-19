@@ -1,17 +1,37 @@
 import type { Metadata } from "next";
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, generatePageStructuredData, StructuredData } from "@/lib/seo";
 import CompareContent from "./CompareContent";
 
 export async function generateMetadata(): Promise<Metadata> {
+  const structuredData = generatePageStructuredData("webpage", {
+    title: "Disclosurely vs NAVEX — whistleblowing platform comparison",
+    description:
+      "Compare buying models, rollout complexity, and whistleblowing workflows. A balanced overview for serious buyers — verify details with each vendor.",
+    url: "https://disclosurely.com/vs-navex",
+  });
+
   return generatePageMetadata({
     pagePath: "/vs-navex",
-    fallbackTitle: "Disclosurely vs NAVEX (EthicsPoint) - Save $7,500/Year with Modern AI",
+    fallbackTitle: "Disclosurely vs NAVEX — whistleblowing platform comparison",
     fallbackDescription:
-      "Compare Disclosurely and NAVEX EthicsPoint. Get enterprise features at SMB pricing (£39.99 vs $667+/mo). Modern AI, better automation, transparent pricing.",
+      "Compare buying models, rollout complexity, and whistleblowing workflows. A balanced overview for serious buyers — verify details with each vendor.",
     keywords: ["disclosurely vs navex", "navex alternative", "whistleblowing comparison", "ethicspoint alternative"],
+    structuredData: structuredData,
   });
 }
 
 export default function VsNavexPage() {
-  return <CompareContent />;
+  const webpageSchema = generatePageStructuredData("webpage", {
+    title: "Disclosurely vs NAVEX — whistleblowing platform comparison",
+    description:
+      "Compare buying models, rollout complexity, and whistleblowing workflows. A balanced overview for serious buyers — verify details with each vendor.",
+    url: "https://disclosurely.com/vs-navex",
+  });
+
+  return (
+    <>
+      <StructuredData data={webpageSchema} />
+      <CompareContent />
+    </>
+  );
 }

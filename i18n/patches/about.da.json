@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Om Disclosurely",
+    "description": "Hvorfor Disclosurely findes: sikker whistleblowing-software, der skal være nemmere at lancere, administrere og stole på — uden unødvendig kompleksitet."
+  },
+  "hero": {
+    "tag": "Om Disclosurely",
+    "title": "Bygget til at gøre whistleblowing enklere, sikrere og mere troværdig",
+    "description": "Disclosurely blev skabt for at hjælpe organisationer med at lancere sikre rapporteringskanaler, som folk faktisk stoler på — uden unødvendig kompleksitet, forældede arbejdsgange eller tung implementeringsbyrde."
+  },
+  "mission": {
+    "title": "Hvorfor vi findes",
+    "p1": "Folk bruger kun rapporteringskanaler, de oplever som sikre og alvorligt mente. Organisationer har brug for værktøjer, der gør det enkelt at modtage, triage og håndtere henvendelser ordentligt.",
+    "p2": "For mange whistleblowing-systemer føles forældede, overkomplicerede eller besværlige at udrulle. Den friktion står i vejen for det, alle ønsker: at problemer kommer frem tidligt og håndteres retfærdigt.",
+    "p3": "Disclosurely er tænkt til at gøre sikker rapportering nemmere at lancere og nemmere for interne teams at administrere — med privatlivsbevidste, praktiske arbejdsgange, ikke tomme slogans."
+  },
+  "beliefs": {
+    "title": "Hvad god whistleblowing-software bør gøre efter vores mening",
+    "items": [
+      "Beskytte identiteter og følsomme oplysninger i designet, med kontroller der matcher reelle undersøgelser.",
+      "Gøre det lettere for organisationer at håndtere rapporter korrekt — klar modtagelse, struktureret opfølgning, ansvarlig adgang.",
+      "Understøtte tillid gennem sikker kommunikation og fornuftige processer, ikke vage løfter.",
+      "Reducere friktion for compliance, HR og sagsansvarlige, der bruger værktøjet hver uge.",
+      "Hjælpe organisationer med at opfylde regulatoriske forventninger, hvor de gælder — uden at overbelaste mindre teams.",
+      "Forbedre sig over tid: vi leverer iterativt og lytter til, hvordan teams bruger platformen i praksis."
+    ]
+  },
+  "audience": {
+    "title": "Hvem Disclosurely er bygget til",
+    "items": [
+      "Compliance- og risikoteam ansvarlige for speak-up-programmer",
+      "HR og interne rapporteringsansvarlige, der koordinerer sagsbehandling",
+      "Organisationer der udruller eller fornyer EU- eller UK-whistleblowingkanaler",
+      "Teams der ønsker moderne, sikker rapportering uden et tungt enterprise-program",
+      "Indkøbere der værdsætter klarhed om sikkerhed og data — se vores Security-side"
+    ]
+  },
+  "trust": {
+    "title": "Sådan nærmer vi os tillid og sikker rapportering",
+    "intro": "Vi fokuserer på kontroller, du kan forstå, og drift, du kan stole på. Det fulde billede — kryptering, adgang, backups, logning og databeskyttelse — er dokumenteret på vores sikkerhedsside.",
+    "items": [
+      "Stærk kryptering for data under overførsel og i hvile (AES-256-GCM), i tråd med, hvordan vi beskriver den levende tjeneste.",
+      "Adgangskontrolleret sagsbehandling: kun autoriserede personer i jeres organisation ser rapporter, efter roller og tilladelser, I sætter.",
+      "Privatlivsbevidst design, der understøtter GDPR-lignende behandling af følsomme personoplysninger.",
+      "Revisionslogge over vigtige adgangs- og sagshændelser for ansvarlighed.",
+      "Hosting på anerkendt skyinfrastruktur med overvågning og krypterede backups."
+    ],
+    "securityCta": "Læs siden Sikkerhed og tillid"
+  },
+  "cta": {
+    "title": "Vil I se, hvordan Disclosurely fungerer?",
+    "subtitle": "Udforsk platformen, gennemgå priser eller book en demo for at se, om det passer til jeres organisation.",
+    "pricing": "Se priser",
+    "demo": "Book en demo"
+  },
+  "explore": {
+    "title": "Udforsk mere",
+    "subtitle": "Praktiske næste skridt, hvis I vurderer whistleblowing-software.",
+    "featuresTitle": "Platformfunktioner",
+    "featuresBody": "Rapporteringskanaler, sagsbehandling, automatisering og hverdagen for teams i Disclosurely.",
+    "pricingTitle": "Priser",
+    "pricingBody": "Gennemsigtige niveauer, hvor de offentliggøres — se, hvad der er inkluderet, før I taler med salg.",
+    "directiveTitle": "EU's whistleblowing-direktiv",
+    "directiveBody": "Kontekst om krav og hvordan organisationer ofte strukturerer interne kanaler."
+  }
+}

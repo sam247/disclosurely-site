@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Over Disclosurely",
+    "description": "Waarom Disclosurely bestaat: veilige klokkenluiderssoftware die eenvoudiger te lanceren, te beheren en te vertrouwen moet zijn — zonder onnodige complexiteit."
+  },
+  "hero": {
+    "tag": "Over Disclosurely",
+    "title": "Gebouwd om klokkenluiden eenvoudiger, veiliger en betrouwbaarder te maken",
+    "description": "Disclosurely is gemaakt om organisaties te helpen veilige meldkanalen te starten waar mensen echt op vertrouwen — zonder onnodige complexiteit, verouderde workflows of zware implementatielast."
+  },
+  "mission": {
+    "title": "Waarom we bestaan",
+    "p1": "Mensen gebruiken alleen meldkanalen die zij veilig en serieus nemen. Organisaties hebben tools nodig om meldingen duidelijk te ontvangen, te triëren en goed af te handelen.",
+    "p2": "Te veel systemen voelen nog verouderd, te complex of lastig uit te rollen. Die wrijving staat in de weg van wat iedereen wil: problemen vroeg zichtbaar maken en eerlijk afhandelen.",
+    "p3": "Disclosurely is bedoeld om veilig melden makkelijker te lanceren en voor interne teams eenvoudiger te beheren — met privacybewuste, praktische workflows, geen holle slogans."
+  },
+  "beliefs": {
+    "title": "Wat goede klokkenluiderssoftware volgens ons moet doen",
+    "items": [
+      "Identiteiten en gevoelige informatie vanaf het ontwerp beschermen — met controles die passen bij echte onderzoeken.",
+      "Organisaties helpen meldingen goed af te handelen — duidelijke intake, gestructureerde opvolging, verantwoordelijke toegang.",
+      "Vertrouwen ondersteunen met veilige communicatie en zinnige processen, niet met vage beloften.",
+      "Wrijving verminderen voor compliance, HR en casus-eigenaren die het instrument wekelijks gebruiken.",
+      "Helpen aan regelgevende verwachtingen te voldoen waar van toepassing — zonder kleinere teams onnodig te belasten.",
+      "Blijven verbeteren: we leveren iteratief en luisteren naar hoe teams het platform in de praktijk gebruiken."
+    ]
+  },
+  "audience": {
+    "title": "Voor wie Disclosurely is bedoeld",
+    "items": [
+      "Compliance- en riskteams verantwoordelijk voor speak-up-programma's",
+      "HR en eigenaren van interne meldingen die casusafhandeling coördineren",
+      "Organisaties die EU- of UK-klokkenluiderskanalen uitrollen of vernieuwen",
+      "Teams die moderne, veilige meldingen willen zonder een zwaar enterprise-programma",
+      "Kopers die helderheid over security en data waarderen — zie onze Security-pagina"
+    ]
+  },
+  "trust": {
+    "title": "Hoe wij vertrouwen en veilig melden benaderen",
+    "intro": "We richten ons op begrijpelijke controles en betrouwbare operationele praktijken. Het volledige beeld — encryptie, toegang, backups, logging en gegevensbescherming — staat op onze securitypagina.",
+    "items": [
+      "Sterke encryptie voor data onderweg en in rust (AES-256-GCM), in lijn met hoe we de live dienst beschrijven.",
+      "Toegangsbeheerste casusafhandeling: alleen geautoriseerde mensen in uw organisatie zien meldingen, volgens door u ingestelde rollen en rechten.",
+      "Privacybewust ontwerp ter ondersteuning van GDPR-achtige verwerking van gevoelige persoonsgegevens.",
+      "Auditlogs van belangrijke toegangs- en casusgebeurtenissen ter ondersteuning van verantwoording.",
+      "Hosting op gerenommeerde cloudinfrastructuur met monitoring en versleutelde backups."
+    ],
+    "securityCta": "Lees onze pagina Security & vertrouwen"
+  },
+  "cta": {
+    "title": "Disclosurely in actie zien?",
+    "subtitle": "Verken het platform, bekijk prijzen of boek een demo om te zien of het bij uw organisatie past.",
+    "pricing": "Bekijk prijzen",
+    "demo": "Boek een demo"
+  },
+  "explore": {
+    "title": "Verder verkennen",
+    "subtitle": "Praktische vervolgstappen bij de evaluatie van klokkenluiderssoftware.",
+    "featuresTitle": "Platformfuncties",
+    "featuresBody": "Meldkanalen, casusbeheer, automatisering en het dagelijks werk van teams in Disclosurely.",
+    "pricingTitle": "Prijzen",
+    "pricingBody": "Transparante niveaus waar gepubliceerd — zie wat inbegrepen is voordat u met sales spreekt.",
+    "directiveTitle": "EU-richtlijn klokkenluiders",
+    "directiveBody": "Context over vereisten en hoe organisaties interne kanalen vaak inrichten."
+  }
+}

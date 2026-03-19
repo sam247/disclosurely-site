@@ -4,17 +4,17 @@ import CompareContent from "./CompareContent";
 
 export async function generateMetadata(): Promise<Metadata> {
   const structuredData = generatePageStructuredData("webpage", {
-    title: "Disclosurely vs SpeakUp - Save $708/Year with Advanced AI Features",
+    title: "Disclosurely vs SpeakUp — whistleblowing platform comparison",
     description:
-      "Compare Disclosurely and SpeakUp whistleblowing platforms. Get AI case analysis, transparent pricing (£39.99 vs $99+/mo), and better automation. See the difference.",
+      "A balanced comparison of pricing models, security controls, case workflows, and reporting channels. Use it alongside each vendor's documentation to decide what fits your organisation.",
     url: "https://disclosurely.com/vs-speakup",
   });
 
   return generatePageMetadata({
     pagePath: "/vs-speakup",
-    fallbackTitle: "Disclosurely vs SpeakUp - Save $708/Year with Advanced AI Features",
+    fallbackTitle: "Disclosurely vs SpeakUp — whistleblowing platform comparison",
     fallbackDescription:
-      "Compare Disclosurely and SpeakUp whistleblowing platforms. Get AI case analysis, transparent pricing (£39.99 vs $99+/mo), and better automation. See the difference.",
+      "A balanced comparison of pricing models, security controls, case workflows, and reporting channels. Use it alongside each vendor's documentation to decide what fits your organisation.",
     keywords: ["disclosurely vs speakup", "whistleblowing comparison", "speakup alternative"],
     structuredData: structuredData,
   });
@@ -22,9 +22,9 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function VsSpeakUpPage() {
   const webpageSchema = generatePageStructuredData("webpage", {
-    title: "Disclosurely vs SpeakUp - Save $708/Year with Advanced AI Features",
+    title: "Disclosurely vs SpeakUp — whistleblowing platform comparison",
     description:
-      "Compare Disclosurely and SpeakUp whistleblowing platforms. Get AI case analysis, transparent pricing (£39.99 vs $99+/mo), and better automation. See the difference.",
+      "A balanced comparison of pricing models, security controls, case workflows, and reporting channels. Use it alongside each vendor's documentation to decide what fits your organisation.",
     url: "https://disclosurely.com/vs-speakup",
   });
 

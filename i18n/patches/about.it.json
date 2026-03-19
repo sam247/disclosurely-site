@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Informazioni su Disclosurely",
+    "description": "Perché esiste Disclosurely: software di whistleblowing sicuro pensato per essere più semplice da avviare, gestire e a cui affidarsi — senza complessità inutile."
+  },
+  "hero": {
+    "tag": "Informazioni su Disclosurely",
+    "title": "Progettato per rendere il whistleblowing più semplice, sicuro e affidabile",
+    "description": "Disclosurely è nato per aiutare le organizzazioni a lanciare canali di segnalazione sicuri di cui le persone possano fidarsi — senza complessità superflua, flussi obsoleti o oneri di implementazione eccessivi."
+  },
+  "mission": {
+    "title": "Perché esistiamo",
+    "p1": "Si usano solo i canali di segnalazione che sono percepiti come sicuri e presi sul serio. Le organizzazioni hanno bisogno di strumenti che rendano chiara la ricezione, la triage e la gestione delle segnalazioni.",
+    "p2": "Troppi sistemi di whistleblowing risultano ancora datati, eccessivamente complessi o difficili da distribuire. Questa attrito ostacola ciò che tutti vogliono: far emergere i problemi presto e gestirli equamente.",
+    "p3": "Disclosurely è pensato per rendere la segnalazione sicura più semplice da lanciare e da gestire per i team interni, con flussi pratici e attenti alla privacy — non con slogan vuoti."
+  },
+  "beliefs": {
+    "title": "Cosa dovrebbe fare un buon software di whistleblowing, secondo noi",
+    "items": [
+      "Proteggere identità e informazioni sensibili per design, con controlli coerenti con le indagini reali.",
+      "Rendere più semplice gestire correttamente le segnalazioni: intake chiaro, follow-up strutturato, accessi responsabili.",
+      "Sostenere la fiducia con comunicazione sicura e processi sensati, non con promesse vaghe.",
+      "Ridurre l'attrito per compliance, HR e owner dei casi che usano lo strumento ogni settimana.",
+      "Aiutare a soddisfare le aspettative normative dove applicabili — senza appesantire i team più piccoli.",
+      "Migliorare nel tempo: rilasciamo in modo iterativo e ascoltiamo come i team usano la piattaforma."
+    ]
+  },
+  "audience": {
+    "title": "Per chi è pensato Disclosurely",
+    "items": [
+      "Team compliance e rischio responsabili dei programmi speak-up",
+      "HR e responsabili della segnalazione interna che coordinano la gestione dei casi",
+      "Organizzazioni che distribuiscono o rinnovano canali whistleblowing UE o UK",
+      "Team che vogliono segnalazioni moderne e sicure senza un programma enterprise pesante",
+      "Acquirenti che valorizzano chiarezza su sicurezza e dati — vedi la nostra pagina Security"
+    ]
+  },
+  "trust": {
+    "title": "Come affrontiamo fiducia e segnalazione sicura",
+    "intro": "Ci concentriamo su controlli comprensibili e pratiche operative affidabili. Il quadro completo — crittografia, accessi, backup, log e protezione dei dati — è documentato nella pagina dedicata alla sicurezza.",
+    "items": [
+      "Crittografia robusta in transito e a riposo (AES-256-GCM), allineata a come descriviamo il servizio in produzione.",
+      "Gestione casi con controllo degli accessi: solo persone autorizzate nella vostra organizzazione vedono le segnalazioni, secondo ruoli e permessi che impostate.",
+      "Design attento alla privacy per supportare trattamenti allineati al GDPR su dati personali sensibili.",
+      "Log di audit per accessi ed eventi chiave dei casi a supporto della responsabilità.",
+      "Hosting su infrastruttura cloud affidabile con monitoraggio e backup crittografati."
+    ],
+    "securityCta": "Leggi la pagina Sicurezza e fiducia"
+  },
+  "cta": {
+    "title": "Volete vedere come funziona Disclosurely?",
+    "subtitle": "Esplorate la piattaforma, consultate i prezzi o prenotate una demo per capire se fa al caso vostro.",
+    "pricing": "Vedi prezzi",
+    "demo": "Prenota una demo"
+  },
+  "explore": {
+    "title": "Esplora altro",
+    "subtitle": "Passi pratici se state valutando software di whistleblowing.",
+    "featuresTitle": "Funzionalità della piattaforma",
+    "featuresBody": "Canali di segnalazione, gestione casi, automazione e l'uso quotidiano dei team in Disclosurely.",
+    "pricingTitle": "Prezzi",
+    "pricingBody": "Livelli trasparenti dove pubblicati — vedete cosa è incluso prima di parlare con le vendite.",
+    "directiveTitle": "Direttiva UE sul whistleblowing",
+    "directiveBody": "Contesto sui requisiti e su come le organizzazioni spesso strutturano i canali interni."
+  }
+}

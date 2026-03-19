@@ -1,0 +1,206 @@
+{
+  "competitorName": "NAVEX",
+  "hero": {
+    "titleLine1": "Disclosurely vs",
+    "titleLine2": "NAVEX",
+    "subtitle": "Compare modelos de compra, complexidade de implementação e fluxos de denúncia anónima para ver qual a plataforma que se adequa à sua organização."
+  },
+  "fairnessNote": "Esta comparação baseia-se em informação pública e no posicionamento do produto à data de redação. As funcionalidades e os preços podem alterar-se — confirme os detalhes com cada fornecedor.",
+  "quickSummary": {
+    "title": "Orientação rápida",
+    "disclosurelyTitle": "O Disclosurely pode ser mais adequado para organizações que pretendem:",
+    "disclosurelyBullet1": "Expectativas de preço mais claras e um percurso comercial mais leve",
+    "disclosurelyBullet2": "Um processo de compra com menos sobrecarga de procurement enterprise",
+    "disclosurelyBullet3": "Um caminho mais rápido e prático até à primeira implementação",
+    "disclosurelyBullet4": "Um fluxo de denúncia focado com automatização moderna quando relevante",
+    "competitorTitle": "A NAVEX pode adequar-se a organizações que:",
+    "competitorBullet1": "Já normalizam suites enterprise de governação, risco ou conformidade",
+    "competitorBullet2": "Pretendem uma relação mais ampla com o fornecedor em várias áreas de risco",
+    "competitorBullet3": "Têm processos de compra adequados a grandes avaliações de plataforma",
+    "competitorBullet4": "Preferem um modelo de compra enterprise tradicional para esta categoria"
+  },
+  "tables": {
+    "pricing": {
+      "title": "Modelo de compra e procurement",
+      "rows": [
+        {
+          "feature": "Visibilidade de preços e percurso comercial",
+          "disclosurely": "Escalões e limites publicados na página de preços quando disponíveis",
+          "competitor": "Normalmente cotações conduzidas por vendas para programas enterprise — confirme nos materiais NAVEX"
+        },
+        {
+          "feature": "Experiência de compra típica",
+          "disclosurely": "Teste em self-service e registo online quando apropriado",
+          "competitor": "Envolve frequentemente demos, âmbito e passos de procurement enterprise — confirme para a sua organização"
+        },
+        {
+          "feature": "Acesso a teste ou demo",
+          "disclosurely": "Teste gratuito disponível — veja as condições atuais no registo",
+          "competitor": "Confirme como a NAVEX contacta potenciais clientes no seu segmento"
+        },
+        {
+          "feature": "Foco do produto",
+          "disclosurely": "Centrado na receção segura de denúncias e gestão de casos",
+          "competitor": "Parte de um portefólio GRC mais amplo — confirme os módulos necessários"
+        },
+        {
+          "feature": "Adequação a programas mais enxutos",
+          "disclosurely": "Frequentemente escolhido quando as equipas querem rapidez sem implementação de suite completa",
+          "competitor": "Frequentemente escolhido quando já está em vista uma relação de plataforma mais ampla — valide internamente"
+        }
+      ]
+    },
+    "reporting": {
+      "title": "Denúncia e receção",
+      "rows": [
+        {
+          "feature": "Canal de denúncia baseado na web",
+          "disclosurely": "Sim",
+          "competitor": "Sim — confirme para a sua configuração NAVEX"
+        },
+        {
+          "feature": "Denúncia anónima",
+          "disclosurely": "Sim",
+          "competitor": "Confirme o detalhe de implementação para a sua implementação"
+        },
+        {
+          "feature": "Comunicação bidirecional segura",
+          "disclosurely": "Sim",
+          "competitor": "Confirme os canais suportados na sua edição"
+        },
+        {
+          "feature": "Branding e configuração do portal",
+          "disclosurely": "Sim — consulte a documentação do produto",
+          "competitor": "Confirme opções de branding e configuração no seu contrato"
+        },
+        {
+          "feature": "Denúncia multilingue",
+          "disclosurely": "Ampla cobertura linguística para denunciantes",
+          "competitor": "Confirme a cobertura linguística para a sua equipa"
+        }
+      ]
+    },
+    "caseHandling": {
+      "title": "Gestão de casos e administração de fluxos",
+      "rows": [
+        {
+          "feature": "Caixa de entrada e fluxo de trabalho",
+          "disclosurely": "Sim",
+          "competitor": "Sim — o âmbito depende dos produtos adquiridos"
+        },
+        {
+          "feature": "Acesso e permissões por função",
+          "disclosurely": "Sim",
+          "competitor": "Sim — confirme para a sua implementação"
+        },
+        {
+          "feature": "Automatização de fluxos e integrações",
+          "disclosurely": "Integrações como Zapier em planos suportados",
+          "competitor": "Confirme automatização e integrações disponíveis para a sua equipa"
+        },
+        {
+          "feature": "Tratamento assistido por IA",
+          "disclosurely": "Integrado no produto nos planos relevantes",
+          "competitor": "Confirme se funcionalidades de IA ou analítica avançada se aplicam ao seu caso"
+        }
+      ]
+    },
+    "security": {
+      "title": "Segurança e controlo de acesso",
+      "rows": [
+        {
+          "feature": "Encriptação em trânsito e em repouso",
+          "disclosurely": "Encriptação no serviço — consulte a documentação de segurança",
+          "competitor": "Consulte os materiais de segurança e confiança NAVEX para detalhe técnico"
+        },
+        {
+          "feature": "Controlos de acesso a dados de caso",
+          "disclosurely": "Sim — permissões por função para gestores",
+          "competitor": "Sim — confirme controlos para o seu modelo de implementação"
+        },
+        {
+          "feature": "Registos de auditoria",
+          "disclosurely": "Sim — eventos-chave de acesso e de caso para administradores autorizados",
+          "competitor": "Confirme registo e retenção para a sua edição"
+        },
+        {
+          "feature": "Alinhamento com proteção de dados (ex. RGPD)",
+          "disclosurely": "Concebido com controlos orientados ao RGPD — não é aconselhamento jurídico",
+          "competitor": "Consulte a documentação NAVEX de privacidade e conformidade para a sua jurisdição"
+        }
+      ]
+    },
+    "rollout": {
+      "title": "Implementação e suporte",
+      "rows": [
+        {
+          "feature": "Onboarding e apoio à implementação",
+          "disclosurely": "Configuração guiada, documentação e pontos de contacto de customer success",
+          "competitor": "Inclui frequentemente serviços profissionais para implementações enterprise — confirme o que está a comprar"
+        },
+        {
+          "feature": "Tempo até primeira implementação prática",
+          "disclosurely": "Concebido para organizações que querem entrar em produção sem um programa pesado",
+          "competitor": "Depende do âmbito, integrações e processos de governação — planeie com a equipa NAVEX"
+        },
+        {
+          "feature": "Recursos de ajuda",
+          "disclosurely": "Centro de ajuda e orientação no produto",
+          "competitor": "Confirme canais de suporte e SLA no seu acordo"
+        }
+      ]
+    }
+  },
+  "why": {
+    "title": "Porque as equipas escolhem o Disclosurely",
+    "card1": {
+      "title": "Caminho mais leve até ao lançamento",
+      "body": "Quando a prioridade é um canal de denúncia operacional em breve, um produto focado pode reduzir a coordenação face a uma implementação de suite alargada.",
+      "bullet1": "Passos claros do teste à utilização em produção",
+      "bullet2": "Menos dependência de um grande programa transversal",
+      "bullet3": "Predefinições práticas para equipas pequenas e médias"
+    },
+    "card2": {
+      "title": "Percurso comercial mais transparente",
+      "body": "Preços publicados e um teste ajudam finanças e compliance a alinharem-se antes de ciclos longos de compra.",
+      "bullet1": "Preços online quando publicados",
+      "bullet2": "Teste simples para validar fluxos reais",
+      "bullet3": "Menos surpresas ao corresponder plano ao número de colaboradores"
+    },
+    "card3": {
+      "title": "Fluxo focado e automatização moderna",
+      "body": "O Disclosurely concentra-se em denúncia segura e gestão de casos, com automatização onde ajuda no quotidiano.",
+      "bullet1": "Opções de integração em planos suportados",
+      "bullet2": "Assistência de IA para tarefas de caso rotineiras quando ativada",
+      "bullet3": "Margem para crescer sem impor cedo a complexidade de uma suite"
+    }
+  },
+  "fitCompetitor": {
+    "title": "A NAVEX pode adequar-se a organizações que:",
+    "bullet1": "Já investem em plataformas GRC ou de ética e conformidade da NAVEX ou parceiros",
+    "bullet2": "Pretendem uma relação única com fornecedor em vários fluxos de risco e conformidade",
+    "bullet3": "Conduzem compras adequadas a grandes avaliações, enunciados de trabalho e implementações faseadas",
+    "bullet4": "Esperam um percurso contratual enterprise clássico para esta categoria"
+  },
+  "migration": {
+    "title": "Mudar para uma plataforma de denúncia focada pode ser mais simples do que espera",
+    "subtitle": "Onboarding guiado, ajuda a reconstruir formulários e fluxos de denúncia, e implementação faseada quando necessário — sem sobrecarga desnecessária.",
+    "step1": {
+      "title": "Definir o âmbito",
+      "body": "Acordar que canais, formulários e dados migrar e que aprovações internas são necessárias antes do go-live."
+    },
+    "step2": {
+      "title": "Reconstruir fluxos no Disclosurely",
+      "body": "Ajudamos a mapear categorias, formulários e funções de gestão para processos familiares."
+    },
+    "step3": {
+      "title": "Lançar com apoio",
+      "body": "Formar gestores, comunicar o canal e abrir vias de denúncia com a nossa equipa."
+    },
+    "disclaimer": "Os prazos dependem dos seus dados, políticas e ambiente atual — explicitamos em cada passo o que é realista."
+  },
+  "finalCta": {
+    "title": "Procura uma alternativa mais leve à NAVEX?",
+    "subtitle": "Inicie um teste gratuito ou marque uma demo para ver se o Disclosurely se adequa à sua organização."
+  }
+}

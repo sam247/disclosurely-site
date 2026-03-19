@@ -6,16 +6,22 @@ export async function generateMetadata(): Promise<Metadata> {
   const structuredData = generatePageStructuredData("organization", {
     title: "Disclosurely",
     description:
-      "Making compliance simple, secure, and built for trust. We help organizations create safer, more transparent workplaces through secure whistleblowing and compliance software.",
+      "Disclosurely builds secure whistleblowing software to help organisations launch reporting channels people can trust — with practical workflows and privacy-conscious design.",
     url: "https://disclosurely.com/about",
   });
 
   return generatePageMetadata({
     pagePath: "/about",
-    fallbackTitle: "About Us | Disclosurely",
+    fallbackTitle: "About Disclosurely | Secure whistleblowing software",
     fallbackDescription:
-      "Learn about Disclosurely's mission to make whistleblowing simple, secure, and effective. Meet our team and discover our values.",
-    keywords: ["about disclosurely", "whistleblowing company", "compliance team", "ethics platform"],
+      "Why Disclosurely exists: mission-led whistleblowing software designed to be easier to launch, manage, and trust — without unnecessary complexity.",
+    keywords: [
+      "about disclosurely",
+      "whistleblowing software UK",
+      "EU whistleblowing directive",
+      "secure reporting",
+      "speak up programme",
+    ],
     structuredData: structuredData,
   });
 }
@@ -24,7 +30,7 @@ export default function AboutPage() {
   const organizationSchema = generatePageStructuredData("organization", {
     title: "Disclosurely",
     description:
-      "Making compliance simple, secure, and built for trust. We help organizations create safer, more transparent workplaces through secure whistleblowing and compliance software.",
+      "Disclosurely builds secure whistleblowing software to help organisations launch reporting channels people can trust — with practical workflows and privacy-conscious design.",
     url: "https://disclosurely.com/about",
   });
 

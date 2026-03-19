@@ -406,6 +406,124 @@
       "subtitle": "Bli med på den sikre avsløringsplattformen"
     }
   },
+  "securityPage": {
+    "hero": {
+      "title": "Sikkerhet og tillit",
+      "subtitle": "Disclosurely er utformet for å beskytte sensitive rapporter med sterk kryptering, kontrollert tilgang, sikre sikkerhetskopier og personvernbevisst saksbehandling."
+    },
+    "highlights": {
+      "card1Title": "AES-256-GCM-kryptering",
+      "card1Body": "AES-256-GCM beskytter alle data under overføring og i hvile.",
+      "card2Title": "Tilgangskontrollert saksbehandling",
+      "card2Body": "Kun autoriserte saksbehandlere i organisasjonen din kan se innsendte rapporter, etter rolle og rettigheter.",
+      "card3Title": "GDPR-bevisst design",
+      "card3Body": "Utformet for å støtte GDPR-forpliktelser ved behandling av sensitive personopplysninger."
+    },
+    "features": {
+      "title": "Omfattende sikkerhetsfunksjoner",
+      "subtitle": "Sikkerhet for å beskytte sensitive varslinger og dem som sender dem.",
+      "item1Title": "AES-256-GCM-kryptering",
+      "item1Description": "AES-256-GCM brukes på data i hvile og under overføring.",
+      "item2Title": "Krypterte tilgangskontroller",
+      "item2Description": "Kun autoriserte brukere med riktige rettigheter kan se rapporter.",
+      "item3Title": "Sikker overføring og håndtering",
+      "item3Description": "Rapporter krypteres under overføring og håndteres i organisasjonens kontrollerte kontomiljø.",
+      "item4Title": "Multifaktorautentisering",
+      "item4Description": "MFA er tilgjengelig for administratorer for å redusere uautorisert tilgang.",
+      "item5Title": "Rollebasert tilgangskontroll",
+      "item5Description": "Granulære rettigheter begrenser tilgang til saker; tilgangshendelser logges.",
+      "item6Title": "Sikker skyinfrastruktur",
+      "item6Description": "Vert på anerkjent skyinfrastruktur med overvåking og krypterte sikkerhetskopier.",
+      "item7Title": "Krypterte sikkerhetskopier",
+      "item7Description": "Automatiserte krypterte sikkerhetskopier i flere regioner. Gjenoppretting testes periodisk.",
+      "item8Title": "Revisjonslogger",
+      "item8Description": "Logger viktige saks- og tilgangshendelser og støtter oppdaging av uautoriserte endringer.",
+      "item9Title": "GDPR og regional håndtering",
+      "item9Description": "Utformet for å støtte GDPR. Regionale alternativer der plattformen støtter det."
+    },
+    "commitments": {
+      "title": "Sikkerhetsforpliktelser",
+      "subtitle": "Nåværende kontroller og planlagt sertifiseringsløp.",
+      "statusInPlace": "På plass",
+      "statusInProgress": "Pågår",
+      "items": [
+        {
+          "name": "GDPR-bevisst design",
+          "description": "Databehandling i tråd med GDPR-forpliktelser",
+          "status": "inPlace"
+        },
+        {
+          "name": "EUs varslingsdirektiv 2019/1937",
+          "description": "Utformet for å støtte direktivkrav for kvalifiserte organisasjoner",
+          "status": "inPlace"
+        },
+        {
+          "name": "ISO 27001",
+          "description": "Sertifisering av informasjonssikkerhetsstyringssystem",
+          "status": "inProgress"
+        },
+        {
+          "name": "SOC 2 Type II",
+          "description": "Kontroller for sikkerhet, tilgjengelighet og konfidensialitet",
+          "status": "inProgress"
+        }
+      ]
+    },
+    "dataProtection": {
+      "title": "Databeskyttelsespraksis",
+      "subtitle": "Hvordan vi samler inn, lagrer og beskytter sensitive data",
+      "collectionTitle": "Innsamling",
+      "collection1": "Vi minimerer data til det nødvendige for rapporterings- og saksflyt.",
+      "collection2": "Anonyme innsendinger støttes der konfigurasjonen tillater det.",
+      "collection3": "Valgfri kontaktinformasjon kan holdes adskilt fra innhold der produktet støtter det.",
+      "collection4": "Offentlige skjemaer unngår unødvendig markedsførings- eller atferdssporing.",
+      "storageTitle": "Lagring",
+      "storage1": "Data kryptert i hvile med AES-256-GCM.",
+      "storage2": "Nøkler håndteres etter skylleverandørens praksis.",
+      "storage3": "Sikkerhetskopier kryptert med geografisk redundans.",
+      "storage4": "Regional hosting kan være tilgjengelig avhengig av konfigurasjon og leverandør.",
+      "accessTitle": "Tilgang",
+      "access1": "Rollebasert tilgang begrenser hvem som kan se og håndtere saker.",
+      "access2": "MFA kan håndheves for administratorer.",
+      "access3": "Tilgang til sensitive handlinger logges.",
+      "access4": "Øktpolicyer reduserer risiko for uovervåket tilgang.",
+      "retentionTitle": "Oppbevaring",
+      "retention1": "Oppbevaringsperioder kan konfigureres etter organisasjonens policy.",
+      "retention2": "Sletting når perioder utløper, med forbehold om juridiske og kontraktsmessige krav.",
+      "retention3": "Slettepraksis tar sikte på å fjerne data fra aktive systemer innen rimelige tidsrammer.",
+      "retention4": "Forespørsler fra registrerte håndteres i tråd med gjeldende GDPR-frister."
+    },
+    "infrastructure": {
+      "title": "Sikker infrastruktur",
+      "intro": "Bygget på anerkjent skyinfrastruktur med overvåking, failover og krypterte sikkerhetskopier.",
+      "cdnTitle": "Global levering",
+      "cdnBody": "Innhold leveres effektivt og sikkert fra kantlokasjoner.",
+      "backupTitle": "Krypterte sikkerhetskopier",
+      "backupBody": "Automatiserte krypterte sikkerhetskopier på tvers av flere geografiske regioner.",
+      "ddosTitle": "Nettverksbeskyttelse",
+      "ddosBody": "Leverandørbeskyttelse mot vanlige volumetriske angrep.",
+      "auditTitle": "Sikkerhetstester",
+      "auditBody": "Periodiske gjennomganger og penetrasjonstester for å finne og rette problemer.",
+      "safeguardsTitle": "Operative sikkerhetstiltak",
+      "safeguard1": "Kryptering under overføring (TLS) og i hvile (AES-256-GCM)",
+      "safeguard2": "Minst privilegert tilgang for systemer og drift",
+      "safeguard3": "Automatiserte krypterte sikkerhetskopier på tvers av regioner",
+      "safeguard4": "DDoS og annen nettverksbeskyttelse fra hostingmiljøet",
+      "safeguard5": "Infrastrukturovervåking og varsling",
+      "safeguard6": "Periodiske sikkerhetsgjennomganger og penetrasjonstester"
+    },
+    "disclosure": {
+      "title": "Ansvarlig avsløring",
+      "intro": "Hvis du tror du har funnet et sikkerhetsproblem, kontakt oss på",
+      "outro": "Vi streber etter å bekrefte rapporter raskt og holde deg oppdatert under undersøkelsen."
+    },
+    "cta": {
+      "title": "Sikkerhet for sensitive rapporter",
+      "subtitle": "Se hvordan Disclosurely beskytter varslinger med sikker saksbehandling og personvern først.",
+      "startTrial": "Start gratis prøveperiode",
+      "bookDemo": "Bestill demo"
+    }
+  },
   "pricing": {
     "hero": {
       "title": "Priser på varslingsprogramvare for team av alle størrelser",
@@ -670,57 +788,75 @@
   },
   "contact": {
     "hero": {
-      "title": "Kontakt salgsteamet vårt",
-      "description": "Ta kontakt med oss så hjelper vi gjerne med å svare på alle spørsmål om Disclosurely.",
-      "subtitle": "Klar til å transformere organisasjonens rapporteringskapasitet? Ta kontakt med teamet vårt.",
-      "tag": "Contact"
+      "tag": "Kontakt",
+      "title": "Snakk med Disclosurely",
+      "description": "Enten du sammenligner leverandører, planlegger utrulling eller ser på priser — vi hjelper deg gjerne."
     },
-    "info": {
-      "title": "Kontaktinformasjon",
-      "description": "Ta kontakt med oss så hjelper vi gjerne med å svare på alle spørsmål om Disclosurely.",
-      "email": {
-        "title": "E-post",
-        "response": "Vi svarer innen 24 timer"
-      },
-      "phone": {
-        "title": "Telefon",
-        "number": "+44 7123 456789",
-        "hours": "Man-fre, 9-17 GMT"
-      },
-      "address": {
-        "title": "Adresse",
-        "line1": "London",
-        "line2": "Storbritannia",
-        "line3": ""
-      },
-      "enterprise": {
-        "title": "Enterprise-løsninger",
-        "description": "Trenger du en tilpasset løsning? Ta kontakt med Enterprise-teamet vårt for tilpassede priser og implementeringsstøtte."
+    "help": {
+      "title": "Slik kan vi hjelpe",
+      "intro": "Fortell oss hva du trenger — demo, prisveiledning eller støtte ved utrulling.",
+      "items": {
+        "walkthrough": "Bestill en produktgjennomgang",
+        "pricing": "Spør om priser eller pakker",
+        "compliance": "Drøft EU- eller UK-krav for varsling",
+        "rollout": "Utforsk utrulling for organisasjonen din",
+        "enterpriseSetups": "Spør om multi-team- eller enterprise-oppsett"
       }
     },
+    "enterpriseCard": {
+      "title": "Trenger dere skreddersydd oppsett?",
+      "description": "Vi kan hjelpe med multi-team-utrullinger, tilpasset onboarding og større organisasjonsbehov."
+    },
     "form": {
-      "title": "Be om en demo",
-      "description": "Fyll ut skjemaet nedenfor så kontakter teamet vårt deg innen 24 timer for å planlegge en tilpasset demonstrasjon.",
+      "title": "Be om demo",
+      "description": "Kort om organisasjonen og behovet deres — vi svarer så snart vi kan.",
+      "enquiryType": {
+        "label": "Hva trenger du hjelp med?",
+        "placeholder": "Velg et alternativ",
+        "options": {
+          "demo": "Demo-forespørsel",
+          "pricing": "Prisspørsmål",
+          "compliance": "Samsvarsspørsmål",
+          "rollout": "Enterprise-utrulling",
+          "enterprise": "Multi-team- eller enterprise-oppsett",
+          "general": "Generell henvendelse"
+        }
+      },
       "name": {
         "label": "Navn",
-        "placeholder": "Ditt fulle navn"
+        "placeholder": "Fullt navn"
       },
       "email": {
-        "label": "E-post",
-        "placeholder": "din@email.no"
+        "label": "Jobb-e-post",
+        "placeholder": "deg@bedrift.no"
       },
       "company": {
-        "label": "Bedrift",
-        "placeholder": "Bedriftsnavnet ditt"
+        "label": "Organisasjon",
+        "placeholder": "Organisasjonens navn"
+      },
+      "organisationSize": {
+        "label": "Organisasjonsstørrelse (valgfritt)",
+        "placeholder": "Vil helst ikke oppgi",
+        "options": {
+          "1_50": "1–50 personer",
+          "51_250": "51–250 personer",
+          "251_1000": "251–1 000 personer",
+          "1000_plus": "Over 1 000 personer"
+        }
       },
       "message": {
-        "label": "Melding",
-        "placeholder": "Fortell oss om kravene dine..."
+        "label": "Hvordan kan vi hjelpe?",
+        "placeholder": "Tidslinje, regioner eller hva du vil se i et møte..."
+      },
+      "reassurance": {
+        "response": "Vi sikter på svar innen én virkedag",
+        "noPressure": "Ingen hardt salgspress",
+        "tailored": "Samtaler tilpasset organisasjonen deres"
       },
       "submit": "Send forespørsel",
       "submitting": "Sender...",
-      "success": "Takk! Meldingen din er sendt. Vi kommer tilbake til deg innen 24 timer.",
-      "privacy": "Ved å sende dette skjemaet godtar du vår personvernpolicy."
+      "success": "Takk — vi har mottatt meldingen din og tar kontakt snart.",
+      "privacy": "Ved å sende skjemaet godtar du personvernerklæringen vår."
     }
   },
   "privacy": {
@@ -1263,46 +1399,68 @@
   "new": "New",
   "about": {
     "meta": {
-      "title": "About Us - Disclosurely",
-      "description": "Learn about Disclosurely's mission to create safer workplaces through secure whistleblowing technology."
+      "title": "Om Disclosurely",
+      "description": "Hvorfor Disclosurely finnes: sikker varslerprogramvare som skal være enklere å lansere, forvalte og stole på — uten unødvendig kompleksitet."
     },
     "hero": {
-      "title": "About Disclosurely",
-      "subtitle": "Building Trust Through Transparency",
-      "description": "We're on a mission to create safer, more ethical workplaces by providing secure, anonymous reporting channels that protect whistleblowers while helping organizations address misconduct quickly and effectively."
+      "tag": "Om Disclosurely",
+      "title": "Bygget for å gjøre varsling enklere, tryggere og mer pålitelig",
+      "description": "Disclosurely ble laget for å hjelpe organisasjoner med å lansere sikre varslingskanaler folk faktisk stoler på — uten unødvendig kompleksitet, utdaterte arbeidsflyter eller tung implementeringsbyrde."
     },
     "mission": {
-      "title": "Our Mission",
-      "content": "To empower organizations to build cultures of integrity by providing secure, user-friendly whistleblowing solutions that protect both reporters and organizations."
+      "title": "Hvorfor vi finnes",
+      "p1": "Folk bruker bare varslingskanaler de opplever som trygge og alvorlige mente. Organisasjoner trenger verktøy som gjør det enkelt å motta, triage og håndtere bekymringer skikkelig.",
+      "p2": "For mange varslingssystemer føles utdaterte, overkompliserte eller tunge å rulle ut. Friksjonen står i veien for det alle ønsker: å avdekke problemer tidlig og håndtere dem rettferdig.",
+      "p3": "Disclosurely er laget for å gjøre sikker varsling enklere å lansere og enklere for interne team å forvalte — med personvernbevisste, praktiske arbeidsflyter, ikke tomme slagord."
     },
-    "values": {
-      "title": "Our Values",
-      "items": {
-        "security": {
-          "title": "Security First",
-          "description": "End-to-end encryption and anonymous reporting to protect whistleblowers"
-        },
-        "transparency": {
-          "title": "Transparency",
-          "description": "Clear processes and regular updates on case progress"
-        },
-        "compliance": {
-          "title": "Compliance",
-          "description": "GDPR-compliant solutions meeting international standards"
-        },
-        "support": {
-          "title": "Support",
-          "description": "24/7 support and comprehensive training for all users"
-        }
-      }
+    "beliefs": {
+      "title": "Hva god varslerprogramvare bør gjøre, mener vi",
+      "items": [
+        "Beskytt identiteter og sensitiv informasjon i designen, med kontroller som passer ekte undersøkelser.",
+        "Gjøre det enklere for organisasjoner å håndtere varsler riktig — tydelig inntak, strukturert oppfølging, ansvarlig tilgang.",
+        "Støtte tillit gjennom sikker kommunikasjon og fornuftige prosesser, ikke vage løfter.",
+        "Redusere friksjon for compliance, HR og saksansvarlige som bruker verktøyet ukentlig.",
+        "Hjelpe organisasjoner å møte regulatoriske forventninger der de gjelder — uten å belaste mindre team unødig.",
+        "Forbedre seg over tid: vi leverer iterativt og lytter til hvordan team bruker plattformen i praksis."
+      ]
     },
-    "team": {
-      "title": "Our Team",
-      "description": "Experienced professionals dedicated to workplace safety and compliance"
+    "audience": {
+      "title": "Hvem Disclosurely er bygget for",
+      "items": [
+        "Compliance- og risikoteam ansvarlige for speak-up-programmer",
+        "HR og interne varslingseiere som koordinerer saksbehandling",
+        "Organisasjoner som ruller ut eller fornyer EU- eller UK-varslingskanaler",
+        "Team som ønsker moderne, sikker rapportering uten et tungt enterprise-program",
+        "Kjøpere som verdsetter klarhet om sikkerhet og data — se sikkerhetssiden vår"
+      ]
     },
-    "story": {
-      "title": "Our Story",
-      "content": "Founded in 2024, Disclosurely was created by compliance professionals who saw the need for better whistleblowing solutions. We combine cutting-edge technology with deep industry expertise to deliver solutions that actually work."
+    "trust": {
+      "title": "Hvordan vi nærmer oss tillit og sikker varsling",
+      "intro": "Vi fokuserer på kontroller du kan forstå og drift du kan stole på. Helhetsbildet — kryptering, tilgang, sikkerhetskopier, logging og databeskyttelse — er dokumentert på sikkerhetssiden vår.",
+      "items": [
+        "Sterk kryptering for data underveis og i hvile (AES-256-GCM), i tråd med hvordan vi beskriver den levende tjenesten.",
+        "Tilgangskontrollert saksbehandling: bare autoriserte personer i organisasjonen ser varsler, etter roller og tillatelser dere setter.",
+        "Personvernbevisst utforming som støtter GDPR-lignende behandling av sensitive personopplysninger.",
+        "Revisjonslogger for viktige tilgangs- og sakshendelser for ansvarlighet.",
+        "Drift på anerkjent skyinfrastruktur med overvåking og krypterte sikkerhetskopier."
+      ],
+      "securityCta": "Les siden Sikkerhet og tillit"
+    },
+    "cta": {
+      "title": "Vil du se hvordan Disclosurely fungerer?",
+      "subtitle": "Utforsk plattformen, se priser eller bestill en demo for å se om det passer organisasjonen deres.",
+      "pricing": "Se priser",
+      "demo": "Bestill demo"
+    },
+    "explore": {
+      "title": "Utforsk mer",
+      "subtitle": "Praktiske neste steg hvis dere vurderer varslerprogramvare.",
+      "featuresTitle": "Plattformsfunksjoner",
+      "featuresBody": "Varslingskanaler, saksbehandling, automatisering og hverdagen til team i Disclosurely.",
+      "pricingTitle": "Priser",
+      "pricingBody": "Transparente nivåer der de publiseres — se hva som inngår før dere snakker med salg.",
+      "directiveTitle": "EUs varslingsdirektiv",
+      "directiveBody": "Kontekst om krav og hvordan organisasjoner ofte strukturerer interne kanaler."
     }
   },
   "features": {
@@ -1651,6 +1809,641 @@
       "subtitle": "Guidet onboarding, sikre varslingsarbeidsflyter og innebygd compliance-støtte for EU-organisasjoner.",
       "startFreeTrial": "Start gratis prøveperiode",
       "bookDemo": "Book en demo"
+    }
+  },
+  "compare": {
+    "common": {
+      "colFeature": "Funksjon",
+      "colDisclosurely": "Disclosurely",
+      "comparisonSectionTitle": "Sammenligning etter område",
+      "comparisonSectionSubtitle": "Bruk denne oversikten sammen med dokumentasjonen fra hver leverandør for å vurdere passform for organisasjonen deres.",
+      "startFreeTrial": "Start gratis prøveperiode",
+      "viewPricing": "Se priser",
+      "bookDemo": "Book en demo",
+      "noCardNote": "Ikke kreves kredittkort for prøveperioden — bekreft gjeldende vilkår ved registrering."
+    },
+    "speakup": {
+      "competitorName": "SpeakUp",
+      "hero": {
+        "titleLine1": "Disclosurely vs.",
+        "titleLine2": "SpeakUp",
+        "subtitle": "Sammenlign prismodeller, arbeidsflyter og varslingsfunksjoner for å se hvilken plattform som passer organisasjonen deres."
+      },
+      "fairnessNote": "Sammenligningen bygger på offentlig tilgjengelig informasjon og produktposisjonering på tidspunktet for utarbeidelse. Funksjoner og priser kan endres — verifiser detaljer hos hver leverandør.",
+      "atAGlance": {
+        "title": "I korthet",
+        "card1": {
+          "title": "Enkel prøvevei",
+          "body": "Utforsk Disclosurely på nett med en gratis prøveperiode — nyttig når dere vil validere arbeidsflyter tidlig."
+        },
+        "card2": {
+          "title": "AI-støttet saksbehandling",
+          "body": "Disclosurely bygger inn AI-støtte for sammendrag og triage — menneskelig vurdering forblir sentral."
+        },
+        "card3": {
+          "title": "Pragmatisk utrulling",
+          "body": "Disclosurely passer for organisasjoner som ønsker en tydelig oppsettvei, særlig små og mellomstore team som balanserer tempo og kontroll."
+        }
+      },
+      "fitBetter": {
+        "title": "Disclosurely kan passe bedre hvis dere ønsker:",
+        "bullet1": "Tydelige nettpriser og en rett frem prøvevei",
+        "bullet2": "AI-støttet saksbehandling i det daglige arbeidet",
+        "bullet3": "En lettere, raskere utrulling for små og mellomstore organisasjoner",
+        "bullet4": "Moderne automatisering og integrasjoner i støttede planer",
+        "bullet5": "Et fleksibelt alternativ til tyngre enterprise-innkjøpsprosesser"
+      },
+      "tables": {
+        "pricing": {
+          "title": "Priser og kjøpsopplevelse",
+          "rows": [
+            {
+              "feature": "Publiserte listepriser",
+              "disclosurely": "Ja — se prissiden vår",
+              "competitor": "Ja — bekreft gjeldende nivåer på SpeakUps nettsted"
+            },
+            {
+              "feature": "Typisk kjøpsvei",
+              "disclosurely": "Selvbetjent prøve og nettregistrering der det passer",
+              "competitor": "Ofte rådgivning eller demo for egnethet — bekreft på SpeakUps nettsted"
+            },
+            {
+              "feature": "Gratis prøveperiode eller pilot",
+              "disclosurely": "Gratis prøveperiode tilgjengelig — se gjeldende vilkår ved registrering",
+              "competitor": "Bekreft gjeldende prøve- eller pilotalternativer på SpeakUps nettsted"
+            },
+            {
+              "feature": "Klarhet i planer",
+              "disclosurely": "Nivåer og grenser beskrevet på prissiden",
+              "competitor": "Gå gjennom SpeakUps planbeskrivelser for deres bruksområde"
+            }
+          ]
+        },
+        "security": {
+          "title": "Sikkerhet og tilgangskontroll",
+          "rows": [
+            {
+              "feature": "Kryptering under overføring og i hvile",
+              "disclosurely": "Kryptering i hele tjenesten — se sikkerhetsdokumentasjon",
+              "competitor": "SpeakUp publiserer sikkerhetsinformasjon — verifiser tekniske detaljer for deres utgave"
+            },
+            {
+              "feature": "Rollebasert tilgang og tillatelser",
+              "disclosurely": "Ja",
+              "competitor": "Ja — bekreft omfang for deres plan"
+            },
+            {
+              "feature": "Revisjonslogger",
+              "disclosurely": "Ja — aktivitet synlig for autoriserte administratorer",
+              "competitor": "Bekreft loggingsmuligheter for deres utgave"
+            },
+            {
+              "feature": "Personvern og etterlevelse (f.eks. GDPR)",
+              "disclosurely": "Utformet med GDPR-orienterte kontroller — ikke juridisk rådgivning",
+              "competitor": "Gå gjennom SpeakUps personvern- og compliance-materiale for deres jurisdiksjon"
+            }
+          ]
+        },
+        "caseHandling": {
+          "title": "Saksbehandling og arbeidsflyter",
+          "rows": [
+            {
+              "feature": "Saksinnboks og arbeidsflyt",
+              "disclosurely": "Ja",
+              "competitor": "Ja"
+            },
+            {
+              "feature": "Trådet meldingsutveksling med varslere",
+              "disclosurely": "Ja",
+              "competitor": "Bekreft støttede kanaler for deres plan"
+            },
+            {
+              "feature": "Tilpassede statuser og ruting",
+              "disclosurely": "Ja",
+              "competitor": "Bekreft konfigurasjonsalternativer for deres utgave"
+            },
+            {
+              "feature": "Interne notater og samarbeid",
+              "disclosurely": "Ja",
+              "competitor": "Bekreft teamsamarbeidsfunksjoner i deres plan"
+            }
+          ]
+        },
+        "reporting": {
+          "title": "Varslingskanaler og automatisering",
+          "rows": [
+            {
+              "feature": "Nettbasert varslingskanal",
+              "disclosurely": "Ja",
+              "competitor": "Ja"
+            },
+            {
+              "feature": "Mobiltilgang for varslere eller saksbehandlere",
+              "disclosurely": "Ja — se produktdokumentasjon",
+              "competitor": "Bekreft mobilalternativer på SpeakUps nettsted"
+            },
+            {
+              "feature": "Anonym varsling",
+              "disclosurely": "Ja",
+              "competitor": "Ja — bekreft detaljer for deres oppsett"
+            },
+            {
+              "feature": "Integrasjoner og automatisering",
+              "disclosurely": "Integrasjoner som Zapier i støttede planer",
+              "competitor": "Bekreft automatisering og integrasjoner for deres utgave"
+            },
+            {
+              "feature": "AI-assistert sammendrag eller triage",
+              "disclosurely": "Bygget inn i produktet i relevante planer",
+              "competitor": "Bekreft om AI-funksjoner tilbys og hvordan de presenteres"
+            }
+          ]
+        },
+        "rollout": {
+          "title": "Utrulling og støtte",
+          "rows": [
+            {
+              "feature": "Onboarding og oppsettveiledning",
+              "disclosurely": "Guidet oppsett, dokumentasjon og customer success-kontaktpunkter",
+              "competitor": "Bekreft onboarding og tjenester for deres kontrakt"
+            },
+            {
+              "feature": "Hjelperessurser",
+              "disclosurely": "Hjelpesenter og veiledning i produktet",
+              "competitor": "Bekreft støttekanaler og SLA for deres plan"
+            },
+            {
+              "feature": "Flerspråklig varsling",
+              "disclosurely": "Bred språkdekning for varslere",
+              "competitor": "Ofte omfattende — bekreft språkene dere trenger"
+            }
+          ]
+        }
+      },
+      "why": {
+        "title": "Hvor Disclosurely ofte skiller seg ut",
+        "card1": {
+          "title": "Pragmatisk kjøp og utrulling",
+          "body": "Listepriser og prøvevei hjelper team med å evaluere raskt uten tungt anskaffelsessteg.",
+          "bullet1": "Nettpriser og registrering der det passer",
+          "bullet2": "Fokusert onboarding for operative team",
+          "bullet3": "Egnet for organisasjoner som vil ha fart uten overdreven prosess"
+        },
+        "card2": {
+          "title": "AI i det daglige saksarbeidet",
+          "body": "Sammendrag og triage-støtte reduserer manuell lesing — etterforskere beholder kontrollen.",
+          "bullet1": "AI-støtte for sakssammendrag når aktivert",
+          "bullet2": "Arbeidsflytsignaler fremfor svarte bokser",
+          "bullet3": "Utformet for å utfylle retningslinjer og menneskelig gjennomgang"
+        },
+        "card3": {
+          "title": "Automatisering for moderne stakk",
+          "body": "Koble Disclosurely til verktøy dere allerede bruker der integrasjoner støttes.",
+          "bullet1": "Automatiseringsalternativer i støttede planer",
+          "bullet2": "Færre manuelle overleveringer i rutinesteg",
+          "bullet3": "Rom til å vokse med varslingsprogrammet deres"
+        }
+      },
+      "fitCompetitor": {
+        "title": "SpeakUp kan passe organisasjoner som:",
+        "bullet1": "Foretrekker SpeakUps nåværende pris- og anskaffelsesstruktur",
+        "bullet2": "Allerede bruker SpeakUp på tvers av team eller regioner",
+        "bullet3": "Er tilpasset en eksisterende SpeakUp-relasjon eller kontrakt",
+        "bullet4": "Mener SpeakUps nåværende funksjons- og tjenestetilbud matcher behovene"
+      },
+      "migration": {
+        "title": "Bytte fra SpeakUp trenger ikke være smertefullt",
+        "subtitle": "En avveid migrering med veiledning, tydelige milepæler og minimal forstyrrelse for interne team.",
+        "step1": {
+          "title": "Planlegg og eksporter",
+          "body": "Jobb med SpeakUp-administratoren og SpeakUp-støtte for å forstå hva dere kan eksportere og hva retningslinjene tillater."
+        },
+        "step2": {
+          "title": "Gjenopprett arbeidsflyter",
+          "body": "Vi hjelper dere med å kartlegge skjemaer, kategorier og saksbehandlerroller i Disclosurely slik at prosessene forblir gjenkjennelige."
+        },
+        "step3": {
+          "title": "Trinnvis lansering",
+          "body": "Velg et go-live-vindu, kommuniser den nye kanalen og sett opp varslingsstier med støtte fra teamet vårt."
+        },
+        "disclaimer": "Tidslinjer avhenger av dataene deres, interne godkjenninger og hvordan SpeakUp-instansen er konfigurert — vi er tydelige på hva som er gjennomførbart i hvert trinn."
+      },
+      "finalCta": {
+        "title": "Leter dere etter et mer fleksibelt alternativ til SpeakUp?",
+        "subtitle": "Start en gratis prøveperiode eller book en demo for å se om Disclosurely passer deres varslingsarbeidsflyt."
+      }
+    },
+    "whistleblower": {
+      "competitorName": "Whistleblower Software",
+      "hero": {
+        "titleLine1": "Disclosurely vs",
+        "titleLine2": "Whistleblower Software",
+        "subtitle": "Sammenlign prismodeller, varslingsarbeidsflyter og plattformfleksibilitet for å se hvilket varslingssystem som passer organisasjonen deres."
+      },
+      "fairnessNote": "Sammenligningen bygger på offentlig tilgjengelig informasjon og produktposisjonering på tidspunktet for utarbeidelse. Funksjoner og priser kan endres — verifiser detaljer hos hver leverandør.",
+      "quickSummary": {
+        "title": "Rask orientering",
+        "disclosurelyTitle": "Disclosurely kan passe bedre for organisasjoner som ønsker:",
+        "disclosurelyBullet1": "Enklere planvalg uten medarbeiderstiger",
+        "disclosurelyBullet2": "En tydelig nettbasert prøvevei for å validere arbeidsflyter tidlig",
+        "disclosurelyBullet3": "AI-støttet saksbehandling i relevante planer",
+        "disclosurelyBullet4": "Moderne automatisering og fleksibilitet når dere vokser",
+        "competitorTitle": "Whistleblower Software kan passe hvis dere foretrekker:",
+        "competitorBullet1": "Prisstrukturer basert på antall ansatte eller bånd",
+        "competitorBullet2": "En mer fast pakkestruktur",
+        "competitorBullet3": "Å sammenligne verktøy med bemanningsbaserte priser",
+        "competitorBullet4": "En strukturert anskaffelsesmodell som hos lignende leverandører"
+      },
+      "tables": {
+        "pricing": {
+          "title": "Priser og kjøpsmodell",
+          "rows": [
+            {
+              "feature": "How pricing is typically structured",
+              "disclosurely": "Published tiers with limits on our pricing page; not primarily sold as employee-count bands",
+              "competitor": "Often organised around employee ranges or stepped packages — confirm on their published pricing"
+            },
+            {
+              "feature": "Choosing the right plan",
+              "disclosurely": "Compare features and limits side-by-side online",
+              "competitor": "Map bands to your headcount and required modules — verify against their plan descriptions"
+            },
+            {
+              "feature": "Trial or demo path",
+              "disclosurely": "Free trial available — see current terms at signup",
+              "competitor": "Confirm trial length and whether a demo is typical for your segment"
+            },
+            {
+              "feature": "Starting small and scaling",
+              "disclosurely": "Upgrade paths described on the pricing page",
+              "competitor": "Check how band changes affect cost as headcount grows"
+            },
+            {
+              "feature": "Buying flexibility",
+              "disclosurely": "Self-serve signup and upgrades where appropriate",
+              "competitor": "May favour a more packaged purchase flow — confirm for your organisation"
+            }
+          ]
+        },
+        "reporting": {
+          "title": "Varsling og inntak",
+          "rows": [
+            {
+              "feature": "Web-based reporting channel",
+              "disclosurely": "Yes",
+              "competitor": "Yes — confirm for your edition"
+            },
+            {
+              "feature": "Anonymous reporting",
+              "disclosurely": "Yes",
+              "competitor": "Confirm how anonymity is implemented for your setup"
+            },
+            {
+              "feature": "Secure two-way communication",
+              "disclosurely": "Yes",
+              "competitor": "Confirm supported channels on your plan"
+            },
+            {
+              "feature": "Branding and portal customisation",
+              "disclosurely": "Yes — see product documentation",
+              "competitor": "Confirm branding options for your package"
+            },
+            {
+              "feature": "Multilingual reporting",
+              "disclosurely": "Broad language coverage for reporters",
+              "competitor": "Confirm coverage for the languages you need"
+            }
+          ]
+        },
+        "caseHandling": {
+          "title": "Saksbehandling og arbeidsflyter",
+          "rows": [
+            {
+              "feature": "Case inbox and workflow",
+              "disclosurely": "Yes",
+              "competitor": "Yes"
+            },
+            {
+              "feature": "Role-based permissions",
+              "disclosurely": "Yes",
+              "competitor": "Confirm scope for your plan"
+            },
+            {
+              "feature": "Workflow automation and integrations",
+              "disclosurely": "Integrations such as Zapier on supported plans",
+              "competitor": "Confirm automation and integrations for your tier"
+            },
+            {
+              "feature": "AI-assisted analysis or triage",
+              "disclosurely": "Built into the product on relevant plans",
+              "competitor": "Confirm whether AI features are offered and how they are positioned"
+            }
+          ]
+        },
+        "security": {
+          "title": "Sikkerhet og tilgangskontroll",
+          "rows": [
+            {
+              "feature": "Encryption for data in transit and at rest",
+              "disclosurely": "Encryption used throughout the service — see security documentation",
+              "competitor": "Review their security materials for technical detail"
+            },
+            {
+              "feature": "Role-based access and permissions",
+              "disclosurely": "Yes",
+              "competitor": "Yes — confirm for your edition"
+            },
+            {
+              "feature": "Audit logging",
+              "disclosurely": "Yes — key access and case events for authorised administrators",
+              "competitor": "Confirm logging capabilities for your plan"
+            },
+            {
+              "feature": "Data protection alignment (e.g. GDPR)",
+              "disclosurely": "Designed with GDPR-oriented controls — not legal advice",
+              "competitor": "Review their privacy and compliance documentation for your jurisdiction"
+            }
+          ]
+        },
+        "rollout": {
+          "title": "Utrulling og støtte",
+          "rows": [
+            {
+              "feature": "Onboarding and setup guidance",
+              "disclosurely": "Guided setup, documentation, and customer success touchpoints",
+              "competitor": "Confirm onboarding and professional services for your contract"
+            },
+            {
+              "feature": "Help resources",
+              "disclosurely": "Help centre and in-product guidance",
+              "competitor": "Confirm support channels and response expectations"
+            },
+            {
+              "feature": "Practical rollout support",
+              "disclosurely": "Support for forms, categories, and handler roles during setup",
+              "competitor": "Confirm what is included when you purchase"
+            }
+          ]
+        }
+      },
+      "why": {
+        "title": "Hvorfor team velger Disclosurely",
+        "card1": {
+          "title": "Clearer plan selection",
+          "body": "Compare tiers and limits online so commercial and compliance owners can align quickly without decoding complex ladders first.",
+          "bullet1": "Transparent list pricing where published",
+          "bullet2": "Straightforward trial to test real workflows",
+          "bullet3": "Less friction when matching plan to team size"
+        },
+        "card2": {
+          "title": "Modern automation",
+          "body": "Connect Disclosurely to tools you already use and reduce manual hand-offs on supported plans.",
+          "bullet1": "Integration options where available",
+          "bullet2": "AI assistance for everyday case tasks on relevant plans",
+          "bullet3": "Room to mature processes over time"
+        },
+        "card3": {
+          "title": "Practical adoption",
+          "body": "Built for organisations that want secure reporting without over-engineering the first rollout.",
+          "bullet1": "Focused onboarding for case handlers",
+          "bullet2": "Sensible defaults with room to configure",
+          "bullet3": "Strong fit for small and mid-sized programmes"
+        }
+      },
+      "fitCompetitor": {
+        "title": "Whistleblower Software kan passe organisasjoner som:",
+        "bullet1": "Prefer employee-based pricing bands or headcount-linked tiers",
+        "bullet2": "Want a more fixed package structure they can benchmark internally",
+        "bullet3": "Already evaluate whistleblowing vendors using employee-count models",
+        "bullet4": "Are comfortable with a more structured procurement and banding approach"
+      },
+      "migration": {
+        "title": "Plattformbytte skal ikke sinke dere",
+        "subtitle": "Praktisk migrering med veiledning, trinnvis utrulling ved behov og minimal forstyrrelse for interne saksbehandlere.",
+        "step1": {
+          "title": "Planlegg flyttingen",
+          "body": "Bli enige om hva som migreres, gjenskapes og hva retningslinjene krever før dere bytter varslingskanal."
+        },
+        "step2": {
+          "title": "Gjenopprett skjemaer og flyter",
+          "body": "Vi hjelper dere å kartlegge kategorier, skjemaer og saksbehandlerroller i Disclosurely slik at prosessene gjenkjennes."
+        },
+        "step3": {
+          "title": "Rull ut i faser",
+          "body": "Kommuniser den nye kanalen, opplær saksbehandlere og gå live med støtte — tidsplan avhenger av godkjenninger og data."
+        },
+        "disclaimer": "Tidslinjer varierer med dataene deres, interne godkjenninger og nåværende konfigurasjon — vi tydeliggjør hva som er gjennomførbart i hvert trinn."
+      },
+      "finalCta": {
+        "title": "Leter dere etter et mer fleksibelt alternativ til Whistleblower Software?",
+        "subtitle": "Start en gratis prøveperiode eller book en demo for å se om Disclosurely passer deres varslingsarbeidsflyt."
+      }
+    },
+    "navex": {
+      "competitorName": "NAVEX",
+      "hero": {
+        "titleLine1": "Disclosurely vs",
+        "titleLine2": "NAVEX",
+        "subtitle": "Sammenlign kjøpsmodeller, utrullingskompleksitet og varslerarbeidsflyter for å se hvilken plattform som passer organisasjonen deres."
+      },
+      "fairnessNote": "Sammenligningen bygger på offentlig informasjon og produktposisjonering på tidspunktet for teksten. Funksjoner og priser kan endres — bekreft detaljer hos hver leverandør.",
+      "quickSummary": {
+        "title": "Rask orientering",
+        "disclosurelyTitle": "Disclosurely kan passe bedre for organisasjoner som ønsker:",
+        "disclosurelyBullet1": "Tydeligere prisforventninger og en lettere kommersiell vei",
+        "disclosurelyBullet2": "En kjøpsprosess med mindre enterprise-innkjøpsoverhead",
+        "disclosurelyBullet3": "En raskere, mer praktisk vei til første utrulling",
+        "disclosurelyBullet4": "En fokusert varslerarbeidsflyt med moderne automatisering der det er relevant",
+        "competitorTitle": "NAVEX kan passe organisasjoner som:",
+        "competitorBullet1": "Allerede standardiserer på enterprise-styring-, risiko- eller compliance-suiter",
+        "competitorBullet2": "Ønsker et bredere leverandørforhold på tvers av flere risikoområder",
+        "competitorBullet3": "Har innkjøpsprosesser tilpasset store plattformevalueringer",
+        "competitorBullet4": "Foretrekker en tradisjonell enterprise-kjøpsmodell for denne kategorien"
+      },
+      "tables": {
+        "pricing": {
+          "title": "Kjøpsmodell og innkjøp",
+          "rows": [
+            {
+              "feature": "Pristransparens og kommersiell vei",
+              "disclosurely": "Publiserte nivåer og grenser på prissiden vår der det tilbys",
+              "competitor": "Vanligvis salgsdrevne tilbud for enterprise-programmer — bekreft i NAVEX-materiell"
+            },
+            {
+              "feature": "Typisk kjøpsopplevelse",
+              "disclosurely": "Selvbetjent prøve og nettbasert påmelding der det passer",
+              "competitor": "Ofte demoer, omfang og enterprise-innkjøpssteg — bekreft for organisasjonen deres"
+            },
+            {
+              "feature": "Tilgang til prøve eller demo",
+              "disclosurely": "Gratis prøve tilgjengelig — se gjeldende vilkår ved påmelding",
+              "competitor": "Bekreft hvordan NAVEX møter prospekter i deres segment"
+            },
+            {
+              "feature": "Produktfokus",
+              "disclosurely": "Fokus på sikker inntak og saksbehandling for varsling",
+              "competitor": "Del av et bredere GRC-portefølje — bekreft moduler dere trenger"
+            },
+            {
+              "feature": "Passform for slankere programmer",
+              "disclosurely": "Ofte valgt når team ønsker fart uten full suite-utrulling",
+              "competitor": "Ofte valgt når bredere plattformsforhold allerede er i scope — valider internt"
+            }
+          ]
+        },
+        "reporting": {
+          "title": "Rapportering og inntak",
+          "rows": [
+            {
+              "feature": "Nettbasert rapporteringskanal",
+              "disclosurely": "Ja",
+              "competitor": "Ja — bekreft for deres NAVEX-konfigurasjon"
+            },
+            {
+              "feature": "Anonym rapportering",
+              "disclosurely": "Ja",
+              "competitor": "Bekreft implementasjonsdetaljer for deres utrulling"
+            },
+            {
+              "feature": "Sikker toveis kommunikasjon",
+              "disclosurely": "Ja",
+              "competitor": "Bekreft støttede kanaler for deres utgave"
+            },
+            {
+              "feature": "Portalmerkevare og konfigurasjon",
+              "disclosurely": "Ja — se produktdokumentasjon",
+              "competitor": "Bekreft merkevare- og konfigurasjonsalternativer i avtalen deres"
+            },
+            {
+              "feature": "Flerspråklig rapportering",
+              "disclosurely": "Bred språkdekning for rapportører",
+              "competitor": "Bekreft språkdekning for arbeidsstyrken deres"
+            }
+          ]
+        },
+        "caseHandling": {
+          "title": "Saksbehandling og arbeidsflytadministrasjon",
+          "rows": [
+            {
+              "feature": "Innboks og arbeidsflyt",
+              "disclosurely": "Ja",
+              "competitor": "Ja — omfanget avhenger av kjøpte produkter"
+            },
+            {
+              "feature": "Rollebassert tilgang og tillatelser",
+              "disclosurely": "Ja",
+              "competitor": "Ja — bekreft for deres implementasjon"
+            },
+            {
+              "feature": "Automatisering og integrasjoner",
+              "disclosurely": "Integrasjoner som Zapier på støttede planer",
+              "competitor": "Bekreft automatisering og integrasjoner tilgjengelig for teamet deres"
+            },
+            {
+              "feature": "AI-støttet behandling",
+              "disclosurely": "Bygget inn i produktet på relevante planer",
+              "competitor": "Bekreft om AI- eller avanserte analysefunksjoner gjelder deres brukstilfelle"
+            }
+          ]
+        },
+        "security": {
+          "title": "Sikkerhet og tilgangskontroll",
+          "rows": [
+            {
+              "feature": "Kryptering under overføring og i hvile",
+              "disclosurely": "Kryptering i tjenesten — se sikkerhetsdokumentasjon",
+              "competitor": "Se NAVEX sikkerhets- og tillitsmateriale for teknisk detalj"
+            },
+            {
+              "feature": "Tilgangskontroller for saksdata",
+              "disclosurely": "Ja — rollebaserte tillatelser for saksbehandlere",
+              "competitor": "Ja — bekreft kontroller for deres utrullingsmodell"
+            },
+            {
+              "feature": "Revisjonslogging",
+              "disclosurely": "Ja — nøkkeltilgangs- og sakshendelser for autoriserte administratorer",
+              "competitor": "Bekreft logging og oppbevaring for deres utgave"
+            },
+            {
+              "feature": "Datasikkerhetsjustering (f.eks. GDPR)",
+              "disclosurely": "Utformet med GDPR-orienterte kontroller — ikke juridisk rådgivning",
+              "competitor": "Se NAVEX personvern- og samsvarsdokumentasjon for deres jurisdiksjon"
+            }
+          ]
+        },
+        "rollout": {
+          "title": "Utrulling og støtte",
+          "rows": [
+            {
+              "feature": "Onboarding og implementasjonsstøtte",
+              "disclosurely": "Guidet oppsett, dokumentasjon og customer success-kontaktpunkter",
+              "competitor": "Ofte profesjonelle tjenester for enterprise-utrullinger — bekreft hva dere kjøper"
+            },
+            {
+              "feature": "Tid til første praktiske utrulling",
+              "disclosurely": "Utformet for organisasjoner som vil gå live uten tungt program",
+              "competitor": "Avhenger av omfang, integrasjoner og styring — planlegg med NAVEX-teamet deres"
+            },
+            {
+              "feature": "Hjelperessurser",
+              "disclosurely": "Hjelpesenter og veiledning i produktet",
+              "competitor": "Bekreft støttekanaler og SLA i avtalen deres"
+            }
+          ]
+        }
+      },
+      "why": {
+        "title": "Hvorfor team velger Disclosurely",
+        "card1": {
+          "title": "Lettere vei til lansering",
+          "body": "Når prioriteten er en fungerende rapporteringskanal snart, kan et fokusert produkt redusere koordinering sammenlignet med bred suite-utrulling.",
+          "bullet1": "Tydelige steg fra prøve til produksjonsbruk",
+          "bullet2": "Mindre avhengighet av stort tverrfunksjonelt program",
+          "bullet3": "Praktiske standarder for små og mellomstore team"
+        },
+        "card2": {
+          "title": "Mer transparent kommersiell reise",
+          "body": "Listepriser og prøve hjelper økonomi og samsvar å samkjøre seg før lange innkjøpsrunder.",
+          "bullet1": "Onlinepriser der publisert",
+          "bullet2": "Enkel prøve for å validere reelle flyter",
+          "bullet3": "Færre overraskelser når plan matches mot bemanning"
+        },
+        "card3": {
+          "title": "Fokusert flyt med moderne automatisering",
+          "body": "Disclosurely fokuserer på sikker rapportering og saksbehandling, med automatisering der det hjelper hverdagen.",
+          "bullet1": "Integrasjonsalternativer på støttede planer",
+          "bullet2": "AI-støtte for rutinesaksoppgaver når aktivert",
+          "bullet3": "Rom til å vokse uten å påtvinge suite-kompleksitet tidlig"
+        }
+      },
+      "fitCompetitor": {
+        "title": "NAVEX kan passe organisasjoner som:",
+        "bullet1": "Allerede investerer i enterprise-GRC- eller etikk- og samsvarsplattformer fra NAVEX eller partnere",
+        "bullet2": "Ønsker én leverandørrelasjon på tvers av flere risiko- og samsvarsarbeidsflyter",
+        "bullet3": "Gjennomfører innkjøp tilpasset store evalueringer, arbeidsbeskrivelser og faseinndelte utrullinger",
+        "bullet4": "Forventer en klassisk enterprise-kontraktsvei for denne kategorien"
+      },
+      "migration": {
+        "title": "Å bytte til en fokusert varslerplattform kan være enklere enn du tror",
+        "subtitle": "Guidet onboarding, hjelp til å bygge om skjemaer og rapporteringsflyter, og trinnvis implementasjon ved behov — uten unødvendig overhead.",
+        "step1": {
+          "title": "Definer omfang",
+          "body": "Bli enige om hvilke kanaler, skjemaer og data som flyttes, og hvilke interne godkjenninger som kreves før go-live."
+        },
+        "step2": {
+          "title": "Bygg om flyter i Disclosurely",
+          "body": "Vi hjelper med å kartlegge kategorier, skjemaer og saksbehandlerroller slik at prosessen kjennes igjen."
+        },
+        "step3": {
+          "title": "Lanser med støtte",
+          "body": "Opplær saksbehandlere, kommuniser kanalen og åpne rapporteringsveier med teamet vårt ved siden av."
+        },
+        "disclaimer": "Tidslinjer varierer med data, retningslinjer og nåværende miljø — vi er tydelige på hva som er realistisk i hvert steg."
+      },
+      "finalCta": {
+        "title": "Leter du etter et lettere alternativ til NAVEX?",
+        "subtitle": "Start en gratis prøveperiode eller bestill en demo for å se om Disclosurely passer organisasjonen deres."
+      }
     }
   }
 }

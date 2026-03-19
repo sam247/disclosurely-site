@@ -253,6 +253,124 @@
       "subtitle": "Treten Sie der sicheren Offenlegungsplattform bei"
     }
   },
+  "securityPage": {
+    "hero": {
+      "title": "Sicherheit & Vertrauen",
+      "subtitle": "Disclosurely ist darauf ausgelegt, sensible Meldungen mit starker Verschlüsselung, kontrolliertem Zugriff, sicheren Backups und datenschutzbewusster Fallbearbeitung zu schützen."
+    },
+    "highlights": {
+      "card1Title": "AES-256-GCM-Verschlüsselung",
+      "card1Body": "AES-256-GCM schützt alle Daten bei Übertragung und Speicherung.",
+      "card2Title": "Zugriffskontrollierte Fallbearbeitung",
+      "card2Body": "Nur autorisierte Bearbeiter in Ihrer Organisation können eingereichte Meldungen einsehen – gemäß Rolle und Berechtigungen.",
+      "card3Title": "DSGVO-bewusstes Design",
+      "card3Body": "Ausgelegt zur Unterstützung Ihrer DSGVO-Pflichten bei der Verarbeitung sensibler personenbezogener Daten."
+    },
+    "features": {
+      "title": "Umfassende Sicherheitsfunktionen",
+      "subtitle": "Sicherheit zum Schutz sensibler Whistleblowing-Meldungen und der Personen, die sie einreichen.",
+      "item1Title": "AES-256-GCM-Verschlüsselung",
+      "item1Description": "AES-256-GCM wird für Daten bei Speicherung und Übertragung angewendet.",
+      "item2Title": "Verschlüsselte Zugriffskontrollen",
+      "item2Description": "Nur autorisierte Nutzer mit den richtigen Berechtigungen können Meldungen einsehen.",
+      "item3Title": "Sichere Übertragung und Verarbeitung",
+      "item3Description": "Meldungen werden verschlüsselt übertragen und in der kontrollierten Kontoumgebung Ihrer Organisation verarbeitet.",
+      "item4Title": "Mehrfaktor-Authentifizierung",
+      "item4Description": "MFA ist für Administratorkonten verfügbar, um unbefugten Zugriff zu reduzieren.",
+      "item5Title": "Rollenbasierter Zugriff",
+      "item5Description": "Feingranulare Rechte helfen, den Zugriff auf Meldungen zu begrenzen; Zugriffsereignisse werden protokolliert.",
+      "item6Title": "Sichere Cloud-Infrastruktur",
+      "item6Description": "Gehostet auf etablierter Cloud-Infrastruktur mit Monitoring und verschlüsselten Backups.",
+      "item7Title": "Verschlüsselte Backups",
+      "item7Description": "Automatisierte, verschlüsselte Backups in mehreren Regionen. Disaster-Recovery wird regelmäßig geübt.",
+      "item8Title": "Audit-Protokolle",
+      "item8Description": "Protokolle erfassen zentrale Fall- und Zugriffsereignisse und unterstützen die Erkennung unbefugter Änderungen.",
+      "item9Title": "DSGVO und regionale Verarbeitung",
+      "item9Description": "Ausgelegt zur Unterstützung von DSGVO-Pflichten. Regionale Datenoptionen, wo die Plattform dies unterstützt."
+    },
+    "commitments": {
+      "title": "Sicherheitsverpflichtungen",
+      "subtitle": "Aktuelle Maßnahmen und geplanter Zertifizierungsfahrplan.",
+      "statusInPlace": "Umgesetzt",
+      "statusInProgress": "In Arbeit",
+      "items": [
+        {
+          "name": "DSGVO-bewusstes Design",
+          "description": "Datenverarbeitung orientiert an DSGVO-Pflichten",
+          "status": "inPlace"
+        },
+        {
+          "name": "EU-Richtlinie zum Whistleblowing 2019/1937",
+          "description": "Unterstützung der Anforderungen der Richtlinie für geeignete Organisationen",
+          "status": "inPlace"
+        },
+        {
+          "name": "ISO 27001",
+          "description": "Zertifizierung des Informationssicherheitsmanagementsystems",
+          "status": "inProgress"
+        },
+        {
+          "name": "SOC 2 Type II",
+          "description": "Kontrollen zu Sicherheit, Verfügbarkeit und Vertraulichkeit",
+          "status": "inProgress"
+        }
+      ]
+    },
+    "dataProtection": {
+      "title": "Datenschutzpraktiken",
+      "subtitle": "Wie wir sensible Daten erfassen, speichern und schützen",
+      "collectionTitle": "Datenerhebung",
+      "collection1": "Wir minimieren Daten auf das für Melde- und Fallworkflow Nötige.",
+      "collection2": "Anonyme Meldungen werden unterstützt, soweit Ihre Konfiguration es erlaubt.",
+      "collection3": "Optionale Kontaktdaten können getrennt vom Meldeinhalt geführt werden, wo das Produkt es unterstützt.",
+      "collection4": "Öffentliche Meldeformulare verzichten auf unnötiges Marketing- oder Verhaltens-Tracking.",
+      "storageTitle": "Datenspeicherung",
+      "storage1": "Daten ruhen verschlüsselt mit AES-256-GCM.",
+      "storage2": "Schlüssel werden mit Praktiken des Cloud-Anbieters verwaltet.",
+      "storage3": "Backups sind verschlüsselt und geografisch redundant.",
+      "storage4": "Regionales Hosting kann je nach Konfiguration und Anbieter verfügbar sein.",
+      "accessTitle": "Datenzugriff",
+      "access1": "Rollenbasierter Zugriff begrenzt, wer Meldungen sieht und bearbeitet.",
+      "access2": "MFA kann für Administratorzugriff erzwungen werden.",
+      "access3": "Zugriffe auf sensible Aktionen werden protokolliert.",
+      "access4": "Sitzungsrichtlinien reduzieren das Risiko unbeaufsichtigter Zugriffe.",
+      "retentionTitle": "Aufbewahrung",
+      "retention1": "Aufbewahrungsfristen sind nach Ihrer Organisationsrichtlinie konfigurierbar.",
+      "retention2": "Löschung nach Ablauf der Fristen, vorbehaltlich Recht und Vertrag.",
+      "retention3": "Löschung zielt auf Entfernung aus aktiven Systemen in angemessenen Zeiträumen.",
+      "retention4": "Betroffenenrechte werden nach anwendbaren DSGVO-Fristen bearbeitet."
+    },
+    "infrastructure": {
+      "title": "Sichere Infrastruktur",
+      "intro": "Auf etablierter Cloud-Infrastruktur mit Monitoring, Failover und verschlüsselten Backups.",
+      "cdnTitle": "Globale Auslieferung",
+      "cdnBody": "Inhalte werden effizient und sicher über Edge-Standorte ausgeliefert.",
+      "backupTitle": "Verschlüsselte Backups",
+      "backupBody": "Automatisierte verschlüsselte Backups in mehreren geografischen Regionen.",
+      "ddosTitle": "Netzwerkschutz",
+      "ddosBody": "Schutzmechanismen des Anbieters mindern gängige volumetrische und netzwerknahe Angriffe.",
+      "auditTitle": "Sicherheitstests",
+      "auditBody": "Regelmäßige Reviews und Penetrationstests zur Identifikation und Behebung von Schwachstellen.",
+      "safeguardsTitle": "Operative Schutzmaßnahmen",
+      "safeguard1": "Verschlüsselung bei Übertragung (TLS) und Speicherung (AES-256-GCM)",
+      "safeguard2": "Least-Privilege-Zugriff für Systeme und Betrieb",
+      "safeguard3": "Automatisierte verschlüsselte Backups über mehrere Regionen",
+      "safeguard4": "DDoS und weitere Netzwerkschutzmechanismen der Hosting-Umgebung",
+      "safeguard5": "Infrastruktur-Monitoring und Alarmierung",
+      "safeguard6": "Regelmäßige Sicherheitsreviews und Penetrationstests"
+    },
+    "disclosure": {
+      "title": "Verantwortungsvolle Offenlegung",
+      "intro": "Wenn Sie eine Sicherheitslücke vermuten, kontaktieren Sie uns unter",
+      "outro": "Wir bemühen uns um zeitnahe Bestätigung und informieren Sie während der Untersuchung."
+    },
+    "cta": {
+      "title": "Sicherheit für sensible Meldungen",
+      "subtitle": "Erfahren Sie, wie Disclosurely Whistleblowing-Meldungen mit sicherer Fallbearbeitung und datenschutzorientiertem Design schützt.",
+      "startTrial": "Kostenlose Testversion starten",
+      "bookDemo": "Demo buchen"
+    }
+  },
   "pricing": {
     "hero": {
       "title": "Whistleblowing-Software-Preise für Teams jeder Größe",
@@ -960,57 +1078,75 @@
   },
   "contact": {
     "hero": {
-      "title": "Kontaktieren Sie Unser Vertriebsteam",
-      "description": "Nehmen Sie Kontakt mit uns auf und wir helfen Ihnen gerne bei allen Fragen zu Disclosurely.",
-      "subtitle": "Ready to transform your organization's reporting capabilities? Get in touch with our team.",
-      "tag": "Contact"
+      "tag": "Kontakt",
+      "title": "Sprechen Sie mit Disclosurely",
+      "description": "Ob Anbietervergleich, Rollout-Planung oder Preisfragen — wir helfen Ihnen gern weiter."
     },
-    "info": {
-      "title": "Kontaktinformationen",
-      "description": "Nehmen Sie Kontakt mit uns auf und wir helfen Ihnen gerne bei allen Fragen zu Disclosurely.",
-      "email": {
-        "title": "E-Mail",
-        "response": "Wir antworten innerhalb von 24 Stunden"
-      },
-      "phone": {
-        "title": "Telefon",
-        "number": "+44 7123 456789",
-        "hours": "Mo-Fr, 9-17 Uhr GMT"
-      },
-      "address": {
-        "title": "Adresse",
-        "line1": "London",
-        "line2": "Vereinigtes Königreich",
-        "line3": ""
-      },
-      "enterprise": {
-        "title": "Unternehmenslösungen",
-        "description": "Benötigen Sie eine maßgeschneiderte Lösung? Kontaktieren Sie unser Enterprise-Team für individuelle Preise und Implementierungsunterstützung."
+    "help": {
+      "title": "Wobei wir helfen können",
+      "intro": "Sagen Sie uns, was Sie brauchen — Demo, Preisorientierung oder Rollout-Unterstützung.",
+      "items": {
+        "walkthrough": "Produkt-Walkthrough buchen",
+        "pricing": "Fragen zu Preisen oder Plänen",
+        "compliance": "EU- oder UK-Hinweisgeber-Anforderungen besprechen",
+        "rollout": "Rollout für Ihre Organisation durchdenken",
+        "enterpriseSetups": "Mehrteam- oder Enterprise-Setups klären"
       }
     },
+    "enterpriseCard": {
+      "title": "Individuelles Setup nötig?",
+      "description": "Wir unterstützen bei Multi-Team-Rollouts, angepasstem Onboarding und größeren organisatorischen Anforderungen."
+    },
     "form": {
-      "title": "Demo Anfordern",
-      "description": "Füllen Sie das Formular aus und unser Team wird sich innerhalb von 24 Stunden bei Ihnen melden, um eine personalisierte Demo zu vereinbaren.",
+      "title": "Demo anfragen",
+      "description": "Kurz Ihre Organisation und Ihr Anliegen — wir melden uns so schnell wir können.",
+      "enquiryType": {
+        "label": "Wobei können wir helfen?",
+        "placeholder": "Bitte auswählen",
+        "options": {
+          "demo": "Demo anfragen",
+          "pricing": "Preisfrage",
+          "compliance": "Compliance-Frage",
+          "rollout": "Enterprise-Rollout",
+          "enterprise": "Multi-Team- oder Enterprise-Setup",
+          "general": "Allgemeine Anfrage"
+        }
+      },
       "name": {
         "label": "Name",
-        "placeholder": "Ihr vollständiger Name"
+        "placeholder": "Vor- und Nachname"
       },
       "email": {
-        "label": "E-Mail",
-        "placeholder": "ihre@email.de"
+        "label": "Geschäftliche E-Mail",
+        "placeholder": "sie@unternehmen.de"
       },
       "company": {
-        "label": "Firma",
-        "placeholder": "Ihr Firmenname"
+        "label": "Organisation",
+        "placeholder": "Name der Organisation"
+      },
+      "organisationSize": {
+        "label": "Organisationsgröße (optional)",
+        "placeholder": "Keine Angabe",
+        "options": {
+          "1_50": "1–50 Personen",
+          "51_250": "51–250 Personen",
+          "251_1000": "251–1.000 Personen",
+          "1000_plus": "über 1.000 Personen"
+        }
       },
       "message": {
-        "label": "Nachricht",
-        "placeholder": "Erzählen Sie uns von Ihren Anforderungen..."
+        "label": "Wie können wir helfen?",
+        "placeholder": "z. B. Zeitplan, Regionen oder was Sie im Gespräch sehen möchten..."
       },
-      "submit": "Anfrage Senden",
+      "reassurance": {
+        "response": "Antwort in der Regel innerhalb eines Werktags",
+        "noPressure": "Kein harter Verkaufsdruck",
+        "tailored": "Gespräche auf Ihre Organisation zugeschnitten"
+      },
+      "submit": "Anfrage senden",
       "submitting": "Wird gesendet...",
-      "success": "Vielen Dank! Ihre Nachricht wurde gesendet. Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.",
-      "privacy": "Durch das Absenden dieses Formulars stimmen Sie unserer Datenschutzerklärung zu."
+      "success": "Vielen Dank — wir haben Ihre Nachricht erhalten und melden uns in Kürze.",
+      "privacy": "Mit dem Absenden stimmen Sie unserer Datenschutzerklärung zu."
     }
   },
   "admin": {
@@ -1261,46 +1397,68 @@
   "saving": "Saving...",
   "about": {
     "meta": {
-      "title": "About Us - Disclosurely",
-      "description": "Learn about Disclosurely's mission to create safer workplaces through secure whistleblowing technology."
+      "title": "Über Disclosurely",
+      "description": "Warum es Disclosurely gibt: sichere Hinweisgeber-Software, die einfacher einzuführen, zu betreuen und zu vertrauen sein soll — ohne unnötige Komplexität."
     },
     "hero": {
-      "title": "About Disclosurely",
-      "subtitle": "Building Trust Through Transparency",
-      "description": "We're on a mission to create safer, more ethical workplaces by providing secure, anonymous reporting channels that protect whistleblowers while helping organizations address misconduct quickly and effectively."
+      "tag": "Über Disclosurely",
+      "title": "Gebaut, um sicheres Melden einfacher, transparenter und vertrauenswürdiger zu machen",
+      "description": "Disclosurely wurde entwickelt, damit Organisationen sichere Meldekanäle einführen können, denen Menschen wirklich vertrauen — ohne unnötige Komplexität, veraltete Workflows oder schwere Implementierungslast."
     },
     "mission": {
-      "title": "Our Mission",
-      "content": "To empower organizations to build cultures of integrity by providing secure, user-friendly whistleblowing solutions that protect both reporters and organizations."
+      "title": "Warum wir existieren",
+      "p1": "Meldewege werden nur genutzt, wenn sie als sicher und ernst gemeint wahrgenommen werden. Organisationen brauchen Werkzeuge, mit denen Hinweise klar aufgenommen, priorisiert und ordnungsgemäß bearbeitet werden können.",
+      "p2": "Viele Hinweisgeber-Systeme wirken noch veraltet, überkomplex oder sind schmerzhaft auszurollen. Diese Reibung steht dem entgegen, was alle wollen: Themen früh sichtbar machen und fair bearbeiten.",
+      "p3": "Disclosurely soll sicheres Melden einfacher einführbar und für interne Teams einfacher handhabbar machen — mit datenschutzbewussten, pragmatischen Workflows statt Schlagworten."
     },
-    "values": {
-      "title": "Our Values",
-      "items": {
-        "security": {
-          "title": "Security First",
-          "description": "End-to-end encryption and anonymous reporting to protect whistleblowers"
-        },
-        "transparency": {
-          "title": "Transparency",
-          "description": "Clear processes and regular updates on case progress"
-        },
-        "compliance": {
-          "title": "Compliance",
-          "description": "GDPR-compliant solutions meeting international standards"
-        },
-        "support": {
-          "title": "Support",
-          "description": "24/7 support and comprehensive training for all users"
-        }
-      }
+    "beliefs": {
+      "title": "Was gute Hinweisgeber-Software unserer Meinung nach leisten sollte",
+      "items": [
+        "Identitäten und sensible Informationen von vornherein schützen — mit Kontrollen, die zu echten Untersuchungen passen.",
+        "Organisationen helfen, Meldungen ordentlich zu bearbeiten — klare Aufnahme, strukturierte Nachverfolgung, nachvollziehbare Zugriffe.",
+        "Vertrauen durch sichere Kommunikation und sinnvolle Prozesse stützen — nicht durch vage Versprechen.",
+        "Reibung für Compliance, HR und Fallverantwortliche reduzieren, die das Tool jede Woche nutzen.",
+        "Organisationen helfen, regulatorische Erwartungen zu erfüllen, wo sie gelten — ohne kleinere Teams unnötig zu überfordern.",
+        "Sich weiterentwickeln: wir liefern iterativ und orientieren uns daran, wie Teams die Plattform in der Praxis nutzen."
+      ]
     },
-    "team": {
-      "title": "Our Team",
-      "description": "Experienced professionals dedicated to workplace safety and compliance"
+    "audience": {
+      "title": "Für wen Disclosurely gedacht ist",
+      "items": [
+        "Compliance- und Risikoteams mit Verantwortung für Speak-up-Programme",
+        "HR und interne Meldeverantwortliche, die Fallbearbeitung koordinieren",
+        "Organisationen, die EU- oder UK-Hinweisgeberkanäle einführen oder erneuern",
+        "Teams, die moderne, sichere Meldewege ohne schweres Enterprise-Programm wollen",
+        "Einkäufer, die Klarheit zu Sicherheit und Datenverarbeitung schätzen — Details auf unserer Security-Seite"
+      ]
     },
-    "story": {
-      "title": "Our Story",
-      "content": "Founded in 2024, Disclosurely was created by compliance professionals who saw the need for better whistleblowing solutions. We combine cutting-edge technology with deep industry expertise to deliver solutions that actually work."
+    "trust": {
+      "title": "Wie wir Vertrauen und sicheres Melden angehen",
+      "intro": "Wir konzentrieren uns auf nachvollziehbare Kontrollen und betriebliche Praktiken, auf die man sich verlassen kann. Das Gesamtbild — Verschlüsselung, Zugriff, Backups, Protokollierung und Datenschutz — steht auf unserer Security-Seite.",
+      "items": [
+        "Starke Verschlüsselung für Daten bei Übertragung und Speicherung (AES-256-GCM), konsistent mit unserer Beschreibung des Live-Dienstes.",
+        "Zugriffskontrollierte Fallbearbeitung: Nur autorisierte Personen in Ihrer Organisation sehen Meldungen — gemäß Rollen und Berechtigungen, die Sie setzen.",
+        "Datenschutzbewusstes Design zur Unterstützung DSGVO-konformer Verarbeitung sensibler personenbezogener Daten.",
+        "Audit-Protokolle zu wichtigen Zugriffs- und Fallereignissen zur Unterstützung von Rechenschaftspflicht.",
+        "Hosting auf etablierter Cloud-Infrastruktur mit Monitoring und verschlüsselten Backups."
+      ],
+      "securityCta": "Zur Seite Sicherheit & Vertrauen"
+    },
+    "cta": {
+      "title": "Möchten Sie sehen, wie Disclosurely arbeitet?",
+      "subtitle": "Plattform erkunden, Preise prüfen oder eine Demo buchen — ob es zu Ihrer Organisation passt.",
+      "pricing": "Preise ansehen",
+      "demo": "Demo buchen"
+    },
+    "explore": {
+      "title": "Mehr entdecken",
+      "subtitle": "Praktische nächste Schritte bei der Bewertung von Hinweisgeber-Software.",
+      "featuresTitle": "Plattform-Funktionen",
+      "featuresBody": "Meldekanäle, Fallbearbeitung, Automatisierung und der Alltag von Teams in Disclosurely.",
+      "pricingTitle": "Preise",
+      "pricingBody": "Transparente Stufen, wo veröffentlicht — sehen Sie, was enthalten ist, bevor Sie mit dem Vertrieb sprechen.",
+      "directiveTitle": "EU-Hinweisgeber-Richtlinie",
+      "directiveBody": "Kontext zu Anforderungen der Richtlinie und wie Organisationen interne Kanäle oft aufsetzen."
     }
   },
   "features": {
@@ -1649,6 +1807,641 @@
       "subtitle": "Geführte Einrichtung, sichere Meldeabläufe und integrierte Compliance-Unterstützung für EU-Organisationen.",
       "startFreeTrial": "Kostenlose Testversion starten",
       "bookDemo": "Demo buchen"
+    }
+  },
+  "compare": {
+    "common": {
+      "colFeature": "Merkmal",
+      "colDisclosurely": "Disclosurely",
+      "comparisonSectionTitle": "Vergleich nach Schwerpunkten",
+      "comparisonSectionSubtitle": "Nutzen Sie diese Übersicht zusammen mit der Dokumentation der Anbieter, um die Passform für Ihre Organisation zu prüfen.",
+      "startFreeTrial": "Kostenlose Testversion starten",
+      "viewPricing": "Preise ansehen",
+      "bookDemo": "Demo buchen",
+      "noCardNote": "Für die Testversion ist keine Kreditkarte erforderlich — bitte die aktuellen Bedingungen bei der Anmeldung prüfen."
+    },
+    "speakup": {
+      "competitorName": "SpeakUp",
+      "hero": {
+        "titleLine1": "Disclosurely vs.",
+        "titleLine2": "SpeakUp",
+        "subtitle": "Vergleichen Sie Preismodelle, Workflows und Meldefunktionen, um zu sehen, welche Plattform zu Ihrer Organisation passt."
+      },
+      "fairnessNote": "Dieser Vergleich basiert auf öffentlich verfügbaren Informationen und der Produktpositionierung zum Zeitpunkt der Erstellung. Funktionen und Preise können sich ändern — bitte verifizieren Sie Details direkt bei den Anbietern.",
+      "atAGlance": {
+        "title": "Auf einen Blick",
+        "card1": {
+          "title": "Unkomplizierter Testzugang",
+          "body": "Erkunden Sie Disclosurely zuerst online mit einer kostenlosen Testversion — hilfreich, wenn Sie Workflows früh validieren möchten."
+        },
+        "card2": {
+          "title": "KI-unterstützte Fallbearbeitung",
+          "body": "Disclosurely integriert KI für Zusammenfassung und Triage, damit Teams Fälle voranbringen — menschliches Urteilsverhalten bleibt zentral."
+        },
+        "card3": {
+          "title": "Pragmatischer Rollout",
+          "body": "Disclosurely eignet sich für Organisationen, die einen klaren Einrichtungsweg wollen, besonders für kleine und mittlere Teams zwischen Tempo und Kontrolle."
+        }
+      },
+      "fitBetter": {
+        "title": "Disclosurely kann besser passen, wenn Sie Folgendes wollen:",
+        "bullet1": "Klare Online-Preise und einen unkomplizierten Testzugang",
+        "bullet2": "KI-unterstützte Fallbearbeitung im täglichen Workflow",
+        "bullet3": "Einen schlankeren, schnelleren Rollout für kleine und mittlere Organisationen",
+        "bullet4": "Moderne Automatisierung und Integrationen in unterstützten Tarifen",
+        "bullet5": "Eine flexible Alternative zu schwerfälliger Enterprise-Beschaffung"
+      },
+      "tables": {
+        "pricing": {
+          "title": "Preise und Kaufprozess",
+          "rows": [
+            {
+              "feature": "Veröffentlichte Listenpreise",
+              "disclosurely": "Ja — siehe unsere Preisseite",
+              "competitor": "Ja — aktuelle Stufen auf der SpeakUp-Website prüfen"
+            },
+            {
+              "feature": "Typischer Kaufweg",
+              "disclosurely": "Self-Service-Test und Online-Anmeldung wo sinnvoll",
+              "competitor": "Oft Beratung oder Demos zur Eignung — auf der SpeakUp-Website prüfen"
+            },
+            {
+              "feature": "Kostenlose Testversion oder Pilot",
+              "disclosurely": "Kostenlose Testversion — aktuelle Bedingungen bei der Anmeldung",
+              "competitor": "Aktuelle Test- oder Pilotoptionen auf der SpeakUp-Website prüfen"
+            },
+            {
+              "feature": "Tariftransparenz",
+              "disclosurely": "Stufen und Limits auf der Preisseite beschrieben",
+              "competitor": "SpeakUps Tarifbeschreibungen für Ihren Anwendungsfall prüfen"
+            }
+          ]
+        },
+        "security": {
+          "title": "Sicherheit und Zugriffskontrolle",
+          "rows": [
+            {
+              "feature": "Verschlüsselung bei Übertragung und Speicherung",
+              "disclosurely": "Verschlüsselung im gesamten Dienst — siehe Sicherheitsdokumentation",
+              "competitor": "SpeakUp veröffentlicht Sicherheitsinformationen — technische Details für Ihre Edition prüfen"
+            },
+            {
+              "feature": "Rollenbasierter Zugriff und Berechtigungen",
+              "disclosurely": "Ja",
+              "competitor": "Ja — Umfang für Ihren Tarif prüfen"
+            },
+            {
+              "feature": "Audit-Protokolle",
+              "disclosurely": "Ja — Aktivitäten für berechtigte Administratoren sichtbar",
+              "competitor": "Protokollfunktionen für Ihre Edition prüfen"
+            },
+            {
+              "feature": "Datenschutz-Ausrichtung (z. B. DSGVO)",
+              "disclosurely": "Mit DSGVO-orientierten Kontrollen gestaltet — keine Rechtsberatung",
+              "competitor": "SpeakUps Datenschutz- und Compliance-Materialien für Ihre Rechtsordnung prüfen"
+            }
+          ]
+        },
+        "caseHandling": {
+          "title": "Fallbearbeitung und Workflows",
+          "rows": [
+            {
+              "feature": "Fall-Posteingang und Workflow",
+              "disclosurely": "Ja",
+              "competitor": "Ja"
+            },
+            {
+              "feature": "Thread-Nachrichten mit Meldenden",
+              "disclosurely": "Ja",
+              "competitor": "Unterstützte Kanäle für Ihren Tarif prüfen"
+            },
+            {
+              "feature": "Eigene Status und Routing",
+              "disclosurely": "Ja",
+              "competitor": "Konfigurationsoptionen für Ihre Edition prüfen"
+            },
+            {
+              "feature": "Interne Notizen und Zusammenarbeit",
+              "disclosurely": "Ja",
+              "competitor": "Teamfunktionen auf Ihrem Tarif prüfen"
+            }
+          ]
+        },
+        "reporting": {
+          "title": "Meldekanäle und Automatisierung",
+          "rows": [
+            {
+              "feature": "Web-Meldekanal",
+              "disclosurely": "Ja",
+              "competitor": "Ja"
+            },
+            {
+              "feature": "Mobiler Zugang für Meldende oder Bearbeiter",
+              "disclosurely": "Ja — siehe Produktdokumentation",
+              "competitor": "Mobile Optionen auf der SpeakUp-Website prüfen"
+            },
+            {
+              "feature": "Anonyme Meldung",
+              "disclosurely": "Ja",
+              "competitor": "Ja — Umsetzungsdetails für Ihre Konfiguration prüfen"
+            },
+            {
+              "feature": "Integrationen und Automatisierung",
+              "disclosurely": "Integrationen wie Zapier in unterstützten Tarifen",
+              "competitor": "Automatisierung und Integrationen für Ihre Edition prüfen"
+            },
+            {
+              "feature": "KI-gestützte Zusammenfassung oder Triage",
+              "disclosurely": "Im Produkt in relevanten Tarifen integriert",
+              "competitor": "Prüfen, ob KI-Funktionen angeboten werden und wie sie positioniert sind"
+            }
+          ]
+        },
+        "rollout": {
+          "title": "Rollout und Support",
+          "rows": [
+            {
+              "feature": "Onboarding und Einrichtungshilfe",
+              "disclosurely": "Geführte Einrichtung, Dokumentation und Customer-Success-Ansprechpartner",
+              "competitor": "Onboarding und Services für Ihren Vertrag prüfen"
+            },
+            {
+              "feature": "Hilferessourcen",
+              "disclosurely": "Hilfe-Center und Anleitung in der Anwendung",
+              "competitor": "Supportkanäle und SLAs für Ihren Tarif prüfen"
+            },
+            {
+              "feature": "Mehrsprachige Meldung",
+              "disclosurely": "Breite Sprachabdeckung für Meldende",
+              "competitor": "Oft umfangreich — benötigte Sprachen prüfen"
+            }
+          ]
+        }
+      },
+      "why": {
+        "title": "Wo Disclosurely oft überzeugt",
+        "card1": {
+          "title": "Pragmatischer Kauf und Rollout",
+          "body": "Listenpreise und ein Testzugang helfen Teams, schnell zu evaluieren ohne schweren Beschaffungsprozess.",
+          "bullet1": "Online-Preise und Anmeldung wo sinnvoll",
+          "bullet2": "Fokussiertes Onboarding für operative Teams",
+          "bullet3": "Geeignet für Organisationen, die Tempo ohne übermäßigen Prozess wollen"
+        },
+        "card2": {
+          "title": "KI im täglichen Fallalltag",
+          "body": "Zusammenfassung und Triage sollen manuelles Lesen reduzieren — Untersucher behalten die Kontrolle.",
+          "bullet1": "KI-Unterstützung für Fallzusammenfassungen wo aktiviert",
+          "bullet2": "Workflow-Hinweise statt Black-Box-Entscheidungen",
+          "bullet3": "Ausgelegt als Ergänzung zu Richtlinien und menschlicher Prüfung"
+        },
+        "card3": {
+          "title": "Automatisierung für moderne Stacks",
+          "body": "Verbinden Sie Disclosurely mit Tools, die Sie bereits nutzen, wo Integrationen unterstützt werden.",
+          "bullet1": "Automatisierungsoptionen in unterstützten Tarifen",
+          "bullet2": "Weniger manuelle Übergaben bei Routineabläufen",
+          "bullet3": "Spielraum zum Wachsen mit Ihrem Meldeprogramm"
+        }
+      },
+      "fitCompetitor": {
+        "title": "SpeakUp kann Organisationen passen, die:",
+        "bullet1": "SpeakUps aktuelle Preis- und Beschaffungsstruktur bevorzugen",
+        "bullet2": "SpeakUp bereits über Teams oder Regionen hinweg nutzen",
+        "bullet3": "An eine bestehende SpeakUp-Beziehung oder einen Vertrag gebunden sind",
+        "bullet4": "SpeakUps aktuelles Funktions- und Serviceangebot für passend halten"
+      },
+      "migration": {
+        "title": "Der Wechsel von SpeakUp muss nicht schmerzhaft sein",
+        "subtitle": "Ein kontrollierter Umzug mit Begleitung, klaren Meilensteinen und minimaler Störung für interne Teams.",
+        "step1": {
+          "title": "Planen und exportieren",
+          "body": "Arbeiten Sie mit Ihrem SpeakUp-Administrator und dem SpeakUp-Support zusammen, um exportierbare Daten und richtlinienkonforme Vorgaben zu klären."
+        },
+        "step2": {
+          "title": "Workflows nachbilden",
+          "body": "Wir helfen, Formulare, Kategorien und Bearbeiterrollen in Disclosurely abzubilden, damit Abläufe für Ihr Team wiedererkennbar bleiben."
+        },
+        "step3": {
+          "title": "Phasenweise live gehen",
+          "body": "Wählen Sie ein Go-Live-Fenster, kommunizieren Sie den neuen Kanal und schalten Sie Meldepfade mit Unterstützung unseres Teams frei."
+        },
+        "disclaimer": "Zeitpläne hängen von Ihren Daten, internen Freigaben und der SpeakUp-Konfiguration ab — wir machen zu jedem Schritt transparent, was machbar ist."
+      },
+      "finalCta": {
+        "title": "Suchen Sie eine flexiblere Alternative zu SpeakUp?",
+        "subtitle": "Starten Sie eine kostenlose Testversion oder buchen Sie eine Demo, um zu prüfen, ob Disclosurely zu Ihrem Meldeworkflow passt."
+      }
+    },
+    "whistleblower": {
+      "competitorName": "Whistleblower Software",
+      "hero": {
+        "titleLine1": "Disclosurely vs.",
+        "titleLine2": "Whistleblower Software",
+        "subtitle": "Vergleichen Sie Preismodelle, Meldeworkflows und Plattformflexibilität, um zu sehen, welches Hinweisgebersystem zu Ihrer Organisation passt."
+      },
+      "fairnessNote": "Dieser Vergleich basiert auf öffentlich verfügbaren Informationen und der Produktpositionierung zum Zeitpunkt der Erstellung. Funktionen und Preise können sich ändern — bitte verifizieren Sie Details bei jedem Anbieter.",
+      "quickSummary": {
+        "title": "Kurzüberblick",
+        "disclosurelyTitle": "Disclosurely kann besser passen für Organisationen, die Folgendes wollen:",
+        "disclosurelyBullet1": "Einfachere Planauswahl ohne Mitarbeiterstufen-Leitern",
+        "disclosurelyBullet2": "Einen klaren Online-Testpfad, um Workflows früh zu prüfen",
+        "disclosurelyBullet3": "KI-unterstützte Fallbearbeitung in relevanten Tarifen",
+        "disclosurelyBullet4": "Moderne Automatisierung und Flexibilität beim Wachstum",
+        "competitorTitle": "Whistleblower Software kann passen für Organisationen, die Folgendes bevorzugen:",
+        "competitorBullet1": "Preisstrukturen nach Mitarbeiterzahl oder -bändern",
+        "competitorBullet2": "Eine festere, paketierte Stufenstruktur",
+        "competitorBullet3": "Vergleich von Tools mit kopfzahlbasierten Preisen",
+        "competitorBullet4": "Ein strukturiertes Beschaffungsmodell wie bei ähnlichen Anbietern"
+      },
+      "tables": {
+        "pricing": {
+          "title": "Preise und Kaufmodell",
+          "rows": [
+            {
+              "feature": "Typische Preisstruktur",
+              "disclosurely": "Veröffentlichte Stufen mit Limits auf unserer Preisseite; primär nicht als Mitarbeiter-Band-Modell verkauft",
+              "competitor": "Oft nach Mitarbeiterbereichen oder gestaffelten Paketen — auf veröffentlichten Preisen prüfen"
+            },
+            {
+              "feature": "Den passenden Plan wählen",
+              "disclosurely": "Funktionen und Limits online vergleichen",
+              "competitor": "Bänder zu Kopfzahl und Modulen zuordnen — mit deren Planbeschreibungen abgleichen"
+            },
+            {
+              "feature": "Test- oder Demoweg",
+              "disclosurely": "Kostenlose Testversion — aktuelle Bedingungen bei der Anmeldung",
+              "competitor": "Testdauer und übliche Demos für Ihr Segment prüfen"
+            },
+            {
+              "feature": "Klein starten und skalieren",
+              "disclosurely": "Upgrade-Pfade auf der Preisseite beschrieben",
+              "competitor": "Prüfen, wie Bandwechsel die Kosten bei wachsender Kopfzahl beeinflussen"
+            },
+            {
+              "feature": "Flexibilität beim Kauf",
+              "disclosurely": "Self-Service-Anmeldung und Upgrades wo sinnvoll",
+              "competitor": "Kann stärker paketierten Kauf bevorzugen — für Ihre Organisation prüfen"
+            }
+          ]
+        },
+        "reporting": {
+          "title": "Meldung und Aufnahme",
+          "rows": [
+            {
+              "feature": "Web-Meldekanal",
+              "disclosurely": "Ja",
+              "competitor": "Ja — für Ihre Edition bestätigen"
+            },
+            {
+              "feature": "Anonyme Meldung",
+              "disclosurely": "Ja",
+              "competitor": "Umsetzung der Anonymität für Ihr Setup bestätigen"
+            },
+            {
+              "feature": "Sichere Zwei-Wege-Kommunikation",
+              "disclosurely": "Ja",
+              "competitor": "Unterstützte Kanäle für Ihren Tarif bestätigen"
+            },
+            {
+              "feature": "Branding und Portal-Anpassung",
+              "disclosurely": "Ja — siehe Produktdokumentation",
+              "competitor": "Branding-Optionen für Ihr Paket bestätigen"
+            },
+            {
+              "feature": "Mehrsprachige Meldung",
+              "disclosurely": "Breite Sprachabdeckung für Meldende",
+              "competitor": "Abdeckung für Ihre benötigten Sprachen bestätigen"
+            }
+          ]
+        },
+        "caseHandling": {
+          "title": "Fallbearbeitung und Workflows",
+          "rows": [
+            {
+              "feature": "Fall-Posteingang und Workflow",
+              "disclosurely": "Ja",
+              "competitor": "Ja"
+            },
+            {
+              "feature": "Rollenbasierte Berechtigungen",
+              "disclosurely": "Ja",
+              "competitor": "Umfang für Ihren Tarif bestätigen"
+            },
+            {
+              "feature": "Workflow-Automatisierung und Integrationen",
+              "disclosurely": "Integrationen wie Zapier in unterstützten Tarifen",
+              "competitor": "Automatisierung und Integrationen für Ihre Stufe bestätigen"
+            },
+            {
+              "feature": "KI-unterstützte Analyse oder Triage",
+              "disclosurely": "In relevanten Tarifen im Produkt integriert",
+              "competitor": "Prüfen, ob KI-Funktionen angeboten werden und wie sie positioniert sind"
+            }
+          ]
+        },
+        "security": {
+          "title": "Sicherheit und Zugriffskontrolle",
+          "rows": [
+            {
+              "feature": "Verschlüsselung bei Übertragung und Speicherung",
+              "disclosurely": "Verschlüsselung im gesamten Dienst — siehe Sicherheitsdokumentation",
+              "competitor": "Deren Sicherheitsunterlagen für technische Details prüfen"
+            },
+            {
+              "feature": "Rollenbasierter Zugriff und Berechtigungen",
+              "disclosurely": "Ja",
+              "competitor": "Ja — für Ihre Edition bestätigen"
+            },
+            {
+              "feature": "Audit-Protokolle",
+              "disclosurely": "Ja — wichtige Zugriffs- und Fallereignisse für berechtigte Administratoren",
+              "competitor": "Protokollfunktionen für Ihren Tarif bestätigen"
+            },
+            {
+              "feature": "Datenschutz-Ausrichtung (z. B. DSGVO)",
+              "disclosurely": "Mit DSGVO-orientierten Kontrollen gestaltet — keine Rechtsberatung",
+              "competitor": "Deren Datenschutz- und Compliance-Dokumente für Ihre Rechtsordnung prüfen"
+            }
+          ]
+        },
+        "rollout": {
+          "title": "Rollout und Support",
+          "rows": [
+            {
+              "feature": "Onboarding und Einrichtungshilfe",
+              "disclosurely": "Geführte Einrichtung, Dokumentation und Customer-Success-Ansprechpartner",
+              "competitor": "Onboarding und Professional Services für Ihren Vertrag bestätigen"
+            },
+            {
+              "feature": "Hilferessourcen",
+              "disclosurely": "Hilfe-Center und Anleitung in der Anwendung",
+              "competitor": "Supportkanäle und Reaktionserwartungen bestätigen"
+            },
+            {
+              "feature": "Praktischer Rollout-Support",
+              "disclosurely": "Unterstützung bei Formularen, Kategorien und Bearbeiterrollen in der Einrichtung",
+              "competitor": "Bestätigen, was beim Kauf enthalten ist"
+            }
+          ]
+        }
+      },
+      "why": {
+        "title": "Warum Teams Disclosurely wählen",
+        "card1": {
+          "title": "Klarere Planauswahl",
+          "body": "Stufen und Limits online vergleichen, damit Einkauf und Compliance schnell übereinstimmen — ohne zuerst komplexe Leitern zu entschlüsseln.",
+          "bullet1": "Transparente Listenpreise wo veröffentlicht",
+          "bullet2": "Unkomplizierter Test echter Workflows",
+          "bullet3": "Weniger Reibung bei der Zuordnung Plan zu Teamgröße"
+        },
+        "card2": {
+          "title": "Moderne Automatisierung",
+          "body": "Disclosurely mit bestehenden Tools verbinden und manuelle Übergaben in unterstützten Tarifen reduzieren.",
+          "bullet1": "Integrationsoptionen wo verfügbar",
+          "bullet2": "KI-Hilfe für tägliche Fallaufgaben in relevanten Tarifen",
+          "bullet3": "Spielraum für reifere Prozesse"
+        },
+        "card3": {
+          "title": "Pragmatische Einführung",
+          "body": "Für Organisationen, die sichere Meldung wollen, ohne den ersten Rollout zu überkonstruieren.",
+          "bullet1": "Fokussiertes Onboarding für Fallbearbeiter",
+          "bullet2": "Sinnvolle Standardwerte mit Konfigurationsspielraum",
+          "bullet3": "Gute Passform für kleine und mittlere Programme"
+        }
+      },
+      "fitCompetitor": {
+        "title": "Whistleblower Software kann Organisationen passen, die:",
+        "bullet1": "Mitarbeiterbasierte Preisbänder oder kopfzahlbasierte Stufen bevorzugen",
+        "bullet2": "Eine festere Paketstruktur für interne Benchmarks wollen",
+        "bullet3": "Hinweisgeber-Anbieter bereits mit Kopfzahlmodellen vergleichen",
+        "bullet4": "Mit einem strukturierteren Beschaffungs- und Bändigungsansatz vertraut sind"
+      },
+      "migration": {
+        "title": "Ein Plattformwechsel soll Sie nicht ausbremsen",
+        "subtitle": "Pragmatische Migration mit Begleitung, gestaffeltem Rollout bei Bedarf und minimaler Störung für interne Fallbearbeiter.",
+        "step1": {
+          "title": "Umzug planen",
+          "body": "Vereinbaren Sie, was migriert, was neu aufgebaut wird und was Ihre Richtlinien vor einem Kanalwechsel verlangen."
+        },
+        "step2": {
+          "title": "Formulare und Workflows nachbilden",
+          "body": "Wir helfen, Kategorien, Formulare und Bearbeiterrollen in Disclosurely abzubilden, damit der Alltag wiedererkennbar bleibt."
+        },
+        "step3": {
+          "title": "Gestaffelt live gehen",
+          "body": "Neuen Kanal kommunizieren, Bearbeiter schulen und mit Unterstützung live gehen — Zeitplan hängt von Freigaben und Daten ab."
+        },
+        "disclaimer": "Zeitpläne variieren je nach Daten, internen Freigaben und Konfiguration Ihrer aktuellen Plattform — wir sagen pro Schritt klar, was realistisch ist."
+      },
+      "finalCta": {
+        "title": "Suchen Sie eine flexiblere Alternative zu Whistleblower Software?",
+        "subtitle": "Starten Sie eine kostenlose Testversion oder buchen Sie eine Demo, um zu prüfen, ob Disclosurely zu Ihrem Meldeworkflow passt."
+      }
+    },
+    "navex": {
+      "competitorName": "NAVEX",
+      "hero": {
+        "titleLine1": "Disclosurely vs.",
+        "titleLine2": "NAVEX",
+        "subtitle": "Vergleichen Sie Kaufmodelle, Rollout-Komplexität und Hinweisgeber-Workflows, um zu sehen, welche Plattform zu Ihrer Organisation passt."
+      },
+      "fairnessNote": "Dieser Vergleich basiert auf öffentlich verfügbaren Informationen und der Produktpositionierung zum Zeitpunkt der Erstellung. Funktionen und Preise können sich ändern — bitte verifizieren Sie Details bei jedem Anbieter.",
+      "quickSummary": {
+        "title": "Kurzüberblick",
+        "disclosurelyTitle": "Disclosurely kann besser passen für Organisationen, die Folgendes wollen:",
+        "disclosurelyBullet1": "Klarere Preiserwartungen und einen schlankeren kommerziellen Weg",
+        "disclosurelyBullet2": "Ein Beschaffungsprozess mit weniger Enterprise-Overhead",
+        "disclosurelyBullet3": "Einen schnelleren, pragmatischeren Weg zum ersten Rollout",
+        "disclosurelyBullet4": "Einen fokussierten Hinweisgeber-Workflow mit moderner Automatisierung wo sinnvoll",
+        "competitorTitle": "NAVEX kann passen für Organisationen, die:",
+        "competitorBullet1": "Bereits auf Enterprise-Governance-, Risiko- oder Compliance-Suiten standardisieren",
+        "competitorBullet2": "Eine breitere Anbieterbeziehung über mehrere Risikobereiche wollen",
+        "competitorBullet3": "Beschaffungsprozesse für große Plattform-Evaluierungen nutzen",
+        "competitorBullet4": "Ein traditionelles Enterprise-Kaufmodell für diese Kategorie bevorzugen"
+      },
+      "tables": {
+        "pricing": {
+          "title": "Kaufmodell und Beschaffung",
+          "rows": [
+            {
+              "feature": "Preissichtbarkeit und kommerzieller Weg",
+              "disclosurely": "Veröffentlichte Stufen und Limits auf unserer Preisseite, wo angeboten",
+              "competitor": "Typischerweise vertriebsgestützte Angebote für Enterprise-Programme — auf NAVEX-Materialien prüfen"
+            },
+            {
+              "feature": "Typische Kaufexperience",
+              "disclosurely": "Self-Service-Test und Online-Anmeldung wo sinnvoll",
+              "competitor": "Oft Demos, Scoping und Enterprise-Beschaffungsschritte — für Ihre Organisation bestätigen"
+            },
+            {
+              "feature": "Test- oder Demo-Zugang",
+              "disclosurely": "Kostenlose Testversion — aktuelle Bedingungen bei der Anmeldung",
+              "competitor": "Bestätigen, wie NAVEX Interessenten in Ihrem Segment anspricht"
+            },
+            {
+              "feature": "Produktfokus",
+              "disclosurely": "Fokus auf sichere Hinweisgeber-Aufnahme und Fallbearbeitung",
+              "competitor": "Teil eines breiteren Governance-, Risiko- und Compliance-Portfolios — benötigte Module prüfen"
+            },
+            {
+              "feature": "Passform für schlankere Programme",
+              "disclosurely": "Oft gewählt, wenn Teams Tempo und Klarheit ohne Voll-Suite-Rollout wollen",
+              "competitor": "Oft gewählt, wenn eine breitere Plattformbeziehung bereits vorgesehen ist — intern validieren"
+            }
+          ]
+        },
+        "reporting": {
+          "title": "Meldung und Aufnahme",
+          "rows": [
+            {
+              "feature": "Web-Meldekanal",
+              "disclosurely": "Ja",
+              "competitor": "Ja — für Ihre NAVEX-Konfiguration bestätigen"
+            },
+            {
+              "feature": "Anonyme Meldung",
+              "disclosurely": "Ja",
+              "competitor": "Umsetzungsdetails für Ihr Deployment bestätigen"
+            },
+            {
+              "feature": "Sichere Zwei-Wege-Kommunikation",
+              "disclosurely": "Ja",
+              "competitor": "Unterstützte Kanäle für Ihre Edition bestätigen"
+            },
+            {
+              "feature": "Portal-Branding und Konfiguration",
+              "disclosurely": "Ja — siehe Produktdokumentation",
+              "competitor": "Branding- und Konfigurationsoptionen für Ihren Vertrag bestätigen"
+            },
+            {
+              "feature": "Mehrsprachige Meldung",
+              "disclosurely": "Breite Sprachabdeckung für Meldende",
+              "competitor": "Sprachabdeckung für Ihre Belegschaft bestätigen"
+            }
+          ]
+        },
+        "caseHandling": {
+          "title": "Fallbearbeitung und Workflow-Administration",
+          "rows": [
+            {
+              "feature": "Fall-Posteingang und Workflow",
+              "disclosurely": "Ja",
+              "competitor": "Ja — Umfang hängt von gekauften Produkten ab"
+            },
+            {
+              "feature": "Rollenbasierte Zugriffe und Berechtigungen",
+              "disclosurely": "Ja",
+              "competitor": "Ja — für Ihre Implementierung bestätigen"
+            },
+            {
+              "feature": "Workflow-Automatisierung und Integrationen",
+              "disclosurely": "Integrationen wie Zapier in unterstützten Tarifen",
+              "competitor": "Automatisierung und Integrationen für Ihr Team bestätigen"
+            },
+            {
+              "feature": "KI-unterstützte Bearbeitung",
+              "disclosurely": "In relevanten Tarifen im Produkt integriert",
+              "competitor": "Prüfen, ob KI- oder Analytics-Funktionen für Ihren Anwendungsfall gelten"
+            }
+          ]
+        },
+        "security": {
+          "title": "Sicherheit und Zugriffskontrolle",
+          "rows": [
+            {
+              "feature": "Verschlüsselung bei Übertragung und Speicherung",
+              "disclosurely": "Verschlüsselung im gesamten Dienst — siehe Sicherheitsdokumentation",
+              "competitor": "NAVEX-Sicherheits- und Trust-Materialien für technische Details prüfen"
+            },
+            {
+              "feature": "Zugriffskontrollen für Falldaten",
+              "disclosurely": "Ja — rollenbasierte Berechtigungen für Bearbeiter",
+              "competitor": "Ja — Kontrollen für Ihr Deployment-Modell bestätigen"
+            },
+            {
+              "feature": "Audit-Protokolle",
+              "disclosurely": "Ja — wichtige Zugriffs- und Fallereignisse für berechtigte Administratoren",
+              "competitor": "Protokollierung und Aufbewahrung für Ihre Edition bestätigen"
+            },
+            {
+              "feature": "Datenschutz-Ausrichtung (z. B. DSGVO)",
+              "disclosurely": "Mit DSGVO-orientierten Kontrollen gestaltet — keine Rechtsberatung",
+              "competitor": "NAVEX-Dokumente zu Datenschutz und Compliance für Ihre Rechtsordnung prüfen"
+            }
+          ]
+        },
+        "rollout": {
+          "title": "Rollout und Support",
+          "rows": [
+            {
+              "feature": "Onboarding und Implementierungsunterstützung",
+              "disclosurely": "Geführte Einrichtung, Dokumentation und Customer-Success-Ansprechpartner",
+              "competitor": "Oft Professional Services für Enterprise-Rollouts — bestätigen, was Sie kaufen"
+            },
+            {
+              "feature": "Zeit bis zum ersten pragmatischen Rollout",
+              "disclosurely": "Ausgelegt für Organisationen, die ohne schweres Programm live gehen wollen",
+              "competitor": "Hängt von Umfang, Integrationen und Governance ab — mit Ihrem NAVEX-Team planen"
+            },
+            {
+              "feature": "Hilferessourcen",
+              "disclosurely": "Hilfe-Center und Anleitung in der Anwendung",
+              "competitor": "Supportkanäle und SLAs in Ihrer Vereinbarung bestätigen"
+            }
+          ]
+        }
+      },
+      "why": {
+        "title": "Warum Teams Disclosurely wählen",
+        "card1": {
+          "title": "Schlankerer Weg zum Livegang",
+          "body": "Wenn ein funktionierender Meldekanal schnell Priorität hat, kann ein fokussiertes Produkt den Koordinationsaufwand gegenüber einem breiten Suite-Rollout reduzieren.",
+          "bullet1": "Klare Schritte vom Test bis zum produktiven Einsatz",
+          "bullet2": "Weniger Abhängigkeit von einem großen programmübergreifenden Vorhaben",
+          "bullet3": "Pragmatische Defaults für kleine und mittlere Teams"
+        },
+        "card2": {
+          "title": "Transparenter kommerzieller Weg",
+          "body": "Listenpreise und ein Test helfen Finance- und Compliance-Stakeholdern, sich vor tiefen Beschaffungszyklen abzustimmen.",
+          "bullet1": "Online-Preise wo veröffentlicht",
+          "bullet2": "Unkomplizierter Test zur Validierung der Workflows",
+          "bullet3": "Weniger Überraschungen bei der Planwahl zur Kopfzahl"
+        },
+        "card3": {
+          "title": "Fokussierter Workflow mit moderner Automatisierung",
+          "body": "Disclosurely konzentriert sich auf sichere Meldung und Fallbearbeitung — mit Automatisierung, wo sie den Alltag entlastet.",
+          "bullet1": "Integrationsoptionen in unterstützten Tarifen",
+          "bullet2": "KI-Unterstützung für routinemäßige Fallaufgaben wenn aktiviert",
+          "bullet3": "Wachstumsspielraum ohne frühe Suite-Komplexität"
+        }
+      },
+      "fitCompetitor": {
+        "title": "NAVEX kann Organisationen passen, die:",
+        "bullet1": "Bereits in Enterprise-GRC- oder Ethics-&-Compliance-Plattformen von NAVEX oder Partnern investieren",
+        "bullet2": "Eine Anbieterbeziehung über mehrere Risiko- und Compliance-Workflows wollen",
+        "bullet3": "Beschaffung für große Evaluierungen, Leistungsbeschreibungen und gestaffelte Rollouts betreiben",
+        "bullet4": "Einen traditionellen Enterprise-Vertragsweg für diese Kategorie erwarten"
+      },
+      "migration": {
+        "title": "Der Wechsel zu einer fokussierten Hinweisgeber-Plattform kann einfacher sein als gedacht",
+        "subtitle": "Geführtes Onboarding, Hilfe beim Neuaufbau von Formularen und Meldeweisen sowie gestaffelte Umsetzung bei Bedarf — ohne unnötigen Overhead.",
+        "step1": {
+          "title": "Umfang definieren",
+          "body": "Vereinbaren Sie, welche Kanäle, Formulare und Daten Sie umziehen und welche internen Freigaben vor dem Go-Live nötig sind."
+        },
+        "step2": {
+          "title": "Flows in Disclosurely aufbauen",
+          "body": "Wir helfen, Kategorien, Formulare und Bearbeiterrollen abzubilden, damit interne Teams ihren Prozess wiedererkennen."
+        },
+        "step3": {
+          "title": "Mit Support live gehen",
+          "body": "Bearbeiter schulen, Kanal kommunizieren und Meldewege mit unserem Team gemeinsam öffnen."
+        },
+        "disclaimer": "Zeitpläne hängen von Daten, Richtlinien und Ihrer aktuellen Umgebung ab — wir sagen pro Schritt klar, was machbar ist."
+      },
+      "finalCta": {
+        "title": "Suchen Sie eine leichtere Alternative zu NAVEX?",
+        "subtitle": "Starten Sie eine kostenlose Testversion oder buchen Sie eine Demo, um zu prüfen, ob Disclosurely zu Ihrer Organisation passt."
+      }
     }
   }
 }

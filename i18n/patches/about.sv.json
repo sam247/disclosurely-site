@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Om Disclosurely",
+    "description": "Varför Disclosurely finns: säker visselblåsarprogramvara som ska vara enklare att lansera, hantera och lita på — utan onödig komplexitet."
+  },
+  "hero": {
+    "tag": "Om Disclosurely",
+    "title": "Byggt för att göra visselblåsning enklare, säkrare och mer tillförlitlig",
+    "description": "Disclosurely skapades för att hjälpa organisationer att lansera säkra rapporteringskanaler som människor faktiskt kan lita på — utan onödig komplexitet, föråldrade arbetsflöden eller tung implementationsbörda."
+  },
+  "mission": {
+    "title": "Varför vi finns",
+    "p1": "Människor använder bara rapporteringskanaler som upplevs som säkra och seriösa. Organisationer behöver verktyg som gör det tydligt att ta emot, prioritera och hantera ärenden på rätt sätt.",
+    "p2": "För många visselblåsarsystem känns föråldrade, överkomplicerade eller jobbiga att rulla ut. Den friktionen hindrar det alla vill: att problem synas tidigt och hanteras rättvist.",
+    "p3": "Disclosurely är tänkt att göra säker rapportering enklare att lansera och enklare för interna team att hantera — med integritetsmedvetna, praktiska arbetsflöden, inte tomma budskap."
+  },
+  "beliefs": {
+    "title": "Vad bra visselblåsarprogramvara bör göra enligt oss",
+    "items": [
+      "Skydda identiteter och känslig information i designen, med kontroller som passar verkliga utredningar.",
+      "Göra det lättare för organisationer att hantera rapporter korrekt — tydlig intagning, strukturerad uppföljning, ansvarsfull åtkomst.",
+      "Stödja förtroende genom säker kommunikation och vettiga processer, inte genom vaga löften.",
+      "Minska friktion för compliance, HR och ägarrollerna som lever med verktyget varje vecka.",
+      "Hjälpa organisationer att möta regulatoriska förväntningar där de gäller — utan att belasta mindre team i onödan.",
+      "Förbättras över tid: vi levererar iterativt och lyssnar på hur team använder plattformen i praktiken."
+    ]
+  },
+  "audience": {
+    "title": "Vem Disclosurely är byggt för",
+    "items": [
+      "Compliance- och riskteam med ansvar för speak-up-program",
+      "HR och interna rapporteringsägare som samordnar ärendehantering",
+      "Organisationer som rullar ut eller förnyar EU- eller UK-visselblåsarkanaler",
+      "Team som vill ha modern, säker rapportering utan ett tungt enterprise-program",
+      "Köpare som värdesätter tydlighet kring säkerhet och data — se vår Security-sida"
+    ]
+  },
+  "trust": {
+    "title": "Hur vi närmar oss förtroende och säker rapportering",
+    "intro": "Vi fokuserar på kontroller du kan förstå och driftpraxis du kan lita på. Helhetsbilden — kryptering, åtkomst, backuper, loggning och dataskydd — finns på vår säkerhetssida.",
+    "items": [
+      "Stark kryptering för data i transit och i vila (AES-256-GCM), i linje med hur vi beskriver den live tjänsten.",
+      "Åtkomstkontrollerad ärendehantering: endast behöriga personer i er organisation ser rapporter enligt roller och behörigheter ni sätter.",
+      "Integritetsmedveten design som stödjer GDPR-anpassad hantering av känsliga personuppgifter.",
+      "Revisionsspårning av nyckelåtkomst- och ärendehändelser för ansvarsskyldighet.",
+      "Drift på ansedd molninfrastruktur med övervakning och krypterade backuper."
+    ],
+    "securityCta": "Läs sidan Säkerhet och förtroende"
+  },
+  "cta": {
+    "title": "Vill du se hur Disclosurely fungerar?",
+    "subtitle": "Utforska plattformen, granska priser eller boka en demo för att se om det passar er organisation.",
+    "pricing": "Se priser",
+    "demo": "Boka demo"
+  },
+  "explore": {
+    "title": "Utforska mer",
+    "subtitle": "Praktiska nästa steg om ni utvärderar visselblåsarprogramvara.",
+    "featuresTitle": "Plattformsfunktioner",
+    "featuresBody": "Rapporteringskanaler, ärendehantering, automatisering och vardagen för team i Disclosurely.",
+    "pricingTitle": "Priser",
+    "pricingBody": "Transparenta nivåer där de publiceras — se vad som ingår innan ni pratar med sälj.",
+    "directiveTitle": "EU:s visselblåsardirektiv",
+    "directiveBody": "Kontext om krav och hur organisationer ofta strukturerar interna kanaler."
+  }
+}

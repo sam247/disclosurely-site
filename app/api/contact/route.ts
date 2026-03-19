@@ -3,7 +3,25 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, company, message, recaptchaToken } = body;
+    const { name, email, company, message, recaptchaToken, enquiryType, organisationSize } = body;
+
+    const allowedEnquiryTypes = ['demo', 'pricing', 'compliance', 'rollout', 'enterprise', 'general'] as const;
+    const enquiry =
+      typeof enquiryType === 'string' && allowedEnquiryTypes.includes(enquiryType as (typeof allowedEnquiryTypes)[number])
+        ? enquiryType
+        : null;
+    if (!enquiry) {
+      return NextResponse.json(
+        { error: 'Please select what you need help with' },
+        { status: 400 }
+      );
+    }
+
+    const allowedOrgSizes = ['', '1-50', '51-250', '251-1000', '1000+'] as const;
+    const orgSize =
+      typeof organisationSize === 'string' && allowedOrgSizes.includes(organisationSize as (typeof allowedOrgSizes)[number])
+        ? organisationSize
+        : '';
 
     // Verify reCAPTCHA if token is provided
     if (recaptchaToken) {
@@ -76,7 +94,7 @@ This email was sent from the Disclosurely contact form.
         to: ['sales@disclosurely.com'],
         cc: ['sam@disclosurely.com'],
         reply_to: email,
-        subject: `New Contact Form Submission from ${name}${company ? ` at ${company}` : ''}`,
+        subject: `[${enquiry}] Contact from ${name}${company ? ` at ${company}` : ''}`,
         text: emailBody,
       }),
     });

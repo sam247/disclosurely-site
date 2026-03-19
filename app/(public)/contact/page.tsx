@@ -5,10 +5,15 @@ import ContactContent from "./ContactContent";
 export async function generateMetadata(): Promise<Metadata> {
   return generatePageMetadata({
     pagePath: "/contact",
-    fallbackTitle: "Contact Disclosurely",
+    fallbackTitle: "Contact Disclosurely — book a demo or ask a question",
     fallbackDescription:
-      "Contact Disclosurely for demos, pricing, and support. Secure whistleblowing and compliance solutions for your organisation.",
-    keywords: ["contact disclosurely", "whistleblowing support", "compliance consultation"],
+      "Talk to Disclosurely about secure whistleblowing: demos, pricing, EU and UK requirements, and rollout support for your organisation.",
+    keywords: [
+      "contact disclosurely",
+      "whistleblowing demo",
+      "whistleblowing software UK",
+      "EU whistleblowing directive",
+    ],
   });
 }
 

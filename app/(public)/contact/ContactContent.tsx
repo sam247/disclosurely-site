@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useCallback } from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import Script from "next/script";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -13,8 +13,18 @@ import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
 import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
 import { supportedLanguages } from "@/i18n/client";
 import { trackEvent } from "@/lib/events/trackEvent";
+import { cn } from "@/lib/utils";
 
 type Lang = (typeof supportedLanguages)[number];
+
+const ENQUIRY_TYPES = ["demo", "pricing", "compliance", "rollout", "enterprise", "general"] as const;
+const ORG_SIZE_OPTIONS = [
+  { value: "", labelKey: null as null | "1_50" | "51_250" | "251_1000" | "1000_plus" },
+  { value: "1-50", labelKey: "1_50" as const },
+  { value: "51-250", labelKey: "51_250" as const },
+  { value: "251-1000", labelKey: "251_1000" as const },
+  { value: "1000+", labelKey: "1000_plus" as const },
+] as const;
 
 declare global {
   interface Window {
@@ -25,17 +35,21 @@ declare global {
   }
 }
 
+const initialForm = {
+  name: "",
+  email: "",
+  company: "",
+  enquiryType: "" as string,
+  organisationSize: "" as string,
+  message: "",
+};
+
 function ContactContent() {
   const { t, i18n } = useTranslation();
   const { currentLanguage } = useLanguageFromUrl();
   useGeographicalLanguage();
-  
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    message: "",
-  });
+
+  const [formData, setFormData] = useState(initialForm);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -69,6 +83,14 @@ function ContactContent() {
     }
   }, [recaptchaLoaded]);
 
+  const helpKeys = ["walkthrough", "pricing", "compliance", "rollout", "enterpriseSetups"] as const;
+
+  const selectClass = cn(
+    "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background",
+    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+    "disabled:cursor-not-allowed disabled:opacity-50"
+  );
+
   return (
     <I18nProvider>
       {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && (
@@ -96,61 +118,31 @@ function ContactContent() {
         </section>
 
         <section className="px-4 pb-20 sm:px-6 lg:px-8">
-          <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2">
+          <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 md:items-start">
             <div className="space-y-6">
               <div>
-                <h2 className="mb-4 text-2xl font-bold text-gray-900">{t("contact.info.title")}</h2>
-                <p className="text-lg text-gray-600">{t("contact.info.description")}</p>
+                <h2 className="mb-3 text-2xl font-bold text-gray-900">{t("contact.help.title")}</h2>
+                <p className="text-base text-gray-600">{t("contact.help.intro")}</p>
               </div>
 
-              <div className="space-y-5">
-                <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
-                    <Mail className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="mb-2 text-lg font-semibold text-gray-900">{t("contact.info.email.title")}</h3>
-                    <p className="text-base text-gray-600">
-                      Use the contact form, we aim to respond within 24 hours.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
-                    <Phone className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="mb-2 text-lg font-semibold text-gray-900">{t("contact.info.phone.title")}</h3>
-                    <p className="mb-1 text-base text-gray-600">{t("contact.info.phone.hours")}</p>
-                    <p className="text-base text-gray-600">+44 (0)20 1234 5678</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
-                    <MapPin className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="mb-2 text-lg font-semibold text-gray-900">{t("contact.info.address.title")}</h3>
-                    <p className="text-base text-gray-600">
-                      {t("contact.info.address.line1")}
-                      <br />
-                      {t("contact.info.address.line2")}
-                      <br />
-                      {t("contact.info.address.line3")}
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <ul className="space-y-4">
+                {helpKeys.map((key) => (
+                  <li key={key} className="flex gap-3">
+                    <span className="mt-0.5 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600" aria-hidden />
+                    </span>
+                    <p className="pt-1 text-base text-gray-700">{t(`contact.help.items.${key}`)}</p>
+                  </li>
+                ))}
+              </ul>
 
               <div className="rounded-lg bg-blue-50 p-6">
-                <h3 className="mb-2 text-lg font-semibold text-gray-900">{t("contact.info.enterprise.title")}</h3>
-                <p className="text-gray-600 text-sm">{t("contact.info.enterprise.description")}</p>
+                <h3 className="mb-2 text-lg font-semibold text-gray-900">{t("contact.enterpriseCard.title")}</h3>
+                <p className="text-sm text-gray-600">{t("contact.enterpriseCard.description")}</p>
               </div>
             </div>
 
-            <Card>
+            <Card className="shadow-sm">
               <CardHeader>
                 <CardTitle>{t("contact.form.title")}</CardTitle>
                 <CardDescription>{t("contact.form.description")}</CardDescription>
@@ -158,9 +150,7 @@ function ContactContent() {
               <CardContent>
                 {submitStatus === "success" ? (
                   <div className="rounded-lg bg-green-50 p-4 text-center">
-                    <p className="text-green-800 font-semibold">
-                      {t("contact.form.success") || "Thank you! Your message has been sent. We'll get back to you within 24 hours."}
-                    </p>
+                    <p className="font-semibold text-green-800">{t("contact.form.success")}</p>
                   </div>
                 ) : (
                   <form
@@ -172,9 +162,8 @@ function ContactContent() {
                       setErrorMessage("");
 
                       try {
-                        // Execute reCAPTCHA
                         const recaptchaToken = await executeRecaptcha();
-                        
+
                         const response = await fetch("/api/contact", {
                           method: "POST",
                           headers: {
@@ -193,20 +182,42 @@ function ContactContent() {
                         }
 
                         setSubmitStatus("success");
-                        setFormData({ name: "", email: "", company: "", message: "" });
-                        trackEvent("demo_booked", { location: "contact_page" });
+                        setFormData({ ...initialForm });
+                        trackEvent("demo_booked", {
+                          location: "contact_page",
+                          enquiry_type: formData.enquiryType || undefined,
+                        });
                       } catch (error) {
                         setSubmitStatus("error");
                         setErrorMessage(
-                          error instanceof Error
-                            ? error.message
-                            : "Failed to send message. Please try again."
+                          error instanceof Error ? error.message : "Failed to send message. Please try again."
                         );
                       } finally {
                         setIsSubmitting(false);
                       }
                     }}
                   >
+                    <div>
+                      <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="enquiryType">
+                        {t("contact.form.enquiryType.label")}
+                      </label>
+                      <select
+                        id="enquiryType"
+                        name="enquiryType"
+                        className={selectClass}
+                        value={formData.enquiryType}
+                        onChange={(e) => setFormData({ ...formData, enquiryType: e.target.value })}
+                        required
+                        disabled={isSubmitting}
+                      >
+                        <option value="">{t("contact.form.enquiryType.placeholder")}</option>
+                        {ENQUIRY_TYPES.map((value) => (
+                          <option key={value} value={value}>
+                            {t(`contact.form.enquiryType.options.${value}`)}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
                     <div>
                       <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="name">
                         {t("contact.form.name.label")}
@@ -219,6 +230,7 @@ function ContactContent() {
                         placeholder={t("contact.form.name.placeholder")}
                         required
                         disabled={isSubmitting}
+                        autoComplete="name"
                       />
                     </div>
                     <div>
@@ -234,6 +246,7 @@ function ContactContent() {
                         placeholder={t("contact.form.email.placeholder")}
                         required
                         disabled={isSubmitting}
+                        autoComplete="email"
                       />
                     </div>
                     <div>
@@ -247,7 +260,27 @@ function ContactContent() {
                         onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                         placeholder={t("contact.form.company.placeholder")}
                         disabled={isSubmitting}
+                        autoComplete="organization"
                       />
+                    </div>
+                    <div>
+                      <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="organisationSize">
+                        {t("contact.form.organisationSize.label")}
+                      </label>
+                      <select
+                        id="organisationSize"
+                        name="organisationSize"
+                        className={selectClass}
+                        value={formData.organisationSize}
+                        onChange={(e) => setFormData({ ...formData, organisationSize: e.target.value })}
+                        disabled={isSubmitting}
+                      >
+                        {ORG_SIZE_OPTIONS.map(({ value, labelKey: lk }) => (
+                          <option key={value || "unspecified"} value={value}>
+                            {lk ? t(`contact.form.organisationSize.options.${lk}`) : t("contact.form.organisationSize.placeholder")}
+                          </option>
+                        ))}
+                      </select>
                     </div>
                     <div>
                       <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="message">
@@ -264,6 +297,22 @@ function ContactContent() {
                         disabled={isSubmitting}
                       />
                     </div>
+
+                    <ul className="flex flex-col gap-2 rounded-lg border border-blue-100 bg-blue-50/60 px-4 py-3 text-sm text-gray-700 sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-2">
+                      <li className="flex min-w-0 flex-1 items-start gap-2 sm:min-w-[12rem]">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-600" aria-hidden />
+                        <span className="leading-snug">{t("contact.form.reassurance.response")}</span>
+                      </li>
+                      <li className="flex min-w-0 flex-1 items-start gap-2 sm:min-w-[12rem]">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-600" aria-hidden />
+                        <span className="leading-snug">{t("contact.form.reassurance.noPressure")}</span>
+                      </li>
+                      <li className="flex min-w-0 flex-1 items-start gap-2 sm:min-w-[12rem]">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-600" aria-hidden />
+                        <span className="leading-snug">{t("contact.form.reassurance.tailored")}</span>
+                      </li>
+                    </ul>
+
                     {submitStatus === "error" && errorMessage && (
                       <div className="rounded-lg bg-red-50 p-3">
                         <p className="text-sm text-red-800">{errorMessage}</p>
@@ -272,11 +321,9 @@ function ContactContent() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+                      className="w-full rounded-lg bg-blue-600 px-4 py-2.5 text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
                     >
-                      {isSubmitting
-                        ? t("contact.form.submitting") || "Sending..."
-                        : t("contact.form.submit")}
+                      {isSubmitting ? t("contact.form.submitting") : t("contact.form.submit")}
                     </button>
                   </form>
                 )}
@@ -290,4 +337,3 @@ function ContactContent() {
 }
 
 export default ContactContent;
-

@@ -1,0 +1,206 @@
+{
+  "competitorName": "NAVEX",
+  "hero": {
+    "titleLine1": "Disclosurely vs",
+    "titleLine2": "NAVEX",
+    "subtitle": "Sammenlign købsmodeller, udrulningskompleksitet og whistleblower-workflows for at se, hvilken platform der passer til jeres organisation."
+  },
+  "fairnessNote": "Sammenligningen bygger på offentligt tilgængelig information og produktpositionering på tidspunktet for teksten. Funktioner og priser kan ændres — bekræft detaljer hos hver leverandør.",
+  "quickSummary": {
+    "title": "Hurtig orientering",
+    "disclosurelyTitle": "Disclosurely kan passe bedre til organisationer, der ønsker:",
+    "disclosurelyBullet1": "Klarere prisforventninger og en lettere kommerciel vej",
+    "disclosurelyBullet2": "En købsproces med mindre enterprise-indkøbsoverhead",
+    "disclosurelyBullet3": "En hurtigere, mere praktisk vej til første udrulning",
+    "disclosurelyBullet4": "Et fokuseret whistleblower-workflow med moderne automatisering hvor det er relevant",
+    "competitorTitle": "NAVEX kan passe til organisationer, der:",
+    "competitorBullet1": "Allerede standardiserer på enterprise governance-, risiko- eller compliance-suiter",
+    "competitorBullet2": "Ønsker et bredere leverandørforhold på tværs af flere risikoområder",
+    "competitorBullet3": "Har indkøbsprocesser egnet til store platformsevalueringer",
+    "competitorBullet4": "Foretrækker en traditionel enterprise-købsmodel for denne kategori"
+  },
+  "tables": {
+    "pricing": {
+      "title": "Købsmodel og indkøb",
+      "rows": [
+        {
+          "feature": "Pristransparens og kommerciel vej",
+          "disclosurely": "Publicerede niveauer og grænser på vores prisside hvor det tilbydes",
+          "competitor": "Typisk salgsdrevne tilbud til enterprise-programmer — bekræft på NAVEX-materiale"
+        },
+        {
+          "feature": "Typisk købsoplevelse",
+          "disclosurely": "Selvbetjent prøve og online tilmelding hvor det er passende",
+          "competitor": "Ofte demoer, scope og enterprise-indkøbstrin — bekræft for jeres organisation"
+        },
+        {
+          "feature": "Adgang til prøve eller demo",
+          "disclosurely": "Gratis prøve tilgængelig — se aktuelle vilkår ved tilmelding",
+          "competitor": "Bekræft hvordan NAVEX møder prospekter i jeres segment"
+        },
+        {
+          "feature": "Produktfokus",
+          "disclosurely": "Fokuseret på sikker indtagelse og sagsbehandling for whistleblowing",
+          "competitor": "Del af et bredere GRC-portefølje — bekræft moduler I har brug for"
+        },
+        {
+          "feature": "Passform for slankere programmer",
+          "disclosurely": "Ofte valgt når teams vil have fart uden fuld suite-udrulning",
+          "competitor": "Ofte valgt når bredere platformrelation allerede er i scope — valider internt"
+        }
+      ]
+    },
+    "reporting": {
+      "title": "Rapportering og indtagelse",
+      "rows": [
+        {
+          "feature": "Webbaseret rapporteringskanal",
+          "disclosurely": "Ja",
+          "competitor": "Ja — bekræft for jeres NAVEX-konfiguration"
+        },
+        {
+          "feature": "Anonym rapportering",
+          "disclosurely": "Ja",
+          "competitor": "Bekræft implementeringsdetalje for jeres udrulning"
+        },
+        {
+          "feature": "Sikker tovejskommunikation",
+          "disclosurely": "Ja",
+          "competitor": "Bekræft understøttede kanaler for jeres edition"
+        },
+        {
+          "feature": "Portalbranding og konfiguration",
+          "disclosurely": "Ja — se produktdokumentation",
+          "competitor": "Bekræft branding- og konfigurationsmuligheder i jeres kontrakt"
+        },
+        {
+          "feature": "Flersproget rapportering",
+          "disclosurely": "Bred sprogdækning for rapportører",
+          "competitor": "Bekræft sprogdækning for jeres medarbejdere"
+        }
+      ]
+    },
+    "caseHandling": {
+      "title": "Sagsbehandling og workflow-administration",
+      "rows": [
+        {
+          "feature": "Indbakke og workflow",
+          "disclosurely": "Ja",
+          "competitor": "Ja — omfang afhænger af købte produkter"
+        },
+        {
+          "feature": "Rollebaseret adgang og tilladelser",
+          "disclosurely": "Ja",
+          "competitor": "Ja — bekræft for jeres implementering"
+        },
+        {
+          "feature": "Workflow-automatisering og integrationer",
+          "disclosurely": "Integrationer som Zapier på understøttede planer",
+          "competitor": "Bekræft automatisering og integrationer tilgængelige for jeres team"
+        },
+        {
+          "feature": "AI-assisteret håndtering",
+          "disclosurely": "Indbygget i produktet på relevante planer",
+          "competitor": "Bekræft om AI- eller avancerede analysefunktioner gælder jeres use case"
+        }
+      ]
+    },
+    "security": {
+      "title": "Sikkerhed og adgangskontrol",
+      "rows": [
+        {
+          "feature": "Kryptering under overførsel og i hvile",
+          "disclosurely": "Kryptering i tjenesten — se sikkerhedsdokumentation",
+          "competitor": "Se NAVEX sikkerheds- og tillidsmateriale for teknisk detalje"
+        },
+        {
+          "feature": "Adgangskontroller til sagsdata",
+          "disclosurely": "Ja — rollebaserede tilladelser for sagsbehandlere",
+          "competitor": "Ja — bekræft kontroller for jeres udrulningsmodel"
+        },
+        {
+          "feature": "Revisionslogning",
+          "disclosurely": "Ja — centrale adgangs- og sagshændelser for autoriserede administratorer",
+          "competitor": "Bekræft logning og opbevaring for jeres edition"
+        },
+        {
+          "feature": "Datasikkerhedsjustering (f.eks. GDPR)",
+          "disclosurely": "Designet med GDPR-orienterede kontroller — ikke juridisk rådgivning",
+          "competitor": "Se NAVEX privatlivs- og compliance-dokumentation for jeres jurisdiktion"
+        }
+      ]
+    },
+    "rollout": {
+      "title": "Udrulning og support",
+      "rows": [
+        {
+          "feature": "Onboarding og implementeringssupport",
+          "disclosurely": "Guidet opsætning, dokumentation og customer success-kontaktpunkter",
+          "competitor": "Ofte professionelle services til enterprise-udrulninger — bekræft hvad I køber"
+        },
+        {
+          "feature": "Tid til første praktiske udrulning",
+          "disclosurely": "Designet til organisationer der vil gå live uden tungt program",
+          "competitor": "Afhænger af scope, integrationer og governance — planlæg med jeres NAVEX-team"
+        },
+        {
+          "feature": "Hjælperessourcer",
+          "disclosurely": "Hjælpecenter og vejledning i produktet",
+          "competitor": "Bekræft supportkanaler og SLA i jeres aftale"
+        }
+      ]
+    }
+  },
+  "why": {
+    "title": "Hvorfor teams vælger Disclosurely",
+    "card1": {
+      "title": "Lettere vej til lancering",
+      "body": "Når prioriteten er en fungerende rapporteringskanal snart, kan et fokuseret produkt reducere koordinering sammenlignet med bred suite-udrulning.",
+      "bullet1": "Klare trin fra prøve til produktionsbrug",
+      "bullet2": "Mindre afhængighed af stort tværfunktionelt program",
+      "bullet3": "Praktiske standarder for små og mellemstore teams"
+    },
+    "card2": {
+      "title": "Mere transparent kommerciel rejse",
+      "body": "Listepriser og prøve hjælper økonomi og compliance med at linje op før lange indkøbscyklusser.",
+      "bullet1": "Onlinepriser hvor publiceret",
+      "bullet2": "Enkel prøve til at validere reelle workflows",
+      "bullet3": "Færre overraskelser når plan matches til medarbejderantal"
+    },
+    "card3": {
+      "title": "Fokuseret workflow med moderne automatisering",
+      "body": "Disclosurely koncentrerer sig om sikker rapportering og sagsbehandling med automatisering hvor det hjælper hverdagen.",
+      "bullet1": "Integrationsmuligheder på understøttede planer",
+      "bullet2": "AI-hjælp til rutinesagsopgaver når aktiveret",
+      "bullet3": "Rum til vækst uden tidligt at påtvinge suite-kompleksitet"
+    }
+  },
+  "fitCompetitor": {
+    "title": "NAVEX kan passe til organisationer, der:",
+    "bullet1": "Allerede investerer i enterprise-GRC- eller etik- og compliance-platforme fra NAVEX eller partnere",
+    "bullet2": "Ønsker ét leverandørforhold på tværs af flere risiko- og compliance-workflows",
+    "bullet3": "Gennemfører indkøb egnet til store evalueringer, arbejdsbeskrivelser og faseopdelte udrulninger",
+    "bullet4": "Forventer en klassisk enterprise-kontraktsti for denne kategori"
+  },
+  "migration": {
+    "title": "At skifte til en fokuseret whistleblower-platform kan være enklere end forventet",
+    "subtitle": "Guidet onboarding, hjælp til at genopbygge formularer og rapporteringsflows, og trinvis implementering hvor nødvendigt — uden unødvendig overhead.",
+    "step1": {
+      "title": "Definer scope",
+      "body": "Aftal hvilke kanaler, formularer og data der flyttes, og hvilke interne godkendelser der kræves før go-live."
+    },
+    "step2": {
+      "title": "Genopbyg flows i Disclosurely",
+      "body": "Vi hjælper med at kortlægge kategorier, formularer og sagsbehandlerroller, så processen føles genkendelig."
+    },
+    "step3": {
+      "title": "Lancér med support",
+      "body": "Træn sagsbehandlere, kommuniker kanalen og åbn rapporteringsveje med vores team ved siden af."
+    },
+    "disclaimer": "Tidsplaner varierer med jeres data, politikker og nuværende miljø — vi gør eksplicit hvad der er realistisk i hvert trin."
+  },
+  "finalCta": {
+    "title": "Leder I efter et lettere alternativ til NAVEX?",
+    "subtitle": "Start en gratis prøveperiode eller book en demo for at se om Disclosurely passer til jeres organisation."
+  }
+}

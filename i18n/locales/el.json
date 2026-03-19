@@ -406,6 +406,124 @@
       "subtitle": "Ενταχθείτε στην ασφαλή πλατφόρμα αποκαλύψεων"
     }
   },
+  "securityPage": {
+    "hero": {
+      "title": "Ασφάλεια και εμπιστοσύνη",
+      "subtitle": "Το Disclosurely σχεδιάστηκε για να προστατεύει ευαίσθητες αναφορές με ισχυρή κρυπτογράφηση, ελεγχόμενη πρόσβαση, ασφαλή αντίγραφα ασφαλείας και διαχείριση υποθέσεων με σεβασμό στην ιδιωτικότητα."
+    },
+    "highlights": {
+      "card1Title": "Κρυπτογράφηση AES-256-GCM",
+      "card1Body": "Το AES-256-GCM προστατεύει όλα τα δεδομένα κατά τη μετάδοση και σε ηρεμία.",
+      "card2Title": "Διαχείριση υποθέσεων με ελεγχόμενη πρόσβαση",
+      "card2Body": "Μόνο εξουσιοδοτημένοι χειριστές στον οργανισμό σας μπορούν να δουν υποβληθείσες αναφορές, σύμφωνα με ρόλο και δικαιώματα.",
+      "card3Title": "Σχεδιασμός με επίγνωση GDPR",
+      "card3Body": "Σχεδιασμένο για να υποστηρίζει τις υποχρεώσεις GDPR κατά την επεξεργασία ευαίσθητων προσωπικών δεδομένων."
+    },
+    "features": {
+      "title": "Ολοκληρωμένες λειτουργίες ασφαλείας",
+      "subtitle": "Ασφάλεια για την προστασία ευαίσθητων αναφορών whistleblowing και όσων τις υποβάλλουν.",
+      "item1Title": "Κρυπτογράφηση AES-256-GCM",
+      "item1Description": "Το AES-256-GCM εφαρμόζεται σε δεδομένα σε ηρεμία και κατά τη μετάδοση.",
+      "item2Title": "Κρυπτογραφημένοι έλεγχοι πρόσβασης",
+      "item2Description": "Μόνο εξουσιοδοτημένοι χρήστες με τα σωστά δικαιώματα μπορούν να δουν αναφορές.",
+      "item3Title": "Ασφαλής μετάδοση και χειρισμός",
+      "item3Description": "Οι αναφορές κρυπτογραφούνται κατά τη μετάδοση και διαχειρίζονται στο ελεγχόμενο περιβάλλον λογαριασμού του οργανισμού σας.",
+      "item4Title": "Πολυπαραγοντική ταυτοποίηση",
+      "item4Description": "Διαθέσιμο MFA για λογαριασμούς διαχειριστών για μείωση μη εξουσιοδοτημένης πρόσβασης.",
+      "item5Title": "Έλεγχος πρόσβασης βάσει ρόλων",
+      "item5Description": "Λεπτομερή δικαιώματα περιορίζουν την πρόσβαση σε υποθέσεις· καταγράφονται γεγονότα πρόσβασης.",
+      "item6Title": "Ασφαλής υποδομή cloud",
+      "item6Description": "Φιλοξενείται σε αναγνωρισμένη υποδομή cloud με παρακολούθηση και κρυπτογραφημένα αντίγραφα.",
+      "item7Title": "Κρυπτογραφημένα αντίγραφα ασφαλείας",
+      "item7Description": "Αυτοματοποιημένα κρυπτογραφημένα αντίγραφα σε πολλές περιοχές. Διαδικασίες ανάκτησης δοκιμάζονται περιοδικά.",
+      "item8Title": "Αρχεία ελέγχου",
+      "item8Description": "Καταγράφουν βασικά γεγονότα υπόθεσης και πρόσβασης και υποστηρίζουν τον εντοπισμό μη εξουσιοδοτημένων αλλαγών.",
+      "item9Title": "GDPR και περιφερειακός χειρισμός",
+      "item9Description": "Σχεδιασμένο για υποστήριξη GDPR. Περιφερειακές επιλογές όπου η πλατφόρμα τις υποστηρίζει."
+    },
+    "commitments": {
+      "title": "Δεσμεύσεις ασφαλείας",
+      "subtitle": "Τρέχοντα μέτρα και χάρτης πιστοποίησης.",
+      "statusInPlace": "Ενεργό",
+      "statusInProgress": "Σε εξέλιξη",
+      "items": [
+        {
+          "name": "Σχεδιασμός με επίγνωση GDPR",
+          "description": "Επεξεργασία δεδομένων ευθυγραμμισμένη με υποχρεώσεις GDPR",
+          "status": "inPlace"
+        },
+        {
+          "name": "Οδηγία ΕΕ για whistleblowing 2019/1937",
+          "description": "Σχεδιασμένο για υποστήριξη απαιτήσεων για επιλέξιμους οργανισμούς",
+          "status": "inPlace"
+        },
+        {
+          "name": "ISO 27001",
+          "description": "Πιστοποίηση συστήματος διαχείρισης ασφάλειας πληροφοριών",
+          "status": "inProgress"
+        },
+        {
+          "name": "SOC 2 Type II",
+          "description": "Έλεγχοι ασφάλειας, διαθεσιμότητας και εμπιστευτικότητας",
+          "status": "inProgress"
+        }
+      ]
+    },
+    "dataProtection": {
+      "title": "Πρακτικές προστασίας δεδομένων",
+      "subtitle": "Πώς συλλέγουμε, αποθηκεύουμε και προστατεύουμε ευαίσθητα δεδομένα",
+      "collectionTitle": "Συλλογή",
+      "collection1": "Ελαχιστοποιούμε τα δεδομένα στο απαραίτητο για τη ροή αναφορών και υποθέσεων.",
+      "collection2": "Υποστηρίζονται ανώνυμες υποβολές όπου επιτρέπει η διαμόρφωσή σας.",
+      "collection3": "Προαιρετικά στοιχεία επικοινωνίας μπορούν να διαχωρίζονται από το περιεχόμενο όπου το προϊόν το υποστηρίζει.",
+      "collection4": "Δημόσια έντυπα αποφεύγουν περιττή παρακολούθηση marketing ή συμπεριφοράς.",
+      "storageTitle": "Αποθήκευση",
+      "storage1": "Δεδομένα κρυπτογραφημένα σε ηρεμία με AES-256-GCM.",
+      "storage2": "Κλειδιά διαχειρίζονται σύμφωνα με πρακτικές του παρόχου cloud.",
+      "storage3": "Αντίγραφα κρυπτογραφημένα με γεωγραφική πλεονασμό.",
+      "storage4": "Περιφερειακή φιλοξενία μπορεί να είναι διαθέσιμη ανάλογα με διαμόρφωση και πάροχο.",
+      "accessTitle": "Πρόσβαση",
+      "access1": "Η πρόσβαση βάσει ρόλων περιορίζει ποιος βλέπει και διαχειρίζεται υποθέσεις.",
+      "access2": "Το MFA μπορεί να επιβληθεί για πρόσβαση διαχειριστών.",
+      "access3": "Η πρόσβαση σε ευαίσθητες ενέργειες καταγράφεται.",
+      "access4": "Πολιτικές συνεδρίας μειώνουν τον κίνδυνο μη επιβλεπόμενης πρόσβασης.",
+      "retentionTitle": "Διατήρηση",
+      "retention1": "Περίοδοι διατήρησης ρυθμίσιμες σύμφωνα με την πολιτική του οργανισμού σας.",
+      "retention2": "Διαγραφή μετά τη λήξη περιόδων, με επιφύλαξη νομικών και συμβατικών απαιτήσεων.",
+      "retention3": "Πρακτικές διαγραφής στοχεύουν στην αφαίρεση δεδομένων από ενεργά συστήματα εντός εύλογων χρονοδιαγραμμάτων.",
+      "retention4": "Αιτήματα υποκειμένων επεξεργάζονται σύμφωνα με τις ισχύουσες προθεσμίες GDPR."
+    },
+    "infrastructure": {
+      "title": "Ασφαλής υποδομή",
+      "intro": "Χτισμένη σε αναγνωρισμένη υποδομή cloud με παρακολούθηση, failover και κρυπτογραφημένα αντίγραφα.",
+      "cdnTitle": "Παγκόσμια παράδοση",
+      "cdnBody": "Περιεχόμενο παραδίδεται αποτελεσματικά και με ασφάλεια από edge τοποθεσίες.",
+      "backupTitle": "Κρυπτογραφημένα αντίγραφα",
+      "backupBody": "Αυτοματοποιημένα κρυπτογραφημένα αντίγραφα σε πολλές γεωγραφικές περιοχές.",
+      "ddosTitle": "Προστασία δικτύου",
+      "ddosBody": "Προστασίες παρόχου έναντι κοινών όγκου επιθέσεων.",
+      "auditTitle": "Δοκιμές ασφαλείας",
+      "auditBody": "Περιοδικές αναθεωρήσεις και δοκιμές διείσδυσης για εντοπισμό και διόρθωση προβλημάτων.",
+      "safeguardsTitle": "Επιχειρησιακές διασφαλίσεις",
+      "safeguard1": "Κρυπτογράφηση κατά τη μετάδοση (TLS) και σε ηρεμία (AES-256-GCM)",
+      "safeguard2": "Ελάχιστα προνόμια πρόσβασης για συστήματα και λειτουργίες",
+      "safeguard3": "Αυτοματοποιημένα κρυπτογραφημένα αντίγραφα σε πολλές περιοχές",
+      "safeguard4": "DDoS και άλλη προστασία δικτύου από το περιβάλλον φιλοξενίας",
+      "safeguard5": "Παρακολούθηση υποδομής και ειδοποιήσεις",
+      "safeguard6": "Περιοδικές αναθεωρήσεις ασφαλείας και δοκιμές διείσδυσης"
+    },
+    "disclosure": {
+      "title": "Υπεύθυνη αποκάλυψη",
+      "intro": "Εάν πιστεύετε ότι εντοπίσατε ζήτημα ασφαλείας, επικοινωνήστε στο",
+      "outro": "Στοχεύουμε στην έγκαιρη επιβεβαίωση αναφορών και ενημέρωση κατά τη διερεύνηση."
+    },
+    "cta": {
+      "title": "Ασφάλεια για ευαίσθητες αναφορές",
+      "subtitle": "Μάθετε πώς το Disclosurely προστατεύει αναφορές whistleblowing με ασφαλή διαχείριση υποθέσεων και σχεδιασμό με προτεραιότητα την ιδιωτικότητα.",
+      "startTrial": "Ξεκινήστε δωρεάν δοκιμή",
+      "bookDemo": "Κλείστε επίδειξη"
+    }
+  },
   "pricing": {
     "hero": {
       "title": "Τιμές λογισμικού αναφορών για ομάδες κάθε μεγέθους",
@@ -670,57 +788,75 @@
   },
   "contact": {
     "hero": {
-      "title": "Επικοινωνήστε με την ομάδα πωλήσεων μας",
-      "description": "Επικοινωνήστε μαζί μας και θα χαρούμε να σας βοηθήσουμε να απαντήσουμε σε οποιεσδήποτε ερωτήσεις για το Disclosurely.",
-      "subtitle": "Έτοιμοι να μεταμορφώσετε τις δυνατότητες αναφοράς του οργανισμού σας; Επικοινωνήστε με την ομάδα μας.",
-      "tag": "Contact"
+      "tag": "Επικοινωνία",
+      "title": "Μιλήστε με τη Disclosurely",
+      "description": "Είτε συγκρίνετε παρόχους, σχεδιάζετε εφαρμογή είτε εξερευνάτε τιμές — είμαστε εδώ για να βοηθήσουμε."
     },
-    "info": {
-      "title": "Πληροφορίες Επικοινωνίας",
-      "description": "Επικοινωνήστε μαζί μας και θα χαρούμε να σας βοηθήσουμε να απαντήσουμε σε οποιεσδήποτε ερωτήσεις για το Disclosurely.",
-      "email": {
-        "title": "Email",
-        "response": "Απαντάμε εντός 24 ωρών"
-      },
-      "phone": {
-        "title": "Τηλέφωνο",
-        "number": "+44 7123 456789",
-        "hours": "Δευ-Παρ, 9-17 GMT"
-      },
-      "address": {
-        "title": "Διεύθυνση",
-        "line1": "Λονδίνο",
-        "line2": "Ηνωμένο Βασίλειο",
-        "line3": ""
-      },
-      "enterprise": {
-        "title": "Λύσεις Επιχείρησης",
-        "description": "Χρειάζεστε μια εξατομικευμένη λύση; Επικοινωνήστε με την ομάδα Enterprise μας για εξατομικευμένες τιμές και υποστήριξη υλοποίησης."
+    "help": {
+      "title": "Πώς μπορούμε να βοηθήσουμε",
+      "intro": "Πείτε μας τι χρειάζεστε — επίδειξη, καθοδήγηση τιμών ή υποστήριξη εφαρμογής.",
+      "items": {
+        "walkthrough": "Κλείστε παρουσίαση προϊόντος",
+        "pricing": "Ερωτήσεις για τιμές ή πλάνα",
+        "compliance": "Συζήτηση απαιτήσεων whistleblowing ΕΕ ή ΗΒ",
+        "rollout": "Εξερεύνηση εφαρμογής για τον οργανισμό σας",
+        "enterpriseSetups": "Ερωτήσεις για ρυθμίσεις πολλών ομάδων ή enterprise"
       }
+    },
+    "enterpriseCard": {
+      "title": "Χρειάζεστε προσαρμοσμένη ρύθμιση;",
+      "description": "Μπορούμε να βοηθήσουμε με εφαρμογές πολλών ομάδων, προσαρμοσμένο onboarding και μεγαλύτερους οργανισμούς."
     },
     "form": {
       "title": "Αίτημα επίδειξης",
-      "description": "Συμπληρώστε την παρακάτω φόρμα και η ομάδα μας θα επικοινωνήσει μαζί σας εντός 24 ωρών για να προγραμματίσει μια εξατομικευμένη επίδειξη.",
+      "description": "Λίγα λόγια για τον οργανισμό σας και τι χρειάζεστε — θα απαντήσουμε το συντομότερο.",
+      "enquiryType": {
+        "label": "Για ποιο θέμα χρειάζεστε βοήθεια;",
+        "placeholder": "Επιλέξτε επιλογή",
+        "options": {
+          "demo": "Αίτημα επίδειξης",
+          "pricing": "Ερώτηση τιμολόγησης",
+          "compliance": "Ερώτηση συμμόρφωσης",
+          "rollout": "Εφαρμογή enterprise",
+          "enterprise": "Ρύθμιση πολλών ομάδων ή enterprise",
+          "general": "Γενικό αίτημα"
+        }
+      },
       "name": {
         "label": "Όνομα",
-        "placeholder": "Το πλήρες όνομά σας"
+        "placeholder": "Πλήρες όνομα"
       },
       "email": {
-        "label": "Email",
-        "placeholder": "το@email.gr"
+        "label": "Επαγγελματικό email",
+        "placeholder": "εσείς@εταιρεία.gr"
       },
       "company": {
-        "label": "Εταιρεία",
-        "placeholder": "Το όνομα της εταιρείας σας"
+        "label": "Οργανισμός",
+        "placeholder": "Όνομα οργανισμού"
+      },
+      "organisationSize": {
+        "label": "Μέγεθος οργανισμού (προαιρετικό)",
+        "placeholder": "Προτιμώ να μην αναφέρω",
+        "options": {
+          "1_50": "1–50 άτομα",
+          "51_250": "51–250 άτομα",
+          "251_1000": "251–1.000 άτομα",
+          "1000_plus": "Πάνω από 1.000 άτομα"
+        }
       },
       "message": {
-        "label": "Μήνυμα",
-        "placeholder": "Πείτε μας για τις απαιτήσεις σας..."
+        "label": "Πώς μπορούμε να βοηθήσουμε;",
+        "placeholder": "Χρονοδιάγραμμα, περιοχές ή τι θέλετε να δείτε σε κλήση..."
       },
-      "submit": "Αποστολή αίτησης",
+      "reassurance": {
+        "response": "Στόχος απάντησης εντός μίας εργάσιμης ημέρας",
+        "noPressure": "Χωρίς επιθετική πίεση πωλήσεων",
+        "tailored": "Συζητήσεις προσαρμοσμένες στον οργανισμό σας"
+      },
+      "submit": "Αποστολή αιτήματος",
       "submitting": "Αποστολή...",
-      "success": "Ευχαριστούμε! Το μήνυμά σας στάλθηκε. Θα επικοινωνήσουμε μαζί σας εντός 24 ωρών.",
-      "privacy": "Υποβάλλοντας αυτή τη φόρμα, συμφωνείτε με την Πολιτική Απορρήτου μας."
+      "success": "Ευχαριστούμε — λάβαμε το μήνυμά σας και θα επικοινωνήσουμε σύντομα.",
+      "privacy": "Υποβάλλοντας τη φόρμα, αποδέχεστε την πολιτική απορρήτου μας."
     }
   },
   "privacy": {
@@ -1263,46 +1399,68 @@
   "new": "New",
   "about": {
     "meta": {
-      "title": "About Us - Disclosurely",
-      "description": "Learn about Disclosurely's mission to create safer workplaces through secure whistleblowing technology."
+      "title": "Σχετικά με τη Disclosurely",
+      "description": "Γιατί υπάρχει η Disclosurely: ασφαλές λογισμικό whistleblowing σχεδιασμένο να είναι ευκολότερο στην εκκίνηση, τη διαχείριση και την εμπιστοσύνη — χωρίς περιττή πολυπλοκότητα."
     },
     "hero": {
-      "title": "About Disclosurely",
-      "subtitle": "Building Trust Through Transparency",
-      "description": "We're on a mission to create safer, more ethical workplaces by providing secure, anonymous reporting channels that protect whistleblowers while helping organizations address misconduct quickly and effectively."
+      "tag": "Σχετικά με τη Disclosurely",
+      "title": "Φτιαγμένο ώστε το whistleblowing να είναι απλούστερο, ασφαλέστερο και πιο αξιόπιστο",
+      "description": "Η Disclosurely δημιουργήθηκε για να βοηθά οργανισμούς να εγκαινιάζουν ασφαλή κανάλια αναφορών στα οποία οι άνθρωποι μπορούν πραγματικά να εμπιστεύονται — χωρίς περιττή πολυπλοκότητα, ξεπερασμένες ροές εργασίας ή βαρύ κόστος υλοποίησης."
     },
     "mission": {
-      "title": "Our Mission",
-      "content": "To empower organizations to build cultures of integrity by providing secure, user-friendly whistleblowing solutions that protect both reporters and organizations."
+      "title": "Γιατί υπάρχουμε",
+      "p1": "Οι άνθρωποι χρησιμοποιούν μόνο κανάλια αναφορών που αντιλαμβάνονται ως ασφαλή και σοβαρά. Οι οργανισμοί χρειάζονται εργαλεία που καθιστούν σαφή τη λήψη, την ταξινόμηση και τη σωστή διαχείριση ανησυχιών.",
+      "p2": "Πολλά συστήματα whistleblowing φαίνονται ακόμη ξεπερασμένα, υπερβολικά περίπλοκα ή δύσκολα στην εφαρμογή. Αυτή η τριβή εμποδίζει αυτό που όλοι θέλουν: την έγκαιρη επιφάνεια θεμάτων και τη δίκαιη αντιμετώπισή τους.",
+      "p3": "Η Disclosurely σχεδιάστηκε ώστε η ασφαλής αναφορά να είναι ευκολότερη στην εκκίνηση και ευκολότερη στη διαχείριση από εσωτερικές ομάδες — με πρακτικές ροές εργασίας ευαισθητοποιημένες στην ιδιωτικότητα, όχι με κενά συνθήματα."
     },
-    "values": {
-      "title": "Our Values",
-      "items": {
-        "security": {
-          "title": "Security First",
-          "description": "End-to-end encryption and anonymous reporting to protect whistleblowers"
-        },
-        "transparency": {
-          "title": "Transparency",
-          "description": "Clear processes and regular updates on case progress"
-        },
-        "compliance": {
-          "title": "Compliance",
-          "description": "GDPR-compliant solutions meeting international standards"
-        },
-        "support": {
-          "title": "Support",
-          "description": "24/7 support and comprehensive training for all users"
-        }
-      }
+    "beliefs": {
+      "title": "Τι πιστεύουμε ότι πρέπει να κάνει καλό λογισμικό whistleblowing",
+      "items": [
+        "Να προστατεύει ταυτότητες και ευαίσθητες πληροφορίες από το σχεδιασμό, με ελέγχους που ταιριάζουν σε πραγματικές έρευνες.",
+        "Να διευκολύνει τους οργανισμούς να χειρίζονται σωστά τις αναφορές — σαφής εισδοχή, δομημένη παρακολούθηση, υπεύθυνη πρόσβαση.",
+        "Να ενισχύει την εμπιστοσύνη με ασφαλή επικοινωνία και λογικές διαδικασίες, όχι με αόριστες υποσχέσεις.",
+        "Να μειώνει την τριβή για compliance, HR και υπεύθυνους υποθέσεων που χρησιμοποιούν το εργαλείο κάθε εβδομάδα.",
+        "Να βοηθά τους οργανισμούς να ανταποκρίνονται σε ρυθμιστικές προσδοκίες όπου ισχύουν — χωρίς να επιβαρύνει περιττά μικρότερες ομάδες.",
+        "Να βελτιώνεται με τον χρόνο: παραδίδουμε επαναληπτικά και ακούμε πώς οι ομάδες χρησιμοποιούν την πλατφόρμα στην πράξη."
+      ]
     },
-    "team": {
-      "title": "Our Team",
-      "description": "Experienced professionals dedicated to workplace safety and compliance"
+    "audience": {
+      "title": "Για ποιους σχεδιάστηκε η Disclosurely",
+      "items": [
+        "Ομάδες συμμόρφωσης και κινδύνου υπεύθυνες για προγράμματα speak-up",
+        "HR και υπεύθυνοι εσωτερικών αναφορών που συντονίζουν τη διαχείριση υποθέσεων",
+        "Οργανισμοί που εφαρμόζουν ή ανανεώνουν κανάλια whistleblowing ΕΕ ή ΗΒ",
+        "Ομάδες που θέλουν σύγχρονη, ασφαλή αναφορά χωρίς βαρύ πρόγραμμα enterprise",
+        "Αγοραστές που εκτιμούν τη σαφήνεια για ασφάλεια και δεδομένα — δείτε τη σελίδα Security"
+      ]
     },
-    "story": {
-      "title": "Our Story",
-      "content": "Founded in 2024, Disclosurely was created by compliance professionals who saw the need for better whistleblowing solutions. We combine cutting-edge technology with deep industry expertise to deliver solutions that actually work."
+    "trust": {
+      "title": "Πώς προσεγγίζουμε την εμπιστοσύνη και την ασφαλή αναφορά",
+      "intro": "Εστιάζουμε σε ελέγχους που μπορείτε να κατανοήσετε και λειτουργικές πρακτικές στις οποίες μπορείτε να βασιστείτε. Η πλήρης εικόνα — κρυπτογράφηση, πρόσβαση, αντίγραφα ασφαλείας, καταγραφή και προστασία δεδομένων — τεκμηριώνεται στη σελίδα ασφαλείας.",
+      "items": [
+        "Ισχυρή κρυπτογράφηση για δεδομένα κατά τη μεταφορά και σε ηρεμία (AES-256-GCM), ευθυγραμμισμένη με τον τρόπο που περιγράφουμε την υπηρεσία σε παραγωγή.",
+        "Διαχείριση υποθέσεων με έλεγχο πρόσβασης: μόνο εξουσιοδοτημένα άτομα στον οργανισμό σας βλέπουν αναφορές, σύμφωνα με ρόλους και δικαιώματα που ορίζετε.",
+        "Σχεδιασμός ευαισθητοποιημένος στην ιδιωτικότητα για στήριξη χειρισμού ευθυγραμμισμένου με GDPR ευαίσθητων προσωπικών δεδομένων.",
+        "Αρχεία ελέγχου για βασικά συμβάντα πρόσβασης και υποθέσεων για λογοδοσία.",
+        "Φιλοξενία σε αξιόπιστη υποδομή cloud με παρακολούθηση και κρυπτογραφημένα αντίγραφα ασφαλείας."
+      ],
+      "securityCta": "Διαβάστε τη σελίδα Ασφάλεια και εμπιστοσύνη"
+    },
+    "cta": {
+      "title": "Θέλετε να δείτε πώς λειτουργεί η Disclosurely;",
+      "subtitle": "Εξερευνήστε την πλατφόρμα, δείτε τιμές ή κλείστε demo για να δείτε αν ταιριάζει στον οργανισμό σας.",
+      "pricing": "Προβολή τιμών",
+      "demo": "Κράτηση demo"
+    },
+    "explore": {
+      "title": "Περαιτέρω εξερεύνηση",
+      "subtitle": "Πρακτικά επόμενα βήματα αν αξιολογείτε λογισμικό whistleblowing.",
+      "featuresTitle": "Χαρακτηριστικά πλατφόρμας",
+      "featuresBody": "Κανάλια αναφορών, διαχείριση υποθέσεων, αυτοματισμός και η καθημερινότητα των ομάδων στη Disclosurely.",
+      "pricingTitle": "Τιμολόγηση",
+      "pricingBody": "Διαφανή επίπεδα όπου δημοσιεύονται — δείτε τι περιλαμβάνεται πριν μιλήσετε με πωλήσεις.",
+      "directiveTitle": "Οδηγία ΕΕ για τους πληροφοριοδότες",
+      "directiveBody": "Πλαίσιο για απαιτήσεις και πώς οι οργανισμοί συχνά δομούν εσωτερικά κανάλια."
     }
   },
   "features": {
@@ -1651,6 +1809,641 @@
       "subtitle": "Οδηγούμενη ενσωμάτωση, ασφαλείς ροές αναφοράς και ενσωματωμένη υποστήριξη συμμόρφωσης για οργανισμούς ΕΕ.",
       "startFreeTrial": "Έναρξη δωρεάν δοκιμής",
       "bookDemo": "Κράτηση demo"
+    }
+  },
+  "compare": {
+    "common": {
+      "colFeature": "Λειτουργία",
+      "colDisclosurely": "Disclosurely",
+      "comparisonSectionTitle": "Σύγκριση ανά πεδίο",
+      "comparisonSectionSubtitle": "Χρησιμοποιήστε αυτή την επισκόπηση μαζί με την τεκμηρίωση κάθε προμηθευτή για να αξιολογήσετε την καταλληλότητα για τον οργανισμό σας.",
+      "startFreeTrial": "Έναρξη δωρεάν δοκιμής",
+      "viewPricing": "Προβολή τιμών",
+      "bookDemo": "Κράτηση demo",
+      "noCardNote": "Δεν απαιτείται πιστωτική κάρτα για τη δοκιμή — επιβεβαιώστε τους τρέχοντες όρους κατά την εγγραφή."
+    },
+    "speakup": {
+      "competitorName": "SpeakUp",
+      "hero": {
+        "titleLine1": "Disclosurely vs",
+        "titleLine2": "SpeakUp",
+        "subtitle": "Συγκρίνετε μοντέλα τιμολόγησης, ροές εργασίας και λειτουργίες αναφοράς για να δείτε ποια πλατφόρμα ταιριάζει στον οργανισμό σας."
+      },
+      "fairnessNote": "Αυτή η σύγκριση βασίζεται σε δημόσια διαθέσιμες πληροφορίες και θέση προϊόντος κατά το χρόνο σύνταξης. Οι λειτουργίες και οι τιμές μπορεί να αλλάξουν — επαληθεύστε τις λεπτομέρειες με κάθε προμηθευτή.",
+      "atAGlance": {
+        "title": "Εν συντομία",
+        "card1": {
+          "title": "Απλή διαδρομή δοκιμής",
+          "body": "Εξερευνήστε το Disclosurely online με δωρεάν δοκιμή — χρήσιμο όταν θέλετε να επικυρώσετε ροές εργασίας νωρίς."
+        },
+        "card2": {
+          "title": "Διαχείριση υποθέσεων με υποστήριξη AI",
+          "body": "Το Disclosurely ενσωματώνει AI για περίληψη και ταξινόμηση — η ανθρώπινη κρίση παραμένει κεντρική."
+        },
+        "card3": {
+          "title": "Πραγματική εφαρμογή",
+          "body": "Το Disclosurely ταιριάζει σε οργανισμούς που θέλουν σαφή διαδρομή εγκατάστασης, ιδίως μικρές και μεσαίες ομάδες που ισορροπούν ταχύτητα και έλεγχο."
+        }
+      },
+      "fitBetter": {
+        "title": "Το Disclosurely μπορεί να ταιριάζει καλύτερα αν θέλετε:",
+        "bullet1": "Σαφείς online τιμές και απλή διαδρομή δοκιμής",
+        "bullet2": "Διαχείριση υποθέσεων με υποστήριξη AI στην καθημερινή ροή",
+        "bullet3": "Ελαφρύτερη, ταχύτερη εφαρμογή για μικρούς και μεσαίους οργανισμούς",
+        "bullet4": "Σύγχρονη αυτοματοποίηση και ενσωματώσεις σε υποστηριζόμενα πλάνα",
+        "bullet5": "Εναλλακτική ευελιξία σε βαρύτερους κύκλους επιχειρησιακής προμήθειας"
+      },
+      "tables": {
+        "pricing": {
+          "title": "Τιμολόγηση και εμπειρία αγοράς",
+          "rows": [
+            {
+              "feature": "Δημοσιευμένες τιμές καταλόγου",
+              "disclosurely": "Ναι — δείτε τη σελίδα τιμών μας",
+              "competitor": "Ναι — επιβεβαιώστε τα τρέχοντα επίπεδα στον ιστότοπο της SpeakUp"
+            },
+            {
+              "feature": "Τυπική διαδρομή αγοράς",
+              "disclosurely": "Αυτοεξυπηρέτηση δοκιμής και online εγγραφή όπου ταιριάζει",
+              "competitor": "Συχνά περιλαμβάνει συμβουλές ή demos καταλληλότητας — επιβεβαιώστε στον ιστότοπο της SpeakUp"
+            },
+            {
+              "feature": "Δωρεάν δοκιμή ή πιλότος",
+              "disclosurely": "Διατίθεται δωρεάν δοκιμή — δείτε τρέχοντες όρους στην εγγραφή",
+              "competitor": "Επιβεβαιώστε επιλογές δοκιμής ή πιλότου στον ιστότοπο της SpeakUp"
+            },
+            {
+              "feature": "Σαφήνεια πλάνων",
+              "disclosurely": "Επίπεδα και όρια περιγράφονται στη σελίδα τιμών",
+              "competitor": "Ελέγξτε τις περιγραφές πλάνων της SpeakUp για τη χρήση σας"
+            }
+          ]
+        },
+        "security": {
+          "title": "Ασφάλεια και έλεγχος πρόσβασης",
+          "rows": [
+            {
+              "feature": "Κρυπτογράφηση κατά τη μετάδοση και σε ηρεμία",
+              "disclosurely": "Κρυπτογράφηση σε όλη την υπηρεσία — δείτε τεκμηρίωση ασφαλείας",
+              "competitor": "Η SpeakUp δημοσιεύει πληροφορίες ασφαλείας — επαληθεύστε τεχνικές λεπτομέρειες για την έκδοσή σας"
+            },
+            {
+              "feature": "Πρόσβαση βάσει ρόλων και δικαιωμάτων",
+              "disclosurely": "Ναι",
+              "competitor": "Ναι — επιβεβαιώστε εύρος για το πλάνο σας"
+            },
+            {
+              "feature": "Αρχεία ελέγχου (audit)",
+              "disclosurely": "Ναι — δραστηριότητα ορατή σε εξουσιοδοτημένους διαχειριστές",
+              "competitor": "Επιβεβαιώστε δυνατότητες καταγραφής για την έκδοσή σας"
+            },
+            {
+              "feature": "Ευθυγράμμιση προστασίας δεδομένων (π.χ. GDPR)",
+              "disclosurely": "Σχεδιασμένο με ελέγχους προσανατολισμένους στο GDPR — όχι νομική συμβουλή",
+              "competitor": "Ελέγξτε υλικό SpeakUp για απορρήτου και συμμόρφωση για τη δικαιοδοσία σας"
+            }
+          ]
+        },
+        "caseHandling": {
+          "title": "Διαχείριση υποθέσεων και ροές εργασίας",
+          "rows": [
+            {
+              "feature": "Εισερχόμενα υποθέσεων και ροή εργασίας",
+              "disclosurely": "Ναι",
+              "competitor": "Ναι"
+            },
+            {
+              "feature": "Μηνύματα σε νήματα με αναφέροντες",
+              "disclosurely": "Ναι",
+              "competitor": "Επιβεβαιώστε υποστηριζόμενα κανάλια για το πλάνο σας"
+            },
+            {
+              "feature": "Προσαρμοσμένες καταστάσεις και δρομολόγηση",
+              "disclosurely": "Ναι",
+              "competitor": "Επιβεβαιώστε επιλογές διαμόρφωσης για την έκδοσή σας"
+            },
+            {
+              "feature": "Εσωτερικές σημειώσεις και συνεργασία",
+              "disclosurely": "Ναι",
+              "competitor": "Επιβεβαιώστε λειτουργίες συνεργασίας ομάδας στο πλάνο σας"
+            }
+          ]
+        },
+        "reporting": {
+          "title": "Κανάλια αναφοράς και αυτοματοποίηση",
+          "rows": [
+            {
+              "feature": "Κανάλι αναφοράς ιστού",
+              "disclosurely": "Ναι",
+              "competitor": "Ναι"
+            },
+            {
+              "feature": "Κινητή πρόσβαση για αναφέροντες ή χειριστές",
+              "disclosurely": "Ναι — δείτε τεκμηρίωση προϊόντος",
+              "competitor": "Επιβεβαιώστε επιλογές κινητού στον ιστότοπο της SpeakUp"
+            },
+            {
+              "feature": "Ανώνυμη αναφορά",
+              "disclosurely": "Ναι",
+              "competitor": "Ναι — επιβεβαιώστε λεπτομέρειες για τη ρύθμισή σας"
+            },
+            {
+              "feature": "Ενσωματώσεις και αυτοματοποίηση",
+              "disclosurely": "Ενσωματώσεις όπως Zapier σε υποστηριζόμενα πλάνα",
+              "competitor": "Επιβεβαιώστε αυτοματοποίηση και ενσωματώσεις για την έκδοσή σας"
+            },
+            {
+              "feature": "Περίληψη ή ταξινόμηση με υποστήριξη AI",
+              "disclosurely": "Ενσωματωμένο στο προϊόν σε σχετικά πλάνα",
+              "competitor": "Επιβεβαιώστε αν προσφέρονται λειτουργίες AI και πώς παρουσιάζονται"
+            }
+          ]
+        },
+        "rollout": {
+          "title": "Εφαρμογή και υποστήριξη",
+          "rows": [
+            {
+              "feature": "Onboarding και καθοδήγηση ρύθμισης",
+              "disclosurely": "Καθοδηγούμενη ρύθμιση, τεκμηρίωση και επαφές customer success",
+              "competitor": "Επιβεβαιώστε onboarding και υπηρεσίες για τη σύμβασή σας"
+            },
+            {
+              "feature": "Πόροι βοήθειας",
+              "disclosurely": "Κέντρο βοήθειας και καθοδήγηση εντός προϊόντος",
+              "competitor": "Επιβεβαιώστε κανάλια υποστήριξης και SLA για το πλάνο σας"
+            },
+            {
+              "feature": "Πολύγλωσση αναφορά",
+              "disclosurely": "Ευρεία γλωσσική κάλυψη για αναφέροντες",
+              "competitor": "Συχνά εκτεταμένη — επιβεβαιώστε τις γλώσσες που χρειάζεστε"
+            }
+          ]
+        }
+      },
+      "why": {
+        "title": "Πού το Disclosurely τείνει να ξεχωρίζει",
+        "card1": {
+          "title": "Πραγματική αγορά και εφαρμογή",
+          "body": "Δημόσιες τιμές και διαδρομή δοκιμής βοηθούν τις ομάδες να αξιολογήσουν γρήγορα χωρίς βαρύ βήμα προμήθειας.",
+          "bullet1": "Online τιμές και εγγραφή όπου ταιριάζει",
+          "bullet2": "Εστιασμένο onboarding για λειτουργικές ομάδες",
+          "bullet3": "Κατάλληλο για οργανισμούς που θέλουν ρυθμό χωρίς υπερβολική γραφειοκρατία"
+        },
+        "card2": {
+          "title": "AI στην καθημερινή δουλειά υποθέσεων",
+          "body": "Η περίληψη και η βοήθεια ταξινόμησης στοχεύουν στη μείωση χειροκίνητης ανάγνωσης — οι ερευνητές διατηρούν τον έλεγχο.",
+          "bullet1": "Υποστήριξη AI για περιλήψεις υποθέσεων όταν είναι ενεργή",
+          "bullet2": "Σήματα ροής αντί για αποφάσεις «μαύρου κουτιού»",
+          "bullet3": "Σχεδιασμένο να συμπληρώνει πολιτική και ανθρώπινη αναθεώρηση"
+        },
+        "card3": {
+          "title": "Αυτοματοποίηση για σύγχρονα stacks",
+          "body": "Συνδέστε το Disclosurely με εργαλεία που ήδη χρησιμοποιείτε όπου υποστηρίζονται ενσωματώσεις.",
+          "bullet1": "Επιλογές αυτοματοποίησης σε υποστηριζόμενα πλάνα",
+          "bullet2": "Λιγότερες χειροκίνητες παραδόσεις σε ρουτίνες",
+          "bullet3": "Χώρος για ανάπτυξη του προγράμματος αναφοράς σας"
+        }
+      },
+      "fitCompetitor": {
+        "title": "Η SpeakUp μπορεί να ταιριάζει σε οργανισμούς που:",
+        "bullet1": "Προτιμούν την τρέχουσα δομή τιμών και προμήθειας της SpeakUp",
+        "bullet2": "Χρησιμοποιούν ήδη την SpeakUp σε ομάδες ή περιοχές",
+        "bullet3": "Είναι ευθυγραμμισμένοι με υπάρχουσα σχέση ή σύμβαση με SpeakUp",
+        "bullet4": "Θεωρούν ότι το τρέχον σύνολο λειτουργιών και υπηρεσιών της SpeakUp καλύπτει τις ανάγκες τους"
+      },
+      "migration": {
+        "title": "Η μετάβαση από την SpeakUp δεν χρειάζεται να είναι επώδυνη",
+        "subtitle": "Μετρημένη μετάβαση με καθοδήγηση, σαφή ορόσημα και ελάχιστη διατάραξη για εσωτερικές ομάδες.",
+        "step1": {
+          "title": "Σχεδιασμός και εξαγωγή",
+          "body": "Συνεργαστείτε με τον διαχειριστή SpeakUp και την υποστήριξη SpeakUp για να κατανοήσετε τι μπορείτε να εξάγετε και τι επιτρέπουν οι πολιτικές σας."
+        },
+        "step2": {
+          "title": "Αναδημιουργία ροών εργασίας",
+          "body": "Σας βοηθάμε να χαρτογραφήσετε φόρμες, κατηγορίες και ρόλους χειριστών στο Disclosurely ώστε οι διεργασίες να παραμένουν οικείες."
+        },
+        "step3": {
+          "title": "Κυκλοφορία σε φάσεις",
+          "body": "Επιλέξτε παράθυρο go-live, επικοινωνήστε το νέο κανάλι και ενεργοποιήστε διαδρομές αναφοράς με υποστήριξη της ομάδας μας."
+        },
+        "disclaimer": "Τα χρονοδιαγράμματα εξαρτώνται από τα δεδομένα σας, εσωτερικές εγκρίσεις και τη ρύθμιση της SpeakUp — διευκρινίζουμε τι είναι εφικτό σε κάθε βήμα."
+      },
+      "finalCta": {
+        "title": "Ψάχνετε μια πιο ευέλικτη εναλλακτική στην SpeakUp;",
+        "subtitle": "Ξεκινήστε δωρεάν δοκιμή ή κλείστε demo για να δείτε αν το Disclosurely ταιριάζει στη ροή αναφοράς σας."
+      }
+    },
+    "whistleblower": {
+      "competitorName": "Whistleblower Software",
+      "hero": {
+        "titleLine1": "Disclosurely vs",
+        "titleLine2": "Whistleblower Software",
+        "subtitle": "Συγκρίνετε μοντέλα τιμολόγησης, ροές αναφοράς και ευελιξία πλατφόρμας για να δείτε ποιο σύστημα whistleblowing ταιριάζει στον οργανισμό σας."
+      },
+      "fairnessNote": "Αυτή η σύγκριση βασίζεται σε δημόσια διαθέσιμες πληροφορίες και θέση προϊόντος κατά το χρόνο σύνταξης. Οι λειτουργίες και οι τιμές μπορεί να αλλάξουν — επαληθεύστε τις λεπτομέρειες με κάθε προμηθευτή.",
+      "quickSummary": {
+        "title": "Γρήγορη προσανατολισμός",
+        "disclosurelyTitle": "Το Disclosurely μπορεί να ταιριάζει καλύτερα σε οργανισμούς που θέλουν:",
+        "disclosurelyBullet1": "Απλούστερη επιλογή πλάνου χωρίς κλίμακες εργαζομένων",
+        "disclosurelyBullet2": "Σαφή διαδρομή δοκιμής online για έγκαιρη επικύρωση ροών",
+        "disclosurelyBullet3": "Διαχείριση υποθέσεων με υποστήριξη AI σε σχετικά πλάνα",
+        "disclosurelyBullet4": "Σύγχρονη αυτοματοποίηση και ευελιξία καθώς μεγαλώνετε",
+        "competitorTitle": "Το Whistleblower Software μπορεί να ταιριάζει αν προτιμάτε:",
+        "competitorBullet1": "Δομές τιμολόγησης βάσει αριθμού εργαζομένων ή κλιμάκων",
+        "competitorBullet2": "Πιο σταθερή δομή πακέτων",
+        "competitorBullet3": "Σύγκριση εργαλείων με τιμές συνδεδμένες με προσωπικό",
+        "competitorBullet4": "Δομημένο μοντέλο προμήθειας όπως με παρόμοιους προμηθευτές"
+      },
+      "tables": {
+        "pricing": {
+          "title": "Τιμολόγηση και μοντέλο αγοράς",
+          "rows": [
+            {
+              "feature": "How pricing is typically structured",
+              "disclosurely": "Published tiers with limits on our pricing page; not primarily sold as employee-count bands",
+              "competitor": "Often organised around employee ranges or stepped packages — confirm on their published pricing"
+            },
+            {
+              "feature": "Choosing the right plan",
+              "disclosurely": "Compare features and limits side-by-side online",
+              "competitor": "Map bands to your headcount and required modules — verify against their plan descriptions"
+            },
+            {
+              "feature": "Trial or demo path",
+              "disclosurely": "Free trial available — see current terms at signup",
+              "competitor": "Confirm trial length and whether a demo is typical for your segment"
+            },
+            {
+              "feature": "Starting small and scaling",
+              "disclosurely": "Upgrade paths described on the pricing page",
+              "competitor": "Check how band changes affect cost as headcount grows"
+            },
+            {
+              "feature": "Buying flexibility",
+              "disclosurely": "Self-serve signup and upgrades where appropriate",
+              "competitor": "May favour a more packaged purchase flow — confirm for your organisation"
+            }
+          ]
+        },
+        "reporting": {
+          "title": "Αναφορά και υποδοχή",
+          "rows": [
+            {
+              "feature": "Web-based reporting channel",
+              "disclosurely": "Yes",
+              "competitor": "Yes — confirm for your edition"
+            },
+            {
+              "feature": "Anonymous reporting",
+              "disclosurely": "Yes",
+              "competitor": "Confirm how anonymity is implemented for your setup"
+            },
+            {
+              "feature": "Secure two-way communication",
+              "disclosurely": "Yes",
+              "competitor": "Confirm supported channels on your plan"
+            },
+            {
+              "feature": "Branding and portal customisation",
+              "disclosurely": "Yes — see product documentation",
+              "competitor": "Confirm branding options for your package"
+            },
+            {
+              "feature": "Multilingual reporting",
+              "disclosurely": "Broad language coverage for reporters",
+              "competitor": "Confirm coverage for the languages you need"
+            }
+          ]
+        },
+        "caseHandling": {
+          "title": "Διαχείριση υποθέσεων και ροές",
+          "rows": [
+            {
+              "feature": "Case inbox and workflow",
+              "disclosurely": "Yes",
+              "competitor": "Yes"
+            },
+            {
+              "feature": "Role-based permissions",
+              "disclosurely": "Yes",
+              "competitor": "Confirm scope for your plan"
+            },
+            {
+              "feature": "Workflow automation and integrations",
+              "disclosurely": "Integrations such as Zapier on supported plans",
+              "competitor": "Confirm automation and integrations for your tier"
+            },
+            {
+              "feature": "AI-assisted analysis or triage",
+              "disclosurely": "Built into the product on relevant plans",
+              "competitor": "Confirm whether AI features are offered and how they are positioned"
+            }
+          ]
+        },
+        "security": {
+          "title": "Ασφάλεια και έλεγχος πρόσβασης",
+          "rows": [
+            {
+              "feature": "Encryption for data in transit and at rest",
+              "disclosurely": "Encryption used throughout the service — see security documentation",
+              "competitor": "Review their security materials for technical detail"
+            },
+            {
+              "feature": "Role-based access and permissions",
+              "disclosurely": "Yes",
+              "competitor": "Yes — confirm for your edition"
+            },
+            {
+              "feature": "Audit logging",
+              "disclosurely": "Yes — key access and case events for authorised administrators",
+              "competitor": "Confirm logging capabilities for your plan"
+            },
+            {
+              "feature": "Data protection alignment (e.g. GDPR)",
+              "disclosurely": "Designed with GDPR-oriented controls — not legal advice",
+              "competitor": "Review their privacy and compliance documentation for your jurisdiction"
+            }
+          ]
+        },
+        "rollout": {
+          "title": "Εφαρμογή και υποστήριξη",
+          "rows": [
+            {
+              "feature": "Onboarding and setup guidance",
+              "disclosurely": "Guided setup, documentation, and customer success touchpoints",
+              "competitor": "Confirm onboarding and professional services for your contract"
+            },
+            {
+              "feature": "Help resources",
+              "disclosurely": "Help centre and in-product guidance",
+              "competitor": "Confirm support channels and response expectations"
+            },
+            {
+              "feature": "Practical rollout support",
+              "disclosurely": "Support for forms, categories, and handler roles during setup",
+              "competitor": "Confirm what is included when you purchase"
+            }
+          ]
+        }
+      },
+      "why": {
+        "title": "Γιατί οι ομάδες επιλέγουν Disclosurely",
+        "card1": {
+          "title": "Clearer plan selection",
+          "body": "Compare tiers and limits online so commercial and compliance owners can align quickly without decoding complex ladders first.",
+          "bullet1": "Transparent list pricing where published",
+          "bullet2": "Straightforward trial to test real workflows",
+          "bullet3": "Less friction when matching plan to team size"
+        },
+        "card2": {
+          "title": "Modern automation",
+          "body": "Connect Disclosurely to tools you already use and reduce manual hand-offs on supported plans.",
+          "bullet1": "Integration options where available",
+          "bullet2": "AI assistance for everyday case tasks on relevant plans",
+          "bullet3": "Room to mature processes over time"
+        },
+        "card3": {
+          "title": "Practical adoption",
+          "body": "Built for organisations that want secure reporting without over-engineering the first rollout.",
+          "bullet1": "Focused onboarding for case handlers",
+          "bullet2": "Sensible defaults with room to configure",
+          "bullet3": "Strong fit for small and mid-sized programmes"
+        }
+      },
+      "fitCompetitor": {
+        "title": "Το Whistleblower Software μπορεί να ταιριάζει σε οργανισμούς που:",
+        "bullet1": "Prefer employee-based pricing bands or headcount-linked tiers",
+        "bullet2": "Want a more fixed package structure they can benchmark internally",
+        "bullet3": "Already evaluate whistleblowing vendors using employee-count models",
+        "bullet4": "Are comfortable with a more structured procurement and banding approach"
+      },
+      "migration": {
+        "title": "Η αλλαγή πλατφόρμας δεν πρέπει να σας καθυστερεί",
+        "subtitle": "Πρακτική μετάβαση με καθοδήγηση, σταδιακή εφαρμογή όπου χρειάζεται και ελάχιστη διατάραξη για εσωτερικούς χειριστές.",
+        "step1": {
+          "title": "Σχεδιάστε τη μετάβαση",
+          "body": "Συμφωνήστε τι μεταφέρεται, τι αναδημιουργείται και τι απαιτούν οι πολιτικές πριν αλλάξετε κανάλι αναφοράς."
+        },
+        "step2": {
+          "title": "Αναδημιουργία φορμών και ροών",
+          "body": "Σας βοηθάμε να χαρτογραφήσετε κατηγορίες, φόρμες και ρόλους χειριστών στο Disclosurely ώστε οι διεργασίες να παραμένουν οικείες."
+        },
+        "step3": {
+          "title": "Εφαρμογή σε φάσεις",
+          "body": "Επικοινωνήστε το νέο κανάλι, εκπαιδεύστε χειριστές και ξεκινήστε με υποστήριξη — το χρονοδιάγραμμα εξαρτάται από εγκρίσεις και δεδομένα."
+        },
+        "disclaimer": "Οι χρονοδιαγράμματα διαφέρουν ανάλογα με τα δεδομένα, τις εσωτερικές εγκρίσεις και τη ρύθμιση — διευκρινίζουμε τι είναι ρεαλιστικό σε κάθε βήμα."
+      },
+      "finalCta": {
+        "title": "Ψάχνετε μια πιο ευέλικτη εναλλακτική στο Whistleblower Software;",
+        "subtitle": "Ξεκινήστε δωρεάν δοκιμή ή κλείστε demo για να δείτε αν το Disclosurely ταιριάζει στη ροή αναφοράς σας."
+      }
+    },
+    "navex": {
+      "competitorName": "NAVEX",
+      "hero": {
+        "titleLine1": "Disclosurely vs",
+        "titleLine2": "NAVEX",
+        "subtitle": "Συγκρίνετε μοντέλα αγοράς, πολυπλοκότητα εφαρμογής και ροές whistleblowing για να δείτε ποια πλατφόρμα ταιριάζει στον οργανισμό σας."
+      },
+      "fairnessNote": "Η σύγκριση βασίζεται σε δημόσια διαθέσιμες πληροφορίες και θέση προϊόντος κατά το χρόνο συγγραφής. Οι λειτουργίες και οι τιμές μπορεί να αλλάξουν — επαληθεύστε λεπτομέρειες με κάθε προμηθευτή.",
+      "quickSummary": {
+        "title": "Γρήγορη κατεύθυνση",
+        "disclosurelyTitle": "Το Disclosurely μπορεί να ταιριάζει καλύτερα σε οργανισμούς που θέλουν:",
+        "disclosurelyBullet1": "Πιο σαφείς προσδοκίες τιμολόγησης και ελαφρύτερη εμπορική διαδρομή",
+        "disclosurelyBullet2": "Διαδικασία αγοράς με λιγότερο enterprise procurement overhead",
+        "disclosurelyBullet3": "Ταχύτερη, πιο πρακτική διαδρομή προς την πρώτη εφαρμογή",
+        "disclosurelyBullet4": "Εστιασμένη ροή whistleblowing με σύγχρονη αυτοματοποίηση όπου εφαρμόζεται",
+        "competitorTitle": "Η NAVEX μπορεί να ταιριάζει σε οργανισμούς που:",
+        "competitorBullet1": "Έχουν ήδη τυποποιήσει enterprise σουίτες διακυβέρνησης, κινδύνου ή συμμόρφωσης",
+        "competitorBullet2": "Θέλουν ευρύτερη σχέση προμηθευτή σε πολλούς τομείς κινδύνου",
+        "competitorBullet3": "Έχουν διαδικασίες προμηθειών κατάλληλες για μεγάλες αξιολογήσεις πλατφόρμας",
+        "competitorBullet4": "Προτιμούν παραδοσιακό enterprise μοντέλο αγοράς για αυτή την κατηγορία"
+      },
+      "tables": {
+        "pricing": {
+          "title": "Μοντέλο αγοράς και προμήθειες",
+          "rows": [
+            {
+              "feature": "Ορατότητα τιμών και εμπορική διαδρομή",
+              "disclosurely": "Δημοσιευμένα επίπεδα και όρια στη σελίδα τιμών όπου προσφέρονται",
+              "competitor": "Συνήθως προσφορές με καθοδήγηση πωλήσεων για enterprise προγράμματα — επιβεβαιώστε στα υλικά NAVEX"
+            },
+            {
+              "feature": "Τυπική εμπειρία αγοράς",
+              "disclosurely": "Αυτοεξυπηρέτηση δοκιμής και online εγγραφή όπου ενδείκνυται",
+              "competitor": "Συχνά περιλαμβάνει demos, scope και βήματα enterprise προμηθειών — επιβεβαιώστε για τον οργανισμό σας"
+            },
+            {
+              "feature": "Πρόσβαση σε δοκιμή ή demo",
+              "disclosurely": "Διαθέσιμη δωρεάν δοκιμή — δείτε τους τρέχοντες όρους κατά την εγγραφή",
+              "competitor": "Επιβεβαιώστε πώς η NAVEX προσεγγίζει prospects στο τμήμα σας"
+            },
+            {
+              "feature": "Εστίαση προϊόντος",
+              "disclosurely": "Εστιασμένο στην ασφαλή υποδοχή αναφορών και διαχείριση υποθέσεων",
+              "competitor": "Μέρος ευρύτερου χαρτοφυλακίου GRC — επιβεβαιώστε τις απαιτούμενες ενότητες"
+            },
+            {
+              "feature": "Καταλληλότητα για πιο ελαφρά προγράμματα",
+              "disclosurely": "Συχνά επιλεγμένο όταν οι ομάδες θέλουν ταχύτητα χωρίς πλήρη εφαρμογή σουίτας",
+              "competitor": "Συχνά επιλεγμένο όταν ευρύτερη σχέση πλατφόρμας είναι ήδη στο πεδίο — επικυρώστε εσωτερικά"
+            }
+          ]
+        },
+        "reporting": {
+          "title": "Αναφορά και υποδοχή",
+          "rows": [
+            {
+              "feature": "Διαδικτυακό κανάλι αναφοράς",
+              "disclosurely": "Ναι",
+              "competitor": "Ναι — επιβεβαιώστε για τη διαμόρφωση NAVEX σας"
+            },
+            {
+              "feature": "Ανώνυμη αναφορά",
+              "disclosurely": "Ναι",
+              "competitor": "Επιβεβαιώστε λεπτομέρειες υλοποίησης για την εφαρμογή σας"
+            },
+            {
+              "feature": "Ασφαλής αμφίδρομη επικοινωνία",
+              "disclosurely": "Ναι",
+              "competitor": "Επιβεβαιώστε υποστηριζόμενα κανάλια για την έκδοσή σας"
+            },
+            {
+              "feature": "Branding και διαμόρφωση πύλης",
+              "disclosurely": "Ναι — δείτε την τεκμηρίωση προϊόντος",
+              "competitor": "Επιβεβαιώστε επιλογές branding και διαμόρφωσης στη σύμβασή σας"
+            },
+            {
+              "feature": "Πολύγλωσση αναφορά",
+              "disclosurely": "Ευρεία γλωσσική κάλυψη για αναφέροντες",
+              "competitor": "Επιβεβαιώστε γλωσσική κάλυψη για το προσωπικό σας"
+            }
+          ]
+        },
+        "caseHandling": {
+          "title": "Διαχείριση υποθέσεων και διαχείριση ροών",
+          "rows": [
+            {
+              "feature": "Εισερχόμενα και ροή εργασίας",
+              "disclosurely": "Ναι",
+              "competitor": "Ναι — το εύρος εξαρτάται από τα αγορασμένα προϊόντα"
+            },
+            {
+              "feature": "Πρόσβαση και δικαιώματα βάσει ρόλου",
+              "disclosurely": "Ναι",
+              "competitor": "Ναι — επιβεβαιώστε για την υλοποίησή σας"
+            },
+            {
+              "feature": "Αυτοματοποίηση ροών και ενσωματώσεις",
+              "disclosurely": "Ενσωματώσεις όπως Zapier σε υποστηριζόμενα πλάνα",
+              "competitor": "Επιβεβαιώστε αυτοματοποίηση και ενσωματώσεις διαθέσιμες στην ομάδα σας"
+            },
+            {
+              "feature": "Διαχείριση με υποστήριξη AI",
+              "disclosurely": "Ενσωματωμένο στο προϊόν σε σχετικά πλάνα",
+              "competitor": "Επιβεβαιώστε αν λειτουργίες AI ή προηγμένης ανάλυσης ισχύουν για την περίπτωσή σας"
+            }
+          ]
+        },
+        "security": {
+          "title": "Ασφάλεια και έλεγχος πρόσβασης",
+          "rows": [
+            {
+              "feature": "Κρυπτογράφηση κατά τη μεταφορά και σε ηρεμία",
+              "disclosurely": "Κρυπτογράφηση στην υπηρεσία — δείτε τεκμηρίωση ασφαλείας",
+              "competitor": "Δείτε υλικά ασφαλείας και εμπιστοσύνης NAVEX για τεχνικές λεπτομέρειες"
+            },
+            {
+              "feature": "Έλεγχοι πρόσβασης σε δεδομένα υπόθεσης",
+              "disclosurely": "Ναι — δικαιώματα βάσει ρόλου για χειριστές",
+              "competitor": "Ναι — επιβεβαιώστε ελέγχους για το μοντέλο εφαρμογής σας"
+            },
+            {
+              "feature": "Καταγραφή ελέγχου",
+              "disclosurely": "Ναι — βασικά συμβάντα πρόσβασης και υπόθεσης για εξουσιοδοτημένους διαχειριστές",
+              "competitor": "Επιβεβαιώστε καταγραφή και διατήρηση για την έκδοσή σας"
+            },
+            {
+              "feature": "Ευθυγράμμιση προστασίας δεδομένων (π.χ. GDPR)",
+              "disclosurely": "Σχεδιασμένο με ελέγχους προσανατολισμένους στο GDPR — όχι νομική συμβουλή",
+              "competitor": "Δείτε τεκμηρίωση NAVEX απορρήτου και συμμόρφωσης για τη δικαιοδοσία σας"
+            }
+          ]
+        },
+        "rollout": {
+          "title": "Εφαρμογή και υποστήριξη",
+          "rows": [
+            {
+              "feature": "Onboarding και υποστήριξη υλοποίησης",
+              "disclosurely": "Καθοδηγούμενη ρύθμιση, τεκμηρίωση και σημεία επαφής customer success",
+              "competitor": "Συχνά περιλαμβάνει επαγγελματικές υπηρεσίες για enterprise εφαρμογές — επιβεβαιώστε τι αγοράζετε"
+            },
+            {
+              "feature": "Χρόνος μέχρι την πρώτη πρακτική εφαρμογή",
+              "disclosurely": "Σχεδιασμένο για οργανισμούς που θέλουν go-live χωρίς βαρύ πρόγραμμα",
+              "competitor": "Εξαρτάται από εύρος, ενσωματώσεις και διακυβέρνηση — σχεδιάστε με την ομάδα NAVEX σας"
+            },
+            {
+              "feature": "Πόροι βοήθειας",
+              "disclosurely": "Κέντρο βοήθειας και καθοδήγηση στο προϊόν",
+              "competitor": "Επιβεβαιώστε κανάλια υποστήριξης και SLA στη συμφωνία σας"
+            }
+          ]
+        }
+      },
+      "why": {
+        "title": "Γιατί οι ομάδες επιλέγουν Disclosurely",
+        "card1": {
+          "title": "Ελαφρύτερη διαδρομή προς την έναρξη",
+          "body": "Όταν η προτεραιότητα είναι ένα λειτουργικό κανάλι αναφοράς σύντομα, ένα εστιασμένο προϊόν μπορεί να μειώσει τον συντονισμό σε σχέση με ευρεία εφαρμογή σουίτας.",
+          "bullet1": "Σαφή βήματα από τη δοκιμή στη χρήση παραγωγής",
+          "bullet2": "Λιγότερη εξάρτηση από μεγάλο διαλειτουργικό πρόγραμμα",
+          "bullet3": "Πρακτικές προεπιλογές για μικρές και μεσαίες ομάδες"
+        },
+        "card2": {
+          "title": "Πιο διαφανής εμπορική διαδρομή",
+          "body": "Δημοσιευμένες τιμές και δοκιμή βοηθούν οικονομικά και συμμόρφωση να ευθυγραμμιστούν πριν από μακροχρόνιους κύκλους αγοράς.",
+          "bullet1": "Online τιμές όπου δημοσιεύονται",
+          "bullet2": "Απλή δοκιμή για επικύρωση πραγματικών ροών",
+          "bullet3": "Λιγότερες εκπλήξεις στο ταίριασμα πλάνου με προσωπικό"
+        },
+        "card3": {
+          "title": "Εστιασμένη ροή με σύγχρονη αυτοματοποίηση",
+          "body": "Το Disclosurely επικεντρώνεται στην ασφαλή αναφορά και διαχείριση υποθέσεων, με αυτοματοποίηση όπου βοηθά την καθημερινή εργασία.",
+          "bullet1": "Επιλογές ενσωμάτωσης σε υποστηριζόμενα πλάνα",
+          "bullet2": "Υποστήριξη AI για ρουτίνες υποθέσεων όταν είναι ενεργοποιημένη",
+          "bullet3": "Χώρος για ανάπτυξη χωρίς να επιβάλλεται νωρίς πολυπλοκότητα σουίτας"
+        }
+      },
+      "fitCompetitor": {
+        "title": "Η NAVEX μπορεί να ταιριάζει σε οργανισμούς που:",
+        "bullet1": "Ήδη επενδύουν σε enterprise GRC ή πλατφόρμες ηθικής και συμμόρφωσης NAVEX ή συνεργατών",
+        "bullet2": "Θέλουν μία σχέση προμηθευτή σε πολλές ροές κινδύνου και συμμόρφωσης",
+        "bullet3": "Διεξάγουν προμήθειες κατάλληλες για μεγάλες αξιολογήσεις, SOW και σταδιακές εφαρμογές",
+        "bullet4": "Αναμένουν κλασική enterprise συμβατική διαδρομή για αυτή την κατηγορία"
+      },
+      "migration": {
+        "title": "Η μετάβαση σε εστιασμένη πλατφόρμα whistleblowing μπορεί να είναι απλούστερη από όσο νομίζετε",
+        "subtitle": "Καθοδηγούμενο onboarding, βοήθεια στην αναδόμηση φορμών και ροών αναφοράς, και σταδιακή υλοποίηση όπου χρειάζεται — χωρίς περιττό overhead.",
+        "step1": {
+          "title": "Ορισμός εύρους",
+          "body": "Συμφωνήστε ποια κανάλια, φόρμες και δεδομένα θα μετακινηθούν και ποιες εσωτερικές εγκρίσεις απαιτούνται πριν το go-live."
+        },
+        "step2": {
+          "title": "Αναδόμηση ροών στο Disclosurely",
+          "body": "Σας βοηθάμε να χαρτογραφήσετε κατηγορίες, φόρμες και ρόλους χειριστών ώστε η διαδικασία να παραμένει οικεία."
+        },
+        "step3": {
+          "title": "Έναρξη με υποστήριξη",
+          "body": "Εκπαιδεύστε χειριστές, επικοινωνήστε το κανάλι και ανοίξτε διαδρομές αναφοράς με την ομάδα μας."
+        },
+        "disclaimer": "Τα χρονοδιαγράμματα διαφέρουν ανάλογα με τα δεδομένα, τις πολιτικές και το περιβάλλον — διευκρινίζουμε τι είναι ρεαλιστικό σε κάθε βήμα."
+      },
+      "finalCta": {
+        "title": "Ψάχνετε μια ελαφρύτερη εναλλακτική στη NAVEX;",
+        "subtitle": "Ξεκινήστε δωρεάν δοκιμή ή κλείστε demo για να δείτε αν το Disclosurely ταιριάζει στον οργανισμό σας."
+      }
     }
   }
 }

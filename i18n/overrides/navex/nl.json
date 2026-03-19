@@ -1,0 +1,206 @@
+{
+  "competitorName": "NAVEX",
+  "hero": {
+    "titleLine1": "Disclosurely vs",
+    "titleLine2": "NAVEX",
+    "subtitle": "Vergelijk aankoopmodellen, uitrolcomplexiteit en klokkenluidersworkflows om te zien welk platform bij uw organisatie past."
+  },
+  "fairnessNote": "Deze vergelijking is gebaseerd op openbare informatie en productpositionering op het moment van schrijven. Functies en prijzen kunnen wijzigen — controleer details bij elke leverancier.",
+  "quickSummary": {
+    "title": "Snelle oriëntatie",
+    "disclosurelyTitle": "Disclosurely kan beter passen bij organisaties die willen:",
+    "disclosurelyBullet1": "Duidelijkere prijsverwachtingen en een lichter commercieel traject",
+    "disclosurelyBullet2": "Een aankoopproces met minder enterprise-inkoopoverhead",
+    "disclosurelyBullet3": "Een sneller, praktischer pad naar de eerste uitrol",
+    "disclosurelyBullet4": "Een gerichte klokkenluidersworkflow met moderne automatisering waar relevant",
+    "competitorTitle": "NAVEX kan passen bij organisaties die:",
+    "competitorBullet1": "Al standaardiseren op enterprise governance-, risico- of compliance-suites",
+    "competitorBullet2": "Een bredere leveranciersrelatie over meerdere risicodomeinen willen",
+    "competitorBullet3": "Inkoopprocessen hebben die geschikt zijn voor grote platformevaluaties",
+    "competitorBullet4": "Een traditioneel enterprise-aankoopmodel prefereren voor deze categorie"
+  },
+  "tables": {
+    "pricing": {
+      "title": "Aankoopmodel en inkoop",
+      "rows": [
+        {
+          "feature": "Prijszichtbaarheid en commercieel traject",
+          "disclosurely": "Gepubliceerde tiers en limieten op onze prijspagina waar aangeboden",
+          "competitor": "Meestal sales-gestuurde offertes voor enterprise-programma's — bevestig op NAVEX-materiaal"
+        },
+        {
+          "feature": "Typische aankoopervaring",
+          "disclosurely": "Selfservice-proef en online aanmelding waar passend",
+          "competitor": "Betreft vaak demo's, scope en enterprise-inkoopstappen — bevestig voor uw organisatie"
+        },
+        {
+          "feature": "Proef- of demo-toegang",
+          "disclosurely": "Gratis proef beschikbaar — zie actuele voorwaarden bij aanmelding",
+          "competitor": "Bevestig hoe NAVEX prospects in uw segment benadert"
+        },
+        {
+          "feature": "Productfocus",
+          "disclosurely": "Gericht op veilige intake en zaakbehandeling voor klokkenluiders",
+          "competitor": "Onderdeel van een breder GRC-portfolio — bevestig welke modules u nodig heeft"
+        },
+        {
+          "feature": "Passend bij slankere programma's",
+          "disclosurely": "Vaak gekozen wanneer teams snelheid willen zonder volledige suite-uitrol",
+          "competitor": "Vaak gekozen wanneer een bredere platformrelatie al in beeld is — intern valideren"
+        }
+      ]
+    },
+    "reporting": {
+      "title": "Melding en intake",
+      "rows": [
+        {
+          "feature": "Webgebaseerd meldingskanaal",
+          "disclosurely": "Ja",
+          "competitor": "Ja — bevestig voor uw NAVEX-configuratie"
+        },
+        {
+          "feature": "Anonieme melding",
+          "disclosurely": "Ja",
+          "competitor": "Bevestig implementatiedetails voor uw uitrol"
+        },
+        {
+          "feature": "Veilige tweerichtingscommunicatie",
+          "disclosurely": "Ja",
+          "competitor": "Bevestig ondersteunde kanalen voor uw editie"
+        },
+        {
+          "feature": "Portaalbranding en configuratie",
+          "disclosurely": "Ja — zie productdocumentatie",
+          "competitor": "Bevestig branding- en configuratieopties in uw contract"
+        },
+        {
+          "feature": "Meertalige melding",
+          "disclosurely": "Brede taaldekking voor melders",
+          "competitor": "Bevestig taaldekking voor uw personeel"
+        }
+      ]
+    },
+    "caseHandling": {
+      "title": "Zaakbehandeling en workflowbeheer",
+      "rows": [
+        {
+          "feature": "Postvak IN en workflow",
+          "disclosurely": "Ja",
+          "competitor": "Ja — reikwijdte hangt af van gekochte producten"
+        },
+        {
+          "feature": "Rolgebaseerde toegang en rechten",
+          "disclosurely": "Ja",
+          "competitor": "Ja — bevestig voor uw implementatie"
+        },
+        {
+          "feature": "Workflowautomatisering en integraties",
+          "disclosurely": "Integraties zoals Zapier op ondersteunde plannen",
+          "competitor": "Bevestig automatisering en integraties voor uw team"
+        },
+        {
+          "feature": "AI-ondersteunde afhandeling",
+          "disclosurely": "Ingebouwd in het product op relevante plannen",
+          "competitor": "Bevestig of AI- of geavanceerde analytics-functies voor uw use case gelden"
+        }
+      ]
+    },
+    "security": {
+      "title": "Beveiliging en toegangsbeheer",
+      "rows": [
+        {
+          "feature": "Versleuteling tijdens transport en in rust",
+          "disclosurely": "Versleuteling in de dienst — zie beveiligingsdocumentatie",
+          "competitor": "Raadpleeg NAVEX security- en trustmateriaal voor technische details"
+        },
+        {
+          "feature": "Toegangscontroles voor zaakgegevens",
+          "disclosurely": "Ja — rolgebaseerde rechten voor behandelaars",
+          "competitor": "Ja — bevestig controles voor uw uitrolmodel"
+        },
+        {
+          "feature": "Auditlogging",
+          "disclosurely": "Ja — belangrijke toegangs- en zaakevents voor geautoriseerde beheerders",
+          "competitor": "Bevestig logging en bewaartermijnen voor uw editie"
+        },
+        {
+          "feature": "Afstemming gegevensbescherming (bijv. AVG)",
+          "disclosurely": "Ontworpen met AVG-gerichte controls — geen juridisch advies",
+          "competitor": "Raadpleeg NAVEX privacy- en compliancedocumentatie voor uw rechtsgebied"
+        }
+      ]
+    },
+    "rollout": {
+      "title": "Uitrol en ondersteuning",
+      "rows": [
+        {
+          "feature": "Onboarding en implementatieondersteuning",
+          "disclosurely": "Begeleide setup, documentatie en customer success-contactpunten",
+          "competitor": "Omvat vaak professionele diensten voor enterprise-uitrollen — bevestig wat u koopt"
+        },
+        {
+          "feature": "Tijd tot eerste praktische uitrol",
+          "disclosurely": "Ontworpen voor organisaties die live willen zonder zwaar programma",
+          "competitor": "Hangt af van scope, integraties en governance — plan met uw NAVEX-team"
+        },
+        {
+          "feature": "Hulpbronnen",
+          "disclosurely": "Helpcentrum en begeleiding in het product",
+          "competitor": "Bevestig supportkanalen en SLA's in uw overeenkomst"
+        }
+      ]
+    }
+  },
+  "why": {
+    "title": "Waarom teams Disclosurely kiezen",
+    "card1": {
+      "title": "Lichter pad naar livegang",
+      "body": "Als prioriteit een werkend meldingskanaal is, kan een gericht product coördinatie verminderen vergeleken met een brede suite-uitrol.",
+      "bullet1": "Duidelijke stappen van proef naar productiegebruik",
+      "bullet2": "Minder afhankelijkheid van een groot cross-functioneel programma",
+      "bullet3": "Praktische defaults voor kleine en middelgrote teams"
+    },
+    "card2": {
+      "title": "Transparanter commercieel traject",
+      "body": "Gepubliceerde prijzen en een proef helpen finance en compliance af te stemmen vóór lange inkoopcycli.",
+      "bullet1": "Online prijzen waar gepubliceerd",
+      "bullet2": "Eenvoudige proef om echte workflows te valideren",
+      "bullet3": "Minder verrassingen bij afstemming plan op fte"
+    },
+    "card3": {
+      "title": "Gerichte workflow met moderne automatisering",
+      "body": "Disclosurely richt zich op veilige melding en zaakbehandeling, met automatisering waar het dagelijks helpt.",
+      "bullet1": "Integratie-opties op ondersteunde plannen",
+      "bullet2": "AI-ondersteuning voor routinematige zaaktaken waar ingeschakeld",
+      "bullet3": "Ruimte om te groeien zonder vroeg suite-complexiteit op te leggen"
+    }
+  },
+  "fitCompetitor": {
+    "title": "NAVEX kan passen bij organisaties die:",
+    "bullet1": "Al investeren in enterprise-GRC- of ethiek- en compliance-platforms van NAVEX of partners",
+    "bullet2": "Eén leveranciersrelatie willen over meerdere risico- en compliance-workflows",
+    "bullet3": "Inkoop uitvoeren die past bij grote evaluaties, statements of work en gefaseerde uitrollen",
+    "bullet4": "Een klassiek enterprise-contractpad voor deze categorie verwachten"
+  },
+  "migration": {
+    "title": "Overstappen naar een gericht klokkenluidersplatform kan eenvoudiger zijn dan u denkt",
+    "subtitle": "Begeleide onboarding, hulp bij het opnieuw opbouwen van formulieren en meldingsstromen, en gefaseerde implementatie waar nodig — zonder onnodige overhead.",
+    "step1": {
+      "title": "Scope bepalen",
+      "body": "Spreek af welke kanalen, formulieren en data u migreert en welke interne goedkeuringen vóór livegang nodig zijn."
+    },
+    "step2": {
+      "title": "Stromen in Disclosurely opbouwen",
+      "body": "We helpen categorieën, formulieren en behandelaarsrollen te mappen zodat het proces herkenbaar blijft."
+    },
+    "step3": {
+      "title": "Lanceren met ondersteuning",
+      "body": "Train behandelaars, communiceer het kanaal en open meldingspaden met ons team erbij."
+    },
+    "disclaimer": "Tijdlijnen hangen af van uw data, beleid en huidige omgeving — we maken per stap expliciet wat haalbaar is."
+  },
+  "finalCta": {
+    "title": "Zoekt u een lichter alternatief voor NAVEX?",
+    "subtitle": "Start een gratis proef of boek een demo om te zien of Disclosurely bij uw organisatie past."
+  }
+}

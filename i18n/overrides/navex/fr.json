@@ -1,0 +1,206 @@
+{
+  "competitorName": "NAVEX",
+  "hero": {
+    "titleLine1": "Disclosurely vs",
+    "titleLine2": "NAVEX",
+    "subtitle": "Comparez les modèles d’achat, la complexité de déploiement et les workflows de signalement pour voir quelle plateforme convient à votre organisation."
+  },
+  "fairnessNote": "Cette comparaison repose sur des informations publiques et le positionnement produit à la date de rédaction. Les fonctionnalités et les tarifs peuvent évoluer — vérifiez les détails auprès de chaque éditeur.",
+  "quickSummary": {
+    "title": "Orientation rapide",
+    "disclosurelyTitle": "Disclosurely peut mieux convenir aux organisations qui souhaitent :",
+    "disclosurelyBullet1": "Des attentes tarifaires plus claires et un parcours commercial plus léger",
+    "disclosurelyBullet2": "Un processus d’achat avec moins de lourdeur de procurement enterprise",
+    "disclosurelyBullet3": "Un chemin plus rapide et pragmatique vers un premier déploiement",
+    "disclosurelyBullet4": "Un workflow de signalement ciblé avec une automatisation moderne le cas échéant",
+    "competitorTitle": "NAVEX peut convenir aux organisations qui :",
+    "competitorBullet1": "Standardisent déjà des suites enterprise de gouvernance, risque ou conformité",
+    "competitorBullet2": "Veulent une relation fournisseur élargie sur plusieurs domaines de risque",
+    "competitorBullet3": "Ont des processus d’achat adaptés aux grandes évaluations de plateformes",
+    "competitorBullet4": "Préfèrent un modèle d’achat enterprise traditionnel pour cette catégorie"
+  },
+  "tables": {
+    "pricing": {
+      "title": "Modèle d’achat et procurement",
+      "rows": [
+        {
+          "feature": "Visibilité des prix et parcours commercial",
+          "disclosurely": "Niveaux et limites publiés sur notre page tarifs lorsqu’ils sont proposés",
+          "competitor": "Devis souvent pilotés par les ventes pour les programmes enterprise — confirmez sur les supports NAVEX"
+        },
+        {
+          "feature": "Expérience d’achat typique",
+          "disclosurely": "Essai en libre-service et inscription en ligne le cas échéant",
+          "competitor": "Implique souvent démos, cadrage et étapes de procurement enterprise — confirmez pour votre organisation"
+        },
+        {
+          "feature": "Accès essai ou démo",
+          "disclosurely": "Essai gratuit disponible — voir les conditions actuelles à l’inscription",
+          "competitor": "Confirmez comment NAVEX engage les prospects dans votre segment"
+        },
+        {
+          "feature": "Focus produit",
+          "disclosurely": "Centré sur la collecte sécurisée des signalements et le traitement des dossiers",
+          "competitor": "Fait partie d’un portefeuille plus large GRC — confirmez les modules nécessaires"
+        },
+        {
+          "feature": "Adéquation aux programmes plus légers",
+          "disclosurely": "Souvent choisi quand les équipes veulent de la rapidité sans déploiement suite complet",
+          "competitor": "Souvent choisi quand une relation plateforme élargie est déjà visée — validez en interne"
+        }
+      ]
+    },
+    "reporting": {
+      "title": "Signalement et collecte",
+      "rows": [
+        {
+          "feature": "Canal web de signalement",
+          "disclosurely": "Oui",
+          "competitor": "Oui — confirmez pour votre configuration NAVEX"
+        },
+        {
+          "feature": "Signalement anonyme",
+          "disclosurely": "Oui",
+          "competitor": "Confirmez le détail d’implémentation pour votre déploiement"
+        },
+        {
+          "feature": "Communication bidirectionnelle sécurisée",
+          "disclosurely": "Oui",
+          "competitor": "Confirmez les canaux pris en charge sur votre offre"
+        },
+        {
+          "feature": "Image de marque et configuration du portail",
+          "disclosurely": "Oui — voir la documentation produit",
+          "competitor": "Confirmez les options de marque et de configuration pour votre contrat"
+        },
+        {
+          "feature": "Signalement multilingue",
+          "disclosurely": "Large couverture linguistique pour les signaleurs",
+          "competitor": "Confirmez la couverture linguistique pour vos équipes"
+        }
+      ]
+    },
+    "caseHandling": {
+      "title": "Traitement des dossiers et administration des workflows",
+      "rows": [
+        {
+          "feature": "Boîte de réception et workflow",
+          "disclosurely": "Oui",
+          "competitor": "Oui — le périmètre dépend des produits achetés"
+        },
+        {
+          "feature": "Accès et permissions par rôle",
+          "disclosurely": "Oui",
+          "competitor": "Oui — confirmez pour votre implémentation"
+        },
+        {
+          "feature": "Automatisation et intégrations",
+          "disclosurely": "Intégrations telles que Zapier sur les offres concernées",
+          "competitor": "Confirmez automatisation et intégrations disponibles pour votre équipe"
+        },
+        {
+          "feature": "Traitement assisté par l’IA",
+          "disclosurely": "Intégré au produit sur les offres concernées",
+          "competitor": "Confirmez si des fonctions IA ou analytiques s’appliquent à votre cas"
+        }
+      ]
+    },
+    "security": {
+      "title": "Sécurité et contrôle d’accès",
+      "rows": [
+        {
+          "feature": "Chiffrement en transit et au repos",
+          "disclosurely": "Chiffrement utilisé dans le service — voir la documentation sécurité",
+          "competitor": "Consultez les documents sécurité et confiance NAVEX pour le détail technique"
+        },
+        {
+          "feature": "Contrôles d’accès aux données de dossier",
+          "disclosurely": "Oui — permissions par rôle pour les gestionnaires",
+          "competitor": "Oui — confirmez les contrôles pour votre modèle de déploiement"
+        },
+        {
+          "feature": "Journaux d’audit",
+          "disclosurely": "Oui — événements d’accès et de dossier clés pour les administrateurs autorisés",
+          "competitor": "Confirmez journalisation et conservation pour votre édition"
+        },
+        {
+          "feature": "Alignement protection des données (ex. RGPD)",
+          "disclosurely": "Conçu avec des contrôles orientés RGPD — pas un conseil juridique",
+          "competitor": "Consultez la documentation NAVEX confidentialité et conformité pour votre juridiction"
+        }
+      ]
+    },
+    "rollout": {
+      "title": "Déploiement et support",
+      "rows": [
+        {
+          "feature": "Onboarding et accompagnement à la mise en œuvre",
+          "disclosurely": "Configuration guidée, documentation et points de contact customer success",
+          "competitor": "Inclut souvent des services professionnels pour les déploiements enterprise — confirmez votre périmètre d’achat"
+        },
+        {
+          "feature": "Délai jusqu’à un premier déploiement pragmatique",
+          "disclosurely": "Conçu pour les organisations qui veulent aller en production sans programme lourd",
+          "competitor": "Dépend du périmètre, des intégrations et de la gouvernance — planifiez avec votre équipe NAVEX"
+        },
+        {
+          "feature": "Ressources d’aide",
+          "disclosurely": "Centre d’aide et guidance dans le produit",
+          "competitor": "Confirmez canaux de support et SLA dans votre accord"
+        }
+      ]
+    }
+  },
+  "why": {
+    "title": "Pourquoi les équipes choisissent Disclosurely",
+    "card1": {
+      "title": "Un chemin plus léger vers la mise en service",
+      "body": "Lorsqu’un canal de signalement opérationnel est prioritaire, un produit ciblé peut réduire la coordination par rapport à un déploiement suite étendue.",
+      "bullet1": "Étapes claires de l’essai à l’usage en production",
+      "bullet2": "Moins de dépendance à un programme transversal massif",
+      "bullet3": "Paramètres par défaut pragmatiques pour les petites et moyennes équipes"
+    },
+    "card2": {
+      "title": "Parcours commercial plus transparent",
+      "body": "Les tarifs publics et un essai aident finance et conformité à s’aligner avant de longs cycles d’achat.",
+      "bullet1": "Tarifs en ligne lorsqu’ils sont publiés",
+      "bullet2": "Essai simple pour valider les workflows réels",
+      "bullet3": "Moins de surprises pour faire correspondre l’offre à l’effectif"
+    },
+    "card3": {
+      "title": "Workflow ciblé et automatisation moderne",
+      "body": "Disclosurely se concentre sur le signalement sécurisé et le traitement des dossiers, avec automatisation là où elle aide au quotidien.",
+      "bullet1": "Options d’intégration sur les offres concernées",
+      "bullet2": "Assistance IA pour les tâches de dossier courantes lorsqu’elle est activée",
+      "bullet3": "Marge pour grandir sans imposer tôt la complexité d’une suite"
+    }
+  },
+  "fitCompetitor": {
+    "title": "NAVEX peut convenir aux organisations qui :",
+    "bullet1": "Investissent déjà dans des plateformes GRC ou éthique et conformité NAVEX ou partenaires",
+    "bullet2": "Veulent une relation fournisseur unique sur plusieurs workflows risque et conformité",
+    "bullet3": "Mènent des achats adaptés aux grandes évaluations, cahiers des charges et déploiements par phases",
+    "bullet4": "Attendent un parcours contractuel enterprise classique pour cette catégorie"
+  },
+  "migration": {
+    "title": "Passer à une plateforme de signalement ciblée peut être plus simple que prévu",
+    "subtitle": "Onboarding guidé, aide à reconstruire formulaires et flux de signalement, et mise en œuvre échelonnée si besoin — sans surcharge inutile.",
+    "step1": {
+      "title": "Définir le périmètre",
+      "body": "Convenez des canaux, formulaires et données à migrer et des validations internes avant la mise en service."
+    },
+    "step2": {
+      "title": "Reconstruire les flux dans Disclosurely",
+      "body": "Nous aidons à cartographier catégories, formulaires et rôles gestionnaires pour des processus familiers."
+    },
+    "step3": {
+      "title": "Lancer avec support",
+      "body": "Former les gestionnaires, communiquer le canal et ouvrir les voies de signalement avec notre équipe."
+    },
+    "disclaimer": "Les délais varient selon vos données, politiques et environnement actuel — nous précisons à chaque étape ce qui est réaliste."
+  },
+  "finalCta": {
+    "title": "Vous cherchez une alternative plus légère à NAVEX ?",
+    "subtitle": "Démarrez un essai gratuit ou réservez une démo pour voir si Disclosurely convient à votre organisation."
+  }
+}

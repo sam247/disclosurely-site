@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Sobre a Disclosurely",
+    "description": "Porque a Disclosurely existe: software de denúncia seguro pensado para ser mais fácil de lançar, gerir e em que confiar — sem complexidade desnecessária."
+  },
+  "hero": {
+    "tag": "Sobre a Disclosurely",
+    "title": "Criado para tornar as denúncias mais simples, seguras e dignas de confiança",
+    "description": "A Disclosurely foi criada para ajudar organizações a lançar canais de denúncia seguros em que as pessoas realmente confiam — sem complexidade desnecessária, fluxos desatualizados ou sobrecarga de implementação."
+  },
+  "mission": {
+    "title": "Porque existimos",
+    "p1": "Só se usam canais de denúncia que parecem seguros e sérios. As organizações precisam de ferramentas que permitam receber, triar e tratar preocupações corretamente.",
+    "p2": "Muitos sistemas de denúncia ainda parecem datados, excessivamente complexos ou difíceis de implementar. Esse atrito impede o que todos querem: detetar problemas cedo e tratá-los com equidade.",
+    "p3": "A Disclosurely foi concebida para tornar a denúncia segura mais fácil de lançar e de gerir pelas equipas internas — com fluxos práticos e conscientes da privacidade, não com slogans vazios."
+  },
+  "beliefs": {
+    "title": "O que um bom software de denúncia deve fazer, na nossa opinião",
+    "items": [
+      "Proteger identidades e informação sensível por desenho, com controlos alinhados a investigações reais.",
+      "Facilitar que as organizações tratem denúncias corretamente — receção clara, acompanhamento estruturado e acesso responsável.",
+      "Apoiar a confiança com comunicação segura e processos sensatos, não com promessas vagas.",
+      "Reduzir o atrito para compliance, RH e responsáveis por casos que usam a ferramenta todas as semanas.",
+      "Ajudar a cumprir expectativas regulamentares onde se aplicam — sem sobrecarregar equipas mais pequenas.",
+      "Melhorar ao longo do tempo: entregamos de forma iterativa e ouvimos como as equipas usam a plataforma."
+    ]
+  },
+  "audience": {
+    "title": "Para quem a Disclosurely foi feita",
+    "items": [
+      "Equipas de compliance e risco responsáveis por programas speak-up",
+      "RH e responsáveis por denúncias internas que coordenam a gestão de casos",
+      "Organizações a implementar ou renovar canais de denúncia na UE ou no Reino Unido",
+      "Equipas que querem denúncias modernas e seguras sem um programa enterprise pesado",
+      "Compradores que valorizam clareza sobre segurança e dados — ver página de Segurança"
+    ]
+  },
+  "trust": {
+    "title": "Como abordamos a confiança e a denúncia segura",
+    "intro": "Focamo-nos em controlos compreensíveis e práticas operacionais em que pode confiar. O quadro completo — encriptação, acessos, cópias de segurança, registos e proteção de dados — está na página dedicada à segurança.",
+    "items": [
+      "Encriptação forte em trânsito e em repouso (AES-256-GCM), alinhada com a descrição do serviço em produção.",
+      "Gestão de casos com controlo de acesso: apenas pessoas autorizadas na sua organização veem denúncias, segundo funções e permissões que define.",
+      "Desenho consciente da privacidade para apoiar tratamento alinhado com o RGPD de dados pessoais sensíveis.",
+      "Registos de auditoria de acessos e eventos-chave de casos para apoiar prestação de contas.",
+      "Alojamento em infraestrutura cloud reconhecida com monitorização e cópias de segurança encriptadas."
+    ],
+    "securityCta": "Ler a página Segurança e confiança"
+  },
+  "cta": {
+    "title": "Quer ver como a Disclosurely funciona?",
+    "subtitle": "Explore a plataforma, veja preços ou marque uma demo para perceber se se adequa à sua organização.",
+    "pricing": "Ver preços",
+    "demo": "Marcar uma demo"
+  },
+  "explore": {
+    "title": "Explorar mais",
+    "subtitle": "Próximos passos práticos se avalia software de denúncia.",
+    "featuresTitle": "Funcionalidades da plataforma",
+    "featuresBody": "Canais de denúncia, gestão de casos, automação e o dia a dia das equipas na Disclosurely.",
+    "pricingTitle": "Preços",
+    "pricingBody": "Níveis transparentes onde publicados — veja o que está incluído antes de falar com vendas.",
+    "directiveTitle": "Diretiva europeia de denúncia",
+    "directiveBody": "Contexto sobre requisitos e como as organizações costumam estruturar canais internos."
+  }
+}

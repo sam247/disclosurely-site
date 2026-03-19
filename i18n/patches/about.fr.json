@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "À propos de Disclosurely",
+    "description": "Pourquoi Disclosurely existe : un logiciel de signalement sécurisé pensé pour être plus simple à déployer, à gérer et à faire confiance — sans complexité inutile."
+  },
+  "hero": {
+    "tag": "À propos de Disclosurely",
+    "title": "Conçu pour rendre le signalement plus simple, plus sûr et plus digne de confiance",
+    "description": "Disclosurely a été créé pour aider les organisations à lancer des canaux de signalement sécurisés auxquels les personnes peuvent réellement faire confiance — sans complexité superflue, workflows obsolètes ni charge de déploiement excessive."
+  },
+  "mission": {
+    "title": "Pourquoi nous existons",
+    "p1": "Les gens n'utilisent des canaux de signalement que s'ils les jugent sûrs et pris au sérieux. Les organisations ont besoin d'outils qui permettent de recevoir, trier et traiter les signalements correctement.",
+    "p2": "Trop de systèmes de signalement semblent encore datés, trop complexes ou pénibles à déployer. Cette friction empêche l'objectif partagé : faire remonter les problèmes tôt et les traiter équitablement.",
+    "p3": "Disclosurely est conçu pour faciliter le lancement du signalement sécurisé, simplifier la vie des équipes internes et s'appuyer sur des workflows pratiques et respectueux de la vie privée — pas sur le jargon."
+  },
+  "beliefs": {
+    "title": "Ce qu'un bon logiciel de signalement doit faire, selon nous",
+    "items": [
+      "Protéger les identités et les informations sensibles par conception, avec des contrôles adaptés aux enquêtes réelles.",
+      "Aider les organisations à traiter les signalements correctement — intake clair, suivi structuré, accès responsabilisant.",
+      "Renforcer la confiance par une communication sécurisée et des processus sensés, pas par des promesses vagues.",
+      "Réduire la friction pour la conformité, les RH et les gestionnaires de cas qui utilisent l'outil chaque semaine.",
+      "Aider à répondre aux attentes réglementaires lorsqu'elles s'appliquent — sans imposer une complexité inutile aux petites équipes.",
+      "S'améliorer dans le temps : nous livrons de façon itérative et tenons compte de l'usage réel des équipes."
+    ]
+  },
+  "audience": {
+    "title": "Pour qui Disclosurely est conçu",
+    "items": [
+      "Équipes conformité et risques responsables des programmes speak-up",
+      "RH et responsables du signalement interne qui coordonnent le traitement des dossiers",
+      "Organisations qui déploient ou renouvellent des canaux de signalement UE ou Royaume-Uni",
+      "Équipes qui veulent un signalement moderne et sécurisé sans programme enterprise lourd",
+      "Acheteurs qui valorisent la clarté sur la sécurité et les données — voir notre page Sécurité pour le détail"
+    ]
+  },
+  "trust": {
+    "title": "Notre approche de la confiance et du signalement sécurisé",
+    "intro": "Nous nous concentrons sur des contrôles compréhensibles et des pratiques opérationnelles fiables. L'ensemble — chiffrement, accès, sauvegardes, journaux et protection des données — est documenté sur notre page dédiée à la sécurité.",
+    "items": [
+      "Chiffrement robuste en transit et au repos (AES-256-GCM), aligné sur la façon dont nous décrivons le service en production.",
+      "Traitement des dossiers sous contrôle d'accès : seules les personnes autorisées de votre organisation voient les signalements, selon les rôles et permissions que vous définissez.",
+      "Conception attentive à la vie privée pour soutenir un traitement aligné sur le RGPD des données sensibles.",
+      "Journaux d'audit des accès et événements clés des dossiers pour soutenir la responsabilité.",
+      "Hébergement sur une infrastructure cloud reconnue, avec surveillance et sauvegardes chiffrées."
+    ],
+    "securityCta": "Lire notre page Sécurité et confiance"
+  },
+  "cta": {
+    "title": "Voir comment Disclosurely fonctionne ?",
+    "subtitle": "Explorez la plateforme, consultez les tarifs ou réservez une démo pour voir si cela correspond à votre organisation.",
+    "pricing": "Voir les tarifs",
+    "demo": "Réserver une démo"
+  },
+  "explore": {
+    "title": "Aller plus loin",
+    "subtitle": "Prochaines étapes pratiques si vous évaluez un logiciel de signalement.",
+    "featuresTitle": "Fonctionnalités de la plateforme",
+    "featuresBody": "Canaux de signalement, gestion des dossiers, automatisation et quotidien des équipes dans Disclosurely.",
+    "pricingTitle": "Tarifs",
+    "pricingBody": "Niveaux transparents lorsqu'ils sont publiés — voyez ce qui est inclus avant d'échanger avec les ventes.",
+    "directiveTitle": "Directive européenne sur les lanceurs d'alerte",
+    "directiveBody": "Contexte sur les exigences et comment les organisations structurent souvent leurs canaux internes."
+  }
+}
