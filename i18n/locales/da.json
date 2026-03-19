@@ -818,7 +818,7 @@
       "description": "Vi kan hjælpe med multi-team-udrulninger, tilpasset onboarding og større organisationsbehov."
     },
     "form": {
-      "title": "Anmod om demo",
+      "title": "Send os en besked",
       "description": "Kort om jeres organisation og behov — vi vender tilbage hurtigst muligt.",
       "enquiryType": {
         "label": "Hvad har du brug for hjælp til?",
@@ -832,9 +832,13 @@
           "general": "Generel henvendelse"
         }
       },
-      "name": {
-        "label": "Navn",
-        "placeholder": "Fulde navn"
+      "firstName": {
+        "label": "Fornavn",
+        "placeholder": "Fornavn"
+      },
+      "lastName": {
+        "label": "Efternavn",
+        "placeholder": "Efternavn"
       },
       "email": {
         "label": "Arbejdsmail",
@@ -844,23 +848,12 @@
         "label": "Organisation",
         "placeholder": "Organisationens navn"
       },
-      "organisationSize": {
-        "label": "Organisationsstørrelse (valgfrit)",
-        "placeholder": "Jeg vil helst ikke oplyse",
-        "options": {
-          "1_50": "1–50 personer",
-          "51_250": "51–250 personer",
-          "251_1000": "251–1.000 personer",
-          "1000_plus": "Over 1.000 personer"
-        }
-      },
       "message": {
         "label": "Hvordan kan vi hjælpe?",
         "placeholder": "Tidsplan, regioner eller hvad du gerne vil se på et opkald..."
       },
       "reassurance": {
         "response": "Vi sigter mod svar inden én arbejdsdag",
-        "noPressure": "Intet hårdt salgspres",
         "tailored": "Samtaler tilpasset jeres organisation"
       },
       "submit": "Send anmodning",

@@ -244,7 +244,7 @@
     "branding": {
       "tag": "Branding & Identity",
       "title": "Custom Branding",
-      "description": "Make your whistleblower reporting portal look and feel like a native part of your organisation. With custom domains, logo integration, and branded portals, employees and third parties see a familiar, trustworthy environment when they submit a concern. This reduces friction, boosts confidence in the channel, and helps your whistleblower software blend seamlessly into your existing compliance and HR ecosystem.",
+      "description": "Make your whistleblower reporting portal look and feel like a native part of your organisation. With custom domains, logo integration, and branded portals, employees and third parties see a familiar, trustworthy environment when they submit a concern.\nThis reduces friction, boosts confidence in the channel, and helps your whistleblower software blend seamlessly into your existing compliance and HR ecosystem.",
       "point1": "Custom CNAME support for branded secure links, so reporting URLs sit on your own domain and align with your security and IT standards.",
       "point2": "Your logo and branding on all submission portals, email notifications, and dashboards to create a consistent, trusted experience for reporters and case handlers.",
       "point3": "White-label options for complete brand control, ideal for groups, partners, or consultants offering whistleblowing channels as part of a broader compliance service.",
@@ -843,7 +843,7 @@
       "description": "We can help with multi-team rollouts, custom onboarding, and larger organisational requirements."
     },
     "form": {
-      "title": "Request a demo",
+      "title": "Send us a Message",
       "description": "Tell us a little about your organisation and what you need. We'll get back to you as soon as we can.",
       "enquiryType": {
         "label": "What do you need help with?",
@@ -857,9 +857,13 @@
           "general": "General enquiry"
         }
       },
-      "name": {
-        "label": "Name",
-        "placeholder": "Your full name"
+      "firstName": {
+        "label": "First name",
+        "placeholder": "First name"
+      },
+      "lastName": {
+        "label": "Last name",
+        "placeholder": "Last name"
       },
       "email": {
         "label": "Work email",
@@ -869,23 +873,12 @@
         "label": "Organisation",
         "placeholder": "Organisation name"
       },
-      "organisationSize": {
-        "label": "Organisation size (optional)",
-        "placeholder": "Prefer not to say",
-        "options": {
-          "1_50": "1–50 people",
-          "51_250": "51–250 people",
-          "251_1000": "251–1,000 people",
-          "1000_plus": "1,000+ people"
-        }
-      },
       "message": {
         "label": "How can we help?",
         "placeholder": "A few words on timelines, regions, or what you want to see on a call..."
       },
       "reassurance": {
         "response": "We aim to reply within one business day",
-        "noPressure": "No hard sales pressure",
         "tailored": "Conversations tailored to your organisation"
       },
       "submit": "Send request",

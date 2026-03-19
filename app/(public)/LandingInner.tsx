@@ -534,7 +534,7 @@ function LandingInner() {
               </div>
               <div className="order-1 lg:order-2">
                 <h2 className="mb-6 text-3xl font-bold text-gray-900 sm:text-4xl">{t("landing.branding.title")}</h2>
-                <p className="mb-6 text-lg text-gray-600">
+                <p className="mb-6 whitespace-pre-line text-lg text-gray-600">
                   {t("landing.branding.description")}
                 </p>
                 <ul className="mb-6 space-y-2">

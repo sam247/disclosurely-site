@@ -1109,7 +1109,7 @@
       "description": "Wir unterstützen bei Multi-Team-Rollouts, angepasstem Onboarding und größeren organisatorischen Anforderungen."
     },
     "form": {
-      "title": "Demo anfragen",
+      "title": "Schreiben Sie uns",
       "description": "Kurz Ihre Organisation und Ihr Anliegen — wir melden uns so schnell wir können.",
       "enquiryType": {
         "label": "Wobei können wir helfen?",
@@ -1123,9 +1123,13 @@
           "general": "Allgemeine Anfrage"
         }
       },
-      "name": {
-        "label": "Name",
-        "placeholder": "Vor- und Nachname"
+      "firstName": {
+        "label": "Vorname",
+        "placeholder": "Vorname"
+      },
+      "lastName": {
+        "label": "Nachname",
+        "placeholder": "Nachname"
       },
       "email": {
         "label": "Geschäftliche E-Mail",
@@ -1135,23 +1139,12 @@
         "label": "Organisation",
         "placeholder": "Name der Organisation"
       },
-      "organisationSize": {
-        "label": "Organisationsgröße (optional)",
-        "placeholder": "Keine Angabe",
-        "options": {
-          "1_50": "1–50 Personen",
-          "51_250": "51–250 Personen",
-          "251_1000": "251–1.000 Personen",
-          "1000_plus": "über 1.000 Personen"
-        }
-      },
       "message": {
         "label": "Wie können wir helfen?",
         "placeholder": "z. B. Zeitplan, Regionen oder was Sie im Gespräch sehen möchten..."
       },
       "reassurance": {
         "response": "Antwort in der Regel innerhalb eines Werktags",
-        "noPressure": "Kein harter Verkaufsdruck",
         "tailored": "Gespräche auf Ihre Organisation zugeschnitten"
       },
       "submit": "Anfrage senden",

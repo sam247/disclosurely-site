@@ -1101,7 +1101,7 @@
       "description": "Pomagamy przy wdrożeniach wielozespołowych, niestandardowym onboardingu i większych organizacjach."
     },
     "form": {
-      "title": "Poproś o demo",
+      "title": "Napisz do nas",
       "description": "Krótko o organizacji i potrzebach — odezwiemy się tak szybko, jak to możliwe.",
       "enquiryType": {
         "label": "W czym potrzebujesz pomocy?",
@@ -1115,9 +1115,13 @@
           "general": "Zapytanie ogólne"
         }
       },
-      "name": {
-        "label": "Imię i nazwisko",
-        "placeholder": "Pełne imię i nazwisko"
+      "firstName": {
+        "label": "Imię",
+        "placeholder": "Imię"
+      },
+      "lastName": {
+        "label": "Nazwisko",
+        "placeholder": "Nazwisko"
       },
       "email": {
         "label": "Służbowy e-mail",
@@ -1127,23 +1131,12 @@
         "label": "Organizacja",
         "placeholder": "Nazwa organizacji"
       },
-      "organisationSize": {
-        "label": "Wielkość organizacji (opcjonalnie)",
-        "placeholder": "Wolę nie podawać",
-        "options": {
-          "1_50": "1–50 osób",
-          "51_250": "51–250 osób",
-          "251_1000": "251–1 000 osób",
-          "1000_plus": "Ponad 1 000 osób"
-        }
-      },
       "message": {
         "label": "Jak możemy pomóc?",
         "placeholder": "Terminy, regiony lub co chcesz zobaczyć na rozmowie..."
       },
       "reassurance": {
         "response": "Staramy się odpowiedzieć w jeden dzień roboczy",
-        "noPressure": "Bez agresywnej presji sprzedażowej",
         "tailored": "Rozmowy dopasowane do Twojej organizacji"
       },
       "submit": "Wyślij prośbę",

@@ -12,19 +12,13 @@ import { useTranslation } from "react-i18next";
 import { useLanguageFromUrl } from "@/hooks/useLanguageFromUrl";
 import { useGeographicalLanguage } from "@/hooks/useGeographicalLanguage";
 import { supportedLanguages } from "@/i18n/client";
+import { track } from "@vercel/analytics";
 import { trackEvent } from "@/lib/events/trackEvent";
 import { cn } from "@/lib/utils";
 
 type Lang = (typeof supportedLanguages)[number];
 
 const ENQUIRY_TYPES = ["demo", "pricing", "compliance", "rollout", "enterprise", "general"] as const;
-const ORG_SIZE_OPTIONS = [
-  { value: "", labelKey: null as null | "1_50" | "51_250" | "251_1000" | "1000_plus" },
-  { value: "1-50", labelKey: "1_50" as const },
-  { value: "51-250", labelKey: "51_250" as const },
-  { value: "251-1000", labelKey: "251_1000" as const },
-  { value: "1000+", labelKey: "1000_plus" as const },
-] as const;
 
 declare global {
   interface Window {
@@ -39,11 +33,11 @@ declare global {
 }
 
 const initialForm = {
-  name: "",
+  firstName: "",
+  lastName: "",
   email: "",
   company: "",
   enquiryType: "" as string,
-  organisationSize: "" as string,
   message: "",
 };
 
@@ -133,6 +127,7 @@ function ContactContent() {
                   onClick={() => {
                     window.Calendly?.initPopupWidget({ url: "https://calendly.com/disclosurely/30min" });
                     trackEvent("book_demo_click", { location: "contact_help" });
+                    track("book_demo_click", { location: "contact_help" });
                   }}
                   className="mt-4 rounded-lg bg-blue-600 px-4 py-2.5 text-white transition-colors hover:bg-blue-700"
                 >
@@ -198,7 +193,7 @@ function ContactContent() {
 
                         setSubmitStatus("success");
                         setFormData({ ...initialForm });
-                        trackEvent("demo_booked", {
+                        trackEvent("contact_form_submit", {
                           location: "contact_page",
                           enquiry_type: formData.enquiryType || undefined,
                         });
@@ -233,69 +228,69 @@ function ContactContent() {
                         ))}
                       </select>
                     </div>
-                    <div>
-                      <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="name">
-                        {t("contact.form.name.label")}
-                      </label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder={t("contact.form.name.placeholder")}
-                        required
-                        disabled={isSubmitting}
-                        autoComplete="name"
-                      />
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      <div>
+                        <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="firstName">
+                          {t("contact.form.firstName.label")}
+                        </label>
+                        <Input
+                          id="firstName"
+                          name="firstName"
+                          value={formData.firstName}
+                          onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                          placeholder={t("contact.form.firstName.placeholder")}
+                          required
+                          disabled={isSubmitting}
+                          autoComplete="given-name"
+                        />
+                      </div>
+                      <div>
+                        <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="lastName">
+                          {t("contact.form.lastName.label")}
+                        </label>
+                        <Input
+                          id="lastName"
+                          name="lastName"
+                          value={formData.lastName}
+                          onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                          placeholder={t("contact.form.lastName.placeholder")}
+                          required
+                          disabled={isSubmitting}
+                          autoComplete="family-name"
+                        />
+                      </div>
                     </div>
-                    <div>
-                      <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="email">
-                        {t("contact.form.email.label")}
-                      </label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder={t("contact.form.email.placeholder")}
-                        required
-                        disabled={isSubmitting}
-                        autoComplete="email"
-                      />
-                    </div>
-                    <div>
-                      <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="company">
-                        {t("contact.form.company.label")}
-                      </label>
-                      <Input
-                        id="company"
-                        name="company"
-                        value={formData.company}
-                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                        placeholder={t("contact.form.company.placeholder")}
-                        disabled={isSubmitting}
-                        autoComplete="organization"
-                      />
-                    </div>
-                    <div>
-                      <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="organisationSize">
-                        {t("contact.form.organisationSize.label")}
-                      </label>
-                      <select
-                        id="organisationSize"
-                        name="organisationSize"
-                        className={selectClass}
-                        value={formData.organisationSize}
-                        onChange={(e) => setFormData({ ...formData, organisationSize: e.target.value })}
-                        disabled={isSubmitting}
-                      >
-                        {ORG_SIZE_OPTIONS.map(({ value, labelKey: lk }) => (
-                          <option key={value || "unspecified"} value={value}>
-                            {lk ? t(`contact.form.organisationSize.options.${lk}`) : t("contact.form.organisationSize.placeholder")}
-                          </option>
-                        ))}
-                      </select>
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      <div>
+                        <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="email">
+                          {t("contact.form.email.label")}
+                        </label>
+                        <Input
+                          id="email"
+                          name="email"
+                          type="email"
+                          value={formData.email}
+                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          placeholder={t("contact.form.email.placeholder")}
+                          required
+                          disabled={isSubmitting}
+                          autoComplete="email"
+                        />
+                      </div>
+                      <div>
+                        <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="company">
+                          {t("contact.form.company.label")}
+                        </label>
+                        <Input
+                          id="company"
+                          name="company"
+                          value={formData.company}
+                          onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                          placeholder={t("contact.form.company.placeholder")}
+                          disabled={isSubmitting}
+                          autoComplete="organization"
+                        />
+                      </div>
                     </div>
                     <div>
                       <label className="mb-2 block text-sm font-medium text-gray-700" htmlFor="message">
@@ -317,10 +312,6 @@ function ContactContent() {
                       <li className="flex min-w-0 flex-1 items-start gap-2 sm:min-w-[12rem]">
                         <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-600" aria-hidden />
                         <span className="leading-snug">{t("contact.form.reassurance.response")}</span>
-                      </li>
-                      <li className="flex min-w-0 flex-1 items-start gap-2 sm:min-w-[12rem]">
-                        <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-600" aria-hidden />
-                        <span className="leading-snug">{t("contact.form.reassurance.noPressure")}</span>
                       </li>
                       <li className="flex min-w-0 flex-1 items-start gap-2 sm:min-w-[12rem]">
                         <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-600" aria-hidden />

@@ -818,7 +818,7 @@
       "description": "Possiamo aiutarti con rollout multi-team, onboarding personalizzato e esigenze di organizzazioni più grandi."
     },
     "form": {
-      "title": "Richiedi una demo",
+      "title": "Inviaci un messaggio",
       "description": "Raccontaci brevemente la tua organizzazione e cosa ti serve. Ti risponderemo il prima possibile.",
       "enquiryType": {
         "label": "Di cosa hai bisogno?",
@@ -832,9 +832,13 @@
           "general": "Richiesta generale"
         }
       },
-      "name": {
+      "firstName": {
         "label": "Nome",
-        "placeholder": "Nome e cognome"
+        "placeholder": "Nome"
+      },
+      "lastName": {
+        "label": "Cognome",
+        "placeholder": "Cognome"
       },
       "email": {
         "label": "Email di lavoro",
@@ -844,23 +848,12 @@
         "label": "Organizzazione",
         "placeholder": "Nome dell'organizzazione"
       },
-      "organisationSize": {
-        "label": "Dimensione organizzazione (facoltativo)",
-        "placeholder": "Preferisco non indicare",
-        "options": {
-          "1_50": "1–50 persone",
-          "51_250": "51–250 persone",
-          "251_1000": "251–1.000 persone",
-          "1000_plus": "Oltre 1.000 persone"
-        }
-      },
       "message": {
         "label": "Come possiamo aiutarti?",
         "placeholder": "Tempistiche, regioni o cosa vorresti vedere in chiamata..."
       },
       "reassurance": {
         "response": "Risposta di solito entro un giorno lavorativo",
-        "noPressure": "Nessuna pressione commerciale aggressiva",
         "tailored": "Conversazioni su misura per la tua organizzazione"
       },
       "submit": "Invia richiesta",

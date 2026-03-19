@@ -817,7 +817,7 @@
       "description": "Nous pouvons vous aider pour les déploiements multi-équipes, l'onboarding personnalisé et les besoins des grandes organisations."
     },
     "form": {
-      "title": "Demander une démo",
+      "title": "Envoyez-nous un message",
       "description": "Quelques mots sur votre organisation et vos besoins — nous vous répondrons dès que possible.",
       "enquiryType": {
         "label": "Pour quoi avez-vous besoin d'aide ?",
@@ -831,9 +831,13 @@
           "general": "Demande générale"
         }
       },
-      "name": {
+      "firstName": {
+        "label": "Prénom",
+        "placeholder": "Prénom"
+      },
+      "lastName": {
         "label": "Nom",
-        "placeholder": "Nom complet"
+        "placeholder": "Nom de famille"
       },
       "email": {
         "label": "E-mail professionnel",
@@ -843,23 +847,12 @@
         "label": "Organisation",
         "placeholder": "Nom de l'organisation"
       },
-      "organisationSize": {
-        "label": "Taille de l'organisation (facultatif)",
-        "placeholder": "Je préfère ne pas préciser",
-        "options": {
-          "1_50": "1 à 50 personnes",
-          "51_250": "51 à 250 personnes",
-          "251_1000": "251 à 1 000 personnes",
-          "1000_plus": "Plus de 1 000 personnes"
-        }
-      },
       "message": {
         "label": "Comment pouvons-nous vous aider ?",
         "placeholder": "Délais, régions ou ce que vous souhaitez voir lors d'un échange..."
       },
       "reassurance": {
         "response": "Réponse visée sous un jour ouvré",
-        "noPressure": "Pas de pression commerciale agressive",
         "tailored": "Échanges adaptés à votre organisation"
       },
       "submit": "Envoyer la demande",

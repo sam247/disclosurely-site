@@ -3,6 +3,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { CheckCircle, CheckCircle2, X, Star } from "lucide-react";
+import Script from "next/script";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -19,6 +20,14 @@ import { trackEvent } from "@/lib/events/trackEvent";
 
 type Lang = (typeof supportedLanguages)[number];
 
+declare global {
+  interface Window {
+    Calendly?: {
+      initPopupWidget: (options: { url: string }) => void;
+    };
+  }
+}
+
 function PricingContent() {
   const { t, i18n } = useTranslation();
   const { currentLanguage, langPrefix } = useLanguageFromUrl();
@@ -30,6 +39,11 @@ function PricingContent() {
     trackEvent("signup_click", { location: "pricing" });
     track("start_free_trial", { location, plan, billingInterval });
     window.location.href = "https://app.disclosurely.com/auth/signup";
+  };
+
+  const openCalendly = () => {
+    window.Calendly?.initPopupWidget({ url: "https://calendly.com/disclosurely/30min" });
+    trackEvent("book_demo_click", { location: "pricing_page" });
   };
 
   useEffect(() => {
@@ -117,6 +131,8 @@ function PricingContent() {
 
   return (
     <I18nProvider>
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+      <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
       <div className="bg-white">
         <section className="bg-white px-4 pb-12 pt-24 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl text-center">
@@ -132,7 +148,7 @@ function PricingContent() {
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               {t("pricing.hero.subtitle2")}
             </p>
-            <div className="mt-6 flex flex-col items-center justify-center">
+            <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
                 href="https://app.disclosurely.com/auth/signup"
                 className="rounded-lg bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700"
@@ -140,7 +156,15 @@ function PricingContent() {
               >
                 {t("pricing.hero.startFreeTrial")}
               </Link>
+              <button
+                type="button"
+                onClick={openCalendly}
+                className="rounded-lg border border-gray-300 px-6 py-3 text-gray-800 transition-colors hover:bg-gray-50"
+              >
+                Book a Demo
+              </button>
             </div>
+            <p className="mt-3 text-sm text-gray-600">Book a 30-minute walkthrough.</p>
           </div>
         </section>
 
@@ -294,10 +318,10 @@ function PricingContent() {
                     {plan.ctaPlan ? (
                       <button
                         type="button"
-                        className={`mt-6 w-full rounded-md px-4 py-2 text-sm shadow-sm transition-colors ${
+                        className={`mt-6 flex h-10 w-full items-center justify-center rounded-md px-4 text-sm transition-colors ${
                           plan.featured
                             ? "bg-blue-600 font-semibold text-white hover:bg-blue-700"
-                            : "border border-input bg-background hover:bg-accent hover:text-accent-foreground"
+                            : "border border-gray-300 bg-white text-gray-800 hover:bg-gray-50"
                         }`}
                         onClick={() => handleStartTrial("pricing_plan", plan.ctaPlan || plan.name)}
                       >
@@ -306,7 +330,7 @@ function PricingContent() {
                     ) : (
                       <Link
                         href={`${langPrefix}/contact`}
-                        className="mt-6 block w-full rounded-md border border-input bg-background px-4 py-2 text-center text-sm shadow-sm hover:bg-accent hover:text-accent-foreground"
+                        className="mt-6 flex h-10 w-full items-center justify-center rounded-md border border-gray-300 bg-white px-4 text-center text-sm text-gray-800 transition-colors hover:bg-gray-50"
                       >
                         {t("pricing.cta.contactSales")}
                       </Link>

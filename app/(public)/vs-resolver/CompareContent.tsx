@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import Link from "next/link";
+import Script from "next/script";
 import { Check, X, Shield, Zap, DollarSign, Users, Globe, Lock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import I18nProvider from "@/components/I18nProvider";
@@ -12,6 +13,14 @@ import { useLangPrefix } from "@/hooks/useLangPrefix";
 import { supportedLanguages } from "@/i18n/client";
 
 type Lang = (typeof supportedLanguages)[number];
+
+declare global {
+  interface Window {
+    Calendly?: {
+      initPopupWidget: (options: { url: string }) => void;
+    };
+  }
+}
 
 function CompareContent() {
   const { i18n } = useTranslation();
@@ -24,6 +33,10 @@ function CompareContent() {
     if (i18n.language !== lang) i18n.changeLanguage(lang as Lang);
     if (typeof document !== "undefined") document.documentElement.lang = lang;
   }, [currentLanguage, i18n]);
+
+  const openCalendly = () => {
+    window.Calendly?.initPopupWidget({ url: "https://calendly.com/disclosurely/30min" });
+  };
 
   const comparisonPoints = [
     {
@@ -75,6 +88,8 @@ function CompareContent() {
   return (
     <I18nProvider>
       <div className="min-h-screen bg-white">
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
         {/* Hero Section */}
         <div className="mx-auto max-w-7xl px-4 pb-16 pt-20 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -98,7 +113,15 @@ function CompareContent() {
               >
                 View Pricing
               </Link>
+              <button
+                type="button"
+                onClick={openCalendly}
+                className="inline-block rounded-lg border-2 border-gray-300 bg-white px-8 py-3 text-lg font-semibold text-gray-800 transition-colors hover:bg-gray-50"
+              >
+                Book a Demo
+              </button>
             </div>
+            <p className="mt-3 text-sm text-gray-600">See available times instantly.</p>
           </div>
         </div>
 
@@ -286,14 +309,16 @@ function CompareContent() {
               >
                 Start Free Trial
               </a>
-              <a
-                href="mailto:sales@disclosurely.com"
+              <button
+                type="button"
+                onClick={openCalendly}
                 className="inline-block rounded-lg border-2 border-white px-8 py-3 text-lg font-semibold text-white transition-colors hover:bg-blue-700"
               >
-                Schedule Demo
-              </a>
+                Book a Demo
+              </button>
             </div>
-            <p className="mt-4 text-sm text-blue-100">7-day free trial • Cancel anytime</p>
+            <p className="mt-4 text-sm text-blue-100">Book a 30-minute walkthrough.</p>
+            <p className="mt-1 text-sm text-blue-100">7-day free trial • Cancel anytime</p>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import Link from "next/link";
+import Script from "next/script";
 import { useTranslation } from "react-i18next";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import I18nProvider from "@/components/I18nProvider";
@@ -16,6 +17,14 @@ import {
 } from "./competitorCompareTypes";
 
 type Lang = (typeof supportedLanguages)[number];
+
+declare global {
+  interface Window {
+    Calendly?: {
+      initPopupWidget: (options: { url: string }) => void;
+    };
+  }
+}
 
 export type CompetitorComparePageProps = {
   /** i18n prefix, e.g. `speakup` → `compare.speakup.*` */
@@ -52,9 +61,14 @@ function CompareInner({ pageKey, signupUrl, langPrefix, heroShowPricingAndDemo }
   const fitCompetitorBullets = Array.from({ length: 4 }, (_, i) => t(`${p}.fitCompetitor.bullet${i + 1}`));
   const quickDisclosurelyBullets = Array.from({ length: 4 }, (_, i) => t(`${p}.quickSummary.disclosurelyBullet${i + 1}`));
   const quickCompetitorBullets = Array.from({ length: 4 }, (_, i) => t(`${p}.quickSummary.competitorBullet${i + 1}`));
+  const openCalendly = () => {
+    window.Calendly?.initPopupWidget({ url: "https://calendly.com/disclosurely/30min" });
+  };
 
   return (
     <div className="min-h-screen bg-white">
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+      <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
       {/* Hero */}
       <div className="mx-auto max-w-7xl px-4 pb-12 pt-20 sm:px-6 lg:px-8">
         <div className="text-center">
@@ -77,14 +91,16 @@ function CompareInner({ pageKey, signupUrl, langPrefix, heroShowPricingAndDemo }
               {t("compare.common.viewPricing")}
             </Link>
             {heroShowPricingAndDemo ? (
-              <Link
-                href={`${langPrefix}/contact`}
+              <button
+                type="button"
+                onClick={openCalendly}
                 className="inline-block min-w-0 max-w-full shrink-0 rounded-lg border-2 border-gray-300 bg-white px-8 py-3 text-center text-lg font-semibold text-gray-800 transition-colors hover:bg-gray-50"
               >
                 {t("compare.common.bookDemo")}
-              </Link>
+              </button>
             ) : null}
           </div>
+          {heroShowPricingAndDemo ? <p className="mt-3 text-sm text-gray-600">See available times instantly.</p> : null}
         </div>
       </div>
 
@@ -308,14 +324,16 @@ function CompareInner({ pageKey, signupUrl, langPrefix, heroShowPricingAndDemo }
             >
               {t("compare.common.startFreeTrial")}
             </a>
-            <Link
-              href={`${langPrefix}/contact`}
+            <button
+              type="button"
+              onClick={openCalendly}
               className="inline-block min-w-0 max-w-full shrink-0 rounded-lg border-2 border-white px-8 py-3 text-center text-lg font-semibold text-white transition-colors hover:bg-blue-700"
             >
               {t("compare.common.bookDemo")}
-            </Link>
+            </button>
           </div>
-          <p className="mt-4 text-pretty text-sm text-blue-100">{t("compare.common.noCardNote")}</p>
+          <p className="mt-4 text-pretty text-sm text-blue-100">Book a 30-minute walkthrough.</p>
+          <p className="mt-1 text-pretty text-sm text-blue-100">{t("compare.common.noCardNote")}</p>
         </div>
       </div>
     </div>

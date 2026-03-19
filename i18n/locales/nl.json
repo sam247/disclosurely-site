@@ -818,7 +818,7 @@
       "description": "We helpen bij multi-team-uitrollen, maatwerkonboarding en grotere organisatorische vraagstukken."
     },
     "form": {
-      "title": "Demo aanvragen",
+      "title": "Stuur ons een bericht",
       "description": "Kort uw organisatie en uw vraag — we reageren zo snel mogelijk.",
       "enquiryType": {
         "label": "Waarmee kunnen we helpen?",
@@ -832,9 +832,13 @@
           "general": "Algemene vraag"
         }
       },
-      "name": {
-        "label": "Naam",
-        "placeholder": "Volledige naam"
+      "firstName": {
+        "label": "Voornaam",
+        "placeholder": "Voornaam"
+      },
+      "lastName": {
+        "label": "Achternaam",
+        "placeholder": "Achternaam"
       },
       "email": {
         "label": "Zakelijke e-mail",
@@ -844,23 +848,12 @@
         "label": "Organisatie",
         "placeholder": "Naam van de organisatie"
       },
-      "organisationSize": {
-        "label": "Organisatiegrootte (optioneel)",
-        "placeholder": "Zeg ik liever niet",
-        "options": {
-          "1_50": "1–50 personen",
-          "51_250": "51–250 personen",
-          "251_1000": "251–1.000 personen",
-          "1000_plus": "Meer dan 1.000 personen"
-        }
-      },
       "message": {
         "label": "Hoe kunnen we helpen?",
         "placeholder": "Planning, regio's of wat u in een gesprek wilt zien..."
       },
       "reassurance": {
         "response": "We streven naar reactie binnen één werkdag",
-        "noPressure": "Geen harde verkoopdruk",
         "tailored": "Gesprekken afgestemd op uw organisatie"
       },
       "submit": "Verzoek versturen",

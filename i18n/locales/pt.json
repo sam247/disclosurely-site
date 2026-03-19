@@ -818,7 +818,7 @@
       "description": "Podemos ajudar em implementações multi-equipa, onboarding personalizado e necessidades de organizações maiores."
     },
     "form": {
-      "title": "Pedir uma demo",
+      "title": "Envie-nos uma mensagem",
       "description": "Conte-nos um pouco sobre a sua organização e o que precisa. Responderemos o mais depressa possível.",
       "enquiryType": {
         "label": "De que precisa de ajuda?",
@@ -832,9 +832,13 @@
           "general": "Pedido geral"
         }
       },
-      "name": {
-        "label": "Nome",
-        "placeholder": "Nome completo"
+      "firstName": {
+        "label": "Nome próprio",
+        "placeholder": "Nome próprio"
+      },
+      "lastName": {
+        "label": "Apelido",
+        "placeholder": "Apelido"
       },
       "email": {
         "label": "E-mail profissional",
@@ -844,23 +848,12 @@
         "label": "Organização",
         "placeholder": "Nome da organização"
       },
-      "organisationSize": {
-        "label": "Dimensão da organização (opcional)",
-        "placeholder": "Prefiro não indicar",
-        "options": {
-          "1_50": "1–50 pessoas",
-          "51_250": "51–250 pessoas",
-          "251_1000": "251–1.000 pessoas",
-          "1000_plus": "Mais de 1.000 pessoas"
-        }
-      },
       "message": {
         "label": "Como podemos ajudar?",
         "placeholder": "Prazos, regiões ou o que gostaria de ver numa chamada..."
       },
       "reassurance": {
         "response": "Objetivo de resposta num dia útil",
-        "noPressure": "Sem pressão comercial agressiva",
         "tailored": "Conversas adaptadas à sua organização"
       },
       "submit": "Enviar pedido",

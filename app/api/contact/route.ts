@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, company, message, recaptchaToken, enquiryType, organisationSize } = body;
+    const { name: rawName, firstName, lastName, email, company, message, recaptchaToken, enquiryType } = body;
 
     const allowedEnquiryTypes = ['demo', 'pricing', 'compliance', 'rollout', 'enterprise', 'general'] as const;
     const enquiry =
@@ -17,11 +17,11 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const allowedOrgSizes = ['', '1-50', '51-250', '251-1000', '1000+'] as const;
-    const orgSize =
-      typeof organisationSize === 'string' && allowedOrgSizes.includes(organisationSize as (typeof allowedOrgSizes)[number])
-        ? organisationSize
-        : '';
+    const trimmedFirst = typeof firstName === 'string' ? firstName.trim() : '';
+    const trimmedLast = typeof lastName === 'string' ? lastName.trim() : '';
+    const fromParts = [trimmedFirst, trimmedLast].filter(Boolean).join(' ');
+    const legacyName = typeof rawName === 'string' ? rawName.trim() : '';
+    const name = legacyName || fromParts;
 
     // Verify reCAPTCHA if token is provided
     if (recaptchaToken) {

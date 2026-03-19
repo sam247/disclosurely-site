@@ -821,7 +821,7 @@
       "description": "Podemos ayudar con despliegues multi-equipo, incorporación personalizada y necesidades de organizaciones más grandes."
     },
     "form": {
-      "title": "Solicitar una demo",
+      "title": "Envíenos un mensaje",
       "description": "Cuéntenos un poco su organización y qué necesita. Le responderemos lo antes posible.",
       "enquiryType": {
         "label": "¿En qué necesita ayuda?",
@@ -835,9 +835,13 @@
           "general": "Consulta general"
         }
       },
-      "name": {
+      "firstName": {
         "label": "Nombre",
-        "placeholder": "Nombre completo"
+        "placeholder": "Nombre"
+      },
+      "lastName": {
+        "label": "Apellidos",
+        "placeholder": "Apellidos"
       },
       "email": {
         "label": "Correo profesional",
@@ -847,23 +851,12 @@
         "label": "Organización",
         "placeholder": "Nombre de la organización"
       },
-      "organisationSize": {
-        "label": "Tamaño de la organización (opcional)",
-        "placeholder": "Prefiero no indicarlo",
-        "options": {
-          "1_50": "1–50 personas",
-          "51_250": "51–250 personas",
-          "251_1000": "251–1.000 personas",
-          "1000_plus": "Más de 1.000 personas"
-        }
-      },
       "message": {
         "label": "¿Cómo podemos ayudarle?",
         "placeholder": "Plazos, regiones o qué le gustaría ver en una llamada..."
       },
       "reassurance": {
         "response": "Objetivo de respuesta en un día laborable",
-        "noPressure": "Sin presión comercial agresiva",
         "tailored": "Conversaciones adaptadas a su organización"
       },
       "submit": "Enviar solicitud",

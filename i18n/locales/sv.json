@@ -818,7 +818,7 @@
       "description": "Vi kan hjälpa till med multi-team-utrullningar, anpassad onboarding och större organisationsbehov."
     },
     "form": {
-      "title": "Begär demo",
+      "title": "Skicka ett meddelande",
       "description": "Kort om er organisation och vad ni behöver — vi återkommer så snart vi kan.",
       "enquiryType": {
         "label": "Vad behöver du hjälp med?",
@@ -832,9 +832,13 @@
           "general": "Allmän förfrågan"
         }
       },
-      "name": {
-        "label": "Namn",
-        "placeholder": "Fullständigt namn"
+      "firstName": {
+        "label": "Förnamn",
+        "placeholder": "Förnamn"
+      },
+      "lastName": {
+        "label": "Efternamn",
+        "placeholder": "Efternamn"
       },
       "email": {
         "label": "Jobbmejl",
@@ -844,23 +848,12 @@
         "label": "Organisation",
         "placeholder": "Organisationens namn"
       },
-      "organisationSize": {
-        "label": "Organisationsstorlek (valfritt)",
-        "placeholder": "Vill helst inte ange",
-        "options": {
-          "1_50": "1–50 personer",
-          "51_250": "51–250 personer",
-          "251_1000": "251–1 000 personer",
-          "1000_plus": "Fler än 1 000 personer"
-        }
-      },
       "message": {
         "label": "Hur kan vi hjälpa?",
         "placeholder": "Tidsplan, regioner eller vad du vill se på ett samtal..."
       },
       "reassurance": {
         "response": "Vi siktar på svar inom en arbetsdag",
-        "noPressure": "Ingen hård säljpress",
         "tailored": "Samtal anpassade till er organisation"
       },
       "submit": "Skicka förfrågan",
