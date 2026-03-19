@@ -15,6 +15,8 @@ import {
   Eye,
   Fingerprint,
   Globe,
+  ScrollText,
+  ClipboardList,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import I18nProvider from "@/components/I18nProvider";
@@ -31,6 +33,8 @@ type CommitmentItem = {
   description: string;
   status: "inPlace" | "inProgress";
 };
+
+const commitmentCardIcons = [Shield, FileCheck, ScrollText, ClipboardList] as const;
 
 function SecurityContent() {
   const { t, i18n } = useTranslation();
@@ -224,21 +228,20 @@ function SecurityContent() {
                 const statusLabel = inPlace
                   ? t("securityPage.commitments.statusInPlace")
                   : t("securityPage.commitments.statusInProgress");
+                const IconComponent = commitmentCardIcons[index] ?? Shield;
                 return (
-                  <Card key={index} className="p-6 text-center">
-                    <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
-                      {inPlace ? (
-                        <CheckCircle className="h-6 w-6 text-green-600" />
-                      ) : (
-                        <AlertTriangle className="h-6 w-6 text-orange-600" />
-                      )}
+                  <Card key={index} className="border border-gray-200 p-6 text-center shadow-sm">
+                    <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-slate-100">
+                      <IconComponent className="h-6 w-6 text-slate-600" aria-hidden />
                     </div>
                     <h3 className="mb-2 text-lg font-bold text-gray-900">{cert.name}</h3>
-                    <p className="mb-3 text-sm text-gray-600">{cert.description}</p>
+                    <p className="mb-4 text-sm text-gray-600">{cert.description}</p>
                     <div
-                      className={`inline-flex rounded-full px-3 py-1 text-xs font-semibold ${
-                        inPlace ? "bg-green-100 text-green-700" : "bg-orange-100 text-orange-700"
-                      }`}
+                      className={
+                        inPlace
+                          ? "inline-flex rounded-full bg-emerald-600 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-white"
+                          : "inline-flex rounded-full bg-amber-500 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-white shadow-sm"
+                      }
                     >
                       {statusLabel}
                     </div>

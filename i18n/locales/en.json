@@ -329,10 +329,6 @@
       "benefit2": "Pattern detection",
       "benefit3": "Intelligent case prioritization"
     },
-    "certifications": {
-      "title": "Security & Compliance Certifications",
-      "subtitle": "Trusted by organizations worldwide with industry-leading security standards"
-    },
     "pricing": {
       "title": "Simple, Transparent Pricing",
       "subtitle": "Flexible pricing designed around your organisation. Choose the plan that fits your needs, tailor the features, and get started right away with guided setup support. All plans include a 14-day free trial."
@@ -386,6 +382,10 @@
       "question7": {
         "question": "How quickly can we get started?",
         "answer": "Most organisations are live within 24 hours. After sign-up you can customise your portal, invite team members, and start accepting reports. Onboarding support is included at no extra cost."
+      },
+      "question8": {
+        "question": "How Does AI Case Analysis Work?",
+        "answer": "AI case analysis helps investigators summarise report content, surface themes, and prioritise follow-up. It runs on data already in your Disclosurely workspace; suggestions are optional and do not replace human review or legal judgement. Availability depends on your plan and organisation settings."
       }
     },
     "cta": {
@@ -450,8 +450,8 @@
       "item9Description": "Designed to support GDPR obligations. Regional data handling options are available where the platform supports them."
     },
     "commitments": {
-      "title": "Security Commitments",
-      "subtitle": "Our current controls and planned certification roadmap.",
+      "title": "Security & Compliance Status",
+      "subtitle": "A clear view of current controls and ongoing certification work.",
       "statusInPlace": "In place",
       "statusInProgress": "In progress",
       "items": [
@@ -466,13 +466,13 @@
           "status": "inPlace"
         },
         {
-          "name": "ISO 27001",
-          "description": "Information security management system certification",
+          "name": "Certification programme in progress",
+          "description": "Structured work to align our information security management with ISO 27001 expectations.",
           "status": "inProgress"
         },
         {
-          "name": "SOC 2 Type II",
-          "description": "Security, availability, and confidentiality controls",
+          "name": "Audit and control framework in progress",
+          "description": "Building security, availability, and confidentiality controls and evidence practices aligned with SOC 2-type expectations.",
           "status": "inProgress"
         }
       ]

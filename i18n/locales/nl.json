@@ -285,10 +285,6 @@
       "benefit2": "Patroonherkenning",
       "benefit3": "Intelligente casusprioritering"
     },
-    "certifications": {
-      "title": "Beveiligings- en compliance certificeringen",
-      "subtitle": "Vertrouwd door organisaties wereldwijd met industrie-leidende beveiligingsstandaarden"
-    },
     "pricing": {
       "title": "Eenvoudige, transparante prijzen",
       "description": "Flexibele prijzen afgestemd op uw organisatie. Kies het plan dat bij uw behoeften past, pas functies aan en begin direct met begeleide configuratieondersteuning. Alle plannen bevatten een 7-daagse gratis proefperiode.",
@@ -343,6 +339,10 @@
       "question7": {
         "question": "Hoe snel kunnen we starten?",
         "answer": "De meeste organisaties zijn binnen 24 uur live. Na aanmelding kunt u het portaal aanpassen, het team uitnodigen en meldingen accepteren. Onboarding is inbegrepen."
+      },
+      "question8": {
+        "question": "Hoe werkt AI-casusanalyse?",
+        "answer": "AI-casusanalyse helpt onderzoekers bij het samenvatten van meldingen, het signaleren van thema's en het prioriteren van vervolgacties. Het werkt op gegevens in uw Disclosurely-omgeving; suggesties zijn optioneel en vervangen geen menselijke beoordeling of juridisch oordeel. Beschikbaarheid hangt af van uw plan en organisatie-instellingen."
       }
     },
     "cta": {
@@ -451,8 +451,8 @@
       "item9Description": "Ontworpen om AVG te ondersteunen. Regionale opties waar het platform dit biedt."
     },
     "commitments": {
-      "title": "Beveiligingsverbintenissen",
-      "subtitle": "Huidige maatregelen en geplande certificeringsroadmap.",
+      "title": "Status beveiliging en compliance",
+      "subtitle": "Een duidelijk beeld van huidige maatregelen en lopende certificeringswerkzaamheden.",
       "statusInPlace": "Actief",
       "statusInProgress": "Lopend",
       "items": [
@@ -467,13 +467,13 @@
           "status": "inPlace"
         },
         {
-          "name": "ISO 27001",
-          "description": "Certificering informatiebeveiligingsmanagementsysteem",
+          "name": "Certificeringsprogramma lopend",
+          "description": "Gestructureerd werk om ons informatiebeveiligingsmanagement af te stemmen op ISO-27001-verwachtingen.",
           "status": "inProgress"
         },
         {
-          "name": "SOC 2 Type II",
-          "description": "Controles voor beveiliging, beschikbaarheid en vertrouwelijkheid",
+          "name": "Audit- en controlekader lopend",
+          "description": "Opbouwen van controles en bewijspraktijken in lijn met SOC-2-typeverwachtingen voor beveiliging, beschikbaarheid en vertrouwelijkheid.",
           "status": "inProgress"
         }
       ]

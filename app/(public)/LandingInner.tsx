@@ -6,7 +6,18 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { track } from "@vercel/analytics";
 import { usePathname } from "next/navigation";
-import { ShieldCheck, CheckCircle, CheckCircle2, MessageSquare, Brain, X } from "lucide-react";
+import {
+  Shield,
+  ShieldCheck,
+  FileCheck,
+  ScrollText,
+  ClipboardList,
+  CheckCircle,
+  CheckCircle2,
+  MessageSquare,
+  Brain,
+  X,
+} from "lucide-react";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -49,6 +60,14 @@ const highlightIcons = [
   <MessageSquare key="msg" className="h-6 w-6 text-blue-600" />,
   <Brain key="brain" className="h-6 w-6 text-blue-600" />,
 ];
+
+const commitmentCardIcons = [Shield, FileCheck, ScrollText, ClipboardList] as const;
+
+type CommitmentCardItem = {
+  name: string;
+  description: string;
+  status: "inPlace" | "inProgress";
+};
 
 // Helper function to format bullet points: bold beginning keywords and remove links from them
 function formatBulletPoint(point: string | React.ReactNode): React.ReactNode {
@@ -330,6 +349,11 @@ function LandingInner() {
     [t],
   );
 
+  const commitmentItems = useMemo(() => {
+    const raw = t("securityPage.commitments.items", { returnObjects: true });
+    if (!Array.isArray(raw)) return [] as CommitmentCardItem[];
+    return raw as CommitmentCardItem[];
+  }, [t, i18n.language]);
 
   return (
     <I18nProvider>
@@ -651,42 +675,52 @@ function LandingInner() {
           </div>
         </section>
 
-        {/* Certifications */}
+        {/* Security & compliance status (same structure as security page commitments) */}
         <section className="bg-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12 text-center">
-              <h2 className="mb-4 flex items-center justify-center gap-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-                {t("landing.certifications.title")}
-              </h2>
-              <p className="mx-auto max-w-3xl px-4 text-lg text-gray-700 sm:text-xl">{t("landing.certifications.subtitle")}</p>
+              <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">{t("securityPage.commitments.title")}</h2>
+              <p className="mx-auto max-w-3xl px-4 text-lg text-gray-600 sm:text-xl">{t("securityPage.commitments.subtitle")}</p>
             </div>
-            <div className="flex flex-col items-center justify-center gap-8 sm:flex-row sm:gap-12">
-              {[
-                { src: "/lovable-uploads/9762866a-d8d9-4860-bf30-3ffd178885a8.png", title: "ISO 27001", desc: "Information Security Management" },
-                { src: "/lovable-uploads/70aa6ac0-c161-4167-921d-79f08f6f4b02.png", title: "GDPR", desc: "Data Protection Compliance" },
-                { src: "/lovable-uploads/a9716d48-ff27-4193-b51c-9b035d1692b0.png", title: "AICPA SOC", desc: "Service Organization Controls" },
-              ].map((badge) => (
-                <div key={badge.title} className="text-center">
-                  <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-lg">
-                    <Image src={badge.src} alt={badge.title} width={64} height={64} className="mx-auto mb-3 h-16 w-16" loading="lazy" />
-                    <h3 className="mb-1 font-semibold text-gray-900">{badge.title}</h3>
-                    <p className="text-sm text-gray-600">{badge.desc}</p>
-                  </div>
-                </div>
-              ))}
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+              {commitmentItems.map((cert, index) => {
+                const inPlace = cert.status === "inPlace";
+                const statusLabel = inPlace
+                  ? t("securityPage.commitments.statusInPlace")
+                  : t("securityPage.commitments.statusInProgress");
+                const IconComponent = commitmentCardIcons[index] ?? Shield;
+                return (
+                  <Card key={`${cert.name}-${index}`} className="border border-gray-200 p-6 text-center shadow-sm">
+                    <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-slate-100">
+                      <IconComponent className="h-6 w-6 text-slate-600" aria-hidden />
+                    </div>
+                    <h3 className="mb-2 text-lg font-bold text-gray-900">{cert.name}</h3>
+                    <p className="mb-4 text-sm text-gray-600">{cert.description}</p>
+                    <div
+                      className={
+                        inPlace
+                          ? "inline-flex rounded-full bg-emerald-600 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-white"
+                          : "inline-flex rounded-full bg-amber-500 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-white shadow-sm"
+                      }
+                    >
+                      {statusLabel}
+                    </div>
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </section>
 
         {/* FAQ */}
         <section className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12 text-center">
               <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">{t("landing.faq.title")}</h2>
               <p className="text-lg text-gray-600">{t("landing.faq.subtitle")}</p>
             </div>
-            <Accordion type="single" collapsible defaultValue="item-1" className="space-y-4">
-              {[1, 2, 3, 4, 5, 6, 7].map((n) => (
+            <Accordion type="single" collapsible defaultValue="item-1" className="grid gap-4 md:grid-cols-2 md:gap-x-6">
+              {[1, 5, 2, 6, 3, 7, 4, 8].map((n) => (
                 <AccordionItem key={n} value={`item-${n}`} className="rounded-lg border bg-white px-6">
                   <AccordionTrigger className="text-left text-lg font-semibold hover:no-underline">
                     {t(`landing.faq.question${n}.question`)}

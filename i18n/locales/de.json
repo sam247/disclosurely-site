@@ -133,10 +133,6 @@
       "benefit2": "Mustererkennung",
       "benefit3": "Intelligente Fallpriorisierung"
     },
-    "certifications": {
-      "title": "Sicherheits- & Compliance-Zertifizierungen",
-      "subtitle": "Vertraut von Organisationen weltweit mit branchenführenden Sicherheitsstandards"
-    },
     "pricing": {
       "title": "Einfache, Transparente Preise",
       "subtitle": "Flexible Preise rund um Ihre Organisation. Wählen Sie den Plan, der Ihren Anforderungen entspricht, passen Sie die Funktionen an und beginnen Sie sofort mit geführter Einrichtungsunterstützung. Alle Pläne beinhalten eine 7-tägige kostenlose Testversion."
@@ -190,6 +186,10 @@
       "question7": {
         "question": "Wie schnell können wir starten?",
         "answer": "Die meisten Organisationen sind innerhalb von 24 Stunden live. Nach der Anmeldung können Sie Portal anpassen, Team einladen und Meldungen annehmen. Onboarding-Support ist inklusive."
+      },
+      "question8": {
+        "question": "Wie funktioniert die KI-Fallanalyse?",
+        "answer": "Die KI-Fallanalyse unterstützt Ermittler beim Zusammenfassen von Meldeinhalten, beim Erkennen von Themen und bei der Priorisierung von Nachverfolgung. Sie nutzt Daten in Ihrem Disclosurely-Arbeitsbereich; Vorschläge sind optional und ersetzen keine menschliche Prüfung oder rechtliche Bewertung. Verfügbarkeit hängt von Ihrem Plan und den Organisationseinstellungen ab."
       }
     },
     "cta": {
@@ -298,8 +298,8 @@
       "item9Description": "Ausgelegt zur Unterstützung von DSGVO-Pflichten. Regionale Datenoptionen, wo die Plattform dies unterstützt."
     },
     "commitments": {
-      "title": "Sicherheitsverpflichtungen",
-      "subtitle": "Aktuelle Maßnahmen und geplanter Zertifizierungsfahrplan.",
+      "title": "Sicherheits- und Compliance-Status",
+      "subtitle": "Überblick über aktuelle Kontrollen und laufende Zertifizierungsarbeiten.",
       "statusInPlace": "Umgesetzt",
       "statusInProgress": "In Arbeit",
       "items": [
@@ -314,13 +314,13 @@
           "status": "inPlace"
         },
         {
-          "name": "ISO 27001",
-          "description": "Zertifizierung des Informationssicherheitsmanagementsystems",
+          "name": "Zertifizierungsprogramm in Arbeit",
+          "description": "Systematische Ausrichtung des Informationssicherheitsmanagements an ISO-27001-Erwartungen.",
           "status": "inProgress"
         },
         {
-          "name": "SOC 2 Type II",
-          "description": "Kontrollen zu Sicherheit, Verfügbarkeit und Vertraulichkeit",
+          "name": "Audit- und Kontrollrahmen in Arbeit",
+          "description": "Aufbau von Kontrollen und Nachweispraktiken im Einklang mit SOC-2-ähnlichen Erwartungen zu Sicherheit, Verfügbarkeit und Vertraulichkeit.",
           "status": "inProgress"
         }
       ]

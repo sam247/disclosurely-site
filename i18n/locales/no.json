@@ -285,10 +285,6 @@
       "benefit2": "Mønstergjenkjenning",
       "benefit3": "Intelligent sakprioritering"
     },
-    "certifications": {
-      "title": "Sikkerhets- og compliance-sertifiseringer",
-      "subtitle": "Stolt av organisasjoner verden over med bransjeledende sikkerhetsstandarder"
-    },
     "pricing": {
       "title": "Enkle, transparente priser",
       "description": "Fleksible priser skreddersydd for din organisasjon. Velg den planen som passer dine behov, tilpass funksjoner og kom i gang umiddelbart med guidet oppsettstøtte. Alle planer inkluderer en 7-dagers gratis prøveperiode.",
@@ -343,6 +339,10 @@
       "question7": {
         "question": "Hvor raskt kan vi komme i gang?",
         "answer": "De fleste organisasjoner er live innen 24 timer. Etter registrering kan du tilpasse portalen, invitere teamet og motta rapporter. Onboarding er inkludert."
+      },
+      "question8": {
+        "question": "Hvordan fungerer AI-saksanalyse?",
+        "answer": "AI-saksanalyse hjelper etterforskere med å oppsummere rapportinnhold, tydeliggjøre temaer og prioritere oppfølging. Den bruker data som allerede ligger i Disclosurely-arbeidsområdet; forslag er valgfrie og erstatter ikke menneskelig vurdering eller juridisk vurdering. Tilgjengelighet avhenger av plan og organisasjonsinnstillinger."
       }
     },
     "cta": {
@@ -451,8 +451,8 @@
       "item9Description": "Utformet for å støtte GDPR. Regionale alternativer der plattformen støtter det."
     },
     "commitments": {
-      "title": "Sikkerhetsforpliktelser",
-      "subtitle": "Nåværende kontroller og planlagt sertifiseringsløp.",
+      "title": "Status for sikkerhet og samsvar",
+      "subtitle": "Et tydelig bilde av gjeldende kontroller og pågående sertifiseringsarbeid.",
       "statusInPlace": "På plass",
       "statusInProgress": "Pågår",
       "items": [
@@ -467,13 +467,13 @@
           "status": "inPlace"
         },
         {
-          "name": "ISO 27001",
-          "description": "Sertifisering av informasjonssikkerhetsstyringssystem",
+          "name": "Sertifiseringsprogram pågår",
+          "description": "Strukturert arbeid med å tilpasse informasjonssikkerhetsstyringen til ISO-27001-forventninger.",
           "status": "inProgress"
         },
         {
-          "name": "SOC 2 Type II",
-          "description": "Kontroller for sikkerhet, tilgjengelighet og konfidensialitet",
+          "name": "Revisjons- og kontrollramme pågår",
+          "description": "Bygging av kontroller og bevispraksis i tråd med SOC-2-lignende forventninger for sikkerhet, tilgjengelighet og konfidensialitet.",
           "status": "inProgress"
         }
       ]

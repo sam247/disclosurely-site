@@ -285,10 +285,6 @@
       "benefit2": "Détection de motifs",
       "benefit3": "Priorisation intelligente des cas"
     },
-    "certifications": {
-      "title": "Certifications de Sécurité et Conformité",
-      "subtitle": "Approuvé par des organisations du monde entier avec des normes de sécurité de premier plan dans l'industrie"
-    },
     "pricing": {
       "title": "Tarifs Simples et Transparents",
       "subtitle": "Des tarifs flexibles conçus autour de votre organisation. Choisissez le plan qui correspond à vos besoins, personnalisez les fonctionnalités et démarrez immédiatement avec une assistance de configuration guidée. Tous les plans incluent un essai gratuit de 7 jours."
@@ -342,6 +338,10 @@
       "question7": {
         "question": "À quelle vitesse pouvons-nous démarrer?",
         "answer": "La plupart des organisations sont opérationnelles sous 24 h. Après inscription vous pouvez personnaliser le portail, inviter l'équipe et accepter des signalements. L'onboarding est inclus."
+      },
+      "question8": {
+        "question": "Comment fonctionne l'analyse de cas par l'IA ?",
+        "answer": "L'analyse de cas par l'IA aide les enquêteurs à résumer le contenu des signalements, repérer des thèmes et prioriser le suivi. Elle s'appuie sur les données déjà présentes dans votre espace Disclosurely ; les suggestions sont facultatives et ne remplacent ni l'examen humain ni l'avis juridique. La disponibilité dépend de votre offre et des paramètres de l'organisation."
       }
     },
     "cta": {
@@ -450,8 +450,8 @@
       "item9Description": "Conçu pour soutenir le RGPD. Options régionales lorsque la plateforme les prend en charge."
     },
     "commitments": {
-      "title": "Engagements de sécurité",
-      "subtitle": "Contrôles actuels et feuille de route de certification.",
+      "title": "Statut sécurité et conformité",
+      "subtitle": "Une vision claire des contrôles en place et des travaux de certification en cours.",
       "statusInPlace": "En place",
       "statusInProgress": "En cours",
       "items": [
@@ -466,13 +466,13 @@
           "status": "inPlace"
         },
         {
-          "name": "ISO 27001",
-          "description": "Certification du système de management de la sécurité de l'information",
+          "name": "Programme de certification en cours",
+          "description": "Travail structuré pour aligner notre management de la sécurité de l'information sur les attentes de type ISO 27001.",
           "status": "inProgress"
         },
         {
-          "name": "SOC 2 Type II",
-          "description": "Contrôles de sécurité, disponibilité et confidentialité",
+          "name": "Cadre d'audit et de contrôle en cours",
+          "description": "Mise en place de contrôles et de pratiques de preuve alignées sur des attentes de type SOC 2 en matière de sécurité, disponibilité et confidentialité.",
           "status": "inProgress"
         }
       ]

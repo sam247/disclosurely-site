@@ -125,10 +125,6 @@
       "benefit2": "Wykrywanie wzorców",
       "benefit3": "Inteligentna priorytetyzacja spraw"
     },
-    "certifications": {
-      "title": "Certyfikaty Bezpieczeństwa i Zgodności",
-      "subtitle": "Zaufane przez organizacje na całym świecie dzięki wiodącym w branży standardom bezpieczeństwa"
-    },
     "pricing": {
       "title": "Proste, Przejrzyste Ceny",
       "subtitle": "Elastyczne ceny dostosowane do Twojej organizacji. Wybierz plan odpowiadający Twoim potrzebom, dostosuj funkcje i rozpocznij od razu z pomocą w konfiguracji. Wszystkie plany obejmują 7-dniowy darmowy okres próbny."
@@ -182,6 +178,10 @@
       "question7": {
         "question": "Jak szybko możemy zacząć?",
         "answer": "Większość organizacji jest gotowa w ciągu 24 godzin. Po rejestracji możesz dostosować portal, zaprosić zespół i przyjmować zgłoszenia. Wdrożenie w cenie."
+      },
+      "question8": {
+        "question": "Jak działa analiza spraw wspomagana AI?",
+        "answer": "Analiza spraw wspomagana AI pomaga zespołom śledczym streszczać treść zgłoszeń, wychwytywać wątki i ustalać priorytety dalszych działań. Korzysta z danych już znajdujących się w przestrzeni roboczej Disclosurely; sugestie są opcjonalne i nie zastępują oceny człowieka ani oceny prawnej. Dostępność zależy od planu i ustawień organizacji."
       }
     },
     "cta": {
@@ -290,8 +290,8 @@
       "item9Description": "Zaprojektowany do wsparcia RODO. Opcje regionalne tam, gdzie platforma je obsługuje."
     },
     "commitments": {
-      "title": "Zobowiązania bezpieczeństwa",
-      "subtitle": "Aktualne kontrole i plan certyfikacji.",
+      "title": "Status bezpieczeństwa i zgodności",
+      "subtitle": "Przejrzysty obraz obecnych kontroli i trwających prac certyfikacyjnych.",
       "statusInPlace": "Wdrożone",
       "statusInProgress": "W toku",
       "items": [
@@ -306,13 +306,13 @@
           "status": "inPlace"
         },
         {
-          "name": "ISO 27001",
-          "description": "Certyfikacja systemu zarządzania bezpieczeństwem informacji",
+          "name": "Program certyfikacyjny w toku",
+          "description": "Uporządkowane prace nad dopasowaniem zarządzania bezpieczeństwem informacji do oczekiwań z obszaru ISO 27001.",
           "status": "inProgress"
         },
         {
-          "name": "SOC 2 Type II",
-          "description": "Kontrole bezpieczeństwa, dostępności i poufności",
+          "name": "Ram audytu i kontroli w toku",
+          "description": "Budowa kontroli i praktyk dowodowych zgodnych z oczekiwaniami typu SOC 2 w zakresie bezpieczeństwa, dostępności i poufności.",
           "status": "inProgress"
         }
       ]

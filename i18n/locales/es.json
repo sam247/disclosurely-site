@@ -288,10 +288,6 @@
       "benefit2": "Detección de patrones",
       "benefit3": "Priorización inteligente de casos"
     },
-    "certifications": {
-      "title": "Certificaciones de Seguridad y Cumplimiento",
-      "subtitle": "Confiado por organizaciones en todo el mundo con estándares de seguridad líderes en la industria"
-    },
     "pricing": {
       "title": "Precios Simples y Transparentes",
       "description": "Precios flexibles diseñados para su organización. Elija el plan que se ajuste a sus necesidades, adapte las características y comience de inmediato con soporte de configuración guiada. Todos los planes incluyen una prueba gratuita de 7 días.",
@@ -346,6 +342,10 @@
       "question7": {
         "question": "¿Qué tan rápido podemos comenzar?",
         "answer": "La mayoría de las organizaciones están operativas en 24 horas. Tras registrarse puede personalizar el portal, invitar al equipo y aceptar informes. El onboarding está incluido."
+      },
+      "question8": {
+        "question": "¿Cómo funciona el análisis de casos con IA?",
+        "answer": "El análisis de casos con IA ayuda a los investigadores a resumir el contenido de los informes, identificar temas y priorizar el seguimiento. Opera sobre los datos ya presentes en su espacio de trabajo de Disclosurely; las sugerencias son opcionales y no sustituyen la revisión humana ni el criterio jurídico. La disponibilidad depende de su plan y de la configuración de la organización."
       }
     },
     "cta": {
@@ -454,8 +454,8 @@
       "item9Description": "Diseñado para apoyar el RGPD. Opciones regionales donde la plataforma lo permita."
     },
     "commitments": {
-      "title": "Compromisos de seguridad",
-      "subtitle": "Controles actuales y hoja de ruta de certificación.",
+      "title": "Estado de seguridad y cumplimiento",
+      "subtitle": "Una visión clara de los controles actuales y del trabajo de certificación en curso.",
       "statusInPlace": "Implementado",
       "statusInProgress": "En curso",
       "items": [
@@ -470,13 +470,13 @@
           "status": "inPlace"
         },
         {
-          "name": "ISO 27001",
-          "description": "Certificación del sistema de gestión de seguridad de la información",
+          "name": "Programa de certificación en curso",
+          "description": "Trabajo estructurado para alinear nuestra gestión de la seguridad de la información con expectativas de ISO 27001.",
           "status": "inProgress"
         },
         {
-          "name": "SOC 2 Tipo II",
-          "description": "Controles de seguridad, disponibilidad y confidencialidad",
+          "name": "Marco de auditoría y controles en curso",
+          "description": "Desarrollo de controles y prácticas de evidencia alineadas con expectativas de tipo SOC 2 en seguridad, disponibilidad y confidencialidad.",
           "status": "inProgress"
         }
       ]
