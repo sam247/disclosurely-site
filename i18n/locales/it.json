@@ -804,6 +804,7 @@
     "help": {
       "title": "Come possiamo aiutarti",
       "intro": "Dicci di cosa hai bisogno: demo, orientamento sui prezzi o supporto al rollout.",
+      "bookDemo": "Prenota una demo",
       "items": {
         "walkthrough": "Prenotare una walkthrough del prodotto",
         "pricing": "Chiedere informazioni su prezzi o piani",

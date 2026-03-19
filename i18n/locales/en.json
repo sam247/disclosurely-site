@@ -829,6 +829,7 @@
     "help": {
       "title": "How we can help",
       "intro": "Tell us what you need and we'll point you in the right direction — whether that's a demo, pricing guidance, or rollout support.",
+      "bookDemo": "Book a Demo",
       "items": {
         "walkthrough": "Book a product walkthrough",
         "pricing": "Ask about pricing or plans",

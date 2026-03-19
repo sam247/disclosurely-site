@@ -807,6 +807,7 @@
     "help": {
       "title": "En qué podemos ayudarle",
       "intro": "Díganos qué necesita: demostración, orientación sobre precios o apoyo en el despliegue.",
+      "bookDemo": "Reservar una demo",
       "items": {
         "walkthrough": "Reservar una visita guiada al producto",
         "pricing": "Preguntar por precios o planes",

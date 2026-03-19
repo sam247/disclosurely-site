@@ -804,6 +804,7 @@
     "help": {
       "title": "Slik kan vi hjelpe",
       "intro": "Fortell oss hva du trenger — demo, prisveiledning eller støtte ved utrulling.",
+      "bookDemo": "Book en demo",
       "items": {
         "walkthrough": "Bestill en produktgjennomgang",
         "pricing": "Spør om priser eller pakker",

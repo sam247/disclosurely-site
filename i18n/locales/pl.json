@@ -1087,6 +1087,7 @@
     "help": {
       "title": "W czym możemy pomóc",
       "intro": "Napisz, czego potrzebujesz — demo, orientacja cenowa lub wsparcie przy wdrożeniu.",
+      "bookDemo": "Umów demo",
       "items": {
         "walkthrough": "Umów prezentację produktu",
         "pricing": "Pytania o ceny lub plany",

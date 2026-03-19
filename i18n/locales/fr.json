@@ -803,6 +803,7 @@
     "help": {
       "title": "Comment nous pouvons vous aider",
       "intro": "Dites-nous ce dont vous avez besoin — démo, orientation tarifaire ou accompagnement au déploiement.",
+      "bookDemo": "Réserver une démo",
       "items": {
         "walkthrough": "Réserver une visite produit",
         "pricing": "Poser des questions sur les tarifs ou les offres",

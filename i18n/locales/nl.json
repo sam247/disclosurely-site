@@ -804,6 +804,7 @@
     "help": {
       "title": "Waar we mee kunnen helpen",
       "intro": "Vertel wat u nodig heeft: demo, prijsoriëntatie of ondersteuning bij uitrol.",
+      "bookDemo": "Demo boeken",
       "items": {
         "walkthrough": "Productwalkthrough boeken",
         "pricing": "Vragen over prijzen of pakketten",

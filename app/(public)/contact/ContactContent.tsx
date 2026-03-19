@@ -28,6 +28,9 @@ const ORG_SIZE_OPTIONS = [
 
 declare global {
   interface Window {
+    Calendly?: {
+      initPopupWidget: (options: { url: string }) => void;
+    };
     grecaptcha: {
       ready: (callback: () => void) => void;
       execute: (siteKey: string, options: { action: string }) => Promise<string>;
@@ -93,6 +96,8 @@ function ContactContent() {
 
   return (
     <I18nProvider>
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+      <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
       {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && (
         <Script
           src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
@@ -123,6 +128,16 @@ function ContactContent() {
               <div>
                 <h2 className="mb-3 text-2xl font-bold text-gray-900">{t("contact.help.title")}</h2>
                 <p className="text-base text-gray-600">{t("contact.help.intro")}</p>
+                <button
+                  type="button"
+                  onClick={() => {
+                    window.Calendly?.initPopupWidget({ url: "https://calendly.com/disclosurely/30min" });
+                    trackEvent("book_demo_click", { location: "contact_help" });
+                  }}
+                  className="mt-4 rounded-lg bg-blue-600 px-4 py-2.5 text-white transition-colors hover:bg-blue-700"
+                >
+                  {t("contact.help.bookDemo")}
+                </button>
               </div>
 
               <ul className="space-y-4">

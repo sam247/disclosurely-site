@@ -1095,6 +1095,7 @@
     "help": {
       "title": "Wobei wir helfen können",
       "intro": "Sagen Sie uns, was Sie brauchen — Demo, Preisorientierung oder Rollout-Unterstützung.",
+      "bookDemo": "Demo buchen",
       "items": {
         "walkthrough": "Produkt-Walkthrough buchen",
         "pricing": "Fragen zu Preisen oder Plänen",
