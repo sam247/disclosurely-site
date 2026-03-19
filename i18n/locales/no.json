@@ -185,7 +185,7 @@
   },
   "landing": {
     "hero": {
-      "title1": "Sikker varslersoftware for UK- og EU-compliance",
+      "title1": "Sikker varslersoftware for compliance",
       "mobilePhrase": "Anonym rapportering for compliance-team",
       "typingPhrases": [
         "Anonym rapportering",
@@ -193,7 +193,7 @@
         "Revisjonsklar compliance",
         "Sikker toveiskommunikasjon"
       ],
-      "badge": "Military Grade AES-GCM Encryption",
+      "badge": "AES-256-GCM Encryption",
       "subtitle": "Gi ansatte en sikker, anonym måte å rapportere bekymringer. Disclosurely leverer krypterte kanaler, strukturert saksbehandling og revisjonsklar dokumentasjon — tilpasset EU-direktivet og UK-krav.",
       "bullets": [
         "Anonymt mottakelsesportal",
@@ -206,15 +206,6 @@
       "viewPricing": "Se priser"
     },
     "trusted": "Stolt av hundrevis av bedrifter",
-    "trustBar": {
-      "items": [
-        "Anonym rapportering",
-        "Ende-til-ende kryptert",
-        "GDPR-bevisst design",
-        "EU-direktiv i tråd",
-        "Sikker toveiskommunikasjon"
-      ]
-    },
     "features": {
       "title": "Alt du trenger for sikker rapportering",
       "subtitle": "Vår plattform gir omfattende verktøy for å administrere varslerrapporter med fullstendig konfidensialitet og compliance.",

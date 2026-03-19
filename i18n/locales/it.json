@@ -185,7 +185,7 @@
   },
   "landing": {
     "hero": {
-      "title1": "Software per whistleblower sicuro per conformità UK e UE",
+      "title1": "Software per whistleblower sicuro per la conformità",
       "mobilePhrase": "Segnalazioni anonime per team compliance",
       "typingPhrases": [
         "Segnalazioni anonime",
@@ -193,7 +193,7 @@
         "Conformità auditabile",
         "Comunicazione bidirezionale sicura"
       ],
-      "badge": "Military Grade AES-GCM Encryption",
+      "badge": "AES-256-GCM Encryption",
       "subtitle": "Offri ai dipendenti un modo sicuro e anonimo per segnalare preoccupazioni. Disclosurely fornisce canali crittografati, gestione strutturata dei casi e registri auditabili — conforme alla direttiva UE e ai requisiti UK.",
       "bullets": [
         "Portale di ricezione anonimo",
@@ -206,15 +206,6 @@
       "viewPricing": "Visualizza prezzi"
     },
     "trusted": "Fidato da centinaia di aziende",
-    "trustBar": {
-      "items": [
-        "Segnalazioni anonime",
-        "Crittografia end-to-end",
-        "Design GDPR-conscious",
-        "Conforme direttiva UE",
-        "Comunicazione bidirezionale sicura"
-      ]
-    },
     "features": {
       "title": "Tutto ciò che serve per segnalazioni sicure",
       "subtitle": "La nostra piattaforma fornisce strumenti completi per gestire segnalazioni di whistleblower con totale riservatezza e compliance.",

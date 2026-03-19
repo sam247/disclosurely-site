@@ -25,7 +25,7 @@
   },
   "landing": {
     "hero": {
-      "title1": "Bezpieczne oprogramowanie dla sygnalistów – zgodność UK i UE",
+      "title1": "Bezpieczne oprogramowanie dla sygnalistów na potrzeby zgodności",
       "mobilePhrase": "Anonimowe zgłoszenia dla zespołów ds. zgodności",
       "typingPhrases": [
         "Anonimowe zgłoszenia",
@@ -33,7 +33,7 @@
         "Zgodność zdatna do audytu",
         "Bezpieczna komunikacja dwukierunkowa"
       ],
-      "badge": "Military Grade AES-GCM Encryption",
+      "badge": "AES-256-GCM Encryption",
       "subtitle": "Daj pracownikom bezpieczny, anonimowy sposób zgłaszania obaw. Disclosurely oferuje szyfrowane kanały, uporządkowane zarządzanie sprawami i dokumentację zdatną do audytu — zgodnie z dyrektywą UE i wymogami UK.",
       "bullets": [
         "Anonimowy portal przyjmowania",
@@ -46,15 +46,6 @@
       "viewPricing": "Zobacz cennik"
     },
     "trusted": "Zaufane przez setki firm",
-    "trustBar": {
-      "items": [
-        "Anonimowe zgłoszenia",
-        "Szyfrowanie end-to-end",
-        "Projektowanie z myślą o RODO",
-        "Zgodność z dyrektywą UE",
-        "Bezpieczna komunikacja dwukierunkowa"
-      ]
-    },
     "features": {
       "title": "Wszystko czego potrzebujesz do bezpiecznego raportowania",
       "subtitle": "Nasza platforma zapewnia kompleksowe narzędzia do zarządzania zgłoszeniami sygnalistów z pełną poufnością i zgodnością.",

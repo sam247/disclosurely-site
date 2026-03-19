@@ -185,7 +185,7 @@
   },
   "landing": {
     "hero": {
-      "title1": "Secure Whistleblowing Software for UK and EU Compliance",
+      "title1": "Secure Whistleblowing Software for Compliance",
       "mobilePhrase": "Anonymous reporting built for compliance teams",
       "typingPhrases": [
         "Anonymous Reporting",
@@ -193,7 +193,7 @@
         "Audit-Ready Compliance",
         "Secure Two-Way Messaging"
       ],
-      "badge": "Military Grade AES-GCM Encryption",
+      "badge": "AES-256-GCM Encryption",
       "subtitle": "Give employees a safe, anonymous way to report concerns. Disclosurely provides encrypted reporting channels, structured case management, and audit-ready records — built to meet EU Whistleblowing Directive and UK regulatory requirements.",
       "bullets": [
         "Anonymous intake portal",
@@ -206,15 +206,6 @@
       "viewPricing": "View Pricing"
     },
     "trusted": "Trusted by hundreds of businesses",
-    "trustBar": {
-      "items": [
-        "Anonymous Reporting",
-        "End-to-End Encrypted",
-        "GDPR-Conscious Design",
-        "EU Directive Compliant",
-        "Secure Two-Way Messaging"
-      ]
-    },
     "highlights": {
       "tag": "Security & Compliance",
       "sectionTitle": "Disclosurely Features",

@@ -188,7 +188,7 @@
   },
   "landing": {
     "hero": {
-      "title1": "Software de denuncias seguro para cumplimiento UK y UE",
+      "title1": "Software de denuncias seguro para el cumplimiento",
       "mobilePhrase": "Denuncia anónima para equipos de cumplimiento",
       "typingPhrases": [
         "Denuncia anónima",
@@ -196,7 +196,7 @@
         "Cumplimiento auditable",
         "Comunicación bidireccional segura"
       ],
-      "badge": "Military Grade AES-GCM Encryption",
+      "badge": "AES-256-GCM Encryption",
       "subtitle": "Ofrezca a los empleados una forma segura y anónima de reportar preocupaciones. Disclosurely ofrece canales cifrados, gestión estructurada de casos y registros auditable — conforme a la directiva UE y requisitos UK.",
       "bullets": [
         "Portal de recepción anónimo",
@@ -209,15 +209,6 @@
       "viewPricing": "Ver precios"
     },
     "trusted": "Confiado por cientos de empresas",
-    "trustBar": {
-      "items": [
-        "Denuncia anónima",
-        "Cifrado extremo a extremo",
-        "Diseño consciente del RGPD",
-        "Conforme directiva UE",
-        "Comunicación bidireccional segura"
-      ]
-    },
     "features": {
       "title": "Todo lo que necesita para informes seguros",
       "subtitle": "Nuestra plataforma proporciona herramientas integrales para gestionar informes de denunciantes con total confidencialidad y cumplimiento.",

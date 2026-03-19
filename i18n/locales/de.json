@@ -33,7 +33,7 @@
   },
   "landing": {
     "hero": {
-      "title1": "Sichere Hinweisgeber-Software für UK- und EU-Compliance",
+      "title1": "Sichere Hinweisgeber-Software für Compliance",
       "mobilePhrase": "Anonymes Meldewesen für Compliance-Teams",
       "typingPhrases": [
         "Anonyme Meldungen",
@@ -41,7 +41,7 @@
         "Prüffähige Compliance",
         "Sichere Zwei-Wege-Kommunikation"
       ],
-      "badge": "Military Grade AES-GCM Encryption",
+      "badge": "AES-256-GCM Encryption",
       "subtitle": "Mitarbeitern eine sichere, anonyme Möglichkeit geben, Bedenken zu melden. Disclosurely bietet verschlüsselte Meldekanäle, strukturiertes Fallmanagement und prüffähige Aufzeichnungen – für EU-Hinweisgeberrichtlinie und UK-Anforderungen.",
       "bullets": [
         "Anonymes Aufnahmeportal",
@@ -54,15 +54,6 @@
       "viewPricing": "Preise ansehen"
     },
     "trusted": "Vertraut von hunderten Unternehmen",
-    "trustBar": {
-      "items": [
-        "Anonyme Meldungen",
-        "Ende-zu-Ende verschlüsselt",
-        "DSGVO-bewusste Gestaltung",
-        "EU-Richtlinie konform",
-        "Sichere Zwei-Wege-Kommunikation"
-      ]
-    },
     "features": {
       "title": "Für Compliance-Teams",
       "subtitle": "Tools zur Verwaltung von Hinweisgeberberichten mit vollständiger Vertraulichkeit, Prüfpfaden und regulatorischer Ausrichtung.",

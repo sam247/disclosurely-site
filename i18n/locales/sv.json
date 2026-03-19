@@ -185,7 +185,7 @@
   },
   "landing": {
     "hero": {
-      "title1": "Säker visselblåsarsprogramvara för UK- och EU-efterlevnad",
+      "title1": "Säker visselblåsarsprogramvara för regelefterlevnad",
       "mobilePhrase": "Anonym rapportering för compliance-team",
       "typingPhrases": [
         "Anonym rapportering",
@@ -193,7 +193,7 @@
         "Revisionsfärdig compliance",
         "Säker tvåvägskommunikation"
       ],
-      "badge": "Military Grade AES-GCM Encryption",
+      "badge": "AES-256-GCM Encryption",
       "subtitle": "Ge anställda ett säkert, anonymt sätt att rapportera oro. Disclosurely erbjuder krypterade kanaler, strukturerad ärendehantering och revisionsfärdiga uppgifter — i linje med EU-direktivet och UK-krav.",
       "bullets": [
         "Anonymt mottagningsportal",
@@ -206,15 +206,6 @@
       "viewPricing": "Visa priser"
     },
     "trusted": "Betrodd av hundratals företag",
-    "trustBar": {
-      "items": [
-        "Anonym rapportering",
-        "Ende-till-ende krypterad",
-        "GDPR-medveten design",
-        "EU-direktiv enligt",
-        "Säker tvåvägskommunikation"
-      ]
-    },
     "features": {
       "title": "Allt du behöver för säker rapportering",
       "subtitle": "Vår plattform ger omfattande verktyg för att hantera visselblåsarrapporter med fullständig konfidentialitet och compliance.",

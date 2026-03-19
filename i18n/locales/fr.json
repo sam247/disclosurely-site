@@ -185,7 +185,7 @@
   },
   "landing": {
     "hero": {
-      "title1": "Logiciel de signalement sécurisé pour la conformité UK et UE",
+      "title1": "Logiciel de signalement sécurisé pour la conformité",
       "mobilePhrase": "Signalement anonyme pour équipes conformité",
       "typingPhrases": [
         "Signalement anonyme",
@@ -193,7 +193,7 @@
         "Conformité exploitable en audit",
         "Communication bidirectionnelle sécurisée"
       ],
-      "badge": "Military Grade AES-GCM Encryption",
+      "badge": "AES-256-GCM Encryption",
       "subtitle": "Offrez aux employés un moyen sûr et anonyme de signaler des préoccupations. Disclosurely fournit des canaux chiffrés, une gestion structurée des dossiers et des enregistrements exploitable en audit — conforme à la directive UE et aux exigences UK.",
       "bullets": [
         "Portail de dépôt anonyme",
@@ -206,15 +206,6 @@
       "viewPricing": "Voir les tarifs"
     },
     "trusted": "Approuvé par des centaines d'entreprises",
-    "trustBar": {
-      "items": [
-        "Signalement anonyme",
-        "Chiffrement de bout en bout",
-        "Conception RGPD",
-        "Conforme directive UE",
-        "Communication bidirectionnelle sécurisée"
-      ]
-    },
     "features": {
       "title": "Conçu pour les équipes conformité",
       "subtitle": "Outils pour gérer les signalements avec confidentialité, pistes d'audit et alignement réglementaire.",

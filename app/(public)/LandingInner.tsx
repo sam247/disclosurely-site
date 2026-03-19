@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { track } from "@vercel/analytics";
 import { usePathname } from "next/navigation";
-import { ShieldCheck, CheckCircle, CheckCircle2, MessageSquare, Brain, X, Lock } from "lucide-react";
+import { ShieldCheck, CheckCircle, CheckCircle2, MessageSquare, Brain, X } from "lucide-react";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -28,8 +28,6 @@ const businessLogos = [
   { src: "/business_logos/page-2.png", alt: "Business Partner 2" },
   { src: "/business_logos/page-3.png", alt: "Business Partner 3" },
   { src: "/business_logos/page-4.png", alt: "Business Partner 4" },
-  { src: "/business_logos/page-5.png", alt: "Business Partner 5" },
-  { src: "/business_logos/page-6.png", alt: "Business Partner 6" },
   { src: "/business_logos/page-7.png", alt: "Business Partner 7" },
   { src: "/business_logos/page-8.png", alt: "Business Partner 8" },
 ];
@@ -362,9 +360,9 @@ function LandingInner() {
               </span>
             </h1>
             <p className="mx-auto mb-6 max-w-3xl px-4 text-lg text-gray-700 sm:text-xl whitespace-pre-line">{t("landing.hero.subtitle")}</p>
-            <ul className="mx-auto mb-8 flex max-w-2xl flex-wrap justify-center gap-x-6 gap-y-2 px-4 text-left text-base text-gray-700 sm:justify-center sm:text-lg">
+            <ul className="mx-auto mb-8 flex max-w-full flex-nowrap justify-start gap-x-4 overflow-x-auto px-4 pb-1 text-left text-sm text-gray-700 sm:justify-center sm:gap-x-5 sm:text-base md:text-lg [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               {((t("landing.hero.bullets", { returnObjects: true }) as string[]) || []).map((bullet) => (
-                <li key={bullet} className="flex items-center gap-2">
+                <li key={bullet} className="flex shrink-0 items-center gap-2 whitespace-nowrap">
                   <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-blue-600" />
                   <span>{bullet}</span>
                 </li>
@@ -386,25 +384,9 @@ function LandingInner() {
               </Link>
             </div>
 
-            <div className="mx-auto mt-10 flex max-w-4xl flex-wrap items-center justify-center gap-3 px-4">
-              {((t("landing.trustBar.items", { returnObjects: true }) as string[]) || []).map((label, idx) => {
-                const icons = [ShieldCheck, Lock, CheckCircle, CheckCircle, MessageSquare];
-                const Icon = icons[idx] ?? CheckCircle;
-                return (
-                  <div
-                    key={label}
-                    className="flex items-center gap-2 rounded-full bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700"
-                  >
-                    <Icon className="h-4 w-4 flex-shrink-0 text-blue-600" />
-                    <span>{label}</span>
-                  </div>
-                );
-              })}
-            </div>
-
             <div className="mt-16">
               <p className="mb-12 text-lg font-medium text-gray-700">{t("landing.trusted")}</p>
-              <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-center gap-8">
+              <div className="mx-auto flex max-w-5xl flex-nowrap items-center justify-center gap-8 overflow-x-auto px-2 pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {businessLogos.map((logo) => (
                   <div key={logo.src} className="flex-shrink-0">
                     <Image src={logo.src} alt={logo.alt} width={140} height={48} className="h-12 w-auto object-contain opacity-70 transition-opacity hover:opacity-100" loading="lazy" />

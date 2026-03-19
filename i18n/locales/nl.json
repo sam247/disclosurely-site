@@ -185,7 +185,7 @@
   },
   "landing": {
     "hero": {
-      "title1": "Veilige klokkenluiderssoftware voor UK- en EU-compliance",
+      "title1": "Veilige klokkenluiderssoftware voor compliance",
       "mobilePhrase": "Anonieme meldingen voor compliance-teams",
       "typingPhrases": [
         "Anonieme meldingen",
@@ -193,7 +193,7 @@
         "Audit-ready compliance",
         "Veilige tweewegscommunicatie"
       ],
-      "badge": "Military Grade AES-GCM Encryption",
+      "badge": "AES-256-GCM Encryption",
       "subtitle": "Geef medewerkers een veilige, anonieme manier om zorgen te melden. Disclosurely biedt versleutelde meldkanalen, gestructureerd casemanagement en audit-ready dossiers — afgestemd op de EU-richtlijn en UK-eisen.",
       "bullets": [
         "Anoniem aanmeldportaal",
@@ -206,15 +206,6 @@
       "viewPricing": "Bekijk prijzen"
     },
     "trusted": "Vertrouwd door honderden bedrijven",
-    "trustBar": {
-      "items": [
-        "Anonieme meldingen",
-        "End-to-end versleuteld",
-        "AVG-bewust ontwerp",
-        "EU-richtlijn conform",
-        "Veilige tweewegscommunicatie"
-      ]
-    },
     "features": {
       "title": "Alles wat u nodig heeft voor veilige rapportage",
       "subtitle": "Ons platform biedt uitgebreide tools voor het beheren van klokkenluiderrapporten met volledige vertrouwelijkheid en compliance.",
