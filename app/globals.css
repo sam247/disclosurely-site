@@ -93,28 +93,38 @@
 }
 
 @layer base {
-  * {
+  *,
+  ::before,
+  ::after {
     @apply border-border;
+  }
+
+  /* Avoid max-width / scroll-behavior on * — breaks flex/grid and scroll in Chrome more than Safari */
+  img,
+  video,
+  canvas {
     max-width: 100%;
-    scroll-behavior: smooth;
+    height: auto;
   }
 
   html {
-    overflow-x: hidden;
+    overflow-x: clip;
     width: 100%;
     position: relative;
-    overscroll-behavior: none;
+    scroll-behavior: smooth;
+    /* Reduce odd scroll chaining; keep vertical scroll natural */
+    overscroll-behavior-x: none;
     /* iOS safe area support */
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
 
   body {
     @apply bg-background text-foreground;
-    overflow-x: hidden;
+    overflow-x: clip;
     width: 100%;
     position: relative;
     -webkit-overflow-scrolling: touch;
-    overscroll-behavior: none;
+    overscroll-behavior-x: none;
     touch-action: pan-y;
     /* iOS safe area support */
     min-height: 100vh;

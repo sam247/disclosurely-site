@@ -1,4 +1,22 @@
 {
+  "blog": {
+    "metaTitle": "Blog | Disclosurely",
+    "metaDescription": "Articles sur les lanceurs d’alerte, la conformité, la sécurité et le signalement éthique pour les organisations au Roya‑Uni et dans l’UE.",
+    "title": "Blog",
+    "subtitle": "Notes pratiques de l’équipe Disclosurely sur le signalement sécurisé et la conformité.",
+    "latest": "Derniers articles",
+    "categoriesNavLabel": "Catégories du blog",
+    "noPostsTitle": "Aucun article dans cette catégorie",
+    "noPostsBody": "Essayez une autre catégorie ou revenez plus tard.",
+    "goHome": "Aller à l’accueil",
+    "minRead": "{{count}} min de lecture",
+    "backToBlog": "Retour au blog",
+    "relatedArticles": "Articles connexes",
+    "readArticle": "Lire l’article",
+    "readArticleAria": "En savoir plus sur {{title}}",
+    "byAuthor": "Par {{name}}",
+    "noDate": "Pas de date"
+  },
   "dashboard": "Tableau de Bord",
   "aiCaseHelper": "Assistant IA de Cas",
   "analytics": "Analytique",
@@ -891,7 +909,7 @@
       "introduction": {
         "title": "1. Introduction",
         "content1": "Disclosurely Limited (\"Disclosurely\", \"nous\" ou \"notre\") s'engage à protéger vos données personnelles et à respecter votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons, stockons et protégeons vos données personnelles lorsque vous utilisez notre plateforme de signalement sur disclosurely.com (le \"Service\").",
-        "content2": "Nous nous conformons au Règlement général sur la protection des données (UE 2016/679), au RGPD britannique (tel que promulgué dans la loi de 2018 sur la protection des données) et aux autres lois applicables en matière de protection des données.",
+        "content2": "Nous traitons les données personnelles conformément aux exigences applicables du Règlement général sur la protection des données (UE 2016/679), du RGPD britannique (tel qu’énoncé dans la loi de 2018 sur la protection des données), de la directive européenne sur les lanceurs d’alerte (2019/1937) et des autres textes applicables en matière de protection des données.",
         "content3": "This Privacy Policy applies to all users of the Service, including: (a) Customers (organisations subscribing to the Service); (b) Authorised Users (employees and agents of Customer organisations); (c) Whistleblowers (individuals submitting reports); and (d) website visitors. Different sections may apply to different user types as indicated.",
         "content4": "By using the Service, you acknowledge that you have read and understood this Privacy Policy. If you do not agree with this Privacy Policy, you must not use the Service."
       },
@@ -999,16 +1017,16 @@
       },
       "dataHosting": {
         "title": "6. Hébergement et transferts de données",
-        "content1": "Toutes les données sont hébergées en Europe occidentale (Irlande) sur une infrastructure Supabase sécurisée.",
-        "content2": "Les données ne sont pas transférées en dehors de l'Espace économique européen (EEE) ou du Royaume-Uni, sauf si des garanties adéquates sont en place (telles que les clauses contractuelles types).",
-        "content3": "Le cryptage est appliqué pour protéger les données en transit et au repos.",
-        "content4": "Subprocessors: We engage carefully selected subprocessors to assist in providing the Service. A current list of subprocessors is available upon request. We conduct due diligence on all subprocessors and ensure they provide appropriate data protection guarantees through written contracts."
+        "content1": "Data hosting: Customer Data is processed using infrastructure we configure with Supabase in the EEA (Ireland and, where used, Frankfurt). Data in transit is protected using TLS 1.3 (or equivalent). Stored content at rest is protected using AES-256-GCM (or an equivalent industry-standard algorithm).",
+        "content2": "Data residency: we configure primary storage and backups to remain within the EEA/UK unless we engage a subprocessor outside those regions with appropriate safeguards (see International transfers).",
+        "content3": "International transfers: we do not routinely transfer personal data outside the EEA/UK. If a transfer becomes necessary (for example to a subprocessor), we use mechanisms required by GDPR Chapter V where applicable, such as Standard Contractual Clauses or adequacy decisions, and we notify Customers where we are required to do so.",
+        "content4": "Subprocessors: we engage carefully selected subprocessors under written agreements. A current list of material subprocessors is available on request. We conduct proportionate due diligence and require appropriate confidentiality and security commitments."
       },
       "dataRetention": {
         "title": "7. Conservation des données",
-        "content1": "Les données de compte client sont conservées pendant la durée de l'abonnement et jusqu'à six ans par la suite à des fins comptables et juridiques.",
-        "content2": "Les rapports de lanceurs d'alerte sont conservés aussi longtemps que déterminé par le Client (en tant que Contrôleur de données). À la résiliation du compte, nous supprimerons ou retournerons toutes les données du client dans les trois mois, sauf si la loi exige une conservation plus longue.",
-        "content3": "Les journaux techniques sont conservés pour la surveillance de la sécurité jusqu'à 12 mois.",
+        "content1": "We retain personal data only for as long as necessary to fulfil the purposes for which it was collected, comply with legal obligations, resolve disputes, and enforce our agreements. Specific retention periods are:",
+        "content2": "Customer Account Data: Retained for the duration of your active subscription plus six (6) years after account closure for accounting, tax, and legal purposes. Financial records are retained for seven (7) years to comply with UK tax law.",
+        "content3": "Whistleblower Reports and Customer Data: As Data Processor, we retain this data according to the Customer's instructions (the Customer, as Data Controller, determines retention periods). Upon account termination or Customer request, we will delete or return all Customer Data within thirty (30) days, unless longer retention is required by law. Customers must ensure their retention periods comply with the EU Whistleblowing Directive (which generally requires retention for the duration of investigations and legal proceedings, with a maximum recommended period of five years after case closure).",
         "content4": "Technical Logs and Security Data: Retained for up to twelve (12) months for security monitoring, fraud prevention, and incident investigation purposes, then automatically deleted.",
         "content5": "Marketing Data: Retained until you unsubscribe or withdraw consent, then deleted within thirty (30) days. We may retain a suppression list of unsubscribed email addresses to ensure we do not contact you again.",
         "content6": "Anonymised Data: We may retain anonymised and aggregated data indefinitely for statistical analysis, research, and service improvement. This data cannot be used to identify individuals.",
@@ -1037,12 +1055,12 @@
           "4": "Procédures de réponse aux incidents",
           "5": "Security Monitoring: 24/7 automated monitoring for security incidents and anomalous behaviour. Security logs are retained and regularly reviewed. Incident response procedures are in place and regularly tested.",
           "6": "Employee Training and Vetting: All employees with access to personal data undergo background checks and sign confidentiality agreements. Regular security awareness and data protection training is mandatory. Access is granted on a need-to-know basis and reviewed quarterly.",
-          "7": "Physical Security: Data centres are ISO 27001 certified with physical access controls, environmental controls, and 24/7 surveillance.",
+          "7": "Physical security: our hosting providers operate facilities with controlled physical access, environmental safeguards, and monitoring appropriate to cloud SaaS workloads.",
           "8": "Backup and Recovery: Automated encrypted backups are performed daily and stored in geographically redundant locations. Disaster recovery and business continuity plans are tested regularly.",
           "9": "Secure Development: We follow secure coding practices and conduct code reviews. Security testing is integrated into our development lifecycle. Third-party dependencies are regularly updated and scanned for vulnerabilities.",
           "10": "Data Breach Response: We have documented procedures for detecting, investigating, and responding to personal data breaches. In the event of a breach affecting personal data, we will notify affected individuals and relevant supervisory authorities within 72 hours as required by GDPR."
         },
-        "content2": "While we implement industry-leading security measures, no system is completely secure. You acknowledge that you provide personal data at your own risk. We encourage you to use strong passwords, enable MFA, and follow security best practices."
+        "content2": "While we apply appropriate technical and organisational measures, no online service can be guaranteed completely secure. Please use strong passwords, enable multi-factor authentication where offered, and follow your organisation's security guidance."
       },
       "yourRights": {
         "title": "10. Vos droits",
@@ -1112,7 +1130,7 @@
       },
       "euWhistleblowing": {
         "title": "17. EU Whistleblowing Directive Compliance",
-        "content1": "The Service is designed to comply with the EU Whistleblowing Directive (Directive 2019/1937) and national implementing legislation. Key compliance measures include:",
+        "content1": "The Service is designed to support common requirements under the EU Whistleblowing Directive (Directive 2019/1937) and national implementing legislation. Key measures include:",
         "content2": "Confidentiality and Anonymity: The Service provides secure channels that protect the confidentiality of whistleblowers, including anonymous reporting options. We implement technical and organisational measures to prevent unauthorised access to whistleblower identities.",
         "content3": "Data Minimisation: Personal data in reports is processed only to the extent necessary for the purposes of receiving, investigating, and following up on reports. Customers are advised to limit data collection to what is necessary.",
         "content4": "Security: We implement state-of-the-art encryption and security measures to protect the integrity and confidentiality of reports and communications.",
@@ -1182,9 +1200,9 @@
       },
       "serviceDescription": {
         "title": "3. Service Description and Scope",
-        "content1": "Disclosurely provides a secure, cloud-based whistleblowing and compliance reporting platform that enables organisations to receive, manage, and investigate reports of misconduct, ethical violations, and other concerns in compliance with applicable laws including the EU Whistleblowing Directive (Directive 2019/1937), GDPR, and UK data protection legislation.",
+        "content1": "Disclosurely provides a secure, cloud-based whistleblowing and compliance reporting platform that helps organisations receive, manage, and investigate reports of misconduct, ethical concerns, and other issues. The Service is designed to support common expectations under applicable laws (including, where relevant, the EU Whistleblowing Directive (2019/1937) and data protection law), but your legal obligations depend on your sector and jurisdiction.",
         "content2": "The Service includes: (a) secure anonymous and identified reporting channels; (b) encrypted two-way messaging between Customers and Whistleblowers; (c) case management dashboard and tools; (d) customisable reporting forms and branding; (e) audit trail and compliance reporting; (f) role-based access controls; and (g) such other features as described in the Documentation and made available in your selected subscription plan.",
-        "content3": "We reserve the right to modify, suspend, or discontinue any feature of the Service with reasonable notice. We will use commercially reasonable efforts to maintain Service availability of 99.5% uptime (excluding scheduled maintenance)."
+        "content3": "We may change, suspend, or discontinue features of the Service with reasonable advance notice where practicable. We use commercially reasonable efforts to maintain Service availability; scheduled maintenance, security events, third-party dependencies, and factors outside our control may affect availability. We do not guarantee uninterrupted access."
       },
       "registration": {
         "title": "4. Account Registration and Security",
@@ -1196,9 +1214,10 @@
         "title": "5. Subscription and Payment Terms",
         "content1": "Subscription Plans: The Service is provided on a subscription basis according to the plan you select (Starter, Pro, or Enterprise). Features, user limits, and pricing are as described on our website at the time of subscription.",
         "content2": "Payment: Subscription fees are payable in advance for the Subscription Period (monthly or annually as selected). All fees are in GBP and exclusive of applicable taxes. You authorise us to charge your payment method on each renewal date. Failure to pay may result in suspension or termination of the Service.",
-        "content3": "Free Trial: New customers may receive a 7-day free trial. We may require payment information to activate the trial. If you do not cancel before the trial ends, you will be automatically charged for your selected plan.",
+        "content3": "Free trial: where we offer a trial, its length and conditions are as stated on our website and when you subscribe (for example, our pricing page currently describes a 14-day trial where offered). We may require payment details to activate a trial. Unless you cancel in accordance with the instructions we provide before the trial ends, you may be charged for the selected plan.",
         "content4": "Price Changes: We may change subscription fees with at least 30 days' notice. Changes will apply from your next renewal date. Continued use after the price change constitutes acceptance.",
-        "content5": "Refunds: Fees are non-refundable except as required by law or as expressly stated in these Terms. If we terminate for our convenience, we will provide a pro-rata refund."
+        "content5": "Refunds: Fees are non-refundable except as required by law or as expressly stated in these Terms. If we terminate for our convenience, we will provide a pro-rata refund.",
+        "content6": "Enterprise or custom arrangements: where you order the Service under a separate order form, statement of work, or written agreement, those terms apply to the extent they expressly override these Terms."
       },
       "dataProcessing": {
         "title": "6. Data Processing and Responsibilities",
@@ -1234,7 +1253,7 @@
       "compliance": {
         "title": "14. Regulatory Compliance",
         "content1": "The Service is designed to assist with compliance with the EU Whistleblowing Directive (2019/1937), GDPR, UK GDPR, Data Protection Act 2018, and related regulations. However, you are solely responsible for ensuring your use of the Service and your internal procedures comply with all applicable laws in your jurisdiction.",
-        "content2": "We will maintain appropriate security certifications and comply with our obligations as a Data Processor. We will notify you of any material changes to our compliance posture.",
+        "content2": "We implement appropriate technical and organisational measures and comply with our obligations as a Data Processor under the agreed DPA. We will notify you of material changes that materially affect how we protect Customer Data or which material subprocessors we rely on.",
         "content3": "Export Controls: The Service may be subject to UK and international export controls. You must comply with all applicable export and trade sanctions laws."
       },
       "modifications": {

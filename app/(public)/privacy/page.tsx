@@ -7,7 +7,7 @@ export async function generateMetadata(): Promise<Metadata> {
     pagePath: "/privacy",
     fallbackTitle: "Privacy Policy | Disclosurely",
     fallbackDescription:
-      "Learn how Disclosurely collects, processes, and protects data in line with GDPR and security best practices.",
+      "How we collect, process, and protect personal data when you use Disclosurely, in line with applicable data protection law.",
     keywords: ["privacy policy", "data protection", "GDPR", "privacy"],
   });
 }

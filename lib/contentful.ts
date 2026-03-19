@@ -70,13 +70,19 @@ export type BlogPost = {
   categories?: Category[];
 };
 
-export async function fetchBlogPosts(): Promise<BlogPost[]> {
+export type FetchBlogOptions = {
+  /** Contentful locale code (e.g. fr). Omit for the space default locale (typically English). */
+  locale?: string;
+};
+
+export async function fetchBlogPosts(options?: FetchBlogOptions): Promise<BlogPost[]> {
   if (!contentfulClient || !contentfulToken) return [];
 
   const response = await contentfulClient.getEntries<BlogPostSkeleton>({
     content_type: "9oYANGj5uBRT6UHsl5LxO",
     limit: 100,
     include: 2, // Include linked assets and entries (for featuredImage)
+    ...(options?.locale ? { locale: options.locale } : {}),
   });
 
   // Create a map of asset IDs to assets for resolving featured images if needed
@@ -160,10 +166,10 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
   });
 }
 
-export async function fetchBlogPost(slug: string): Promise<BlogPost & { links?: any } | null> {
-  // #region agent log
-  fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'lib/contentful.ts:163',message:'fetchBlogPost entry',data:{slug,slugType:typeof slug,hasClient:!!contentfulClient,hasToken:!!contentfulToken},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
-  // #endregion
+export async function fetchBlogPost(
+  slug: string,
+  options?: FetchBlogOptions
+): Promise<BlogPost & { links?: any } | null> {
   if (!contentfulClient || !contentfulToken) return null;
 
   const queryParams = {
@@ -171,19 +177,11 @@ export async function fetchBlogPost(slug: string): Promise<BlogPost & { links?: 
     "fields.slug": slug,
     limit: 1,
     include: 10, // Include linked assets and entries (increased to ensure all embedded assets are included)
+    ...(options?.locale ? { locale: options.locale } : {}),
   };
-  // #region agent log
-  fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'lib/contentful.ts:170',message:'fetchBlogPost query params',data:{slug,queryParams},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
-  // #endregion
   const response = await contentfulClient.getEntries<BlogPostSkeleton>(queryParams as any); // eslint-disable-line @typescript-eslint/no-explicit-any
-  // #region agent log
-  fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'lib/contentful.ts:173',message:'fetchBlogPost response received',data:{slug,itemsCount:response.items.length,firstItemId:response.items[0]?.sys?.id,firstItemSlug:response.items[0]?.fields?.slug,firstItemTitle:response.items[0]?.fields?.title},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
-  // #endregion
 
   const post = response.items[0];
-  // #region agent log
-  fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'lib/contentful.ts:175',message:'fetchBlogPost post extracted',data:{slug,hasPost:!!post,postId:post?.sys?.id,postSlug:post?.fields?.slug,postTitle:post?.fields?.title},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
-  // #endregion
   if (!post) return null;
 
   // Extract author
@@ -224,16 +222,14 @@ export async function fetchBlogPost(slug: string): Promise<BlogPost & { links?: 
     categories,
     links: response.includes, // Include the links for resolving embedded assets
   };
-  // #region agent log
-  fetch('http://127.0.0.1:7244/ingest/c7de66a4-773c-4aba-878d-2e4a4241820f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'lib/contentful.ts:212',message:'fetchBlogPost returning result',data:{requestedSlug:slug,resultSlug:result.slug,resultId:result.id,resultTitle:result.title,slugMatch:slug===result.slug},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
-  // #endregion
   return result;
 }
 
 export async function fetchRelatedBlogPosts(
   currentPostId: string,
   categoryIds: string[],
-  limit: number = 3
+  limit: number = 3,
+  options?: FetchBlogOptions
 ): Promise<BlogPost[]> {
   if (!contentfulClient || !contentfulToken || categoryIds.length === 0) return [];
 
@@ -243,6 +239,7 @@ export async function fetchRelatedBlogPosts(
       content_type: "9oYANGj5uBRT6UHsl5LxO",
       limit: 100,
       include: 2,
+      ...(options?.locale ? { locale: options.locale } : {}),
     });
 
     // Filter posts that:

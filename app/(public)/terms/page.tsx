@@ -7,7 +7,7 @@ export async function generateMetadata(): Promise<Metadata> {
     pagePath: "/terms",
     fallbackTitle: "Terms of Service | Disclosurely",
     fallbackDescription:
-      "Terms and conditions governing your use of Disclosurely's whistleblowing and compliance services.",
+      "Terms governing use of the Disclosurely whistleblowing and compliance reporting platform.",
     keywords: ["terms of service", "terms and conditions", "legal"],
   });
 }
